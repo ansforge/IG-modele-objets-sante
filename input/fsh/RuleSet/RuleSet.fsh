@@ -25,6 +25,7 @@ RuleSet: oneElementLogicalFR(titleName, card, type, englishDescription, frenchDe
 // ----------------------------------
 // for Requirement
 // ----------------------------------
+/* TODO NEXT STEP
 RuleSet: addAttributsIdentityRequirement
 * status = #draft
 * purpose = "Patient identity requirements refer to a set of rules, procedures and standards established in the field of healthcare and medical records management to ensure the correct and secure identification of patients. These requirements aim to prevent medical errors, protect the confidentiality of medical information and ensure the quality of healthcare."
@@ -34,3 +35,4 @@ RuleSet: addAttributsIdentityRequirement
 * copyrightLabel = "FHIR - Ignite the flame of interoperability in healthcare. FYR"
   * insert extensionTranslateToFR([[FHIR - Allumer la flamme de l'interopérabilité dans les soins de santé.]])
 * date = "2023-06-09T10:31:30.239Z"
+*/
