@@ -1,0 +1,8 @@
+Logical: QualificationPAC
+Id: QualificationPAC
+* ^status = #draft
+* . ^short = " La qualification de praticien adjoint contractuel autorise à exercer en établissement sans être qualifié ni en médecine générale, ni en spécialité. Cela concerne des médecins à diplôme étranger dont la qualification a été reconnue avant l'instauration de l'autorisation d'exercice, et qui n'ont pas fait de démarche pour obtenir cette autorisation (environ 500 médecins concernés).Une qualification de praticien adjoint contractuel est un type de savoir-faire. La classe QualificationPAC est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe."
+* . ^definition = " La qualification de praticien adjoint contractuel autorise à exercer en établissement sans être qualifié ni en médecine générale, ni en spécialité. Cela concerne des médecins à diplôme étranger dont la qualification a été reconnue avant l'instauration de l'autorisation d'exercice, et qui n'ont pas fait de démarche pour obtenir cette autorisation (environ 500 médecins concernés).Une qualification de praticien adjoint contractuel est un type de savoir-faire. La classe QualificationPAC est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe."
+* . ^type.code = "Element"
+* qualificationPAC 0..1 Coding " Qualification de praticien adjoint contractuel." " Qualification de praticien adjoint contractuel."
+* qualificationPAC from https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/qualificationPAC-vs (preferred)
