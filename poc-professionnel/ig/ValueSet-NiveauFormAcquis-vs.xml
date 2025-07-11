@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="NiveauFormAcquis-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs NiveauFormAcquis-vs</b></p><a name="NiveauFormAcquis-vs"> </a><a name="hcNiveauFormAcquis-vs"> </a><ul><li>Include tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R224-NiveauFormAcquis</code></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauFormAcquis-vs"/>
+  <version value="0.1.0"/>
+  <status value="draft"/>
+  <date value="2025-07-11T09:57:47+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R224-NiveauFormAcquis"/>
+    </include>
+  </compose>
+</ValueSet>

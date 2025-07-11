@@ -1,19 +1,5 @@
 [
   {
-    "id" : "competence-code-system",
-    "type" : "CodeSystem",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/CodeSystem/competence-code-system",
-    "version" : "0.1.0",
-    "name" : "CompetenceCS"
-  },
-  {
-    "id" : "type-carte-code-system",
-    "type" : "CodeSystem",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/CodeSystem/type-carte-code-system",
-    "version" : "0.1.0",
-    "name" : "TypeCarteCS"
-  },
-  {
     "id" : "ans.fhir.fr.mos",
     "type" : "ImplementationGuide",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos",
@@ -21,45 +7,484 @@
     "name" : "MOS"
   },
   {
-    "id" : "EyeColor",
+    "id" : "AttributionParticuliere",
     "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/EyeColor",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/AttributionParticuliere",
     "version" : "0.1.0",
-    "name" : "EyeColor"
+    "name" : "AttributionParticuliere"
   },
   {
-    "id" : "fr-patient",
+    "id" : "CapaciteSavoirfaire",
     "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/fr-patient",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CapaciteSavoirfaire",
     "version" : "0.1.0",
-    "name" : "FrPatient"
+    "name" : "CapaciteSavoirfaire"
   },
   {
-    "id" : "EyeColorVS",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/EyeColorVS",
+    "id" : "Competence",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Competence",
     "version" : "0.1.0",
-    "name" : "EyeColorVS"
+    "name" : "Competence"
   },
   {
-    "id" : "MeltingPotVS",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/MeltingPotVS",
+    "id" : "CompetenceExclusive",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CompetenceExclusive",
     "version" : "0.1.0",
-    "name" : "MeltingPotVS"
+    "name" : "CompetenceExclusive"
   },
   {
-    "id" : "ModifiedAdministrativeGender",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/ModifiedAdministrativeGender",
+    "id" : "CompetenceMetier",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CompetenceMetier",
     "version" : "0.1.0",
-    "name" : "ModifiedAdministrativeGender"
+    "name" : "CompetenceMetier"
   },
   {
-    "id" : "TypeCarteVS",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeCarteVS",
+    "id" : "DESCNonQualifiant",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DESCNonQualifiant",
     "version" : "0.1.0",
-    "name" : "TypeCarteVS"
+    "name" : "DESCNonQualifiant"
+  },
+  {
+    "id" : "Diplome",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome",
+    "version" : "0.1.0",
+    "name" : "Diplome"
+  },
+  {
+    "id" : "DroitExerciceComplementaire",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DroitExerciceComplementaire",
+    "version" : "0.1.0",
+    "name" : "DroitExerciceComplementaire"
+  },
+  {
+    "id" : "ExerciceProfessionnel",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/ExerciceProfessionnel",
+    "version" : "0.1.0",
+    "name" : "ExerciceProfessionnel"
+  },
+  {
+    "id" : "FonctionQualifiee",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/FonctionQualifiee",
+    "version" : "0.1.0",
+    "name" : "FonctionQualifiee"
+  },
+  {
+    "id" : "InscriptionOrdre",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/InscriptionOrdre",
+    "version" : "0.1.0",
+    "name" : "InscriptionOrdre"
+  },
+  {
+    "id" : "LangueParlee",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/LangueParlee",
+    "version" : "0.1.0",
+    "name" : "LangueParlee"
+  },
+  {
+    "id" : "NiveauConfidentialite",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/NiveauConfidentialite",
+    "version" : "0.1.0",
+    "name" : "NiveauConfidentialite"
+  },
+  {
+    "id" : "NiveauFormation",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/NiveauFormation",
+    "version" : "0.1.0",
+    "name" : "NiveauFormation"
+  },
+  {
+    "id" : "OrientationParticuliere",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/OrientationParticuliere",
+    "version" : "0.1.0",
+    "name" : "OrientationParticuliere"
+  },
+  {
+    "id" : "PersonnePhysique",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/PersonnePhysique",
+    "version" : "0.1.0",
+    "name" : "PersonnePhysique"
+  },
+  {
+    "id" : "Professionnel",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Professionnel",
+    "version" : "0.1.0",
+    "name" : "Professionnel"
+  },
+  {
+    "id" : "QualificationPAC",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/QualificationPAC",
+    "version" : "0.1.0",
+    "name" : "QualificationPAC"
+  },
+  {
+    "id" : "SavoirFaire",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire",
+    "version" : "0.1.0",
+    "name" : "SavoirFaire"
+  },
+  {
+    "id" : "SituationExercice",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationExercice",
+    "version" : "0.1.0",
+    "name" : "SituationExercice"
+  },
+  {
+    "id" : "SituationOperationnelle",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationOperationnelle",
+    "version" : "0.1.0",
+    "name" : "SituationOperationnelle"
+  },
+  {
+    "id" : "Specialite",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Specialite",
+    "version" : "0.1.0",
+    "name" : "Specialite"
+  },
+  {
+    "id" : "SurspecialiteTransversale",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SurspecialiteTransversale",
+    "version" : "0.1.0",
+    "name" : "SurspecialiteTransversale"
+  },
+  {
+    "id" : "Telecommunication",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication",
+    "version" : "0.1.0",
+    "name" : "Telecommunication"
+  },
+  {
+    "id" : "TypeMessagerie",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/TypeMessagerie",
+    "version" : "0.1.0",
+    "name" : "TypeMessagerie"
+  },
+  {
+    "id" : "AnneeUniversitaire-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/AnneeUniversitaire-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "AttributionParticuliere-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/AttributionParticuliere-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "CNAMAmeliSecteurConventionnement-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CNAMAmeliSecteurConventionnement-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "CategorieProfessionnelle-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CategorieProfessionnelle-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "Civilite-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Civilite-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "CiviliteExercice-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CiviliteExercice-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "CommuneOM-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CommuneOM-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "CompetenceSpecifique-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CompetenceSpecifique-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "DESCNonQualifiant-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/DESCNonQualifiant-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "DepartementOM-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/DepartementOM-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "EnsembleSavoirFaire-CISIS-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/EnsembleSavoirFaire-CISIS-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "GenreActivite-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/GenreActivite-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "Langue-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Langue-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "LieuFormation-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/LieuFormation-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "ModeExercice-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/ModeExercice-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "MotifFinActivite-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/MotifFinActivite-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "NatCycleForm-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NatCycleForm-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "NiveauFormAcquis-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauFormAcquis-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "Ordre-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Ordre-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "Pays-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Pays-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "SectionTableauCNOP-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SectionTableauCNOP-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "SexeAdministratif-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SexeAdministratif-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "SousSectionTableauCNOP-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SousSectionTableauCNOP-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "StatutEtatCivil-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutEtatCivil-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "StatutHospitalier-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutHospitalier-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "StatutInscription-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutInscription-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "StatutProfessionnelSSA-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutProfessionnelSSA-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TypeActiviteLiberale-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeActiviteLiberale-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TypeDiplome-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeDiplome-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TypeIdentifiantPersonne-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeIdentifiantPersonne-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TypeSavoirFaire-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeSavoirFaire-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "capaciteSavoirFaire-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/capaciteSavoirFaire-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "causeMortalite-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/causeMortalite-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "competence-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competence-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "competenceExclusive-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceExclusive-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "droitExerciceComplementaire-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/droitExerciceComplementaire-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "fonctionQualifiee-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/fonctionQualifiee-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "lieuNaissance-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/lieuNaissance-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "orientationParticuliere-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/orientationParticuliere-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "paysNaissance-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/paysNaissance-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "paysNationalite-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/paysNationalite-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "profession-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/profession-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "professionCategorieSocioProfessionnelle-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/professionCategorieSocioProfessionnelle-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "qualificationPAC-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/qualificationPAC-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "role-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "sexe-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/sexe-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "situationFamiliale-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/situationFamiliale-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "specialite-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/specialite-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "surspecialiteTransversale-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/surspecialiteTransversale-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "typeProfession-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeProfession-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "typeRole-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs",
+    "version" : "0.1.0"
   }
 ]

@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "professionCategorieSocioProfessionnelle-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs professionCategorieSocioProfessionnelle-vs</b></p><a name=\"professionCategorieSocioProfessionnelle-vs\"> </a><a name=\"hcprofessionCategorieSocioProfessionnelle-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R262-CategorieSocioProfessionnelle</code></li><li>Inclut tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1</code></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/professionCategorieSocioProfessionnelle-vs",
+  "version" : "0.1.0",
+  "status" : "draft",
+  "date" : "2025-07-11T09:57:47+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R262-CategorieSocioProfessionnelle"
+    },
+    {
+      "system" : "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1"
+    }]
+  }
+}
