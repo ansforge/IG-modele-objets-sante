@@ -10,7 +10,7 @@
   <name value="MOS"/>
   <title value="Modèle des Objets de Santé (MOS)"/>
   <status value="draft"/>
-  <date value="2025-07-16T15:05:19+00:00"/>
+  <date value="2025-07-16T15:27:54+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -599,6 +599,54 @@
         <nameUrl value="types_donnees.html"/>
         <title value="Types de données"/>
         <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="partition.html"/>
+        </extension>
+        <nameUrl value="partition.html"/>
+        <title value="Partition"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="professionnel.html"/>
+          </extension>
+          <nameUrl value="professionnel.html"/>
+          <title value="Professionnel"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="dispo-authent.html"/>
+          </extension>
+          <nameUrl value="dispo-authent.html"/>
+          <title value="Dispositif d'authentification"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="structure.html"/>
+          </extension>
+          <nameUrl value="structure.html"/>
+          <title value="Structure"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="ppec.html"/>
+          </extension>
+          <nameUrl value="ppec.html"/>
+          <title value="Personne prise en charge"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="ressops.html"/>
+          </extension>
+          <nameUrl value="ressops.html"/>
+          <title value="Ressources opérationnelles"/>
+          <generation value="markdown"/>
+        </page>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
