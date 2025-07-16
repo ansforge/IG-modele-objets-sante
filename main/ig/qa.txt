@@ -1,9 +1,9 @@
 MOS : Validation Results
 =========================================
 
-err = 0, warn = 13, info = 6
-IG Publisher Version: 2.0.7
-Generated Mon Jun 23 15:19:54 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mos)
+err = 0, warn = 15, info = 6
+IG Publisher Version: 2.0.9 Out of date - current version is ?pub-ver-1?
+Generated Wed Jul 16 13:11:41 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mos)
  Build Errors : 0 / 2 / 0
  /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 2
  /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 2
@@ -11,8 +11,8 @@ Generated Mon Jun 23 15:19:54 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mos#0
  /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/Patient-frpatient-exemple : 0 / 1 / 1
  /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/StructureDefinition-EyeColor : 0 / 2 / 1
  /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/StructureDefinition-fr-patient : 0 / 0 / 4
- /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/ValueSet-EyeColorVS : 0 / 1 / 1
- /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/ValueSet-MeltingPotVS : 0 / 1 / 2
+ /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/ValueSet-EyeColorVS : 0 / 2 / 1
+ /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/ValueSet-MeltingPotVS : 0 / 2 / 2
  /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/ValueSet-ModifiedAdministrativeGender : 0 / 1 / 1
  /home/runner/work/IG-MOS/IG-MOS/igSource/fsh-generated/resources/ValueSet-TypeCarteVS : 0 / 1 / 1
 </table>
@@ -38,8 +38,10 @@ INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.elemen
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 == fsh-generated/resources/ValueSet-EyeColorVS.json ==
+WARNING: ValueSet/EyeColorVS: ValueSet.compose.include[0]: The terminology server https://tx.fhir.org/r4 used for the CodeSystem http://snomed.info/sct does not support batch validation (tx version Not Known), so the codes have not been validated
 WARNING: ValueSet/EyeColorVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-MeltingPotVS.json ==
+WARNING: ValueSet/MeltingPotVS: ValueSet.compose.include[0]: The terminology server https://tx.fhir.org/r4 used for the CodeSystem http://snomed.info/sct does not support batch validation (tx version Not Known), so the codes have not been validated
 INFORMATION: ValueSet/MeltingPotVS: ValueSet.compose.include[0]: This include has some concepts with displays and some without - check that this is what is intended
 WARNING: ValueSet/MeltingPotVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-ModifiedAdministrativeGender.json ==
