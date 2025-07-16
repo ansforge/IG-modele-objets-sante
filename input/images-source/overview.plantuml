@@ -6,38 +6,49 @@ skinparam class {
     BorderColor black
 }
 
-package "Structure" {
-    class EntiteJuridique
-    class EntiteGeographique
-    EntiteJuridique "1" -- "1..*" EntiteGeographique
-}
+' package "Structure" {
+'     class EntiteJuridique
+'     class EntiteGeographique
+'     EntiteJuridique "1" -- "1..*" EntiteGeographique
+' }
 
-package "Autorisation" {
-    class ActiviteSoinAutorisee
-    class AutreActiviteSoumiseAutorisation
-    class ActiviteSoumiseReconnaissance
-    class ActiviteSociale
-    class ActiviteEnseignement
-    class EquipementMaterielLourd
-    class CapaciteActiviteExercee
-}
+' package "Autorisation" {
+'     class ActiviteSoinAutorisee
+'     class AutreActiviteSoumiseAutorisation
+'     class ActiviteSoumiseReconnaissance
+'     class ActiviteSociale
+'     class ActiviteEnseignement
+'     class EquipementMaterielLourd
+'     class CapaciteActiviteExercee
+' }
 
-package "Accord" {
-    class AutorisationExercice
-    class LicenceExploitation
-    class Convention
-}
+' package "Accord" {
+'     class AutorisationExercice
+'     class LicenceExploitation
+'     class Convention
+' }
 
-package "Dispositif médical" {
-    class DispositifMedical
-    class SupportUD
-}
+' package "Dispositif médical" {
+'     class DispositifMedical
+'     class SupportIUD
+' }
 
-package "Accompagnant" {
-    class Parent
-    class AidantDemarche
-    class MesureProtection
-}
+' package "Accompagnant" {
+'     class Parent
+'     class AidantDemarche
+'     class MesureProtection
+' }
+
+
+url of Professionnel is [[StructureDefinition-Professionnel.html]]
+url of ExerciceProfessionnel is [[StructureDefinition-ExerciceProfessionnel.html]]
+url of SituationExercice is [[StructureDefinition-SituationExercice.html]]
+url of SavoirFaire is [[StructureDefinition-SavoirFaire.html]]
+url of SituationOperationnelle is [[StructureDefinition-SituationOperationnelle.html]]
+url of InscriptionOrdre is [[StructureDefinition-InscriptionOrdre.html]]
+url of NiveauFormation is [[StructureDefinition-NiveauFormation.html]]
+url of AttributionParticuliere is [[StructureDefinition-AttributionParticuliere.html]]
+    
 
 package "Professionnel" {
     class Professionnel
@@ -58,9 +69,11 @@ package "Professionnel" {
     InscriptionOrdre -- AttributionParticuliere
 }
 
-package "Dispositif d'authentification" {
-    class Certificat
-    class CarteProfessionnel
-    Certificat "1..*" -- "0..1" CarteProfessionnel
-}
+' package "Dispositif d'authentification" {
+'     class Certificat
+'     class CarteProfessionnel
+'     Certificat "1..*" -- "0..1" CarteProfessionnel
+' }
+
+
 @enduml
