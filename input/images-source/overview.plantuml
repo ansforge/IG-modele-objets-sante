@@ -40,14 +40,6 @@ skinparam class {
 ' }
 
 
-url of Professionnel is [[StructureDefinition-Professionnel.html]]
-url of ExerciceProfessionnel is [[StructureDefinition-ExerciceProfessionnel.html]]
-url of SituationExercice is [[StructureDefinition-SituationExercice.html]]
-url of SavoirFaire is [[StructureDefinition-SavoirFaire.html]]
-url of SituationOperationnelle is [[StructureDefinition-SituationOperationnelle.html]]
-url of InscriptionOrdre is [[StructureDefinition-InscriptionOrdre.html]]
-url of NiveauFormation is [[StructureDefinition-NiveauFormation.html]]
-url of AttributionParticuliere is [[StructureDefinition-AttributionParticuliere.html]]
     
 
 package "Professionnel" {
@@ -59,6 +51,15 @@ package "Professionnel" {
     class InscriptionOrdre
     class NiveauFormation
     class AttributionParticuliere
+
+    url of Professionnel is [[StructureDefinition-Professionnel.html]]
+    url of ExerciceProfessionnel is [[StructureDefinition-ExerciceProfessionnel.html]]
+    url of SituationExercice is [[StructureDefinition-SituationExercice.html]]
+    url of SavoirFaire is [[StructureDefinition-SavoirFaire.html]]
+    url of SituationOperationnelle is [[StructureDefinition-SituationOperationnelle.html]]
+    url of InscriptionOrdre is [[StructureDefinition-InscriptionOrdre.html]]
+    url of NiveauFormation is [[StructureDefinition-NiveauFormation.html]]
+    url of AttributionParticuliere is [[StructureDefinition-AttributionParticuliere.html]]
 
     Professionnel "1" -- "*" ExerciceProfessionnel
     ExerciceProfessionnel "1" -- "*" SituationExercice
