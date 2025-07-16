@@ -1,0 +1,23 @@
+{
+    "types": {
+        "mapping": {
+            "Code": "Coding",
+            "Identifiant": "Identifier",
+            "Date": "date",
+            "DateHeure": "dateTime",
+            "Texte": "string",
+            "Heure": "time",
+            "ObjetBinaire": "base64Binary",
+            "Mesure": "Quantity",
+            "Montant": "Money",
+            "Numérique": "integer",
+            "Indicateur": "boolean",
+            "ConceptCode": "CodeableConcept"
+        },
+        "custom": ["BoiteLettreMSS", "Adresse", "Telecommunication", "Horaire"],
+        "class": ["Diplome", "PersonnePhysique", "LangueParlee"]
+    },
+    "backbones": {
+        "ExerciceProfessionnel": ["InscriptionOrdre", "SavoirFaire", "AttributionParticuliere", "NiveauFormation"]
+    }
+}
