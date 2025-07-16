@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-11T09:57:47+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-16T13:28:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -861,6 +861,24 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "StructureDefinition:complex-type"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse> ;
+         fhir:reference [ fhir:v "StructureDefinition/Adresse" ]
+       ] ;
+       fhir:name [ fhir:v "Adresse" ] ;
+       fhir:description [ fhir:v "Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "ValueSet"
          ]
        ] ) ;
@@ -1494,6 +1512,23 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauConfidentialite-vs> ;
+         fhir:reference [ fhir:v "ValueSet/NiveauConfidentialite-vs" ]
+       ] ;
+       fhir:name [ fhir:v "NiveauConfidentialite" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauFormAcquis-vs> ;
          fhir:reference [ fhir:v "ValueSet/NiveauFormAcquis-vs" ]
        ] ;
@@ -2092,6 +2127,23 @@
        fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/TypeMessagerie> ;
          fhir:reference [ fhir:v "StructureDefinition/TypeMessagerie" ]
+       ] ;
+       fhir:name [ fhir:v "TypeMessagerie" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeMessagerie-vs> ;
+         fhir:reference [ fhir:v "ValueSet/TypeMessagerie-vs" ]
        ] ;
        fhir:name [ fhir:v "TypeMessagerie" ] ;
        fhir:example [

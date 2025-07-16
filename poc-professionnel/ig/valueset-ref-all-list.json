@@ -1,6 +1,34 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-Adresse.html" : "Adresse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-Adresse.html" : "Adresse"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
       "version" : "4.0.1",
       "status" : "active",
@@ -239,8 +267,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-SituationOperationnelle.html" : "SituationOperationnelle",
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
+      "StructureDefinition-SituationExercice.html" : "SituationExercice",
+      "StructureDefinition-SituationOperationnelle.html" : "SituationOperationnelle"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/MotifFinActivite-vs",
@@ -269,6 +297,20 @@
       "uses" : {
       },
       "StructureDefinition-NiveauFormation.html" : "NiveauFormation"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauConfidentialite-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "NiveauConfidentialite",
+      "title" : null,
+      "description" : null,
+      "systems" : [
+        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R283-NiveauConfidentialite"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-NiveauConfidentialite.html" : "NiveauConfidentialite"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauFormAcquis-vs",
@@ -451,6 +493,20 @@
       "uses" : {
       },
       "StructureDefinition-Professionnel.html" : "Professionnel"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeMessagerie-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeMessagerie",
+      "title" : null,
+      "description" : null,
+      "systems" : [
+        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R256-TypeMessagerie"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TypeMessagerie.html" : "TypeMessagerie"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeSavoirFaire-vs",

@@ -211,8 +211,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-SituationOperationnelle.html" : "SituationOperationnelle",
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
+      "StructureDefinition-SituationExercice.html" : "SituationExercice",
+      "StructureDefinition-SituationOperationnelle.html" : "SituationOperationnelle"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/MotifFinActivite-vs",
@@ -241,6 +241,20 @@
       "uses" : {
       },
       "StructureDefinition-NiveauFormation.html" : "NiveauFormation"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauConfidentialite-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "NiveauConfidentialite",
+      "title" : null,
+      "description" : null,
+      "systems" : [
+        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R283-NiveauConfidentialite"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-NiveauConfidentialite.html" : "NiveauConfidentialite"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauFormAcquis-vs",
@@ -423,6 +437,20 @@
       "uses" : {
       },
       "StructureDefinition-Professionnel.html" : "Professionnel"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeMessagerie-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeMessagerie",
+      "title" : null,
+      "description" : null,
+      "systems" : [
+        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R256-TypeMessagerie"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TypeMessagerie.html" : "TypeMessagerie"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeSavoirFaire-vs",
