@@ -1,0 +1,369 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class Adresse{
+
+             Address.use => [None..None]
+             Address.city => [None..None]
+             Address.state => [None..None]
+             Address.postalCode => [None..None]
+             Address.country => [None..None]
+        } 
+
+        class Telecommunication{
+
+             ContactPoint.extension:TypeMessagerie => <&plus>[0..1]
+             ContactPoint.extension:NiveauConfidentialite => <&plus>[0..1]
+             ContactPoint.system => [None..None]
+             ContactPoint.value => [None..None]
+             ContactPoint.use => [None..None]
+        } 
+
+        class AttributionParticuliere{
+
+             AttributionParticuliere => [0..*]
+             AttributionParticuliere.attributionParticuliere => [0..1]
+             AttributionParticuliere.dateDebutReconnaissance => [0..1]
+             AttributionParticuliere.dateAbandon => [0..1]
+        } 
+
+        class CapaciteSavoirfaire{
+
+             CapaciteSavoirfaire => [0..*]
+             CapaciteSavoirfaire.capaciteSavoirFaire => [0..1]
+        } 
+
+        class Competence{
+
+             Competence => [0..*]
+             Competence.competence => [0..1]
+        } 
+
+        class CompetenceExclusive{
+
+             CompetenceExclusive => [0..*]
+             CompetenceExclusive.competenceExclusive => [0..1]
+        } 
+
+        class CompetenceMetier{
+
+             CompetenceMetier => [0..*]
+             CompetenceMetier.competenceMetier => [0..1]
+        } 
+
+        class DESCNonQualifiant{
+
+             DESCNonQualifiant => [0..*]
+             DESCNonQualifiant.DESCNonQualifiant => [0..1]
+        } 
+
+        class Diplome{
+
+             Diplome => [0..*]
+             Diplome.typeDiplome => [0..1]
+             Diplome.lieuFormation => [0..1]
+             Diplome.dateDiplome => [0..1]
+             Diplome.numeroDiplome => [0..1]
+        } 
+
+        class DroitExerciceComplementaire{
+
+             DroitExerciceComplementaire => [0..*]
+             DroitExerciceComplementaire.droitExerciceComplementaire => [0..1]
+        } 
+
+        class ExerciceProfessionnel{
+
+             ExerciceProfessionnel => [0..*]
+             ExerciceProfessionnel.civiliteExercice => [0..1]
+             ExerciceProfessionnel.nomExercice => [0..1]
+             ExerciceProfessionnel.prenomExercice => [0..1]
+             ExerciceProfessionnel.profession => [0..1]
+             ExerciceProfessionnel.typeProfession => [0..1]
+             ExerciceProfessionnel.categorieProfessionnelle => [0..1]
+             ExerciceProfessionnel.dateEffetExercice => [0..1]
+             ExerciceProfessionnel.dateFinEffetExercice => [0..1]
+             ExerciceProfessionnel.departementPremierReferencementAE => [0..1]
+             ExerciceProfessionnel.boiteLettresMSS => [0..*]
+        } 
+
+        class FonctionQualifiee{
+
+             FonctionQualifiee => [0..*]
+             FonctionQualifiee.fonctionQualifiee => [0..1]
+        } 
+
+        class InscriptionOrdre{
+
+             InscriptionOrdre => [0..*]
+             InscriptionOrdre.ordre => [0..1]
+             InscriptionOrdre.dateDebutInscription => [0..1]
+             InscriptionOrdre.dateRadiation => [0..1]
+             InscriptionOrdre.statutInscription => [0..1]
+             InscriptionOrdre.conseilDepartemental => [0..1]
+        } 
+
+        class LangueParlee{
+
+             LangueParlee => [0..*]
+             LangueParlee.langueParlee => [0..1]
+             LangueParlee.dateFin => [0..1]
+        } 
+
+        class NiveauFormation{
+
+             NiveauFormation => [0..*]
+             NiveauFormation.diplome => [0..1]
+             NiveauFormation.natureCycleFormation => [0..1]
+             NiveauFormation.niveauFormationAcquis => [0..1]
+             NiveauFormation.anneeUniversitaire => [0..1]
+             NiveauFormation.dateFin => [0..1]
+        } 
+
+        class OrientationParticuliere{
+
+             OrientationParticuliere => [0..*]
+             OrientationParticuliere.orientationParticuliere => [0..1]
+        } 
+
+        class PersonnePhysique{
+
+             PersonnePhysique => [0..*]
+             PersonnePhysique.civilite => [0..1]
+             PersonnePhysique.nomFamille => [0..1]
+             PersonnePhysique.nomUsage => [0..1]
+             PersonnePhysique.prenom => [0..*]
+             PersonnePhysique.prenomUsuel => [0..1]
+             PersonnePhysique.pseudonyme => [0..1]
+             PersonnePhysique.surnom => [0..1]
+             PersonnePhysique.sexeAdministratif => [0..1]
+             PersonnePhysique.sexe => [0..1]
+             PersonnePhysique.langueParlee => [0..*]
+             PersonnePhysique.situationFamiliale => [0..1]
+             PersonnePhysique.dateNaissance => [0..1]
+             PersonnePhysique.dateDeces => [0..1]
+             PersonnePhysique.communeNaissance => [0..1]
+             PersonnePhysique.departementNaissance => [0..1]
+             PersonnePhysique.paysNaissance => [0..1]
+             PersonnePhysique.lieuNaissance => [0..1]
+             PersonnePhysique.statutEtatCivil => [0..1]
+             PersonnePhysique.dateStatutEtatCivil => [0..1]
+             PersonnePhysique.dateAcquisitionNatFR => [0..1]
+             PersonnePhysique.paysNationalite => [0..1]
+             PersonnePhysique.paysResidence => [0..1]
+             PersonnePhysique.professionCategorieSocioProfessionnelle => [0..1]
+             PersonnePhysique.causeMortalite => [0..1]
+             PersonnePhysique.tailleCorporelle => [0..1]
+             PersonnePhysique.poidsCorporel => [0..1]
+             PersonnePhysique.surfaceCorporelle => [0..1]
+             PersonnePhysique.indiceMasseCorporelle => [0..1]
+        } 
+
+        class Professionnel{
+
+             Professionnel => [0..*]
+             Professionnel.idPP => [0..1]
+             Professionnel.typeIdNat-PP => [0..1]
+             Professionnel.idNat-PS => [0..1]
+             Professionnel.personne => [0..1]
+             Professionnel.diplomeObtenu => [0..*]
+             Professionnel.adresseCorrespondance => [0..*]
+             Professionnel.telecommunication => [0..*]
+             Professionnel.boiteLettresMSS => [0..*]
+        } 
+
+        class QualificationPAC{
+
+             QualificationPAC => [0..*]
+             QualificationPAC.qualificationPAC => [0..1]
+        } 
+
+        class SavoirFaire{
+
+             SavoirFaire => [0..*]
+             SavoirFaire.typeSavoirFaire => [0..1]
+             SavoirFaire.dateReconnaissance => [0..1]
+             SavoirFaire.dateAbandon => [0..1]
+        } 
+
+        class SituationExercice{
+
+             SituationExercice => [0..*]
+             SituationExercice.role => [0..1]
+             SituationExercice.typeRole => [0..1]
+             SituationExercice.modeExercice => [0..1]
+             SituationExercice.numeroAM => [0..1]
+             SituationExercice.dateDebutActivite => [0..1]
+             SituationExercice.dateFinActivite => [0..1]
+             SituationExercice.genreActivite => [0..1]
+             SituationExercice.motifFinActivite => [0..1]
+             SituationExercice.statutHospitalier => [0..1]
+             SituationExercice.sectionOrdrePharmacien => [0..1]
+             SituationExercice.sousSectionOrdrePharmacien => [0..1]
+             SituationExercice.typeActiviteLiberale => [0..1]
+             SituationExercice.statutPS-SSA => [0..1]
+             SituationExercice.telecommunication => [0..*]
+             SituationExercice.adresseSE => [0..*]
+             SituationExercice.boiteLettresMSS => [0..*]
+        } 
+
+        class SituationOperationnelle{
+
+             SituationOperationnelle => [0..*]
+             SituationOperationnelle.identifiantSituationOperationnelle => [0..1]
+             SituationOperationnelle.modeExerciceOffre => [0..1]
+             SituationOperationnelle.competenceSpecifique => [0..*]
+             SituationOperationnelle.precisionHoraire => [0..1]
+             SituationOperationnelle.secteurConventionnement => [0..1]
+             SituationOperationnelle.optionContratAccesAuxSoins => [0..1]
+             SituationOperationnelle.carteVitaleAcceptee => [0..1]
+             SituationOperationnelle.telecommunication => [0..1]
+        } 
+
+        class Specialite{
+
+             Specialite => [0..*]
+             Specialite.specialite => [0..1]
+        } 
+
+        class SurspecialiteTransversale{
+
+             SurspecialiteTransversale => [0..*]
+             SurspecialiteTransversale.surspecialiteTransversale => [0..1]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     Telecommunication -[#black,dashed,thickness=2]-> TypeMessagerie
+     Telecommunication -[#black,dashed,thickness=2]-> NiveauConfidentialite
+
+        class NiveauConfidentialite{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+        } 
+        class TypeMessagerie{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+         }
+     }
+     package valueset #PaleVioletRed{
+
+        class NiveauConfidentialite  
+
+     NiveauConfidentialite -[#black,dotted,thickness=2]-> NiveauConfidentialite
+
+        class TypeMessagerie  
+
+     TypeMessagerie -[#black,dotted,thickness=2]-> TypeMessagerie
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Address" as  classdd7bf230fde8d4836917806aff6a6b27 
+
+    classdd7bf230fde8d4836917806aff6a6b27 --> Adresse
+
+ class "ContactPoint" as  class1a8de90955ed09d082aa583fa10a342e 
+
+    class1a8de90955ed09d082aa583fa10a342e --> Telecommunication
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> AttributionParticuliere
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CapaciteSavoirfaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Competence
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CompetenceExclusive
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CompetenceMetier
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> DESCNonQualifiant
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Diplome
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> DroitExerciceComplementaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ExerciceProfessionnel
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> FonctionQualifiee
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> InscriptionOrdre
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> LangueParlee
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> NiveauFormation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> OrientationParticuliere
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PersonnePhysique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Professionnel
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> QualificationPAC
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> SavoirFaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> SituationExercice
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> SituationOperationnelle
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Specialite
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> SurspecialiteTransversale
+}
+@enduml
