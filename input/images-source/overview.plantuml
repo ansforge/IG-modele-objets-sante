@@ -64,9 +64,7 @@ package "Professionnel" {
     ExerciceProfessionnel "1" -- "*" SituationExercice
     ExerciceProfessionnel "1" -- "*" SituationOperationnelle
     ExerciceProfessionnel "1" -- "*" SavoirFaire
-    SavoirFaire -- InscriptionOrdre
-    InscriptionOrdre -- NiveauFormation
-    InscriptionOrdre -- AttributionParticuliere
+    ExerciceProfessionnel "1" -- "*" InscriptionOrdre
 }
 
 ' package "Dispositif d'authentification" {
