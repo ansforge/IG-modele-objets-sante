@@ -1,0 +1,66 @@
+@startuml
+skinparam packageStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam class {
+    BackgroundColor #CCFFFF
+    BorderColor black
+}
+
+package "Structure" {
+    class EntiteJuridique
+    class EntiteGeographique
+    EntiteJuridique "1" -- "1..*" EntiteGeographique
+}
+
+package "Autorisation" {
+    class ActiviteSoinAutorisee
+    class AutreActiviteSoumiseAutorisation
+    class ActiviteSoumiseReconnaissance
+    class ActiviteSociale
+    class ActiviteEnseignement
+    class EquipementMaterielLourd
+    class CapaciteActiviteExercee
+}
+
+package "Accord" {
+    class AutorisationExercice
+    class LicenceExploitation
+    class Convention
+}
+
+package "Dispositif médical" {
+    class DispositifMedical
+    class SupportUD
+}
+
+package "Accompagnant" {
+    class Parent
+    class AidantDemarche
+    class MesureProtection
+}
+
+package "Professionnel" {
+    class Professionnel
+    class ExerciceProfessionnel
+    class SituationExercice
+    class SavoirFaire
+    class SituationOperationnelle
+    class InscriptionOrdre
+    class NiveauFormation
+    class AttributionParticuliere
+
+    Professionnel "1" -- "*" ExerciceProfessionnel
+    ExerciceProfessionnel "1" -- "*" SituationExercice
+    ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+    ExerciceProfessionnel "1" -- "*" SavoirFaire
+    SavoirFaire -- InscriptionOrdre
+    InscriptionOrdre -- NiveauFormation
+    InscriptionOrdre -- AttributionParticuliere
+}
+
+package "Dispositif d'authentification" {
+    class Certificat
+    class CarteProfessionnel
+    Certificat "1..*" -- "0..1" CarteProfessionnel
+}
+@enduml

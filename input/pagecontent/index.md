@@ -49,6 +49,12 @@ Remarque générale sur les diagrammes:
 La cardinalité "*" d'une association ou d'un attribut signifie "0..*".
 La cardinalité "1" d'une association ou d'un attribut signifie "1..1".
 
+<div class="figure" style="width:100%; overflow-x:auto;">
+  <p style="margin: 0; padding: 0;">
+    {% include overview.svg %}
+  </p>
+</div>
+
 ### Périmètre du projet
 
 Définir en quelques lignes en anglais quel est le périmètre du projet
