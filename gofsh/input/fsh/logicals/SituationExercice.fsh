@@ -1,5 +1,6 @@
 Logical: SituationExercice
 Id: SituationExercice
+Title: "SituationExercice"
 * ^status = #draft
 * . ^short = " Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."
 * . ^definition = " Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."
@@ -25,8 +26,8 @@ Id: SituationExercice
 * sousSectionOrdrePharmacien from https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SousSectionTableauCNOP-vs (preferred)
 * typeActiviteLiberale 0..1 Coding " Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc." " Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc."
 * typeActiviteLiberale from https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeActiviteLiberale-vs (preferred)
-* statutPS_SSA 0..1 Coding " Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc." " Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc."
-* statutPS_SSA from https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutProfessionnelSSA-vs (preferred)
+* statutPSSSA 0..1 Coding " Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc." " Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc."
+* statutPSSSA from https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutProfessionnelSSA-vs (preferred)
 * telecommunication 0..* https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication " Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice." " Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice."
 * adresseSE 0..* https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse " Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice." " Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice."
 * boiteLettresMSS 0..* https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS " Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice." " Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice."
