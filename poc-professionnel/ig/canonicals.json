@@ -14,11 +14,11 @@
     "name" : "Adresse"
   },
   {
-    "id" : "AttributionParticuliere",
+    "id" : "BoiteLettreMSS",
     "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/AttributionParticuliere",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS",
     "version" : "0.1.0",
-    "name" : "AttributionParticuliere"
+    "name" : "BoiteLettreMSS"
   },
   {
     "id" : "CapaciteSavoirfaire",
@@ -84,11 +84,11 @@
     "name" : "FonctionQualifiee"
   },
   {
-    "id" : "InscriptionOrdre",
+    "id" : "Horaire",
     "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/InscriptionOrdre",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Horaire",
     "version" : "0.1.0",
-    "name" : "InscriptionOrdre"
+    "name" : "Horaire"
   },
   {
     "id" : "LangueParlee",
@@ -103,13 +103,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/NiveauConfidentialite",
     "version" : "0.1.0",
     "name" : "NiveauConfidentialite"
-  },
-  {
-    "id" : "NiveauFormation",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/NiveauFormation",
-    "version" : "0.1.0",
-    "name" : "NiveauFormation"
   },
   {
     "id" : "OrientationParticuliere",
@@ -138,13 +131,6 @@
     "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/QualificationPAC",
     "version" : "0.1.0",
     "name" : "QualificationPAC"
-  },
-  {
-    "id" : "SavoirFaire",
-    "type" : "StructureDefinition",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire",
-    "version" : "0.1.0",
-    "name" : "SavoirFaire"
   },
   {
     "id" : "SituationExercice",
@@ -295,7 +281,7 @@
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauConfidentialite-vs",
     "version" : "0.1.0",
-    "name" : "NiveauConfidentialite"
+    "name" : "NiveauConfidentialiteVs"
   },
   {
     "id" : "NiveauFormAcquis-vs",
@@ -364,9 +350,21 @@
     "version" : "0.1.0"
   },
   {
+    "id" : "TypeBAL-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeBAL-vs",
+    "version" : "0.1.0"
+  },
+  {
     "id" : "TypeDiplome-vs",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeDiplome-vs",
+    "version" : "0.1.0"
+  },
+  {
+    "id" : "TypeHoraire-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeHoraire-vs",
     "version" : "0.1.0"
   },
   {
@@ -380,7 +378,7 @@
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeMessagerie-vs",
     "version" : "0.1.0",
-    "name" : "TypeMessagerie"
+    "name" : "TypeMessagerieVs"
   },
   {
     "id" : "TypeSavoirFaire-vs",
@@ -392,12 +390,6 @@
     "id" : "capaciteSavoirFaire-vs",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/capaciteSavoirFaire-vs",
-    "version" : "0.1.0"
-  },
-  {
-    "id" : "causeMortalite-vs",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/causeMortalite-vs",
     "version" : "0.1.0"
   },
   {
@@ -476,12 +468,6 @@
     "id" : "sexe-vs",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/sexe-vs",
-    "version" : "0.1.0"
-  },
-  {
-    "id" : "situationFamiliale-vs",
-    "type" : "ValueSet",
-    "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/situationFamiliale-vs",
     "version" : "0.1.0"
   },
   {

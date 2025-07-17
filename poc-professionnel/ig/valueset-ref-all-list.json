@@ -68,7 +68,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-NiveauFormation.html" : "NiveauFormation"
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/AttributionParticuliere-vs",
@@ -82,7 +82,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-AttributionParticuliere.html" : "AttributionParticuliere"
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CNAMAmeliSecteurConventionnement-vs",
@@ -196,8 +196,7 @@
       "uses" : {
       },
       "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel",
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique",
-      "StructureDefinition-InscriptionOrdre.html" : "InscriptionOrdre"
+      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/EnsembleSavoirFaire-CISIS-vs",
@@ -296,13 +295,13 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-NiveauFormation.html" : "NiveauFormation"
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauConfidentialite-vs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "NiveauConfidentialite",
+      "name" : "NiveauConfidentialiteVs",
       "title" : null,
       "description" : null,
       "systems" : [
@@ -324,7 +323,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-NiveauFormation.html" : "NiveauFormation"
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Ordre-vs",
@@ -338,7 +337,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-InscriptionOrdre.html" : "InscriptionOrdre"
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Pays-vs",
@@ -436,7 +435,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-InscriptionOrdre.html" : "InscriptionOrdre"
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutProfessionnelSSA-vs",
@@ -467,6 +466,20 @@
       "StructureDefinition-SituationExercice.html" : "SituationExercice"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeBAL-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : null,
+      "description" : null,
+      "systems" : [
+        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R257-TypeBAL"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-BoiteLettreMSS.html" : "BoiteLettreMSS"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeDiplome-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -479,6 +492,20 @@
       "uses" : {
       },
       "StructureDefinition-Diplome.html" : "Diplome"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeHoraire-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : null,
+      "title" : null,
+      "description" : null,
+      "systems" : [
+        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R252-TypeHoraire"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Horaire.html" : "Horaire"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeIdentifiantPersonne-vs",
@@ -498,7 +525,7 @@
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeMessagerie-vs",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "TypeMessagerie",
+      "name" : "TypeMessagerieVs",
       "title" : null,
       "description" : null,
       "systems" : [
@@ -520,7 +547,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-SavoirFaire.html" : "SavoirFaire"
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/capaciteSavoirFaire-vs",
@@ -536,17 +563,6 @@
       "uses" : {
       },
       "StructureDefinition-CapaciteSavoirfaire.html" : "CapaciteSavoirfaire"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/causeMortalite-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : null,
-      "title" : null,
-      "description" : null,
-      "uses" : {
-      },
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competence-vs",
@@ -744,17 +760,6 @@
         "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R303-HL7v3AdministrativeGender",
         "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R249-Sexe"
       ],
-      "uses" : {
-      },
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/situationFamiliale-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : null,
-      "title" : null,
-      "description" : null,
       "uses" : {
       },
       "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"

@@ -10,7 +10,7 @@
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-07-16T13:52:06+00:00",
+  "date" : "2025-07-17T14:35:50+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -652,23 +652,23 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AttributionParticuliere"
-      },
-      "name" : "AttributionParticuliere",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
         "reference" : "ValueSet/AttributionParticuliere-vs"
       },
       "name" : "AttributionParticuliere-vs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BoiteLettreMSS"
+      },
+      "name" : "BoiteLettreMSS",
       "exampleBoolean" : false
     },
     {
@@ -702,17 +702,6 @@
         "reference" : "ValueSet/CategorieProfessionnelle-vs"
       },
       "name" : "CategorieProfessionnelle-vs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/causeMortalite-vs"
-      },
-      "name" : "causeMortalite-vs",
       "exampleBoolean" : false
     },
     {
@@ -952,9 +941,9 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/InscriptionOrdre"
+        "reference" : "StructureDefinition/Horaire"
       },
-      "name" : "InscriptionOrdre",
+      "name" : "Horaire",
       "exampleBoolean" : false
     },
     {
@@ -1053,7 +1042,7 @@
       "reference" : {
         "reference" : "ValueSet/NiveauConfidentialite-vs"
       },
-      "name" : "NiveauConfidentialite",
+      "name" : "NiveauConfidentialiteVs",
       "exampleBoolean" : false
     },
     {
@@ -1065,17 +1054,6 @@
         "reference" : "ValueSet/NiveauFormAcquis-vs"
       },
       "name" : "NiveauFormAcquis-vs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NiveauFormation"
-      },
-      "name" : "NiveauFormation",
       "exampleBoolean" : false
     },
     {
@@ -1224,17 +1202,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:logical"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/SavoirFaire"
-      },
-      "name" : "SavoirFaire",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1274,17 +1241,6 @@
         "reference" : "StructureDefinition/SituationExercice"
       },
       "name" : "SituationExercice",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/situationFamiliale-vs"
-      },
-      "name" : "situationFamiliale-vs",
       "exampleBoolean" : false
     },
     {
@@ -1426,9 +1382,31 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/TypeBAL-vs"
+      },
+      "name" : "TypeBAL-vs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/TypeDiplome-vs"
       },
       "name" : "TypeDiplome-vs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/TypeHoraire-vs"
+      },
+      "name" : "TypeHoraire-vs",
       "exampleBoolean" : false
     },
     {
@@ -1461,7 +1439,7 @@
       "reference" : {
         "reference" : "ValueSet/TypeMessagerie-vs"
       },
-      "name" : "TypeMessagerie",
+      "name" : "TypeMessagerieVs",
       "exampleBoolean" : false
     },
     {

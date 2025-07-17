@@ -25,12 +25,17 @@ package IG #DDDDDD{
              ContactPoint.use => [None..None]
         } 
 
-        class AttributionParticuliere{
+        class BoiteLettreMSS{
 
-             AttributionParticuliere => [0..*]
-             AttributionParticuliere.attributionParticuliere => [0..1]
-             AttributionParticuliere.dateDebutReconnaissance => [0..1]
-             AttributionParticuliere.dateAbandon => [0..1]
+             BoiteLettreMSS => [0..*]
+             BoiteLettreMSS.adresseMSS => [0..1]
+             BoiteLettreMSS.typeBAL => [0..1]
+             BoiteLettreMSS.description => [0..1]
+             BoiteLettreMSS.responsable => [0..1]
+             BoiteLettreMSS.serviceRattachement => [0..1]
+             BoiteLettreMSS.telephone => [0..1]
+             BoiteLettreMSS.dematerialisation => [0..1]
+             BoiteLettreMSS.listeRouge => [0..1]
         } 
 
         class CapaciteSavoirfaire{
@@ -91,6 +96,26 @@ package IG #DDDDDD{
              ExerciceProfessionnel.dateFinEffetExercice => [0..1]
              ExerciceProfessionnel.departementPremierReferencementAE => [0..1]
              ExerciceProfessionnel.boiteLettresMSS => [0..*]
+             ExerciceProfessionnel.InscriptionOrdre => [None..None]
+             ExerciceProfessionnel.InscriptionOrdre.ordre => [0..1]
+             ExerciceProfessionnel.InscriptionOrdre.dateDebutInscription => [0..1]
+             ExerciceProfessionnel.InscriptionOrdre.dateRadiation => [0..1]
+             ExerciceProfessionnel.InscriptionOrdre.statutInscription => [0..1]
+             ExerciceProfessionnel.InscriptionOrdre.conseilDepartemental => [0..1]
+             ExerciceProfessionnel.SavoirFaire => [None..None]
+             ExerciceProfessionnel.SavoirFaire.typeSavoirFaire => [0..1]
+             ExerciceProfessionnel.SavoirFaire.dateReconnaissance => [0..1]
+             ExerciceProfessionnel.SavoirFaire.dateAbandon => [0..1]
+             ExerciceProfessionnel.AttributionParticuliere => [None..None]
+             ExerciceProfessionnel.AttributionParticuliere.attributionParticuliere => [0..1]
+             ExerciceProfessionnel.AttributionParticuliere.dateDebutReconnaissance => [0..1]
+             ExerciceProfessionnel.AttributionParticuliere.dateAbandon => [0..1]
+             ExerciceProfessionnel.NiveauFormation => [None..None]
+             ExerciceProfessionnel.NiveauFormation.diplome => [0..1]
+             ExerciceProfessionnel.NiveauFormation.natureCycleFormation => [0..1]
+             ExerciceProfessionnel.NiveauFormation.niveauFormationAcquis => [0..1]
+             ExerciceProfessionnel.NiveauFormation.anneeUniversitaire => [0..1]
+             ExerciceProfessionnel.NiveauFormation.dateFin => [0..1]
         } 
 
         class FonctionQualifiee{
@@ -99,14 +124,20 @@ package IG #DDDDDD{
              FonctionQualifiee.fonctionQualifiee => [0..1]
         } 
 
-        class InscriptionOrdre{
+        class Horaire{
 
-             InscriptionOrdre => [0..*]
-             InscriptionOrdre.ordre => [0..1]
-             InscriptionOrdre.dateDebutInscription => [0..1]
-             InscriptionOrdre.dateRadiation => [0..1]
-             InscriptionOrdre.statutInscription => [0..1]
-             InscriptionOrdre.conseilDepartemental => [0..1]
+             Horaire => [0..*]
+             Horaire.idPlageHoraire => [0..1]
+             Horaire.typePlageHoraire => [0..1]
+             Horaire.ouvertureFermeture => [0..1]
+             Horaire.jourSemaine => [0..1]
+             Horaire.heureDebut => [0..1]
+             Horaire.heureFin => [0..1]
+             Horaire.frequencePlageHoraire => [0..1]
+             Horaire.debutDateEffective => [0..1]
+             Horaire.finDateEffective => [0..1]
+             Horaire.dateDeclarationPlageHoraire => [0..1]
+             Horaire.commentaire => [0..*]
         } 
 
         class LangueParlee{
@@ -114,16 +145,6 @@ package IG #DDDDDD{
              LangueParlee => [0..*]
              LangueParlee.langueParlee => [0..1]
              LangueParlee.dateFin => [0..1]
-        } 
-
-        class NiveauFormation{
-
-             NiveauFormation => [0..*]
-             NiveauFormation.diplome => [0..1]
-             NiveauFormation.natureCycleFormation => [0..1]
-             NiveauFormation.niveauFormationAcquis => [0..1]
-             NiveauFormation.anneeUniversitaire => [0..1]
-             NiveauFormation.dateFin => [0..1]
         } 
 
         class OrientationParticuliere{
@@ -169,8 +190,8 @@ package IG #DDDDDD{
 
              Professionnel => [0..*]
              Professionnel.idPP => [0..1]
-             Professionnel.typeIdNat-PP => [0..1]
-             Professionnel.idNat-PS => [0..1]
+             Professionnel.typeIdNatPP => [0..1]
+             Professionnel.idNatPS => [0..1]
              Professionnel.personne => [0..1]
              Professionnel.diplomeObtenu => [0..*]
              Professionnel.adresseCorrespondance => [0..*]
@@ -182,14 +203,6 @@ package IG #DDDDDD{
 
              QualificationPAC => [0..*]
              QualificationPAC.qualificationPAC => [0..1]
-        } 
-
-        class SavoirFaire{
-
-             SavoirFaire => [0..*]
-             SavoirFaire.typeSavoirFaire => [0..1]
-             SavoirFaire.dateReconnaissance => [0..1]
-             SavoirFaire.dateAbandon => [0..1]
         } 
 
         class SituationExercice{
@@ -207,7 +220,7 @@ package IG #DDDDDD{
              SituationExercice.sectionOrdrePharmacien => [0..1]
              SituationExercice.sousSectionOrdrePharmacien => [0..1]
              SituationExercice.typeActiviteLiberale => [0..1]
-             SituationExercice.statutPS-SSA => [0..1]
+             SituationExercice.statutPSSSA => [0..1]
              SituationExercice.telecommunication => [0..*]
              SituationExercice.adresseSE => [0..*]
              SituationExercice.boiteLettresMSS => [0..*]
@@ -259,13 +272,13 @@ package IG #DDDDDD{
      }
      package valueset #PaleVioletRed{
 
-        class NiveauConfidentialite  
+        class NiveauConfidentialiteVs  
 
-     NiveauConfidentialite -[#black,dotted,thickness=2]-> NiveauConfidentialite
+     NiveauConfidentialite -[#black,dotted,thickness=2]-> NiveauConfidentialiteVs
 
-        class TypeMessagerie  
+        class TypeMessagerieVs  
 
-     TypeMessagerie -[#black,dotted,thickness=2]-> TypeMessagerie
+     TypeMessagerie -[#black,dotted,thickness=2]-> TypeMessagerieVs
        }
 
 package "Ressources de base" #palegreen {
@@ -280,7 +293,7 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    class095a1b43effec73955e31e790438de49 --> AttributionParticuliere
+    class095a1b43effec73955e31e790438de49 --> BoiteLettreMSS
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -320,15 +333,11 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    class095a1b43effec73955e31e790438de49 --> InscriptionOrdre
+    class095a1b43effec73955e31e790438de49 --> Horaire
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> LangueParlee
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> NiveauFormation
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -345,10 +354,6 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> QualificationPAC
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> SavoirFaire
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 

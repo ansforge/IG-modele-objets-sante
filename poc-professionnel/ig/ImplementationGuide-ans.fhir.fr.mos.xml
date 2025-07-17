@@ -10,7 +10,7 @@
   <name value="MOS"/>
   <title value="Modèle des Objets de Santé (MOS)"/>
   <status value="draft"/>
-  <date value="2025-07-16T13:52:06+00:00"/>
+  <date value="2025-07-17T14:35:50+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -488,22 +488,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AttributionParticuliere"/>
-      </reference>
-      <name value="AttributionParticuliere"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
         <reference value="ValueSet/AttributionParticuliere-vs"/>
       </reference>
       <name value="AttributionParticuliere-vs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BoiteLettreMSS"/>
+      </reference>
+      <name value="BoiteLettreMSS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -534,16 +534,6 @@
         <reference value="ValueSet/CategorieProfessionnelle-vs"/>
       </reference>
       <name value="CategorieProfessionnelle-vs"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/causeMortalite-vs"/>
-      </reference>
-      <name value="causeMortalite-vs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -761,9 +751,9 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/InscriptionOrdre"/>
+        <reference value="StructureDefinition/Horaire"/>
       </reference>
-      <name value="InscriptionOrdre"/>
+      <name value="Horaire"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -853,7 +843,7 @@
       <reference>
         <reference value="ValueSet/NiveauConfidentialite-vs"/>
       </reference>
-      <name value="NiveauConfidentialite"/>
+      <name value="NiveauConfidentialiteVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -864,16 +854,6 @@
         <reference value="ValueSet/NiveauFormAcquis-vs"/>
       </reference>
       <name value="NiveauFormAcquis-vs"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/NiveauFormation"/>
-      </reference>
-      <name value="NiveauFormation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1008,16 +988,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/SavoirFaire"/>
-      </reference>
-      <name value="SavoirFaire"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1054,16 +1024,6 @@
         <reference value="StructureDefinition/SituationExercice"/>
       </reference>
       <name value="SituationExercice"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/situationFamiliale-vs"/>
-      </reference>
-      <name value="situationFamiliale-vs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1192,9 +1152,29 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/TypeBAL-vs"/>
+      </reference>
+      <name value="TypeBAL-vs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/TypeDiplome-vs"/>
       </reference>
       <name value="TypeDiplome-vs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/TypeHoraire-vs"/>
+      </reference>
+      <name value="TypeHoraire-vs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1224,7 +1204,7 @@
       <reference>
         <reference value="ValueSet/TypeMessagerie-vs"/>
       </reference>
-      <name value="TypeMessagerie"/>
+      <name value="TypeMessagerieVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
