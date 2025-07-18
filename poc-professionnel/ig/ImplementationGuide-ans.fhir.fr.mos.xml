@@ -10,7 +10,7 @@
   <name value="MOS"/>
   <title value="Modèle des Objets de Santé (MOS)"/>
   <status value="draft"/>
-  <date value="2025-07-17T14:35:50+00:00"/>
+  <date value="2025-07-18T06:40:38+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -483,7 +483,7 @@
       <reference>
         <reference value="ValueSet/AnneeUniversitaire-vs"/>
       </reference>
-      <name value="AnneeUniversitaire-vs"/>
+      <name value="AnneeuniversitaireVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -493,7 +493,7 @@
       <reference>
         <reference value="ValueSet/AttributionParticuliere-vs"/>
       </reference>
-      <name value="AttributionParticuliere-vs"/>
+      <name value="AttributionparticuliereVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -523,7 +523,7 @@
       <reference>
         <reference value="ValueSet/capaciteSavoirFaire-vs"/>
       </reference>
-      <name value="capaciteSavoirFaire-vs"/>
+      <name value="CapacitesavoirfaireVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -533,17 +533,7 @@
       <reference>
         <reference value="ValueSet/CategorieProfessionnelle-vs"/>
       </reference>
-      <name value="CategorieProfessionnelle-vs"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/Civilite-vs"/>
-      </reference>
-      <name value="Civilite-vs"/>
+      <name value="CategorieprofessionnelleVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -553,7 +543,17 @@
       <reference>
         <reference value="ValueSet/CiviliteExercice-vs"/>
       </reference>
-      <name value="CiviliteExercice-vs"/>
+      <name value="CiviliteexerciceVs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Civilite-vs"/>
+      </reference>
+      <name value="CiviliteVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -563,7 +563,7 @@
       <reference>
         <reference value="ValueSet/CNAMAmeliSecteurConventionnement-vs"/>
       </reference>
-      <name value="CNAMAmeliSecteurConventionnement-vs"/>
+      <name value="CnamamelisecteurconventionnementVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -573,7 +573,7 @@
       <reference>
         <reference value="ValueSet/CommuneOM-vs"/>
       </reference>
-      <name value="CommuneOM-vs"/>
+      <name value="CommuneomVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -584,16 +584,6 @@
         <reference value="StructureDefinition/Competence"/>
       </reference>
       <name value="Competence"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/competence-vs"/>
-      </reference>
-      <name value="competence-vs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -613,7 +603,7 @@
       <reference>
         <reference value="ValueSet/competenceExclusive-vs"/>
       </reference>
-      <name value="competenceExclusive-vs"/>
+      <name value="CompetenceexclusiveVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -633,7 +623,17 @@
       <reference>
         <reference value="ValueSet/CompetenceSpecifique-vs"/>
       </reference>
-      <name value="CompetenceSpecifique-vs"/>
+      <name value="CompetencespecifiqueVs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/competence-vs"/>
+      </reference>
+      <name value="CompetenceVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -643,7 +643,7 @@
       <reference>
         <reference value="ValueSet/DepartementOM-vs"/>
       </reference>
-      <name value="DepartementOM-vs"/>
+      <name value="DepartementomVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -663,7 +663,7 @@
       <reference>
         <reference value="ValueSet/DESCNonQualifiant-vs"/>
       </reference>
-      <name value="DESCNonQualifiant-vs"/>
+      <name value="DescnonqualifiantVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -693,7 +693,7 @@
       <reference>
         <reference value="ValueSet/droitExerciceComplementaire-vs"/>
       </reference>
-      <name value="droitExerciceComplementaire-vs"/>
+      <name value="DroitexercicecomplementaireVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -703,7 +703,7 @@
       <reference>
         <reference value="ValueSet/EnsembleSavoirFaire-CISIS-vs"/>
       </reference>
-      <name value="EnsembleSavoirFaire-CISIS-vs"/>
+      <name value="EnsemblesavoirfaireCisisVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -733,7 +733,7 @@
       <reference>
         <reference value="ValueSet/fonctionQualifiee-vs"/>
       </reference>
-      <name value="fonctionQualifiee-vs"/>
+      <name value="FonctionqualifieeVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -743,7 +743,7 @@
       <reference>
         <reference value="ValueSet/GenreActivite-vs"/>
       </reference>
-      <name value="GenreActivite-vs"/>
+      <name value="GenreactiviteVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -754,16 +754,6 @@
         <reference value="StructureDefinition/Horaire"/>
       </reference>
       <name value="Horaire"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/Langue-vs"/>
-      </reference>
-      <name value="Langue-vs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -781,9 +771,19 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/Langue-vs"/>
+      </reference>
+      <name value="LangueVs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/LieuFormation-vs"/>
       </reference>
-      <name value="LieuFormation-vs"/>
+      <name value="LieuformationVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -793,7 +793,7 @@
       <reference>
         <reference value="ValueSet/lieuNaissance-vs"/>
       </reference>
-      <name value="lieuNaissance-vs"/>
+      <name value="LieunaissanceVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -803,7 +803,7 @@
       <reference>
         <reference value="ValueSet/ModeExercice-vs"/>
       </reference>
-      <name value="ModeExercice-vs"/>
+      <name value="ModeexerciceVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -813,7 +813,7 @@
       <reference>
         <reference value="ValueSet/MotifFinActivite-vs"/>
       </reference>
-      <name value="MotifFinActivite-vs"/>
+      <name value="MotiffinactiviteVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -823,7 +823,7 @@
       <reference>
         <reference value="ValueSet/NatCycleForm-vs"/>
       </reference>
-      <name value="NatCycleForm-vs"/>
+      <name value="NatcycleformVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -853,7 +853,7 @@
       <reference>
         <reference value="ValueSet/NiveauFormAcquis-vs"/>
       </reference>
-      <name value="NiveauFormAcquis-vs"/>
+      <name value="NiveauformacquisVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -863,7 +863,7 @@
       <reference>
         <reference value="ValueSet/Ordre-vs"/>
       </reference>
-      <name value="Ordre-vs"/>
+      <name value="OrdreVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -883,17 +883,7 @@
       <reference>
         <reference value="ValueSet/orientationParticuliere-vs"/>
       </reference>
-      <name value="orientationParticuliere-vs"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/Pays-vs"/>
-      </reference>
-      <name value="Pays-vs"/>
+      <name value="OrientationparticuliereVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -903,7 +893,7 @@
       <reference>
         <reference value="ValueSet/paysNaissance-vs"/>
       </reference>
-      <name value="paysNaissance-vs"/>
+      <name value="PaysnaissanceVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -913,7 +903,17 @@
       <reference>
         <reference value="ValueSet/paysNationalite-vs"/>
       </reference>
-      <name value="paysNationalite-vs"/>
+      <name value="PaysnationaliteVs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Pays-vs"/>
+      </reference>
+      <name value="PaysVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -931,19 +931,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/profession-vs"/>
-      </reference>
-      <name value="profession-vs"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/professionCategorieSocioProfessionnelle-vs"/>
       </reference>
-      <name value="professionCategorieSocioProfessionnelle-vs"/>
+      <name value="ProfessioncategoriesocioprofessionnelleVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -954,6 +944,16 @@
         <reference value="StructureDefinition/Professionnel"/>
       </reference>
       <name value="Professionnel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/profession-vs"/>
+      </reference>
+      <name value="ProfessionVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -973,7 +973,7 @@
       <reference>
         <reference value="ValueSet/qualificationPAC-vs"/>
       </reference>
-      <name value="qualificationPAC-vs"/>
+      <name value="QualificationpacVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -983,7 +983,7 @@
       <reference>
         <reference value="ValueSet/role-vs"/>
       </reference>
-      <name value="role-vs"/>
+      <name value="RoleVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -993,17 +993,7 @@
       <reference>
         <reference value="ValueSet/SectionTableauCNOP-vs"/>
       </reference>
-      <name value="SectionTableauCNOP-vs"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/sexe-vs"/>
-      </reference>
-      <name value="sexe-vs"/>
+      <name value="SectiontableaucnopVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1013,7 +1003,17 @@
       <reference>
         <reference value="ValueSet/SexeAdministratif-vs"/>
       </reference>
-      <name value="SexeAdministratif-vs"/>
+      <name value="SexeadministratifVs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/sexe-vs"/>
+      </reference>
+      <name value="SexeVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1043,7 +1043,7 @@
       <reference>
         <reference value="ValueSet/SousSectionTableauCNOP-vs"/>
       </reference>
-      <name value="SousSectionTableauCNOP-vs"/>
+      <name value="SoussectiontableaucnopVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1063,7 +1063,7 @@
       <reference>
         <reference value="ValueSet/specialite-vs"/>
       </reference>
-      <name value="specialite-vs"/>
+      <name value="SpecialiteVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1073,7 +1073,7 @@
       <reference>
         <reference value="ValueSet/StatutEtatCivil-vs"/>
       </reference>
-      <name value="StatutEtatCivil-vs"/>
+      <name value="StatutetatcivilVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1083,7 +1083,7 @@
       <reference>
         <reference value="ValueSet/StatutHospitalier-vs"/>
       </reference>
-      <name value="StatutHospitalier-vs"/>
+      <name value="StatuthospitalierVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1093,7 +1093,7 @@
       <reference>
         <reference value="ValueSet/StatutInscription-vs"/>
       </reference>
-      <name value="StatutInscription-vs"/>
+      <name value="StatutinscriptionVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1103,7 +1103,7 @@
       <reference>
         <reference value="ValueSet/StatutProfessionnelSSA-vs"/>
       </reference>
-      <name value="StatutProfessionnelSSA-vs"/>
+      <name value="StatutprofessionnelssaVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1123,7 +1123,7 @@
       <reference>
         <reference value="ValueSet/surspecialiteTransversale-vs"/>
       </reference>
-      <name value="surspecialiteTransversale-vs"/>
+      <name value="SurspecialitetransversaleVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1144,7 +1144,7 @@
       <reference>
         <reference value="ValueSet/TypeActiviteLiberale-vs"/>
       </reference>
-      <name value="TypeActiviteLiberale-vs"/>
+      <name value="TypeactiviteliberaleVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1154,7 +1154,7 @@
       <reference>
         <reference value="ValueSet/TypeBAL-vs"/>
       </reference>
-      <name value="TypeBAL-vs"/>
+      <name value="TypebalVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1164,7 +1164,7 @@
       <reference>
         <reference value="ValueSet/TypeDiplome-vs"/>
       </reference>
-      <name value="TypeDiplome-vs"/>
+      <name value="TypediplomeVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1174,7 +1174,7 @@
       <reference>
         <reference value="ValueSet/TypeHoraire-vs"/>
       </reference>
-      <name value="TypeHoraire-vs"/>
+      <name value="TypehoraireVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1184,7 +1184,7 @@
       <reference>
         <reference value="ValueSet/TypeIdentifiantPersonne-vs"/>
       </reference>
-      <name value="TypeIdentifiantPersonne-vs"/>
+      <name value="TypeidentifiantpersonneVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1214,7 +1214,7 @@
       <reference>
         <reference value="ValueSet/typeProfession-vs"/>
       </reference>
-      <name value="typeProfession-vs"/>
+      <name value="TypeprofessionVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1224,7 +1224,7 @@
       <reference>
         <reference value="ValueSet/typeRole-vs"/>
       </reference>
-      <name value="typeRole-vs"/>
+      <name value="TyperoleVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1234,7 +1234,7 @@
       <reference>
         <reference value="ValueSet/TypeSavoirFaire-vs"/>
       </reference>
-      <name value="TypeSavoirFaire-vs"/>
+      <name value="TypesavoirfaireVs"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

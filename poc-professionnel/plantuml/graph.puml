@@ -16,18 +16,9 @@ package IG #DDDDDD{
              Address.country => [None..None]
         } 
 
-        class Telecommunication{
-
-             ContactPoint.extension:TypeMessagerie => <&plus>[0..1]
-             ContactPoint.extension:NiveauConfidentialite => <&plus>[0..1]
-             ContactPoint.system => [None..None]
-             ContactPoint.value => [None..None]
-             ContactPoint.use => [None..None]
-        } 
-
         class BoiteLettreMSS{
 
-             BoiteLettreMSS => [0..*]
+             BoiteLettreMSS => [None..None]
              BoiteLettreMSS.adresseMSS => [0..1]
              BoiteLettreMSS.typeBAL => [0..1]
              BoiteLettreMSS.description => [0..1]
@@ -40,37 +31,37 @@ package IG #DDDDDD{
 
         class CapaciteSavoirfaire{
 
-             CapaciteSavoirfaire => [0..*]
+             CapaciteSavoirfaire => [None..None]
              CapaciteSavoirfaire.capaciteSavoirFaire => [0..1]
         } 
 
         class Competence{
 
-             Competence => [0..*]
+             Competence => [None..None]
              Competence.competence => [0..1]
         } 
 
         class CompetenceExclusive{
 
-             CompetenceExclusive => [0..*]
+             CompetenceExclusive => [None..None]
              CompetenceExclusive.competenceExclusive => [0..1]
         } 
 
         class CompetenceMetier{
 
-             CompetenceMetier => [0..*]
+             CompetenceMetier => [None..None]
              CompetenceMetier.competenceMetier => [0..1]
         } 
 
         class DESCNonQualifiant{
 
-             DESCNonQualifiant => [0..*]
+             DESCNonQualifiant => [None..None]
              DESCNonQualifiant.DESCNonQualifiant => [0..1]
         } 
 
         class Diplome{
 
-             Diplome => [0..*]
+             Diplome => [None..None]
              Diplome.typeDiplome => [0..1]
              Diplome.lieuFormation => [0..1]
              Diplome.dateDiplome => [0..1]
@@ -79,13 +70,13 @@ package IG #DDDDDD{
 
         class DroitExerciceComplementaire{
 
-             DroitExerciceComplementaire => [0..*]
+             DroitExerciceComplementaire => [None..None]
              DroitExerciceComplementaire.droitExerciceComplementaire => [0..1]
         } 
 
         class ExerciceProfessionnel{
 
-             ExerciceProfessionnel => [0..*]
+             ExerciceProfessionnel => [None..None]
              ExerciceProfessionnel.civiliteExercice => [0..1]
              ExerciceProfessionnel.nomExercice => [0..1]
              ExerciceProfessionnel.prenomExercice => [0..1]
@@ -96,21 +87,21 @@ package IG #DDDDDD{
              ExerciceProfessionnel.dateFinEffetExercice => [0..1]
              ExerciceProfessionnel.departementPremierReferencementAE => [0..1]
              ExerciceProfessionnel.boiteLettresMSS => [0..*]
-             ExerciceProfessionnel.InscriptionOrdre => [None..None]
+             ExerciceProfessionnel.InscriptionOrdre => [0..*]
              ExerciceProfessionnel.InscriptionOrdre.ordre => [0..1]
              ExerciceProfessionnel.InscriptionOrdre.dateDebutInscription => [0..1]
              ExerciceProfessionnel.InscriptionOrdre.dateRadiation => [0..1]
              ExerciceProfessionnel.InscriptionOrdre.statutInscription => [0..1]
              ExerciceProfessionnel.InscriptionOrdre.conseilDepartemental => [0..1]
-             ExerciceProfessionnel.SavoirFaire => [None..None]
+             ExerciceProfessionnel.SavoirFaire => [0..*]
              ExerciceProfessionnel.SavoirFaire.typeSavoirFaire => [0..1]
              ExerciceProfessionnel.SavoirFaire.dateReconnaissance => [0..1]
              ExerciceProfessionnel.SavoirFaire.dateAbandon => [0..1]
-             ExerciceProfessionnel.AttributionParticuliere => [None..None]
+             ExerciceProfessionnel.AttributionParticuliere => [0..*]
              ExerciceProfessionnel.AttributionParticuliere.attributionParticuliere => [0..1]
              ExerciceProfessionnel.AttributionParticuliere.dateDebutReconnaissance => [0..1]
              ExerciceProfessionnel.AttributionParticuliere.dateAbandon => [0..1]
-             ExerciceProfessionnel.NiveauFormation => [None..None]
+             ExerciceProfessionnel.NiveauFormation => [0..*]
              ExerciceProfessionnel.NiveauFormation.diplome => [0..1]
              ExerciceProfessionnel.NiveauFormation.natureCycleFormation => [0..1]
              ExerciceProfessionnel.NiveauFormation.niveauFormationAcquis => [0..1]
@@ -120,13 +111,13 @@ package IG #DDDDDD{
 
         class FonctionQualifiee{
 
-             FonctionQualifiee => [0..*]
+             FonctionQualifiee => [None..None]
              FonctionQualifiee.fonctionQualifiee => [0..1]
         } 
 
         class Horaire{
 
-             Horaire => [0..*]
+             Horaire => [None..None]
              Horaire.idPlageHoraire => [0..1]
              Horaire.typePlageHoraire => [0..1]
              Horaire.ouvertureFermeture => [0..1]
@@ -142,20 +133,20 @@ package IG #DDDDDD{
 
         class LangueParlee{
 
-             LangueParlee => [0..*]
+             LangueParlee => [None..None]
              LangueParlee.langueParlee => [0..1]
              LangueParlee.dateFin => [0..1]
         } 
 
         class OrientationParticuliere{
 
-             OrientationParticuliere => [0..*]
+             OrientationParticuliere => [None..None]
              OrientationParticuliere.orientationParticuliere => [0..1]
         } 
 
         class PersonnePhysique{
 
-             PersonnePhysique => [0..*]
+             PersonnePhysique => [None..None]
              PersonnePhysique.civilite => [0..1]
              PersonnePhysique.nomFamille => [0..1]
              PersonnePhysique.nomUsage => [0..1]
@@ -188,7 +179,7 @@ package IG #DDDDDD{
 
         class Professionnel{
 
-             Professionnel => [0..*]
+             Professionnel => [None..None]
              Professionnel.idPP => [0..1]
              Professionnel.typeIdNatPP => [0..1]
              Professionnel.idNatPS => [0..1]
@@ -201,13 +192,13 @@ package IG #DDDDDD{
 
         class QualificationPAC{
 
-             QualificationPAC => [0..*]
+             QualificationPAC => [None..None]
              QualificationPAC.qualificationPAC => [0..1]
         } 
 
         class SituationExercice{
 
-             SituationExercice => [0..*]
+             SituationExercice => [None..None]
              SituationExercice.role => [0..1]
              SituationExercice.typeRole => [0..1]
              SituationExercice.modeExercice => [0..1]
@@ -228,7 +219,7 @@ package IG #DDDDDD{
 
         class SituationOperationnelle{
 
-             SituationOperationnelle => [0..*]
+             SituationOperationnelle => [None..None]
              SituationOperationnelle.identifiantSituationOperationnelle => [0..1]
              SituationOperationnelle.modeExerciceOffre => [0..1]
              SituationOperationnelle.competenceSpecifique => [0..*]
@@ -241,14 +232,23 @@ package IG #DDDDDD{
 
         class Specialite{
 
-             Specialite => [0..*]
+             Specialite => [None..None]
              Specialite.specialite => [0..1]
         } 
 
         class SurspecialiteTransversale{
 
-             SurspecialiteTransversale => [0..*]
+             SurspecialiteTransversale => [None..None]
              SurspecialiteTransversale.surspecialiteTransversale => [0..1]
+        } 
+
+        class Telecommunication{
+
+             ContactPoint.extension:TypeMessagerie => <&plus>[0..1]
+             ContactPoint.extension:NiveauConfidentialite => <&plus>[0..1]
+             ContactPoint.system => [None..None]
+             ContactPoint.value => [None..None]
+             ContactPoint.use => [None..None]
          }
 
      }
@@ -272,9 +272,225 @@ package IG #DDDDDD{
      }
      package valueset #PaleVioletRed{
 
+        class TypebalVs  
+
+     BoiteLettreMSS -[#black,dotted,thickness=2]-> TypebalVs
+
+        class CapacitesavoirfaireVs  
+
+     CapaciteSavoirfaire -[#black,dotted,thickness=2]-> CapacitesavoirfaireVs
+
+        class CompetenceVs  
+
+     Competence -[#black,dotted,thickness=2]-> CompetenceVs
+
+        class CompetenceexclusiveVs  
+
+     CompetenceExclusive -[#black,dotted,thickness=2]-> CompetenceexclusiveVs
+
+        class EnsemblesavoirfaireCisisVs  
+
+     CompetenceMetier -[#black,dotted,thickness=2]-> EnsemblesavoirfaireCisisVs
+
+        class DescnonqualifiantVs  
+
+     DESCNonQualifiant -[#black,dotted,thickness=2]-> DescnonqualifiantVs
+
+        class TypediplomeVs  
+
+     Diplome -[#black,dotted,thickness=2]-> TypediplomeVs
+
+        class LieuformationVs  
+
+     Diplome -[#black,dotted,thickness=2]-> LieuformationVs
+
+        class DroitexercicecomplementaireVs  
+
+     DroitExerciceComplementaire -[#black,dotted,thickness=2]-> DroitexercicecomplementaireVs
+
+        class CiviliteexerciceVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> CiviliteexerciceVs
+
+        class ProfessionVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> ProfessionVs
+
+        class TypeprofessionVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> TypeprofessionVs
+
+        class CategorieprofessionnelleVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> CategorieprofessionnelleVs
+
+        class DepartementomVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> DepartementomVs
+
+        class OrdreVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> OrdreVs
+
+        class StatutinscriptionVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> StatutinscriptionVs
+
+        class DepartementomVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> DepartementomVs
+
+        class TypesavoirfaireVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> TypesavoirfaireVs
+
+        class AttributionparticuliereVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> AttributionparticuliereVs
+
+        class NatcycleformVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> NatcycleformVs
+
+        class NiveauformacquisVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> NiveauformacquisVs
+
+        class AnneeuniversitaireVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> AnneeuniversitaireVs
+
+        class FonctionqualifieeVs  
+
+     FonctionQualifiee -[#black,dotted,thickness=2]-> FonctionqualifieeVs
+
+        class TypehoraireVs  
+
+     Horaire -[#black,dotted,thickness=2]-> TypehoraireVs
+
+        class LangueVs  
+
+     LangueParlee -[#black,dotted,thickness=2]-> LangueVs
+
         class NiveauConfidentialiteVs  
 
      NiveauConfidentialite -[#black,dotted,thickness=2]-> NiveauConfidentialiteVs
+
+        class OrientationparticuliereVs  
+
+     OrientationParticuliere -[#black,dotted,thickness=2]-> OrientationparticuliereVs
+
+        class CiviliteVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> CiviliteVs
+
+        class SexeadministratifVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> SexeadministratifVs
+
+        class SexeVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> SexeVs
+
+        class CommuneomVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> CommuneomVs
+
+        class DepartementomVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> DepartementomVs
+
+        class PaysnaissanceVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> PaysnaissanceVs
+
+        class LieunaissanceVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> LieunaissanceVs
+
+        class StatutetatcivilVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> StatutetatcivilVs
+
+        class PaysnationaliteVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> PaysnationaliteVs
+
+        class PaysVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> PaysVs
+
+        class ProfessioncategoriesocioprofessionnelleVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> ProfessioncategoriesocioprofessionnelleVs
+
+        class TypeidentifiantpersonneVs  
+
+     Professionnel -[#black,dotted,thickness=2]-> TypeidentifiantpersonneVs
+
+        class QualificationpacVs  
+
+     QualificationPAC -[#black,dotted,thickness=2]-> QualificationpacVs
+
+        class RoleVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> RoleVs
+
+        class TyperoleVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> TyperoleVs
+
+        class ModeexerciceVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> ModeexerciceVs
+
+        class GenreactiviteVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> GenreactiviteVs
+
+        class MotiffinactiviteVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> MotiffinactiviteVs
+
+        class StatuthospitalierVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> StatuthospitalierVs
+
+        class SectiontableaucnopVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> SectiontableaucnopVs
+
+        class SoussectiontableaucnopVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> SoussectiontableaucnopVs
+
+        class TypeactiviteliberaleVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> TypeactiviteliberaleVs
+
+        class StatutprofessionnelssaVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> StatutprofessionnelssaVs
+
+        class ModeexerciceVs  
+
+     SituationOperationnelle -[#black,dotted,thickness=2]-> ModeexerciceVs
+
+        class CompetencespecifiqueVs  
+
+     SituationOperationnelle -[#black,dotted,thickness=2]-> CompetencespecifiqueVs
+
+        class CnamamelisecteurconventionnementVs  
+
+     SituationOperationnelle -[#black,dotted,thickness=2]-> CnamamelisecteurconventionnementVs
+
+        class SpecialiteVs  
+
+     Specialite -[#black,dotted,thickness=2]-> SpecialiteVs
+
+        class SurspecialitetransversaleVs  
+
+     SurspecialiteTransversale -[#black,dotted,thickness=2]-> SurspecialitetransversaleVs
 
         class TypeMessagerieVs  
 
@@ -286,10 +502,6 @@ package "Ressources de base" #palegreen {
  class "Address" as  classdd7bf230fde8d4836917806aff6a6b27 
 
     classdd7bf230fde8d4836917806aff6a6b27 --> Adresse
-
- class "ContactPoint" as  class1a8de90955ed09d082aa583fa10a342e 
-
-    class1a8de90955ed09d082aa583fa10a342e --> Telecommunication
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -370,5 +582,9 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> SurspecialiteTransversale
+
+ class "ContactPoint" as  class1a8de90955ed09d082aa583fa10a342e 
+
+    class1a8de90955ed09d082aa583fa10a342e --> Telecommunication
 }
 @enduml
