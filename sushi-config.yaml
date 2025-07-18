@@ -17,17 +17,28 @@ jurisdiction: urn:iso:std:iso:3166#FR "FRANCE"
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
     shownav: 'true'
 
-
-
+dependencies:
+  ans.fr.terminologies: 1.1.0
+  
 pages:
     index.md:
         title: Accueil
-    specifications_techniques.md:
-        construction_des_flux.md:
-        st_flux1.md:
-            title: Flux 01
-        st_flux2.md:
-            title: Flux 02
+    classes_communes.md:
+        title: Classes communes
+    types_donnees.md:
+        title: Types de données
+    partition.md:
+        title: Partition
+        professionnel.md:
+            title: Professionnel
+        dispo-authent.md:
+            title: Dispositif d'authentification
+        structure.md:
+            title: Structure
+        ppec.md:
+            title: Personne prise en charge
+        ressops.md:
+            title: Ressources opérationnelles
     autres_ressources.md:
         title: Autres Ressources
         securite.md:
@@ -37,10 +48,14 @@ pages:
 
 menu:
     Accueil: index.html
-    Description des flux:
-        Construction des flux: construction_des_flux.html
-        Flux 01: st_flux1.html
-        Flux 02: st_flux2.html
+    Classes communes: classes_communes.html
+    Types de données: types_donnees.html
+    Partition:
+      Professionnel: professionnel.html
+      Dispositif d'authentification: dispo-authent.html
+      Structure: structure.html
+      Personne prise en charge: ppec.html
+      Ressources opérationnelles: ressops.html
     Ressources de conformité: artifacts.html
     Autres ressources:
         Sécurité: securite.html
