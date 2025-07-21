@@ -1,58 +1,58 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <title>Accueil - Modèle des Objets de Santé (MOS) v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-    <!-- Placeholder for child template CSS declarations -->
+      <!-- Placeholder for child template CSS declarations -->
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"1"}
     h3,h4,h5,h6{--heading-prefix:"1"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
-        <!-- Placeholder for child template header declarations -->
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
   </div>
-  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
+    <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+    <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
   </div>
 
   <div id="ig-search">
@@ -66,49 +66,61 @@
 
 
 
-  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+  <img src="assets/images/fra.svg" alt="France flag" title="France" height="16"/>
 
 
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li>
+    <a href="classes_communes.html">Classes communes</a>
+  </li>
+  <li>
+    <a href="types_donnees.html">Types de données</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Description des flux
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Partition
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="construction_des_flux.html">Construction des flux</a>
+        <a href="professionnel.html">Professionnel</a>
       </li>
       <li>
-        <a href="st_flux1.html">Flux 01</a>
+        <a href="dispo-authent.html">Dispositif d'authentification</a>
       </li>
       <li>
-        <a href="st_flux2.html">Flux 02</a>
+        <a href="structure.html">Structure</a>
+      </li>
+      <li>
+        <a href="ppec.html">Personne prise en charge</a>
+      </li>
+      <li>
+        <a href="ressops.html">Ressources opérationnelles</a>
       </li>
     </ul>
   </li>
@@ -127,29 +139,29 @@
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
       </li>
       <li>
-        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
+        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS </a>
       </li>
     </ul>
   </li>
   <li>
-    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
+    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Accueil</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Accueil</b></li>
 
           <span style="float:right;">
 
@@ -157,17 +169,17 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="specifications_techniques.html">next&gt;</a>
+          | <a href="classes_communes.html">next&gt;</a>
 
           </span>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -179,7 +191,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+    <!-- ReleaseHeader --><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Accueil</h2>
   
 
@@ -191,10 +203,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos<button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos" title="Click to copy URL" class="btn-copy"></button></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos|0.1.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
       </td>
     </tr>
 
@@ -233,7 +245,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p><!-- white space is critical inside of capture --></p>
+    <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
@@ -245,37 +257,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
-<b>Brief description of this Implementation Guide</b><br />
+<b>Brief description of this Implementation Guide</b><br/>
 [Add a brief description of this IG in English]
 </p>
 
-<!--  A décommenter lors de la publication -->
+  <!-- A décommenter lors de la publication -->
 
 <div style="width: 65%">
     <blockquote class="stu-note">
-    <p>
-    <b>Attention !</b> Cet Implementation Guide n'est pas en version courante. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/[code - ig]
-    </p>
+    <p>Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/mos</p>
     </blockquote>
 </div>
 
-<!--  A décommenter si CI-SIS
+  <!-- A décommenter si CI-SIS
 <div class="figure">
     <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
-</div>
--->
+</div> -->
 
 <h3 id="introduction">Introduction</h3>
 
-<p>Définir ici de quoi parle l'IG (En termes non expert, compréhensible par un patient). Rajouter également les détails techniques sur le contexte et le besoin de cet IG</p>
+<p>Le MOS est un ensemble de concepts, décrits de manière homogène et neutre vis-à-vis des technologies. Il favorise l’interopérabilité native des applications en offrant une description commune et mutualisée des informations traitées dans les systèmes d’information et les échanges. Le périmètre du MOS, circonscrit au départ au secteur sanitaire, évoluera au fil de ces projets pour prendre en compte les spécificités du secteur médico-social et social.</p>
 
-<p>Les principales sections de l'IG  sont :</p>
+<p>Lors de la définition d'un composant élémentaire du MOS, une étude préalable d'alignement est effectuée, afin d'identifier les équivalences éventuelles avec d'autres initiatives ou standards internationaux tels que Fast Healthcare Interoperability Resources (FHIR) de HL7 v2, HL7 v3 ou encore Semantic Interoperability Community (SEMIC) de la Commission européenne.</p>
+
+<p>Les concepts du MOS sont représentés dans un diagramme de classes UML. Il est décomposé en plusieurs parties fonctionnelles qui regroupent un ensemble de classes. Dans ces classes, certains attributs sont codifiables, ils sont donc associés à une terminologie de référence (TRE) faisant partie des NOS.</p>
+
+<p>La partie composants élémentaires du MOS est partitionnée de la manière suivante (voir la vue globale présentée en figure 1) :</p>
 
 <ul>
-  <li>Le contexte de l'IG, quelle problématique il résout</li>
-  <li>Ce que les Implémenteurs doivent mettre en place</li>
-  <li>Un onglet "Ressources de conformité" pour s'assurer d'un schéma global entre tous les IGs</li>
+  <li>professionnels, au sens des personnes physiques (modèle de données des objets issus du RPPS et d’ADELI);</li>
+  <li>dispositifs d’authentification attribués aux personnes physiques et morales, à ce stade les cartes et les certificats (produits CPx);</li>
+  <li>structures, au sens établissements ou personnes morales du secteur de la santé (modèle de données des objets issus du  fichier national des établissements  sanitaires et sociaux (FINESS));</li>
+  <li>autorisations, description des activités sanitaires, sociales, médico-sociales et d'enseignement et des équipements matériels lourds autorisés;</li>
+  <li>ressources opérationnelles des organisations internes qui portent des activités opérationnelles de toute nature et des équipements opérationnels au sein d'entités géographiques;</li>
+  <li>accords au sens des modalités réglementaires, contractuelles ou de financement (contrat, autorisation d’exercice, agrément, etc.);</li>
+  <li>personnes prises en charge, personnes physiques recevant des soins ou bénéficiaire de services;</li>
+  <li>accompagnant, toutes les entités qui protègent, aident, accompagnent la personne;</li>
+  <li>dossier, ensemble de documents se rapportant à un même sujet;</li>
+  <li>dispositifs médicaux tels que définis par le Règlement (UE) 2017/745 du 5 avril 2017;</li>
+  <li>agenda des personnes physiques ou des structures;</li>
+  <li>objets communs aux domaines, c’est à dire les personnes, les adresses, les coordonnées géographiques, les lieux, les contacts, les télécommunications, etc.;</li>
+  <li>types de données, c'est à dire le domaine de valeurs de l'attribut; par exemple, l'attribut nomUsage (nom d'usage de la personne) est un texte (type de données "Texte"), l'attribut paysNaissance (pays de naissance) est un code (type de données "Code").</li>
 </ul>
+
+<p>Remarque générale sur les diagrammes:</p>
+
+<p>La cardinalité "<em>" d'une association ou d'un attribut signifie "0..</em>".
+La cardinalité "1" d'une association ou d'un attribut signifie "1..1".</p>
+
+<div style="width:100%; overflow-x:auto;" class="figure">
+  <p style="margin: 0; padding: 0;">
+    <svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 760 328" zoomAndPan="magnify" data-diagram-type="CLASS" preserveAspectRatio="none" width="760px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:760px;height:328px;background:#FFFFFF;" version="1.1" height="328px"><defs></defs><g><a name="l511">​</a>  <!-- cluster Professionnel --><g data-entity="Professionnel" id="cluster_Professionnel" data-uid="ent0002" class="cluster" data-source-line="44"><rect rx="2.5" ry="2.5" width="747" x="7" y="7" style="stroke:#000000;stroke-width:1.5;" fill="none" height="315"></rect><text font-weight="bold" lengthAdjust="spacing" x="326.6602" font-size="14" textLength="107.6797" y="21.9951" font-family="sans-serif" fill="#000000">Professionnel</text></g>  <!-- class Professionnel --><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-Professionnel.html" href="StructureDefinition-Professionnel.html" xlink:actuate="onRequest" title="StructureDefinition-Professionnel.html" xlink:href="StructureDefinition-Professionnel.html" target="_top"><g data-entity="Professionnel" id="entity_Professionnel" data-uid="ent0003" class="entity" data-source-line="45"><rect rx="2.5" ry="2.5" width="125.5977" x="431" y="42" style="stroke:#000000;stroke-width:0.5;" fill="#CCFFFF" height="48"></rect><ellipse cx="446" cy="58" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M448.9688,63.6406 Q448.3906,63.9375 447.75,64.0781 Q447.1094,64.2344 446.4063,64.2344 Q443.9063,64.2344 442.5781,62.5938 Q441.2656,60.9375 441.2656,57.8125 Q441.2656,54.6875 442.5781,53.0313 Q443.9063,51.375 446.4063,51.375 Q447.1094,51.375 447.75,51.5313 Q448.4063,51.6875 448.9688,51.9844 L448.9688,54.7031 Q448.3438,54.125 447.75,53.8594 Q447.1563,53.5781 446.5313,53.5781 Q445.1875,53.5781 444.5,54.6563 Q443.8125,55.7188 443.8125,57.8125 Q443.8125,59.9063 444.5,60.9844 Q445.1875,62.0469 446.5313,62.0469 Q447.1563,62.0469 447.75,61.7813 Q448.3438,61.5 448.9688,60.9219 L448.9688,63.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="460" font-size="14" textLength="93.5977" y="62.8467" font-family="sans-serif" fill="#000000">Professionnel</text><line y1="74" x1="432" y2="74" style="stroke:#000000;stroke-width:0.5;" x2="555.5977"></line><line y1="82" x1="432" y2="82" style="stroke:#000000;stroke-width:0.5;" x2="555.5977"></line></g></a>  <!-- class ExerciceProfessionnel --><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ExerciceProfessionnel.html" href="StructureDefinition-ExerciceProfessionnel.html" xlink:actuate="onRequest" title="StructureDefinition-ExerciceProfessionnel.html" xlink:href="StructureDefinition-ExerciceProfessionnel.html" target="_top"><g data-entity="ExerciceProfessionnel" id="entity_ExerciceProfessionnel" data-uid="ent0004" class="entity" data-source-line="46"><rect rx="2.5" ry="2.5" width="184.9951" x="365.5" y="150" style="stroke:#000000;stroke-width:0.5;" fill="#CCFFFF" height="48"></rect><ellipse cx="380.5" cy="166" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M383.4688,171.6406 Q382.8906,171.9375 382.25,172.0781 Q381.6094,172.2344 380.9063,172.2344 Q378.4063,172.2344 377.0781,170.5938 Q375.7656,168.9375 375.7656,165.8125 Q375.7656,162.6875 377.0781,161.0313 Q378.4063,159.375 380.9063,159.375 Q381.6094,159.375 382.25,159.5313 Q382.9063,159.6875 383.4688,159.9844 L383.4688,162.7031 Q382.8438,162.125 382.25,161.8594 Q381.6563,161.5781 381.0313,161.5781 Q379.6875,161.5781 379,162.6563 Q378.3125,163.7188 378.3125,165.8125 Q378.3125,167.9063 379,168.9844 Q379.6875,170.0469 381.0313,170.0469 Q381.6563,170.0469 382.25,169.7813 Q382.8438,169.5 383.4688,168.9219 L383.4688,171.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="394.5" font-size="14" textLength="152.9951" y="170.8467" font-family="sans-serif" fill="#000000">ExerciceProfessionnel</text><line y1="182" x1="366.5" y2="182" style="stroke:#000000;stroke-width:0.5;" x2="549.4951"></line><line y1="190" x1="366.5" y2="190" style="stroke:#000000;stroke-width:0.5;" x2="549.4951"></line></g></a>  <!-- class SituationExercice --><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-SituationExercice.html" href="StructureDefinition-SituationExercice.html" xlink:actuate="onRequest" title="StructureDefinition-SituationExercice.html" xlink:href="StructureDefinition-SituationExercice.html" target="_top"><g data-entity="SituationExercice" id="entity_SituationExercice" data-uid="ent0005" class="entity" data-source-line="47"><rect rx="2.5" ry="2.5" width="153.9326" x="23" y="258" style="stroke:#000000;stroke-width:0.5;" fill="#CCFFFF" height="48"></rect><ellipse cx="38" cy="274" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M40.9688,279.6406 Q40.3906,279.9375 39.75,280.0781 Q39.1094,280.2344 38.4063,280.2344 Q35.9063,280.2344 34.5781,278.5938 Q33.2656,276.9375 33.2656,273.8125 Q33.2656,270.6875 34.5781,269.0313 Q35.9063,267.375 38.4063,267.375 Q39.1094,267.375 39.75,267.5313 Q40.4063,267.6875 40.9688,267.9844 L40.9688,270.7031 Q40.3438,270.125 39.75,269.8594 Q39.1563,269.5781 38.5313,269.5781 Q37.1875,269.5781 36.5,270.6563 Q35.8125,271.7188 35.8125,273.8125 Q35.8125,275.9063 36.5,276.9844 Q37.1875,278.0469 38.5313,278.0469 Q39.1563,278.0469 39.75,277.7813 Q40.3438,277.5 40.9688,276.9219 L40.9688,279.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="52" font-size="14" textLength="121.9326" y="278.8467" font-family="sans-serif" fill="#000000">SituationExercice</text><line y1="290" x1="24" y2="290" style="stroke:#000000;stroke-width:0.5;" x2="175.9326"></line><line y1="298" x1="24" y2="298" style="stroke:#000000;stroke-width:0.5;" x2="175.9326"></line></g></a>  <!-- class SavoirFaire --><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-SavoirFaire.html" href="StructureDefinition-SavoirFaire.html" xlink:actuate="onRequest" title="StructureDefinition-SavoirFaire.html" xlink:href="StructureDefinition-SavoirFaire.html" target="_top"><g data-entity="SavoirFaire" id="entity_SavoirFaire" data-uid="ent0006" class="entity" data-source-line="48"><rect rx="2.5" ry="2.5" width="110.8525" x="212.5" y="258" style="stroke:#000000;stroke-width:0.5;" fill="#CCFFFF" height="48"></rect><ellipse cx="227.5" cy="274" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M230.4688,279.6406 Q229.8906,279.9375 229.25,280.0781 Q228.6094,280.2344 227.9063,280.2344 Q225.4063,280.2344 224.0781,278.5938 Q222.7656,276.9375 222.7656,273.8125 Q222.7656,270.6875 224.0781,269.0313 Q225.4063,267.375 227.9063,267.375 Q228.6094,267.375 229.25,267.5313 Q229.9063,267.6875 230.4688,267.9844 L230.4688,270.7031 Q229.8438,270.125 229.25,269.8594 Q228.6563,269.5781 228.0313,269.5781 Q226.6875,269.5781 226,270.6563 Q225.3125,271.7188 225.3125,273.8125 Q225.3125,275.9063 226,276.9844 Q226.6875,278.0469 228.0313,278.0469 Q228.6563,278.0469 229.25,277.7813 Q229.8438,277.5 230.4688,276.9219 L230.4688,279.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="241.5" font-size="14" textLength="78.8525" y="278.8467" font-family="sans-serif" fill="#000000">SavoirFaire</text><line y1="290" x1="213.5" y2="290" style="stroke:#000000;stroke-width:0.5;" x2="322.3525"></line><line y1="298" x1="213.5" y2="298" style="stroke:#000000;stroke-width:0.5;" x2="322.3525"></line></g></a>  <!-- class SituationOperationnelle --><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-SituationOperationnelle.html" href="StructureDefinition-SituationOperationnelle.html" xlink:actuate="onRequest" title="StructureDefinition-SituationOperationnelle.html" xlink:href="StructureDefinition-SituationOperationnelle.html" target="_top"><g data-entity="SituationOperationnelle" id="entity_SituationOperationnelle" data-uid="ent0007" class="entity" data-source-line="49"><rect rx="2.5" ry="2.5" width="198.0859" x="359" y="258" style="stroke:#000000;stroke-width:0.5;" fill="#CCFFFF" height="48"></rect><ellipse cx="374" cy="274" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M376.9688,279.6406 Q376.3906,279.9375 375.75,280.0781 Q375.1094,280.2344 374.4063,280.2344 Q371.9063,280.2344 370.5781,278.5938 Q369.2656,276.9375 369.2656,273.8125 Q369.2656,270.6875 370.5781,269.0313 Q371.9063,267.375 374.4063,267.375 Q375.1094,267.375 375.75,267.5313 Q376.4063,267.6875 376.9688,267.9844 L376.9688,270.7031 Q376.3438,270.125 375.75,269.8594 Q375.1563,269.5781 374.5313,269.5781 Q373.1875,269.5781 372.5,270.6563 Q371.8125,271.7188 371.8125,273.8125 Q371.8125,275.9063 372.5,276.9844 Q373.1875,278.0469 374.5313,278.0469 Q375.1563,278.0469 375.75,277.7813 Q376.3438,277.5 376.9688,276.9219 L376.9688,279.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="388" font-size="14" textLength="166.0859" y="278.8467" font-family="sans-serif" fill="#000000">SituationOperationnelle</text><line y1="290" x1="360" y2="290" style="stroke:#000000;stroke-width:0.5;" x2="556.0859"></line><line y1="298" x1="360" y2="298" style="stroke:#000000;stroke-width:0.5;" x2="556.0859"></line></g></a>  <!-- class InscriptionOrdre --><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-InscriptionOrdre.html" href="StructureDefinition-InscriptionOrdre.html" xlink:actuate="onRequest" title="StructureDefinition-InscriptionOrdre.html" xlink:href="StructureDefinition-InscriptionOrdre.html" target="_top"><g data-entity="InscriptionOrdre" id="entity_InscriptionOrdre" data-uid="ent0008" class="entity" data-source-line="50"><rect rx="2.5" ry="2.5" width="145.374" x="592.5" y="258" style="stroke:#000000;stroke-width:0.5;" fill="#CCFFFF" height="48"></rect><ellipse cx="607.5" cy="274" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M610.4688,279.6406 Q609.8906,279.9375 609.25,280.0781 Q608.6094,280.2344 607.9063,280.2344 Q605.4063,280.2344 604.0781,278.5938 Q602.7656,276.9375 602.7656,273.8125 Q602.7656,270.6875 604.0781,269.0313 Q605.4063,267.375 607.9063,267.375 Q608.6094,267.375 609.25,267.5313 Q609.9063,267.6875 610.4688,267.9844 L610.4688,270.7031 Q609.8438,270.125 609.25,269.8594 Q608.6563,269.5781 608.0313,269.5781 Q606.6875,269.5781 606,270.6563 Q605.3125,271.7188 605.3125,273.8125 Q605.3125,275.9063 606,276.9844 Q606.6875,278.0469 608.0313,278.0469 Q608.6563,278.0469 609.25,277.7813 Q609.8438,277.5 610.4688,276.9219 L610.4688,279.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="621.5" font-size="14" textLength="113.374" y="278.8467" font-family="sans-serif" fill="#000000">InscriptionOrdre</text><line y1="290" x1="593.5" y2="290" style="stroke:#000000;stroke-width:0.5;" x2="736.874"></line><line y1="298" x1="593.5" y2="298" style="stroke:#000000;stroke-width:0.5;" x2="736.874"></line></g></a>  <!-- class NiveauFormation --><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-NiveauFormation.html" href="StructureDefinition-NiveauFormation.html" xlink:actuate="onRequest" title="StructureDefinition-NiveauFormation.html" xlink:href="StructureDefinition-NiveauFormation.html" target="_top"><g data-entity="NiveauFormation" id="entity_NiveauFormation" data-uid="ent0009" class="entity" data-source-line="51"><rect rx="2.5" ry="2.5" width="152.1211" x="244" y="42" style="stroke:#000000;stroke-width:0.5;" fill="#CCFFFF" height="48"></rect><ellipse cx="259" cy="58" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M261.9688,63.6406 Q261.3906,63.9375 260.75,64.0781 Q260.1094,64.2344 259.4063,64.2344 Q256.9063,64.2344 255.5781,62.5938 Q254.2656,60.9375 254.2656,57.8125 Q254.2656,54.6875 255.5781,53.0313 Q256.9063,51.375 259.4063,51.375 Q260.1094,51.375 260.75,51.5313 Q261.4063,51.6875 261.9688,51.9844 L261.9688,54.7031 Q261.3438,54.125 260.75,53.8594 Q260.1563,53.5781 259.5313,53.5781 Q258.1875,53.5781 257.5,54.6563 Q256.8125,55.7188 256.8125,57.8125 Q256.8125,59.9063 257.5,60.9844 Q258.1875,62.0469 259.5313,62.0469 Q260.1563,62.0469 260.75,61.7813 Q261.3438,61.5 261.9688,60.9219 L261.9688,63.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="273" font-size="14" textLength="120.1211" y="62.8467" font-family="sans-serif" fill="#000000">NiveauFormation</text><line y1="74" x1="245" y2="74" style="stroke:#000000;stroke-width:0.5;" x2="395.1211"></line><line y1="82" x1="245" y2="82" style="stroke:#000000;stroke-width:0.5;" x2="395.1211"></line></g></a>  <!-- class AttributionParticuliere --><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-AttributionParticuliere.html" href="StructureDefinition-AttributionParticuliere.html" xlink:actuate="onRequest" title="StructureDefinition-AttributionParticuliere.html" xlink:href="StructureDefinition-AttributionParticuliere.html" target="_top"><g data-entity="AttributionParticuliere" id="entity_AttributionParticuliere" data-uid="ent0010" class="entity" data-source-line="52"><rect rx="2.5" ry="2.5" width="186.2666" x="23" y="42" style="stroke:#000000;stroke-width:0.5;" fill="#CCFFFF" height="48"></rect><ellipse cx="38" cy="58" rx="11" ry="11" style="stroke:#181818;stroke-width:1;" fill="#ADD1B2"></ellipse><path d="M40.9688,63.6406 Q40.3906,63.9375 39.75,64.0781 Q39.1094,64.2344 38.4063,64.2344 Q35.9063,64.2344 34.5781,62.5938 Q33.2656,60.9375 33.2656,57.8125 Q33.2656,54.6875 34.5781,53.0313 Q35.9063,51.375 38.4063,51.375 Q39.1094,51.375 39.75,51.5313 Q40.4063,51.6875 40.9688,51.9844 L40.9688,54.7031 Q40.3438,54.125 39.75,53.8594 Q39.1563,53.5781 38.5313,53.5781 Q37.1875,53.5781 36.5,54.6563 Q35.8125,55.7188 35.8125,57.8125 Q35.8125,59.9063 36.5,60.9844 Q37.1875,62.0469 38.5313,62.0469 Q39.1563,62.0469 39.75,61.7813 Q40.3438,61.5 40.9688,60.9219 L40.9688,63.6406 Z " fill="#000000"></path><text lengthAdjust="spacing" x="52" font-size="14" textLength="154.2666" y="62.8467" font-family="sans-serif" fill="#000000">AttributionParticuliere</text><line y1="74" x1="24" y2="74" style="stroke:#000000;stroke-width:0.5;" x2="208.2666"></line><line y1="82" x1="24" y2="82" style="stroke:#000000;stroke-width:0.5;" x2="208.2666"></line></g></a>  <!-- link Professionnel to ExerciceProfessionnel --><g data-entity-2="ExerciceProfessionnel" data-entity-1="Professionnel" id="link_Professionnel_ExerciceProfessionnel" data-uid="lnk11" class="link" data-source-line="63"><path codeLine="63" d="M486.19,90 C480.19,107.66 471.94,131.94 465.92,149.68" style="stroke:#181818;stroke-width:1;" id="Professionnel-ExerciceProfessionnel" fill="none"></path><text lengthAdjust="spacing" x="475.25" font-size="13" textLength="8.271" y="110.1558" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="461.1808" font-size="13" textLength="6.5" y="139.007" font-family="sans-serif" fill="#000000">*</text></g>  <!-- link ExerciceProfessionnel to SituationExercice --><g data-entity-2="SituationExercice" data-entity-1="ExerciceProfessionnel" id="link_ExerciceProfessionnel_SituationExercice" data-uid="lnk12" class="link" data-source-line="64"><path codeLine="64" d="M380.32,198 C320.17,215.81 237.26,240.36 177.22,258.14" style="stroke:#181818;stroke-width:1;" id="ExerciceProfessionnel-SituationExercice" fill="none"></path><text lengthAdjust="spacing" x="351.4248" font-size="13" textLength="8.271" y="218.1558" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="184.893" font-size="13" textLength="6.5" y="252.2242" font-family="sans-serif" fill="#000000">*</text></g>  <!-- link ExerciceProfessionnel to SituationOperationnelle --><g data-entity-2="SituationOperationnelle" data-entity-1="ExerciceProfessionnel" id="link_ExerciceProfessionnel_SituationOperationnelle" data-uid="lnk13" class="link" data-source-line="65"><path codeLine="65" d="M458,198 C458,215.66 458,239.94 458,257.68" style="stroke:#181818;stroke-width:1;" id="ExerciceProfessionnel-SituationOperationnelle" fill="none"></path><text lengthAdjust="spacing" x="449.0103" font-size="13" textLength="8.271" y="218.1558" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="451.3192" font-size="13" textLength="6.5" y="247.007" font-family="sans-serif" fill="#000000">*</text></g>  <!-- link ExerciceProfessionnel to SavoirFaire --><g data-entity-2="SavoirFaire" data-entity-1="ExerciceProfessionnel" id="link_ExerciceProfessionnel_SavoirFaire" data-uid="lnk14" class="link" data-source-line="66"><path codeLine="66" d="M416.77,198 C385.01,215.72 341.3,240.11 309.47,257.86" style="stroke:#181818;stroke-width:1;" id="ExerciceProfessionnel-SavoirFaire" fill="none"></path><text lengthAdjust="spacing" x="397.2152" font-size="13" textLength="8.271" y="218.1558" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="313.4109" font-size="13" textLength="6.5" y="246.8362" font-family="sans-serif" fill="#000000">*</text></g>  <!-- link ExerciceProfessionnel to InscriptionOrdre --><g data-entity-2="InscriptionOrdre" data-entity-1="ExerciceProfessionnel" id="link_ExerciceProfessionnel_InscriptionOrdre" data-uid="lnk15" class="link" data-source-line="67"><path codeLine="67" d="M502.92,198 C537.52,215.72 585.15,240.11 619.81,257.86" style="stroke:#181818;stroke-width:1;" id="ExerciceProfessionnel-InscriptionOrdre" fill="none"></path><text lengthAdjust="spacing" x="505.4411" font-size="13" textLength="8.271" y="218.1558" font-family="sans-serif" fill="#000000">1</text><text lengthAdjust="spacing" x="601.4775" font-size="13" textLength="6.5" y="246.8362" font-family="sans-serif" fill="#000000">*</text></g></g></svg>
+  </p>
+</div>
 
 <h3 id="périmètre-du-projet">Périmètre du projet</h3>
 
@@ -306,49 +340,60 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="dépendances">Dépendances</h3>
 
-<div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <span title="Canonical: https://interop.esante.gouv.fr/ig/fhir/mos">Modèle des Objets de Santé (MOS)</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/ans.fhir.fr.mos/0.1.0">ans.fhir.fr.mos#0.1.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img onclick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACfSURBVDhP7ZJBD4IwDIVbrvqft/1kEw8egNKHrRKyjiXG4MEvWVtYebwuYxGhCGZsC9tjlaZAD4PlKnBgZcgPOSildFtJKb0PFgJYOWdNz3rDxfKLbR9Wc4RE9LAypCmguAO3fEXws0GOBNAghehm9YyXyh1Bra+CyJEAGlhHwB/X2mfeczTCiFD70GkK6AiTlSEf34PvXuUe/gLnCxAtVClV++yUSjoAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://terminology.hl7.org/6.5.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/6.5.0">hl7.terminology.r4#6.5.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://hl7.org/fhir/extensions/5.2.0" title="Canonical: http://hl7.org/fhir/extensions">FHIR Extensions Pack</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.extensions.r4/5.2.0">hl7.fhir.uv.extensions.r4#5.2.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> <span title="Canonical: https://interop.esante.gouv.fr/ig/fhir/mos">Modèle des Objets de Santé (MOS)</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/ans.fhir.fr.mos/0.1.0">ans.fhir.fr.mos#0.1.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" onclick="tableRowAction(this)" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://terminology.hl7.org/6.5.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/6.5.0">hl7.terminology.r4#6.5.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://hl7.org/fhir/extensions/5.2.0" title="Canonical: http://hl7.org/fhir/extensions">FHIR Extensions Pack</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.extensions.r4/5.2.0">hl7.fhir.uv.extensions.r4#5.2.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACfSURBVDhP7ZJBD4IwDIVbrvqft/1kEw8egNKHrRKyjiXG4MEvWVtYebwuYxGhCGZsC9tjlaZAD4PlKnBgZcgPOSildFtJKb0PFgJYOWdNz3rDxfKLbR9Wc4RE9LAypCmguAO3fEXws0GOBNAghehm9YyXyh1Bra+CyJEAGlhHwB/X2mfeczTCiFD70GkK6AiTlSEf34PvXuUe/gLnCxAtVClV++yUSjoAAAAASUVORK5CYII=" onclick="tableRowAction(this)" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="https://interop.esante.gouv.fr/terminologies/1.1.0" title="Canonical: https://interop.esante.gouv.fr/terminologies">Terminologies  de Santé</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/ans.fr.terminologies/1.1.0">ans.fr.terminologies#1.1.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aba" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALElEQVR4Xu3IsQ0AIAwEsez6+89AqKGGJj7JzVWS+mm3zgcAAMxwDQAAgFcaYAVAgNGLTjgAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://terminology.hl7.org/6.4.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/6.4.0">hl7.terminology.r4#6.4.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="abb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoQ0AMAwEsez6+8/QBqe4IJJPMrlKUpt0Zz4AAGCHZwAAAPxyAWqFQIAoZQ9kAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACfSURBVDhP7ZJBD4IwDIVbrvqft/1kEw8egNKHrRKyjiXG4MEvWVtYebwuYxGhCGZsC9tjlaZAD4PlKnBgZcgPOSildFtJKb0PFgJYOWdNz3rDxfKLbR9Wc4RE9LAypCmguAO3fEXws0GOBNAghehm9YyXyh1Bra+CyJEAGlhHwB/X2mfeczTCiFD70GkK6AiTlSEf34PvXuUe/gLnCxAtVClV++yUSjoAAAAASUVORK5CYII=" onclick="tableRowAction(this)" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://hl7.org/fhir/uv/ips/STU1.1" title="Canonical: http://hl7.org/fhir/uv/ips">International Patient Summary Implementation Guide</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.ips/1.1.0">hl7.fhir.uv.ips#1.1.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="abba" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoQ0AMAwEsez6+8/QBqe4IJJPMrlKUpt0Zz4AAGCHZwAAAPxyAWqFQIAoZQ9kAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://terminology.hl7.org/5.0.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/5.0.0">hl7.terminology.r4#5.0.0</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="abbb" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIZgEiYEgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAIElEQVQ4y2P8//8/AyWAiYFCMGrAqAGjBowaMGoAAgAALL0DKYQ0DPIAAAAASUVORK5CYII=" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://fhir.org/packages/fhir.dicom" title="Canonical: http://fhir.org/packages/fhir.dicom">fhir.dicom</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/fhir.dicom/2022.4.20221006">fhir.dicom#2022.4.20221006</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 </table></div>
 <table class="grid"><tr><td><p><b>Package hl7.fhir.uv.extensions.r4#5.2.0</b></p>
 <p>This IG defines the global extensions - the ones defined for everyone. These extensions are always in scope wherever FHIR is being used (built Mon, Feb 10, 2025 21:45+1100+11:00)</p>
 </td></tr></table>
-<!--$$3$$-->
+<table class="grid"><tr><td><p><b>Package hl7.fhir.uv.ips#1.1.0</b></p>
+<p>International Patient Summary (IPS) FHIR Implementation Guide (built Tue, Nov 22, 2022 03:24+0000+00:00)</p>
+</td></tr></table>
+<table class="grid"><tr><td><p><b>Package ans.fr.terminologies#1.1.0</b></p>
+<p>Les nomenclatures des objets de Santé sont mises à disposition du secteur santé-social par l’agence du numérique en santé (built Wed, Jul 2, 2025 12:12+0000+00:00)</p>
+</td></tr></table>
+  <!-- $$3$$ -->
 
 <h3 id="propriété-intellectuelle">Propriété intellectuelle</h3>
 
 <p>Certaines ressources sémantiques de ce guide sont protégées par des droits de propriété intellectuelle couverte par les déclarations ci-dessous. L’utilisation de ces ressources est soumise à l’acceptation et au respect des conditions précisées dans la licence d’utilisation de chacune d’entre elle.</p>
 <ul>
-<li>ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<li>ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_1">
 <ul>
-<li><a href="http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>: <a href="StructureDefinition-Adresse.html">Adresse</a>, <a href="StructureDefinition-Attestation.html">Attestation</a><span id="ips_1" onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 56 more</span></span><span id="ips2_1" style="display: none">, <a href="StructureDefinition-AutreDiplomeObtenu.html">AutreDiplomeObtenu</a>, <a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a>, <a href="StructureDefinition-CapaciteDiplome.html">CapaciteDiplome</a>, <a href="StructureDefinition-CapaciteSavoirfaire.html">CapaciteSavoirfaire</a>, <a href="ValueSet-capaciteSavoirFaire-vs.html">CapacitesavoirfaireVs</a>, <a href="StructureDefinition-CertificatEtudeSpeciale.html">CertificatEtudeSpeciale</a>, <a href="StructureDefinition-Competence.html">Competence</a>, <a href="StructureDefinition-CompetenceExclusive.html">CompetenceExclusive</a>, <a href="StructureDefinition-CompetenceMetier.html">CompetenceMetier</a>, <a href="ValueSet-competence-vs.html">CompetenceVs</a>, <a href="ValueSet-competenceExclusive-vs.html">CompetenceexclusiveVs</a>, <a href="ValueSet-competenceMetier-vs.html">CompetencemetierVs</a>, <a href="StructureDefinition-DESC1.html">DESC1</a>, <a href="StructureDefinition-DESC2.html">DESC2</a>, <a href="StructureDefinition-DESCNonQualifiant.html">DESCNonQualifiant</a>, <a href="ValueSet-DESCNonQualifiant-vs.html">DescnonqualifiantVs</a>, <a href="StructureDefinition-Diplome.html">Diplome</a>, <a href="StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.html">DiplomeDeuxiemeCycleNonQualifiant</a>, <a href="StructureDefinition-DiplomeDivers.html">DiplomeDivers</a>, <a href="StructureDefinition-DiplomeEEE.html">DiplomeEEE</a>, <a href="StructureDefinition-DiplomeEES.html">DiplomeEES</a>, <a href="StructureDefinition-DiplomeEtat.html">DiplomeEtat</a>, <a href="StructureDefinition-DiplomeEtudeSpecialisee.html">DiplomeEtudeSpecialisee</a>, <a href="StructureDefinition-DiplomeUniversitaire.html">DiplomeUniversitaire</a>, <a href="StructureDefinition-DroitExerciceComplementaire.html">DroitExerciceComplementaire</a>, <a href="ValueSet-droitExerciceComplementaire-vs.html">DroitexercicecomplementaireVs</a>, <a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>, <a href="StructureDefinition-FonctionQualifiee.html">FonctionQualifiee</a>, <a href="ValueSet-fonctionQualifiee-vs.html">FonctionqualifieeVs</a>, <a href="StructureDefinition-FormationSpecialiseeTransversale.html">FormationSpecialiseeTransversale</a>, <a href="StructureDefinition-Horaire.html">Horaire</a>, <a href="StructureDefinition-LangueParlee.html">LangueParlee</a>, <a href="ValueSet-lieuNaissance-vs.html">LieunaissanceVs</a>, <a href="index.html">MOS</a>, <a href="StructureDefinition-OrientationParticuliere.html">OrientationParticuliere</a>, <a href="ValueSet-orientationParticuliere-vs.html">OrientationparticuliereVs</a>, <a href="ValueSet-paysNaissance-vs.html">PaysnaissanceVs</a>, <a href="ValueSet-paysNationalite-vs.html">PaysnationaliteVs</a>, <a href="StructureDefinition-PersonnePhysique.html">PersonnePhysique</a>, <a href="ValueSet-profession-vs.html">ProfessionVs</a>, <a href="ValueSet-professionCategorieSocioProfessionnelle-vs.html">ProfessioncategoriesocioprofessionnelleVs</a>, <a href="StructureDefinition-Professionnel.html">Professionnel</a>, <a href="StructureDefinition-QualificationPAC.html">QualificationPAC</a>, <a href="ValueSet-qualificationPAC-vs.html">QualificationpacVs</a>, <a href="ValueSet-role-vs.html">RoleVs</a>, <a href="StructureDefinition-SavoirFaire.html">SavoirFaire</a>, <a href="ValueSet-sexe-vs.html">SexeVs</a>, <a href="StructureDefinition-SituationExercice.html">SituationExercice</a>, <a href="StructureDefinition-SituationOperationnelle.html">SituationOperationnelle</a>, <a href="StructureDefinition-Specialite.html">Specialite</a>, <a href="ValueSet-specialite-vs.html">SpecialiteVs</a>, <a href="StructureDefinition-SurspecialiteTransversale.html">SurspecialiteTransversale</a>, <a href="ValueSet-surspecialiteTransversale-vs.html">SurspecialitetransversaleVs</a>, <a href="StructureDefinition-Telecommunication.html">Telecommunication</a>, <a href="ValueSet-typeProfession-vs.html">TypeprofessionVs</a> and <a href="ValueSet-typeRole-vs.html">TyperoleVs</a></span></li>
+<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>: <a href="StructureDefinition-Adresse.html">Adresse</a>, <a href="StructureDefinition-Attestation.html">Attestation</a><span onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML" id="ips_1">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 56 more</span></span><span style="display: none" id="ips2_1">, <a href="StructureDefinition-AutreDiplomeObtenu.html">AutreDiplomeObtenu</a>, <a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a>, <a href="StructureDefinition-CapaciteDiplome.html">CapaciteDiplome</a>, <a href="StructureDefinition-CapaciteSavoirfaire.html">CapaciteSavoirfaire</a>, <a href="ValueSet-capaciteSavoirFaire-vs.html">CapacitesavoirfaireVs</a>, <a href="StructureDefinition-CertificatEtudeSpeciale.html">CertificatEtudeSpeciale</a>, <a href="StructureDefinition-Competence.html">Competence</a>, <a href="StructureDefinition-CompetenceExclusive.html">CompetenceExclusive</a>, <a href="StructureDefinition-CompetenceMetier.html">CompetenceMetier</a>, <a href="ValueSet-competence-vs.html">CompetenceVs</a>, <a href="ValueSet-competenceExclusive-vs.html">CompetenceexclusiveVs</a>, <a href="ValueSet-competenceMetier-vs.html">CompetencemetierVs</a>, <a href="StructureDefinition-DESC1.html">DESC1</a>, <a href="StructureDefinition-DESC2.html">DESC2</a>, <a href="StructureDefinition-DESCNonQualifiant.html">DESCNonQualifiant</a>, <a href="ValueSet-DESCNonQualifiant-vs.html">DescnonqualifiantVs</a>, <a href="StructureDefinition-Diplome.html">Diplome</a>, <a href="StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.html">DiplomeDeuxiemeCycleNonQualifiant</a>, <a href="StructureDefinition-DiplomeDivers.html">DiplomeDivers</a>, <a href="StructureDefinition-DiplomeEEE.html">DiplomeEEE</a>, <a href="StructureDefinition-DiplomeEES.html">DiplomeEES</a>, <a href="StructureDefinition-DiplomeEtat.html">DiplomeEtat</a>, <a href="StructureDefinition-DiplomeEtudeSpecialisee.html">DiplomeEtudeSpecialisee</a>, <a href="StructureDefinition-DiplomeUniversitaire.html">DiplomeUniversitaire</a>, <a href="StructureDefinition-DroitExerciceComplementaire.html">DroitExerciceComplementaire</a>, <a href="ValueSet-droitExerciceComplementaire-vs.html">DroitexercicecomplementaireVs</a>, <a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>, <a href="StructureDefinition-FonctionQualifiee.html">FonctionQualifiee</a>, <a href="ValueSet-fonctionQualifiee-vs.html">FonctionqualifieeVs</a>, <a href="StructureDefinition-FormationSpecialiseeTransversale.html">FormationSpecialiseeTransversale</a>, <a href="StructureDefinition-Horaire.html">Horaire</a>, <a href="StructureDefinition-LangueParlee.html">LangueParlee</a>, <a href="ValueSet-lieuNaissance-vs.html">LieunaissanceVs</a>, <a href="index.html">MOS</a>, <a href="StructureDefinition-OrientationParticuliere.html">OrientationParticuliere</a>, <a href="ValueSet-orientationParticuliere-vs.html">OrientationparticuliereVs</a>, <a href="ValueSet-paysNaissance-vs.html">PaysnaissanceVs</a>, <a href="ValueSet-paysNationalite-vs.html">PaysnationaliteVs</a>, <a href="StructureDefinition-PersonnePhysique.html">PersonnePhysique</a>, <a href="ValueSet-profession-vs.html">ProfessionVs</a>, <a href="ValueSet-professionCategorieSocioProfessionnelle-vs.html">ProfessioncategoriesocioprofessionnelleVs</a>, <a href="StructureDefinition-Professionnel.html">Professionnel</a>, <a href="StructureDefinition-QualificationPAC.html">QualificationPAC</a>, <a href="ValueSet-qualificationPAC-vs.html">QualificationpacVs</a>, <a href="ValueSet-role-vs.html">RoleVs</a>, <a href="StructureDefinition-SavoirFaire.html">SavoirFaire</a>, <a href="ValueSet-sexe-vs.html">SexeVs</a>, <a href="StructureDefinition-SituationExercice.html">SituationExercice</a>, <a href="StructureDefinition-SituationOperationnelle.html">SituationOperationnelle</a>, <a href="StructureDefinition-Specialite.html">Specialite</a>, <a href="ValueSet-specialite-vs.html">SpecialiteVs</a>, <a href="StructureDefinition-SurspecialiteTransversale.html">SurspecialiteTransversale</a>, <a href="ValueSet-surspecialiteTransversale-vs.html">SurspecialitetransversaleVs</a>, <a href="StructureDefinition-Telecommunication.html">Telecommunication</a>, <a href="ValueSet-typeProfession-vs.html">TypeprofessionVs</a> and <a href="ValueSet-typeRole-vs.html">TyperoleVs</a></span></li>
 </ul>
 </div></li>
 </ul>
-<!--$$1$$-->
+  <!-- $$1$$ -->
 
 
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<script src="assets/js/window-hash.js" type="text/javascript"> </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div style="background-color:var(--footer-nav-bg-color)">
         <table style="width:100%">
           <tbody>
             <tr>
-              <td style="text-align:left">&#xA0;
+              <td style="text-align:left">&nbsp;
 
                 <a href="toc.html">&lt;prev</a>
 
@@ -356,9 +401,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               <td style="text-align:center">
                 <a href="#top">top</a>
               </td>
-              <td style="text-align:right">&#xA0;
+              <td style="text-align:right">&nbsp;
 
-                <a href="specifications_techniques.html">next&gt;</a>
+                <a href="classes_communes.html">next&gt;</a>
 
               </td>
             </tr>
@@ -368,51 +413,51 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 21, 2025 11:53+0000">2025-07-21</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 21, 2025 14:09+0000">2025-07-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
- | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html" target="_blank">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new" target="_blank">New Issue</a>
 
-          </span>
+          
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
   
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
 
-  <!-- Ajout ANS -->
+    <!-- Ajout ANS -->
   <script src="assets/js/app.js" type="text/javascript"> </script>
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
-  <!-- Fin ajout ANS -->
+    <!-- Fin ajout ANS -->
 
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
   
 
-  <!-- Analytics Below
+    <!-- Analytics Below
   ================================================== -->
 
 
-  <!-- AJOUT ANS -->
+    <!-- AJOUT ANS -->
 
-<footer class="footer footer-principal" role="contentinfo">
+<footer role="contentinfo" class="footer footer-principal">
   <div class="footer__region1">
     <div class="container">
       <div class="row">
@@ -420,17 +465,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <div class="col-md-6 col-lg-4 text-center text-md-left">
           <div class="logos">        
             <div class="logo logo--0">
-              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
                 
-                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
                 
               </a>
             </div>
         
             <div class="logo logo--1">
-              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
                 
-                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
               </a>
             </div>
           </div>
@@ -440,7 +485,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <p class="footer__title">Agence du Numérique en Santé</p>
           <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
 
-          <!-- <div class="m-social">
+            <!-- <div class="m-social">
             <ul class="m-social__list">        
               <li class="m-social__item">
                 <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
@@ -482,12 +527,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <ul class="footer-list">
             <li class="footer-list__item footer-list__item--hasIcon">
               <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
               </li>
-              <!-- <li class="footer-list__item">
+                <!-- <li class="footer-list__item">
                 <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-              </li>
-               -->
+              </li> -->
             </ul>
           </div>
 
@@ -495,7 +539,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </div>
     </div>
     
-    <!-- <div class="footer__region2">
+      <!-- <div class="footer__region2">
       <div class="container">
         <div class="footer-contentinfo">
           <ul class="footer-list footer-list--inline">
@@ -507,4 +551,3 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </footer>
   </body>
 </html>
-
