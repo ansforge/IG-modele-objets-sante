@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "DESCNonQualifiant-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs DESCNonQualifiant-vs</b></p><a name=\"DESCNonQualifiant-vs\"> </a><a name=\"hcDESCNonQualifiant-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R42-DESCnonQualifiant</code></li><li>Inclut tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</code></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs DESCNonQualifiant-vs</b></p><a name=\"DESCNonQualifiant-vs\"> </a><a name=\"hcDESCNonQualifiant-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</code></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/DESCNonQualifiant-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "DescnonqualifiantVs"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-18T06:40:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-21T11:52:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -35,9 +35,9 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R42-DESCnonQualifiant"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant"^^xsd:anyURI ]
      ] [
-       fhir:system [ fhir:v "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"^^xsd:anyURI ]
      ] )
   ] . # 
 

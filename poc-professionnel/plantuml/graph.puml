@@ -9,11 +9,42 @@ package IG #DDDDDD{
 
         class Adresse{
 
-             Address.use => [None..None]
-             Address.city => [None..None]
-             Address.state => [None..None]
-             Address.postalCode => [None..None]
-             Address.country => [None..None]
+             Adresse => [None..None]
+             Adresse.identificationDestinataire => [0..1]
+             Adresse.identificationDomicilie => [0..1]
+             Adresse.pointRemise => [0..1]
+             Adresse.complementPointGeographique => [0..1]
+             Adresse.numeroVoie => [0..1]
+             Adresse.extension => [0..1]
+             Adresse.typeVoie => [0..1]
+             Adresse.libelleVoie => [0..1]
+             Adresse.lieuDit => [0..1]
+             Adresse.mentionDistribution => [0..1]
+             Adresse.codePostal => [0..1]
+             Adresse.localite => [0..1]
+             Adresse.COGCommune => [0..1]
+             Adresse.internationalDivisionTerritoriale => [0..1]
+             Adresse.internationalPays => [0..1]
+             Adresse.type => [0..*]
+             Adresse.ligneUne => [0..1]
+             Adresse.ligneDeux => [0..1]
+             Adresse.ligneTrois => [0..1]
+             Adresse.ligneQuatre => [0..1]
+             Adresse.ligneCinq => [0..1]
+             Adresse.ligneSix => [0..1]
+             Adresse.ligneSept => [0..1]
+        } 
+
+        class Attestation{
+
+             Attestation => [None..None]
+             Attestation.attestation => [0..1]
+        } 
+
+        class AutreDiplomeObtenu{
+
+             AutreDiplomeObtenu => [None..None]
+             AutreDiplomeObtenu.autreDiplomeObtenu => [0..1]
         } 
 
         class BoiteLettreMSS{
@@ -29,10 +60,22 @@ package IG #DDDDDD{
              BoiteLettreMSS.listeRouge => [0..1]
         } 
 
+        class CapaciteDiplome{
+
+             CapaciteDiplome => [None..None]
+             CapaciteDiplome.capaciteDiplome => [0..1]
+        } 
+
         class CapaciteSavoirfaire{
 
              CapaciteSavoirfaire => [None..None]
              CapaciteSavoirfaire.capaciteSavoirFaire => [0..1]
+        } 
+
+        class CertificatEtudeSpeciale{
+
+             CertificatEtudeSpeciale => [None..None]
+             CertificatEtudeSpeciale.certificatEtudeSpeciale => [0..1]
         } 
 
         class Competence{
@@ -53,6 +96,18 @@ package IG #DDDDDD{
              CompetenceMetier.competenceMetier => [0..1]
         } 
 
+        class DESC1{
+
+             DESC1 => [None..None]
+             DESC1.DESC1 => [0..1]
+        } 
+
+        class DESC2{
+
+             DESC2 => [None..None]
+             DESC2.DESC2 => [0..1]
+        } 
+
         class DESCNonQualifiant{
 
              DESCNonQualifiant => [None..None]
@@ -66,6 +121,48 @@ package IG #DDDDDD{
              Diplome.lieuFormation => [0..1]
              Diplome.dateDiplome => [0..1]
              Diplome.numeroDiplome => [0..1]
+        } 
+
+        class DiplomeDeuxiemeCycleNonQualifiant{
+
+             DiplomeDeuxiemeCycleNonQualifiant => [None..None]
+             DiplomeDeuxiemeCycleNonQualifiant.diplomeDeuxiemeCycleNonQualifiant => [0..1]
+        } 
+
+        class DiplomeDivers{
+
+             DiplomeDivers => [None..None]
+             DiplomeDivers.diplomeDivers => [0..1]
+        } 
+
+        class DiplomeEEE{
+
+             DiplomeEEE => [None..None]
+             DiplomeEEE.diplomeEEE => [0..1]
+        } 
+
+        class DiplomeEES{
+
+             DiplomeEES => [None..None]
+             DiplomeEES.diplomeEES => [0..1]
+        } 
+
+        class DiplomeEtat{
+
+             DiplomeEtat => [None..None]
+             DiplomeEtat.diplomeEtat => [0..1]
+        } 
+
+        class DiplomeEtudeSpecialisee{
+
+             DiplomeEtudeSpecialisee => [None..None]
+             DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee => [0..1]
+        } 
+
+        class DiplomeUniversitaire{
+
+             DiplomeUniversitaire => [None..None]
+             DiplomeUniversitaire.diplomeUniversitaire => [0..1]
         } 
 
         class DroitExerciceComplementaire{
@@ -93,11 +190,7 @@ package IG #DDDDDD{
              ExerciceProfessionnel.InscriptionOrdre.dateRadiation => [0..1]
              ExerciceProfessionnel.InscriptionOrdre.statutInscription => [0..1]
              ExerciceProfessionnel.InscriptionOrdre.conseilDepartemental => [0..1]
-             ExerciceProfessionnel.SavoirFaire => [0..*]
-             ExerciceProfessionnel.SavoirFaire.typeSavoirFaire => [0..1]
-             ExerciceProfessionnel.SavoirFaire.dateReconnaissance => [0..1]
-             ExerciceProfessionnel.SavoirFaire.dateAbandon => [0..1]
-             ExerciceProfessionnel.AttributionParticuliere => [0..*]
+             ExerciceProfessionnel.AttributionParticuliere => [0..1]
              ExerciceProfessionnel.AttributionParticuliere.attributionParticuliere => [0..1]
              ExerciceProfessionnel.AttributionParticuliere.dateDebutReconnaissance => [0..1]
              ExerciceProfessionnel.AttributionParticuliere.dateAbandon => [0..1]
@@ -113,6 +206,12 @@ package IG #DDDDDD{
 
              FonctionQualifiee => [None..None]
              FonctionQualifiee.fonctionQualifiee => [0..1]
+        } 
+
+        class FormationSpecialiseeTransversale{
+
+             FormationSpecialiseeTransversale => [None..None]
+             FormationSpecialiseeTransversale.formationSpecialiseeTransversale => [0..1]
         } 
 
         class Horaire{
@@ -196,6 +295,14 @@ package IG #DDDDDD{
              QualificationPAC.qualificationPAC => [0..1]
         } 
 
+        class SavoirFaire{
+
+             SavoirFaire => [None..None]
+             SavoirFaire.typeSavoirFaire => [0..1]
+             SavoirFaire.dateReconnaissance => [0..1]
+             SavoirFaire.dateAbandon => [0..1]
+        } 
+
         class SituationExercice{
 
              SituationExercice => [None..None]
@@ -244,37 +351,21 @@ package IG #DDDDDD{
 
         class Telecommunication{
 
-             ContactPoint.extension:TypeMessagerie => <&plus>[0..1]
-             ContactPoint.extension:NiveauConfidentialite => <&plus>[0..1]
-             ContactPoint.system => [None..None]
-             ContactPoint.value => [None..None]
-             ContactPoint.use => [None..None]
+             Telecommunication => [None..None]
+             Telecommunication.canal => [0..1]
+             Telecommunication.adresseTelecom => [0..1]
+             Telecommunication.typeMessagerie => [0..1]
+             Telecommunication.utilisation => [0..1]
+             Telecommunication.niveauConfidentialite => [0..1]
          }
 
      }
      package extension #paleturquoise {
 
-     Telecommunication -[#black,dashed,thickness=2]-> TypeMessagerie
-     Telecommunication -[#black,dashed,thickness=2]-> NiveauConfidentialite
 
-        class NiveauConfidentialite{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..None]
-        } 
-        class TypeMessagerie{
-
-          Extension.extension => [None..0]
-          Extension.url => [None..None]
-          Extension.value[x] => [None..None]
          }
      }
      package valueset #PaleVioletRed{
-
-        class TypebalVs  
-
-     BoiteLettreMSS -[#black,dotted,thickness=2]-> TypebalVs
 
         class CapacitesavoirfaireVs  
 
@@ -288,29 +379,17 @@ package IG #DDDDDD{
 
      CompetenceExclusive -[#black,dotted,thickness=2]-> CompetenceexclusiveVs
 
-        class EnsemblesavoirfaireCisisVs  
+        class CompetencemetierVs  
 
-     CompetenceMetier -[#black,dotted,thickness=2]-> EnsemblesavoirfaireCisisVs
+     CompetenceMetier -[#black,dotted,thickness=2]-> CompetencemetierVs
 
         class DescnonqualifiantVs  
 
      DESCNonQualifiant -[#black,dotted,thickness=2]-> DescnonqualifiantVs
 
-        class TypediplomeVs  
-
-     Diplome -[#black,dotted,thickness=2]-> TypediplomeVs
-
-        class LieuformationVs  
-
-     Diplome -[#black,dotted,thickness=2]-> LieuformationVs
-
         class DroitexercicecomplementaireVs  
 
      DroitExerciceComplementaire -[#black,dotted,thickness=2]-> DroitexercicecomplementaireVs
-
-        class CiviliteexerciceVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> CiviliteexerciceVs
 
         class ProfessionVs  
 
@@ -320,85 +399,17 @@ package IG #DDDDDD{
 
      ExerciceProfessionnel -[#black,dotted,thickness=2]-> TypeprofessionVs
 
-        class CategorieprofessionnelleVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> CategorieprofessionnelleVs
-
-        class DepartementomVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> DepartementomVs
-
-        class OrdreVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> OrdreVs
-
-        class StatutinscriptionVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> StatutinscriptionVs
-
-        class DepartementomVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> DepartementomVs
-
-        class TypesavoirfaireVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> TypesavoirfaireVs
-
-        class AttributionparticuliereVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> AttributionparticuliereVs
-
-        class NatcycleformVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> NatcycleformVs
-
-        class NiveauformacquisVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> NiveauformacquisVs
-
-        class AnneeuniversitaireVs  
-
-     ExerciceProfessionnel -[#black,dotted,thickness=2]-> AnneeuniversitaireVs
-
         class FonctionqualifieeVs  
 
      FonctionQualifiee -[#black,dotted,thickness=2]-> FonctionqualifieeVs
-
-        class TypehoraireVs  
-
-     Horaire -[#black,dotted,thickness=2]-> TypehoraireVs
-
-        class LangueVs  
-
-     LangueParlee -[#black,dotted,thickness=2]-> LangueVs
-
-        class NiveauConfidentialiteVs  
-
-     NiveauConfidentialite -[#black,dotted,thickness=2]-> NiveauConfidentialiteVs
 
         class OrientationparticuliereVs  
 
      OrientationParticuliere -[#black,dotted,thickness=2]-> OrientationparticuliereVs
 
-        class CiviliteVs  
-
-     PersonnePhysique -[#black,dotted,thickness=2]-> CiviliteVs
-
-        class SexeadministratifVs  
-
-     PersonnePhysique -[#black,dotted,thickness=2]-> SexeadministratifVs
-
         class SexeVs  
 
      PersonnePhysique -[#black,dotted,thickness=2]-> SexeVs
-
-        class CommuneomVs  
-
-     PersonnePhysique -[#black,dotted,thickness=2]-> CommuneomVs
-
-        class DepartementomVs  
-
-     PersonnePhysique -[#black,dotted,thickness=2]-> DepartementomVs
 
         class PaysnaissanceVs  
 
@@ -408,25 +419,13 @@ package IG #DDDDDD{
 
      PersonnePhysique -[#black,dotted,thickness=2]-> LieunaissanceVs
 
-        class StatutetatcivilVs  
-
-     PersonnePhysique -[#black,dotted,thickness=2]-> StatutetatcivilVs
-
         class PaysnationaliteVs  
 
      PersonnePhysique -[#black,dotted,thickness=2]-> PaysnationaliteVs
 
-        class PaysVs  
-
-     PersonnePhysique -[#black,dotted,thickness=2]-> PaysVs
-
         class ProfessioncategoriesocioprofessionnelleVs  
 
      PersonnePhysique -[#black,dotted,thickness=2]-> ProfessioncategoriesocioprofessionnelleVs
-
-        class TypeidentifiantpersonneVs  
-
-     Professionnel -[#black,dotted,thickness=2]-> TypeidentifiantpersonneVs
 
         class QualificationpacVs  
 
@@ -440,50 +439,6 @@ package IG #DDDDDD{
 
      SituationExercice -[#black,dotted,thickness=2]-> TyperoleVs
 
-        class ModeexerciceVs  
-
-     SituationExercice -[#black,dotted,thickness=2]-> ModeexerciceVs
-
-        class GenreactiviteVs  
-
-     SituationExercice -[#black,dotted,thickness=2]-> GenreactiviteVs
-
-        class MotiffinactiviteVs  
-
-     SituationExercice -[#black,dotted,thickness=2]-> MotiffinactiviteVs
-
-        class StatuthospitalierVs  
-
-     SituationExercice -[#black,dotted,thickness=2]-> StatuthospitalierVs
-
-        class SectiontableaucnopVs  
-
-     SituationExercice -[#black,dotted,thickness=2]-> SectiontableaucnopVs
-
-        class SoussectiontableaucnopVs  
-
-     SituationExercice -[#black,dotted,thickness=2]-> SoussectiontableaucnopVs
-
-        class TypeactiviteliberaleVs  
-
-     SituationExercice -[#black,dotted,thickness=2]-> TypeactiviteliberaleVs
-
-        class StatutprofessionnelssaVs  
-
-     SituationExercice -[#black,dotted,thickness=2]-> StatutprofessionnelssaVs
-
-        class ModeexerciceVs  
-
-     SituationOperationnelle -[#black,dotted,thickness=2]-> ModeexerciceVs
-
-        class CompetencespecifiqueVs  
-
-     SituationOperationnelle -[#black,dotted,thickness=2]-> CompetencespecifiqueVs
-
-        class CnamamelisecteurconventionnementVs  
-
-     SituationOperationnelle -[#black,dotted,thickness=2]-> CnamamelisecteurconventionnementVs
-
         class SpecialiteVs  
 
      Specialite -[#black,dotted,thickness=2]-> SpecialiteVs
@@ -491,57 +446,109 @@ package IG #DDDDDD{
         class SurspecialitetransversaleVs  
 
      SurspecialiteTransversale -[#black,dotted,thickness=2]-> SurspecialitetransversaleVs
-
-        class TypeMessagerieVs  
-
-     TypeMessagerie -[#black,dotted,thickness=2]-> TypeMessagerieVs
        }
 
 package "Ressources de base" #palegreen {
 
- class "Address" as  classdd7bf230fde8d4836917806aff6a6b27 
+ class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    classdd7bf230fde8d4836917806aff6a6b27 --> Adresse
+    class095a1b43effec73955e31e790438de49 --> Adresse
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> Attestation
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> AutreDiplomeObtenu
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> BoiteLettreMSS
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
 
-    class095a1b43effec73955e31e790438de49 --> CapaciteSavoirfaire
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> CapaciteDiplome
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
 
-    class095a1b43effec73955e31e790438de49 --> Competence
+    classe16a5958d13b85e9085a31a3ed922d40 --> CapaciteSavoirfaire
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
 
-    class095a1b43effec73955e31e790438de49 --> CompetenceExclusive
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> CertificatEtudeSpeciale
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
 
-    class095a1b43effec73955e31e790438de49 --> CompetenceMetier
+    classe16a5958d13b85e9085a31a3ed922d40 --> Competence
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
 
-    class095a1b43effec73955e31e790438de49 --> DESCNonQualifiant
+    classe16a5958d13b85e9085a31a3ed922d40 --> CompetenceExclusive
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
+
+    classe16a5958d13b85e9085a31a3ed922d40 --> CompetenceMetier
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DESC1
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DESC2
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
+
+    classe16a5958d13b85e9085a31a3ed922d40 --> DESCNonQualifiant
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> Diplome
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
 
-    class095a1b43effec73955e31e790438de49 --> DroitExerciceComplementaire
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DiplomeDeuxiemeCycleNonQualifiant
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DiplomeDivers
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DiplomeEEE
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DiplomeEES
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DiplomeEtat
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DiplomeEtudeSpecialisee
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> DiplomeUniversitaire
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
+
+    classe16a5958d13b85e9085a31a3ed922d40 --> DroitExerciceComplementaire
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> ExerciceProfessionnel
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
 
-    class095a1b43effec73955e31e790438de49 --> FonctionQualifiee
+    classe16a5958d13b85e9085a31a3ed922d40 --> FonctionQualifiee
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome" as  class5c08ef5fce6cb24c19cfc301706c1d44 
+
+    class5c08ef5fce6cb24c19cfc301706c1d44 --> FormationSpecialiseeTransversale
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -551,9 +558,9 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> LangueParlee
 
- class "Base" as  class095a1b43effec73955e31e790438de49 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
 
-    class095a1b43effec73955e31e790438de49 --> OrientationParticuliere
+    classe16a5958d13b85e9085a31a3ed922d40 --> OrientationParticuliere
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -563,9 +570,13 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> Professionnel
 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
+
+    classe16a5958d13b85e9085a31a3ed922d40 --> QualificationPAC
+
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    class095a1b43effec73955e31e790438de49 --> QualificationPAC
+    class095a1b43effec73955e31e790438de49 --> SavoirFaire
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -575,16 +586,16 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> SituationOperationnelle
 
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
+
+    classe16a5958d13b85e9085a31a3ed922d40 --> Specialite
+
+ class "https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire" as  classe16a5958d13b85e9085a31a3ed922d40 
+
+    classe16a5958d13b85e9085a31a3ed922d40 --> SurspecialiteTransversale
+
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
-    class095a1b43effec73955e31e790438de49 --> Specialite
-
- class "Base" as  class095a1b43effec73955e31e790438de49 
-
-    class095a1b43effec73955e31e790438de49 --> SurspecialiteTransversale
-
- class "ContactPoint" as  class1a8de90955ed09d082aa583fa10a342e 
-
-    class1a8de90955ed09d082aa583fa10a342e --> Telecommunication
+    class095a1b43effec73955e31e790438de49 --> Telecommunication
 }
 @enduml

@@ -1,118 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/AnneeUniversitaire-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "AnneeuniversitaireVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R225-AnneeUniversitaire"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/AttributionParticuliere-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "AttributionparticuliereVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R03-AttributionParticuliere"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CNAMAmeliSecteurConventionnement-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CnamamelisecteurconventionnementVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R282-CNAMAmeliSecteurConventionnement"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationOperationnelle.html" : "SituationOperationnelle"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CategorieProfessionnelle-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CategorieprofessionnelleVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R09-CategorieProfessionnelle"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Civilite-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CiviliteVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R81-Civilite"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CiviliteExercice-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CiviliteexerciceVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R11-CiviliteExercice"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CommuneOM-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CommuneomVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R13-CommuneOM"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CompetenceSpecifique-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CompetencespecifiqueVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R243-CompetenceSpecifique"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationOperationnelle.html" : "SituationOperationnelle"
-    },
-    {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/DESCNonQualifiant-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -120,378 +8,12 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R42-DESCnonQualifiant",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
       ],
       "uses" : {
       },
       "StructureDefinition-DESCNonQualifiant.html" : "DESCNonQualifiant"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/DepartementOM-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DepartementomVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-G09-DepartementOM"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel",
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/EnsembleSavoirFaire-CISIS-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "EnsemblesavoirfaireCisisVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-CompetenceMetier.html" : "CompetenceMetier"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/GenreActivite-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "GenreactiviteVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R22-GenreActivite"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Langue-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "LangueVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-G00-Langue"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-LangueParlee.html" : "LangueParlee"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/LieuFormation-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "LieuformationVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R16-LieuFormation"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-Diplome.html" : "Diplome"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/ModeExercice-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ModeexerciceVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R23-ModeExercice"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationExercice.html" : "SituationExercice",
-      "StructureDefinition-SituationOperationnelle.html" : "SituationOperationnelle"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/MotifFinActivite-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "MotiffinactiviteVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R25-MotifFinActivite"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NatCycleForm-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "NatcycleformVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R223-NatCycleForm"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauConfidentialite-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "NiveauConfidentialiteVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R283-NiveauConfidentialite"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-NiveauConfidentialite.html" : "NiveauConfidentialite"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauFormAcquis-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "NiveauformacquisVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R224-NiveauFormAcquis"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Ordre-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "OrdreVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R82-Ordre"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Pays-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PaysVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R20-Pays"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SectionTableauCNOP-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "SectiontableaucnopVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R06-SectionTableauCNOP"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SexeAdministratif-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "SexeadministratifVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R10-SexeAdministratif"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SousSectionTableauCNOP-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "SoussectiontableaucnopVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-G05-SousSectionTableauCNOP"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutEtatCivil-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "StatutetatcivilVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R31-StatutEtatCivil"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutHospitalier-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "StatuthospitalierVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R32-StatutHospitalier"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutInscription-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "StatutinscriptionVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R33-StatutInscription"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutProfessionnelSSA-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "StatutprofessionnelssaVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R34-StatutProfessionnelSSA"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeActiviteLiberale-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypeactiviteliberaleVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R24-TypeActiviteLiberale"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-SituationExercice.html" : "SituationExercice"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeBAL-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypebalVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R257-TypeBAL"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-BoiteLettreMSS.html" : "BoiteLettreMSS"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeDiplome-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypediplomeVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R14-TypeDiplome"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-Diplome.html" : "Diplome"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeHoraire-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypehoraireVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R252-TypeHoraire"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-Horaire.html" : "Horaire"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeIdentifiantPersonne-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypeidentifiantpersonneVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-G08-TypeIdentifiantPersonne"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-Professionnel.html" : "Professionnel"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeMessagerie-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypeMessagerieVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R256-TypeMessagerie"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-TypeMessagerie.html" : "TypeMessagerie"
-    },
-    {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeSavoirFaire-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypesavoirfaireVs",
-      "title" : null,
-      "description" : null,
-      "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R04-TypeSavoirFaire"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/capaciteSavoirFaire-vs",
@@ -501,8 +23,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R43-CapaciteSavoirFaire",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R43-CapaciteSavoirFaire",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
       ],
       "uses" : {
       },
@@ -516,8 +38,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R39-Competence",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
       ],
       "uses" : {
       },
@@ -531,12 +53,27 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R40-CompetenceExclusive",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R40-CompetenceExclusive",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
       ],
       "uses" : {
       },
       "StructureDefinition-CompetenceExclusive.html" : "CompetenceExclusive"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CompetencemetierVs",
+      "title" : null,
+      "description" : null,
+      "systems" : [
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-CompetenceMetier.html" : "CompetenceMetier"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/droitExerciceComplementaire-vs",
@@ -546,8 +83,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R97-DroitExerciceCompl"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R97-DroitExerciceCompl",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
       ],
       "uses" : {
       },
@@ -561,8 +98,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R45-FonctionQualifiee",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R45-FonctionQualifiee",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
       ],
       "uses" : {
       },
@@ -576,8 +113,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R13-CommuneOM",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R20-Pays"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays"
       ],
       "uses" : {
       },
@@ -591,8 +128,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-G13-OrientationParticuliere"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G13-OrientationParticuliere"
       ],
       "uses" : {
       },
@@ -606,8 +143,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R268-PaysProvenanceISO",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R20-Pays"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R268-PaysProvenanceISO",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays"
       ],
       "uses" : {
       },
@@ -621,9 +158,9 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R268-PaysProvenanceISO",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R20-Pays",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R89-RegroupementPays"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R268-PaysProvenanceISO",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays"
       ],
       "uses" : {
       },
@@ -637,10 +174,10 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R94-ProfessionSocial",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R95-UsagerTitre",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-G15-ProfessionSante",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R291-AutreProfession"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R291-AutreProfession",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R95-UsagerTitre",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R94-ProfessionSocial",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante"
       ],
       "uses" : {
       },
@@ -654,8 +191,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R262-CategorieSocioProfessionnelle",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R262-CategorieSocioProfessionnelle"
       ],
       "uses" : {
       },
@@ -669,8 +206,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R44-QualificationPAC"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R44-QualificationPAC",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
       ],
       "uses" : {
       },
@@ -684,9 +221,9 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R85-RolePriseCharge",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R96-AutreFonctionSanitaire",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R21-Fonction"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R21-Fonction",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R85-RolePriseCharge",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R96-AutreFonctionSanitaire"
       ],
       "uses" : {
       },
@@ -700,9 +237,9 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R267-SexeProvenanceISO",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R303-HL7v3AdministrativeGender",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R249-Sexe"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R303-HL7v3AdministrativeGender",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R267-SexeProvenanceISO",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R249-Sexe"
       ],
       "uses" : {
       },
@@ -716,8 +253,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R38-SpecialiteOrdinale"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R38-SpecialiteOrdinale",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
       ],
       "uses" : {
       },
@@ -731,8 +268,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R359-SurspecialiteTransversale",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R359-SurspecialiteTransversale"
       ],
       "uses" : {
       },
@@ -746,8 +283,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R288-TypeProfession",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R37-TypeProfessionFonction"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R288-TypeProfession"
       ],
       "uses" : {
       },
@@ -761,8 +298,8 @@
       "title" : null,
       "description" : null,
       "systems" : [
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R37-TypeProfessionFonction",
-        "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R289-TypeFonction"
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction",
+        "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R289-TypeFonction"
       ],
       "uses" : {
       },

@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "profession-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs profession-vs</b></p><a name=\"profession-vs\"> </a><a name=\"hcprofession-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-G15-ProfessionSante</code></li><li>Inclut tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R95-UsagerTitre</code></li><li>Inclut tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R94-ProfessionSocial</code></li><li>Inclut tous les codes définis dans <code>https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R291-AutreProfession</code></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs profession-vs</b></p><a name=\"profession-vs\"> </a><a name=\"hcprofession-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R95-UsagerTitre</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R94-ProfessionSocial</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R291-AutreProfession</code></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/profession-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ProfessionVs"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-18T06:40:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-21T11:52:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -35,13 +35,13 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-G15-ProfessionSante"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante"^^xsd:anyURI ]
      ] [
-       fhir:system [ fhir:v "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R95-UsagerTitre"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R95-UsagerTitre"^^xsd:anyURI ]
      ] [
-       fhir:system [ fhir:v "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R94-ProfessionSocial"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R94-ProfessionSocial"^^xsd:anyURI ]
      ] [
-       fhir:system [ fhir:v "https://ansforge.github.io/IG-terminologie-de-sante/ig/main/CodeSystem-TRE-R291-AutreProfession"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R291-AutreProfession"^^xsd:anyURI ]
      ] )
   ] . # 
 

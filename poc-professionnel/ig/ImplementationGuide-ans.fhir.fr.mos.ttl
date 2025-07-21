@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-18T06:40:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-21T11:52:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -861,7 +861,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:complex-type"
+           fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
        fhir:reference [
@@ -869,7 +869,6 @@
          fhir:reference [ fhir:v "StructureDefinition/Adresse" ]
        ] ;
        fhir:name [ fhir:v "Adresse" ] ;
-       fhir:description [ fhir:v "Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -879,14 +878,14 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/AnneeUniversitaire-vs> ;
-         fhir:reference [ fhir:v "ValueSet/AnneeUniversitaire-vs" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Attestation> ;
+         fhir:reference [ fhir:v "StructureDefinition/Attestation" ]
        ] ;
-       fhir:name [ fhir:v "AnneeuniversitaireVs" ] ;
+       fhir:name [ fhir:v "Attestation" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -896,14 +895,14 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/AttributionParticuliere-vs> ;
-         fhir:reference [ fhir:v "ValueSet/AttributionParticuliere-vs" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/AutreDiplomeObtenu> ;
+         fhir:reference [ fhir:v "StructureDefinition/AutreDiplomeObtenu" ]
        ] ;
-       fhir:name [ fhir:v "AttributionparticuliereVs" ] ;
+       fhir:name [ fhir:v "AutreDiplomeObtenu" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -921,6 +920,23 @@
          fhir:reference [ fhir:v "StructureDefinition/BoiteLettreMSS" ]
        ] ;
        fhir:name [ fhir:v "BoiteLettreMSS" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CapaciteDiplome> ;
+         fhir:reference [ fhir:v "StructureDefinition/CapaciteDiplome" ]
+       ] ;
+       fhir:name [ fhir:v "CapaciteDiplome" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -964,82 +980,14 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CategorieProfessionnelle-vs> ;
-         fhir:reference [ fhir:v "ValueSet/CategorieProfessionnelle-vs" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CertificatEtudeSpeciale> ;
+         fhir:reference [ fhir:v "StructureDefinition/CertificatEtudeSpeciale" ]
        ] ;
-       fhir:name [ fhir:v "CategorieprofessionnelleVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CiviliteExercice-vs> ;
-         fhir:reference [ fhir:v "ValueSet/CiviliteExercice-vs" ]
-       ] ;
-       fhir:name [ fhir:v "CiviliteexerciceVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Civilite-vs> ;
-         fhir:reference [ fhir:v "ValueSet/Civilite-vs" ]
-       ] ;
-       fhir:name [ fhir:v "CiviliteVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CNAMAmeliSecteurConventionnement-vs> ;
-         fhir:reference [ fhir:v "ValueSet/CNAMAmeliSecteurConventionnement-vs" ]
-       ] ;
-       fhir:name [ fhir:v "CnamamelisecteurconventionnementVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CommuneOM-vs> ;
-         fhir:reference [ fhir:v "ValueSet/CommuneOM-vs" ]
-       ] ;
-       fhir:name [ fhir:v "CommuneomVs" ] ;
+       fhir:name [ fhir:v "CertificatEtudeSpeciale" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1121,10 +1069,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/CompetenceSpecifique-vs> ;
-         fhir:reference [ fhir:v "ValueSet/CompetenceSpecifique-vs" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs> ;
+         fhir:reference [ fhir:v "ValueSet/competenceMetier-vs" ]
        ] ;
-       fhir:name [ fhir:v "CompetencespecifiqueVs" ] ;
+       fhir:name [ fhir:v "CompetencemetierVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1151,14 +1099,31 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/DepartementOM-vs> ;
-         fhir:reference [ fhir:v "ValueSet/DepartementOM-vs" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DESC1> ;
+         fhir:reference [ fhir:v "StructureDefinition/DESC1" ]
        ] ;
-       fhir:name [ fhir:v "DepartementomVs" ] ;
+       fhir:name [ fhir:v "DESC1" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DESC2> ;
+         fhir:reference [ fhir:v "StructureDefinition/DESC2" ]
+       ] ;
+       fhir:name [ fhir:v "DESC2" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1223,6 +1188,125 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant> ;
+         fhir:reference [ fhir:v "StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant" ]
+       ] ;
+       fhir:name [ fhir:v "DiplomeDeuxiemeCycleNonQualifiant" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeDivers> ;
+         fhir:reference [ fhir:v "StructureDefinition/DiplomeDivers" ]
+       ] ;
+       fhir:name [ fhir:v "DiplomeDivers" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEEE> ;
+         fhir:reference [ fhir:v "StructureDefinition/DiplomeEEE" ]
+       ] ;
+       fhir:name [ fhir:v "DiplomeEEE" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEES> ;
+         fhir:reference [ fhir:v "StructureDefinition/DiplomeEES" ]
+       ] ;
+       fhir:name [ fhir:v "DiplomeEES" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEtat> ;
+         fhir:reference [ fhir:v "StructureDefinition/DiplomeEtat" ]
+       ] ;
+       fhir:name [ fhir:v "DiplomeEtat" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEtudeSpecialisee> ;
+         fhir:reference [ fhir:v "StructureDefinition/DiplomeEtudeSpecialisee" ]
+       ] ;
+       fhir:name [ fhir:v "DiplomeEtudeSpecialisee" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeUniversitaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/DiplomeUniversitaire" ]
+       ] ;
+       fhir:name [ fhir:v "DiplomeUniversitaire" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DroitExerciceComplementaire> ;
          fhir:reference [ fhir:v "StructureDefinition/DroitExerciceComplementaire" ]
        ] ;
@@ -1244,23 +1328,6 @@
          fhir:reference [ fhir:v "ValueSet/droitExerciceComplementaire-vs" ]
        ] ;
        fhir:name [ fhir:v "DroitexercicecomplementaireVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/EnsembleSavoirFaire-CISIS-vs> ;
-         fhir:reference [ fhir:v "ValueSet/EnsembleSavoirFaire-CISIS-vs" ]
-       ] ;
-       fhir:name [ fhir:v "EnsemblesavoirfaireCisisVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1321,14 +1388,14 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/GenreActivite-vs> ;
-         fhir:reference [ fhir:v "ValueSet/GenreActivite-vs" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/FormationSpecialiseeTransversale> ;
+         fhir:reference [ fhir:v "StructureDefinition/FormationSpecialiseeTransversale" ]
        ] ;
-       fhir:name [ fhir:v "GenreactiviteVs" ] ;
+       fhir:name [ fhir:v "FormationSpecialiseeTransversale" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1376,163 +1443,10 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Langue-vs> ;
-         fhir:reference [ fhir:v "ValueSet/Langue-vs" ]
-       ] ;
-       fhir:name [ fhir:v "LangueVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/LieuFormation-vs> ;
-         fhir:reference [ fhir:v "ValueSet/LieuFormation-vs" ]
-       ] ;
-       fhir:name [ fhir:v "LieuformationVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/lieuNaissance-vs> ;
          fhir:reference [ fhir:v "ValueSet/lieuNaissance-vs" ]
        ] ;
        fhir:name [ fhir:v "LieunaissanceVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/ModeExercice-vs> ;
-         fhir:reference [ fhir:v "ValueSet/ModeExercice-vs" ]
-       ] ;
-       fhir:name [ fhir:v "ModeexerciceVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/MotifFinActivite-vs> ;
-         fhir:reference [ fhir:v "ValueSet/MotifFinActivite-vs" ]
-       ] ;
-       fhir:name [ fhir:v "MotiffinactiviteVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NatCycleForm-vs> ;
-         fhir:reference [ fhir:v "ValueSet/NatCycleForm-vs" ]
-       ] ;
-       fhir:name [ fhir:v "NatcycleformVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/NiveauConfidentialite> ;
-         fhir:reference [ fhir:v "StructureDefinition/NiveauConfidentialite" ]
-       ] ;
-       fhir:name [ fhir:v "NiveauConfidentialite" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauConfidentialite-vs> ;
-         fhir:reference [ fhir:v "ValueSet/NiveauConfidentialite-vs" ]
-       ] ;
-       fhir:name [ fhir:v "NiveauConfidentialiteVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/NiveauFormAcquis-vs> ;
-         fhir:reference [ fhir:v "ValueSet/NiveauFormAcquis-vs" ]
-       ] ;
-       fhir:name [ fhir:v "NiveauformacquisVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Ordre-vs> ;
-         fhir:reference [ fhir:v "ValueSet/Ordre-vs" ]
-       ] ;
-       fhir:name [ fhir:v "OrdreVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1601,23 +1515,6 @@
          fhir:reference [ fhir:v "ValueSet/paysNationalite-vs" ]
        ] ;
        fhir:name [ fhir:v "PaysnationaliteVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/Pays-vs> ;
-         fhir:reference [ fhir:v "ValueSet/Pays-vs" ]
-       ] ;
-       fhir:name [ fhir:v "PaysVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1746,31 +1643,14 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
+           fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SectionTableauCNOP-vs> ;
-         fhir:reference [ fhir:v "ValueSet/SectionTableauCNOP-vs" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/SavoirFaire" ]
        ] ;
-       fhir:name [ fhir:v "SectiontableaucnopVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SexeAdministratif-vs> ;
-         fhir:reference [ fhir:v "ValueSet/SexeAdministratif-vs" ]
-       ] ;
-       fhir:name [ fhir:v "SexeadministratifVs" ] ;
+       fhir:name [ fhir:v "SavoirFaire" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1831,23 +1711,6 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/SousSectionTableauCNOP-vs> ;
-         fhir:reference [ fhir:v "ValueSet/SousSectionTableauCNOP-vs" ]
-       ] ;
-       fhir:name [ fhir:v "SoussectiontableaucnopVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
            fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
@@ -1873,74 +1736,6 @@
          fhir:reference [ fhir:v "ValueSet/specialite-vs" ]
        ] ;
        fhir:name [ fhir:v "SpecialiteVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutEtatCivil-vs> ;
-         fhir:reference [ fhir:v "ValueSet/StatutEtatCivil-vs" ]
-       ] ;
-       fhir:name [ fhir:v "StatutetatcivilVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutHospitalier-vs> ;
-         fhir:reference [ fhir:v "ValueSet/StatutHospitalier-vs" ]
-       ] ;
-       fhir:name [ fhir:v "StatuthospitalierVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutInscription-vs> ;
-         fhir:reference [ fhir:v "ValueSet/StatutInscription-vs" ]
-       ] ;
-       fhir:name [ fhir:v "StatutinscriptionVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/StatutProfessionnelSSA-vs> ;
-         fhir:reference [ fhir:v "ValueSet/StatutProfessionnelSSA-vs" ]
-       ] ;
-       fhir:name [ fhir:v "StatutprofessionnelssaVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1984,7 +1779,7 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "StructureDefinition:complex-type"
+           fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
        fhir:reference [
@@ -1992,126 +1787,6 @@
          fhir:reference [ fhir:v "StructureDefinition/Telecommunication" ]
        ] ;
        fhir:name [ fhir:v "Telecommunication" ] ;
-       fhir:description [ fhir:v "Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)." ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeActiviteLiberale-vs> ;
-         fhir:reference [ fhir:v "ValueSet/TypeActiviteLiberale-vs" ]
-       ] ;
-       fhir:name [ fhir:v "TypeactiviteliberaleVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeBAL-vs> ;
-         fhir:reference [ fhir:v "ValueSet/TypeBAL-vs" ]
-       ] ;
-       fhir:name [ fhir:v "TypebalVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeDiplome-vs> ;
-         fhir:reference [ fhir:v "ValueSet/TypeDiplome-vs" ]
-       ] ;
-       fhir:name [ fhir:v "TypediplomeVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeHoraire-vs> ;
-         fhir:reference [ fhir:v "ValueSet/TypeHoraire-vs" ]
-       ] ;
-       fhir:name [ fhir:v "TypehoraireVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeIdentifiantPersonne-vs> ;
-         fhir:reference [ fhir:v "ValueSet/TypeIdentifiantPersonne-vs" ]
-       ] ;
-       fhir:name [ fhir:v "TypeidentifiantpersonneVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "StructureDefinition:extension"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/TypeMessagerie> ;
-         fhir:reference [ fhir:v "StructureDefinition/TypeMessagerie" ]
-       ] ;
-       fhir:name [ fhir:v "TypeMessagerie" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeMessagerie-vs> ;
-         fhir:reference [ fhir:v "ValueSet/TypeMessagerie-vs" ]
-       ] ;
-       fhir:name [ fhir:v "TypeMessagerieVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -2146,23 +1821,6 @@
          fhir:reference [ fhir:v "ValueSet/typeRole-vs" ]
        ] ;
        fhir:name [ fhir:v "TyperoleVs" ] ;
-       fhir:example [
-         a fhir:boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/TypeSavoirFaire-vs> ;
-         fhir:reference [ fhir:v "ValueSet/TypeSavoirFaire-vs" ]
-       ] ;
-       fhir:name [ fhir:v "TypesavoirfaireVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

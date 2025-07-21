@@ -10,7 +10,7 @@
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-07-18T06:40:38+00:00",
+  "date" : "2025-07-21T11:52:46+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -629,35 +629,34 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Adresse"
       },
       "name" : "Adresse",
-      "description" : "Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "ValueSet/AnneeUniversitaire-vs"
+        "reference" : "StructureDefinition/Attestation"
       },
-      "name" : "AnneeuniversitaireVs",
+      "name" : "Attestation",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "ValueSet/AttributionParticuliere-vs"
+        "reference" : "StructureDefinition/AutreDiplomeObtenu"
       },
-      "name" : "AttributionparticuliereVs",
+      "name" : "AutreDiplomeObtenu",
       "exampleBoolean" : false
     },
     {
@@ -669,6 +668,17 @@
         "reference" : "StructureDefinition/BoiteLettreMSS"
       },
       "name" : "BoiteLettreMSS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CapaciteDiplome"
+      },
+      "name" : "CapaciteDiplome",
       "exampleBoolean" : false
     },
     {
@@ -696,56 +706,12 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "ValueSet/CategorieProfessionnelle-vs"
+        "reference" : "StructureDefinition/CertificatEtudeSpeciale"
       },
-      "name" : "CategorieprofessionnelleVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/CiviliteExercice-vs"
-      },
-      "name" : "CiviliteexerciceVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/Civilite-vs"
-      },
-      "name" : "CiviliteVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/CNAMAmeliSecteurConventionnement-vs"
-      },
-      "name" : "CnamamelisecteurconventionnementVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/CommuneOM-vs"
-      },
-      "name" : "CommuneomVs",
+      "name" : "CertificatEtudeSpeciale",
       "exampleBoolean" : false
     },
     {
@@ -798,9 +764,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/CompetenceSpecifique-vs"
+        "reference" : "ValueSet/competenceMetier-vs"
       },
-      "name" : "CompetencespecifiqueVs",
+      "name" : "CompetencemetierVs",
       "exampleBoolean" : false
     },
     {
@@ -817,12 +783,23 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "ValueSet/DepartementOM-vs"
+        "reference" : "StructureDefinition/DESC1"
       },
-      "name" : "DepartementomVs",
+      "name" : "DESC1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DESC2"
+      },
+      "name" : "DESC2",
       "exampleBoolean" : false
     },
     {
@@ -864,6 +841,83 @@
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant"
+      },
+      "name" : "DiplomeDeuxiemeCycleNonQualifiant",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiplomeDivers"
+      },
+      "name" : "DiplomeDivers",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiplomeEEE"
+      },
+      "name" : "DiplomeEEE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiplomeEES"
+      },
+      "name" : "DiplomeEES",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiplomeEtat"
+      },
+      "name" : "DiplomeEtat",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiplomeEtudeSpecialisee"
+      },
+      "name" : "DiplomeEtudeSpecialisee",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiplomeUniversitaire"
+      },
+      "name" : "DiplomeUniversitaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/DroitExerciceComplementaire"
       },
       "name" : "DroitExerciceComplementaire",
@@ -878,17 +932,6 @@
         "reference" : "ValueSet/droitExerciceComplementaire-vs"
       },
       "name" : "DroitexercicecomplementaireVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/EnsembleSavoirFaire-CISIS-vs"
-      },
-      "name" : "EnsemblesavoirfaireCisisVs",
       "exampleBoolean" : false
     },
     {
@@ -927,12 +970,12 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "ValueSet/GenreActivite-vs"
+        "reference" : "StructureDefinition/FormationSpecialiseeTransversale"
       },
-      "name" : "GenreactiviteVs",
+      "name" : "FormationSpecialiseeTransversale",
       "exampleBoolean" : false
     },
     {
@@ -963,108 +1006,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/Langue-vs"
-      },
-      "name" : "LangueVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/LieuFormation-vs"
-      },
-      "name" : "LieuformationVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/lieuNaissance-vs"
       },
       "name" : "LieunaissanceVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ModeExercice-vs"
-      },
-      "name" : "ModeexerciceVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/MotifFinActivite-vs"
-      },
-      "name" : "MotiffinactiviteVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NatCycleForm-vs"
-      },
-      "name" : "NatcycleformVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/NiveauConfidentialite"
-      },
-      "name" : "NiveauConfidentialite",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NiveauConfidentialite-vs"
-      },
-      "name" : "NiveauConfidentialiteVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/NiveauFormAcquis-vs"
-      },
-      "name" : "NiveauformacquisVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/Ordre-vs"
-      },
-      "name" : "OrdreVs",
       "exampleBoolean" : false
     },
     {
@@ -1109,17 +1053,6 @@
         "reference" : "ValueSet/paysNationalite-vs"
       },
       "name" : "PaysnationaliteVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/Pays-vs"
-      },
-      "name" : "PaysVs",
       "exampleBoolean" : false
     },
     {
@@ -1202,23 +1135,12 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
-        "reference" : "ValueSet/SectionTableauCNOP-vs"
+        "reference" : "StructureDefinition/SavoirFaire"
       },
-      "name" : "SectiontableaucnopVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/SexeAdministratif-vs"
-      },
-      "name" : "SexeadministratifVs",
+      "name" : "SavoirFaire",
       "exampleBoolean" : false
     },
     {
@@ -1257,17 +1179,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/SousSectionTableauCNOP-vs"
-      },
-      "name" : "SoussectiontableaucnopVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
@@ -1285,50 +1196,6 @@
         "reference" : "ValueSet/specialite-vs"
       },
       "name" : "SpecialiteVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/StatutEtatCivil-vs"
-      },
-      "name" : "StatutetatcivilVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/StatutHospitalier-vs"
-      },
-      "name" : "StatuthospitalierVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/StatutInscription-vs"
-      },
-      "name" : "StatutinscriptionVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/StatutProfessionnelSSA-vs"
-      },
-      "name" : "StatutprofessionnelssaVs",
       "exampleBoolean" : false
     },
     {
@@ -1356,90 +1223,12 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:complex-type"
+        "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
         "reference" : "StructureDefinition/Telecommunication"
       },
       "name" : "Telecommunication",
-      "description" : "Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeActiviteLiberale-vs"
-      },
-      "name" : "TypeactiviteliberaleVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeBAL-vs"
-      },
-      "name" : "TypebalVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeDiplome-vs"
-      },
-      "name" : "TypediplomeVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeHoraire-vs"
-      },
-      "name" : "TypehoraireVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeIdentifiantPersonne-vs"
-      },
-      "name" : "TypeidentifiantpersonneVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TypeMessagerie"
-      },
-      "name" : "TypeMessagerie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeMessagerie-vs"
-      },
-      "name" : "TypeMessagerieVs",
       "exampleBoolean" : false
     },
     {
@@ -1462,17 +1251,6 @@
         "reference" : "ValueSet/typeRole-vs"
       },
       "name" : "TyperoleVs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/TypeSavoirFaire-vs"
-      },
-      "name" : "TypesavoirfaireVs",
       "exampleBoolean" : false
     }],
     "page" : {
