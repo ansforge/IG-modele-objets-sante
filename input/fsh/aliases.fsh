@@ -2,7 +2,6 @@ Alias: $CodeSystem-TRE-R43-CapaciteSavoirFaire = https://interop.esante.gouv.fr/
 Alias: $CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS
 Alias: $CodeSystem-TRE-R39-Competence = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence
 Alias: $CodeSystem-TRE-R40-CompetenceExclusive = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R40-CompetenceExclusive
-Alias: $CodeSystem-TRE-R394-competence-metier = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier
 Alias: $CodeSystem-TRE-R42-DESCnonQualifiant = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant
 Alias: $CodeSystem-TRE-R97-DroitExerciceCompl = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R97-DroitExerciceCompl
 Alias: $CodeSystem-TRE-R45-FonctionQualifiee = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R45-FonctionQualifiee

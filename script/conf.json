@@ -1,0 +1,31 @@
+{
+    "types": {
+        "mapping": {
+            "Code": "Coding",
+            "Identifiant": "Identifier",
+            "Date": "date",
+            "DateHeure": "dateTime",
+            "Texte": "string",
+            "Heure": "time",
+            "ObjetBinaire": "base64Binary",
+            "Mesure": "Quantity",
+            "Montant": "Money",
+            "Numerique": "integer",
+            "Indicateur": "boolean",
+            "ConceptCode": "CodeableConcept"
+        },
+        "custom": [],
+        "class": ["Diplome", "PersonnePhysique", "LangueParlee", "BoiteLettreMSS", "Horaire", "Adresse", "Telecommunication"]
+    },
+    "backbones": {
+        "ExerciceProfessionnel": {
+            "InscriptionOrdre": {"min": 0, "max": "*"},
+            "AttributionParticuliere": {"min": 0, "max": 1},
+            "NiveauFormation": {"min": 0, "max": "*"}
+        }
+    }, 
+    "inheritance": {
+        "Diplome": ["DiplomeEtat", "DiplomeEtudeSpecialisee", "FormationSpecialiseeTransversale", "DESC1", "DESC2", "DiplomeEEE", "DiplomeEES", "DiplomeUniversitaire", "CertificatEtudeSpeciale", "Attestation", "CapaciteDiplome", "DiplomeDivers", "AutreDiplomeObtenu", "DiplomeDeuxiemeCycleNonQualifiant"],
+        "SavoirFaire": ["Specialite", "SurspecialiteTransversale", "Competence", "CompetenceMetier", "CompetenceExclusive", "OrientationParticuliere", "CapaciteSavoirfaire", "QualificationPAC", "FonctionQualifiee", "DESCNonQualifiant", "DroitExerciceComplementaire"]
+    }
+}
