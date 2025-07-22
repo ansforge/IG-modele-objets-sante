@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for MOS</h1>
- <p>Generated Mon Jul 21 14:14:40 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mos">https://interop.esante.gouv.fr/ig/fhir/mos</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">history</a>))</p>
+ <p>Generated Tue Jul 22 15:25:29 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mos">https://interop.esante.gouv.fr/ig/fhir/mos</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -125,18 +125,11 @@
     <td>[auth = , candidates=, auth = , candidates=]</td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.fhir.org/r4</td>
-    <td></td>
-    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Systems handled by multiple servers. Using primary server</td>
-    <td>https://tx.fhir.org/r4</td>
+    <td>Found most authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
     <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs|0.1.0</td>
-    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
-    <td>[auth = , candidates=, auth = , candidates=]</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS, https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier]</td>
+    <td>[auth = , candidates=, auth = https://smt.esante.gouv.fr/fhir, candidates=]</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
@@ -365,7 +358,7 @@
 </table>
 <h2>Primary Server: https://tx.fhir.org/r4</h2>
 <a href="https://tx.fhir.org/r4"></a>
-<p>Use Count: 204. Code Systems used: </p>
+<p>Use Count: 200. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -409,7 +402,7 @@
   </tr>
   <tr>
     <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</td>
-    <td>12</td>
+    <td>11</td>
     <td>0</td>
     <td></td>
   </tr>
@@ -505,12 +498,6 @@
   </tr>
   <tr>
     <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence</td>
-    <td>2</td>
-    <td>0</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier</td>
     <td>2</td>
     <td>0</td>
     <td></td>
@@ -655,7 +642,6 @@
   <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction|null</li>
   <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R38-SpecialiteOrdinale|null</li>
   <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence|null</li>
-  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier|null</li>
   <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R40-CompetenceExclusive|null</li>
   <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant|null</li>
   <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R43-CapaciteSavoirFaire|null</li>
@@ -698,6 +684,39 @@
     <th>
       <b>Details</b>
     </th>
+  </tr>
+</table>
+<h2>Server: https://smt.esante.gouv.fr/fhir</h2>
+<a href="https://smt.esante.gouv.fr/fhir"></a>
+<p>Use Count: 1. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier</td>
+    <td>1</td>
+    <td>0</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html">Tre R394 Competence Metier</a>
+    </td>
   </tr>
 </table>
 </body>

@@ -11,13 +11,13 @@
   fhir:id [ fhir:v "competenceMetier-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs competenceMetier-vs</b></p><a name=\"competenceMetier-vs\"> </a><a name=\"hccompetenceMetier-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</code></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs competenceMetier-vs</b></p><a name=\"competenceMetier-vs\"> </a><a name=\"hccompetenceMetier-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</code></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html\"><code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier</code></a></li></ul></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "CompetencemetierVs"] ; # 
+  fhir:name [ fhir:v "CompetencemetiereVs"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-21T14:08:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-22T15:23:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -35,9 +35,9 @@
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier"^^xsd:anyURI ]
-     ] [
        fhir:system [ fhir:v "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"^^xsd:anyURI ]
      ] )
   ] . # 
 

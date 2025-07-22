@@ -3,13 +3,13 @@
   "id" : "competenceMetier-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs competenceMetier-vs</b></p><a name=\"competenceMetier-vs\"> </a><a name=\"hccompetenceMetier-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</code></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs competenceMetier-vs</b></p><a name=\"competenceMetier-vs\"> </a><a name=\"hccompetenceMetier-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</code></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html\"><code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier</code></a></li></ul></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs",
   "version" : "0.1.0",
-  "name" : "CompetencemetierVs",
+  "name" : "CompetencemetiereVs",
   "status" : "draft",
-  "date" : "2025-07-21T14:08:48+00:00",
+  "date" : "2025-07-22T15:23:11+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -27,10 +27,10 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R394-competence-metier"
+      "system" : "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
     },
     {
-      "system" : "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"
     }]
   }
 }

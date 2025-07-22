@@ -1,3 +1,16 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier",
+      "version" : "20250625120000",
+      "status" : "active",
+      "name" : "TreR394CompetenceMetier",
+      "title" : "Tre R394 Competence Metier",
+      "description" : "Type de savoir-faire opérationnel, transversal ou spécifique, acquis et exercé à titre non exclusif dans le cadre d’une activité professionnelle reconnue.",
+      "oids" : ["1.2.250.1.213.1.6.1.375"],
+      "uses" : {
+      },
+      "ValueSet-competenceMetier-vs.html" : "CompetencemetiereVs"
+    }
+  ]
 }
