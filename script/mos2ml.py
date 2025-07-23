@@ -101,8 +101,8 @@ def create_element(row, base, url, url_termino, conf, custom, common, output_pat
             element = {
                 "id": base + '.' + attribute,
                 "path": base + '.' + attribute,
-                "definition": row["Description"],
-                "short": row["Description"],
+                "definition": row["Description"].strip(),
+                "short": row["Description"].strip(),
                 "min": int(min),
                 "max": max,
                 "type": [{"code": type_new}]
@@ -160,8 +160,8 @@ def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, s
     elements.append({
         "id": name,
         "path": name,
-        "definition": class_desc,
-        "short": class_desc,
+        "definition": class_desc.strip(),
+        "short": class_desc.strip(),
         "min": 0,
         "max": "*",
     })
@@ -180,8 +180,8 @@ def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, s
             elements.append({
                 "id": name + '.' + backbone,
                 "path": name + '.' + backbone,
-                "definition": backbone_desc,
-                "short": backbone_desc,
+                "definition": backbone_desc.strip(),
+                "short": backbone_desc.strip(),
                 "min": conf["backbones"][name][backbone]["min"], 
                 "max": conf["backbones"][name][backbone]["max"],
                 "type": [{ "code": "Base" }]

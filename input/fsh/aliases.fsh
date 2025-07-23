@@ -28,4 +28,3 @@ Alias: $CodeSystem-TRE-R359-SurspecialiteTransversale = https://interop.esante.g
 Alias: $CodeSystem-TRE-R288-TypeProfession = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R288-TypeProfession
 Alias: $CodeSystem-TRE-R37-TypeProfessionFonction = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction
 Alias: $CodeSystem-TRE-R289-TypeFonction = https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R289-TypeFonction
-Alias: $CodeSystem-tre-r394-competence-metier = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier
