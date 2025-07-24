@@ -1,9 +1,9 @@
 Logical: BoiteLettreMSS
 Id: BoiteLettreMSS
 Title: "BoiteLettreMSS"
+Description: "Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS"
 * ^status = #draft
 * . ^short = "Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS"
-* . ^definition = "Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS"
 * adresseMSS 0..1 https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication "Adresse unique de messagerie sécurisée dans un domaine de messagerie MSSanté." "Adresse unique de messagerie sécurisée dans un domaine de messagerie MSSanté."
 * typeBAL 0..1 Coding "Type de boîte aux lettres.Valeurs possibles :** ORG pour une BAL organisationnelle** APP pour une BAL applicative** PER pour une BAL personnelle, rattachée à une personne physiqueUne BAL de type ORG ou APP est rattachée à une personne morale (entité géographique ou entité juridique) et son usage s’effectue sous la responsabilité d’un ou plusieurs professionnels habilités à échanger des données de santé personnelles." "Type de boîte aux lettres.Valeurs possibles :** ORG pour une BAL organisationnelle** APP pour une BAL applicative** PER pour une BAL personnelle, rattachée à une personne physiqueUne BAL de type ORG ou APP est rattachée à une personne morale (entité géographique ou entité juridique) et son usage s’effectue sous la responsabilité d’un ou plusieurs professionnels habilités à échanger des données de santé personnelles."
 * typeBAL from https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R257-TypeBAL?vs (preferred)
