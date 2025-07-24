@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-24T13:47:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-24T13:47:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -929,6 +929,7 @@
          fhir:reference [ fhir:v "StructureDefinition/BoiteLettreMSS" ]
        ] ;
        fhir:name [ fhir:v "BoiteLettreMSS" ] ;
+       fhir:description [ fhir:v "Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
