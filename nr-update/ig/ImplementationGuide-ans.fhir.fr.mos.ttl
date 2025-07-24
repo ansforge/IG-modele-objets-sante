@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-24T13:39:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-24T13:47:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1876,20 +1876,6 @@
            fhir:v "classes_communes.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Classes communes" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [
-             a fhir:url ;
-             fhir:v "types_donnees.html"^^xsd:anyURI
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:url ;
-           fhir:v "types_donnees.html"^^xsd:anyURI
-         ] ;
-         fhir:title [ fhir:v "Types de données" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
