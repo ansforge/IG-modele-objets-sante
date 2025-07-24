@@ -42,3 +42,4 @@ Title: "ExerciceProfessionnel"
 * NiveauFormation.anneeUniversitaire 0..1 Coding "Année universitaire, exemple : 2015-2016." "Année universitaire, exemple : 2015-2016."
 * NiveauFormation.anneeUniversitaire from https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R225-AnneeUniversitaire?vs (preferred)
 * NiveauFormation.dateFin 0..1 date "Date à laquelle le niveau de formation n’est plus actif (non visible hormis dans les données historisées). Cette date est renseignée par l’ordre à la clôture de l’exercice professionnel." "Date à laquelle le niveau de formation n’est plus actif (non visible hormis dans les données historisées). Cette date est renseignée par l’ordre à la clôture de l’exercice professionnel."
+* professionnel 1..1 Reference(Professionnel) "Lien vers la classe Professionnel."

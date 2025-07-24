@@ -28,6 +28,9 @@ La conversion a été réalisée uniquement sur la partie Professionnel, à part
 # Notes
 
 * L'attribut `metadonnee` est ignoré.
-* Les liens entre les classes ne sont pas traités.
 * Les tables d'association sont ignorées.
 * Les élements FHIR `short` et `definition`sont tous deux remplis avec la définition issue du MOS qui peuvent être assez longue.
+* Les liens entre les classes ont été ajoutés à la main pour la partie Professionnel, voici les lignes à ajouter dans les différents fichiers fsh :
+    * ExerciceProfessionnel.fsh : * professionnel 1..1 Reference(Professionnel) "Lien vers la classe Professionnel."
+    * SituationExercice.fsh : * exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."
+    * SituationOperationnelle.fsh : * exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."
