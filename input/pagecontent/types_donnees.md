@@ -9,7 +9,7 @@ Il existe deux familles de types de données :
     "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Name like 'Code' OR 'DateHeure' OR 'Date' OR 'Heure' OR 'Identifiant' OR 'Indicateur' OR 'Mesure' OR 'Montant' OR 'Numerique' OR 'ObjetBinaire' OR 'Texte'",
     "class" : "lines",
     "columns" : [
-        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "title" : "Type de données", "type" : "link", "source" : "Name", "target" : "Web"},
         { "title" : "Description", "type" : "markdown", "source" : "Description"}
     ]
 } %}

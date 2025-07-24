@@ -6,7 +6,7 @@ Ces classes communes réutilisables décrivent notamment la personne physique, l
     "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition' and Name like 'Adresse' OR 'AutoriteEnregistrement' OR 'BoiteLettreMSS' OR 'CoordonneeGeographique' OR 'CapaciteHabitation' OR 'CapaciteAccueil' OR 'Contact' OR 'ConceptCode' OR 'Diplome' OR 'DivisionTerritoriale' OR 'Evenement' OR 'Groupement' OR 'Horaire' OR 'LangueParlee' OR 'Lieu' OR 'Membre' OR 'Metadonnee' OR 'Patientele' OR 'PersonnePhysique' OR 'Telecommunication' OR 'Zone'",
     "class" : "lines",
     "columns" : [
-        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "title" : "Classe commune", "type" : "link", "source" : "Name", "target" : "Web"},
         { "title" : "Description", "type" : "markdown", "source" : "Description"}
     ]
 } %}
