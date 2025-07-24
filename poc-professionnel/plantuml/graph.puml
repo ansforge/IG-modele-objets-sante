@@ -200,6 +200,7 @@ package IG #DDDDDD{
              ExerciceProfessionnel.NiveauFormation.niveauFormationAcquis => [0..1]
              ExerciceProfessionnel.NiveauFormation.anneeUniversitaire => [0..1]
              ExerciceProfessionnel.NiveauFormation.dateFin => [0..1]
+             ExerciceProfessionnel.professionnel => [1..1]
         } 
 
         class FonctionQualifiee{
@@ -322,6 +323,7 @@ package IG #DDDDDD{
              SituationExercice.telecommunication => [0..*]
              SituationExercice.adresseSE => [0..*]
              SituationExercice.boiteLettresMSS => [0..*]
+             SituationExercice.exerciceProfessionnel => [1..1]
         } 
 
         class SituationOperationnelle{
@@ -335,6 +337,7 @@ package IG #DDDDDD{
              SituationOperationnelle.optionContratAccesAuxSoins => [0..1]
              SituationOperationnelle.carteVitaleAcceptee => [0..1]
              SituationOperationnelle.telecommunication => [0..1]
+             SituationOperationnelle.exerciceProfessionnel => [1..1]
         } 
 
         class Specialite{
