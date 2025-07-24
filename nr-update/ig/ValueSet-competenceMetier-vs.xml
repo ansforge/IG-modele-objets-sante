@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="competenceMetier-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs competenceMetier-vs</b></p><a name="competenceMetier-vs"> </a><a name="hccompetenceMetier-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</code></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html"><code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier</code></a></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs"/>
+  <version value="0.1.0"/>
+  <name value="CompetencemetiereVs"/>
+  <status value="draft"/>
+  <date value="2025-07-24T13:17:31+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"/>
+    </include>
+    <include>
+      <system value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Adresse"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : DéfinitionStructure Adresse</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse" title="Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011.">Adresse</a><a name="Adresse"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.identificationDestinataire" title="Eléments d'identification du destinataire c’est-à-dire la personne physique ou morale à qui un envoi est adressé.1) Le destinataire est une personne physique :* Qualité: civilité ou condition sociale, civile, juridique ou titre sous lequel une partie figure dans un acte juridique.* Prénom* Nom* Titre: désignation honorifique exprimant une distinction de rang, une dignité (titres nobiliaires, religieux, etc.).* Profession, fonctionUne personne physique peut être désignée soit par son nom et éventuellement son prénom, soit par son nom et sa fonction ou sa profession, enfin, dans certains cas particuliers, par ses seuls titres, fonction ou profession.2) Le destinataire est une personne morale :* Forme juridique: Indication du statut juridique de la personne morale : SA, SARL, GIE, Société civile, Mutuelle, Association, Fondation, etc.* Raison ou dénomination sociale* Domaine d'activité* Enseigne commerciale* Nom commercial* Subdivision au sein de l'entreprise (Direction, service, etc.) ou organisation interne de la personne morale (fonctionnelle ou géographique).Une personne morale peut être désignée au moins par sa raison sociale, son enseigne ou nom commercial.">identificationDestinataire</a><a name="Adresse.identificationDestinataire"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Eléments d'identification du destinataire c’est-à-dire la personne physique ou morale à qui un envoi est adressé.1) Le destinataire est une personne physique :* Qualité: civilité ou condition sociale, civile, juridique ou titre sous lequel une partie figure dans un acte juridique.* Prénom* Nom* Titre: désignation honorifique exprimant une distinction de rang, une dignité (titres nobiliaires, religieux, etc.).* Profession, fonctionUne personne physique peut être désignée soit par son nom et éventuellement son prénom, soit par son nom et sa fonction ou sa profession, enfin, dans certains cas particuliers, par ses seuls titres, fonction ou profession.2) Le destinataire est une personne morale :* Forme juridique: Indication du statut juridique de la personne morale : SA, SARL, GIE, Société civile, Mutuelle, Association, Fondation, etc.* Raison ou dénomination sociale* Domaine d'activité* Enseigne commerciale* Nom commercial* Subdivision au sein de l'entreprise (Direction, service, etc.) ou organisation interne de la personne morale (fonctionnelle ou géographique).Une personne morale peut être désignée au moins par sa raison sociale, son enseigne ou nom commercial.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.identificationDomicilie" title="Eléments d'identification du domicilié c’est-à-dire le titulaire du domicile du destinataire (lieu ordinaire d'habitation, demeure légale et habituelle)1) Le domicilié est une personne physique:* Qualité* Prénom* Nom* Titre* Profession, fonctionLes éléments d'identification du domicilié sont précédés de la mention «chez»2) Le domicilié est une personne morale:* Forme juridique* Dénomination sociale* Activité principale* Enseigne ou nom de l'établissement* Subdivision au sein de l'entreprise (Direction, service,...).">identificationDomicilie</a><a name="Adresse.identificationDomicilie"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Eléments d'identification du domicilié c’est-à-dire le titulaire du domicile du destinataire (lieu ordinaire d'habitation, demeure légale et habituelle)1) Le domicilié est une personne physique:* Qualité* Prénom* Nom* Titre* Profession, fonctionLes éléments d'identification du domicilié sont précédés de la mention «chez»2) Le domicilié est une personne morale:* Forme juridique* Dénomination sociale* Activité principale* Enseigne ou nom de l'établissement* Subdivision au sein de l'entreprise (Direction, service,...).</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.pointRemise" title="Lieu où le destinataire prend possession de son courrier. Il est matérialisé, dans la plupart des cas, par la présence d'une boîte aux lettres; il est constitué des éléments suivants :* Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel* Accès au local ou au logement: indications de couloir, d'étage ou de niveau* Boîte aux lettres : Numéro voire dénomination (éventuellement CIDEX)* Accès à la boîte à lettres: si nécessaire,: identification du couloir d'accès, de la batterie de boîtes s'il en existe plusieurs* Code acheminement interne à l'entreprise (CAIE): Codification identifiant le découpage au sein de l'entreprise en vue du traitement de courrier par les services dédiés internes à l'entreprise. Les informations d'identification du domicilié (Chez M.X) pourraient figurer dans cet attribut.">pointRemise</a><a name="Adresse.pointRemise"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lieu où le destinataire prend possession de son courrier. Il est matérialisé, dans la plupart des cas, par la présence d'une boîte aux lettres; il est constitué des éléments suivants :* Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel* Accès au local ou au logement: indications de couloir, d'étage ou de niveau* Boîte aux lettres : Numéro voire dénomination (éventuellement CIDEX)* Accès à la boîte à lettres: si nécessaire,: identification du couloir d'accès, de la batterie de boîtes s'il en existe plusieurs* Code acheminement interne à l'entreprise (CAIE): Codification identifiant le découpage au sein de l'entreprise en vue du traitement de courrier par les services dédiés internes à l'entreprise. Les informations d'identification du domicilié (Chez M.X) pourraient figurer dans cet attribut.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.complementPointGeographique" title="Un complément de l'adresse au point géographique constitué des éléments suivants:* Bâtiment: les bâtiments sont désignés par leur type (bâtiment, immeuble, tour,...), éventuellement des mentions d'orientation (est, ouest,...), une dénomination littérale ou une numérotation; exemple: Tour DELTA* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro, une lettre, une combinaison alphanumérique. Ces éléments identifient une entrée, porte, etc.; exemple: Entrée A* Ensemble immobilier: ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès (résidence, zoneindustrielle,...); exemple: Résidence des Fleurs.">complementPointGeographique</a><a name="Adresse.complementPointGeographique"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Un complément de l'adresse au point géographique constitué des éléments suivants:* Bâtiment: les bâtiments sont désignés par leur type (bâtiment, immeuble, tour,...), éventuellement des mentions d'orientation (est, ouest,...), une dénomination littérale ou une numérotation; exemple: Tour DELTA* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro, une lettre, une combinaison alphanumérique. Ces éléments identifient une entrée, porte, etc.; exemple: Entrée A* Ensemble immobilier: ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès (résidence, zoneindustrielle,...); exemple: Résidence des Fleurs.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.numeroVoie" title="Un numéro dans la voie; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum.">numeroVoie</a><a name="Adresse.numeroVoie"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Un numéro dans la voie; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.extension" title="Extension ou indice de répétition: mention bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère complète une numérotation de voirie.">extension</a><a name="Adresse.extension"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Extension ou indice de répétition: mention bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère complète une numérotation de voirie.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.typeVoie" title="Type de voie : rue, avenue, boulevard, etc.Attribut obsolète et non conforme à la norme postale en vigueur NF Z 10-011 qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore.">typeVoie</a><a name="Adresse.typeVoie"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type de voie : rue, avenue, boulevard, etc.Attribut obsolète et non conforme à la norme postale en vigueur NF Z 10-011 qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R35-TypeVoie?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R35-TypeVoie?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.libelleVoie" title="Appellation qui est donnée à la voie par les municipalités. Ce libellé figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.Synonyme: nom de la voie">libelleVoie</a><a name="Adresse.libelleVoie"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Appellation qui est donnée à la voie par les municipalités. Ce libellé figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.Synonyme: nom de la voie</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.lieuDit" title="Lieu qui porte un nom rappelant une particularité topographique ou historique et qui, souvent, constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient).">lieuDit</a><a name="Adresse.lieuDit"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lieu qui porte un nom rappelant une particularité topographique ou historique et qui, souvent, constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient).</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.mentionDistribution" title="Mentions particulières de distribution. Il s'agit de mentions identifiant le service proposé par La Poste au destinataire. Ces mentions sont formées d'un libellé et d'un numéro de séparation (exemple : BP 42534).">mentionDistribution</a><a name="Adresse.mentionDistribution"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Mentions particulières de distribution. Il s'agit de mentions identifiant le service proposé par La Poste au destinataire. Ces mentions sont formées d'un libellé et d'un numéro de séparation (exemple : BP 42534).</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.codePostal" title="Code Postal : Code Postal ou code postal spécifique CEDEX* Code postal: Un code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la chaîne de traitement du courrier.* Code CEDEX (Courrier d'Entreprise à Distribution Exceptionnelle); le CEDEX est une modalité d'acheminement du courrier associée à des services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique; le code postal spécifique CEDEX est un code attribué aux organismes, entreprises, services publics recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné aux lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi, un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif).">codePostal</a><a name="Adresse.codePostal"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code Postal : Code Postal ou code postal spécifique CEDEX* Code postal: Un code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la chaîne de traitement du courrier.* Code CEDEX (Courrier d'Entreprise à Distribution Exceptionnelle); le CEDEX est une modalité d'acheminement du courrier associée à des services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique; le code postal spécifique CEDEX est un code attribué aux organismes, entreprises, services publics recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné aux lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi, un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif).</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.localite" title="Localité ou Libellé du bureau distributeur CEDEX** Localité: Zone d'habitation, en général la commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas où le libellé postal diffère du libellé INSEE, généralement pour lever des ambiguïtés.** Libellé du bureau distributeur CEDEX.Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX; la mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas.">localite</a><a name="Adresse.localite"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Localité ou Libellé du bureau distributeur CEDEX** Localité: Zone d'habitation, en général la commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas où le libellé postal diffère du libellé INSEE, généralement pour lever des ambiguïtés.** Libellé du bureau distributeur CEDEX.Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX; la mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.COGCommune" title="Code officiel géographique (COG), diffusé par l'INSEE, de la commune d'implantation du destinataire. Ce code ne fait pas partie de la norme NF Z 10-011 mais il correspond au libellé de l'attribut &quot;localite&quot; de la classe Adresse qui lui fait partie de la norme.">COGCommune</a><a name="Adresse.COGCommune"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code officiel géographique (COG), diffusé par l'INSEE, de la commune d'implantation du destinataire. Ce code ne fait pas partie de la norme NF Z 10-011 mais il correspond au libellé de l'attribut &quot;localite&quot; de la classe Adresse qui lui fait partie de la norme.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.internationalDivisionTerritoriale" title="Pour les adresses internationales, une subdivision administrative d'un pays. Dans le cas d'une adresse étrangère, il peut être nécessaire d'identifier dans l'adresse l'état fédéré, la région, le canton, etc.">internationalDivisionTerritoriale</a><a name="Adresse.internationalDivisionTerritoriale"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pour les adresses internationales, une subdivision administrative d'un pays. Dans le cas d'une adresse étrangère, il peut être nécessaire d'identifier dans l'adresse l'état fédéré, la région, le canton, etc.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.internationalPays" title="Pour les adresses internationales, nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens.">internationalPays</a><a name="Adresse.internationalPays"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pour les adresses internationales, nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.type" title="Indique le ou les types d'adresse tel que &quot;Adresse du domicile&quot;, &quot;Adresse professionnelle&quot;, &quot;Adresse de facturation&quot;, &quot;Adresse postale&quot;, &quot;Adresse géographique&quot;, etc.Cet attribut ne fait pas partie de la norme  NF Z 10-011.">type</a><a name="Adresse.type"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le ou les types d'adresse tel que &quot;Adresse du domicile&quot;, &quot;Adresse professionnelle&quot;, &quot;Adresse de facturation&quot;, &quot;Adresse postale&quot;, &quot;Adresse géographique&quot;, etc.Cet attribut ne fait pas partie de la norme  NF Z 10-011.<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.ligneUne" title="Identité du destinataireLa première ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'identification du destinataire (personne physique ou morale).Cas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum.">ligneUne</a><a name="Adresse.ligneUne"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identité du destinataireLa première ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'identification du destinataire (personne physique ou morale).Cas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.ligneDeux" title="La deuxième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de:* point de remise* domicilié personne physique (exemple: chez M X)* domicilié personne moraleCas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum">ligneDeux</a><a name="Adresse.ligneDeux"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">La deuxième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de:* point de remise* domicilié personne physique (exemple: chez M X)* domicilié personne moraleCas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.ligneTrois" title="La troisième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de complément de l'adresse au point géographique.38 caractères ou espaces par ligne au maximum.">ligneTrois</a><a name="Adresse.ligneTrois"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">La troisième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de complément de l'adresse au point géographique.38 caractères ou espaces par ligne au maximum.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.ligneQuatre" title="La quatrième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse: Numéro dans la voie + Extension + Libellé de la voie.38 caractères ou espaces par ligne au maximum.">ligneQuatre</a><a name="Adresse.ligneQuatre"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">La quatrième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse: Numéro dans la voie + Extension + Libellé de la voie.38 caractères ou espaces par ligne au maximum.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.ligneCinq" title="La cinquième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse:* Mentions particulières de distribution suivies du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex* Lieu-dit.38 caractères ou espaces par ligne au maximum.">ligneCinq</a><a name="Adresse.ligneCinq"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">La cinquième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse:* Mentions particulières de distribution suivies du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex* Lieu-dit.38 caractères ou espaces par ligne au maximum.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.ligneSix" title="La sixième ligne de l'adresse de publipostage obtenue par assemblage des éléments d'adresse: Code postal + localité de destination ou code cedex + libellé bureau cedex.38 caractères ou espaces par ligne au maximum.">ligneSix</a><a name="Adresse.ligneSix"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">La sixième ligne de l'adresse de publipostage obtenue par assemblage des éléments d'adresse: Code postal + localité de destination ou code cedex + libellé bureau cedex.38 caractères ou espaces par ligne au maximum.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-Adresse-definitions.html#Adresse.ligneSept" title="La septième ligne de l'adresse de publipostage contient, pour les envois à l'international, dans tous les cas, le nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens.">ligneSept</a><a name="Adresse.ligneSept"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">La septième ligne de l'adresse de publipostage contient, pour les envois à l'international, dans tous les cas, le nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens.</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse"/>
+  <version value="0.1.0"/>
+  <name value="Adresse"/>
+  <title value="Adresse"/>
+  <status value="draft"/>
+  <date value="2025-07-24T13:17:31+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="Adresse">
+      <path value="Adresse"/>
+      <short value="Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011."/>
+      <definition value="Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="Adresse.identificationDestinataire">
+      <path value="Adresse.identificationDestinataire"/>
+      <short value="Eléments d'identification du destinataire c’est-à-dire la personne physique ou morale à qui un envoi est adressé.1) Le destinataire est une personne physique :* Qualité: civilité ou condition sociale, civile, juridique ou titre sous lequel une partie figure dans un acte juridique.* Prénom* Nom* Titre: désignation honorifique exprimant une distinction de rang, une dignité (titres nobiliaires, religieux, etc.).* Profession, fonctionUne personne physique peut être désignée soit par son nom et éventuellement son prénom, soit par son nom et sa fonction ou sa profession, enfin, dans certains cas particuliers, par ses seuls titres, fonction ou profession.2) Le destinataire est une personne morale :* Forme juridique: Indication du statut juridique de la personne morale : SA, SARL, GIE, Société civile, Mutuelle, Association, Fondation, etc.* Raison ou dénomination sociale* Domaine d'activité* Enseigne commerciale* Nom commercial* Subdivision au sein de l'entreprise (Direction, service, etc.) ou organisation interne de la personne morale (fonctionnelle ou géographique).Une personne morale peut être désignée au moins par sa raison sociale, son enseigne ou nom commercial."/>
+      <definition value="Eléments d'identification du destinataire c’est-à-dire la personne physique ou morale à qui un envoi est adressé.1) Le destinataire est une personne physique :* Qualité: civilité ou condition sociale, civile, juridique ou titre sous lequel une partie figure dans un acte juridique.* Prénom* Nom* Titre: désignation honorifique exprimant une distinction de rang, une dignité (titres nobiliaires, religieux, etc.).* Profession, fonctionUne personne physique peut être désignée soit par son nom et éventuellement son prénom, soit par son nom et sa fonction ou sa profession, enfin, dans certains cas particuliers, par ses seuls titres, fonction ou profession.2) Le destinataire est une personne morale :* Forme juridique: Indication du statut juridique de la personne morale : SA, SARL, GIE, Société civile, Mutuelle, Association, Fondation, etc.* Raison ou dénomination sociale* Domaine d'activité* Enseigne commerciale* Nom commercial* Subdivision au sein de l'entreprise (Direction, service, etc.) ou organisation interne de la personne morale (fonctionnelle ou géographique).Une personne morale peut être désignée au moins par sa raison sociale, son enseigne ou nom commercial."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.identificationDestinataire"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.identificationDomicilie">
+      <path value="Adresse.identificationDomicilie"/>
+      <short value="Eléments d'identification du domicilié c’est-à-dire le titulaire du domicile du destinataire (lieu ordinaire d'habitation, demeure légale et habituelle)1) Le domicilié est une personne physique:* Qualité* Prénom* Nom* Titre* Profession, fonctionLes éléments d'identification du domicilié sont précédés de la mention «chez»2) Le domicilié est une personne morale:* Forme juridique* Dénomination sociale* Activité principale* Enseigne ou nom de l'établissement* Subdivision au sein de l'entreprise (Direction, service,...)."/>
+      <definition value="Eléments d'identification du domicilié c’est-à-dire le titulaire du domicile du destinataire (lieu ordinaire d'habitation, demeure légale et habituelle)1) Le domicilié est une personne physique:* Qualité* Prénom* Nom* Titre* Profession, fonctionLes éléments d'identification du domicilié sont précédés de la mention «chez»2) Le domicilié est une personne morale:* Forme juridique* Dénomination sociale* Activité principale* Enseigne ou nom de l'établissement* Subdivision au sein de l'entreprise (Direction, service,...)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.identificationDomicilie"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.pointRemise">
+      <path value="Adresse.pointRemise"/>
+      <short value="Lieu où le destinataire prend possession de son courrier. Il est matérialisé, dans la plupart des cas, par la présence d'une boîte aux lettres; il est constitué des éléments suivants :* Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel* Accès au local ou au logement: indications de couloir, d'étage ou de niveau* Boîte aux lettres : Numéro voire dénomination (éventuellement CIDEX)* Accès à la boîte à lettres: si nécessaire,: identification du couloir d'accès, de la batterie de boîtes s'il en existe plusieurs* Code acheminement interne à l'entreprise (CAIE): Codification identifiant le découpage au sein de l'entreprise en vue du traitement de courrier par les services dédiés internes à l'entreprise. Les informations d'identification du domicilié (Chez M.X) pourraient figurer dans cet attribut."/>
+      <definition value="Lieu où le destinataire prend possession de son courrier. Il est matérialisé, dans la plupart des cas, par la présence d'une boîte aux lettres; il est constitué des éléments suivants :* Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel* Accès au local ou au logement: indications de couloir, d'étage ou de niveau* Boîte aux lettres : Numéro voire dénomination (éventuellement CIDEX)* Accès à la boîte à lettres: si nécessaire,: identification du couloir d'accès, de la batterie de boîtes s'il en existe plusieurs* Code acheminement interne à l'entreprise (CAIE): Codification identifiant le découpage au sein de l'entreprise en vue du traitement de courrier par les services dédiés internes à l'entreprise. Les informations d'identification du domicilié (Chez M.X) pourraient figurer dans cet attribut."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.pointRemise"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.complementPointGeographique">
+      <path value="Adresse.complementPointGeographique"/>
+      <short value="Un complément de l'adresse au point géographique constitué des éléments suivants:* Bâtiment: les bâtiments sont désignés par leur type (bâtiment, immeuble, tour,...), éventuellement des mentions d'orientation (est, ouest,...), une dénomination littérale ou une numérotation; exemple: Tour DELTA* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro, une lettre, une combinaison alphanumérique. Ces éléments identifient une entrée, porte, etc.; exemple: Entrée A* Ensemble immobilier: ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès (résidence, zoneindustrielle,...); exemple: Résidence des Fleurs."/>
+      <definition value="Un complément de l'adresse au point géographique constitué des éléments suivants:* Bâtiment: les bâtiments sont désignés par leur type (bâtiment, immeuble, tour,...), éventuellement des mentions d'orientation (est, ouest,...), une dénomination littérale ou une numérotation; exemple: Tour DELTA* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro, une lettre, une combinaison alphanumérique. Ces éléments identifient une entrée, porte, etc.; exemple: Entrée A* Ensemble immobilier: ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès (résidence, zoneindustrielle,...); exemple: Résidence des Fleurs."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.complementPointGeographique"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.numeroVoie">
+      <path value="Adresse.numeroVoie"/>
+      <short value="Un numéro dans la voie; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum."/>
+      <definition value="Un numéro dans la voie; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.numeroVoie"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.extension">
+      <path value="Adresse.extension"/>
+      <short value="Extension ou indice de répétition: mention bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère complète une numérotation de voirie."/>
+      <definition value="Extension ou indice de répétition: mention bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère complète une numérotation de voirie."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.extension"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.typeVoie">
+      <path value="Adresse.typeVoie"/>
+      <short value="Type de voie : rue, avenue, boulevard, etc.Attribut obsolète et non conforme à la norme postale en vigueur NF Z 10-011 qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore."/>
+      <definition value="Type de voie : rue, avenue, boulevard, etc.Attribut obsolète et non conforme à la norme postale en vigueur NF Z 10-011 qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.typeVoie"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R35-TypeVoie?vs"/>
+      </binding>
+    </element>
+    <element id="Adresse.libelleVoie">
+      <path value="Adresse.libelleVoie"/>
+      <short value="Appellation qui est donnée à la voie par les municipalités. Ce libellé figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.Synonyme: nom de la voie"/>
+      <definition value="Appellation qui est donnée à la voie par les municipalités. Ce libellé figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.Synonyme: nom de la voie"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.libelleVoie"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.lieuDit">
+      <path value="Adresse.lieuDit"/>
+      <short value="Lieu qui porte un nom rappelant une particularité topographique ou historique et qui, souvent, constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient)."/>
+      <definition value="Lieu qui porte un nom rappelant une particularité topographique ou historique et qui, souvent, constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.lieuDit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.mentionDistribution">
+      <path value="Adresse.mentionDistribution"/>
+      <short value="Mentions particulières de distribution. Il s'agit de mentions identifiant le service proposé par La Poste au destinataire. Ces mentions sont formées d'un libellé et d'un numéro de séparation (exemple : BP 42534)."/>
+      <definition value="Mentions particulières de distribution. Il s'agit de mentions identifiant le service proposé par La Poste au destinataire. Ces mentions sont formées d'un libellé et d'un numéro de séparation (exemple : BP 42534)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.mentionDistribution"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.codePostal">
+      <path value="Adresse.codePostal"/>
+      <short value="Code Postal : Code Postal ou code postal spécifique CEDEX* Code postal: Un code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la chaîne de traitement du courrier.* Code CEDEX (Courrier d'Entreprise à Distribution Exceptionnelle); le CEDEX est une modalité d'acheminement du courrier associée à des services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique; le code postal spécifique CEDEX est un code attribué aux organismes, entreprises, services publics recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné aux lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi, un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif)."/>
+      <definition value="Code Postal : Code Postal ou code postal spécifique CEDEX* Code postal: Un code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la chaîne de traitement du courrier.* Code CEDEX (Courrier d'Entreprise à Distribution Exceptionnelle); le CEDEX est une modalité d'acheminement du courrier associée à des services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique; le code postal spécifique CEDEX est un code attribué aux organismes, entreprises, services publics recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné aux lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi, un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.codePostal"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="Adresse.localite">
+      <path value="Adresse.localite"/>
+      <short value="Localité ou Libellé du bureau distributeur CEDEX** Localité: Zone d'habitation, en général la commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas où le libellé postal diffère du libellé INSEE, généralement pour lever des ambiguïtés.** Libellé du bureau distributeur CEDEX.Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX; la mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas."/>
+      <definition value="Localité ou Libellé du bureau distributeur CEDEX** Localité: Zone d'habitation, en général la commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas où le libellé postal diffère du libellé INSEE, généralement pour lever des ambiguïtés.** Libellé du bureau distributeur CEDEX.Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX; la mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.localite"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.COGCommune">
+      <path value="Adresse.COGCommune"/>
+      <short value="Code officiel géographique (COG), diffusé par l'INSEE, de la commune d'implantation du destinataire. Ce code ne fait pas partie de la norme NF Z 10-011 mais il correspond au libellé de l'attribut &quot;localite&quot; de la classe Adresse qui lui fait partie de la norme."/>
+      <definition value="Code officiel géographique (COG), diffusé par l'INSEE, de la commune d'implantation du destinataire. Ce code ne fait pas partie de la norme NF Z 10-011 mais il correspond au libellé de l'attribut &quot;localite&quot; de la classe Adresse qui lui fait partie de la norme."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.COGCommune"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM?vs"/>
+      </binding>
+    </element>
+    <element id="Adresse.internationalDivisionTerritoriale">
+      <path value="Adresse.internationalDivisionTerritoriale"/>
+      <short value="Pour les adresses internationales, une subdivision administrative d'un pays. Dans le cas d'une adresse étrangère, il peut être nécessaire d'identifier dans l'adresse l'état fédéré, la région, le canton, etc."/>
+      <definition value="Pour les adresses internationales, une subdivision administrative d'un pays. Dans le cas d'une adresse étrangère, il peut être nécessaire d'identifier dans l'adresse l'état fédéré, la région, le canton, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.internationalDivisionTerritoriale"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.internationalPays">
+      <path value="Adresse.internationalPays"/>
+      <short value="Pour les adresses internationales, nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens."/>
+      <definition value="Pour les adresses internationales, nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.internationalPays"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.type">
+      <path value="Adresse.type"/>
+      <short value="Indique le ou les types d'adresse tel que &quot;Adresse du domicile&quot;, &quot;Adresse professionnelle&quot;, &quot;Adresse de facturation&quot;, &quot;Adresse postale&quot;, &quot;Adresse géographique&quot;, etc.Cet attribut ne fait pas partie de la norme  NF Z 10-011."/>
+      <definition value="Indique le ou les types d'adresse tel que &quot;Adresse du domicile&quot;, &quot;Adresse professionnelle&quot;, &quot;Adresse de facturation&quot;, &quot;Adresse postale&quot;, &quot;Adresse géographique&quot;, etc.Cet attribut ne fait pas partie de la norme  NF Z 10-011."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Adresse.type"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneUne">
+      <path value="Adresse.ligneUne"/>
+      <short value="Identité du destinataireLa première ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'identification du destinataire (personne physique ou morale).Cas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="Identité du destinataireLa première ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'identification du destinataire (personne physique ou morale).Cas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.ligneUne"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneDeux">
+      <path value="Adresse.ligneDeux"/>
+      <short value="La deuxième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de:* point de remise* domicilié personne physique (exemple: chez M X)* domicilié personne moraleCas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum"/>
+      <definition value="La deuxième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de:* point de remise* domicilié personne physique (exemple: chez M X)* domicilié personne moraleCas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.ligneDeux"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneTrois">
+      <path value="Adresse.ligneTrois"/>
+      <short value="La troisième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de complément de l'adresse au point géographique.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="La troisième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de complément de l'adresse au point géographique.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.ligneTrois"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneQuatre">
+      <path value="Adresse.ligneQuatre"/>
+      <short value="La quatrième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse: Numéro dans la voie + Extension + Libellé de la voie.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="La quatrième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse: Numéro dans la voie + Extension + Libellé de la voie.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.ligneQuatre"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneCinq">
+      <path value="Adresse.ligneCinq"/>
+      <short value="La cinquième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse:* Mentions particulières de distribution suivies du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex* Lieu-dit.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="La cinquième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse:* Mentions particulières de distribution suivies du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex* Lieu-dit.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.ligneCinq"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneSix">
+      <path value="Adresse.ligneSix"/>
+      <short value="La sixième ligne de l'adresse de publipostage obtenue par assemblage des éléments d'adresse: Code postal + localité de destination ou code cedex + libellé bureau cedex.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="La sixième ligne de l'adresse de publipostage obtenue par assemblage des éléments d'adresse: Code postal + localité de destination ou code cedex + libellé bureau cedex.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.ligneSix"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneSept">
+      <path value="Adresse.ligneSept"/>
+      <short value="La septième ligne de l'adresse de publipostage contient, pour les envois à l'international, dans tous les cas, le nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens."/>
+      <definition value="La septième ligne de l'adresse de publipostage contient, pour les envois à l'international, dans tous les cas, le nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Adresse.ligneSept"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Adresse">
+      <path value="Adresse"/>
+      <short value="Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011."/>
+      <definition value="Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011."/>
+    </element>
+    <element id="Adresse.identificationDestinataire">
+      <path value="Adresse.identificationDestinataire"/>
+      <short value="Eléments d'identification du destinataire c’est-à-dire la personne physique ou morale à qui un envoi est adressé.1) Le destinataire est une personne physique :* Qualité: civilité ou condition sociale, civile, juridique ou titre sous lequel une partie figure dans un acte juridique.* Prénom* Nom* Titre: désignation honorifique exprimant une distinction de rang, une dignité (titres nobiliaires, religieux, etc.).* Profession, fonctionUne personne physique peut être désignée soit par son nom et éventuellement son prénom, soit par son nom et sa fonction ou sa profession, enfin, dans certains cas particuliers, par ses seuls titres, fonction ou profession.2) Le destinataire est une personne morale :* Forme juridique: Indication du statut juridique de la personne morale : SA, SARL, GIE, Société civile, Mutuelle, Association, Fondation, etc.* Raison ou dénomination sociale* Domaine d'activité* Enseigne commerciale* Nom commercial* Subdivision au sein de l'entreprise (Direction, service, etc.) ou organisation interne de la personne morale (fonctionnelle ou géographique).Une personne morale peut être désignée au moins par sa raison sociale, son enseigne ou nom commercial."/>
+      <definition value="Eléments d'identification du destinataire c’est-à-dire la personne physique ou morale à qui un envoi est adressé.1) Le destinataire est une personne physique :* Qualité: civilité ou condition sociale, civile, juridique ou titre sous lequel une partie figure dans un acte juridique.* Prénom* Nom* Titre: désignation honorifique exprimant une distinction de rang, une dignité (titres nobiliaires, religieux, etc.).* Profession, fonctionUne personne physique peut être désignée soit par son nom et éventuellement son prénom, soit par son nom et sa fonction ou sa profession, enfin, dans certains cas particuliers, par ses seuls titres, fonction ou profession.2) Le destinataire est une personne morale :* Forme juridique: Indication du statut juridique de la personne morale : SA, SARL, GIE, Société civile, Mutuelle, Association, Fondation, etc.* Raison ou dénomination sociale* Domaine d'activité* Enseigne commerciale* Nom commercial* Subdivision au sein de l'entreprise (Direction, service, etc.) ou organisation interne de la personne morale (fonctionnelle ou géographique).Une personne morale peut être désignée au moins par sa raison sociale, son enseigne ou nom commercial."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.identificationDomicilie">
+      <path value="Adresse.identificationDomicilie"/>
+      <short value="Eléments d'identification du domicilié c’est-à-dire le titulaire du domicile du destinataire (lieu ordinaire d'habitation, demeure légale et habituelle)1) Le domicilié est une personne physique:* Qualité* Prénom* Nom* Titre* Profession, fonctionLes éléments d'identification du domicilié sont précédés de la mention «chez»2) Le domicilié est une personne morale:* Forme juridique* Dénomination sociale* Activité principale* Enseigne ou nom de l'établissement* Subdivision au sein de l'entreprise (Direction, service,...)."/>
+      <definition value="Eléments d'identification du domicilié c’est-à-dire le titulaire du domicile du destinataire (lieu ordinaire d'habitation, demeure légale et habituelle)1) Le domicilié est une personne physique:* Qualité* Prénom* Nom* Titre* Profession, fonctionLes éléments d'identification du domicilié sont précédés de la mention «chez»2) Le domicilié est une personne morale:* Forme juridique* Dénomination sociale* Activité principale* Enseigne ou nom de l'établissement* Subdivision au sein de l'entreprise (Direction, service,...)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.pointRemise">
+      <path value="Adresse.pointRemise"/>
+      <short value="Lieu où le destinataire prend possession de son courrier. Il est matérialisé, dans la plupart des cas, par la présence d'une boîte aux lettres; il est constitué des éléments suivants :* Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel* Accès au local ou au logement: indications de couloir, d'étage ou de niveau* Boîte aux lettres : Numéro voire dénomination (éventuellement CIDEX)* Accès à la boîte à lettres: si nécessaire,: identification du couloir d'accès, de la batterie de boîtes s'il en existe plusieurs* Code acheminement interne à l'entreprise (CAIE): Codification identifiant le découpage au sein de l'entreprise en vue du traitement de courrier par les services dédiés internes à l'entreprise. Les informations d'identification du domicilié (Chez M.X) pourraient figurer dans cet attribut."/>
+      <definition value="Lieu où le destinataire prend possession de son courrier. Il est matérialisé, dans la plupart des cas, par la présence d'une boîte aux lettres; il est constitué des éléments suivants :* Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel* Accès au local ou au logement: indications de couloir, d'étage ou de niveau* Boîte aux lettres : Numéro voire dénomination (éventuellement CIDEX)* Accès à la boîte à lettres: si nécessaire,: identification du couloir d'accès, de la batterie de boîtes s'il en existe plusieurs* Code acheminement interne à l'entreprise (CAIE): Codification identifiant le découpage au sein de l'entreprise en vue du traitement de courrier par les services dédiés internes à l'entreprise. Les informations d'identification du domicilié (Chez M.X) pourraient figurer dans cet attribut."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.complementPointGeographique">
+      <path value="Adresse.complementPointGeographique"/>
+      <short value="Un complément de l'adresse au point géographique constitué des éléments suivants:* Bâtiment: les bâtiments sont désignés par leur type (bâtiment, immeuble, tour,...), éventuellement des mentions d'orientation (est, ouest,...), une dénomination littérale ou une numérotation; exemple: Tour DELTA* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro, une lettre, une combinaison alphanumérique. Ces éléments identifient une entrée, porte, etc.; exemple: Entrée A* Ensemble immobilier: ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès (résidence, zoneindustrielle,...); exemple: Résidence des Fleurs."/>
+      <definition value="Un complément de l'adresse au point géographique constitué des éléments suivants:* Bâtiment: les bâtiments sont désignés par leur type (bâtiment, immeuble, tour,...), éventuellement des mentions d'orientation (est, ouest,...), une dénomination littérale ou une numérotation; exemple: Tour DELTA* Accès au bâtiment: l'accès au bâtiment est identifié par un numéro, une lettre, une combinaison alphanumérique. Ces éléments identifient une entrée, porte, etc.; exemple: Entrée A* Ensemble immobilier: ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès (résidence, zoneindustrielle,...); exemple: Résidence des Fleurs."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.numeroVoie">
+      <path value="Adresse.numeroVoie"/>
+      <short value="Un numéro dans la voie; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum."/>
+      <definition value="Un numéro dans la voie; dans les cas de numérotation sans extension, il est composé de 0 à 4 caractères numériques au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.extension">
+      <path value="Adresse.extension"/>
+      <short value="Extension ou indice de répétition: mention bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère complète une numérotation de voirie."/>
+      <definition value="Extension ou indice de répétition: mention bis, ter, quater, ...ou une lettre A, B, C, D, etc. lorsque ce caractère complète une numérotation de voirie."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.typeVoie">
+      <path value="Adresse.typeVoie"/>
+      <short value="Type de voie : rue, avenue, boulevard, etc.Attribut obsolète et non conforme à la norme postale en vigueur NF Z 10-011 qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore."/>
+      <definition value="Type de voie : rue, avenue, boulevard, etc.Attribut obsolète et non conforme à la norme postale en vigueur NF Z 10-011 qui définit cette information comme faisant partie de l'attribut libelleVoie. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R35-TypeVoie?vs"/>
+      </binding>
+    </element>
+    <element id="Adresse.libelleVoie">
+      <path value="Adresse.libelleVoie"/>
+      <short value="Appellation qui est donnée à la voie par les municipalités. Ce libellé figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.Synonyme: nom de la voie"/>
+      <definition value="Appellation qui est donnée à la voie par les municipalités. Ce libellé figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.Synonyme: nom de la voie"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.lieuDit">
+      <path value="Adresse.lieuDit"/>
+      <short value="Lieu qui porte un nom rappelant une particularité topographique ou historique et qui, souvent, constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient)."/>
+      <definition value="Lieu qui porte un nom rappelant une particularité topographique ou historique et qui, souvent, constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.mentionDistribution">
+      <path value="Adresse.mentionDistribution"/>
+      <short value="Mentions particulières de distribution. Il s'agit de mentions identifiant le service proposé par La Poste au destinataire. Ces mentions sont formées d'un libellé et d'un numéro de séparation (exemple : BP 42534)."/>
+      <definition value="Mentions particulières de distribution. Il s'agit de mentions identifiant le service proposé par La Poste au destinataire. Ces mentions sont formées d'un libellé et d'un numéro de séparation (exemple : BP 42534)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.codePostal">
+      <path value="Adresse.codePostal"/>
+      <short value="Code Postal : Code Postal ou code postal spécifique CEDEX* Code postal: Un code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la chaîne de traitement du courrier.* Code CEDEX (Courrier d'Entreprise à Distribution Exceptionnelle); le CEDEX est une modalité d'acheminement du courrier associée à des services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique; le code postal spécifique CEDEX est un code attribué aux organismes, entreprises, services publics recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné aux lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi, un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif)."/>
+      <definition value="Code Postal : Code Postal ou code postal spécifique CEDEX* Code postal: Un code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la chaîne de traitement du courrier.* Code CEDEX (Courrier d'Entreprise à Distribution Exceptionnelle); le CEDEX est une modalité d'acheminement du courrier associée à des services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique; le code postal spécifique CEDEX est un code attribué aux organismes, entreprises, services publics recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné aux lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi, un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="Adresse.localite">
+      <path value="Adresse.localite"/>
+      <short value="Localité ou Libellé du bureau distributeur CEDEX** Localité: Zone d'habitation, en général la commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas où le libellé postal diffère du libellé INSEE, généralement pour lever des ambiguïtés.** Libellé du bureau distributeur CEDEX.Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX; la mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas."/>
+      <definition value="Localité ou Libellé du bureau distributeur CEDEX** Localité: Zone d'habitation, en général la commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas où le libellé postal diffère du libellé INSEE, généralement pour lever des ambiguïtés.** Libellé du bureau distributeur CEDEX.Libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX; la mention CEDEX doit obligatoirement suivre le libellé du bureau CEDEX; dans le cas où il existe plusieurs bureaux CEDEX pour une même entité ou commune, chaque bureau CEDEX sera identifié par un numéro (exemple : ROUBAIX CEDEX 2); ce numéro correspond au numéro d'arrondissement dans le cas des villes à arrondissements, à un numéro d'ordre dans les autres cas."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.COGCommune">
+      <path value="Adresse.COGCommune"/>
+      <short value="Code officiel géographique (COG), diffusé par l'INSEE, de la commune d'implantation du destinataire. Ce code ne fait pas partie de la norme NF Z 10-011 mais il correspond au libellé de l'attribut &quot;localite&quot; de la classe Adresse qui lui fait partie de la norme."/>
+      <definition value="Code officiel géographique (COG), diffusé par l'INSEE, de la commune d'implantation du destinataire. Ce code ne fait pas partie de la norme NF Z 10-011 mais il correspond au libellé de l'attribut &quot;localite&quot; de la classe Adresse qui lui fait partie de la norme."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM?vs"/>
+      </binding>
+    </element>
+    <element id="Adresse.internationalDivisionTerritoriale">
+      <path value="Adresse.internationalDivisionTerritoriale"/>
+      <short value="Pour les adresses internationales, une subdivision administrative d'un pays. Dans le cas d'une adresse étrangère, il peut être nécessaire d'identifier dans l'adresse l'état fédéré, la région, le canton, etc."/>
+      <definition value="Pour les adresses internationales, une subdivision administrative d'un pays. Dans le cas d'une adresse étrangère, il peut être nécessaire d'identifier dans l'adresse l'état fédéré, la région, le canton, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.internationalPays">
+      <path value="Adresse.internationalPays"/>
+      <short value="Pour les adresses internationales, nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens."/>
+      <definition value="Pour les adresses internationales, nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.type">
+      <path value="Adresse.type"/>
+      <short value="Indique le ou les types d'adresse tel que &quot;Adresse du domicile&quot;, &quot;Adresse professionnelle&quot;, &quot;Adresse de facturation&quot;, &quot;Adresse postale&quot;, &quot;Adresse géographique&quot;, etc.Cet attribut ne fait pas partie de la norme  NF Z 10-011."/>
+      <definition value="Indique le ou les types d'adresse tel que &quot;Adresse du domicile&quot;, &quot;Adresse professionnelle&quot;, &quot;Adresse de facturation&quot;, &quot;Adresse postale&quot;, &quot;Adresse géographique&quot;, etc.Cet attribut ne fait pas partie de la norme  NF Z 10-011."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneUne">
+      <path value="Adresse.ligneUne"/>
+      <short value="Identité du destinataireLa première ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'identification du destinataire (personne physique ou morale).Cas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="Identité du destinataireLa première ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'identification du destinataire (personne physique ou morale).Cas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneDeux">
+      <path value="Adresse.ligneDeux"/>
+      <short value="La deuxième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de:* point de remise* domicilié personne physique (exemple: chez M X)* domicilié personne moraleCas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum"/>
+      <definition value="La deuxième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de:* point de remise* domicilié personne physique (exemple: chez M X)* domicilié personne moraleCas particulier: pour un  domicilié personne morale, la ligne 1 peut contenir l'identification du domicilié personne morale et la ligne 2 contient l'identification du destinataire personne physique.38 caractères ou espaces par ligne au maximum"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneTrois">
+      <path value="Adresse.ligneTrois"/>
+      <short value="La troisième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de complément de l'adresse au point géographique.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="La troisième ligne de l'adresse de publipostage est obtenue par assemblage des éléments de complément de l'adresse au point géographique.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneQuatre">
+      <path value="Adresse.ligneQuatre"/>
+      <short value="La quatrième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse: Numéro dans la voie + Extension + Libellé de la voie.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="La quatrième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse: Numéro dans la voie + Extension + Libellé de la voie.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneCinq">
+      <path value="Adresse.ligneCinq"/>
+      <short value="La cinquième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse:* Mentions particulières de distribution suivies du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex* Lieu-dit.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="La cinquième ligne de l'adresse de publipostage est obtenue par assemblage des éléments d'adresse:* Mentions particulières de distribution suivies du libellé de la localité de destination dans le cas où celle-ci serait différente du libellé cedex* Lieu-dit.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneSix">
+      <path value="Adresse.ligneSix"/>
+      <short value="La sixième ligne de l'adresse de publipostage obtenue par assemblage des éléments d'adresse: Code postal + localité de destination ou code cedex + libellé bureau cedex.38 caractères ou espaces par ligne au maximum."/>
+      <definition value="La sixième ligne de l'adresse de publipostage obtenue par assemblage des éléments d'adresse: Code postal + localité de destination ou code cedex + libellé bureau cedex.38 caractères ou espaces par ligne au maximum."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Adresse.ligneSept">
+      <path value="Adresse.ligneSept"/>
+      <short value="La septième ligne de l'adresse de publipostage contient, pour les envois à l'international, dans tous les cas, le nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens."/>
+      <definition value="La septième ligne de l'adresse de publipostage contient, pour les envois à l'international, dans tous les cas, le nom du pays du destinataire, de préférence en majuscules et en toutes lettres, dans la langue du pays d’expédition ou dans une langue reconnue par le Comité Européen de Normalisation (CEN) : anglais, français, allemand pour les envois européens."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

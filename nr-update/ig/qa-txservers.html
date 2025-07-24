@@ -1,0 +1,723 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>MOS : Terminology Server Report</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Terminology Server Report for MOS</h1>
+ <p>Generated Thu Jul 24 13:19:46 UTC 2025, FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/mos">https://interop.esante.gouv.fr/ig/fhir/mos</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">history</a>))</p>
+<p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
+<h2>Terminology Parameters</h2>
+<ul>
+  <li>
+    <b>x-system-cache-id</b>
+:     <code>dc8fd4bc-091a-424a-8a3b-6198ef146891</code>
+  </li>
+  <li>
+    <b>displayLanguage</b>
+:     <code>fr-FR</code>
+  </li>
+</ul>
+<h2>Tx Manager report for 'https://tx.fhir.org/tx-reg'</h2>
+<p>
+  <b>Decisions</b>
+</p>
+<table class="grid">
+  <tr>
+    <td>
+      <b>Message</b>
+    </td>
+    <td>
+      <b>Server</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Systems</b>
+    </td>
+    <td>
+      <b>Choices</b>
+    </td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>null</td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://nzhts.digital.health.nz/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://nzhts.digital.health.nz/fhir, auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R35-TypeVoie?vs</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir|https://terminologystandardsservice.ca/tx/fhir|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/DESCNonQualifiant-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R43-CapaciteSavoirFaire</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/capaciteSavoirFaire-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R43-CapaciteSavoirFaire, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competence-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceExclusive-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R40-CompetenceExclusive, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Found most authoritative server https://smt.esante.gouv.fr/fhir</td>
+    <td>https://smt.esante.gouv.fr/fhir</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS, https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier]</td>
+    <td>[auth = , candidates=, auth = https://smt.esante.gouv.fr/fhir, candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R97-DroitExerciceCompl</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/droitExerciceComplementaire-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R97-DroitExerciceCompl, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R45-FonctionQualifiee</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/fonctionQualifiee-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R45-FonctionQualifiee, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/lieuNaissance-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G13-OrientationParticuliere</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/orientationParticuliere-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G13-OrientationParticuliere]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/paysNaissance-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R268-PaysProvenanceISO, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/paysNationalite-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R268-PaysProvenanceISO, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays]</td>
+    <td>[auth = , candidates=, auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/profession-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R291-AutreProfession, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R95-UsagerTitre, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R94-ProfessionSocial, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante]</td>
+    <td>[auth = , candidates=, auth = , candidates=, auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R262-CategorieSocioProfessionnelle</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/professionCategorieSocioProfessionnelle-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R262-CategorieSocioProfessionnelle]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R44-QualificationPAC</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/qualificationPAC-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R44-QualificationPAC, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R21-Fonction</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R21-Fonction, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R85-RolePriseCharge, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R96-AutreFonctionSanitaire]</td>
+    <td>[auth = , candidates=, auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R249-Sexe</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/sexe-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R303-HL7v3AdministrativeGender, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R267-SexeProvenanceISO, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R249-Sexe]</td>
+    <td>[auth = , candidates=, auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R38-SpecialiteOrdinale</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/specialite-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R38-SpecialiteOrdinale, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/surspecialiteTransversale-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R359-SurspecialiteTransversale]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R288-TypeProfession</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeProfession-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R288-TypeProfession]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td></td>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R289-TypeFonction</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.fhir.org/r4</td>
+    <td>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs|0.1.0</td>
+    <td>[https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction, https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R289-TypeFonction]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1</td>
+    <td>[http://unstats.un.org/unsd/methods/m49/m49.htm, urn:iso:std:iso:3166, urn:iso:std:iso:3166:-2]</td>
+    <td>[auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4, auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://nzhts.digital.health.nz/fhir, auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4]</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://nzhts.digital.health.nz/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://nzhts.digital.health.nz/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4|https://tx.fhir.ch/r4|https://nzhts.digital.health.nz/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server http://tx.fhir.org/r4</td>
+    <td>http://tx.fhir.org/r4</td>
+    <td></td>
+    <td>urn:iso:std:iso:3166:-2</td>
+    <td>auth = , candidates=http://tx.fhir.org/r4|http://tx.hl7europe.eu/r4</td>
+  </tr>
+</table>
+<h2>Primary Server: https://tx.fhir.org/r4</h2>
+<a href="https://tx.fhir.org/r4"></a>
+<p>Use Count: 200. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+  <tr>
+    <td>http://loinc.org</td>
+    <td>0</td>
+    <td>1</td>
+    <td>
+      <a href="http://terminology.hl7.org/6.4.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+    </td>
+  </tr>
+  <tr>
+    <td>http://unstats.un.org/unsd/methods/m49/m49.htm</td>
+    <td>0</td>
+    <td>2</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G13-OrientationParticuliere</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</td>
+    <td>11</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays</td>
+    <td>4</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R21-Fonction</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R249-Sexe</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R262-CategorieSocioProfessionnelle</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R267-SexeProvenanceISO</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R268-PaysProvenanceISO</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R288-TypeProfession</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R289-TypeFonction</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R291-AutreProfession</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R303-HL7v3AdministrativeGender</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R359-SurspecialiteTransversale</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R38-SpecialiteOrdinale</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R40-CompetenceExclusive</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R43-CapaciteSavoirFaire</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R44-QualificationPAC</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R45-FonctionQualifiee</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R85-RolePriseCharge</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R94-ProfessionSocial</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R95-UsagerTitre</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R96-AutreFonctionSanitaire</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R97-DroitExerciceCompl</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166</td>
+    <td>3</td>
+    <td>3</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+    </td>
+  </tr>
+  <tr>
+    <td>urn:iso:std:iso:3166:-2</td>
+    <td>1</td>
+    <td>2</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
+    </td>
+  </tr>
+</table>
+<p>ValueSets fetched:</p>
+<ul>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G00-Langue?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G05-SousSectionTableauCNOP?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G08-TypeIdentifiantPersonne?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G09-DepartementOM?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G13-OrientationParticuliere|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R03-AttributionParticuliere?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R04-TypeSavoirFaire?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R06-SectionTableauCNOP?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R09-CategorieProfessionnelle?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R10-SexeAdministratif?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R11-CiviliteExercice?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R13-CommuneOM|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R14-TypeDiplome?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R16-LieuFormation?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R20-Pays|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R21-Fonction|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R22-GenreActivite?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R223-NatCycleForm?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R224-NiveauFormAcquis?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R225-AnneeUniversitaire?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R226-Dip2iemeCycleNQ?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R23-ModeExercice?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R24-TypeActiviteLiberale?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R243-CompetenceSpecifique?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R249-Sexe|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R25-MotifFinActivite?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R252-TypeHoraire?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R257-TypeBAL?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R262-CategorieSocioProfessionnelle|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R267-SexeProvenanceISO|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R268-PaysProvenanceISO|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R282-CNAMAmeliSecteurConventionnement?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R288-TypeProfession|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R289-TypeFonction|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R291-AutreProfession|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R303-HL7v3AdministrativeGender|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R31-StatutEtatCivil?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R32-StatutHospitalier?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R33-StatutInscription?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R34-StatutProfessionnelSSA?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R348-FormationSpecialiseeTransversale?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R35-TypeVoie?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R359-SurspecialiteTransversale|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R36-AutreDiplomeObtenu?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R38-SpecialiteOrdinale|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R40-CompetenceExclusive|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R42-DESCnonQualifiant|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R43-CapaciteSavoirFaire|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R44-QualificationPAC|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R45-FonctionQualifiee|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R48-DiplomeEtatFrancais?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R49-DiplomeEtudeSpecialisee?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R50-DESCGroupe1Diplome?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R51-DESCGroupe2Diplome?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R52-CapaciteDiplome?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R53-DiplomePaysEEE?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R54-DiplomeUniversiteInterUniversitaire?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R55-CertificatEtudeSpeciale?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R56-Attestation?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R58-AutreTypeDiplome?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R81-Civilite?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R82-Ordre?vs</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R85-RolePriseCharge|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R89-RegroupementPays|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R94-ProfessionSocial|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R95-UsagerTitre|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R96-AutreFonctionSanitaire|null</li>
+  <li>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R97-DroitExerciceCompl|null</li>
+</ul>
+<h2>Server: https://tx.fhir.org/r4</h2>
+<a href="https://tx.fhir.org/r4"></a>
+<p>Use Count: 2. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+</table>
+<h2>Server: https://smt.esante.gouv.fr/fhir</h2>
+<a href="https://smt.esante.gouv.fr/fhir"></a>
+<p>Use Count: 1. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+  <tr>
+    <td>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier</td>
+    <td>1</td>
+    <td>0</td>
+    <td>
+      <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html">Tre R394 Competence Metier</a>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1005 @@
+﻿<!-- get modelType --><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Telecommunication - Modèle des Objets de Santé (MOS) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"6.37"}
+    h3,h4,h5,h6{--heading-prefix:"6.37"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+  </div>
+  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
+    <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+    <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img src="assets/images/fra.svg" alt="France flag" title="France" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="classes_communes.html">Classes communes</a>
+  </li>
+  <li>
+    <a href="types_donnees.html">Types de données</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Partition
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="professionnel.html">Professionnel</a>
+      </li>
+      <li>
+        <a href="dispo-authent.html">Dispositif d'authentification</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
+      </li>
+      <li>
+        <a href="ppec.html">Personne prise en charge</a>
+      </li>
+      <li>
+        <a href="ressops.html">Ressources opérationnelles</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Telecommunication</b></li>
+
+          <span style="float:right;">
+
+            <a href="StructureDefinition-SurspecialiteTransversale.profile.ttl.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-Telecommunication-definitions.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-Telecommunication-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-Telecommunication-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-Telecommunication.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-Telecommunication.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-Telecommunication.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">Logical Model:
+
+    Telecommunication
+
+
+
+
+
+  </h2>
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication<button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication" title="Click to copy URL" class="btn-copy"></button></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication|0.1.0" title="Click to copy versioned URL" class="btn-copy"></button></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">Telecommunication</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+  <!-- insert intro if present -->
+
+
+
+
+<p><b>Usages:</b></p>
+<ul>
+ <li>Use this Logical Model: <a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a>, <a href="StructureDefinition-Professionnel.html">Professionnel</a>, <a href="StructureDefinition-SituationExercice.html">SituationExercice</a> and <a href="StructureDefinition-SituationOperationnelle.html">SituationOperationnelle</a></li>
+</ul>
+<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fhir.fr.mos|current/StructureDefinition/Telecommunication">usages in the FHIR IG Statistics</a></p>
+
+    <!-- no uri -->
+  <a name="profile"> </a>
+  <h3 id="profile">Formal Views of Profile Content</h3>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions">Description of Profiles, Differentials, Snapshots and how the different presentations work</a>.
+  </p>
+  <div id="tabs">
+    <ul>
+      <li>
+        <a href="#tabs-key">Key Elements Table</a>
+      </li>
+      <li>
+        <a href="#tabs-diff">Differential Table</a>
+      </li>
+      <li>
+        <a href="#tabs-snap">Snapshot Table</a>
+      </li>
+
+  <!-- <li>
+        <a href="#tabs-xml">Pseudo-XML</a>
+      </li> -->
+
+
+  <!-- <li>
+        <a href="#tabs-json">Pseudo-JSON</a>
+      </li> -->
+
+
+        <!-- <li>
+        <a href="#tabs-ttl">Pseudo-TTL</a>
+      </li> -->
+
+      <li>
+        <a href="#tabs-summ">Statistics/References</a>
+      </li>
+      <li>
+        <a href="#tabs-all">All</a>
+      </li>
+    </ul>
+    <a name="tabs-key"> </a>
+    <div id="tabs-key">
+      <div id="tbl-key">
+        <div id="tbl-key-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="TelecommunicationK" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('TelecommunicationK'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('TelecommunicationK'), document.getElementById('ppTelecommunicationK'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppTelecommunicationK">Bindings <input onClick="filterDesc(document.getElementById('TelecommunicationK'), 'binding',event.target.checked, document.getElementById('ppTelecommunicationK'))" size="1" name="binding" checked="true" id="cbTelecommunicationK-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('TelecommunicationK'), 'constraint',event.target.checked, document.getElementById('ppTelecommunicationK'))" size="1" name="constraint" checked="true" id="cbTelecommunicationK-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('TelecommunicationK'), 'obligation',event.target.checked, document.getElementById('ppTelecommunicationK'))" size="1" name="obligation" checked="true" id="cbTelecommunicationK-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication" title="Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)." data-no-external="true">Telecommunication</a><a name="k-Telecommunication"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.canal" title="Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie." data-no-external="true">canal</a><a name="k-Telecommunication.canal"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l606">​</a>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.adresseTelecom" title="Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc." data-no-external="true">adresseTelecom</a><a name="k-Telecommunication.adresseTelecom"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.typeMessagerie" title="Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie." data-no-external="true">typeMessagerie</a><a name="k-Telecommunication.typeMessagerie"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l663">​</a>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.utilisation" title="Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)." data-no-external="true">utilisation</a><a name="k-Telecommunication.utilisation"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.niveauConfidentialite" title="Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication." data-no-external="true">niveauConfidentialite</a><a name="k-Telecommunication.niveauConfidentialite"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l720">​</a>Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // dc276d08-34ab-43d4-8b62-eeafb4e62ecf
+document.getElementById('cbTelecommunicationK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('TelecommunicationK'), 'binding', document.getElementById('cbTelecommunicationK-binding').checked, document.getElementById('ppTelecommunicationK'));
+document.getElementById('cbTelecommunicationK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('TelecommunicationK'), 'constraint', document.getElementById('cbTelecommunicationK-constraint').checked, document.getElementById('ppTelecommunicationK'));
+document.getElementById('cbTelecommunicationK-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('TelecommunicationK'), 'obligation', document.getElementById('cbTelecommunicationK-obligation').checked, document.getElementById('ppTelecommunicationK'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
+          <h4>Terminology Bindings</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>Telecommunication.canal</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l770">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.typeMessagerie</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l784">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.niveauConfidentialite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l798">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+</table>
+
+        
+          
+            <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+    </div>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      <div id="tbl-diff">
+        <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
+        </p>
+        <div id="tbl-diff-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="TelecommunicationD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('TelecommunicationD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('TelecommunicationD'), document.getElementById('ppTelecommunicationD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppTelecommunicationD">Bindings <input onClick="filterDesc(document.getElementById('TelecommunicationD'), 'binding',event.target.checked, document.getElementById('ppTelecommunicationD'))" size="1" name="binding" checked="true" id="cbTelecommunicationD-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('TelecommunicationD'), 'constraint',event.target.checked, document.getElementById('ppTelecommunicationD'))" size="1" name="constraint" checked="true" id="cbTelecommunicationD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('TelecommunicationD'), 'obligation',event.target.checked, document.getElementById('ppTelecommunicationD'))" size="1" name="obligation" checked="true" id="cbTelecommunicationD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication" title="Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)." data-no-external="true">Telecommunication</a><a name="Telecommunication"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.canal" title="Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie." data-no-external="true">canal</a><a name="Telecommunication.canal"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l911">​</a>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.adresseTelecom" title="Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc." data-no-external="true">adresseTelecom</a><a name="Telecommunication.adresseTelecom"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.typeMessagerie" title="Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie." data-no-external="true">typeMessagerie</a><a name="Telecommunication.typeMessagerie"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l968">​</a>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.utilisation" title="Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)." data-no-external="true">utilisation</a><a name="Telecommunication.utilisation"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.niveauConfidentialite" title="Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication." data-no-external="true">niveauConfidentialite</a><a name="Telecommunication.niveauConfidentialite"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1025">​</a>Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // dc276d08-34ab-43d4-8b62-eeafb4e62ecf
+document.getElementById('cbTelecommunicationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('TelecommunicationD'), 'binding', document.getElementById('cbTelecommunicationD-binding').checked, document.getElementById('ppTelecommunicationD'));
+document.getElementById('cbTelecommunicationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('TelecommunicationD'), 'constraint', document.getElementById('cbTelecommunicationD-constraint').checked, document.getElementById('ppTelecommunicationD'));
+document.getElementById('cbTelecommunicationD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('TelecommunicationD'), 'obligation', document.getElementById('cbTelecommunicationD-obligation').checked, document.getElementById('ppTelecommunicationD'));
+</script></table>
+          <a name="tx"> </a>
+            <!-- Terminology Bindings heading in the fragment -->
+          <h4>Terminology Bindings (Differential)</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>Telecommunication.canal</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1078">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.typeMessagerie</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1092">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.niveauConfidentialite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1106">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+</table>
+
+        
+          
+            <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+    </div>
+    <a name="tabs-snap"> </a>
+    <div id="tabs-snap">
+      <div id="tbl-snap">
+        <div id="tbl-snap-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="TelecommunicationS" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('TelecommunicationS'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('TelecommunicationS'), document.getElementById('ppTelecommunicationS'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppTelecommunicationS">Bindings <input onClick="filterDesc(document.getElementById('TelecommunicationS'), 'binding',event.target.checked, document.getElementById('ppTelecommunicationS'))" size="1" name="binding" checked="true" id="cbTelecommunicationS-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('TelecommunicationS'), 'constraint',event.target.checked, document.getElementById('ppTelecommunicationS'))" size="1" name="constraint" checked="true" id="cbTelecommunicationS-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('TelecommunicationS'), 'obligation',event.target.checked, document.getElementById('ppTelecommunicationS'))" size="1" name="obligation" checked="true" id="cbTelecommunicationS-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication" title="Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)." data-no-external="true">Telecommunication</a><a name="s-Telecommunication"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.canal" title="Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie." data-no-external="true">canal</a><a name="s-Telecommunication.canal"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1209">​</a>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.adresseTelecom" title="Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc." data-no-external="true">adresseTelecom</a><a name="s-Telecommunication.adresseTelecom"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.typeMessagerie" title="Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie." data-no-external="true">typeMessagerie</a><a name="s-Telecommunication.typeMessagerie"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1266">​</a>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.utilisation" title="Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)." data-no-external="true">utilisation</a><a name="s-Telecommunication.utilisation"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.niveauConfidentialite" title="Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication." data-no-external="true">niveauConfidentialite</a><a name="s-Telecommunication.niveauConfidentialite"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1323">​</a>Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // dc276d08-34ab-43d4-8b62-eeafb4e62ecf
+document.getElementById('cbTelecommunicationS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('TelecommunicationS'), 'binding', document.getElementById('cbTelecommunicationS-binding').checked, document.getElementById('ppTelecommunicationS'));
+document.getElementById('cbTelecommunicationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('TelecommunicationS'), 'constraint', document.getElementById('cbTelecommunicationS-constraint').checked, document.getElementById('ppTelecommunicationS'));
+document.getElementById('cbTelecommunicationS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('TelecommunicationS'), 'obligation', document.getElementById('cbTelecommunicationS-obligation').checked, document.getElementById('ppTelecommunicationS'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
+          <h4>Terminology Bindings</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>Telecommunication.canal</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1373">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.typeMessagerie</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1387">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.niveauConfidentialite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1401">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+</table>
+
+        
+          
+            <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+    </div>
+
+  <!-- <a name="tabs-xml"> </a>
+    <div id="tabs-xml">
+      <div id="xml">
+        <div id="xml-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+        </div>
+      </div>
+    </div> -->
+
+
+  <!-- <a name="tabs-json"> </a>
+    <div id="tabs-json">
+      <div id="json">
+        <div id="json-inner">
+           // <span style="color: navy; opacity: 0.8">Telecommunication</span>
+ {
+// from Element: <a href="http://hl7.org/fhir/R4/extensibility.html">extension</a>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.canal" title="Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie" class="dict"><span style="text-decoration: underline">canal</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs.html" style="color: navy">Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie.</a></span>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.adresseTelecom" title="Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc" class="dict"><span style="text-decoration: underline">adresseTelecom</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</span>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.typeMessagerie" title="Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie" class="dict"><span style="text-decoration: underline">typeMessagerie</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs.html" style="color: navy">Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie.</a></span>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.utilisation" title="Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)" class="dict"><span style="text-decoration: underline">utilisation</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</span>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.niveauConfidentialite" title="Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication" class="dict"><span style="text-decoration: underline">niveauConfidentialite</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>} <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs.html" style="color: navy">Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication.</a></span>
+  }
+
+        </div>
+      </div>
+    </div> -->
+
+
+      <!-- <a name="tabs-ttl"> </a>
+    <div id="tabs-ttl">
+      <div id="ttl">
+        <div id="ttl-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
+
+        </div>
+      </div>
+    </div> -->
+
+    <a name="tabs-summ"> </a>
+    <div id="tabs-summ">
+      <div id="tbl-summ">
+        <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
+        </p>
+        <div id="tbl-summ-inner">
+          <a name="summary"> </a>
+          <a name="s-summary"> </a>
+<p><b>
+Résumé
+</b></p>
+
+        </div>
+      </div>
+    </div>
+    <a name="tabs-all"> </a>
+    <div id="tabs-all">
+      <div id="all-tbl-key">
+        <p>
+          <b>Key Elements View</b>
+        </p>
+        <div id="all-tbl-key-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="TelecommunicationKA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('TelecommunicationKA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('TelecommunicationKA'), document.getElementById('ppTelecommunicationKA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppTelecommunicationKA">Bindings <input onClick="filterDesc(document.getElementById('TelecommunicationKA'), 'binding',event.target.checked, document.getElementById('ppTelecommunicationKA'))" size="1" name="binding" checked="true" id="cbTelecommunicationKA-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('TelecommunicationKA'), 'constraint',event.target.checked, document.getElementById('ppTelecommunicationKA'))" size="1" name="constraint" checked="true" id="cbTelecommunicationKA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('TelecommunicationKA'), 'obligation',event.target.checked, document.getElementById('ppTelecommunicationKA'))" size="1" name="obligation" checked="true" id="cbTelecommunicationKA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication" title="Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)." data-no-external="true">Telecommunication</a><a name="ka-Telecommunication"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.canal" title="Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie." data-no-external="true">canal</a><a name="ka-Telecommunication.canal"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1544">​</a>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.adresseTelecom" title="Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc." data-no-external="true">adresseTelecom</a><a name="ka-Telecommunication.adresseTelecom"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.typeMessagerie" title="Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie." data-no-external="true">typeMessagerie</a><a name="ka-Telecommunication.typeMessagerie"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1601">​</a>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.utilisation" title="Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)." data-no-external="true">utilisation</a><a name="ka-Telecommunication.utilisation"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.niveauConfidentialite" title="Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication." data-no-external="true">niveauConfidentialite</a><a name="ka-Telecommunication.niveauConfidentialite"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1658">​</a>Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // dc276d08-34ab-43d4-8b62-eeafb4e62ecf
+document.getElementById('cbTelecommunicationKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('TelecommunicationKA'), 'binding', document.getElementById('cbTelecommunicationKA-binding').checked, document.getElementById('ppTelecommunicationKA'));
+document.getElementById('cbTelecommunicationKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('TelecommunicationKA'), 'constraint', document.getElementById('cbTelecommunicationKA-constraint').checked, document.getElementById('ppTelecommunicationKA'));
+document.getElementById('cbTelecommunicationKA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('TelecommunicationKA'), 'obligation', document.getElementById('cbTelecommunicationKA-obligation').checked, document.getElementById('ppTelecommunicationKA'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
+          <h4>Terminology Bindings</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>Telecommunication.canal</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1708">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.typeMessagerie</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1722">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.niveauConfidentialite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l1736">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+</table>
+
+        
+          
+            <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+      <div id="all-tbl-diff">
+        <p>
+          <b>Differential View</b>
+        </p>
+        <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
+        </p>
+        <div id="all-tbl-diff-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="TelecommunicationDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('TelecommunicationDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('TelecommunicationDA'), document.getElementById('ppTelecommunicationDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppTelecommunicationDA">Bindings <input onClick="filterDesc(document.getElementById('TelecommunicationDA'), 'binding',event.target.checked, document.getElementById('ppTelecommunicationDA'))" size="1" name="binding" checked="true" id="cbTelecommunicationDA-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('TelecommunicationDA'), 'constraint',event.target.checked, document.getElementById('ppTelecommunicationDA'))" size="1" name="constraint" checked="true" id="cbTelecommunicationDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('TelecommunicationDA'), 'obligation',event.target.checked, document.getElementById('ppTelecommunicationDA'))" size="1" name="obligation" checked="true" id="cbTelecommunicationDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication" title="Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)." data-no-external="true">Telecommunication</a><a name="a-Telecommunication"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.canal" title="Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie." data-no-external="true">canal</a><a name="a-Telecommunication.canal"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1849">​</a>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.adresseTelecom" title="Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc." data-no-external="true">adresseTelecom</a><a name="a-Telecommunication.adresseTelecom"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.typeMessagerie" title="Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie." data-no-external="true">typeMessagerie</a><a name="a-Telecommunication.typeMessagerie"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1906">​</a>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.utilisation" title="Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)." data-no-external="true">utilisation</a><a name="a-Telecommunication.utilisation"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.niveauConfidentialite" title="Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication." data-no-external="true">niveauConfidentialite</a><a name="a-Telecommunication.niveauConfidentialite"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l1963">​</a>Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // dc276d08-34ab-43d4-8b62-eeafb4e62ecf
+document.getElementById('cbTelecommunicationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('TelecommunicationDA'), 'binding', document.getElementById('cbTelecommunicationDA-binding').checked, document.getElementById('ppTelecommunicationDA'));
+document.getElementById('cbTelecommunicationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('TelecommunicationDA'), 'constraint', document.getElementById('cbTelecommunicationDA-constraint').checked, document.getElementById('ppTelecommunicationDA'));
+document.getElementById('cbTelecommunicationDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('TelecommunicationDA'), 'obligation', document.getElementById('cbTelecommunicationDA-obligation').checked, document.getElementById('ppTelecommunicationDA'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
+          <h4>Terminology Bindings (Differential)</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>Telecommunication.canal</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l2013">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.typeMessagerie</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l2027">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.niveauConfidentialite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l2041">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+</table>
+
+        
+          
+            <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+      <div id="all-tbl-snap">
+        <p>
+          <b>Snapshot View</b>
+        </p>
+        <div id="all-tbl-snap-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="TelecommunicationSA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('TelecommunicationSA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('TelecommunicationSA'), document.getElementById('ppTelecommunicationSA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppTelecommunicationSA">Bindings <input onClick="filterDesc(document.getElementById('TelecommunicationSA'), 'binding',event.target.checked, document.getElementById('ppTelecommunicationSA'))" size="1" name="binding" checked="true" id="cbTelecommunicationSA-binding" type="checkbox"/><br/>Constraints <input onClick="filterDesc(document.getElementById('TelecommunicationSA'), 'constraint',event.target.checked, document.getElementById('ppTelecommunicationSA'))" size="1" name="constraint" checked="true" id="cbTelecommunicationSA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('TelecommunicationSA'), 'obligation',event.target.checked, document.getElementById('ppTelecommunicationSA'))" size="1" name="obligation" checked="true" id="cbTelecommunicationSA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication" title="Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)." data-no-external="true">Telecommunication</a><a name="sa-Telecommunication"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.canal" title="Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie." data-no-external="true">canal</a><a name="sa-Telecommunication.canal"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l2144">​</a>Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.adresseTelecom" title="Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc." data-no-external="true">adresseTelecom</a><a name="sa-Telecommunication.adresseTelecom"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.typeMessagerie" title="Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie." data-no-external="true">typeMessagerie</a><a name="sa-Telecommunication.typeMessagerie"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l2201">​</a>Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.utilisation" title="Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)." data-no-external="true">utilisation</a><a name="sa-Telecommunication.utilisation"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-Telecommunication-definitions.html#Telecommunication.niveauConfidentialite" title="Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication." data-no-external="true">niveauConfidentialite</a><a name="sa-Telecommunication.niveauConfidentialite"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a name="l2258">​</a>Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" class="binding">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // dc276d08-34ab-43d4-8b62-eeafb4e62ecf
+document.getElementById('cbTelecommunicationSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('TelecommunicationSA'), 'binding', document.getElementById('cbTelecommunicationSA-binding').checked, document.getElementById('ppTelecommunicationSA'));
+document.getElementById('cbTelecommunicationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('TelecommunicationSA'), 'constraint', document.getElementById('cbTelecommunicationSA-constraint').checked, document.getElementById('ppTelecommunicationSA'));
+document.getElementById('cbTelecommunicationSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('TelecommunicationSA'), 'obligation', document.getElementById('cbTelecommunicationSA-obligation').checked, document.getElementById('ppTelecommunicationSA'));
+</script></table>
+            <!-- Terminology Bindings heading in the fragment -->
+          <h4>Terminology Bindings</h4>
+<table class="list">
+<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
+<tr><td>Telecommunication.canal</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l2308">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.typeMessagerie</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l2322">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+<tr><td>Telecommunication.niveauConfidentialite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a name="l2336">​</a><a style="opacity: 1.0" href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs">https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</a><div><code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs</code><button data-clipboard-text="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs" title="Click to copy URL" class="btn-copy"></button></div></td></tr>
+</table>
+
+        
+          
+            <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+
+        <!-- <div id="all-xml">
+        <p>
+          <b>XML Template</b>
+        </p>
+        <div id="all-xml-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+        </div>
+      </div> -->
+
+
+        <!-- <div id="all-json">
+        <p>
+          <b>JSON Template</b>
+        </p>
+        <div id="all-json-inner">
+           // <span style="color: navy; opacity: 0.8">Telecommunication</span>
+ {
+// from Element: <a href="http://hl7.org/fhir/R4/extensibility.html">extension</a>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.canal" title="Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie" class="dict"><span style="text-decoration: underline">canal</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R200-CanalCommunication?vs.html" style="color: navy">Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie.</a></span>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.adresseTelecom" title="Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc" class="dict"><span style="text-decoration: underline">adresseTelecom</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc.</span>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.typeMessagerie" title="Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie" class="dict"><span style="text-decoration: underline">typeMessagerie</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R256-TypeMessagerie?vs.html" style="color: navy">Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie.</a></span>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.utilisation" title="Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)" class="dict"><span style="text-decoration: underline">utilisation</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.).</span>
+    "<a href="StructureDefinition-Telecommunication.html#Telecommunication.niveauConfidentialite" title="Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication" class="dict"><span style="text-decoration: underline">niveauConfidentialite</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>} <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R283-NiveauConfidentialite?vs.html" style="color: navy">Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication.</a></span>
+  }
+
+        </div>
+      </div> -->
+
+
+        <!-- <div id="all-ttl">
+        <p>
+          <b>TTL Template</b>
+        </p>
+        <div id="all-ttl-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
+
+        </div>
+      </div> -->
+
+      <div id="all-summ">
+        <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
+        </p>
+        <div id="all-summ-inner">
+          <a name="a-summary"> </a>
+<p><b>
+Résumé
+</b></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <p>Other representations of profile: <a href="StructureDefinition-Telecommunication.csv">CSV</a>, <a href="StructureDefinition-Telecommunication.xlsx">Excel</a> 
+  </p>
+
+  
+
+  <!-- insert notes if present -->
+
+
+
+
+</div>
+
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/tabs.js" type="text/javascript"> </script>
+
+<script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="StructureDefinition-SurspecialiteTransversale.profile.ttl.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="StructureDefinition-Telecommunication-definitions.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 24, 2025 13:18+0000">2025-07-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html" target="_blank">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new" target="_blank">New Issue</a>
+
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+
+    <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+    <!-- Fin ajout ANS -->
+
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+
+    <!-- Analytics Below
+  ================================================== -->
+
+
+    <!-- AJOUT ANS -->
+
+<footer role="contentinfo" class="footer footer-principal">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+            <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+                <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li> -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+      <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>

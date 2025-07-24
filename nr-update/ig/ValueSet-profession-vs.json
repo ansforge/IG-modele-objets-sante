@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "profession-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs profession-vs</b></p><a name=\"profession-vs\"> </a><a name=\"hcprofession-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R95-UsagerTitre</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R94-ProfessionSocial</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R291-AutreProfession</code></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/profession-vs",
+  "version" : "0.1.0",
+  "name" : "ProfessionVs",
+  "status" : "draft",
+  "date" : "2025-07-24T13:17:31+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-G15-ProfessionSante"
+    },
+    {
+      "system" : "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R95-UsagerTitre"
+    },
+    {
+      "system" : "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R94-ProfessionSocial"
+    },
+    {
+      "system" : "https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R291-AutreProfession"
+    }]
+  }
+}
