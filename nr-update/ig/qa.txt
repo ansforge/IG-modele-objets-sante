@@ -3,7 +3,7 @@ MOS : Validation Results
 
 err = 54, warn = 366, info = 0
 IG Publisher Version: 2.0.11
-Generated Thu Jul 24 13:40:41 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mos)
+Generated Thu Jul 24 13:42:28 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mos)
  Build Errors : 1194 / 58 / 0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mos : 0 / 0 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Adresse : 2 / 6 / 1
@@ -1626,8 +1626,8 @@ WARNING: ValueSet/competenceMetier-vs: ValueSet.compose.include[0].system: No de
 WARNING: ValueSet/competenceMetier-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/competenceMetier-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/competenceMetier-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'competenceMetier-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [22fe8614-b35b-4a81-ac23-97ca1499f40d]: A usable code system with URL https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS could not be resolved.
-Information: X-Request-Id: 40f5d8ce-3493-4484-a088-28e9fb7bca9b
+ERROR: ValueSet.where(id = 'competenceMetier-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [8e6e8b26-d17f-4627-9e40-28dac6ea8e97]: A usable code system with URL https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS could not be resolved.
+Information: X-Request-Id: 153f5b54-edcb-4ff9-9910-6a3a6ebf25b3
 == fsh-generated/resources/ValueSet-droitExerciceComplementaire-vs.json ==
 WARNING: ValueSet/droitExerciceComplementaire-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R97-DroitExerciceCompl'
 WARNING: ValueSet/droitExerciceComplementaire-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS'
