@@ -10,7 +10,7 @@
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-07-25T12:35:19+00:00",
+  "date" : "2025-07-25T12:45:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -641,6 +641,7 @@
         "reference" : "StructureDefinition/Adresse"
       },
       "name" : "Adresse",
+      "description" : "Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011.",
       "exampleBoolean" : false
     },
     {
@@ -674,6 +675,7 @@
         "reference" : "StructureDefinition/BoiteLettreMSS"
       },
       "name" : "BoiteLettreMSS",
+      "description" : "Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS",
       "exampleBoolean" : false
     },
     {
@@ -1288,19 +1290,10 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "types_donnees.html"
+          "valueUrl" : "composants_elementaires.html"
         }],
-        "nameUrl" : "types_donnees.html",
-        "title" : "Types de données",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "partition.html"
-        }],
-        "nameUrl" : "partition.html",
-        "title" : "Partition",
+        "nameUrl" : "composants_elementaires.html",
+        "title" : "Composants élémentaires",
         "generation" : "markdown",
         "page" : [{
           "extension" : [{
