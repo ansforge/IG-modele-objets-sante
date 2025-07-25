@@ -31,6 +31,22 @@ La conversion a été réalisée uniquement sur la partie Professionnel, à part
 * Les tables d'association sont ignorées.
 * Les élements FHIR `short` et `definition`sont tous deux remplis avec la définition issue du MOS qui peuvent être assez longue.
 * Les liens entre les classes ont été ajoutés à la main pour la partie Professionnel, voici les lignes à ajouter dans les différents fichiers fsh :
-    * ExerciceProfessionnel.fsh : * professionnel 1..1 Reference(Professionnel) "Lien vers la classe Professionnel."
-    * SituationExercice.fsh : * exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."
-    * SituationOperationnelle.fsh : * exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."
+    * ExerciceProfessionnel.fsh : 
+    `* professionnel 1..1 Reference(Professionnel) "Lien vers la classe Professionnel."`
+    * SituationExercice.fsh : 
+    `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
+    * SituationOperationnelle.fsh : 
+    `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
+* La tre-r394-competence-metier a été ajoutée à la main car elle est au nouveau format, voici les lignes à ajouter dans les différents fichiers fsh : 
+    * aliases.fsh : 
+    `Alias: $tre-r394-competence-metier = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier`
+    * CompetenceMetier.fsh : 
+    `* competenceMetier from https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs (preferred)`
+    * CompetencemetierVs.fsh (à créer) : 
+    ```
+    ValueSet: CompetencemetiereVs
+    Id: competenceMetier-vs
+    * ^status = #draft
+    * include codes from system $TRE-R01-EnsembleSavoirFaire-CISIS
+    * include codes from system $tre-r394-competence-metier
+    ```
