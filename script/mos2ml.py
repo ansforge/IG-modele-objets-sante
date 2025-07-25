@@ -31,12 +31,12 @@ def get_valueset(termino, attribute, url, url_termino, output_path):
     """
     tre = [t for t in termino if t.startswith("TRE_")]
     if len(tre) == 1:
-        url_vs = url_termino + "CodeSystem-" + tre[0].replace('_', '-') + "?vs"
+        url_vs = url_termino + tre[0] + "/FHIR/" + tre[0].replace('_', '-') + "?vs"
     else:
         name = attribute
         include = []
         for t in tre:
-            include.append({"system": url_termino + "CodeSystem-" + t.replace("_", "-")})
+            include.append({"system": url_termino + t + "/FHIR/" + t.replace("_", "-")})
         vs = {
             "resourceType": "ValueSet",
             "id": name + "-vs",
@@ -249,7 +249,7 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, output_path, part = None):
 MOS_path = "MOS.xlsx"
 conf_path = "conf.json"
 url = "https://interop.esante.gouv.fr/ig/fhir/mos/"
-url_termino = "https://interop.esante.gouv.fr/terminologies/"
+url_termino = "https://mos.esante.gouv.fr/NOS/"
 output_path = "./json/"
 part = "Professionnel"
 

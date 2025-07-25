@@ -6,7 +6,7 @@ Title: "Horaire"
 * . ^definition = "La classe Horaire permet de définir les différentes plages d'un agenda d'une entité (jours et heures d'ouverture, période de fermeture, etc.).Synonymes (agendas partagés) : plages de disponibilités et d'indisponibilités"
 * idPlageHoraire 0..1 Identifier "Identifiant de la plage horaire." "Identifiant de la plage horaire."
 * typePlageHoraire 0..1 Coding "Un type de plage horaire apporte du contexte à la plage horaire définie par la suite. Par exemple horaire d'ouverture, horaire de garde, etc." "Un type de plage horaire apporte du contexte à la plage horaire définie par la suite. Par exemple horaire d'ouverture, horaire de garde, etc."
-* typePlageHoraire from https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R252-TypeHoraire?vs (preferred)
+* typePlageHoraire from https://mos.esante.gouv.fr/NOS/TRE_R252-TypeHoraire/FHIR/TRE-R252-TypeHoraire?vs (preferred)
 * ouvertureFermeture 0..1 boolean "Indicateur d'ouverture ou de fermeture.Valeurs possibles : 0 = Organisation fermée 1 = Organisation ouverte" "Indicateur d'ouverture ou de fermeture.Valeurs possibles : 0 = Organisation fermée 1 = Organisation ouverte"
 * jourSemaine 0..1 integer "Numéro du jour dans la semaine. D'après la norme ISO 8601, les jours de chaque semaine sont numérotés de 1 (un) pour le lundi, à 7 (sept) pour le dimanche." "Numéro du jour dans la semaine. D'après la norme ISO 8601, les jours de chaque semaine sont numérotés de 1 (un) pour le lundi, à 7 (sept) pour le dimanche."
 * heureDebut 0..1 time "Heure de début de la plage horaire." "Heure de début de la plage horaire."
