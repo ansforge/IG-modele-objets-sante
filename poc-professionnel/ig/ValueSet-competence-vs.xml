@@ -3,13 +3,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="competence-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs competence-vs</b></p><a name="competence-vs"> </a><a name="hccompetence-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS</code></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs competence-vs</b></p><a name="competence-vs"> </a><a name="hccompetence-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R39-Competence.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence</code></a></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS</code></a></li></ul></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competence-vs"/>
   <version value="0.1.0"/>
   <name value="CompetenceVs"/>
   <status value="draft"/>
-  <date value="2025-07-24T13:17:05+00:00"/>
+  <date value="2025-07-25T07:22:51+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -27,10 +27,10 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R39-Competence"/>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence"/>
     </include>
     <include>
-      <system value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS"/>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"/>
     </include>
   </compose>
 </ValueSet>

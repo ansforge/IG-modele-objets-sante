@@ -3,13 +3,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="typeProfession-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs typeProfession-vs</b></p><a name="typeProfession-vs"> </a><a name="hctypeProfession-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R288-TypeProfession</code></li><li>Inclut tous les codes définis dans <code>https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction</code></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs typeProfession-vs</b></p><a name="typeProfession-vs"> </a><a name="hctypeProfession-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R288-TypeProfession.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession</code></a></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R37-TypeProfessionFonction.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction</code></a></li></ul></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeProfession-vs"/>
   <version value="0.1.0"/>
   <name value="TypeprofessionVs"/>
   <status value="draft"/>
-  <date value="2025-07-24T13:17:05+00:00"/>
+  <date value="2025-07-25T07:22:51+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -27,10 +27,10 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R288-TypeProfession"/>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession"/>
     </include>
     <include>
-      <system value="https://interop.esante.gouv.fr/terminologies/CodeSystem-TRE-R37-TypeProfessionFonction"/>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction"/>
     </include>
   </compose>
 </ValueSet>
