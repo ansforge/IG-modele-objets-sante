@@ -44,7 +44,7 @@ La conversion a été réalisée uniquement sur la partie Professionnel, à part
     `* competenceMetier from https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs (preferred)`
     * CompetencemetierVs.fsh (à créer) : 
     ```
-    ValueSet: CompetencemetiereVs
+    ValueSet: CompetencemetierVs
     Id: competenceMetier-vs
     * ^status = #draft
     * include codes from system $TRE-R01-EnsembleSavoirFaire-CISIS
