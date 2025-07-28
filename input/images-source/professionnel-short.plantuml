@@ -1,4 +1,6 @@
 @startuml
+'Schéma générique qui contient les classes et les attributs de type BackboneElement (décrits comme objet dans le MOS historique)'
+
 skinparam packageStyle rectangle
 skinparam backgroundColor #FFFFFF
 skinparam class {
@@ -9,10 +11,10 @@ skinparam class {
 package "Professionnel" {
     class Professionnel
     class ExerciceProfessionnel {
-        [[StructureDefinition-InscriptionOrdre.html InscriptionOrdre]]
+        InscriptionOrdre
         [[StructureDefinition-SavoirFaire.html SavoirFaire]]
-        [[StructureDefinition-NiveauFormation.html NiveauFormation]]
-        [[StructureDefinition-AttributionParticuliere.html AttributionParticuliere]]
+        NiveauFormation
+        AttributionParticuliere
     }
     class SituationExercice 
     class SituationOperationnelle
