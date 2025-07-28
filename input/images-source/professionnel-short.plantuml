@@ -12,7 +12,7 @@ package "Professionnel" {
     class Professionnel
     class ExerciceProfessionnel {
         InscriptionOrdre
-        [[StructureDefinition-SavoirFaire.html SavoirFaire]]
+        SavoirFaire
         NiveauFormation
         AttributionParticuliere
     }
@@ -29,7 +29,6 @@ package "Professionnel" {
     ExerciceProfessionnel "1" -- "*" SituationExercice
     ExerciceProfessionnel "1" -- "*" SituationOperationnelle
     ExerciceProfessionnel "1" -- "*" SavoirFaire
-    ExerciceProfessionnel "1" -- "*" InscriptionOrdre
 }
 
 @enduml
