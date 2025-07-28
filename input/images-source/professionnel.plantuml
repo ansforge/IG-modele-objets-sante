@@ -137,7 +137,7 @@ Professionnel "1" -- "0..*" NiveauFormation
 Professionnel "1" -- "0..1" CarteProfessionnel
 CarteProfessionnel "1" -- "0..1" Certificat
 ExerciceProfessionnel "1" -- "0..1" EntiteGeographique
-Agenda "1" -- "0..*" RendezVous
+Agenda "*" -- "*" Professionnel
 Professionnel "1" -- "0..1" AutorisationExercice
 Professionnel "1" -- "0..1" PersonnePriseCharge
 
