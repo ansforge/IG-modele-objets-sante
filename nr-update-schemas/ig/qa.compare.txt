@@ -4,7 +4,7 @@ MOS : Validation Results
 err = 6, warn = 302, info = 1
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.mos#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/mos)
- Build Errors : 6 / 57 / 0
+ Build Errors : 9 / 57 / 0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mos : 0 / 0 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Adresse : 0 / 6 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Attestation : 0 / 4 / 1
@@ -126,6 +126,9 @@ ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 232, column
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 239, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 240, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/div/p/svg/g/a/a at Line 308, column 4221: The link 'StructureDefinition-InscriptionOrdre.html' for "StructureDefinition-InscriptionOrdre.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/div/p/svg/g/a at Line 308, column 5697: The link 'StructureDefinition-NiveauFormation.html' for "StructureDefinition-NiveauFormation.html" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/div/p/svg/g/a at Line 308, column 6452: The link 'StructureDefinition-AttributionParticuliere.html' for "StructureDefinition-AttributionParticuliere.html" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.mos.json ==
