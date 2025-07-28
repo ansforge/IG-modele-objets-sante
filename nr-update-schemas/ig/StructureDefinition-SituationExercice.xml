@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="SituationExercice"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : DéfinitionStructure SituationExercice</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description et contraintes</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice" title="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS).">SituationExercice</a><a name="SituationExercice"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS).</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.role" title="Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction">role</a><a name="SituationExercice.role"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.typeRole" title="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction">typeRole</a><a name="SituationExercice.typeRole"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.modeExercice" title="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice.">modeExercice</a><a name="SituationExercice.modeExercice"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.numeroAM" title="Identifiant d’activité, propre à l’Assurance Maladie. Cet identifiant est attribué lors de l’enregistrement de l’activité par l’Assurance Maladie. Un professionnel a autant de numéros AM que d’activités enregistrées à l’Assurance Maladie. Cet identifiant d’activité est utilisé pour la facturation à l’Assurance Maladie. Sa diffusion est restreinte aux entités choisies par l’Assurance Maladie.Format : 9 caractères numériques généralement identiques au n°ADELI ou pseudo ADELI du professionnel pour sa première activité.">numeroAM</a><a name="SituationExercice.numeroAM"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identifiant d’activité, propre à l’Assurance Maladie. Cet identifiant est attribué lors de l’enregistrement de l’activité par l’Assurance Maladie. Un professionnel a autant de numéros AM que d’activités enregistrées à l’Assurance Maladie. Cet identifiant d’activité est utilisé pour la facturation à l’Assurance Maladie. Sa diffusion est restreinte aux entités choisies par l’Assurance Maladie.Format : 9 caractères numériques généralement identiques au n°ADELI ou pseudo ADELI du professionnel pour sa première activité.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.dateDebutActivite" title="Date de début de l’activité correspondant à la date d’installation en cabinet ou à la date d’embauche du salarié, etc.">dateDebutActivite</a><a name="SituationExercice.dateDebutActivite"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date de début de l’activité correspondant à la date d’installation en cabinet ou à la date d’embauche du salarié, etc.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.dateFinActivite" title="Date de fin de l’activité.">dateFinActivite</a><a name="SituationExercice.dateFinActivite"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date de fin de l’activité.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.genreActivite" title="Le genre d'activité identifie les activités qui nécessitent l’application de règles de gestion spécifiques, par exemple, activité standard de soins ou de pharmacien, activité non soignante, activité non médicale, etc.">genreActivite</a><a name="SituationExercice.genreActivite"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le genre d'activité identifie les activités qui nécessitent l’application de règles de gestion spécifiques, par exemple, activité standard de soins ou de pharmacien, activité non soignante, activité non médicale, etc.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.motifFinActivite" title="Motif de fin d'activité, par exemple:** Décès;** Retraite libérale;** Changement de profession;** etc.">motifFinActivite</a><a name="SituationExercice.motifFinActivite"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Motif de fin d'activité, par exemple:** Décès;** Retraite libérale;** Changement de profession;** etc.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.statutHospitalier" title="Statut hospitalier dans le cas d’une activité exercée en établissement public de santé, par exemple:** Professeur des universités - praticien hospitalier (PU-PH);** Assistant hospitalier universitaire (AHU);** etc.">statutHospitalier</a><a name="SituationExercice.statutHospitalier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Statut hospitalier dans le cas d’une activité exercée en établissement public de santé, par exemple:** Professeur des universités - praticien hospitalier (PU-PH);** Assistant hospitalier universitaire (AHU);** etc.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.sectionOrdrePharmacien" title="Section du tableau de l’Ordre des pharmaciens, par exemple:** Pharmacien titulaire d’officine;** Pharmacien biologiste;** etc.">sectionOrdrePharmacien</a><a name="SituationExercice.sectionOrdrePharmacien"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Section du tableau de l’Ordre des pharmaciens, par exemple:** Pharmacien titulaire d’officine;** Pharmacien biologiste;** etc.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.sousSectionOrdrePharmacien" title="Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens.">sousSectionOrdrePharmacien</a><a name="SituationExercice.sousSectionOrdrePharmacien"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.typeActiviteLiberale" title="Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc.">typeActiviteLiberale</a><a name="SituationExercice.typeActiviteLiberale"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.statutPSSSA" title="Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc.">statutPSSSA</a><a name="SituationExercice.statutPSSSA"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.telecommunication" title="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice.">telecommunication</a><a name="SituationExercice.telecommunication"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Telecommunication.html">Telecommunication</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice.<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.adresseSE" title="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice.">adresseSE</a><a name="SituationExercice.adresseSE"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Adresse.html">Adresse</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice.<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.boiteLettresMSS" title="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.">boiteLettresMSS</a><a name="SituationExercice.boiteLettresMSS"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel.">exerciceProfessionnel</a><a name="SituationExercice.exerciceProfessionnel"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationExercice"/>
+  <version value="0.1.0"/>
+  <name value="SituationExercice"/>
+  <title value="SituationExercice"/>
+  <status value="draft"/>
+  <date value="2025-07-28T13:04:41+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationExercice"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="SituationExercice">
+      <path value="SituationExercice"/>
+      <short value="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."/>
+      <definition value="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="SituationExercice.role">
+      <path value="SituationExercice.role"/>
+      <short value="Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction"/>
+      <definition value="Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.role"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.typeRole">
+      <path value="SituationExercice.typeRole"/>
+      <short value="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction"/>
+      <definition value="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.typeRole"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.modeExercice">
+      <path value="SituationExercice.modeExercice"/>
+      <short value="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice."/>
+      <definition value="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.modeExercice"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.numeroAM">
+      <path value="SituationExercice.numeroAM"/>
+      <short value="Identifiant d’activité, propre à l’Assurance Maladie. Cet identifiant est attribué lors de l’enregistrement de l’activité par l’Assurance Maladie. Un professionnel a autant de numéros AM que d’activités enregistrées à l’Assurance Maladie. Cet identifiant d’activité est utilisé pour la facturation à l’Assurance Maladie. Sa diffusion est restreinte aux entités choisies par l’Assurance Maladie.Format : 9 caractères numériques généralement identiques au n°ADELI ou pseudo ADELI du professionnel pour sa première activité."/>
+      <definition value="Identifiant d’activité, propre à l’Assurance Maladie. Cet identifiant est attribué lors de l’enregistrement de l’activité par l’Assurance Maladie. Un professionnel a autant de numéros AM que d’activités enregistrées à l’Assurance Maladie. Cet identifiant d’activité est utilisé pour la facturation à l’Assurance Maladie. Sa diffusion est restreinte aux entités choisies par l’Assurance Maladie.Format : 9 caractères numériques généralement identiques au n°ADELI ou pseudo ADELI du professionnel pour sa première activité."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.numeroAM"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="SituationExercice.dateDebutActivite">
+      <path value="SituationExercice.dateDebutActivite"/>
+      <short value="Date de début de l’activité correspondant à la date d’installation en cabinet ou à la date d’embauche du salarié, etc."/>
+      <definition value="Date de début de l’activité correspondant à la date d’installation en cabinet ou à la date d’embauche du salarié, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.dateDebutActivite"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="SituationExercice.dateFinActivite">
+      <path value="SituationExercice.dateFinActivite"/>
+      <short value="Date de fin de l’activité."/>
+      <definition value="Date de fin de l’activité."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.dateFinActivite"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="SituationExercice.genreActivite">
+      <path value="SituationExercice.genreActivite"/>
+      <short value="Le genre d'activité identifie les activités qui nécessitent l’application de règles de gestion spécifiques, par exemple, activité standard de soins ou de pharmacien, activité non soignante, activité non médicale, etc."/>
+      <definition value="Le genre d'activité identifie les activités qui nécessitent l’application de règles de gestion spécifiques, par exemple, activité standard de soins ou de pharmacien, activité non soignante, activité non médicale, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.genreActivite"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.motifFinActivite">
+      <path value="SituationExercice.motifFinActivite"/>
+      <short value="Motif de fin d'activité, par exemple:** Décès;** Retraite libérale;** Changement de profession;** etc."/>
+      <definition value="Motif de fin d'activité, par exemple:** Décès;** Retraite libérale;** Changement de profession;** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.motifFinActivite"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.statutHospitalier">
+      <path value="SituationExercice.statutHospitalier"/>
+      <short value="Statut hospitalier dans le cas d’une activité exercée en établissement public de santé, par exemple:** Professeur des universités - praticien hospitalier (PU-PH);** Assistant hospitalier universitaire (AHU);** etc."/>
+      <definition value="Statut hospitalier dans le cas d’une activité exercée en établissement public de santé, par exemple:** Professeur des universités - praticien hospitalier (PU-PH);** Assistant hospitalier universitaire (AHU);** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.statutHospitalier"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.sectionOrdrePharmacien">
+      <path value="SituationExercice.sectionOrdrePharmacien"/>
+      <short value="Section du tableau de l’Ordre des pharmaciens, par exemple:** Pharmacien titulaire d’officine;** Pharmacien biologiste;** etc."/>
+      <definition value="Section du tableau de l’Ordre des pharmaciens, par exemple:** Pharmacien titulaire d’officine;** Pharmacien biologiste;** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.sectionOrdrePharmacien"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.sousSectionOrdrePharmacien">
+      <path value="SituationExercice.sousSectionOrdrePharmacien"/>
+      <short value="Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens."/>
+      <definition value="Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.sousSectionOrdrePharmacien"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.typeActiviteLiberale">
+      <path value="SituationExercice.typeActiviteLiberale"/>
+      <short value="Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc."/>
+      <definition value="Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.typeActiviteLiberale"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.statutPSSSA">
+      <path value="SituationExercice.statutPSSSA"/>
+      <short value="Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc."/>
+      <definition value="Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.statutPSSSA"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.telecommunication">
+      <path value="SituationExercice.telecommunication"/>
+      <short value="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice."/>
+      <definition value="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="SituationExercice.telecommunication"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication"/>
+      </type>
+    </element>
+    <element id="SituationExercice.adresseSE">
+      <path value="SituationExercice.adresseSE"/>
+      <short value="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice."/>
+      <definition value="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="SituationExercice.adresseSE"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse"/>
+      </type>
+    </element>
+    <element id="SituationExercice.boiteLettresMSS">
+      <path value="SituationExercice.boiteLettresMSS"/>
+      <short value="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice."/>
+      <definition value="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="SituationExercice.boiteLettresMSS"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS"/>
+      </type>
+    </element>
+    <element id="SituationExercice.exerciceProfessionnel">
+      <path value="SituationExercice.exerciceProfessionnel"/>
+      <short value="Lien vers la classe ExerciceProfessionnel."/>
+      <definition value="Lien vers la classe ExerciceProfessionnel."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="SituationExercice.exerciceProfessionnel"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/ExerciceProfessionnel"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="SituationExercice">
+      <path value="SituationExercice"/>
+      <short value="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."/>
+      <definition value="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."/>
+    </element>
+    <element id="SituationExercice.role">
+      <path value="SituationExercice.role"/>
+      <short value="Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction"/>
+      <definition value="Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.typeRole">
+      <path value="SituationExercice.typeRole"/>
+      <short value="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction"/>
+      <definition value="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.modeExercice">
+      <path value="SituationExercice.modeExercice"/>
+      <short value="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice."/>
+      <definition value="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.numeroAM">
+      <path value="SituationExercice.numeroAM"/>
+      <short value="Identifiant d’activité, propre à l’Assurance Maladie. Cet identifiant est attribué lors de l’enregistrement de l’activité par l’Assurance Maladie. Un professionnel a autant de numéros AM que d’activités enregistrées à l’Assurance Maladie. Cet identifiant d’activité est utilisé pour la facturation à l’Assurance Maladie. Sa diffusion est restreinte aux entités choisies par l’Assurance Maladie.Format : 9 caractères numériques généralement identiques au n°ADELI ou pseudo ADELI du professionnel pour sa première activité."/>
+      <definition value="Identifiant d’activité, propre à l’Assurance Maladie. Cet identifiant est attribué lors de l’enregistrement de l’activité par l’Assurance Maladie. Un professionnel a autant de numéros AM que d’activités enregistrées à l’Assurance Maladie. Cet identifiant d’activité est utilisé pour la facturation à l’Assurance Maladie. Sa diffusion est restreinte aux entités choisies par l’Assurance Maladie.Format : 9 caractères numériques généralement identiques au n°ADELI ou pseudo ADELI du professionnel pour sa première activité."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="SituationExercice.dateDebutActivite">
+      <path value="SituationExercice.dateDebutActivite"/>
+      <short value="Date de début de l’activité correspondant à la date d’installation en cabinet ou à la date d’embauche du salarié, etc."/>
+      <definition value="Date de début de l’activité correspondant à la date d’installation en cabinet ou à la date d’embauche du salarié, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="SituationExercice.dateFinActivite">
+      <path value="SituationExercice.dateFinActivite"/>
+      <short value="Date de fin de l’activité."/>
+      <definition value="Date de fin de l’activité."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="SituationExercice.genreActivite">
+      <path value="SituationExercice.genreActivite"/>
+      <short value="Le genre d'activité identifie les activités qui nécessitent l’application de règles de gestion spécifiques, par exemple, activité standard de soins ou de pharmacien, activité non soignante, activité non médicale, etc."/>
+      <definition value="Le genre d'activité identifie les activités qui nécessitent l’application de règles de gestion spécifiques, par exemple, activité standard de soins ou de pharmacien, activité non soignante, activité non médicale, etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.motifFinActivite">
+      <path value="SituationExercice.motifFinActivite"/>
+      <short value="Motif de fin d'activité, par exemple:** Décès;** Retraite libérale;** Changement de profession;** etc."/>
+      <definition value="Motif de fin d'activité, par exemple:** Décès;** Retraite libérale;** Changement de profession;** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.statutHospitalier">
+      <path value="SituationExercice.statutHospitalier"/>
+      <short value="Statut hospitalier dans le cas d’une activité exercée en établissement public de santé, par exemple:** Professeur des universités - praticien hospitalier (PU-PH);** Assistant hospitalier universitaire (AHU);** etc."/>
+      <definition value="Statut hospitalier dans le cas d’une activité exercée en établissement public de santé, par exemple:** Professeur des universités - praticien hospitalier (PU-PH);** Assistant hospitalier universitaire (AHU);** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.sectionOrdrePharmacien">
+      <path value="SituationExercice.sectionOrdrePharmacien"/>
+      <short value="Section du tableau de l’Ordre des pharmaciens, par exemple:** Pharmacien titulaire d’officine;** Pharmacien biologiste;** etc."/>
+      <definition value="Section du tableau de l’Ordre des pharmaciens, par exemple:** Pharmacien titulaire d’officine;** Pharmacien biologiste;** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.sousSectionOrdrePharmacien">
+      <path value="SituationExercice.sousSectionOrdrePharmacien"/>
+      <short value="Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens."/>
+      <definition value="Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.typeActiviteLiberale">
+      <path value="SituationExercice.typeActiviteLiberale"/>
+      <short value="Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc."/>
+      <definition value="Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.statutPSSSA">
+      <path value="SituationExercice.statutPSSSA"/>
+      <short value="Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc."/>
+      <definition value="Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Coding"/>
+      </type>
+      <binding>
+        <strength value="preferred"/>
+        <valueSet value="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs"/>
+      </binding>
+    </element>
+    <element id="SituationExercice.telecommunication">
+      <path value="SituationExercice.telecommunication"/>
+      <short value="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice."/>
+      <definition value="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication"/>
+      </type>
+    </element>
+    <element id="SituationExercice.adresseSE">
+      <path value="SituationExercice.adresseSE"/>
+      <short value="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice."/>
+      <definition value="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse"/>
+      </type>
+    </element>
+    <element id="SituationExercice.boiteLettresMSS">
+      <path value="SituationExercice.boiteLettresMSS"/>
+      <short value="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice."/>
+      <definition value="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS"/>
+      </type>
+    </element>
+    <element id="SituationExercice.exerciceProfessionnel">
+      <path value="SituationExercice.exerciceProfessionnel"/>
+      <short value="Lien vers la classe ExerciceProfessionnel."/>
+      <definition value="Lien vers la classe ExerciceProfessionnel."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/ExerciceProfessionnel"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
