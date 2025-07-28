@@ -1,0 +1,37 @@
+@startuml
+skinparam packageStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam class {
+    BackgroundColor #CCFFFF
+    BorderColor black
+}
+
+package "Professionnel" {
+    class Professionnel
+    class ExerciceProfessionnel {
+        InscriptionOrdre
+        SavoirFaire
+        NiveauFormation
+        AttributionParticuliere
+    }
+    class SituationExercice 
+    class SituationOperationnelle
+
+    url of Professionnel is [[StructureDefinition-Professionnel.html]]
+    url of ExerciceProfessionnel is [[StructureDefinition-ExerciceProfessionnel.html]]
+    url of SituationExercice is [[StructureDefinition-SituationExercice.html]]
+    url of SituationOperationnelle is [[StructureDefinition-SituationOperationnelle.html]]
+ ' url of SavoirFaire is [[StructureDefinition-SavoirFaire.html]]
+ ' url of InscriptionOrdre is [[StructureDefinition-InscriptionOrdre.html]]
+ ' url of NiveauFormation is [[StructureDefinition-NiveauFormation.html]]
+ ' url of AttributionParticuliere is [[StructureDefinition-AttributionParticuliere.html]]
+
+    Professionnel "1" -- "*" ExerciceProfessionnel
+    
+    ExerciceProfessionnel "1" -- "*" SituationExercice
+    ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+    ExerciceProfessionnel "1" -- "*" SavoirFaire
+    ExerciceProfessionnel "1" -- "*" InscriptionOrdre
+}
+
+@enduml
