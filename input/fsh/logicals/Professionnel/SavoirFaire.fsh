@@ -8,3 +8,4 @@ Title: "SavoirFaire"
 * typeSavoirFaire from https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire?vs (preferred)
 * dateReconnaissance 0..1 date "Date à laquelle, l’organisme donnant l’autorisation d’exercer une qualification a reconnu cette qualification ou date à laquelle l'attribution a été donnée au professionnel." "Date à laquelle, l’organisme donnant l’autorisation d’exercer une qualification a reconnu cette qualification ou date à laquelle l'attribution a été donnée au professionnel."
 * dateAbandon 0..1 date "Date à laquelle le professionnel a déclaré renoncer à l’exercice d’un savoir-faire ou date à laquelle il ne souhaite plus le faire apparaître." "Date à laquelle le professionnel a déclaré renoncer à l’exercice d’un savoir-faire ou date à laquelle il ne souhaite plus le faire apparaître."
+* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."
