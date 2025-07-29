@@ -48,7 +48,7 @@ def get_valueset(termino, attribute, url, url_termino, output_path):
         }
         with open(output_path + name + "-vs.json", "w", encoding="utf-8") as outfile:
             json.dump(vs, outfile, ensure_ascii=False)
-        url_vs = url + "ValueSet/" + name + "-vs"
+        url_vs = name + "-vs"
     return url_vs
 
 def create_element(row, base, url, url_termino, conf, custom, common, output_path):
@@ -91,11 +91,11 @@ def create_element(row, base, url, url_termino, conf, custom, common, output_pat
             elif type in conf["types"]["custom"]:
                 if type not in custom:
                     custom.append(type)
-                type_new = url + "StructureDefinition/" + type
+                type_new = type
             elif type in conf["types"]["class"]:
                 if type not in common:
                     common.append(type)
-                type_new = url + "StructureDefinition/" + type
+                type_new = type
             else:
                 print("Type not mapped in configuration file: " + type)
             element = {
@@ -248,7 +248,7 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, output_path, part = None):
 
 MOS_path = "MOS.xlsx"
 conf_path = "conf.json"
-url = "https://interop.esante.gouv.fr/ig/fhir/mos/"
+url = "https://interop.esante.gouv.fr/ig/mos/"
 url_termino = "https://mos.esante.gouv.fr/NOS/"
 output_path = "./json/"
 part = "Professionnel"

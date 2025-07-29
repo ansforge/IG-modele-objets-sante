@@ -37,11 +37,13 @@ La conversion a été réalisée uniquement sur la partie Professionnel, à part
     `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
     * SituationOperationnelle.fsh : 
     `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
+    * SavoirFaire.fsh : 
+    `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
 * La tre-r394-competence-metier a été ajoutée à la main car elle est au nouveau format, voici les lignes à ajouter dans les différents fichiers fsh : 
     * aliases.fsh : 
     `Alias: $tre-r394-competence-metier = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier`
     * CompetenceMetier.fsh : 
-    `* competenceMetier from https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs (preferred)`
+    `* competenceMetier from competenceMetier-vs (preferred)`
     * CompetencemetierVs.fsh (à créer) : 
     ```
     ValueSet: CompetencemetierVs
