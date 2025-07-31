@@ -1,6 +1,7 @@
 Logical: SituationExercice
 Id: SituationExercice
 Title: "SituationExercice"
+Description: "Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."
 * ^status = #draft
 * . ^short = "Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."
 * . ^definition = "Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."

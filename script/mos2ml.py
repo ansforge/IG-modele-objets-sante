@@ -135,25 +135,26 @@ def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, s
         sections (dict): Dictionnaire d'organisation des fichiers par partie mis à jour.
     """
     group = data[data["Classe"] == name]
-    sd = {
-            "resourceType": "StructureDefinition",
-            "id": name,
-            "title": name,
-            "url": url + "StructureDefinition/" + name,
-            "name": name,
-            "status": "draft",
-            "kind": "logical",
-            "abstract": False,
-            "type": url + "StructureDefinition/" + name,
-            "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
-            "derivation" : "specialization",
-            "differential": {}
-        }
-    if inheritance:
-        sd["baseDefinition"] = url + "StructureDefinition/" + inheritance
     elements = []
     class_without_attribute = group[group['Attribut'].isnull()]
-    class_desc = class_without_attribute.iloc[0]['Description']
+    class_desc = class_without_attribute.iloc[0]['Description'].strip()
+    sd = {
+        "resourceType": "StructureDefinition",
+        "id": name,
+        "title": name,
+        "url": url + "StructureDefinition/" + name,
+        "name": name,
+        "description": class_desc,
+        "status": "draft",
+        "kind": "logical",
+        "abstract": False,
+        "type": url + "StructureDefinition/" + name,
+        "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+        "derivation" : "specialization",
+        "differential": {}
+    }
+    if inheritance:
+        sd["baseDefinition"] = url + "StructureDefinition/" + inheritance
     section = class_without_attribute.iloc[0]['Partie']
     if len(class_without_attribute) > 1:
         print("Several descriptions for class: " + name)

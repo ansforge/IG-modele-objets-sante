@@ -1,6 +1,7 @@
 Logical: SituationOperationnelle
 Id: SituationOperationnelle
 Title: "SituationOperationnelle"
+Description: "Caractérise les conditions d'exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle."
 * ^status = #draft
 * . ^short = "Caractérise les conditions d'exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle."
 * . ^definition = "Caractérise les conditions d'exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle."

@@ -1,6 +1,7 @@
 Logical: LangueParlee
 Id: LangueParlee
 Title: "LangueParlee"
+Description: "Langue parlée par une personne ou dans un service."
 * ^status = #draft
 * . ^short = "Langue parlée par une personne ou dans un service."
 * . ^definition = "Langue parlée par une personne ou dans un service."
