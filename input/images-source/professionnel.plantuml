@@ -59,26 +59,37 @@ class SituationOperationnelle {
   +metadonnee : Metadonnee [0..1]
 }
 
-class OffreOperationnelle {}
+Package "Offre opérationnelle" {
+    class OffreOperationnelle
+}
 
-class CarteProfessionnel {}
-class Certificat {}
+Package "Dispositif d'authentification" {
+    class CarteProfessionnel {}
+    class Certificat {}
+}
 
-class NoteLiaison {}
+Package "Dossier" {
+    class NoteLiaison
+}
 
-class EntiteGeographique {}
 
-class Diplome {}
-class Adresse {}
-class Telecommunication {}
-class BoiteLettreMSS {}
-class Metadonnee {}
+Package "Structure" {
+    class EntiteGeographique
+}
 
-class PersonnePriseCharge {}
-class AutorisationExercice {}
+Package "Personne prise en charge" {
+    class PersonnePriseCharge {}
+}
 
-class RendezVous {}
-class Agenda {}
+Package "Accord" {
+    class AutorisationExercice
+}
+
+
+Package "Agenda" {
+    class RendezVous {}
+    class Agenda {}
+}
 
 class InscriptionOrdre {
   +ordre : Code [0..1]
@@ -114,20 +125,27 @@ class NiveauFormation {
 
 ' === Relations ===
 
-Professionnel "1" -- "1..*" ExerciceProfessionnel
-ExerciceProfessionnel "1" -- "0..1" SituationExercice
-ExerciceProfessionnel "1" -- "0..1" SituationOperationnelle
-ExerciceProfessionnel "1" -- "0..1" OffreOperationnelle
-Professionnel "1" -- "0..1" NoteLiaison
-Professionnel "1" -- "0..*" InscriptionOrdre
-Professionnel "1" -- "0..*" SavoirFaire
-Professionnel "1" -- "0..*" AttributionParticuliere
-Professionnel "1" -- "0..*" NiveauFormation
-Professionnel "1" -- "0..1" CarteProfessionnel
-CarteProfessionnel "1" -- "0..1" Certificat
-ExerciceProfessionnel "1" -- "0..1" EntiteGeographique
-Agenda "1" -- "0..*" RendezVous
-Professionnel "1" -- "0..1" AutorisationExercice
-Professionnel "1" -- "0..1" PersonnePriseCharge
+Professionnel "1" -- "*" ExerciceProfessionnel
+Professionnel "*" -- "*" Agenda
+Professionnel "1" -- "*" NoteLiaison
+Professionnel "1" -- "*" AutorisationExercice
+Professionnel "1" -- "*" PersonnePriseCharge
+
+ExerciceProfessionnel "1" -- "*" InscriptionOrdre
+ExerciceProfessionnel "1" -- "*" SavoirFaire
+ExerciceProfessionnel "1" -- "*" AttributionParticuliere
+ExerciceProfessionnel "1" -- "*" NiveauFormation
+
+
+ExerciceProfessionnel "0..1" -- "*" CarteProfessionnel
+ExerciceProfessionnel "1" -- "*" Certificat
+
+ExerciceProfessionnel "1" -- "*" SituationExercice
+ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+
+
+SituationOperationnelle "*" -- "1" OffreOperationnelle
+SituationExercice "*" -- "0..1" EntiteGeographique
+ 
 
 @enduml
