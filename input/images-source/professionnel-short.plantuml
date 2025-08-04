@@ -1,0 +1,33 @@
+@startuml
+'Schéma générique qui contient les classes et les attributs de type BackboneElement (décrits comme objet dans le MOS historique)'
+
+skinparam packageStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam class {
+    BackgroundColor #CCFFFF
+    BorderColor black
+}
+
+package "Professionnel" {
+    class Professionnel
+    class ExerciceProfessionnel {
+        InscriptionOrdre
+        SavoirFaire
+        NiveauFormation
+        AttributionParticuliere
+    }
+    class SituationExercice 
+    class SituationOperationnelle
+
+    url of Professionnel is [[StructureDefinition-Professionnel.html]]
+    url of ExerciceProfessionnel is [[StructureDefinition-ExerciceProfessionnel.html]]
+    url of SituationExercice is [[StructureDefinition-SituationExercice.html]]
+    url of SituationOperationnelle is [[StructureDefinition-SituationOperationnelle.html]]
+
+    Professionnel "1" -- "*" ExerciceProfessionnel
+    
+    ExerciceProfessionnel "1" -- "*" SituationExercice
+    ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+}
+
+@enduml
