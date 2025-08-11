@@ -215,7 +215,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "mos-identifiant","mos-identifiant","mos-identifiant","","","",0,*,"","","","null {[]} {[]}
 ","Identifiant","Ceci est un test pour justifier la possibilité de redéfinir des datatypes complexes déjà définis dans FHIR (Identifier).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "mos-identifiant","mos-identifiant.date","mos-identifiant.date","","","",0,*,"","","","string {[]} {[]}
-","Chaine de caractère de la date (Format YY-MM-DD)","Chaine de caractère de la date (Format YY-MM-DD)","","","","","","","","","",,,,,"",,,,"mos-identifiant.date",0,*,"","inv-date-format:Doit respecter le format YY-MM-DD {$this.matches('^[0-9]{2}-(0[1-9]|1[0-2])-([0-2][0-9]|3[01])$')}
+","Date de mise en place de l'identifiant (Format YY-MM-DD)","Date de mise en place de l'identifiant (Format YY-MM-DD)","","","","","","","","","",,,,,"",,,,"mos-identifiant.date",0,*,"","inv-date-format:Doit respecter le format YY-MM-DD {$this.matches('^[0-9]{2}-(0[1-9]|1[0-2])-([0-2][0-9]|3[01])$')}
 "
 "mos-identifiant","mos-identifiant.value","mos-identifiant.value","","","",0,*,"","","","string {[]} {[]}
 ","Valeur de l'identifiant","Valeur de l'identifiant","","","","","","","","","",,,,,"",,,,"mos-identifiant.value",0,*,"",""
