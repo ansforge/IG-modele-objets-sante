@@ -6,4 +6,4 @@
 
 ## Preview
 
-https://ansforge.github.io/IG-fhir-IG-MOS/[ajouter_nom_de_la_branche]/ig
+https://ansforge.github.io/IG-modele-objets-sante/[ajouter_nom_de_la_branche]/ig
