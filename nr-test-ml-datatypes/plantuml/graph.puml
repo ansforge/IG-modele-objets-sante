@@ -1,0 +1,60 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class FrPatient{
+
+             Patient.extension => [None..None]
+             Patient.extension:eyecolor => <&plus>[0..1]
+             Patient.identifier => [1..None]
+             Patient.identifier:INS => [1..1]
+             Patient.identifier:INS.system => [1..None]
+             Patient.gender => [None..None]
+        } 
+
+        class Identifiant{
+
+             mos-identifiant => [None..None]
+             mos-identifiant.date => [0..*]
+             mos-identifiant.value => [0..*]
+         }
+
+     }
+     package extension #paleturquoise {
+
+     FrPatient -[#black,dashed,thickness=2]-> EyeColor
+
+        class EyeColor{
+
+          Extension.extension => [None..0]
+          Extension.url => [None..None]
+          Extension.value[x] => [None..None]
+         }
+     }
+     package valueset #PaleVioletRed{
+
+        class EyeColorVS  
+
+     EyeColor -[#black,dotted,thickness=2]-> EyeColorVS
+
+        class ModifiedAdministrativeGender  
+
+     FrPatient -[#black,dotted,thickness=2]-> ModifiedAdministrativeGender
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Patient" as  class01122a97dca927210827560cb7d76af8 
+
+    class01122a97dca927210827560cb7d76af8 --> FrPatient
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Identifiant
+}
+@enduml
