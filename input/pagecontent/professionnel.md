@@ -79,15 +79,9 @@ classDiagram
     class Certificat
     class NoteLiaison
     class EntiteGeographique
-    class Diplome
-    class Adresse
     class Telecommunication
-    class BoiteLettreMSS
-    class Metadonnee
     class PersonnePriseCharge
     class AutorisationExercice
-    class RendezVous
-    class Agenda
 
     class InscriptionOrdre {
         +ordre : Code [0..1]
