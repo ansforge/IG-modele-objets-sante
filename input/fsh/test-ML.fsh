@@ -1,5 +1,5 @@
 Logical:         Identifiant
-Id:              mos-identifiant
+Id:              mosIdentifiant
 Title:           "Identifiant"
 Description:     "Ceci est un test pour justifier la possibilité de redéfinir des datatypes complexes déjà définis dans FHIR (Identifier)."
 Characteristics: #can-be-target
