@@ -1,0 +1,8 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"mosIdentifiant","mosIdentifiant","","","",0,*,"","","","null {[]} {[]}
+","Identifiant","Ceci est un test pour justifier la possibilité de redéfinir des datatypes complexes déjà définis dans FHIR (Identifier).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"mosIdentifiant.date","mosIdentifiant.date","","","",0,*,"","","","string {[]} {[]}
+","Date de mise en place de l'identifiant (Format YY-MM-DD)","Date de mise en place de l'identifiant (Format YY-MM-DD)","","","","","","","","","",,,,,"",,,,"mosIdentifiant.date",0,*,"","inv-date-format:Doit respecter le format YY-MM-DD {$this.matches('^[0-9]{2}-(0[1-9]|1[0-2])-([0-2][0-9]|3[01])$')}
+"
+"mosIdentifiant.value","mosIdentifiant.value","","","",0,*,"","","","string {[]} {[]}
+","Valeur de l'identifiant","Valeur de l'identifiant","","","","","","","","","",,,,,"",,,,"mosIdentifiant.value",0,*,"",""

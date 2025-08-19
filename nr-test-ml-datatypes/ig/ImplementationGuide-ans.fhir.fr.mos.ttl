@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-11T09:07:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-08-19T08:26:39+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -946,8 +946,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/mos-identifiant> ;
-         fhir:reference [ fhir:v "StructureDefinition/mos-identifiant" ]
+         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/mosIdentifiant> ;
+         fhir:reference [ fhir:v "StructureDefinition/mosIdentifiant" ]
        ] ;
        fhir:name [ fhir:v "Identifiant" ] ;
        fhir:description [ fhir:v "Ceci est un test pour justifier la possibilité de redéfinir des datatypes complexes déjà définis dans FHIR (Identifier)." ] ;

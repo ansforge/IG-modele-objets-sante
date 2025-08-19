@@ -1,9 +1,9 @@
 MOS : Validation Results
 =========================================
 
-err = 0, warn = 21, info = 6
+err = 0, warn = 15, info = 6
 IG Publisher Version: 2.0.13
-Generated Mon Aug 11 09:09:10 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mos)
+Generated Tue Aug 19 08:27:57 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/mos)
  Build Errors : 8 / 2 / 0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/CodeSystem-competence-code-system : 0 / 2 / 2
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/CodeSystem-type-carte-code-system : 0 / 2 / 2
@@ -11,7 +11,7 @@ Generated Mon Aug 11 09:09:10 UTC 2025. FHIR version 4.0.1 for ans.fhir.fr.mos#0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/Patient-frpatient-exemple : 0 / 1 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-EyeColor : 0 / 2 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-fr-patient : 0 / 0 / 4
- /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-mos-identifiant : 0 / 6 / 1
+ /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-mosIdentifiant : 0 / 0 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-EyeColorVS : 0 / 2 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-MeltingPotVS : 0 / 2 / 2
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ValueSet-ModifiedAdministrativeGender : 0 / 1 / 1
@@ -46,13 +46,7 @@ WARNING: StructureDefinition.where(url = 'https://interop.esante.gouv.fr/ig/fhir
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.differential.element[3].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
 INFORMATION: StructureDefinition/fr-patient: StructureDefinition.snapshot.element[10].slicing.discriminator[0]: The discriminator type 'pattern' is deprecated in R5+. For future compatibility, you could consider using type=value with a pattern[x] instead (if this is not an inherited slicing)
-== fsh-generated/resources/StructureDefinition-mos-identifiant.json ==
-WARNING: StructureDefinition/mos-identifiant: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/mos-identifiant: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/mos-identifiant: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/mos-identifiant: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/mos-identifiant: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/mos-identifiant: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-mosIdentifiant.json ==
 == fsh-generated/resources/ValueSet-EyeColorVS.json ==
 WARNING: ValueSet/EyeColorVS: ValueSet.compose.include[0]: The terminology server https://tx.fhir.org/r4 used for the CodeSystem http://snomed.info/sct does not support batch validation (tx version Not Known), so the codes have not been validated
 WARNING: ValueSet/EyeColorVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
