@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "sexe-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs sexe-vs</b></p><a name=\"sexe-vs\"> </a><a name=\"hcsexe-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R249-Sexe.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R249-Sexe/FHIR/TRE-R249-Sexe</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\">&#x1F4E6;20231215120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R267-SexeProvenanceISO.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R267-SexeProvenanceISO/FHIR/TRE-R267-SexeProvenanceISO</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\">&#x1F4E6;20231215120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R303-HL7v3AdministrativeGender.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender</code></a> version <span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\">&#x1F4E6;20231215120000</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs",
+  "version" : "0.1.0",
+  "name" : "SexeVs",
+  "status" : "draft",
+  "date" : "2025-10-13T08:07:44+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R249-Sexe/FHIR/TRE-R249-Sexe"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R267-SexeProvenanceISO/FHIR/TRE-R267-SexeProvenanceISO"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender"
+    }]
+  }
+}

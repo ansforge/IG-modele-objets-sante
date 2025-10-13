@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="role-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs role-vs</b></p><a name="role-vs"> </a><a name="hcrole-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R21-Fonction.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction</code></a> version <span title="Version is not explicitly stated, which means it is fixed to 20250623120000, the version found through the package references">&#x1F4E6;20250623120000</span></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R96-AutreFonctionSanitaire.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire</code></a> version <span title="Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references">&#x1F4E6;20231215120000</span></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R85-RolePriseCharge.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge</code></a> version <span title="Version is not explicitly stated, which means it is fixed to 20250328120000, the version found through the package references">&#x1F4E6;20250328120000</span></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs"/>
+  <version value="0.1.0"/>
+  <name value="RoleVs"/>
+  <status value="draft"/>
+  <date value="2025-10-13T08:07:44+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction"/>
+    </include>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire"/>
+    </include>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge"/>
+    </include>
+  </compose>
+</ValueSet>

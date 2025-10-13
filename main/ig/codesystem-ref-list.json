@@ -1,52 +1,390 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/administrative-gender",
-      "version" : "4.0.1",
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere",
+      "version" : "20231215120000",
       "status" : "active",
-      "name" : "AdministrativeGender",
-      "title" : "AdministrativeGender",
-      "description" : "The gender of a person used for administrative purposes.",
-      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "name" : "TRE_G13_OrientationParticuliere",
+      "title" : null,
+      "description" : "Orientation particulière",
+      "oids" : ["1.2.250.1.213.2.31"],
       "uses" : {
       },
-      "ValueSet-ModifiedAdministrativeGender.html" : "ModifiedAdministrativeGender"
+      "ValueSet-orientationParticuliere-vs.html" : "OrientationparticuliereVs"
     },
     {
-      "url" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20250601",
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+      "version" : "20250328120000",
       "status" : "active",
-      "name" : "SNOMED_CT",
-      "title" : "SNOMED CT core",
-      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
-      "oids" : ["2.16.840.1.113883.6.96"],
+      "name" : "TRE_G15_ProfessionSante",
+      "title" : null,
+      "description" : "Professions de santé définies par le code de la santé publique : professions médicales (art. L4111-1 à L4163-10), de la pharmacie et de la physique médicale (art. 4211-1 à 4252-3) et d’auxiliaires médicaux (art. 4311-1 à 4394-3)",
+      "oids" : ["1.2.250.1.71.1.2.7"],
       "uses" : {
       },
-      "ValueSet-EyeColorVS.html" : "EyeColor Value Set",
-      "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set"
+      "ValueSet-profession-vs.html" : "ProfessionVs"
     },
     {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/CodeSystem/competence-code-system",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CompetenceCS",
-      "title" : "Compétences CodeSystem",
-      "description" : "Compétences des professionnels de santé.",
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS",
+      "version" : "20241213120000",
+      "status" : "active",
+      "name" : "TRE_R01_EnsembleSavoirFaire_CISIS",
+      "title" : null,
+      "description" : "Ensemble Savoir-faire CI-SIS (TRE provisoire)",
+      "oids" : ["1.2.250.1.71.4.2.5"],
       "uses" : {
       },
-      "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set"
+      "ValueSet-competenceMetier-vs.html" : "CompetencemetiereVs",
+      "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs",
+      "ValueSet-qualificationPAC-vs.html" : "QualificationpacVs",
+      "ValueSet-competence-vs.html" : "CompetenceVs",
+      "ValueSet-capaciteSavoirFaire-vs.html" : "CapacitesavoirfaireVs",
+      "ValueSet-specialite-vs.html" : "SpecialiteVs",
+      "ValueSet-surspecialiteTransversale-vs.html" : "SurspecialitetransversaleVs",
+      "ValueSet-competenceExclusive-vs.html" : "CompetenceexclusiveVs",
+      "ValueSet-droitExerciceComplementaire-vs.html" : "DroitexercicecomplementaireVs",
+      "ValueSet-DESCNonQualifiant-vs.html" : "DescnonqualifiantVs",
+      "ValueSet-orientationParticuliere-vs.html" : "OrientationparticuliereVs"
     },
     {
-      "url" : "https://interop.esante.gouv.fr/ig/fhir/mos/CodeSystem/type-carte-code-system",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TypeCarteCS",
-      "title" : "Type de carte",
-      "description" : "Type de carte professionnelle et personnelle.",
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
+      "version" : "20240628120000",
+      "status" : "active",
+      "name" : "TRE_R13_CommuneOM",
+      "title" : null,
+      "description" : "",
+      "oids" : ["1.2.250.1.213.2.23"],
       "uses" : {
       },
-      "ValueSet-MeltingPotVS.html" : "Melting Pot Value Set",
-      "ValueSet-TypeCarteVS.html" : "Type Carte Value Set"
+      "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+      "version" : "20250328120000",
+      "status" : "active",
+      "name" : "TRE_R20_Pays",
+      "title" : null,
+      "description" : "Référentiel des codes pays provenant du COG INSEE",
+      "oids" : ["1.2.250.1.213.2.24"],
+      "uses" : {
+      },
+      "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
+      "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs",
+      "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
+      "version" : "20250623120000",
+      "status" : "active",
+      "name" : "TRE_R21_Fonction",
+      "title" : null,
+      "description" : "Fonction",
+      "oids" : ["1.2.250.1.213.1.6.1.17"],
+      "uses" : {
+      },
+      "ValueSet-role-vs.html" : "RoleVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R249-Sexe/FHIR/TRE-R249-Sexe",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R249_Sexe",
+      "title" : null,
+      "description" : "Sexe",
+      "oids" : ["1.2.250.1.213.2.53"],
+      "uses" : {
+      },
+      "ValueSet-sexe-vs.html" : "SexeVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R262-CategorieSocioProfessionnelle/FHIR/TRE-R262-CategorieSocioProfessionnelle",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R262_CategorieSocioProfessionnelle",
+      "title" : null,
+      "description" : "Catégories socio-professionnelles",
+      "oids" : ["1.2.250.1.213.1.6.1.123"],
+      "uses" : {
+      },
+      "ValueSet-professionCategorieSocioProfessionnelle-vs.html" : "ProfessioncategoriesocioprofessionnelleVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R267-SexeProvenanceISO/FHIR/TRE-R267-SexeProvenanceISO",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R267_SexeProvenanceISO",
+      "title" : null,
+      "description" : "Codes de représentation des sexes humains provenant de la norme ISO 5218",
+      "oids" : ["1.2.250.1.213.2.55"],
+      "uses" : {
+      },
+      "ValueSet-sexe-vs.html" : "SexeVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO",
+      "version" : "20240126120000",
+      "status" : "active",
+      "name" : "TRE_R268_PaysProvenanceISO",
+      "title" : null,
+      "description" : "Référentiel des pays provenant de la norme ISO 3166",
+      "oids" : ["1.2.250.1.213.2.57"],
+      "uses" : {
+      },
+      "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
+      "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R288_TypeProfession",
+      "title" : null,
+      "description" : "Type de profession",
+      "oids" : ["1.2.250.1.213.1.6.1.137"],
+      "uses" : {
+      },
+      "ValueSet-typeProfession-vs.html" : "TypeprofessionVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R289_TypeFonction",
+      "title" : null,
+      "description" : "Type de fonction",
+      "oids" : ["1.2.250.1.213.1.6.1.138"],
+      "uses" : {
+      },
+      "ValueSet-typeRole-vs.html" : "TyperoleVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R291_AutreProfession",
+      "title" : null,
+      "description" : "Liste de professionnels non membres d'une profession réglementée",
+      "oids" : ["1.2.250.1.213.1.6.1.140"],
+      "uses" : {
+      },
+      "ValueSet-profession-vs.html" : "ProfessionVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R292-INSEECategorieSocioProfessionnelleAgrNiv1/FHIR/TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R292_INSEECategorieSocioProfessionnelleAgrNiv1",
+      "title" : null,
+      "description" : "Codes de niveau 1 des catégories socio-professionnelles de l'INSEE",
+      "oids" : ["1.2.250.1.213.1.6.1.181"],
+      "uses" : {
+      },
+      "ValueSet-professionCategorieSocioProfessionnelle-vs.html" : "ProfessioncategoriesocioprofessionnelleVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R303_HL7v3AdministrativeGender",
+      "title" : null,
+      "description" : "Sexe d'une personne utilisée à des fins administratives (par opposition au sexe clinique) repris de la terminologie HL7 v3 AdministrativeGender (https://www.hl7.org/fhir/v3/AdministrativeGender/cs.html)",
+      "oids" : ["2.16.840.1.113883.5.1"],
+      "uses" : {
+      },
+      "ValueSet-sexe-vs.html" : "SexeVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale",
+      "version" : "20240531120000",
+      "status" : "active",
+      "name" : "TRE_R359_SurspecialiteTransversale",
+      "title" : null,
+      "description" : "Surspécialité (compétence) acquise par l'interne à l'issue d'une Formation Spécialisée Transversale (FST)",
+      "oids" : ["1.2.250.1.213.2.76"],
+      "uses" : {
+      },
+      "ValueSet-surspecialiteTransversale-vs.html" : "SurspecialitetransversaleVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R37_TypeProfessionFonction",
+      "title" : null,
+      "description" : "Type des professions et des fonctions",
+      "oids" : ["1.2.250.1.213.1.6.1.3"],
+      "uses" : {
+      },
+      "ValueSet-typeRole-vs.html" : "TyperoleVs",
+      "ValueSet-typeProfession-vs.html" : "TypeprofessionVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+      "version" : "20240531120000",
+      "status" : "active",
+      "name" : "TRE_R38_SpecialiteOrdinale",
+      "title" : null,
+      "description" : "Spécialité ordinale",
+      "oids" : ["1.2.250.1.213.2.28"],
+      "uses" : {
+      },
+      "ValueSet-specialite-vs.html" : "SpecialiteVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence",
+      "version" : "20240628120000",
+      "status" : "active",
+      "name" : "TRE_R39_Competence",
+      "title" : null,
+      "description" : "Compétence",
+      "oids" : ["1.2.250.1.213.2.29"],
+      "uses" : {
+      },
+      "ValueSet-competence-vs.html" : "CompetenceVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R40-CompetenceExclusive/FHIR/TRE-R40-CompetenceExclusive",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R40_CompetenceExclusive",
+      "title" : null,
+      "description" : "Compétence exclusive",
+      "oids" : ["1.2.250.1.213.2.30"],
+      "uses" : {
+      },
+      "ValueSet-competenceExclusive-vs.html" : "CompetenceexclusiveVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant",
+      "version" : "20240628120000",
+      "status" : "active",
+      "name" : "TRE_R42_DESCnonQualifiant",
+      "title" : null,
+      "description" : "Savoir-faire liés aux DESC du groupe 1 non qualifiants",
+      "oids" : ["1.2.250.1.213.2.32"],
+      "uses" : {
+      },
+      "ValueSet-DESCNonQualifiant-vs.html" : "DescnonqualifiantVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R43-CapaciteSavoirFaire/FHIR/TRE-R43-CapaciteSavoirFaire",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R43_CapaciteSavoirFaire",
+      "title" : null,
+      "description" : "Capacité (savoir-faire)",
+      "oids" : ["1.2.250.1.213.2.33"],
+      "uses" : {
+      },
+      "ValueSet-capaciteSavoirFaire-vs.html" : "CapacitesavoirfaireVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R44_QualificationPAC",
+      "title" : null,
+      "description" : "Qualification de praticien adjoint contractuel",
+      "oids" : ["1.2.250.1.213.2.34"],
+      "uses" : {
+      },
+      "ValueSet-qualificationPAC-vs.html" : "QualificationpacVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R45-FonctionQualifiee/FHIR/TRE-R45-FonctionQualifiee",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R45_FonctionQualifiee",
+      "title" : null,
+      "description" : "Fonction qualifiée",
+      "oids" : ["1.2.250.1.213.2.35"],
+      "uses" : {
+      },
+      "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+      "version" : "20250328120000",
+      "status" : "active",
+      "name" : "TRE_R85_RolePriseCharge",
+      "title" : null,
+      "description" : "Rôle dans la prise en charge des patients ou des usagers",
+      "oids" : ["1.2.250.1.213.1.6.1.107"],
+      "uses" : {
+      },
+      "ValueSet-role-vs.html" : "RoleVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R89_RegroupementPays",
+      "title" : null,
+      "description" : "Regroupement de pays",
+      "oids" : ["1.2.250.1.213.2.48"],
+      "uses" : {
+      },
+      "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+      "version" : "20241213120000",
+      "status" : "active",
+      "name" : "TRE_R94_ProfessionSocial",
+      "title" : null,
+      "description" : "Profession du social",
+      "oids" : ["1.2.250.1.213.1.6.1.4"],
+      "uses" : {
+      },
+      "ValueSet-profession-vs.html" : "ProfessionVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+      "version" : "20241213120000",
+      "status" : "active",
+      "name" : "TRE_R95_UsagerTitre",
+      "title" : null,
+      "description" : "Usager de titre professionnel",
+      "oids" : ["1.2.250.1.213.1.6.1.109"],
+      "uses" : {
+      },
+      "ValueSet-profession-vs.html" : "ProfessionVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R96_AutreFonctionSanitaire",
+      "title" : null,
+      "description" : "Autres fonctions du domaine sanitaire",
+      "oids" : ["1.2.250.1.213.1.6.1.110"],
+      "uses" : {
+      },
+      "ValueSet-role-vs.html" : "RoleVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R97-DroitExerciceCompl/FHIR/TRE-R97-DroitExerciceCompl",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R97_DroitExerciceCompl",
+      "title" : null,
+      "description" : "Droit d'exercice complémentaire",
+      "oids" : ["1.2.250.1.213.1.6.1.111"],
+      "uses" : {
+      },
+      "ValueSet-droitExerciceComplementaire-vs.html" : "DroitexercicecomplementaireVs"
+    },
+    {
+      "url" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier",
+      "version" : "20250625120000",
+      "status" : "active",
+      "name" : "TreR394CompetenceMetier",
+      "title" : "Tre R394 Competence Metier",
+      "description" : "Type de savoir-faire opérationnel, transversal ou spécifique, acquis et exercé à titre non exclusif dans le cadre d’une activité professionnelle reconnue.",
+      "oids" : ["1.2.250.1.213.1.6.1.375"],
+      "uses" : {
+      },
+      "ValueSet-competenceMetier-vs.html" : "CompetencemetiereVs"
     }
   ]
 }
