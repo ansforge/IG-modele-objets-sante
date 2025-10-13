@@ -44,24 +44,18 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+
     <style type="text/css">h2{--heading-prefix:"5.20"}
     h3,h4,h5,h6{--heading-prefix:"5.20"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" no-external="true" href="https://esante.gouv.fr/produits-services/ci-sis"><img height="50" alt="Visit the CI-SIS website" src="assets/images/ci-sis-logo.jpeg"/> </a>
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
   </div>
-
-  <div id="ig-search">
- </div>
-
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
@@ -185,7 +179,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -262,10 +256,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEtudeSpecialisee<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEtudeSpecialisee"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEtudeSpecialisee<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEtudeSpecialisee"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEtudeSpecialisee|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEtudeSpecialisee|0.1.0"/></span>
       </td>
     </tr>
 
@@ -281,7 +275,7 @@
         
           Draft
           
-            as of 2025-07-31
+            as of 2025-10-13
           
         
       </td>
@@ -297,7 +291,7 @@
   </table>
 
 <p>
-<p>Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+<p>Le diplôme d’études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l’internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l’internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d’un DES, accompagnant leur diplôme d’État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d’études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
 
 </p>
 
@@ -312,7 +306,7 @@
 <ul>
  <li>This Logical Model is not used by any profiles in this Implementation Guide</li>
 </ul>
-<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fhir.fr.mos|current/StructureDefinition/DiplomeEtudeSpecialisee">usages in the FHIR IG Statistics</a></p>
+<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DiplomeEtudeSpecialisee">usages in the FHIR IG Statistics</a></p>
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -362,7 +356,7 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEtudeSpecialisee-definitions.html#DiplomeEtudeSpecialisee.typeDiplome" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc." data-no-external="true">typeDiplome</a><a name="k-DiplomeEtudeSpecialisee.typeDiplome"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -388,7 +382,7 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme d'études spécialisées (DES).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEtudeSpecialiseeK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEtudeSpecialiseeK'), 'binding', document.getElementById('cbDiplomeEtudeSpecialiseeK-binding').checked, document.getElementById('ppDiplomeEtudeSpecialiseeK'));
 document.getElementById('cbDiplomeEtudeSpecialiseeK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -398,11 +392,66 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeK'), 'obligation', do
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.typeDiplome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs"></button></div></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.lieuFormation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs"></button></div></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​typeDiplome</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​lieuFormation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​diplomeEtudeSpecialisee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -423,13 +472,13 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeK'), 'obligation', do
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEtudeSpecialisee-definitions.html#DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee" title="Diplôme d'études spécialisées (DES)." data-no-external="true">diplomeEtudeSpecialisee</a><a name="DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme d'études spécialisées (DES).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEtudeSpecialiseeD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEtudeSpecialiseeD'), 'binding', document.getElementById('cbDiplomeEtudeSpecialiseeD-binding').checked, document.getElementById('ppDiplomeEtudeSpecialiseeD'));
 document.getElementById('cbDiplomeEtudeSpecialiseeD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -440,9 +489,40 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeD'), 'obligation', do
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​diplomeEtudeSpecialisee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -461,7 +541,7 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeD'), 'obligation', do
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEtudeSpecialisee-definitions.html#DiplomeEtudeSpecialisee.typeDiplome" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc." data-no-external="true">typeDiplome</a><a name="s-DiplomeEtudeSpecialisee.typeDiplome"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -487,7 +567,7 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeD'), 'obligation', do
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme d'études spécialisées (DES).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEtudeSpecialiseeS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEtudeSpecialiseeS'), 'binding', document.getElementById('cbDiplomeEtudeSpecialiseeS-binding').checked, document.getElementById('ppDiplomeEtudeSpecialiseeS'));
 document.getElementById('cbDiplomeEtudeSpecialiseeS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -497,11 +577,66 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeS'), 'obligation', do
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.typeDiplome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs"></button></div></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.lieuFormation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs"></button></div></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​typeDiplome</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​lieuFormation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​diplomeEtudeSpecialisee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -579,7 +714,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEtudeSpecialisee-definitions.html#DiplomeEtudeSpecialisee.typeDiplome" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc." data-no-external="true">typeDiplome</a><a name="ka-DiplomeEtudeSpecialisee.typeDiplome"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -605,7 +740,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme d'études spécialisées (DES).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEtudeSpecialiseeKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEtudeSpecialiseeKA'), 'binding', document.getElementById('cbDiplomeEtudeSpecialiseeKA-binding').checked, document.getElementById('ppDiplomeEtudeSpecialiseeKA'));
 document.getElementById('cbDiplomeEtudeSpecialiseeKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -615,11 +750,66 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeKA'), 'obligation', d
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.typeDiplome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs"></button></div></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.lieuFormation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs"></button></div></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​typeDiplome</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​lieuFormation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​diplomeEtudeSpecialisee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -640,13 +830,13 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeKA'), 'obligation', d
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEtudeSpecialisee-definitions.html#DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee" title="Diplôme d'études spécialisées (DES)." data-no-external="true">diplomeEtudeSpecialisee</a><a name="a-DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme d'études spécialisées (DES).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEtudeSpecialiseeDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEtudeSpecialiseeDA'), 'binding', document.getElementById('cbDiplomeEtudeSpecialiseeDA-binding').checked, document.getElementById('ppDiplomeEtudeSpecialiseeDA'));
 document.getElementById('cbDiplomeEtudeSpecialiseeDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -656,9 +846,40 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeDA'), 'obligation', d
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​diplomeEtudeSpecialisee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -677,7 +898,7 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeDA'), 'obligation', d
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEtudeSpecialisee-definitions.html#DiplomeEtudeSpecialisee.typeDiplome" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc." data-no-external="true">typeDiplome</a><a name="sa-DiplomeEtudeSpecialisee.typeDiplome"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -703,7 +924,7 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeDA'), 'obligation', d
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme d'études spécialisées (DES).<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEtudeSpecialiseeSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEtudeSpecialiseeSA'), 'binding', document.getElementById('cbDiplomeEtudeSpecialiseeSA-binding').checked, document.getElementById('ppDiplomeEtudeSpecialiseeSA'));
 document.getElementById('cbDiplomeEtudeSpecialiseeSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -713,11 +934,66 @@ filterDesc(document.getElementById('DiplomeEtudeSpecialiseeSA'), 'obligation', d
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.typeDiplome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs"></button></div></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.lieuFormation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs"></button></div></td></tr>
-<tr><td>DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​typeDiplome</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​lieuFormation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEtudeSpecialisee.​diplomeEtudeSpecialisee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R49-DiplomeEtudeSpecialisee/FHIR/TRE-R49-DiplomeEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -832,13 +1108,12 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 13:34+0000">2025-07-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 08:06+0000">2025-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/mos/history.html">Historique des versions </a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
 
           </span>

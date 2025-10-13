@@ -44,24 +44,18 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+
     <style type="text/css">h2{--heading-prefix:"5.27"}
     h3,h4,h5,h6{--heading-prefix:"5.27"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" no-external="true" href="https://esante.gouv.fr/produits-services/ci-sis"><img height="50" alt="Visit the CI-SIS website" src="assets/images/ci-sis-logo.jpeg"/> </a>
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
   </div>
-
-  <div id="ig-search">
- </div>
-
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
@@ -185,7 +179,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -262,10 +256,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/LangueParlee<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/LangueParlee"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/LangueParlee|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee|0.1.0"/></span>
       </td>
     </tr>
 
@@ -281,7 +275,7 @@
         
           Draft
           
-            as of 2025-07-31
+            as of 2025-10-13
           
         
       </td>
@@ -312,7 +306,7 @@
 <ul>
  <li>Use this Logical Model: <a href="StructureDefinition-PersonnePhysique.html">PersonnePhysique</a></li>
 </ul>
-<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fhir.fr.mos|current/StructureDefinition/LangueParlee">usages in the FHIR IG Statistics</a></p>
+<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/LangueParlee">usages in the FHIR IG Statistics</a></p>
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -373,7 +367,7 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date à laquelle la personne renonce à être référent de cette langue.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbLangueParleeK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('LangueParleeK'), 'binding', document.getElementById('cbLangueParleeK-binding').checked, document.getElementById('ppLangueParleeK'));
 document.getElementById('cbLangueParleeK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -383,9 +377,40 @@ filterDesc(document.getElementById('LangueParleeK'), 'obligation', document.getE
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>LangueParlee.langueParlee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>LangueParlee.langueParlee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -417,7 +442,7 @@ filterDesc(document.getElementById('LangueParleeK'), 'obligation', document.getE
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date à laquelle la personne renonce à être référent de cette langue.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbLangueParleeD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('LangueParleeD'), 'binding', document.getElementById('cbLangueParleeD-binding').checked, document.getElementById('ppLangueParleeD'));
 document.getElementById('cbLangueParleeD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -428,9 +453,40 @@ filterDesc(document.getElementById('LangueParleeD'), 'obligation', document.getE
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>LangueParlee.langueParlee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>LangueParlee.langueParlee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -460,7 +516,7 @@ filterDesc(document.getElementById('LangueParleeD'), 'obligation', document.getE
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date à laquelle la personne renonce à être référent de cette langue.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbLangueParleeS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('LangueParleeS'), 'binding', document.getElementById('cbLangueParleeS-binding').checked, document.getElementById('ppLangueParleeS'));
 document.getElementById('cbLangueParleeS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -470,9 +526,40 @@ filterDesc(document.getElementById('LangueParleeS'), 'obligation', document.getE
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>LangueParlee.langueParlee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>LangueParlee.langueParlee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -558,7 +645,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date à laquelle la personne renonce à être référent de cette langue.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbLangueParleeKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('LangueParleeKA'), 'binding', document.getElementById('cbLangueParleeKA-binding').checked, document.getElementById('ppLangueParleeKA'));
 document.getElementById('cbLangueParleeKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -568,9 +655,40 @@ filterDesc(document.getElementById('LangueParleeKA'), 'obligation', document.get
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>LangueParlee.langueParlee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>LangueParlee.langueParlee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -602,7 +720,7 @@ filterDesc(document.getElementById('LangueParleeKA'), 'obligation', document.get
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date à laquelle la personne renonce à être référent de cette langue.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbLangueParleeDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('LangueParleeDA'), 'binding', document.getElementById('cbLangueParleeDA-binding').checked, document.getElementById('ppLangueParleeDA'));
 document.getElementById('cbLangueParleeDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -612,9 +730,40 @@ filterDesc(document.getElementById('LangueParleeDA'), 'obligation', document.get
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>LangueParlee.langueParlee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>LangueParlee.langueParlee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -644,7 +793,7 @@ filterDesc(document.getElementById('LangueParleeDA'), 'obligation', document.get
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date à laquelle la personne renonce à être référent de cette langue.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbLangueParleeSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('LangueParleeSA'), 'binding', document.getElementById('cbLangueParleeSA-binding').checked, document.getElementById('ppLangueParleeSA'));
 document.getElementById('cbLangueParleeSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -654,9 +803,40 @@ filterDesc(document.getElementById('LangueParleeSA'), 'obligation', document.get
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>LangueParlee.langueParlee</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>LangueParlee.langueParlee</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs">https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G00-Langue/FHIR/TRE-G00-Langue?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -768,13 +948,12 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 13:34+0000">2025-07-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 08:06+0000">2025-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/mos/history.html">Historique des versions </a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
 
           </span>

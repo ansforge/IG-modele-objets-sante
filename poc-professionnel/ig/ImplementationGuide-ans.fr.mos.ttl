@@ -6,19 +6,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos> a fhir:ImplementationGuide ;
+<https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ans.fhir.fr.mos"] ; # 
+  fhir:id [ fhir:v "ans.fr.mos"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.mos</b></p><a name=\"ans.fhir.fr.mos\"> </a><a name=\"hcans.fhir.fr.mos\"> </a><h2>MOS</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fr.mos</b></p><a name=\"ans.fr.mos\"> </a><a name=\"hcans.fr.mos\"> </a><h2>MOS</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos</pre></div>"^^rdf:XMLLiteral
   ] ; # 
-  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/fhir/mos/ImplementationGuide/ans.fhir.fr.mos"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-31T13:33:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-13T08:05:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -34,7 +34,7 @@
        fhir:display [ fhir:v "FRANCE" ]
      ] )
   ] ) ; # 
-  fhir:packageId [ fhir:v "ans.fhir.fr.mos"] ; # 
+  fhir:packageId [ fhir:v "ans.fr.mos"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [
@@ -238,7 +238,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/mos/history.html"
+           fhir:v "https://interop.esante.gouv.fr/ig/mos/history.html"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -471,7 +471,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
+         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
        ]
      ] [
        fhir:extension ( [
@@ -634,7 +634,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/mos/history.html"
+           fhir:v "https://interop.esante.gouv.fr/ig/mos/history.html"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -873,7 +873,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse> ;
          fhir:reference [ fhir:v "StructureDefinition/Adresse" ]
        ] ;
        fhir:name [ fhir:v "Adresse" ] ;
@@ -891,7 +891,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Attestation> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Attestation> ;
          fhir:reference [ fhir:v "StructureDefinition/Attestation" ]
        ] ;
        fhir:name [ fhir:v "Attestation" ] ;
@@ -909,7 +909,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/AutreDiplomeObtenu> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutreDiplomeObtenu> ;
          fhir:reference [ fhir:v "StructureDefinition/AutreDiplomeObtenu" ]
        ] ;
        fhir:name [ fhir:v "AutreDiplomeObtenu" ] ;
@@ -927,7 +927,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS> ;
          fhir:reference [ fhir:v "StructureDefinition/BoiteLettreMSS" ]
        ] ;
        fhir:name [ fhir:v "BoiteLettreMSS" ] ;
@@ -945,7 +945,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CapaciteDiplome> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteDiplome> ;
          fhir:reference [ fhir:v "StructureDefinition/CapaciteDiplome" ]
        ] ;
        fhir:name [ fhir:v "CapaciteDiplome" ] ;
@@ -963,7 +963,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CapaciteSavoirfaire> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteSavoirfaire> ;
          fhir:reference [ fhir:v "StructureDefinition/CapaciteSavoirfaire" ]
        ] ;
        fhir:name [ fhir:v "CapaciteSavoirfaire" ] ;
@@ -981,7 +981,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/capaciteSavoirFaire-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/capaciteSavoirFaire-vs> ;
          fhir:reference [ fhir:v "ValueSet/capaciteSavoirFaire-vs" ]
        ] ;
        fhir:name [ fhir:v "CapacitesavoirfaireVs" ] ;
@@ -998,7 +998,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CertificatEtudeSpeciale> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CertificatEtudeSpeciale> ;
          fhir:reference [ fhir:v "StructureDefinition/CertificatEtudeSpeciale" ]
        ] ;
        fhir:name [ fhir:v "CertificatEtudeSpeciale" ] ;
@@ -1016,7 +1016,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Competence> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Competence> ;
          fhir:reference [ fhir:v "StructureDefinition/Competence" ]
        ] ;
        fhir:name [ fhir:v "Competence" ] ;
@@ -1034,7 +1034,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CompetenceExclusive> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CompetenceExclusive> ;
          fhir:reference [ fhir:v "StructureDefinition/CompetenceExclusive" ]
        ] ;
        fhir:name [ fhir:v "CompetenceExclusive" ] ;
@@ -1052,7 +1052,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceExclusive-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceExclusive-vs> ;
          fhir:reference [ fhir:v "ValueSet/competenceExclusive-vs" ]
        ] ;
        fhir:name [ fhir:v "CompetenceexclusiveVs" ] ;
@@ -1069,7 +1069,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/CompetenceMetier> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CompetenceMetier> ;
          fhir:reference [ fhir:v "StructureDefinition/CompetenceMetier" ]
        ] ;
        fhir:name [ fhir:v "CompetenceMetier" ] ;
@@ -1087,7 +1087,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competenceMetier-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs> ;
          fhir:reference [ fhir:v "ValueSet/competenceMetier-vs" ]
        ] ;
        fhir:name [ fhir:v "CompetencemetiereVs" ] ;
@@ -1104,7 +1104,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/competence-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/competence-vs> ;
          fhir:reference [ fhir:v "ValueSet/competence-vs" ]
        ] ;
        fhir:name [ fhir:v "CompetenceVs" ] ;
@@ -1121,7 +1121,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DESC1> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESC1> ;
          fhir:reference [ fhir:v "StructureDefinition/DESC1" ]
        ] ;
        fhir:name [ fhir:v "DESC1" ] ;
@@ -1139,7 +1139,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DESC2> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESC2> ;
          fhir:reference [ fhir:v "StructureDefinition/DESC2" ]
        ] ;
        fhir:name [ fhir:v "DESC2" ] ;
@@ -1157,7 +1157,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DESCNonQualifiant> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESCNonQualifiant> ;
          fhir:reference [ fhir:v "StructureDefinition/DESCNonQualifiant" ]
        ] ;
        fhir:name [ fhir:v "DESCNonQualifiant" ] ;
@@ -1175,7 +1175,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/DESCNonQualifiant-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/DESCNonQualifiant-vs> ;
          fhir:reference [ fhir:v "ValueSet/DESCNonQualifiant-vs" ]
        ] ;
        fhir:name [ fhir:v "DescnonqualifiantVs" ] ;
@@ -1192,7 +1192,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Diplome> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome> ;
          fhir:reference [ fhir:v "StructureDefinition/Diplome" ]
        ] ;
        fhir:name [ fhir:v "Diplome" ] ;
@@ -1210,7 +1210,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant> ;
          fhir:reference [ fhir:v "StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant" ]
        ] ;
        fhir:name [ fhir:v "DiplomeDeuxiemeCycleNonQualifiant" ] ;
@@ -1228,7 +1228,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeDivers> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeDivers> ;
          fhir:reference [ fhir:v "StructureDefinition/DiplomeDivers" ]
        ] ;
        fhir:name [ fhir:v "DiplomeDivers" ] ;
@@ -1246,7 +1246,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEEE> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEEE> ;
          fhir:reference [ fhir:v "StructureDefinition/DiplomeEEE" ]
        ] ;
        fhir:name [ fhir:v "DiplomeEEE" ] ;
@@ -1264,7 +1264,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEES> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEES> ;
          fhir:reference [ fhir:v "StructureDefinition/DiplomeEES" ]
        ] ;
        fhir:name [ fhir:v "DiplomeEES" ] ;
@@ -1282,7 +1282,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEtat> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEtat> ;
          fhir:reference [ fhir:v "StructureDefinition/DiplomeEtat" ]
        ] ;
        fhir:name [ fhir:v "DiplomeEtat" ] ;
@@ -1300,7 +1300,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEtudeSpecialisee> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEtudeSpecialisee> ;
          fhir:reference [ fhir:v "StructureDefinition/DiplomeEtudeSpecialisee" ]
        ] ;
        fhir:name [ fhir:v "DiplomeEtudeSpecialisee" ] ;
@@ -1318,7 +1318,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeUniversitaire> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeUniversitaire> ;
          fhir:reference [ fhir:v "StructureDefinition/DiplomeUniversitaire" ]
        ] ;
        fhir:name [ fhir:v "DiplomeUniversitaire" ] ;
@@ -1336,7 +1336,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DroitExerciceComplementaire> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DroitExerciceComplementaire> ;
          fhir:reference [ fhir:v "StructureDefinition/DroitExerciceComplementaire" ]
        ] ;
        fhir:name [ fhir:v "DroitExerciceComplementaire" ] ;
@@ -1354,7 +1354,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/droitExerciceComplementaire-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/droitExerciceComplementaire-vs> ;
          fhir:reference [ fhir:v "ValueSet/droitExerciceComplementaire-vs" ]
        ] ;
        fhir:name [ fhir:v "DroitexercicecomplementaireVs" ] ;
@@ -1371,7 +1371,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/ExerciceProfessionnel> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel> ;
          fhir:reference [ fhir:v "StructureDefinition/ExerciceProfessionnel" ]
        ] ;
        fhir:name [ fhir:v "ExerciceProfessionnel" ] ;
@@ -1389,7 +1389,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/FonctionQualifiee> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/FonctionQualifiee> ;
          fhir:reference [ fhir:v "StructureDefinition/FonctionQualifiee" ]
        ] ;
        fhir:name [ fhir:v "FonctionQualifiee" ] ;
@@ -1407,7 +1407,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/fonctionQualifiee-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/fonctionQualifiee-vs> ;
          fhir:reference [ fhir:v "ValueSet/fonctionQualifiee-vs" ]
        ] ;
        fhir:name [ fhir:v "FonctionqualifieeVs" ] ;
@@ -1424,7 +1424,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/FormationSpecialiseeTransversale> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/FormationSpecialiseeTransversale> ;
          fhir:reference [ fhir:v "StructureDefinition/FormationSpecialiseeTransversale" ]
        ] ;
        fhir:name [ fhir:v "FormationSpecialiseeTransversale" ] ;
@@ -1442,7 +1442,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Horaire> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Horaire> ;
          fhir:reference [ fhir:v "StructureDefinition/Horaire" ]
        ] ;
        fhir:name [ fhir:v "Horaire" ] ;
@@ -1460,7 +1460,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/LangueParlee> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee> ;
          fhir:reference [ fhir:v "StructureDefinition/LangueParlee" ]
        ] ;
        fhir:name [ fhir:v "LangueParlee" ] ;
@@ -1478,7 +1478,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/lieuNaissance-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/lieuNaissance-vs> ;
          fhir:reference [ fhir:v "ValueSet/lieuNaissance-vs" ]
        ] ;
        fhir:name [ fhir:v "LieunaissanceVs" ] ;
@@ -1495,7 +1495,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/OrientationParticuliere> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrientationParticuliere> ;
          fhir:reference [ fhir:v "StructureDefinition/OrientationParticuliere" ]
        ] ;
        fhir:name [ fhir:v "OrientationParticuliere" ] ;
@@ -1513,7 +1513,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/orientationParticuliere-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/orientationParticuliere-vs> ;
          fhir:reference [ fhir:v "ValueSet/orientationParticuliere-vs" ]
        ] ;
        fhir:name [ fhir:v "OrientationparticuliereVs" ] ;
@@ -1530,7 +1530,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/paysNaissance-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNaissance-vs> ;
          fhir:reference [ fhir:v "ValueSet/paysNaissance-vs" ]
        ] ;
        fhir:name [ fhir:v "PaysnaissanceVs" ] ;
@@ -1547,7 +1547,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/paysNationalite-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs> ;
          fhir:reference [ fhir:v "ValueSet/paysNationalite-vs" ]
        ] ;
        fhir:name [ fhir:v "PaysnationaliteVs" ] ;
@@ -1564,7 +1564,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/PersonnePhysique> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique> ;
          fhir:reference [ fhir:v "StructureDefinition/PersonnePhysique" ]
        ] ;
        fhir:name [ fhir:v "PersonnePhysique" ] ;
@@ -1582,7 +1582,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/professionCategorieSocioProfessionnelle-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs> ;
          fhir:reference [ fhir:v "ValueSet/professionCategorieSocioProfessionnelle-vs" ]
        ] ;
        fhir:name [ fhir:v "ProfessioncategoriesocioprofessionnelleVs" ] ;
@@ -1599,7 +1599,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Professionnel> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel> ;
          fhir:reference [ fhir:v "StructureDefinition/Professionnel" ]
        ] ;
        fhir:name [ fhir:v "Professionnel" ] ;
@@ -1617,7 +1617,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/profession-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/profession-vs> ;
          fhir:reference [ fhir:v "ValueSet/profession-vs" ]
        ] ;
        fhir:name [ fhir:v "ProfessionVs" ] ;
@@ -1634,7 +1634,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/QualificationPAC> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/QualificationPAC> ;
          fhir:reference [ fhir:v "StructureDefinition/QualificationPAC" ]
        ] ;
        fhir:name [ fhir:v "QualificationPAC" ] ;
@@ -1652,7 +1652,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/qualificationPAC-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/qualificationPAC-vs> ;
          fhir:reference [ fhir:v "ValueSet/qualificationPAC-vs" ]
        ] ;
        fhir:name [ fhir:v "QualificationpacVs" ] ;
@@ -1669,7 +1669,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs> ;
          fhir:reference [ fhir:v "ValueSet/role-vs" ]
        ] ;
        fhir:name [ fhir:v "RoleVs" ] ;
@@ -1686,7 +1686,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SavoirFaire> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire> ;
          fhir:reference [ fhir:v "StructureDefinition/SavoirFaire" ]
        ] ;
        fhir:name [ fhir:v "SavoirFaire" ] ;
@@ -1704,7 +1704,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/sexe-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs> ;
          fhir:reference [ fhir:v "ValueSet/sexe-vs" ]
        ] ;
        fhir:name [ fhir:v "SexeVs" ] ;
@@ -1721,7 +1721,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationExercice> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationExercice> ;
          fhir:reference [ fhir:v "StructureDefinition/SituationExercice" ]
        ] ;
        fhir:name [ fhir:v "SituationExercice" ] ;
@@ -1739,7 +1739,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationOperationnelle> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle> ;
          fhir:reference [ fhir:v "StructureDefinition/SituationOperationnelle" ]
        ] ;
        fhir:name [ fhir:v "SituationOperationnelle" ] ;
@@ -1757,7 +1757,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Specialite> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Specialite> ;
          fhir:reference [ fhir:v "StructureDefinition/Specialite" ]
        ] ;
        fhir:name [ fhir:v "Specialite" ] ;
@@ -1775,7 +1775,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/specialite-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/specialite-vs> ;
          fhir:reference [ fhir:v "ValueSet/specialite-vs" ]
        ] ;
        fhir:name [ fhir:v "SpecialiteVs" ] ;
@@ -1792,7 +1792,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SurspecialiteTransversale> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SurspecialiteTransversale> ;
          fhir:reference [ fhir:v "StructureDefinition/SurspecialiteTransversale" ]
        ] ;
        fhir:name [ fhir:v "SurspecialiteTransversale" ] ;
@@ -1810,7 +1810,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/surspecialiteTransversale-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/surspecialiteTransversale-vs> ;
          fhir:reference [ fhir:v "ValueSet/surspecialiteTransversale-vs" ]
        ] ;
        fhir:name [ fhir:v "SurspecialitetransversaleVs" ] ;
@@ -1827,7 +1827,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication> ;
          fhir:reference [ fhir:v "StructureDefinition/Telecommunication" ]
        ] ;
        fhir:name [ fhir:v "Telecommunication" ] ;
@@ -1845,7 +1845,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeProfession-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/typeProfession-vs> ;
          fhir:reference [ fhir:v "ValueSet/typeProfession-vs" ]
        ] ;
        fhir:name [ fhir:v "TypeprofessionVs" ] ;
@@ -1862,7 +1862,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs> ;
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs> ;
          fhir:reference [ fhir:v "ValueSet/typeRole-vs" ]
        ] ;
        fhir:name [ fhir:v "TyperoleVs" ] ;

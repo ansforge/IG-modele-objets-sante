@@ -44,24 +44,18 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+
     <style type="text/css">h2{--heading-prefix:"5.33"}
     h3,h4,h5,h6{--heading-prefix:"5.33"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" no-external="true" href="https://esante.gouv.fr/produits-services/ci-sis"><img height="50" alt="Visit the CI-SIS website" src="assets/images/ci-sis-logo.jpeg"/> </a>
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
   </div>
-
-  <div id="ig-search">
- </div>
-
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
@@ -185,7 +179,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -262,10 +256,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationExercice<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationExercice"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationExercice<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationExercice"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/SituationExercice|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationExercice|0.1.0"/></span>
       </td>
     </tr>
 
@@ -281,7 +275,7 @@
         
           Draft
           
-            as of 2025-07-31
+            as of 2025-10-13
           
         
       </td>
@@ -297,7 +291,7 @@
   </table>
 
 <p>
-<p>Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS).</p>
+<p>Caractéristiques de l’exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l’exception des remplaçants).Synonymes : Activité (RPPS).</p>
 
 </p>
 
@@ -312,7 +306,7 @@
 <ul>
  <li>This Logical Model is not used by any profiles in this Implementation Guide</li>
 </ul>
-<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fhir.fr.mos|current/StructureDefinition/SituationExercice">usages in the FHIR IG Statistics</a></p>
+<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/SituationExercice">usages in the FHIR IG Statistics</a></p>
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -367,12 +361,12 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.typeRole" title="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction" data-no-external="true">typeRole</a><a name="k-SituationExercice.typeRole"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.modeExercice" title="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice." data-no-external="true">modeExercice</a><a name="k-SituationExercice.modeExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -448,7 +442,7 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbSituationExerciceK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceK'), 'binding', document.getElementById('cbSituationExerciceK-binding').checked, document.getElementById('ppSituationExerciceK'));
 document.getElementById('cbSituationExerciceK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -458,18 +452,157 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>SituationExercice.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.typeRole</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.modeExercice</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs"></button></div></td></tr>
-<tr><td>SituationExercice.genreActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.motifFinActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutHospitalier</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sousSectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.typeActiviteLiberale</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutPSSSA</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>SituationExercice.role</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeRole</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.modeExercice</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.genreActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.motifFinActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutHospitalier</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sousSectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeActiviteLiberale</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutPSSSA</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -495,12 +628,12 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.typeRole" title="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction" data-no-external="true">typeRole</a><a name="SituationExercice.typeRole"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.modeExercice" title="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice." data-no-external="true">modeExercice</a><a name="SituationExercice.modeExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -576,7 +709,7 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbSituationExerciceD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceD'), 'binding', document.getElementById('cbSituationExerciceD-binding').checked, document.getElementById('ppSituationExerciceD'));
 document.getElementById('cbSituationExerciceD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -587,18 +720,157 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>SituationExercice.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.typeRole</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.modeExercice</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs"></button></div></td></tr>
-<tr><td>SituationExercice.genreActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.motifFinActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutHospitalier</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sousSectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.typeActiviteLiberale</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutPSSSA</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>SituationExercice.role</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeRole</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.modeExercice</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.genreActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.motifFinActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutHospitalier</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sousSectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeActiviteLiberale</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutPSSSA</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -622,12 +894,12 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.typeRole" title="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction" data-no-external="true">typeRole</a><a name="s-SituationExercice.typeRole"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.modeExercice" title="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice." data-no-external="true">modeExercice</a><a name="s-SituationExercice.modeExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -703,7 +975,7 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbSituationExerciceS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceS'), 'binding', document.getElementById('cbSituationExerciceS-binding').checked, document.getElementById('ppSituationExerciceS'));
 document.getElementById('cbSituationExerciceS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -713,18 +985,157 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>SituationExercice.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.typeRole</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.modeExercice</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs"></button></div></td></tr>
-<tr><td>SituationExercice.genreActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.motifFinActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutHospitalier</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sousSectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.typeActiviteLiberale</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutPSSSA</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>SituationExercice.role</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeRole</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.modeExercice</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.genreActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.motifFinActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutHospitalier</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sousSectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeActiviteLiberale</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutPSSSA</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -766,10 +1177,10 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.sousSectionOrdrePharmacien" title="Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens" class="dict"><span style="text-decoration: underline">sousSectionOrdrePharmacien</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs.html" style="color: navy">Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens.</a></span>
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.typeActiviteLiberale" title="Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc" class="dict"><span style="text-decoration: underline">typeActiviteLiberale</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs.html" style="color: navy">Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc.</a></span>
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.statutPSSSA" title="Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc" class="dict"><span style="text-decoration: underline">statutPSSSA</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs.html" style="color: navy">Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc.</a></span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.telecommunication" title="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">telecommunication</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Telecommunication.html#https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice.</span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.adresseSE" title="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">adresseSE</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Adresse.html#https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice.</span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.boiteLettresMSS" title="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">boiteLettresMSS</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-BoiteLettreMSS.html#https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.</span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" class="dict"><span style="text-decoration: underline">exerciceProfessionnel</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/ExerciceProfessionnel]])} <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe ExerciceProfessionnel.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.telecommunication" title="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">telecommunication</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Telecommunication.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.adresseSE" title="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">adresseSE</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Adresse.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.boiteLettresMSS" title="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">boiteLettresMSS</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-BoiteLettreMSS.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" class="dict"><span style="text-decoration: underline">exerciceProfessionnel</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel]])} <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe ExerciceProfessionnel.</span>
   }
 
         </div>
@@ -801,7 +1212,7 @@ Résumé
 <p>Mandatory: 0 element(1 nested mandatory element)</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel <span style="font-size: 8px">(https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/ExerciceProfessionnel)</span></a></li>
+<li><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel <span style="font-size: 8px">(https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel)</span></a></li>
 
 </ul>
 
@@ -826,12 +1237,12 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.typeRole" title="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction" data-no-external="true">typeRole</a><a name="ka-SituationExercice.typeRole"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.modeExercice" title="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice." data-no-external="true">modeExercice</a><a name="ka-SituationExercice.modeExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -907,7 +1318,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbSituationExerciceKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceKA'), 'binding', document.getElementById('cbSituationExerciceKA-binding').checked, document.getElementById('ppSituationExerciceKA'));
 document.getElementById('cbSituationExerciceKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -917,18 +1328,157 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>SituationExercice.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.typeRole</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.modeExercice</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs"></button></div></td></tr>
-<tr><td>SituationExercice.genreActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.motifFinActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutHospitalier</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sousSectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.typeActiviteLiberale</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutPSSSA</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>SituationExercice.role</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeRole</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.modeExercice</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.genreActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.motifFinActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutHospitalier</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sousSectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeActiviteLiberale</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutPSSSA</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -954,12 +1504,12 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.typeRole" title="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction" data-no-external="true">typeRole</a><a name="a-SituationExercice.typeRole"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.modeExercice" title="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice." data-no-external="true">modeExercice</a><a name="a-SituationExercice.modeExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1035,7 +1585,7 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbSituationExerciceDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceDA'), 'binding', document.getElementById('cbSituationExerciceDA-binding').checked, document.getElementById('ppSituationExerciceDA'));
 document.getElementById('cbSituationExerciceDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1045,18 +1595,157 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>SituationExercice.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.typeRole</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.modeExercice</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs"></button></div></td></tr>
-<tr><td>SituationExercice.genreActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.motifFinActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutHospitalier</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sousSectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.typeActiviteLiberale</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutPSSSA</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>SituationExercice.role</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeRole</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.modeExercice</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.genreActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.motifFinActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutHospitalier</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sousSectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeActiviteLiberale</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutPSSSA</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -1080,12 +1769,12 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rôle du professionnel au sein de la structure d’exercice. Par exemple, ** Titulaire de cabinet;** Titulaire d’officine;** Médecin scolaire;** etc.Synonyme : fonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-role-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" class="binding">RoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.typeRole" title="Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction" data-no-external="true">typeRole</a><a name="sa-SituationExercice.typeRole"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indique le type de rôle du professionnel au sein de la structure d’exercice.Synonyme : typeFonction<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="ValueSet-typeRole-vs.html" title="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" class="binding">TyperoleVs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.modeExercice" title="Le mode d'exercice décrit selon quelle modalité une activité est exercée au regard de l'organisation de la rétribution du professionnel.Exemples : ** Libéral;** Salarié;** Bénévole.Les valeurs de ce code sont répertoriées dans la nomenclature CodeSystem-TRE-R23-ModeExercice." data-no-external="true">modeExercice</a><a name="sa-SituationExercice.modeExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -1161,7 +1850,7 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbSituationExerciceSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceSA'), 'binding', document.getElementById('cbSituationExerciceSA-binding').checked, document.getElementById('ppSituationExerciceSA'));
 document.getElementById('cbSituationExerciceSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1171,18 +1860,157 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>SituationExercice.role</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/role-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.typeRole</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a><div><code>https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/ValueSet/typeRole-vs"></button></div><div>From this IG</div></td></tr>
-<tr><td>SituationExercice.modeExercice</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs"></button></div></td></tr>
-<tr><td>SituationExercice.genreActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.motifFinActivite</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutHospitalier</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.sousSectionOrdrePharmacien</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs"></button></div></td></tr>
-<tr><td>SituationExercice.typeActiviteLiberale</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs"></button></div></td></tr>
-<tr><td>SituationExercice.statutPSSSA</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>SituationExercice.role</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeRole</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicitly stated, which means it is fixed to the version provided in this specification">&#x1F4E6;0.1.0</td>
+    <td>This IG</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.modeExercice</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.genreActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.motifFinActivite</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutHospitalier</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.sousSectionOrdrePharmacien</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.typeActiviteLiberale</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>SituationExercice.statutPSSSA</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -1224,10 +2052,10 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.sousSectionOrdrePharmacien" title="Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens" class="dict"><span style="text-decoration: underline">sousSectionOrdrePharmacien</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs.html" style="color: navy">Sous-section ou à défaut section du tableau de l’Ordre des pharmaciens.</a></span>
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.typeActiviteLiberale" title="Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc" class="dict"><span style="text-decoration: underline">typeActiviteLiberale</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs.html" style="color: navy">Type d’activité libérale, par exemple:** Cabinet;** Secteur privé à l'hôpital;** etc.</a></span>
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.statutPSSSA" title="Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc" class="dict"><span style="text-decoration: underline">statutPSSSA</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8"><a href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs.html" style="color: navy">Statut du professionnel du Service de santé des armées, par exemple:** Praticien certifié;** Praticien confirmé;** etc.</a></span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.telecommunication" title="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">telecommunication</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Telecommunication.html#https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Telecommunication</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice.</span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.adresseSE" title="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">adresseSE</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Adresse.html#https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/Adresse</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice.</span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.boiteLettresMSS" title="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">boiteLettresMSS</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-BoiteLettreMSS.html#https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/BoiteLettreMSS</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.</span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" class="dict"><span style="text-decoration: underline">exerciceProfessionnel</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/ExerciceProfessionnel]])} <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe ExerciceProfessionnel.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.telecommunication" title="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">telecommunication</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Telecommunication.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.adresseSE" title="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">adresseSE</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Adresse.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.boiteLettresMSS" title="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">boiteLettresMSS</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-BoiteLettreMSS.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" class="dict"><span style="text-decoration: underline">exerciceProfessionnel</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel]])} <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe ExerciceProfessionnel.</span>
   }
 
         </div>
@@ -1255,7 +2083,7 @@ Résumé
 <p>Mandatory: 0 element(1 nested mandatory element)</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel <span style="font-size: 8px">(https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/ExerciceProfessionnel)</span></a></li>
+<li><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel <span style="font-size: 8px">(https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel)</span></a></li>
 
 </ul>
 
@@ -1316,13 +2144,12 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 13:34+0000">2025-07-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 08:06+0000">2025-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/mos/history.html">Historique des versions </a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
 
           </span>

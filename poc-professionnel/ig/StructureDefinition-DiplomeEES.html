@@ -44,24 +44,18 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+
     <style type="text/css">h2{--heading-prefix:"5.18"}
     h3,h4,h5,h6{--heading-prefix:"5.18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" no-external="true" href="https://esante.gouv.fr/produits-services/ci-sis"><img height="50" alt="Visit the CI-SIS website" src="assets/images/ci-sis-logo.jpeg"/> </a>
   </div>
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
   </div>
-
-  <div id="ig-search">
- </div>
-
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
@@ -185,7 +179,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/fhir/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -262,10 +256,10 @@
   <table class="colsd">
 
     <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEES<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEES"/></span>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEES<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEES"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/mos/StructureDefinition/DiplomeEES|0.1.0"/></span>
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEES|0.1.0"/></span>
       </td>
     </tr>
 
@@ -281,7 +275,7 @@
         
           Draft
           
-            as of 2025-07-31
+            as of 2025-10-13
           
         
       </td>
@@ -297,7 +291,7 @@
   </table>
 
 <p>
-<p>Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+<p>Diplôme européen d’études spécialisées, d’un pays de l’espace économique européen (EEE), ouvrant l’accès à une spécialité, pour un professionnel s’inscrivant à l’ordre à compter de la date d’entrée du pays dans l’EEE (Directive européenne 2005-36 modifiée). L’annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l’EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
 
 </p>
 
@@ -312,7 +306,7 @@
 <ul>
  <li>This Logical Model is not used by any profiles in this Implementation Guide</li>
 </ul>
-<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fhir.fr.mos|current/StructureDefinition/DiplomeEES">usages in the FHIR IG Statistics</a></p>
+<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DiplomeEES">usages in the FHIR IG Statistics</a></p>
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -362,7 +356,7 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEES-definitions.html#DiplomeEES.typeDiplome" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc." data-no-external="true">typeDiplome</a><a name="k-DiplomeEES.typeDiplome"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -388,7 +382,7 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEESK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEESK'), 'binding', document.getElementById('cbDiplomeEESK-binding').checked, document.getElementById('ppDiplomeEESK'));
 document.getElementById('cbDiplomeEESK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -398,11 +392,66 @@ filterDesc(document.getElementById('DiplomeEESK'), 'obligation', document.getEle
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEES.typeDiplome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs"></button></div></td></tr>
-<tr><td>DiplomeEES.lieuFormation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs"></button></div></td></tr>
-<tr><td>DiplomeEES.diplomeEES</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.typeDiplome</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.lieuFormation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.diplomeEES</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -423,13 +472,13 @@ filterDesc(document.getElementById('DiplomeEESK'), 'obligation', document.getEle
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEES-definitions.html#DiplomeEES.diplomeEES" title="Diplôme européen d'études spécialisées." data-no-external="true">diplomeEES</a><a name="DiplomeEES.diplomeEES"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEESD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEESD'), 'binding', document.getElementById('cbDiplomeEESD-binding').checked, document.getElementById('ppDiplomeEESD'));
 document.getElementById('cbDiplomeEESD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -440,9 +489,40 @@ filterDesc(document.getElementById('DiplomeEESD'), 'obligation', document.getEle
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEES.diplomeEES</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.diplomeEES</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -461,7 +541,7 @@ filterDesc(document.getElementById('DiplomeEESD'), 'obligation', document.getEle
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEES-definitions.html#DiplomeEES.typeDiplome" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc." data-no-external="true">typeDiplome</a><a name="s-DiplomeEES.typeDiplome"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -487,7 +567,7 @@ filterDesc(document.getElementById('DiplomeEESD'), 'obligation', document.getEle
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEESS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEESS'), 'binding', document.getElementById('cbDiplomeEESS-binding').checked, document.getElementById('ppDiplomeEESS'));
 document.getElementById('cbDiplomeEESS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -497,11 +577,66 @@ filterDesc(document.getElementById('DiplomeEESS'), 'obligation', document.getEle
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEES.typeDiplome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs"></button></div></td></tr>
-<tr><td>DiplomeEES.lieuFormation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs"></button></div></td></tr>
-<tr><td>DiplomeEES.diplomeEES</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.typeDiplome</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.lieuFormation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.diplomeEES</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -579,7 +714,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEES-definitions.html#DiplomeEES.typeDiplome" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc." data-no-external="true">typeDiplome</a><a name="ka-DiplomeEES.typeDiplome"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -605,7 +740,7 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEESKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEESKA'), 'binding', document.getElementById('cbDiplomeEESKA-binding').checked, document.getElementById('ppDiplomeEESKA'));
 document.getElementById('cbDiplomeEESKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -615,11 +750,66 @@ filterDesc(document.getElementById('DiplomeEESKA'), 'obligation', document.getEl
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEES.typeDiplome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs"></button></div></td></tr>
-<tr><td>DiplomeEES.lieuFormation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs"></button></div></td></tr>
-<tr><td>DiplomeEES.diplomeEES</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.typeDiplome</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.lieuFormation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.diplomeEES</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -640,13 +830,13 @@ filterDesc(document.getElementById('DiplomeEESKA'), 'obligation', document.getEl
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEES-definitions.html#DiplomeEES.diplomeEES" title="Diplôme européen d'études spécialisées." data-no-external="true">diplomeEES</a><a name="a-DiplomeEES.diplomeEES"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEESDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEESDA'), 'binding', document.getElementById('cbDiplomeEESDA-binding').checked, document.getElementById('ppDiplomeEESDA'));
 document.getElementById('cbDiplomeEESDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -656,9 +846,40 @@ filterDesc(document.getElementById('DiplomeEESDA'), 'obligation', document.getEl
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings (Differential)</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEES.diplomeEES</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.diplomeEES</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -677,7 +898,7 @@ filterDesc(document.getElementById('DiplomeEESDA'), 'obligation', document.getEl
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Diplome.html">Diplome</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/>Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/></td></tr>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-Diplome.html" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc.">typeDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Lieu de formation pour l'obtention du diplôme. Par exemple:** U37 : Université de Tours (Université François Rabelais)** UP5 : Université de Paris 05 (Université René Descartes).">lieuFormation</a>, <a href="StructureDefinition-Diplome.html" title="Date d’obtention du diplôme.">dateDiplome</a>, <a href="StructureDefinition-Diplome.html" title="Numéro du diplôme.">numeroDiplome</a><br/></td></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-DiplomeEES-definitions.html#DiplomeEES.typeDiplome" title="Type de diplôme, par exemple:** DE : Diplôme d’Etat français** CES : Certificat d’Etudes Spéciales** DES : Diplôme d'Etudes Spécialisées** etc." data-no-external="true">typeDiplome</a><a name="sa-DiplomeEES.typeDiplome"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
@@ -703,7 +924,7 @@ filterDesc(document.getElementById('DiplomeEESDA'), 'obligation', document.getEl
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diplôme européen d'études spécialisées.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding: </span><a href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" class="binding">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R4/terminologies.html#preferred" title="Instances are encouraged to draw from the specified codes for interoperability purposes but are not required to do so to be considered conformant." class="binding">preferred</a><span title="null" class="binding">)</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // aefa48eb-e9ed-46b3-8018-64a22e99683a
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 0fd42d0d-682a-4706-b117-29eeb5ea1d66
 document.getElementById('cbDiplomeEESSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('DiplomeEESSA'), 'binding', document.getElementById('cbDiplomeEESSA-binding').checked, document.getElementById('ppDiplomeEESSA'));
 document.getElementById('cbDiplomeEESSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -713,11 +934,66 @@ filterDesc(document.getElementById('DiplomeEESSA'), 'obligation', document.getEl
 </script></table>
           <!--Terminology Bindings heading in the fragment -->
           <h4>Terminology Bindings</h4>
-<table class="list">
-<tr><td><b>Path</b></td><td><b>Conformité</b></td><td><b>ValueSet</b></td><td><b>URI</b></td></tr>
-<tr><td>DiplomeEES.typeDiplome</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs"></button></div></td></tr>
-<tr><td>DiplomeEES.lieuFormation</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs"></button></div></td></tr>
-<tr><td>DiplomeEES.diplomeEES</td><td><a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#preferred">preferred</a></td><td><a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a><div><code>https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</code><button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs"></button></div></td></tr>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Path</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>ValueSet</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.typeDiplome</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs">https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R14-TypeDiplome/FHIR/TRE-R14-TypeDiplome?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.lieuFormation</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs">https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R16-LieuFormation/FHIR/TRE-R16-LieuFormation?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>DiplomeEES.diplomeEES</td>
+    <td>Base</td>
+    <td>
+      <a style="opacity: 1.0" href="http://hl7.org/fhir/R4/terminologies.html#Enumeration[preferred]">preferred</a>
+    </td>
+    <td>
+      <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs">https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs</a>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R57-DiplomeEuropeenEtudeSpecialisee/FHIR/TRE-R57-DiplomeEuropeenEtudeSpecialisee?vs" title="Click to copy URL" class="btn-copy"></button>
+    </td>
+    <td title="Version is not explicity stated. No matching Jeu de valeurs (Value Set) found">Not Stated</td>
+    <td>Unknown</td>
+  </tr>
 </table>
 
         
@@ -832,13 +1108,12 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 13:34+0000">2025-07-31</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 13, 2025 08:06+0000">2025-10-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
-            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/mos/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/mos/history.html">Historique des versions </a>
  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
 
           </span>
