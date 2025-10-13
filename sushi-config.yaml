@@ -1,7 +1,7 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.mos
-canonical: https://interop.esante.gouv.fr/ig/fhir/mos # the last part of canonical and id must be the same
+id: ans.fr.mos
+canonical: https://interop.esante.gouv.fr/ig/mos # the last part of canonical and id must be the same
 name: MOS # Should be an acronym
 title: Modèle des Objets de Santé (MOS)
 publisher:
@@ -25,10 +25,10 @@ pages:
         title: Accueil
     classes_communes.md:
         title: Classes communes
-    types_donnees.md:
-        title: Types de données
-    partition.md:
-        title: Partition
+    # types_donnees.md:
+    #     title: Types de données
+    composants_elementaires.md:
+        title: Composants élémentaires
         professionnel.md:
             title: Professionnel
         dispo-authent.md:
@@ -49,8 +49,8 @@ pages:
 menu:
     Accueil: index.html
     Classes communes: classes_communes.html
-    Types de données: types_donnees.html
-    Partition:
+    # Types de données: types_donnees.html
+    Composants élémentaires:
       Professionnel: professionnel.html
       Dispositif d'authentification: dispo-authent.html
       Structure: structure.html

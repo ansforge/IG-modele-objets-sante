@@ -51,7 +51,7 @@ La cardinalité "1" d'une association ou d'un attribut signifie "1..1".
 
 <div class="figure" style="width:100%; overflow-x:auto;">
   <p style="margin: 0; padding: 0;">
-    {% include overview.svg %}
+    {% include professionnel-short.svg %}
   </p>
 </div>
 

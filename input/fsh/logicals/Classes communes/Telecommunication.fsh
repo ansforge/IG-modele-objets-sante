@@ -1,0 +1,15 @@
+Logical: Telecommunication
+Id: Telecommunication
+Title: "Telecommunication"
+Description: "Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)."
+* ^status = #draft
+* . ^short = "Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)."
+* . ^definition = "Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)."
+* canal 0..1 Coding "Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie." "Code spécifiant le canal ou la manière dont s'établit la communication (téléphone, e-mail, URL, etc.).Quelques exemples de codes:** MOB: Téléphone mobile;** FIX: Téléphone fixe;** EML: Courrier électronique;** URL: Uniform Resource Location;** FTP: File Transfer Protocol;** FAX: Télécopie."
+* canal from https://mos.esante.gouv.fr/NOS/TRE_R200-CanalCommunication/FHIR/TRE-R200-CanalCommunication?vs (preferred)
+* adresseTelecom 0..1 string "Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc." "Valeur de l'adresse de télécommunication dans le format induit par le canal de communication, par exemple un numéro de téléphone, une adresse de courrier électronique, une adresse URL, etc."
+* typeMessagerie 0..1 Coding "Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie." "Type de messagerie électronique rassemblant des acteurs (personne physique, personne morale ou système) identifiés et enregistrés selon des règles qui garantissent leur légitimité à l'utiliser. L'échange de messages obéit à des spécifications fonctionnelles et techniques propres à ce type de messagerie."
+* typeMessagerie from https://mos.esante.gouv.fr/NOS/TRE_R256-TypeMessagerie/FHIR/TRE-R256-TypeMessagerie?vs (preferred)
+* utilisation 0..1 string "Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)." "Précise l'utilisation du canal de communication (par exemple à des fins professionnelles, privées, etc.)."
+* niveauConfidentialite 0..1 Coding "Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication." "Le niveau de confidentialité permet de définir le niveau de restriction de l'accès aux attributs de la classe Telecommunication."
+* niveauConfidentialite from https://mos.esante.gouv.fr/NOS/TRE_R283-NiveauConfidentialite/FHIR/TRE-R283-NiveauConfidentialite?vs (preferred)
