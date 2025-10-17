@@ -39,6 +39,22 @@ La conversion a été réalisée uniquement sur la partie Professionnel, à part
     `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
     * SavoirFaire.fsh : 
     `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
+    * CarteProfessionel.fsh : 
+    `* certificat 1..* Reference(Certificat) "Lien vers la classe Certificat."`
+    * EntiteGeographique.fsh : 
+    `* entiteJuridique 1..1 Reference(EntiteJuridique) "Lien vers la classe EntiteJuridique."`
+    * VieQuotidienne.fsh : 
+    `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
+    * VieProfessionnelle.fsh : 
+    `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
+    * VieSociale.fsh : 
+    `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
+    * ArretTravail.fsh : 
+    `* vieProfessionnelle 1..1 Reference(VieProfessionnelle) "Lien vers la classe VieProfessionnelle."`
+    * Emploi.fsh : 
+    `* vieProfessionnelle 1..1 Reference(VieProfessionnelle) "Lien vers la classe VieProfessionnelle."`
+    * Observation.fsh : 
+    `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
 * La tre-r394-competence-metier a été ajoutée à la main car elle est au nouveau format, voici les lignes à ajouter dans les différents fichiers fsh : 
     * aliases.fsh : 
     `Alias: $tre-r394-competence-metier = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier`

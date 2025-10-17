@@ -10,7 +10,7 @@
             "Mesure": "Quantity",
             "Montant": "Money",
             "Numerique": "integer",
-            "Indicateur": "boolean",
+            "Indicateur": "boolean"
         },
         "custom": [],
         "class": ["Adresse",
@@ -44,10 +44,13 @@
             "ActiviteOperationnelle" : {"min": 1, "max": "*"},
             "Patientele": {"min": 1, "max": 1}
         },
-        "OffreOperationnelle" : {
-            "ActiviteOperationnelle" : {"min": 1, "max": "*"},
-            "Patientele": {"min": 1, "max": 1}
-        }     
+        "LieuRealisationOffre" : {
+            "CapacitePriseCharge" : {"min": 0, "max": "*"},
+            "EquipementSpecifique" : {"min":0, "max": "*"}
+        }, 
+        "DispositifMedical" : {
+            "SupportIUD" : {"min": 0, "max": "1"}
+        }       
     }, 
     "inheritance": {
         "Diplome": ["DiplomeEtat", "DiplomeEtudeSpecialisee", "FormationSpecialiseeTransversale", "DESC1", "DESC2", "DiplomeEEE", "DiplomeEES", "DiplomeUniversitaire", "CertificatEtudeSpeciale", "Attestation", "CapaciteDiplome", "DiplomeDivers", "AutreDiplomeObtenu", "DiplomeDeuxiemeCycleNonQualifiant"],
