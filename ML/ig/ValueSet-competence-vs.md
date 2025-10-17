@@ -53,7 +53,7 @@ Ce jeu de valeur (ValueSet) contient 368 concepts
   "version" : "0.1.0",
   "name" : "CompetenceVs",
   "status" : "draft",
-  "date" : "2025-10-17T12:47:41+00:00",
+  "date" : "2025-10-17T13:37:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
