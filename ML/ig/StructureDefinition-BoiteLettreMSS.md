@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-BoiteLettreMSS.csv),
   "name" : "BoiteLettreMSS",
   "title" : "BoiteLettreMSS",
   "status" : "draft",
-  "date" : "2025-10-17T07:33:44+00:00",
+  "date" : "2025-10-17T12:45:54+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
