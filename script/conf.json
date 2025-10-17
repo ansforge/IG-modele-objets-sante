@@ -15,17 +15,45 @@
             "ConceptCode": "CodeableConcept"
         },
         "custom": [],
-        "class": ["Diplome", "PersonnePhysique", "LangueParlee", "BoiteLettreMSS", "Horaire", "Adresse", "Telecommunication"]
+        "class": ["Adresse",
+            "AutoriteEnregistrement", 
+            "BoiteLettreMSS",
+            "ConceptCode",
+            "CoordonneeGeographique",
+            "Contact", 
+            "Diplome", 
+            "DivisionTerritoriale",
+            "Evenement",
+            "Groupement",
+            "Horaire", 
+            "Lieu",
+            "LangueParlee", 
+            "INS", 
+            "PersonnePhysique",
+            "Patientele",
+            "Membre",
+            "Telecommunication",
+            "Zone"
+        ]
     },
     "backbones": {
         "ExerciceProfessionnel": {
             "InscriptionOrdre": {"min": 0, "max": "*"},
             "AttributionParticuliere": {"min": 0, "max": 1},
             "NiveauFormation": {"min": 0, "max": "*"}
-        }
+        },
+        "OffreOperationnelle" : {
+            "ActiviteOperationnelle" : {"min": 1, "max": "*"},
+            "Patientele": {"min": 1, "max": 1}
+        },
+        "OffreOperationnelle" : {
+            "ActiviteOperationnelle" : {"min": 1, "max": "*"},
+            "Patientele": {"min": 1, "max": 1}
+        }     
     }, 
     "inheritance": {
         "Diplome": ["DiplomeEtat", "DiplomeEtudeSpecialisee", "FormationSpecialiseeTransversale", "DESC1", "DESC2", "DiplomeEEE", "DiplomeEES", "DiplomeUniversitaire", "CertificatEtudeSpeciale", "Attestation", "CapaciteDiplome", "DiplomeDivers", "AutreDiplomeObtenu", "DiplomeDeuxiemeCycleNonQualifiant"],
-        "SavoirFaire": ["Specialite", "SurspecialiteTransversale", "Competence", "CompetenceMetier", "CompetenceExclusive", "OrientationParticuliere", "CapaciteSavoirfaire", "QualificationPAC", "FonctionQualifiee", "DESCNonQualifiant", "DroitExerciceComplementaire"]
+        "SavoirFaire": ["Specialite", "SurspecialiteTransversale", "Competence", "CompetenceMetier", "CompetenceExclusive", "OrientationParticuliere", "CapaciteSavoirfaire", "QualificationPAC", "FonctionQualifiee", "DESCNonQualifiant", "DroitExerciceComplementaire"],
+        "OrganisationInterne": ["PoleActivite", "StructureInterne", "UniteFonctionnelle"]
     }
 }
