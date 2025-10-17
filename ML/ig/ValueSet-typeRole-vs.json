@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "typeRole-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs typeRole-vs</b></p><a name=\"typeRole-vs\"> </a><a name=\"hctypeRole-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R289-TypeFonction.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version &#x1F4E6;20231215120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R37-TypeProfessionFonction.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version &#x1F4E6;20231215120000</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs",
+  "version" : "0.1.0",
+  "name" : "TyperoleVs",
+  "status" : "draft",
+  "date" : "2025-10-17T07:33:44+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction"
+    }]
+  }
+}
