@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePhysique.csv
   "name" : "PersonnePhysique",
   "title" : "PersonnePhysique",
   "status" : "draft",
-  "date" : "2025-10-23T12:14:06+00:00",
+  "date" : "2025-10-23T12:40:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
