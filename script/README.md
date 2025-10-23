@@ -27,10 +27,10 @@ Environnement Python (pour Windows) :
 
 ## Conversion
 
-* Se placer dans le dossier [script](./script).
-* Exécuter le script python [mos2ml.py](./script/mos2ml.py) qui génère les ressources FHIR au format json : `python mos2ml.py`.
+* Se placer dans le dossier [script](./).
+* Exécuter le script python [mos2ml.py](./mos2ml.py) qui génère les ressources FHIR au format json : `python mos2ml.py`.
 * Convertir les fichiers json en fsh : `gofsh ./json -o ..`.
-* Exécuter le script python [fsh_files_organization.py](./script/fsh_files_organization.py) qui organise les fichiers fsh par partie du MOS : `python fsh_files_organization.py`.
+* Exécuter le script python [fsh_files_organization.py](./fsh_files_organization.py) qui organise les fichiers fsh par partie du MOS : `python fsh_files_organization.py`.
 
 ### Notes
 
@@ -79,7 +79,7 @@ Environnement Python (pour Windows) :
 ## Génération de diagrammes
 
 * Exécuter `_genonce.bat` à la racine du projet.
-* Se place dans le dossier [script](./) et exécuter le script python [generate_plantuml.py](./script/generate_plantuml.py) qui génère les diagrammes par partie au format plantuml : `python generate_plantuml.py`.
+* Se place dans le dossier [script](./) et exécuter le script python [generate_plantuml.py](./generate_plantuml.py) qui génère les diagrammes par partie au format plantuml : `python generate_plantuml.py`.
 
 ### Notes
 
