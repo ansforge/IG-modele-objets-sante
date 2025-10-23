@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteDiplome | *Version*:0.1.0 |
-| Draft as of 2025-10-17 | *Computable Name*:CapaciteDiplome |
+| Draft as of 2025-10-23 | *Computable Name*:CapaciteDiplome |
 
  
 En France, la capacité de médecine est un diplôme (2 ans d’études) réservé aux docteurs en médecine (généralistes ou spécialistes), leur conférant certaines compétences supplémentaires dans leur exercice ou un champ d’exercice plus large (réf. décret du 29 avril 1988). Les capacités ne confèrent pas la qualification aux spécialistes auprès de l’Ordre des médecins, mais celui-ci les reconnait comme des titres auxquels peuvent prétendre les médecins (par exemple sur leur plaque) pour justifier de compétences supplémentaires auprès de leurs patients.Une capacité est un type de diplôme. La classe CapaciteDiplome est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CapaciteDiplome.csv)
   "name" : "CapaciteDiplome",
   "title" : "CapaciteDiplome",
   "status" : "draft",
-  "date" : "2025-10-17T13:37:49+00:00",
+  "date" : "2025-10-23T07:38:48+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

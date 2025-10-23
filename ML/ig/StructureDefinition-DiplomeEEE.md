@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEEE | *Version*:0.1.0 |
-| Draft as of 2025-10-17 | *Computable Name*:DiplomeEEE |
+| Draft as of 2025-10-23 | *Computable Name*:DiplomeEEE |
 
  
 Diplôme d’un pays de l’espace économique européen (EEE), requis pour l’accès à la profession en France, pour un professionnel s’inscrivant à l’ordre à compter de la date d’entrée du pays dans l’EEE (Directive européenne 2005-36 modifiée). L’annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes au sein de l’EEE.Dans le cadre du modèle, un diplôme EEE est un type de diplôme. La classe DiplomeEEE est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DiplomeEEE.csv), [Ex
   "name" : "DiplomeEEE",
   "title" : "DiplomeEEE",
   "status" : "draft",
-  "date" : "2025-10-17T13:37:49+00:00",
+  "date" : "2025-10-23T07:38:48+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
