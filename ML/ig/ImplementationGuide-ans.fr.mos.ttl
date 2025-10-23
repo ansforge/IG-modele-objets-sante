@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-23T13:57:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-23T15:44:08+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -998,11 +998,81 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CarteProfessionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/CarteProfessionnel" ]
+       ] ;
+       fhir:name [ fhir:v "CarteProfessionnel" ] ;
+       fhir:description [ fhir:v "Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEtablissement-vs> ;
+         fhir:reference [ fhir:v "ValueSet/categorieEtablissement-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CategorieetablissementVs" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat> ;
+         fhir:reference [ fhir:v "StructureDefinition/Certificat" ]
+       ] ;
+       fhir:name [ fhir:v "Certificat" ] ;
+       fhir:description [ fhir:v "Données descriptives du moyen d’identification par certificat. Il s'agit des certificats utilisés par les professionnels et les structures." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CertificatEtudeSpeciale> ;
          fhir:reference [ fhir:v "StructureDefinition/CertificatEtudeSpeciale" ]
        ] ;
        fhir:name [ fhir:v "CertificatEtudeSpeciale" ] ;
        fhir:description [ fhir:v "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/code-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CodeVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1108,6 +1178,42 @@
          fhir:reference [ fhir:v "ValueSet/competence-vs" ]
        ] ;
        fhir:name [ fhir:v "CompetenceVs" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact> ;
+         fhir:reference [ fhir:v "StructureDefinition/Contact" ]
+       ] ;
+       fhir:name [ fhir:v "Contact" ] ;
+       fhir:description [ fhir:v "Personne ou service qui agit comme point de contact auprès d'une autre personne ou d'un autre service.Exemple: Point de contact avec une personne ou une organisation (un guichet d'accueil, une source d'information, etc.)." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CoordonneeGeographique> ;
+         fhir:reference [ fhir:v "StructureDefinition/CoordonneeGeographique" ]
+       ] ;
+       fhir:name [ fhir:v "CoordonneeGeographique" ] ;
+       fhir:description [ fhir:v "Ensemble des coordonnées géographiques d'un point spécifique telles que la longitude, la latitude et l'altitude, exprimées suivant un système géodésique choisi. Il convient de distinguer les coordonnées géographiques des coordonnées projetées suivant différents systèmes de projection.Note complémentaire sur l'usage de la classe :1) Usage d'un autre méridien que Greenwich : Le méridien origine peut être celui de Greenwich (méridien international), ou encore celui propre à la géodésie d'un pays (historiquement méridien de Paris pour la France). Mais chaque méridien origine est défini numériquement par sa longitude par rapport au méridien international.2) Les normes OGC n'imposent pas de choix sur les systèmes : Situation sur le terrain: Systèmes les plus couramment utilisés en France métropolitaine et dans les départements d'Outre-mer:• France métropolitaine : 21 systèmes• Guadeloupe : 6 systèmes• Martinique : 4 systèmes• Guyane : 5 systèmes• Réunion : 4 systèmes3) Systèmes géographiques, planimétriques et altimétriques : Voir décret simple 2006-272 du 03 mars 2006 modifiant le décret n° 2000-1276 du 26 décembre 2000." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1336,6 +1442,24 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DivisionTerritoriale> ;
+         fhir:reference [ fhir:v "StructureDefinition/DivisionTerritoriale" ]
+       ] ;
+       fhir:name [ fhir:v "DivisionTerritoriale" ] ;
+       fhir:description [ fhir:v "Une division territoriale est un territoire.Le territoire peut correspondre à une commune, un département, une région, un territoire, un pays, un canton ou un arrondissement au sens du référentiel administratif que représente le Code Officiel Géographique pour la France (INSEE). Pour les autres pays, cela peut être un état, un land, un comté, une province, etc. suivant leur découpage territorial.Autres zonages:Le territoire peut correspondre à un territoire de santé, un bassin de santé, une unité urbaine, un regroupement de communes, etc.Afin de distinguer les divisions territoriales, il est recommandé de toujours indiquer le type d'une division territoriale." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DroitExerciceComplementaire> ;
          fhir:reference [ fhir:v "StructureDefinition/DroitExerciceComplementaire" ]
        ] ;
@@ -1358,6 +1482,42 @@
          fhir:reference [ fhir:v "ValueSet/droitExerciceComplementaire-vs" ]
        ] ;
        fhir:name [ fhir:v "DroitexercicecomplementaireVs" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique> ;
+         fhir:reference [ fhir:v "StructureDefinition/EntiteGeographique" ]
+       ] ;
+       fhir:name [ fhir:v "EntiteGeographique" ] ;
+       fhir:description [ fhir:v "L'Entité Géographique (EG) correspond à la notion d'établissement : ** Pour les établissements inscrits au FINESS, cette notion d'établissement résulte du croisement de trois critères :     - Un critère géographique : Est un établissement tout lieu dont l'implantation d’activité(s) ou d’équipement(s) est géographiquement distincte d'une autre implantation. Ainsi un Centre Hospitalier Régional comprend autant d'établissements que d'implantations géographiques différentes. Un établissement principal et son établissement secondaire situé à 1 km constituent deux établissements distincts dans FINESS. L'implantation géographique peut-être décrite soit avec l'attribut addresseEG soit au travers de la classe Lieu.    - Un critère budgétaire : Pour une même implantation géographique, on distingue autant d'établissements du secteur public qu'il y a de budgets distincts (budget général, budget annexe).Ainsi un ESAT et son foyer d'hébergement constituent deux établissements même s'ils sont implantés à la même adresse.     - Un critère d’activité : Pour une même implantation géographique et un même budget, on distingue autant d'établissements que de « catégorie d’établissement » décrivant l’activité principale autorisée.Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constituent deux établissements même s'ils sont implantés à la même adresse.** Pour les entreprises inscrites dans le SIRENE, l'EG correspond à un établissement de la personne morale, elle est identifiée par un numéro Siret.Synonymes: Etablissement, structure" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique> ;
+         fhir:reference [ fhir:v "StructureDefinition/EntiteJuridique" ]
+       ] ;
+       fhir:name [ fhir:v "EntiteJuridique" ] ;
+       fhir:description [ fhir:v "L'Entité Juridique (EJ) correspond à la notion de personne morale :** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d'exercer ses activités dans des établissements; chaque EJ dispose d'un statut juridique de la personne morale;** Pour les autres types de structures, une EJ est une personne morale inscrite dans le SIRENE, identifiée par son numéro Siren." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1465,6 +1625,24 @@
        ] ;
        fhir:name [ fhir:v "LangueParlee" ] ;
        fhir:description [ fhir:v "Langue parlée par une personne ou dans un service." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu> ;
+         fhir:reference [ fhir:v "StructureDefinition/Lieu" ]
+       ] ;
+       fhir:name [ fhir:v "Lieu" ] ;
+       fhir:description [ fhir:v "Informations relatives à une portion déterminée de l'espace, fixe ou mobile du point de vue de son affectation ou de ce qui s'y passe.Cas particulier de l'entité géographique : plusieurs lieux peuvent être associés à une même EG, ils peuvent décrire, à la fois, son addresse et des lieux spécifiques à l'EG." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1669,6 +1847,23 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/relation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RelationVs" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs> ;
          fhir:reference [ fhir:v "ValueSet/role-vs" ]
        ] ;
@@ -1691,6 +1886,23 @@
        ] ;
        fhir:name [ fhir:v "SavoirFaire" ] ;
        fhir:description [ fhir:v "Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc." ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/secteurActivite-vs> ;
+         fhir:reference [ fhir:v "ValueSet/secteurActivite-vs" ]
+       ] ;
+       fhir:name [ fhir:v "SecteuractiviteVs" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

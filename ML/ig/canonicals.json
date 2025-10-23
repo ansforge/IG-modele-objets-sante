@@ -49,6 +49,20 @@
     "name" : "CapaciteSavoirfaire"
   },
   {
+    "id" : "CarteProfessionnel",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CarteProfessionnel",
+    "version" : "0.1.0",
+    "name" : "CarteProfessionnel"
+  },
+  {
+    "id" : "Certificat",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat",
+    "version" : "0.1.0",
+    "name" : "Certificat"
+  },
+  {
     "id" : "CertificatEtudeSpeciale",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CertificatEtudeSpeciale",
@@ -75,6 +89,20 @@
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CompetenceMetier",
     "version" : "0.1.0",
     "name" : "CompetenceMetier"
+  },
+  {
+    "id" : "Contact",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact",
+    "version" : "0.1.0",
+    "name" : "Contact"
+  },
+  {
+    "id" : "CoordonneeGeographique",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CoordonneeGeographique",
+    "version" : "0.1.0",
+    "name" : "CoordonneeGeographique"
   },
   {
     "id" : "DESC1",
@@ -154,11 +182,32 @@
     "name" : "DiplomeUniversitaire"
   },
   {
+    "id" : "DivisionTerritoriale",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DivisionTerritoriale",
+    "version" : "0.1.0",
+    "name" : "DivisionTerritoriale"
+  },
+  {
     "id" : "DroitExerciceComplementaire",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DroitExerciceComplementaire",
     "version" : "0.1.0",
     "name" : "DroitExerciceComplementaire"
+  },
+  {
+    "id" : "EntiteGeographique",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique",
+    "version" : "0.1.0",
+    "name" : "EntiteGeographique"
+  },
+  {
+    "id" : "EntiteJuridique",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique",
+    "version" : "0.1.0",
+    "name" : "EntiteJuridique"
   },
   {
     "id" : "ExerciceProfessionnel",
@@ -194,6 +243,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee",
     "version" : "0.1.0",
     "name" : "LangueParlee"
+  },
+  {
+    "id" : "Lieu",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu",
+    "version" : "0.1.0",
+    "name" : "Lieu"
   },
   {
     "id" : "OrientationParticuliere",
@@ -280,6 +336,20 @@
     "name" : "CapacitesavoirfaireVs"
   },
   {
+    "id" : "categorieEtablissement-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEtablissement-vs",
+    "version" : "0.1.0",
+    "name" : "CategorieetablissementVs"
+  },
+  {
+    "id" : "code-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/code-vs",
+    "version" : "0.1.0",
+    "name" : "CodeVs"
+  },
+  {
     "id" : "competence-vs",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/competence-vs",
@@ -364,11 +434,25 @@
     "name" : "QualificationpacVs"
   },
   {
+    "id" : "relation-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs",
+    "version" : "0.1.0",
+    "name" : "RelationVs"
+  },
+  {
     "id" : "role-vs",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs",
     "version" : "0.1.0",
     "name" : "RoleVs"
+  },
+  {
+    "id" : "secteurActivite-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/secteurActivite-vs",
+    "version" : "0.1.0",
+    "name" : "SecteuractiviteVs"
   },
   {
     "id" : "sexe-vs",

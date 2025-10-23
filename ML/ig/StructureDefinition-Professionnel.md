@@ -16,7 +16,7 @@ Données d’identification pérennes d’une personne physique, qui travaille e
 
 **Usages:**
 
-* Refer to this Logical Model: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
+* This Logical Model is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Professionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
   "name" : "Professionnel",
   "title" : "Professionnel",
   "status" : "draft",
-  "date" : "2025-10-23T13:57:04+00:00",
+  "date" : "2025-10-23T15:44:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

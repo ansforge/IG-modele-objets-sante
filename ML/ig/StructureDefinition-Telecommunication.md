@@ -16,7 +16,7 @@ Adresse de télécommunication à laquelle une personne ou une organisation peut
 
 **Usages:**
 
-* Use this Logical Model: [BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md), [Professionnel](StructureDefinition-Professionnel.md), [SituationExercice](StructureDefinition-SituationExercice.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
+* Use this Logical Model: [BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md), [Certificat](StructureDefinition-Certificat.md), [Contact](StructureDefinition-Contact.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md)...Show 5 more,[EntiteJuridique](StructureDefinition-EntiteJuridique.md),[Lieu](StructureDefinition-Lieu.md),[Professionnel](StructureDefinition-Professionnel.md),[SituationExercice](StructureDefinition-SituationExercice.md)and[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Telecommunication)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Telecommunication.cs
   "name" : "Telecommunication",
   "title" : "Telecommunication",
   "status" : "draft",
-  "date" : "2025-10-23T13:57:04+00:00",
+  "date" : "2025-10-23T15:44:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

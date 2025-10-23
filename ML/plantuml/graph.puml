@@ -72,6 +72,34 @@ package IG #DDDDDD{
              CapaciteSavoirfaire.capaciteSavoirFaire => [0..1]
         } 
 
+        class CarteProfessionnel{
+
+             CarteProfessionnel => [None..None]
+             CarteProfessionnel.typeCarte => [0..1]
+             CarteProfessionnel.numeroCarte => [0..1]
+             CarteProfessionnel.dateDebutValidite => [0..1]
+             CarteProfessionnel.dateFinValidite => [0..1]
+             CarteProfessionnel.dateOpposition => [0..1]
+        } 
+
+        class Certificat{
+
+             Certificat => [None..None]
+             Certificat.numeroSerie => [0..1]
+             Certificat.dNEmetteur => [0..1]
+             Certificat.dNSujet => [0..1]
+             Certificat.dateDebutValidite => [0..1]
+             Certificat.dateFinValidite => [0..1]
+             Certificat.usage => [0..1]
+             Certificat.domaine => [0..1]
+             Certificat.adresseEmail => [0..1]
+             Certificat.categorieProduit => [0..1]
+             Certificat.typeCarte => [0..1]
+             Certificat.tokenId => [0..1]
+             Certificat.valeurBinaire => [0..1]
+             Certificat.statutPublication => [0..1]
+        } 
+
         class CertificatEtudeSpeciale{
 
              CertificatEtudeSpeciale => [None..None]
@@ -94,6 +122,42 @@ package IG #DDDDDD{
 
              CompetenceMetier => [None..None]
              CompetenceMetier.competenceMetier => [0..1]
+        } 
+
+        class Contact{
+
+             Contact => [None..None]
+             Contact.IdContact => [0..1]
+             Contact.nom => [0..1]
+             Contact.fonction => [0..1]
+             Contact.fonctionContact => [0..1]
+             Contact.natureContact => [0..1]
+             Contact.description => [0..1]
+             Contact.type => [0..1]
+             Contact.personne => [0..1]
+             Contact.role => [0..1]
+             Contact.relation => [0..1]
+             Contact.dateDebut => [0..1]
+             Contact.dateFin => [0..1]
+             Contact.niveauConfidentialite => [0..1]
+             Contact.adresse => [0..1]
+             Contact.lieu => [0..*]
+             Contact.telecommunication => [0..*]
+        } 
+
+        class CoordonneeGeographique{
+
+             CoordonneeGeographique => [None..None]
+             CoordonneeGeographique.systemeGeodesique => [0..1]
+             CoordonneeGeographique.latitude => [0..1]
+             CoordonneeGeographique.directionLatitude => [0..1]
+             CoordonneeGeographique.longitude => [0..1]
+             CoordonneeGeographique.directionLongitude => [0..1]
+             CoordonneeGeographique.systemeAltimetrique => [0..1]
+             CoordonneeGeographique.altitude => [0..1]
+             CoordonneeGeographique.typePrecision => [0..1]
+             CoordonneeGeographique.precision => [0..1]
+             CoordonneeGeographique.coordonneeFiable => [0..1]
         } 
 
         class DESC1{
@@ -165,10 +229,99 @@ package IG #DDDDDD{
              DiplomeUniversitaire.diplomeUniversitaire => [0..1]
         } 
 
+        class DivisionTerritoriale{
+
+             DivisionTerritoriale => [None..None]
+             DivisionTerritoriale.type => [0..1]
+             DivisionTerritoriale.code => [0..1]
+        } 
+
         class DroitExerciceComplementaire{
 
              DroitExerciceComplementaire => [None..None]
              DroitExerciceComplementaire.droitExerciceComplementaire => [0..1]
+        } 
+
+        class EntiteGeographique{
+
+             EntiteGeographique => [None..None]
+             EntiteGeographique.numFINESS => [0..1]
+             EntiteGeographique.numSiret => [0..1]
+             EntiteGeographique.identifiantEG => [0..1]
+             EntiteGeographique.idNatStruct => [0..1]
+             EntiteGeographique.typeIdNatStruct => [0..1]
+             EntiteGeographique.numeroEducationNationale => [0..1]
+             EntiteGeographique.nomOperationnel => [0..1]
+             EntiteGeographique.denominationEG => [0..1]
+             EntiteGeographique.denominationEGLongue => [0..1]
+             EntiteGeographique.complementDenominationEG => [0..1]
+             EntiteGeographique.champActivite => [0..*]
+             EntiteGeographique.typeEtablissement => [0..1]
+             EntiteGeographique.etablissementPrincipal => [0..1]
+             EntiteGeographique.secteurActivite => [0..1]
+             EntiteGeographique.categorieEtablissement => [0..1]
+             EntiteGeographique.agregatCategorieEtablissementNiv1 => [0..1]
+             EntiteGeographique.agregatCategorieEtablissementNiv2 => [0..1]
+             EntiteGeographique.agregatCategorieEtablissementNiv3 => [0..1]
+             EntiteGeographique.codeAPET => [0..1]
+             EntiteGeographique.modeFixationTarif => [0..1]
+             EntiteGeographique.modaliteParticipationSPH => [0..1]
+             EntiteGeographique.natureEtablissement => [0..1]
+             EntiteGeographique.aideFinanciere => [0..*]
+             EntiteGeographique.habilitationSoinSansConsentement => [0..1]
+             EntiteGeographique.hebergementFamille => [0..1]
+             EntiteGeographique.dateModificationSIRET => [0..1]
+             EntiteGeographique.origineModificationSIRET => [0..1]
+             EntiteGeographique.actif => [0..1]
+             EntiteGeographique.dateOuverture => [0..1]
+             EntiteGeographique.dateCaducite => [0..1]
+             EntiteGeographique.constatCaducite => [0..1]
+             EntiteGeographique.dateFermeture => [0..1]
+             EntiteGeographique.typeFermeture => [0..1]
+             EntiteGeographique.dateAutorisation => [0..1]
+             EntiteGeographique.accessibiliteLieu => [0..1]
+             EntiteGeographique.zonePoser => [0..1]
+             EntiteGeographique.niveauRecoursORSAN => [0..1]
+             EntiteGeographique.venteLigneURL => [0..1]
+             EntiteGeographique.nbPlaceAideSocialeTemporaire => [0..1]
+             EntiteGeographique.nbPlaceAideSocialePermanent => [0..1]
+             EntiteGeographique.adresseEG => [0..*]
+             EntiteGeographique.implantationGeographique => [0..1]
+             EntiteGeographique.lieuEG => [0..1]
+             EntiteGeographique.divisionTerritoriale => [0..*]
+             EntiteGeographique.contact => [0..*]
+             EntiteGeographique.telecommunication => [0..*]
+             EntiteGeographique.boiteLettresMSS => [0..*]
+             EntiteGeographique.commentaire => [0..1]
+        } 
+
+        class EntiteJuridique{
+
+             EntiteJuridique => [None..None]
+             EntiteJuridique.numFINESS => [0..1]
+             EntiteJuridique.numSiren => [0..1]
+             EntiteJuridique.idNatStruct => [0..1]
+             EntiteJuridique.identifiantEJ => [0..1]
+             EntiteJuridique.typeIdNatStruct => [0..1]
+             EntiteJuridique.numeroTVAIntracommunautaire => [0..1]
+             EntiteJuridique.numeroSRN => [0..*]
+             EntiteJuridique.raisonSociale => [0..1]
+             EntiteJuridique.raisonSocialeLongue => [0..1]
+             EntiteJuridique.complementRaisonSociale => [0..1]
+             EntiteJuridique.statutJuridique => [0..1]
+             EntiteJuridique.agregatStatutJuridiqueNiv1 => [0..1]
+             EntiteJuridique.agregatStatutJuridiqueNiv2 => [0..1]
+             EntiteJuridique.agregatStatutJuridiqueNiv3 => [0..1]
+             EntiteJuridique.codeAPEN => [0..1]
+             EntiteJuridique.dateCreation => [0..1]
+             EntiteJuridique.dateModificationSiren => [0..1]
+             EntiteJuridique.origineModificationSIREN => [0..1]
+             EntiteJuridique.dateFermeture => [0..1]
+             EntiteJuridique.typeFermeture => [0..1]
+             EntiteJuridique.adresseEJ => [0..1]
+             EntiteJuridique.contact => [0..*]
+             EntiteJuridique.telecommunication => [0..*]
+             EntiteJuridique.boiteLettresMSS => [0..*]
         } 
 
         class ExerciceProfessionnel{
@@ -200,7 +353,6 @@ package IG #DDDDDD{
              ExerciceProfessionnel.NiveauFormation.niveauFormationAcquis => [0..1]
              ExerciceProfessionnel.NiveauFormation.anneeUniversitaire => [0..1]
              ExerciceProfessionnel.NiveauFormation.dateFin => [0..1]
-             ExerciceProfessionnel.professionnel => [1..1]
         } 
 
         class FonctionQualifiee{
@@ -236,6 +388,22 @@ package IG #DDDDDD{
              LangueParlee => [None..None]
              LangueParlee.langueParlee => [0..1]
              LangueParlee.dateFin => [0..1]
+        } 
+
+        class Lieu{
+
+             Lieu => [None..None]
+             Lieu.identifiant => [0..*]
+             Lieu.nom => [0..1]
+             Lieu.description => [0..1]
+             Lieu.typeLieu => [0..1]
+             Lieu.fonctionLieu => [0..1]
+             Lieu.statut => [0..1]
+             Lieu.accessibiliteLieu => [0..1]
+             Lieu.communeCOG => [0..1]
+             Lieu.adresse => [0..1]
+             Lieu.coordonneeGeographique => [0..1]
+             Lieu.telecommunication => [0..*]
         } 
 
         class OrientationParticuliere{
@@ -302,7 +470,6 @@ package IG #DDDDDD{
              SavoirFaire.typeSavoirFaire => [0..1]
              SavoirFaire.dateReconnaissance => [0..1]
              SavoirFaire.dateAbandon => [0..1]
-             SavoirFaire.exerciceProfessionnel => [1..1]
         } 
 
         class SituationExercice{
@@ -324,7 +491,6 @@ package IG #DDDDDD{
              SituationExercice.telecommunication => [0..*]
              SituationExercice.adresseSE => [0..*]
              SituationExercice.boiteLettresMSS => [0..*]
-             SituationExercice.exerciceProfessionnel => [1..1]
         } 
 
         class SituationOperationnelle{
@@ -338,7 +504,6 @@ package IG #DDDDDD{
              SituationOperationnelle.optionContratAccesAuxSoins => [0..1]
              SituationOperationnelle.carteVitaleAcceptee => [0..1]
              SituationOperationnelle.telecommunication => [0..1]
-             SituationOperationnelle.exerciceProfessionnel => [1..1]
         } 
 
         class Specialite{
@@ -383,13 +548,29 @@ package IG #DDDDDD{
 
      CompetenceExclusive -[#black,dotted,thickness=2]-> CompetenceexclusiveVs
 
+        class RelationVs  
+
+     Contact -[#black,dotted,thickness=2]-> RelationVs
+
         class DescnonqualifiantVs  
 
      DESCNonQualifiant -[#black,dotted,thickness=2]-> DescnonqualifiantVs
 
+        class CodeVs  
+
+     DivisionTerritoriale -[#black,dotted,thickness=2]-> CodeVs
+
         class DroitexercicecomplementaireVs  
 
      DroitExerciceComplementaire -[#black,dotted,thickness=2]-> DroitexercicecomplementaireVs
+
+        class SecteuractiviteVs  
+
+     EntiteGeographique -[#black,dotted,thickness=2]-> SecteuractiviteVs
+
+        class CategorieetablissementVs  
+
+     EntiteGeographique -[#black,dotted,thickness=2]-> CategorieetablissementVs
 
         class ProfessionVs  
 
@@ -474,6 +655,14 @@ package "Ressources de base" #palegreen {
 
     class7cdfb2c203ef04e11cd48de87fe587af --> CapaciteSavoirfaire
 
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CarteProfessionnel
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Certificat
+
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
 
     classce22f11aadb3ecc630835fe34b52ad38 --> CertificatEtudeSpeciale
@@ -489,6 +678,14 @@ package "Ressources de base" #palegreen {
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
     class7cdfb2c203ef04e11cd48de87fe587af --> CompetenceMetier
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Contact
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CoordonneeGeographique
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
 
@@ -534,9 +731,21 @@ package "Ressources de base" #palegreen {
 
     classce22f11aadb3ecc630835fe34b52ad38 --> DiplomeUniversitaire
 
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> DivisionTerritoriale
+
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
     class7cdfb2c203ef04e11cd48de87fe587af --> DroitExerciceComplementaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> EntiteGeographique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> EntiteJuridique
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -557,6 +766,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> LangueParlee
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Lieu
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 

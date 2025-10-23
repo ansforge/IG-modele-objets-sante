@@ -58,7 +58,7 @@ Ce jeu de valeurs (ValueSet) a 39,532 codes. Pour garder la publication gérable
   "version" : "0.1.0",
   "name" : "LieunaissanceVs",
   "status" : "draft",
-  "date" : "2025-10-23T13:57:04+00:00",
+  "date" : "2025-10-23T15:44:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

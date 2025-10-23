@@ -16,7 +16,7 @@ Préambule:Les informations de la personne physique telles que le nom de naissan
 
 **Usages:**
 
-* Use this Logical Model: [Professionnel](StructureDefinition-Professionnel.md)
+* Use this Logical Model: [Contact](StructureDefinition-Contact.md) and [Professionnel](StructureDefinition-Professionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/PersonnePhysique)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePhysique.csv
   "name" : "PersonnePhysique",
   "title" : "PersonnePhysique",
   "status" : "draft",
-  "date" : "2025-10-23T13:57:04+00:00",
+  "date" : "2025-10-23T15:44:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

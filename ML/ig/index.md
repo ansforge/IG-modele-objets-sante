@@ -69,7 +69,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [Adresse](StructureDefinition-Adresse.md), [Attestation](StructureDefinition-Attestation.md)...Show 56 more,[AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md),[BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md),[CapaciteDiplome](StructureDefinition-CapaciteDiplome.md),[CapaciteSavoirfaire](StructureDefinition-CapaciteSavoirfaire.md),[CapacitesavoirfaireVs](ValueSet-capaciteSavoirFaire-vs.md),[CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md),[Competence](StructureDefinition-Competence.md),[CompetenceExclusive](StructureDefinition-CompetenceExclusive.md),[CompetenceMetier](StructureDefinition-CompetenceMetier.md),[CompetenceVs](ValueSet-competence-vs.md),[CompetenceexclusiveVs](ValueSet-competenceExclusive-vs.md),[CompetencemetiereVs](ValueSet-competenceMetier-vs.md),[DESC1](StructureDefinition-DESC1.md),[DESC2](StructureDefinition-DESC2.md),[DESCNonQualifiant](StructureDefinition-DESCNonQualifiant.md),[DescnonqualifiantVs](ValueSet-DESCNonQualifiant-vs.md),[Diplome](StructureDefinition-Diplome.md),[DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md),[DiplomeDivers](StructureDefinition-DiplomeDivers.md),[DiplomeEEE](StructureDefinition-DiplomeEEE.md),[DiplomeEES](StructureDefinition-DiplomeEES.md),[DiplomeEtat](StructureDefinition-DiplomeEtat.md),[DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md),[DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md),[DroitExerciceComplementaire](StructureDefinition-DroitExerciceComplementaire.md),[DroitexercicecomplementaireVs](ValueSet-droitExerciceComplementaire-vs.md),[ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md),[FonctionQualifiee](StructureDefinition-FonctionQualifiee.md),[FonctionqualifieeVs](ValueSet-fonctionQualifiee-vs.md),[FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md),[Horaire](StructureDefinition-Horaire.md),[LangueParlee](StructureDefinition-LangueParlee.md),[LieunaissanceVs](ValueSet-lieuNaissance-vs.md),[MOS](index.md),[OrientationParticuliere](StructureDefinition-OrientationParticuliere.md),[OrientationparticuliereVs](ValueSet-orientationParticuliere-vs.md),[PaysnaissanceVs](ValueSet-paysNaissance-vs.md),[PaysnationaliteVs](ValueSet-paysNationalite-vs.md),[PersonnePhysique](StructureDefinition-PersonnePhysique.md),[ProfessionVs](ValueSet-profession-vs.md),[ProfessioncategoriesocioprofessionnelleVs](ValueSet-professionCategorieSocioProfessionnelle-vs.md),[Professionnel](StructureDefinition-Professionnel.md),[QualificationPAC](StructureDefinition-QualificationPAC.md),[QualificationpacVs](ValueSet-qualificationPAC-vs.md),[RoleVs](ValueSet-role-vs.md),[SavoirFaire](StructureDefinition-SavoirFaire.md),[SexeVs](ValueSet-sexe-vs.md),[SituationExercice](StructureDefinition-SituationExercice.md),[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md),[Specialite](StructureDefinition-Specialite.md),[SpecialiteVs](ValueSet-specialite-vs.md),[SurspecialiteTransversale](StructureDefinition-SurspecialiteTransversale.md),[SurspecialitetransversaleVs](ValueSet-surspecialiteTransversale-vs.md),[Telecommunication](StructureDefinition-Telecommunication.md),[TypeprofessionVs](ValueSet-typeProfession-vs.md)and[TyperoleVs](ValueSet-typeRole-vs.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [Adresse](StructureDefinition-Adresse.md), [Attestation](StructureDefinition-Attestation.md)...Show 68 more,[AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md),[BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md),[CapaciteDiplome](StructureDefinition-CapaciteDiplome.md),[CapaciteSavoirfaire](StructureDefinition-CapaciteSavoirfaire.md),[CapacitesavoirfaireVs](ValueSet-capaciteSavoirFaire-vs.md),[CarteProfessionnel](StructureDefinition-CarteProfessionnel.md),[CategorieetablissementVs](ValueSet-categorieEtablissement-vs.md),[Certificat](StructureDefinition-Certificat.md),[CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md),[CodeVs](ValueSet-code-vs.md),[Competence](StructureDefinition-Competence.md),[CompetenceExclusive](StructureDefinition-CompetenceExclusive.md),[CompetenceMetier](StructureDefinition-CompetenceMetier.md),[CompetenceVs](ValueSet-competence-vs.md),[CompetenceexclusiveVs](ValueSet-competenceExclusive-vs.md),[CompetencemetiereVs](ValueSet-competenceMetier-vs.md),[Contact](StructureDefinition-Contact.md),[CoordonneeGeographique](StructureDefinition-CoordonneeGeographique.md),[DESC1](StructureDefinition-DESC1.md),[DESC2](StructureDefinition-DESC2.md),[DESCNonQualifiant](StructureDefinition-DESCNonQualifiant.md),[DescnonqualifiantVs](ValueSet-DESCNonQualifiant-vs.md),[Diplome](StructureDefinition-Diplome.md),[DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md),[DiplomeDivers](StructureDefinition-DiplomeDivers.md),[DiplomeEEE](StructureDefinition-DiplomeEEE.md),[DiplomeEES](StructureDefinition-DiplomeEES.md),[DiplomeEtat](StructureDefinition-DiplomeEtat.md),[DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md),[DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md),[DivisionTerritoriale](StructureDefinition-DivisionTerritoriale.md),[DroitExerciceComplementaire](StructureDefinition-DroitExerciceComplementaire.md),[DroitexercicecomplementaireVs](ValueSet-droitExerciceComplementaire-vs.md),[EntiteGeographique](StructureDefinition-EntiteGeographique.md),[EntiteJuridique](StructureDefinition-EntiteJuridique.md),[ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md),[FonctionQualifiee](StructureDefinition-FonctionQualifiee.md),[FonctionqualifieeVs](ValueSet-fonctionQualifiee-vs.md),[FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md),[Horaire](StructureDefinition-Horaire.md),[LangueParlee](StructureDefinition-LangueParlee.md),[Lieu](StructureDefinition-Lieu.md),[LieunaissanceVs](ValueSet-lieuNaissance-vs.md),[MOS](index.md),[OrientationParticuliere](StructureDefinition-OrientationParticuliere.md),[OrientationparticuliereVs](ValueSet-orientationParticuliere-vs.md),[PaysnaissanceVs](ValueSet-paysNaissance-vs.md),[PaysnationaliteVs](ValueSet-paysNationalite-vs.md),[PersonnePhysique](StructureDefinition-PersonnePhysique.md),[ProfessionVs](ValueSet-profession-vs.md),[ProfessioncategoriesocioprofessionnelleVs](ValueSet-professionCategorieSocioProfessionnelle-vs.md),[Professionnel](StructureDefinition-Professionnel.md),[QualificationPAC](StructureDefinition-QualificationPAC.md),[QualificationpacVs](ValueSet-qualificationPAC-vs.md),[RelationVs](ValueSet-relation-vs.md),[RoleVs](ValueSet-role-vs.md),[SavoirFaire](StructureDefinition-SavoirFaire.md),[SecteuractiviteVs](ValueSet-secteurActivite-vs.md),[SexeVs](ValueSet-sexe-vs.md),[SituationExercice](StructureDefinition-SituationExercice.md),[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md),[Specialite](StructureDefinition-Specialite.md),[SpecialiteVs](ValueSet-specialite-vs.md),[SurspecialiteTransversale](StructureDefinition-SurspecialiteTransversale.md),[SurspecialitetransversaleVs](ValueSet-surspecialiteTransversale-vs.md),[Telecommunication](StructureDefinition-Telecommunication.md),[TypeprofessionVs](ValueSet-typeProfession-vs.md)and[TyperoleVs](ValueSet-typeRole-vs.md)
 
 
 
@@ -85,7 +85,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-10-23T13:57:04+00:00",
+  "date" : "2025-10-23T15:44:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -933,10 +933,64 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/CarteProfessionnel"
+        },
+        "name" : "CarteProfessionnel",
+        "description" : "Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/categorieEtablissement-vs"
+        },
+        "name" : "CategorieetablissementVs",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/Certificat"
+        },
+        "name" : "Certificat",
+        "description" : "Données descriptives du moyen d’identification par certificat. Il s'agit des certificats utilisés par les professionnels et les structures.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/CertificatEtudeSpeciale"
         },
         "name" : "CertificatEtudeSpeciale",
         "description" : "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/code-vs"
+        },
+        "name" : "CodeVs",
         "exampleBoolean" : false
       },
       {
@@ -1018,6 +1072,34 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "reference" : "ValueSet/competence-vs"
         },
         "name" : "CompetenceVs",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/Contact"
+        },
+        "name" : "Contact",
+        "description" : "Personne ou service qui agit comme point de contact auprès d'une autre personne ou d'un autre service.Exemple: Point de contact avec une personne ou une organisation (un guichet d'accueil, une source d'information, etc.).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/CoordonneeGeographique"
+        },
+        "name" : "CoordonneeGeographique",
+        "description" : "Ensemble des coordonnées géographiques d'un point spécifique telles que la longitude, la latitude et l'altitude, exprimées suivant un système géodésique choisi. Il convient de distinguer les coordonnées géographiques des coordonnées projetées suivant différents systèmes de projection.Note complémentaire sur l'usage de la classe :1) Usage d'un autre méridien que Greenwich : Le méridien origine peut être celui de Greenwich (méridien international), ou encore celui propre à la géodésie d'un pays (historiquement méridien de Paris pour la France). Mais chaque méridien origine est défini numériquement par sa longitude par rapport au méridien international.2) Les normes OGC n'imposent pas de choix sur les systèmes : Situation sur le terrain: Systèmes les plus couramment utilisés en France métropolitaine et dans les départements d'Outre-mer:• France métropolitaine : 21 systèmes• Guadeloupe : 6 systèmes• Martinique : 4 systèmes• Guyane : 5 systèmes• Réunion : 4 systèmes3) Systèmes géographiques, planimétriques et altimétriques : Voir décret simple 2006-272 du 03 mars 2006 modifiant le décret n° 2000-1276 du 26 décembre 2000.",
         "exampleBoolean" : false
       },
       {
@@ -1195,6 +1277,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/DivisionTerritoriale"
+        },
+        "name" : "DivisionTerritoriale",
+        "description" : "Une division territoriale est un territoire.Le territoire peut correspondre à une commune, un département, une région, un territoire, un pays, un canton ou un arrondissement au sens du référentiel administratif que représente le Code Officiel Géographique pour la France (INSEE). Pour les autres pays, cela peut être un état, un land, un comté, une province, etc. suivant leur découpage territorial.Autres zonages:Le territoire peut correspondre à un territoire de santé, un bassin de santé, une unité urbaine, un regroupement de communes, etc.Afin de distinguer les divisions territoriales, il est recommandé de toujours indiquer le type d'une division territoriale.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/DroitExerciceComplementaire"
         },
         "name" : "DroitExerciceComplementaire",
@@ -1212,6 +1308,34 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "reference" : "ValueSet/droitExerciceComplementaire-vs"
         },
         "name" : "DroitexercicecomplementaireVs",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/EntiteGeographique"
+        },
+        "name" : "EntiteGeographique",
+        "description" : "L'Entité Géographique (EG) correspond à la notion d'établissement : ** Pour les établissements inscrits au FINESS, cette notion d'établissement résulte du croisement de trois critères :     - Un critère géographique : Est un établissement tout lieu dont l'implantation d’activité(s) ou d’équipement(s) est géographiquement distincte d'une autre implantation. Ainsi un Centre Hospitalier Régional comprend autant d'établissements que d'implantations géographiques différentes. Un établissement principal et son établissement secondaire situé à 1 km constituent deux établissements distincts dans FINESS. L'implantation géographique peut-être décrite soit avec l'attribut addresseEG soit au travers de la classe Lieu.    - Un critère budgétaire : Pour une même implantation géographique, on distingue autant d'établissements du secteur public qu'il y a de budgets distincts (budget général, budget annexe).Ainsi un ESAT et son foyer d'hébergement constituent deux établissements même s'ils sont implantés à la même adresse.     - Un critère d’activité : Pour une même implantation géographique et un même budget, on distingue autant d'établissements que de « catégorie d’établissement » décrivant l’activité principale autorisée.Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constituent deux établissements même s'ils sont implantés à la même adresse.** Pour les entreprises inscrites dans le SIRENE, l'EG correspond à un établissement de la personne morale, elle est identifiée par un numéro Siret.Synonymes: Etablissement, structure",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/EntiteJuridique"
+        },
+        "name" : "EntiteJuridique",
+        "description" : "L'Entité Juridique (EJ) correspond à la notion de personne morale :** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d'exercer ses activités dans des établissements; chaque EJ dispose d'un statut juridique de la personne morale;** Pour les autres types de structures, une EJ est une personne morale inscrite dans le SIRENE, identifiée par son numéro Siren.",
         "exampleBoolean" : false
       },
       {
@@ -1295,6 +1419,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "LangueParlee",
         "description" : "Langue parlée par une personne ou dans un service.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/Lieu"
+        },
+        "name" : "Lieu",
+        "description" : "Informations relatives à une portion déterminée de l'espace, fixe ou mobile du point de vue de son affectation ou de ce qui s'y passe.Cas particulier de l'entité géographique : plusieurs lieux peuvent être associés à une même EG, ils peuvent décrire, à la fois, son addresse et des lieux spécifiques à l'EG.",
         "exampleBoolean" : false
       },
       {
@@ -1452,6 +1590,19 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
+          "reference" : "ValueSet/relation-vs"
+        },
+        "name" : "RelationVs",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
           "reference" : "ValueSet/role-vs"
         },
         "name" : "RoleVs",
@@ -1469,6 +1620,19 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "SavoirFaire",
         "description" : "Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/secteurActivite-vs"
+        },
+        "name" : "SecteuractiviteVs",
         "exampleBoolean" : false
       },
       {

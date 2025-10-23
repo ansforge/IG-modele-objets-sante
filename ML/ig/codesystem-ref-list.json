@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM",
+      "version" : "20240628120000",
+      "status" : "active",
+      "name" : "TRE_G09_DepartementOM",
+      "title" : null,
+      "description" : "Référentiel des codes départements et collectivités d’outre-mer provenant du COG INSEE + Monaco",
+      "oids" : ["1.2.250.1.71.1.2.16"],
+      "uses" : {
+      },
+      "ValueSet-code-vs.html" : "CodeVs"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere",
       "version" : "20231215120000",
       "status" : "active",
@@ -25,6 +37,18 @@
       "ValueSet-profession-vs.html" : "ProfessionVs"
     },
     {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_G19-SecteurActiviteADELI/FHIR/TRE-G19-SecteurActiviteADELI",
+      "version" : "20250523120000",
+      "status" : "active",
+      "name" : "TRE_G19_SecteurActiviteADELI",
+      "title" : null,
+      "description" : "Secteur d'activité ADELI",
+      "oids" : ["1.2.250.1.71.1.2.23"],
+      "uses" : {
+      },
+      "ValueSet-secteurActivite-vs.html" : "SecteuractiviteVs"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS",
       "version" : "20241213120000",
       "status" : "active",
@@ -34,17 +58,29 @@
       "oids" : ["1.2.250.1.71.4.2.5"],
       "uses" : {
       },
+      "ValueSet-qualificationPAC-vs.html" : "QualificationpacVs",
+      "ValueSet-competenceExclusive-vs.html" : "CompetenceexclusiveVs",
+      "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs",
       "ValueSet-orientationParticuliere-vs.html" : "OrientationparticuliereVs",
       "ValueSet-specialite-vs.html" : "SpecialiteVs",
-      "ValueSet-competenceExclusive-vs.html" : "CompetenceexclusiveVs",
-      "ValueSet-qualificationPAC-vs.html" : "QualificationpacVs",
       "ValueSet-competence-vs.html" : "CompetenceVs",
-      "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs",
       "ValueSet-surspecialiteTransversale-vs.html" : "SurspecialitetransversaleVs",
-      "ValueSet-competenceMetier-vs.html" : "CompetencemetiereVs",
-      "ValueSet-DESCNonQualifiant-vs.html" : "DescnonqualifiantVs",
       "ValueSet-capaciteSavoirFaire-vs.html" : "CapacitesavoirfaireVs",
-      "ValueSet-droitExerciceComplementaire-vs.html" : "DroitexercicecomplementaireVs"
+      "ValueSet-DESCNonQualifiant-vs.html" : "DescnonqualifiantVs",
+      "ValueSet-droitExerciceComplementaire-vs.html" : "DroitexercicecomplementaireVs",
+      "ValueSet-competenceMetier-vs.html" : "CompetencemetiereVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+      "version" : "20250523120000",
+      "status" : "active",
+      "name" : "TRE_R02_SecteurActivite",
+      "title" : null,
+      "description" : "Le secteur d'activité de santé est une donnée RPPS et correspond au type de service fourni par une structure. Il sert principalement à déterminer les propriétés de facturation des professionnels de ces structures vis-à-vis de l'assurance maladie",
+      "oids" : ["1.2.250.1.71.4.2.4"],
+      "uses" : {
+      },
+      "ValueSet-secteurActivite-vs.html" : "SecteuractiviteVs"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM",
@@ -56,7 +92,8 @@
       "oids" : ["1.2.250.1.213.2.23"],
       "uses" : {
       },
-      "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs"
+      "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs",
+      "ValueSet-code-vs.html" : "CodeVs"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
@@ -68,9 +105,10 @@
       "oids" : ["1.2.250.1.213.2.24"],
       "uses" : {
       },
-      "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
+      "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
       "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs",
-      "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
+      "ValueSet-code-vs.html" : "CodeVs",
+      "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
@@ -83,6 +121,30 @@
       "uses" : {
       },
       "ValueSet-role-vs.html" : "RoleVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+      "version" : "20241213120000",
+      "status" : "active",
+      "name" : "TRE_R216_HL7RoleCode",
+      "title" : null,
+      "description" : "HL7 roleCode",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "ValueSet-relation-vs.html" : "RelationVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique",
+      "version" : "20231215120000",
+      "status" : "active",
+      "name" : "TRE_R217_ProtectionJuridique",
+      "title" : null,
+      "description" : "Protection juridique",
+      "oids" : ["1.2.250.1.213.1.1.4.327"],
+      "uses" : {
+      },
+      "ValueSet-relation-vs.html" : "RelationVs"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R249-Sexe/FHIR/TRE-R249-Sexe",
@@ -130,8 +192,8 @@
       "oids" : ["1.2.250.1.213.2.57"],
       "uses" : {
       },
-      "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
-      "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
+      "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
+      "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession",
@@ -182,6 +244,18 @@
       "ValueSet-professionCategorieSocioProfessionnelle-vs.html" : "ProfessioncategoriesocioprofessionnelleVs"
     },
     {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM",
+      "version" : "20240628120000",
+      "status" : "active",
+      "name" : "TRE_R30_RegionOM",
+      "title" : null,
+      "description" : "Référentiel des codes régions et collectivités d'outre-mer provenant du COG INSEE + Monaco",
+      "oids" : ["1.2.250.1.213.2.25"],
+      "uses" : {
+      },
+      "ValueSet-code-vs.html" : "CodeVs"
+    },
+    {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender",
       "version" : "20231215120000",
       "status" : "active",
@@ -192,6 +266,18 @@
       "uses" : {
       },
       "ValueSet-sexe-vs.html" : "SexeVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement",
+      "version" : "20240329120000",
+      "status" : "active",
+      "name" : "TRE_R316_AutreCategorieEtablissement",
+      "title" : null,
+      "description" : "Cette table de référence permet d'identifier des catégories d'établissements qui ne sont pas présentes dans la TRE R66 qui est une table de référence ne listant que les catégories d'établissements présentes dans le FINESS",
+      "oids" : ["1.2.250.1.213.1.6.1.239"],
+      "uses" : {
+      },
+      "ValueSet-categorieEtablissement-vs.html" : "CategorieetablissementVs"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale",
@@ -301,6 +387,18 @@
       "uses" : {
       },
       "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs"
+    },
+    {
+      "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
+      "version" : "20250425120000",
+      "status" : "active",
+      "name" : "TRE_R66_CategorieEtablissement",
+      "title" : null,
+      "description" : "Catégorie d'établissements",
+      "oids" : ["1.2.250.1.213.1.6.1.8"],
+      "uses" : {
+      },
+      "ValueSet-categorieEtablissement-vs.html" : "CategorieetablissementVs"
     },
     {
       "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",

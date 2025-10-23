@@ -31,6 +31,38 @@
       "StructureDefinition-CapaciteSavoirfaire.html" : "CapaciteSavoirfaire"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEtablissement-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CategorieetablissementVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement",
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EntiteGeographique.html" : "EntiteGeographique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CodeVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+        "https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM",
+        "https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM",
+        "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DivisionTerritoriale.html" : "DivisionTerritoriale"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/competence-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -211,6 +243,21 @@
       "StructureDefinition-QualificationPAC.html" : "QualificationPAC"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RelationVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Contact"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -225,6 +272,21 @@
       "uses" : {
       },
       "StructureDefinition-SituationExercice.html" : "SituationExercice"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/secteurActivite-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SecteuractiviteVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+        "https://mos.esante.gouv.fr/NOS/TRE_G19-SecteurActiviteADELI/FHIR/TRE-G19-SecteurActiviteADELI"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EntiteGeographique.html" : "EntiteGeographique"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs",

@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Horaire.csv), [Excel
   "name" : "Horaire",
   "title" : "Horaire",
   "status" : "draft",
-  "date" : "2025-10-23T13:57:04+00:00",
+  "date" : "2025-10-23T15:44:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
