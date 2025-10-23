@@ -38,18 +38,6 @@ Environnement Python (pour Windows) :
 * Les tables d'association sont ignorées.
 * Les élements FHIR `short` et `definition`sont tous deux remplis avec la définition issue du MOS qui peuvent être assez longue.
 * Les liens entre les classes ont été ajoutés à la main pour la partie Professionnel, voici les lignes à ajouter dans les différents fichiers fsh :
-    * ExerciceProfessionnel.fsh : 
-    `* professionnel 1..1 Reference(Professionnel) "Lien vers la classe Professionnel."`
-    * SituationExercice.fsh : 
-    `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
-    * SituationOperationnelle.fsh : 
-    `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
-    * SavoirFaire.fsh : 
-    `* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel."`
-    * CarteProfessionel.fsh : 
-    `* certificat 1..* Reference(Certificat) "Lien vers la classe Certificat."`
-    * EntiteGeographique.fsh : 
-    `* entiteJuridique 1..1 Reference(EntiteJuridique) "Lien vers la classe EntiteJuridique."`
     * VieQuotidienne.fsh : 
     `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
     * VieProfessionnelle.fsh : 
@@ -63,10 +51,6 @@ Environnement Python (pour Windows) :
     * Observation.fsh : 
     `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
 * La tre-r394-competence-metier a été ajoutée à la main car elle est au nouveau format, voici les lignes à ajouter dans les différents fichiers fsh : 
-    * aliases.fsh : 
-    `Alias: $tre-r394-competence-metier = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier`
-    * CompetenceMetier.fsh : 
-    `* competenceMetier from competenceMetier-vs (preferred)`
     * CompetencemetierVs.fsh (à créer) : 
     ```
     ValueSet: CompetencemetierVs
