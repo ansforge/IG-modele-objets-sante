@@ -18,12 +18,18 @@ La conversion a été réalisée uniquement sur la partie Professionnel, à part
     * backbones : Classes pour lesquelles certains éléments deviennent des backbones.
     * inheritance : Classes ayant des classes filles.
 * Installer [goFSH](https://github.com/FHIR/GoFSH), Python (version 3.10.11) et les librairies Python nécessaires indiquées dans le fichier [requirements.txt](./script/requirements.txt).
+* Installer Python 3.10 
+
+Pour Windows : 
+* Créer l'environnement python -m venv env
+* Activer l'environnement env\Scripts\activate
+* Installer les requirements pip install -r requirements.txt
 
 ## Conversion
 
-* Exécuter le script python [mos2ml.py](./script/mos2ml.py) qui génère les ressources FHIR au format json.
+* Exécuter le script python [mos2ml.py](./script/mos2ml.py) qui génère les ressources FHIR au format json : python mos2ml.py
 * Convertir les fichiers json en fsh : `gofsh ./json -o ..`.
-* Exécuter le script python [fsh_files_organization.py](./script/fsh_files_organizationl.py) qui organise les fichiers fsh par partie du MOS.
+* Exécuter le script python [fsh_files_organization.py](./script/fsh_files_organizationl.py) qui organise les fichiers fsh par partie du MOS : python fsh_files_organization.py
 
 # Notes
 
