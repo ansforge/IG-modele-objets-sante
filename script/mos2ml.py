@@ -77,6 +77,7 @@ def create_element(row, base, url, url_termino, conf, custom, common, output_pat
             binding = None
             min, max = row["Cardinalité"].strip("[]").split("..")
             type = row["Type"].strip()
+            type_new = type
             if type in conf["types"]['mapping'].keys():
                 type_new =  conf["types"]['mapping'][type]
                 if (type_new == "Coding" or type_new == "CodeableConcept"):
@@ -91,11 +92,11 @@ def create_element(row, base, url, url_termino, conf, custom, common, output_pat
             elif type in conf["types"]["custom"]:
                 if type not in custom:
                     custom.append(type)
-                type_new = type
+                #type_new = type
             elif type in conf["types"]["class"]:
                 if type not in common:
                     common.append(type)
-                type_new = type
+                #type_new = type
             else:
                 print("Type not mapped in configuration file: " + type)
             element = {
@@ -104,7 +105,7 @@ def create_element(row, base, url, url_termino, conf, custom, common, output_pat
                 "definition": row["Description"].strip(),
                 "short": row["Description"].strip(),
                 "min": int(min),
-                "max": max,
+                "max": str(max),
                 "type": [{"code": type_new}]
             }
             if binding:
@@ -183,8 +184,8 @@ def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, s
                 "path": name + '.' + backbone,
                 "definition": backbone_desc.strip(),
                 "short": backbone_desc.strip(),
-                "min": conf["backbones"][name][backbone]["min"], 
-                "max": conf["backbones"][name][backbone]["max"],
+                "min": int(conf["backbones"][name][backbone]["min"]), 
+                "max": str(conf["backbones"][name][backbone]["max"]),
                 "type": [{ "code": "Base" }]
             })
             for _, row in data_backbone.iterrows():
@@ -197,7 +198,7 @@ def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, s
     sections[section].append(name)
     return (custom, common, sections)
 
-def mos2ml(MOS_path, conf_path,  url, url_termino, output_path, part = None):
+def mos2ml(MOS_path, conf_path,  url, url_termino, output_path, parts = None):
     """
     Convertit le MOS au format excel (extrait de Modelio) en modèle logique FHIR (fichiers JSON).
 
@@ -218,8 +219,8 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, output_path, part = None):
     backones_reverse = {child: parent for parent, children in conf["inheritance"].items() for child in children}
     sections = {nom: [] for nom in data["Partie"].dropna().unique()}
     data_common = data[data["Partie"] == "Classes communes"]
-    if part:
-        data = data[data["Partie"] == part]
+    if parts:
+        data = data[data["Partie"].isin(parts)]
     custom = []
     common = []
     classes = data["Classe"].dropna().unique()
@@ -252,9 +253,9 @@ conf_path = "conf.json"
 url = "https://interop.esante.gouv.fr/ig/mos/"
 url_termino = "https://mos.esante.gouv.fr/NOS/"
 output_path = "./json/"
-part = "Professionnel"
+parts = ["Professionnel", "Structure"]
 
-sections = mos2ml(MOS_path, conf_path, url, url_termino, output_path, part)
+sections = mos2ml(MOS_path, conf_path, url, url_termino, output_path, parts)
 with open("sections.json", 'w') as fp:
     json.dump(sections, fp)
 # Le fichier sushi-config.yaml est modifié par goFSH donc il est sauvegardé pour remettre la bonne version ensuite.
