@@ -1,4 +1,5 @@
 Logical: Telecommunication
+Parent: $Base
 Id: Telecommunication
 Title: "Telecommunication"
 Description: "Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.)."

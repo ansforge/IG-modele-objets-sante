@@ -1,4 +1,5 @@
 Logical: BoiteLettreMSS
+Parent: $Base
 Id: BoiteLettreMSS
 Title: "BoiteLettreMSS"
 Description: "Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS"

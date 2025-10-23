@@ -1,0 +1,14 @@
+Logical: CarteProfessionnel
+Parent: $Base
+Id: CarteProfessionnel
+Title: "CarteProfessionnel"
+Description: "Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes."
+* ^status = #draft
+* . ^short = "Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes."
+* . ^definition = "Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes."
+* typeCarte 0..1 Coding "Type de carte de professionnel (CPx) :** Carte de Professionnel de Santé (CPS)** Carte de Professionnel de santé en Formation (CPF)** Carte de Personnel d’Etablissement (CDE/CPE)** Carte de Personnel Autorisé (CDA/CPA)" "Type de carte de professionnel (CPx) :** Carte de Professionnel de Santé (CPS)** Carte de Professionnel de santé en Formation (CPF)** Carte de Personnel d’Etablissement (CDE/CPE)** Carte de Personnel Autorisé (CDA/CPA)"
+* typeCarte from https://mos.esante.gouv.fr/NOS/TRE_R87-TypeCarte/FHIR/TRE-R87-TypeCarte?vs (preferred)
+* numeroCarte 0..1 string "Numéro de la carte du professionnel.Codage des caractères en binaire codé en ASCII." "Numéro de la carte du professionnel.Codage des caractères en binaire codé en ASCII."
+* dateDebutValidite 0..1 dateTime "Date et heure de début de validité de la carte. La date est en UTC (avec translation de l'heure locale en heure UTC par ajout du décalage négatif ou retranchement du décalage positif)." "Date et heure de début de validité de la carte. La date est en UTC (avec translation de l'heure locale en heure UTC par ajout du décalage négatif ou retranchement du décalage positif)."
+* dateFinValidite 0..1 dateTime "Date et heure de fin de validité de la carte. La date est en UTC (avec translation de l'heure locale en heure UTC par ajout du décalage négatif ou retranchement du décalage positif)." "Date et heure de fin de validité de la carte. La date est en UTC (avec translation de l'heure locale en heure UTC par ajout du décalage négatif ou retranchement du décalage positif)."
+* dateOpposition 0..1 dateTime "Date de mise en opposition de la carte. Cette opposition implique la révocation des certifications embarquées dans la carte." "Date de mise en opposition de la carte. Cette opposition implique la révocation des certifications embarquées dans la carte."
