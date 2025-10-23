@@ -92,11 +92,9 @@ def create_element(row, base, url, url_termino, conf, custom, common, output_pat
             elif type in conf["types"]["custom"]:
                 if type not in custom:
                     custom.append(type)
-                #type_new = type
             elif type in conf["types"]["class"]:
                 if type not in common:
                     common.append(type)
-                #type_new = type
             else:
                 print("Type not mapped in configuration file: " + type)
             element = {
