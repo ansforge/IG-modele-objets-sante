@@ -13,9 +13,3 @@ Cette partie présente les différents concepts utilisés pour définir et carac
   </p>
 </div>
 
-
-<div class="figure" style="width:100%; overflow-x:auto;">
-  <p style="margin: 0; padding: 0;">
-    {% include professionnel.plantuml %}
-  </p>
-</div>

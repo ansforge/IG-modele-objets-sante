@@ -68,4 +68,3 @@ Description: "L'Entité Géographique (EG) correspond à la notion d'établissem
 * telecommunication 0..* Telecommunication "Adresse(s) de télécommunication de l'entité géographique (numéro de téléphone, adresse email, URL, etc.)." "Adresse(s) de télécommunication de l'entité géographique (numéro de téléphone, adresse email, URL, etc.)."
 * boiteLettresMSS 0..* BoiteLettreMSS "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité géographique." "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité géographique."
 * commentaire 0..1 string "Commentaire qui permet à la structure de donner des informations complémentaires." "Commentaire qui permet à la structure de donner des informations complémentaires."
-* entiteJuridique 1..1 Reference(EntiteJuridique) "Lien vers la classe EntiteJuridique."
