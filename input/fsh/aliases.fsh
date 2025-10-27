@@ -39,3 +39,4 @@ Alias: $TRE-R288-TypeProfession = https://mos.esante.gouv.fr/NOS/TRE_R288-TypePr
 Alias: $TRE-R37-TypeProfessionFonction = https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction
 Alias: $TRE-R289-TypeFonction = https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction
 Alias: $Base = http://hl7.org/fhir/StructureDefinition/Base
+Alias: $tre-r394-competence-metier = https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier

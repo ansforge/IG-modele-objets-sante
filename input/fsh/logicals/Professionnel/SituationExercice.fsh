@@ -32,3 +32,4 @@ Description: "Caractéristiques de l'exercice d’un professionnel pendant une p
 * telecommunication 0..* Telecommunication "Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice." "Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice."
 * adresseSE 0..* Adresse "Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice." "Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice."
 * boiteLettresMSS 0..* BoiteLettreMSS "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice." "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice."
+* exerciceProfessionnel 1..1 Reference(ExerciceProfessionnel) "Lien vers la classe ExerciceProfessionnel." 
