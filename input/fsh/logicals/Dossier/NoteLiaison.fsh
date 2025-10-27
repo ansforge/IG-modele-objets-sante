@@ -12,4 +12,3 @@ Description: "Les notes de liaison permet d’assurer un suivi « terrain » de 
 * dateHeureCreation 0..1 dateTime "Date à laquelle la note est déclarée." "Date à laquelle la note est déclarée."
 * description 0..1 string "Il s’agit d’une description ou du titre de la note." "Il s’agit d’une description ou du titre de la note."
 * urgenceNote 0..1 boolean "Indique l’urgence de la note afin d’identifier la façon dont elle sera prise en charge." "Indique l’urgence de la note afin d’identifier la façon dont elle sera prise en charge."
-* meatdonnee 0..1 Metadonnee "Informations relatives à la gestion des classes et des données." "Informations relatives à la gestion des classes et des données."
