@@ -251,7 +251,7 @@ conf_path = "conf.json"
 url = "https://interop.esante.gouv.fr/ig/mos/"
 url_termino = "https://mos.esante.gouv.fr/NOS/"
 output_path = "./json/"
-parts = ["Professionnel", "Structure", "Dispositif d'authentification", "Autorisation"]
+parts = ["Professionnel", "Structure", "Dispositif d'authentification", "Autorisation", "Accord", "Dossier", "Agenda"]
 
 sections = mos2ml(MOS_path, conf_path, url, url_termino, output_path, parts)
 with open("sections.json", 'w') as fp:

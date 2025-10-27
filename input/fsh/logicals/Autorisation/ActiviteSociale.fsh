@@ -1,0 +1,35 @@
+Logical: ActiviteSociale
+Parent: $Base
+Id: ActiviteSociale
+Title: "ActiviteSociale"
+Description: "Les équipements sociaux représentent les activités des établissements du domaine social et médico-social enregistrés dans FINESS.Le champ de FINESS comprend l’ensemble des établissements et services sociaux et médico-sociaux (ESSMS), soumis à autorisation préalable, ainsi que quelques catégories d’établissements n’entrant pas dans le régime de l’autorisation.Pour indiquer les services offerts, FINESS identifie ceux-ci à l'aide d'un triplet composé des éléments suivants : discipline d’équipement, mode de fonctionnement (appelé aussi type d’activité) et clientèle."
+* ^status = #draft
+* . ^short = "Les équipements sociaux représentent les activités des établissements du domaine social et médico-social enregistrés dans FINESS.Le champ de FINESS comprend l’ensemble des établissements et services sociaux et médico-sociaux (ESSMS), soumis à autorisation préalable, ainsi que quelques catégories d’établissements n’entrant pas dans le régime de l’autorisation.Pour indiquer les services offerts, FINESS identifie ceux-ci à l'aide d'un triplet composé des éléments suivants : discipline d’équipement, mode de fonctionnement (appelé aussi type d’activité) et clientèle."
+* . ^definition = "Les équipements sociaux représentent les activités des établissements du domaine social et médico-social enregistrés dans FINESS.Le champ de FINESS comprend l’ensemble des établissements et services sociaux et médico-sociaux (ESSMS), soumis à autorisation préalable, ainsi que quelques catégories d’établissements n’entrant pas dans le régime de l’autorisation.Pour indiquer les services offerts, FINESS identifie ceux-ci à l'aide d'un triplet composé des éléments suivants : discipline d’équipement, mode de fonctionnement (appelé aussi type d’activité) et clientèle."
+* dateAutorisation 0..1 date "Date de délivrance de l'autorisation de la discipline sociale." "Date de délivrance de l'autorisation de la discipline sociale."
+* dateMajAutorisation 0..1 date "Date de dernière mise à jour de l’autorisation." "Date de dernière mise à jour de l’autorisation."
+* dateDerniereInstallation 0..1 date "Date à laquelle le dernier constat d’installation des places est réalisé." "Date à laquelle le dernier constat d’installation des places est réalisé."
+* agregatDisciplineEquipementSocialeNiv1 0..1 Coding "Agrégat de discipline d'équipement sociale de niveau 1. L'agrégat de niveau 1 représente des regroupements d'agrégat de niveau 2." "Agrégat de discipline d'équipement sociale de niveau 1. L'agrégat de niveau 1 représente des regroupements d'agrégat de niveau 2."
+* agregatDisciplineEquipementSocialeNiv1 from https://mos.esante.gouv.fr/NOS/TRE_R298-AgregatDisciplineEquipSocNiv1/FHIR/TRE-R298-AgregatDisciplineEquipSocNiv1?vs (preferred)
+* agregatDisciplineEquipementSocialeNiv2 0..1 Coding "Agrégat de discipline d'équipement sociale de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégat de niveau 3." "Agrégat de discipline d'équipement sociale de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégat de niveau 3."
+* agregatDisciplineEquipementSocialeNiv2 from https://mos.esante.gouv.fr/NOS/TRE_R299-AgregatDisciplineEquipSocNiv2/FHIR/TRE-R299-AgregatDisciplineEquipSocNiv2?vs (preferred)
+* agregatDisciplineEquipementSocialeNiv3 0..1 Coding "Agrégat de discipline d'équipement sociale de niveau 3. L'agrégat de niveau 3 représente des regroupements de disciplines d'équipement." "Agrégat de discipline d'équipement sociale de niveau 3. L'agrégat de niveau 3 représente des regroupements de disciplines d'équipement."
+* agregatDisciplineEquipementSocialeNiv3 from https://mos.esante.gouv.fr/NOS/TRE_R300-AgregatDisciplineEquipSocNiv3/FHIR/TRE-R300-AgregatDisciplineEquipSocNiv3?vs (preferred)
+* disciplineEquipementSociale 0..1 Coding "La discipline détermine la nature de l’activité." "La discipline détermine la nature de l’activité."
+* disciplineEquipementSociale from https://mos.esante.gouv.fr/NOS/TRE_R280-DisciplineEquipementSocial/FHIR/TRE-R280-DisciplineEquipementSocial?vs (preferred)
+* modeFonctionnement 0..1 Coding "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Synonyme : type d'activité" "Le mode de fonctionnement précise la modalité d’accueil, d’hébergement et/ou d’ouverture de l’activité associée à la discipline (hébergement complet, externat, accueil de nuit…)Synonyme : type d'activité"
+* modeFonctionnement from https://mos.esante.gouv.fr/NOS/TRE_R209-TypeActivite/FHIR/TRE-R209-TypeActivite?vs (preferred)
+* agregatClienteleNiv2 0..1 Coding "Agrégat de clientèle de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégat de niveau 3." "Agrégat de clientèle de niveau 2. L'agrégat de niveau 2 représente des regroupements d'agrégat de niveau 3."
+* agregatClienteleNiv2 from https://mos.esante.gouv.fr/NOS/TRE_R293-AgregatClienteleNiv2/FHIR/TRE-R293-AgregatClienteleNiv2?vs (preferred)
+* agregatClienteleNiv3 0..1 Coding "Agrégat de clientèle de niveau 3. L'agrégat de niveau 3 représente des regroupements de clientèles." "Agrégat de clientèle de niveau 3. L'agrégat de niveau 3 représente des regroupements de clientèles."
+* agregatClienteleNiv3 from https://mos.esante.gouv.fr/NOS/TRE_R294-AgregatClienteleNiv3/FHIR/TRE-R294-AgregatClienteleNiv3?vs (preferred)
+* clientele 0..1 Coding "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : public, patientèle" "Population prise en charge par l’établissement dans le cadre de l’activité associée à la discipline.Synonyme : public, patientèle"
+* clientele from https://mos.esante.gouv.fr/NOS/TRE_R279-Clientele/FHIR/TRE-R279-Clientele?vs (preferred)
+* ageMinAutorise 0..1 Patientele "Age minimum de la clientèle autorisée." "Age minimum de la clientèle autorisée."
+* ageMaxAutorise 0..1 Patientele "Age maximum de la clientèle autorisée." "Age maximum de la clientèle autorisée."
+* ageMinInstalle 0..1 Patientele "Age minimum de la clientèle installée." "Age minimum de la clientèle installée."
+* ageMaxInstalle 0..1 Patientele "Age maximum de la clientèle installée." "Age maximum de la clientèle installée."
+* suppressionAutorisation 0..1 boolean "Indicateur de suppression de l'autorisation de l'activité sociale." "Indicateur de suppression de l'autorisation de l'activité sociale."
+* suppressionInstallation 0..1 boolean "Indicateur de suppression de l’installation de l'activité sociale." "Indicateur de suppression de l’installation de l'activité sociale."
+* sourceInformationInstallation 0..1 Coding "Source ayant permis le constat." "Source ayant permis le constat."
+* sourceInformationInstallation from https://mos.esante.gouv.fr/NOS/TRE_R301-SourceInformationInstallation/FHIR/TRE-R301-SourceInformationInstallation?vs (preferred)
