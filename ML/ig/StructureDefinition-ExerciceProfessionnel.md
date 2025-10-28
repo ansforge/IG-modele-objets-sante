@@ -16,7 +16,7 @@ Informations décrivant notamment la profession exercée, l’identité d’exer
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [SavoirFaire](StructureDefinition-SavoirFaire.md), [SituationExercice](StructureDefinition-SituationExercice.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/ExerciceProfessionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
   "name" : "ExerciceProfessionnel",
   "title" : "ExerciceProfessionnel",
   "status" : "draft",
-  "date" : "2025-10-28T09:35:07+00:00",
+  "date" : "2025-10-28T11:41:28+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -463,6 +463,19 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
         "type" : [
           {
             "code" : "date"
+          }
+        ]
+      },
+      {
+        "id" : "ExerciceProfessionnel.professionnel",
+        "path" : "ExerciceProfessionnel.professionnel",
+        "short" : "Lien vers la classe Professionnel",
+        "definition" : "Lien vers la classe Professionnel",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel"
           }
         ]
       }

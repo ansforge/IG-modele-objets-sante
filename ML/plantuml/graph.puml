@@ -208,6 +208,7 @@ package IG #DDDDDD{
              CarteProfessionnel.dateDebutValidite => [0..1]
              CarteProfessionnel.dateFinValidite => [0..1]
              CarteProfessionnel.dateOpposition => [0..1]
+             CarteProfessionnel.certificat => [1..*]
         } 
 
         class Certificat{
@@ -508,6 +509,7 @@ package IG #DDDDDD{
              EntiteGeographique.telecommunication => [0..*]
              EntiteGeographique.boiteLettresMSS => [0..*]
              EntiteGeographique.commentaire => [0..1]
+             EntiteGeographique.entiteJuridique => [1..1]
         } 
 
         class EntiteJuridique{
@@ -591,6 +593,7 @@ package IG #DDDDDD{
              ExerciceProfessionnel.NiveauFormation.niveauFormationAcquis => [0..1]
              ExerciceProfessionnel.NiveauFormation.anneeUniversitaire => [0..1]
              ExerciceProfessionnel.NiveauFormation.dateFin => [0..1]
+             ExerciceProfessionnel.professionnel => [1..1]
         } 
 
         class FonctionQualifiee{
@@ -878,6 +881,7 @@ package IG #DDDDDD{
              SavoirFaire.typeSavoirFaire => [0..1]
              SavoirFaire.dateReconnaissance => [0..1]
              SavoirFaire.dateAbandon => [0..1]
+             SavoirFaire.exerciceProfessionnel => [1..1]
         } 
 
         class SituationExercice{
@@ -899,6 +903,7 @@ package IG #DDDDDD{
              SituationExercice.telecommunication => [0..*]
              SituationExercice.adresseSE => [0..*]
              SituationExercice.boiteLettresMSS => [0..*]
+             SituationExercice.exerciceProfessionnel => [1..1]
         } 
 
         class SituationOperationnelle{
@@ -912,6 +917,7 @@ package IG #DDDDDD{
              SituationOperationnelle.optionContratAccesAuxSoins => [0..1]
              SituationOperationnelle.carteVitaleAcceptee => [0..1]
              SituationOperationnelle.telecommunication => [0..1]
+             SituationOperationnelle.exerciceProfessionnel => [1..1]
         } 
 
         class Specialite{
@@ -980,6 +986,10 @@ package IG #DDDDDD{
         class CompetenceexclusiveVs  
 
      CompetenceExclusive -[#black,dotted,thickness=2]-> CompetenceexclusiveVs
+
+        class CompetencemetiereVs  
+
+     CompetenceMetier -[#black,dotted,thickness=2]-> CompetencemetiereVs
 
         class RelationVs  
 

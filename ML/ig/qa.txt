@@ -1,9 +1,9 @@
 MOS : Validation Results
 =========================================
 
-err = 2, warn = 526, info = 2
+err = 2, warn = 524, info = 2
 IG Publisher Version: 2.0.22
-Generated Tue Oct 28 09:38:36 UTC 2025. FHIR version 4.0.1 for ans.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/mos)
+Generated Tue Oct 28 11:45:07 UTC 2025. FHIR version 4.0.1 for ans.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/mos)
  Build Errors : 6 / 30 / 0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fr.mos : 0 / 1 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteEnseignement : 0 / 10 / 1
@@ -28,7 +28,7 @@ Generated Tue Oct 28 09:38:36 UTC 2025. FHIR version 4.0.1 for ans.fr.mos#0.1.0 
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CertificatEtudeSpeciale : 0 / 4 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Competence : 0 / 1 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CompetenceExclusive : 0 / 1 / 1
- /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CompetenceMetier : 0 / 3 / 1
+ /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CompetenceMetier : 0 / 1 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Contact : 0 / 12 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-Convention : 0 / 0 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-CoordonneeGeographique : 0 / 4 / 1
@@ -267,8 +267,6 @@ WARNING: StructureDefinition/Competence: StructureDefinition.snapshot.element[1]
 WARNING: StructureDefinition/CompetenceExclusive: StructureDefinition.snapshot.element[1].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire?vs'
 == fsh-generated/resources/StructureDefinition-CompetenceMetier.json ==
 WARNING: StructureDefinition/CompetenceMetier: StructureDefinition.snapshot.element[1].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire?vs'
-WARNING: StructureDefinition/CompetenceMetier: StructureDefinition.snapshot.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS?vs'
-WARNING: StructureDefinition/CompetenceMetier: StructureDefinition.differential.element[1].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS?vs'
 == fsh-generated/resources/StructureDefinition-Contact.json ==
 WARNING: StructureDefinition/Contact: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Contact: StructureDefinition.snapshot.element[4].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R251-FonctionContact/FHIR/TRE-R251-FonctionContact?vs'
@@ -305,7 +303,7 @@ WARNING: StructureDefinition/DESC2: StructureDefinition.differential.element[1].
 WARNING: StructureDefinition/DESC2: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 == fsh-generated/resources/StructureDefinition-DESCNonQualifiant.json ==
 WARNING: StructureDefinition/DESCNonQualifiant: StructureDefinition.snapshot.element[1].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire?vs'
-WARNING: StructureDefinition/DESCNonQualifiant: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/DESCNonQualifiant: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/DESCNonQualifiant: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 == fsh-generated/resources/StructureDefinition-Decision.json ==
 WARNING: StructureDefinition/Decision: StructureDefinition.snapshot.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R327-TypeDecision/FHIR/TRE-R327-TypeDecision?vs'
@@ -660,8 +658,8 @@ WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet.compose.include[1].system: N
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [485cfc08-148e-498d-b335-999ec6e4cb04]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
-Information: X-Request-Id: 7146f414-875e-48ba-8f71-a1650258bc12
+ERROR: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [3615bb74-0d8e-49fb-a474-b6ae3e4484fb]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
+Information: X-Request-Id: daa9ae4b-ac3a-4692-b69e-f32070f693a9
 == fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs.json ==
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -692,12 +690,12 @@ WARNING: ValueSet/droitExerciceComplementaire-vs: ValueSet: Published value sets
 WARNING: ValueSet/droitExerciceComplementaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/droitExerciceComplementaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-familleActiviteOperationnelle-vs.json ==
-WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin'
+WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin'
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [aa37689a-8625-4d9e-8769-f2556339194f]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin could not be resolved.
-Information: X-Request-Id: 4e991c5c-13bf-4fa3-a621-152124770ed5
+ERROR: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [a89a8fe5-ac2a-4829-baf5-ad806f959c59]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
+Information: X-Request-Id: fa3ebdba-3e74-42c3-8289-31c8497572ef
 == fsh-generated/resources/ValueSet-fonctionQualifiee-vs.json ==
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

@@ -20,7 +20,7 @@
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
 * Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R266-FamilleActiviteOperationnelleHorsSerafin.html)version 📦20231215120000
-* Inclut tous les codes définis dans `https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin`version Not Stated (use latest from terminology server)
+* Inclut tous les codes définis dans `https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin`version Not Stated (use latest from terminology server)
 
  
 
@@ -53,7 +53,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "version" : "0.1.0",
   "name" : "FamilleactiviteoperationnelleVs",
   "status" : "draft",
-  "date" : "2025-10-28T09:35:07+00:00",
+  "date" : "2025-10-28T11:41:28+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -83,7 +83,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
         "system" : "https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin"
       },
       {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin"
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin"
       }
     ]
   }

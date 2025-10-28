@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CompetenceMetier.csv
   "name" : "CompetenceMetier",
   "title" : "CompetenceMetier",
   "status" : "draft",
-  "date" : "2025-10-28T09:35:07+00:00",
+  "date" : "2025-10-28T11:41:28+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -94,7 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-CompetenceMetier.csv
         ],
         "binding" : {
           "strength" : "preferred",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS?vs"
+          "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs"
         }
       }
     ]

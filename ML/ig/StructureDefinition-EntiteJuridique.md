@@ -16,7 +16,7 @@ L’Entité Juridique (EJ) correspond à la notion de personne morale :** Pour l
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/EntiteJuridique)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EntiteJuridique.csv)
   "name" : "EntiteJuridique",
   "title" : "EntiteJuridique",
   "status" : "draft",
-  "date" : "2025-10-28T09:35:07+00:00",
+  "date" : "2025-10-28T11:41:28+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

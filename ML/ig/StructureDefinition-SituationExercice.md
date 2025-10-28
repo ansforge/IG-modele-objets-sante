@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SituationExercice.cs
   "name" : "SituationExercice",
   "title" : "SituationExercice",
   "status" : "draft",
-  "date" : "2025-10-28T09:35:07+00:00",
+  "date" : "2025-10-28T11:41:28+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -325,6 +325,19 @@ Other representations of profile: [CSV](StructureDefinition-SituationExercice.cs
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS"
+          }
+        ]
+      },
+      {
+        "id" : "SituationExercice.exerciceProfessionnel",
+        "path" : "SituationExercice.exerciceProfessionnel",
+        "short" : "Lien vers la classe ExerciceProfessionnel.",
+        "definition" : "Lien vers la classe ExerciceProfessionnel.",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel"
           }
         ]
       }
