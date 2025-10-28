@@ -23,14 +23,17 @@
             "AttributionParticuliere": {"min": 0, "max": 1},
             "NiveauFormation": {"min": 0, "max": "*"}
         }, 
-        "DispositifMedical": {
-            "SupportIUD": {"min": 0, "max": "1"}
-        }, 
         "OffreOperationnelle": {
             "ActiviteOperationnelle": {"min": "1", "max": "*"}
         },
         "EquipementSpecifique": {
             "LimiteCaracteristiqueEquipement": {"min": 0, "max": "*"}
+        }, 
+        "PersonnePriseCharge": {
+            "INS": {"min": 0, "max": "*"}
+        }, 
+        "DispositifMedical": {
+            "SupportIUD": {"min": 0, "max": "*"}
         }
     }, 
     "inheritance": {
