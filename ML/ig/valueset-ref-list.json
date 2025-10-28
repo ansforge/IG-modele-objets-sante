@@ -16,6 +16,38 @@
       "StructureDefinition-DESCNonQualifiant.html" : "DESCNonQualifiant"
     },
     {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinScolarite-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BesoinscolariteVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R323-BesoinScolarite/FHIR/TRE-R323-BesoinScolarite",
+        "https://mos.esante.gouv.fr/NOS/TRE_R321-BesoinEntretienPersonnel/FHIR/TRE-R321-BesoinEntretienPersonnel",
+        "https://mos.esante.gouv.fr/NOS/TRE_R320-BesoinCommunication/FHIR/TRE-R320-BesoinCommunication",
+        "https://mos.esante.gouv.fr/NOS/TRE_R322-BesoinMobilite/FHIR/TRE-R322-BesoinMobilite"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VieScolaire.html" : "VieScolaire"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinVieQuotidienne-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BesoinviequotidienneVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R318-BesoinAideMobilite/FHIR/TRE-R318-BesoinAideMobilite",
+        "https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VieQuotidienne.html" : "VieQuotidienne"
+    },
+    {
       "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/capaciteSavoirFaire-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -118,6 +150,21 @@
       "uses" : {
       },
       "StructureDefinition-DroitExerciceComplementaire.html" : "DroitExerciceComplementaire"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/familleActiviteOperationnelle-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FamilleactiviteoperationnelleVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin",
+        "https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OffreOperationnelle.html" : "OffreOperationnelle"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/fonctionQualifiee-vs",
@@ -226,6 +273,21 @@
       "uses" : {
       },
       "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionRessource-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ProfessionressourceVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+        "https://mos.esante.gouv.fr/NOS/TRE_R356-ProfessionRessource/FHIR/TRE-R356-ProfessionRessource"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OffreOperationnelle.html" : "OffreOperationnelle"
     },
     {
       "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/qualificationPAC-vs",

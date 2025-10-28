@@ -7,6 +7,69 @@ package IG #DDDDDD{
 
      package Profiles #DDDDDD{
 
+        class ActiviteEnseignement{
+
+             ActiviteEnseignement => [None..None]
+             ActiviteEnseignement.agregatDisciplineEnseignementNiv1 => [0..1]
+             ActiviteEnseignement.agregatDisciplineEnseignementNiv2 => [0..1]
+             ActiviteEnseignement.agregatDisciplineEnseignementNiv3 => [0..1]
+             ActiviteEnseignement.disciplineEnseignement => [0..1]
+             ActiviteEnseignement.modeFonctionnement => [0..1]
+             ActiviteEnseignement.dateAutorisation => [0..1]
+             ActiviteEnseignement.suppressionAutorisation => [0..1]
+        } 
+
+        class ActiviteSociale{
+
+             ActiviteSociale => [None..None]
+             ActiviteSociale.dateAutorisation => [0..1]
+             ActiviteSociale.dateMajAutorisation => [0..1]
+             ActiviteSociale.dateDerniereInstallation => [0..1]
+             ActiviteSociale.agregatDisciplineEquipementSocialeNiv1 => [0..1]
+             ActiviteSociale.agregatDisciplineEquipementSocialeNiv2 => [0..1]
+             ActiviteSociale.agregatDisciplineEquipementSocialeNiv3 => [0..1]
+             ActiviteSociale.disciplineEquipementSociale => [0..1]
+             ActiviteSociale.modeFonctionnement => [0..1]
+             ActiviteSociale.agregatClienteleNiv2 => [0..1]
+             ActiviteSociale.agregatClienteleNiv3 => [0..1]
+             ActiviteSociale.clientele => [0..1]
+             ActiviteSociale.ageMinAutorise => [0..1]
+             ActiviteSociale.ageMaxAutorise => [0..1]
+             ActiviteSociale.ageMinInstalle => [0..1]
+             ActiviteSociale.ageMaxInstalle => [0..1]
+             ActiviteSociale.suppressionAutorisation => [0..1]
+             ActiviteSociale.suppressionInstallation => [0..1]
+             ActiviteSociale.sourceInformationInstallation => [0..1]
+        } 
+
+        class ActiviteSoinAutorisee{
+
+             ActiviteSoinAutorisee => [None..None]
+             ActiviteSoinAutorisee.numeroAutorisationARHGOS => [0..1]
+             ActiviteSoinAutorisee.dateDecision => [0..1]
+             ActiviteSoinAutorisee.activite => [0..1]
+             ActiviteSoinAutorisee.modalite => [0..1]
+             ActiviteSoinAutorisee.forme => [0..1]
+             ActiviteSoinAutorisee.datePremiereMEO => [0..1]
+             ActiviteSoinAutorisee.dateFin => [0..1]
+             ActiviteSoinAutorisee.suppressionAutorisation => [0..1]
+             ActiviteSoinAutorisee.suppressionImplantation => [0..1]
+        } 
+
+        class ActiviteSoumiseReconnaissance{
+
+             ActiviteSoumiseReconnaissance => [None..None]
+             ActiviteSoumiseReconnaissance.numeroRCARHGOS => [0..1]
+             ActiviteSoumiseReconnaissance.activite => [0..1]
+             ActiviteSoumiseReconnaissance.modalite => [0..1]
+             ActiviteSoumiseReconnaissance.forme => [0..1]
+             ActiviteSoumiseReconnaissance.numeroContratCPOM => [0..1]
+             ActiviteSoumiseReconnaissance.dateEffetCPOM => [0..1]
+             ActiviteSoumiseReconnaissance.dateFinCPOM => [0..1]
+             ActiviteSoumiseReconnaissance.dateReconnaissance => [0..1]
+             ActiviteSoumiseReconnaissance.indicateurReconnaissanceRegionale => [0..1]
+        } 
+
         class Adresse{
 
              Adresse => [None..None]
@@ -35,10 +98,62 @@ package IG #DDDDDD{
              Adresse.ligneSept => [0..1]
         } 
 
+        class Agenda{
+
+             Agenda => [None..None]
+             Agenda.idAgenda => [0..1]
+             Agenda.nomAgenda => [0..1]
+             Agenda.dateCreation => [0..1]
+             Agenda.dateDebutPlanification => [0..1]
+             Agenda.dateFinPlanification => [0..1]
+        } 
+
+        class AidantDemarche{
+
+             AidantDemarche => [None..None]
+             AidantDemarche.typeAidantDemarche => [0..1]
+             AidantDemarche.aidantDemarche => [0..1]
+             AidantDemarche.adresseAidantDemarche => [0..1]
+             AidantDemarche.telecommunicationAidantDemarche => [0..*]
+        } 
+
+        class ArretTravail{
+
+             ArretTravail => [None..None]
+             ArretTravail.dateDebutArret => [0..1]
+             ArretTravail.motifArret => [0..1]
+             ArretTravail.rencontreServiceSocial => [0..1]
+             ArretTravail.dateRencontreServiceSocial => [0..1]
+             ArretTravail.rencontreMedecin => [0..1]
+             ArretTravail.dateRencontreMedecin => [0..1]
+        } 
+
         class Attestation{
 
              Attestation => [None..None]
              Attestation.attestation => [0..1]
+        } 
+
+        class AutorisationExercice{
+
+             AutorisationExercice => [None..None]
+             AutorisationExercice.typeAutorisation => [0..1]
+             AutorisationExercice.disciplineAutorisee => [0..1]
+             AutorisationExercice.dateDebutAutorisation => [0..1]
+             AutorisationExercice.dateFinAutorisation => [0..1]
+             AutorisationExercice.profession => [0..1]
+        } 
+
+        class AutreActiviteSoumiseAutorisation{
+
+             AutreActiviteSoumiseAutorisation => [None..None]
+             AutreActiviteSoumiseAutorisation.numeroAutorisationARHGOS => [0..1]
+             AutreActiviteSoumiseAutorisation.dateDecision => [0..1]
+             AutreActiviteSoumiseAutorisation.activite => [0..1]
+             AutreActiviteSoumiseAutorisation.modalite => [0..1]
+             AutreActiviteSoumiseAutorisation.forme => [0..1]
+             AutreActiviteSoumiseAutorisation.datePremiereMEO => [0..1]
+             AutreActiviteSoumiseAutorisation.dateFin => [0..1]
         } 
 
         class AutreDiplomeObtenu{
@@ -60,10 +175,23 @@ package IG #DDDDDD{
              BoiteLettreMSS.listeRouge => [0..1]
         } 
 
+        class CapaciteActiviteExercee{
+
+             CapaciteActiviteExercee => [None..None]
+             CapaciteActiviteExercee.habilitationAideSociale => [0..1]
+             CapaciteActiviteExercee.modeFinacement => [0..1]
+        } 
+
         class CapaciteDiplome{
 
              CapaciteDiplome => [None..None]
              CapaciteDiplome.capaciteDiplome => [0..1]
+        } 
+
+        class CapacitePriseCharge{
+
+             CapacitePriseCharge => [None..None]
+             CapacitePriseCharge.affectationTemporaire => [0..1]
         } 
 
         class CapaciteSavoirfaire{
@@ -145,6 +273,15 @@ package IG #DDDDDD{
              Contact.telecommunication => [0..*]
         } 
 
+        class Convention{
+
+             Convention => [None..None]
+             Convention.numeroConvention => [0..1]
+             Convention.titre => [0..1]
+             Convention.dateDebutConvention => [0..1]
+             Convention.dateFinConvention => [0..1]
+        } 
+
         class CoordonneeGeographique{
 
              CoordonneeGeographique => [None..None]
@@ -158,6 +295,16 @@ package IG #DDDDDD{
              CoordonneeGeographique.typePrecision => [0..1]
              CoordonneeGeographique.precision => [0..1]
              CoordonneeGeographique.coordonneeFiable => [0..1]
+        } 
+
+        class Creneau{
+
+             Creneau => [None..None]
+             Creneau.idCreneau => [0..1]
+             Creneau.statut => [0..1]
+             Creneau.dateDebut => [0..1]
+             Creneau.dateFin => [0..1]
+             Creneau.informationComplementaire => [0..1]
         } 
 
         class DESC1{
@@ -176,6 +323,21 @@ package IG #DDDDDD{
 
              DESCNonQualifiant => [None..None]
              DESCNonQualifiant.DESCNonQualifiant => [0..1]
+        } 
+
+        class Decision{
+
+             Decision => [None..None]
+             Decision.dateDecision => [0..1]
+             Decision.typeDecision => [0..1]
+        } 
+
+        class Demande{
+
+             Demande => [None..None]
+             Demande.identifiantDemande => [0..1]
+             Demande.dateDemande => [0..1]
+             Demande.demandeUrgente => [0..1]
         } 
 
         class Diplome{
@@ -229,6 +391,37 @@ package IG #DDDDDD{
              DiplomeUniversitaire.diplomeUniversitaire => [0..1]
         } 
 
+        class DispositifMedical{
+
+             DispositifMedical => [None..None]
+             DispositifMedical.identifiantLocalDM => [0..*]
+             DispositifMedical.classeRisque => [0..1]
+             DispositifMedical.reference => [0..1]
+             DispositifMedical.modele => [0..1]
+             DispositifMedical.nomCommercial => [0..1]
+             DispositifMedical.codeEMDN => [0..1]
+             DispositifMedical.usageUnique => [0..1]
+             DispositifMedical.nombreReutilisation => [0..1]
+             DispositifMedical.sterile => [0..1]
+             DispositifMedical.sterilisationAvantUtilisation => [0..1]
+             DispositifMedical.contientLatex => [0..1]
+             DispositifMedical.substanceCMR1A1B => [0..1]
+             DispositifMedical.implantable => [0..1]
+             DispositifMedical.actif => [0..1]
+             DispositifMedical.codeLPP => [0..1]
+             DispositifMedical.irmCompatible => [0..1]
+             DispositifMedical.SupportIUD => [0..*]
+             DispositifMedical.SupportIUD.IUDID => [0..1]
+             DispositifMedical.SupportIUD.IUDIPNumeroSerie => [0..1]
+             DispositifMedical.SupportIUD.IUDIPNumeroLot => [0..1]
+             DispositifMedical.SupportIUD.IUDIPIdLogiciel => [0..1]
+             DispositifMedical.SupportIUD.IUDIPDateFabrication => [0..1]
+             DispositifMedical.SupportIUD.IUDIPDateExpiration => [0..1]
+             DispositifMedical.SupportIUD.AIDC => [0..1]
+             DispositifMedical.SupportIUD.marquageClair => [0..1]
+             DispositifMedical.SupportIUD.typeSupportIUD => [0..1]
+        } 
+
         class DivisionTerritoriale{
 
              DivisionTerritoriale => [None..None]
@@ -236,10 +429,32 @@ package IG #DDDDDD{
              DivisionTerritoriale.code => [0..1]
         } 
 
+        class Document{
+
+             Document => [None..None]
+             Document.typeDocument => [0..1]
+        } 
+
+        class DossierPersonnePriseCharge{
+
+             DossierPersonnePriseCharge => [None..None]
+             DossierPersonnePriseCharge.identifiantDossier => [0..1]
+        } 
+
         class DroitExerciceComplementaire{
 
              DroitExerciceComplementaire => [None..None]
              DroitExerciceComplementaire.droitExerciceComplementaire => [0..1]
+        } 
+
+        class Emploi{
+
+             Emploi => [None..None]
+             Emploi.libelleEmploi => [0..1]
+             Emploi.dateDebutEmploi => [0..1]
+             Emploi.dateFinEmploi => [0..1]
+             Emploi.emploiRemunere => [0..1]
+             Emploi.emploiAdapteHandicape => [0..1]
         } 
 
         class EntiteGeographique{
@@ -324,6 +539,29 @@ package IG #DDDDDD{
              EntiteJuridique.boiteLettresMSS => [0..*]
         } 
 
+        class EquipementMaterielLourd{
+
+             EquipementMaterielLourd => [None..None]
+             EquipementMaterielLourd.numeroAutorisationARHGOS => [0..1]
+             EquipementMaterielLourd.equipementMaterielLourd => [0..1]
+             EquipementMaterielLourd.dateDecision => [0..1]
+             EquipementMaterielLourd.datePremiereMEO => [0..1]
+             EquipementMaterielLourd.dateFin => [0..1]
+             EquipementMaterielLourd.suppressionAutorisation => [0..1]
+             EquipementMaterielLourd.marque => [0..1]
+             EquipementMaterielLourd.numeroSerie => [0..1]
+        } 
+
+        class EquipementSpecifique{
+
+             EquipementSpecifique => [None..None]
+             EquipementSpecifique.typeEquipement => [0..1]
+             EquipementSpecifique.nbEquipementEnService => [0..1]
+             EquipementSpecifique.LimiteCaracteristiqueEquipement => [0..*]
+             EquipementSpecifique.LimiteCaracteristiqueEquipement.typeCaracteristique => [0..1]
+             EquipementSpecifique.LimiteCaracteristiqueEquipement.valeurLimite => [0..1]
+        } 
+
         class ExerciceProfessionnel{
 
              ExerciceProfessionnel => [None..None]
@@ -390,6 +628,14 @@ package IG #DDDDDD{
              LangueParlee.dateFin => [0..1]
         } 
 
+        class LicenceExploitation{
+
+             LicenceExploitation => [None..None]
+             LicenceExploitation.numeroLicence => [0..1]
+             LicenceExploitation.dateDebutLicence => [0..1]
+             LicenceExploitation.dateFinLicence => [0..1]
+        } 
+
         class Lieu{
 
              Lieu => [None..None]
@@ -406,10 +652,107 @@ package IG #DDDDDD{
              Lieu.telecommunication => [0..*]
         } 
 
+        class LieuRealisationOffre{
+
+             LieuRealisationOffre => [None..None]
+             LieuRealisationOffre.idExterneSynchro => [0..1]
+             LieuRealisationOffre.nomExterneSynchro => [0..1]
+        } 
+
+        class MesureProtection{
+
+             MesureProtection => [None..None]
+             MesureProtection.typeMesureProtection => [0..1]
+             MesureProtection.personneProtectrice => [0..1]
+             MesureProtection.adresseMesureProtection => [0..1]
+             MesureProtection.telecommunicationMesureProtection => [0..*]
+        } 
+
+        class NoteLiaison{
+
+             NoteLiaison => [None..None]
+             NoteLiaison.idNote => [0..1]
+             NoteLiaison.typeNote => [0..1]
+             NoteLiaison.restrictionAudience => [0..1]
+             NoteLiaison.dateHeureCreation => [0..1]
+             NoteLiaison.description => [0..1]
+             NoteLiaison.urgenceNote => [0..1]
+        } 
+
+        class Observation{
+
+             Observation => [None..None]
+             Observation.identifiant => [0..1]
+             Observation.statut => [0..1]
+             Observation.categorie => [0..1]
+             Observation.datePertinence => [0..1]
+             Observation.dateDisponibilite => [0..1]
+             Observation.commentaire => [0..1]
+             Observation.partieAnatomie => [0..1]
+             Observation.methode => [0..1]
+             Observation.raison => [0..1]
+             Observation.positionCorps => [0..1]
+             Observation.momentMesure => [0..1]
+             Observation.niveauEffort => [0..1]
+             Observation.typeDiabete => [0..1]
+             Observation.nombreJours => [0..1]
+        } 
+
+        class OffreOperationnelle{
+
+             OffreOperationnelle => [None..None]
+             OffreOperationnelle.familleActiviteOperationnelle => [0..1]
+             OffreOperationnelle.identifiantOffre => [0..1]
+             OffreOperationnelle.nomOffre => [0..1]
+             OffreOperationnelle.typeOffre => [0..1]
+             OffreOperationnelle.champActivite => [0..1]
+             OffreOperationnelle.temporaliteAccueil => [0..1]
+             OffreOperationnelle.modePriseEnCharge => [0..1]
+             OffreOperationnelle.modaliteAccueil => [0..*]
+             OffreOperationnelle.modeGestion => [0..*]
+             OffreOperationnelle.uniteSensible => [0..1]
+             OffreOperationnelle.acteSpecifique => [0..*]
+             OffreOperationnelle.acteRealiseHorsCabinet => [0..*]
+             OffreOperationnelle.specialisationPriseEnCharge => [0..*]
+             OffreOperationnelle.habilitationAuxSoinsSansConsentement => [0..1]
+             OffreOperationnelle.ouvertureAnnuelle => [0..1]
+             OffreOperationnelle.zoneIntervention => [0..*]
+             OffreOperationnelle.secteurPsychiatrique => [0..*]
+             OffreOperationnelle.professionRessource => [0..*]
+             OffreOperationnelle.competenceSpecifique => [0..*]
+             OffreOperationnelle.niveauExpertise => [0..*]
+             OffreOperationnelle.typeFermeture => [0..1]
+             OffreOperationnelle.dateFermeture => [0..1]
+             OffreOperationnelle.datePrevisionnelleReouverture => [0..1]
+             OffreOperationnelle.horaire => [0..*]
+             OffreOperationnelle.contact => [0..*]
+             OffreOperationnelle.boiteLettreMSS => [0..*]
+             OffreOperationnelle.ActiviteOperationnelle => [1..*]
+             OffreOperationnelle.ActiviteOperationnelle.activiteOperationnelle => [0..1]
+        } 
+
         class OrientationParticuliere{
 
              OrientationParticuliere => [None..None]
              OrientationParticuliere.orientationParticuliere => [0..1]
+        } 
+
+        class Parent{
+
+             Parent => [None..None]
+             Parent.autoriteParentale => [0..1]
+             Parent.personne => [0..1]
+             Parent.adresseCorrespondance => [0..1]
+             Parent.telecommunication => [0..*]
+        } 
+
+        class Patientele{
+
+             Patientele => [None..None]
+             Patientele.ageMin => [0..1]
+             Patientele.ageMax => [0..1]
+             Patientele.classeAge => [0..*]
+             Patientele.publicPrisEnCharge => [0..*]
         } 
 
         class PersonnePhysique{
@@ -445,6 +788,44 @@ package IG #DDDDDD{
              PersonnePhysique.indiceMasseCorporelle => [0..1]
         } 
 
+        class PersonnePriseCharge{
+
+             PersonnePriseCharge => [None..None]
+             PersonnePriseCharge.idPersonnePriseCharge => [0..*]
+             PersonnePriseCharge.personne => [0..1]
+             PersonnePriseCharge.preferenceCommunication => [0..1]
+             PersonnePriseCharge.contact => [0..*]
+             PersonnePriseCharge.adresseCorrespondance => [0..*]
+             PersonnePriseCharge.telecommunication => [0..*]
+             PersonnePriseCharge.INS => [0..*]
+             PersonnePriseCharge.INS.matricule => [1..1]
+             PersonnePriseCharge.INS.nomNaissance => [1..1]
+             PersonnePriseCharge.INS.listePrenomsNaissance => [1..1]
+             PersonnePriseCharge.INS.sexe => [1..1]
+             PersonnePriseCharge.INS.dateNaissance => [1..1]
+             PersonnePriseCharge.INS.lieuNaissance => [1..1]
+             PersonnePriseCharge.INS.premierPrenomNaissance => [1..1]
+             PersonnePriseCharge.INS.nomUtilise => [1..1]
+             PersonnePriseCharge.INS.prenomUtilise => [1..1]
+        } 
+
+        class PlageDisponibilite{
+
+             PlageDisponibilite => [None..None]
+             PlageDisponibilite.plageDisponibilite => [0..1]
+             PlageDisponibilite.statutPlageDisponibilite => [0..1]
+        } 
+
+        class PlageReference{
+
+             PlageReference => [None..None]
+             PlageReference.borneInferieure => [0..1]
+             PlageReference.borneSuperieure => [0..1]
+             PlageReference.type => [0..1]
+             PlageReference.trancheAge => [0..1]
+             PlageReference.guideTextuel => [0..1]
+        } 
+
         class Professionnel{
 
              Professionnel => [None..None]
@@ -462,6 +843,33 @@ package IG #DDDDDD{
 
              QualificationPAC => [None..None]
              QualificationPAC.qualificationPAC => [0..1]
+        } 
+
+        class RendezVous{
+
+             RendezVous => [None..None]
+             RendezVous.idRdv => [0..1]
+             RendezVous.typeRdv => [0..1]
+             RendezVous.datePriseRdv => [0..1]
+             RendezVous.dateDebutRdv => [0..1]
+             RendezVous.dateFinRdv => [0..1]
+             RendezVous.dateAnnulationRdv => [0..1]
+             RendezVous.pieceJointe => [0..1]
+             RendezVous.priorite => [0..1]
+             RendezVous.titreRdv => [0..1]
+             RendezVous.statutRdv => [0..1]
+             RendezVous.descriptionRdv => [0..1]
+             RendezVous.motifRdv => [0..1]
+             RendezVous.commentaire => [0..1]
+        } 
+
+        class ResultatObservation{
+
+             ResultatObservation => [None..None]
+             ResultatObservation.type => [0..*]
+             ResultatObservation.valeur => [0..1]
+             ResultatObservation.interpretation => [0..1]
+             ResultatObservation.raisonAbsence => [0..1]
         } 
 
         class SavoirFaire{
@@ -526,6 +934,31 @@ package IG #DDDDDD{
              Telecommunication.typeMessagerie => [0..1]
              Telecommunication.utilisation => [0..1]
              Telecommunication.niveauConfidentialite => [0..1]
+        } 
+
+        class VieProfessionnelle{
+
+             VieProfessionnelle => [None..None]
+             VieProfessionnelle.dejaTravaille => [0..1]
+             VieProfessionnelle.diplome => [0..*]
+             VieProfessionnelle.situationVieProfessionnelle => [0..1]
+             VieProfessionnelle.situationSansEmploi => [0..1]
+             VieProfessionnelle.besoinProfessionnel => [0..*]
+        } 
+
+        class VieQuotidienne{
+
+             VieQuotidienne => [None..None]
+             VieQuotidienne.situationVieQuotidienne => [0..*]
+             VieQuotidienne.besoinVieQuotidienne => [0..*]
+             VieQuotidienne.compositionFoyer => [0..1]
+        } 
+
+        class VieScolaire{
+
+             VieScolaire => [None..None]
+             VieScolaire.typeScolarisation => [0..1]
+             VieScolaire.besoinScolarite => [0..*]
          }
 
      }
@@ -584,6 +1017,14 @@ package IG #DDDDDD{
 
      FonctionQualifiee -[#black,dotted,thickness=2]-> FonctionqualifieeVs
 
+        class FamilleactiviteoperationnelleVs  
+
+     OffreOperationnelle -[#black,dotted,thickness=2]-> FamilleactiviteoperationnelleVs
+
+        class ProfessionressourceVs  
+
+     OffreOperationnelle -[#black,dotted,thickness=2]-> ProfessionressourceVs
+
         class OrientationparticuliereVs  
 
      OrientationParticuliere -[#black,dotted,thickness=2]-> OrientationparticuliereVs
@@ -627,17 +1068,61 @@ package IG #DDDDDD{
         class SurspecialitetransversaleVs  
 
      SurspecialiteTransversale -[#black,dotted,thickness=2]-> SurspecialitetransversaleVs
+
+        class BesoinviequotidienneVs  
+
+     VieQuotidienne -[#black,dotted,thickness=2]-> BesoinviequotidienneVs
+
+        class BesoinscolariteVs  
+
+     VieScolaire -[#black,dotted,thickness=2]-> BesoinscolariteVs
        }
 
 package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> ActiviteEnseignement
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ActiviteSociale
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ActiviteSoinAutorisee
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ActiviteSoumiseReconnaissance
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> Adresse
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Agenda
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> AidantDemarche
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ArretTravail
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
 
     classce22f11aadb3ecc630835fe34b52ad38 --> Attestation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> AutorisationExercice
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> AutreActiviteSoumiseAutorisation
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
 
@@ -647,9 +1132,17 @@ package "Ressources de base" #palegreen {
 
     class095a1b43effec73955e31e790438de49 --> BoiteLettreMSS
 
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CapaciteActiviteExercee
+
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
 
     classce22f11aadb3ecc630835fe34b52ad38 --> CapaciteDiplome
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CapacitePriseCharge
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
@@ -685,7 +1178,15 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> Convention
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> CoordonneeGeographique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Creneau
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
 
@@ -698,6 +1199,14 @@ package "Ressources de base" #palegreen {
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
     class7cdfb2c203ef04e11cd48de87fe587af --> DESCNonQualifiant
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Decision
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Demande
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -733,11 +1242,27 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> DispositifMedical
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> DivisionTerritoriale
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Document
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> DossierPersonnePriseCharge
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
     class7cdfb2c203ef04e11cd48de87fe587af --> DroitExerciceComplementaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Emploi
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -746,6 +1271,14 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> EntiteJuridique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> EquipementMaterielLourd
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> EquipementSpecifique
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -769,7 +1302,31 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> LicenceExploitation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> Lieu
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> LieuRealisationOffre
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> MesureProtection
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> NoteLiaison
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Observation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> OffreOperationnelle
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
@@ -777,7 +1334,27 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> Parent
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Patientele
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> PersonnePhysique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PersonnePriseCharge
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PlageDisponibilite
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PlageReference
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -786,6 +1363,14 @@ package "Ressources de base" #palegreen {
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
     class7cdfb2c203ef04e11cd48de87fe587af --> QualificationPAC
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> RendezVous
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ResultatObservation
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -810,5 +1395,17 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> Telecommunication
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> VieProfessionnelle
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> VieQuotidienne
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> VieScolaire
 }
 @enduml

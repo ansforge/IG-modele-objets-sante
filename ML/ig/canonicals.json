@@ -7,6 +7,34 @@
     "name" : "MOS"
   },
   {
+    "id" : "ActiviteEnseignement",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteEnseignement",
+    "version" : "0.1.0",
+    "name" : "ActiviteEnseignement"
+  },
+  {
+    "id" : "ActiviteSociale",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSociale",
+    "version" : "0.1.0",
+    "name" : "ActiviteSociale"
+  },
+  {
+    "id" : "ActiviteSoinAutorisee",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoinAutorisee",
+    "version" : "0.1.0",
+    "name" : "ActiviteSoinAutorisee"
+  },
+  {
+    "id" : "ActiviteSoumiseReconnaissance",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoumiseReconnaissance",
+    "version" : "0.1.0",
+    "name" : "ActiviteSoumiseReconnaissance"
+  },
+  {
     "id" : "Adresse",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse",
@@ -14,11 +42,46 @@
     "name" : "Adresse"
   },
   {
+    "id" : "Agenda",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda",
+    "version" : "0.1.0",
+    "name" : "Agenda"
+  },
+  {
+    "id" : "AidantDemarche",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche",
+    "version" : "0.1.0",
+    "name" : "AidantDemarche"
+  },
+  {
+    "id" : "ArretTravail",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ArretTravail",
+    "version" : "0.1.0",
+    "name" : "ArretTravail"
+  },
+  {
     "id" : "Attestation",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Attestation",
     "version" : "0.1.0",
     "name" : "Attestation"
+  },
+  {
+    "id" : "AutorisationExercice",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutorisationExercice",
+    "version" : "0.1.0",
+    "name" : "AutorisationExercice"
+  },
+  {
+    "id" : "AutreActiviteSoumiseAutorisation",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutreActiviteSoumiseAutorisation",
+    "version" : "0.1.0",
+    "name" : "AutreActiviteSoumiseAutorisation"
   },
   {
     "id" : "AutreDiplomeObtenu",
@@ -35,11 +98,25 @@
     "name" : "BoiteLettreMSS"
   },
   {
+    "id" : "CapaciteActiviteExercee",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteExercee",
+    "version" : "0.1.0",
+    "name" : "CapaciteActiviteExercee"
+  },
+  {
     "id" : "CapaciteDiplome",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteDiplome",
     "version" : "0.1.0",
     "name" : "CapaciteDiplome"
+  },
+  {
+    "id" : "CapacitePriseCharge",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapacitePriseCharge",
+    "version" : "0.1.0",
+    "name" : "CapacitePriseCharge"
   },
   {
     "id" : "CapaciteSavoirfaire",
@@ -98,11 +175,25 @@
     "name" : "Contact"
   },
   {
+    "id" : "Convention",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Convention",
+    "version" : "0.1.0",
+    "name" : "Convention"
+  },
+  {
     "id" : "CoordonneeGeographique",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CoordonneeGeographique",
     "version" : "0.1.0",
     "name" : "CoordonneeGeographique"
+  },
+  {
+    "id" : "Creneau",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Creneau",
+    "version" : "0.1.0",
+    "name" : "Creneau"
   },
   {
     "id" : "DESC1",
@@ -124,6 +215,20 @@
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESCNonQualifiant",
     "version" : "0.1.0",
     "name" : "DESCNonQualifiant"
+  },
+  {
+    "id" : "Decision",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Decision",
+    "version" : "0.1.0",
+    "name" : "Decision"
+  },
+  {
+    "id" : "Demande",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Demande",
+    "version" : "0.1.0",
+    "name" : "Demande"
   },
   {
     "id" : "Diplome",
@@ -182,6 +287,13 @@
     "name" : "DiplomeUniversitaire"
   },
   {
+    "id" : "DispositifMedical",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DispositifMedical",
+    "version" : "0.1.0",
+    "name" : "DispositifMedical"
+  },
+  {
     "id" : "DivisionTerritoriale",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DivisionTerritoriale",
@@ -189,11 +301,32 @@
     "name" : "DivisionTerritoriale"
   },
   {
+    "id" : "Document",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document",
+    "version" : "0.1.0",
+    "name" : "Document"
+  },
+  {
+    "id" : "DossierPersonnePriseCharge",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DossierPersonnePriseCharge",
+    "version" : "0.1.0",
+    "name" : "DossierPersonnePriseCharge"
+  },
+  {
     "id" : "DroitExerciceComplementaire",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DroitExerciceComplementaire",
     "version" : "0.1.0",
     "name" : "DroitExerciceComplementaire"
+  },
+  {
+    "id" : "Emploi",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Emploi",
+    "version" : "0.1.0",
+    "name" : "Emploi"
   },
   {
     "id" : "EntiteGeographique",
@@ -208,6 +341,20 @@
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique",
     "version" : "0.1.0",
     "name" : "EntiteJuridique"
+  },
+  {
+    "id" : "EquipementMaterielLourd",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementMaterielLourd",
+    "version" : "0.1.0",
+    "name" : "EquipementMaterielLourd"
+  },
+  {
+    "id" : "EquipementSpecifique",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique",
+    "version" : "0.1.0",
+    "name" : "EquipementSpecifique"
   },
   {
     "id" : "ExerciceProfessionnel",
@@ -245,11 +392,53 @@
     "name" : "LangueParlee"
   },
   {
+    "id" : "LicenceExploitation",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LicenceExploitation",
+    "version" : "0.1.0",
+    "name" : "LicenceExploitation"
+  },
+  {
     "id" : "Lieu",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu",
     "version" : "0.1.0",
     "name" : "Lieu"
+  },
+  {
+    "id" : "LieuRealisationOffre",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre",
+    "version" : "0.1.0",
+    "name" : "LieuRealisationOffre"
+  },
+  {
+    "id" : "MesureProtection",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection",
+    "version" : "0.1.0",
+    "name" : "MesureProtection"
+  },
+  {
+    "id" : "NoteLiaison",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison",
+    "version" : "0.1.0",
+    "name" : "NoteLiaison"
+  },
+  {
+    "id" : "Observation",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Observation",
+    "version" : "0.1.0",
+    "name" : "Observation"
+  },
+  {
+    "id" : "OffreOperationnelle",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle",
+    "version" : "0.1.0",
+    "name" : "OffreOperationnelle"
   },
   {
     "id" : "OrientationParticuliere",
@@ -259,11 +448,46 @@
     "name" : "OrientationParticuliere"
   },
   {
+    "id" : "Parent",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Parent",
+    "version" : "0.1.0",
+    "name" : "Parent"
+  },
+  {
+    "id" : "Patientele",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele",
+    "version" : "0.1.0",
+    "name" : "Patientele"
+  },
+  {
     "id" : "PersonnePhysique",
     "type" : "StructureDefinition",
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique",
     "version" : "0.1.0",
     "name" : "PersonnePhysique"
+  },
+  {
+    "id" : "PersonnePriseCharge",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge",
+    "version" : "0.1.0",
+    "name" : "PersonnePriseCharge"
+  },
+  {
+    "id" : "PlageDisponibilite",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageDisponibilite",
+    "version" : "0.1.0",
+    "name" : "PlageDisponibilite"
+  },
+  {
+    "id" : "PlageReference",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageReference",
+    "version" : "0.1.0",
+    "name" : "PlageReference"
   },
   {
     "id" : "Professionnel",
@@ -278,6 +502,20 @@
     "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/QualificationPAC",
     "version" : "0.1.0",
     "name" : "QualificationPAC"
+  },
+  {
+    "id" : "RendezVous",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous",
+    "version" : "0.1.0",
+    "name" : "RendezVous"
+  },
+  {
+    "id" : "ResultatObservation",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ResultatObservation",
+    "version" : "0.1.0",
+    "name" : "ResultatObservation"
   },
   {
     "id" : "SavoirFaire",
@@ -322,11 +560,46 @@
     "name" : "Telecommunication"
   },
   {
+    "id" : "VieProfessionnelle",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieProfessionnelle",
+    "version" : "0.1.0",
+    "name" : "VieProfessionnelle"
+  },
+  {
+    "id" : "VieQuotidienne",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieQuotidienne",
+    "version" : "0.1.0",
+    "name" : "VieQuotidienne"
+  },
+  {
+    "id" : "VieScolaire",
+    "type" : "StructureDefinition",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieScolaire",
+    "version" : "0.1.0",
+    "name" : "VieScolaire"
+  },
+  {
     "id" : "DESCNonQualifiant-vs",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/DESCNonQualifiant-vs",
     "version" : "0.1.0",
     "name" : "DescnonqualifiantVs"
+  },
+  {
+    "id" : "besoinScolarite-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinScolarite-vs",
+    "version" : "0.1.0",
+    "name" : "BesoinscolariteVs"
+  },
+  {
+    "id" : "besoinVieQuotidienne-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinVieQuotidienne-vs",
+    "version" : "0.1.0",
+    "name" : "BesoinviequotidienneVs"
   },
   {
     "id" : "capaciteSavoirFaire-vs",
@@ -378,6 +651,13 @@
     "name" : "DroitexercicecomplementaireVs"
   },
   {
+    "id" : "familleActiviteOperationnelle-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/familleActiviteOperationnelle-vs",
+    "version" : "0.1.0",
+    "name" : "FamilleactiviteoperationnelleVs"
+  },
+  {
     "id" : "fonctionQualifiee-vs",
     "type" : "ValueSet",
     "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/fonctionQualifiee-vs",
@@ -425,6 +705,13 @@
     "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs",
     "version" : "0.1.0",
     "name" : "ProfessioncategoriesocioprofessionnelleVs"
+  },
+  {
+    "id" : "professionRessource-vs",
+    "type" : "ValueSet",
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionRessource-vs",
+    "version" : "0.1.0",
+    "name" : "ProfessionressourceVs"
   },
   {
     "id" : "qualificationPAC-vs",

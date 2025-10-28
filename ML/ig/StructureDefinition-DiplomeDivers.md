@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeDivers | *Version*:0.1.0 |
-| Draft as of 2025-10-23 | *Computable Name*:DiplomeDivers |
+| Draft as of 2025-10-28 | *Computable Name*:DiplomeDivers |
 
  
 Cette classe regroupe les diplômes qui ne peuvent être classés dans un type de diplôme explicite (CES, DESC1, DESC2, etc.).La classe DiplomeDivers est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DiplomeDivers.csv), 
   "name" : "DiplomeDivers",
   "title" : "DiplomeDivers",
   "status" : "draft",
-  "date" : "2025-10-23T15:44:08+00:00",
+  "date" : "2025-10-28T09:35:07+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

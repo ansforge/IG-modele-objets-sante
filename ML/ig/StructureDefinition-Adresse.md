@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse | *Version*:0.1.0 |
-| Draft as of 2025-10-23 | *Computable Name*:Adresse |
+| Draft as of 2025-10-28 | *Computable Name*:Adresse |
 
  
 Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d’après la norme NF Z 10-011. 
 
 **Usages:**
 
-* Use this Logical Model: [Contact](StructureDefinition-Contact.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [Lieu](StructureDefinition-Lieu.md)...Show 2 more,[Professionnel](StructureDefinition-Professionnel.md)and[SituationExercice](StructureDefinition-SituationExercice.md)
+* Use this Logical Model: [AidantDemarche](StructureDefinition-AidantDemarche.md), [Contact](StructureDefinition-Contact.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md)...Show 6 more,[Lieu](StructureDefinition-Lieu.md),[MesureProtection](StructureDefinition-MesureProtection.md),[Parent](StructureDefinition-Parent.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md),[Professionnel](StructureDefinition-Professionnel.md)and[SituationExercice](StructureDefinition-SituationExercice.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Adresse)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Adresse.csv), [Excel
   "name" : "Adresse",
   "title" : "Adresse",
   "status" : "draft",
-  "date" : "2025-10-23T15:44:08+00:00",
+  "date" : "2025-10-28T09:35:07+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

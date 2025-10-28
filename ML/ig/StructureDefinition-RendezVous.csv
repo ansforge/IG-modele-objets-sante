@@ -1,0 +1,29 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"RendezVous","RendezVous","","","",0,*,"","","","null {[]} {[]}
+","Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux.","Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"RendezVous.idRdv","RendezVous.idRdv","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant du rendez-vous","Identifiant du rendez-vous","","","","","","","","","",,,,,"",,,,"RendezVous.idRdv",0,1,"",""
+"RendezVous.typeRdv","RendezVous.typeRdv","","","",0,1,"","","","Coding {[]} {[]}
+","Type de rendez-vous.","Type de rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.typeRdv",0,1,"",""
+"RendezVous.datePriseRdv","RendezVous.datePriseRdv","","","",0,1,"","","","dateTime {[]} {[]}
+","Date de la prise de rendez-vous.","Date de la prise de rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.datePriseRdv",0,1,"",""
+"RendezVous.dateDebutRdv","RendezVous.dateDebutRdv","","","",0,1,"","","","dateTime {[]} {[]}
+","Date de début du rendez-vous.","Date de début du rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.dateDebutRdv",0,1,"",""
+"RendezVous.dateFinRdv","RendezVous.dateFinRdv","","","",0,1,"","","","dateTime {[]} {[]}
+","Date de fin du rendez-vous.","Date de fin du rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.dateFinRdv",0,1,"",""
+"RendezVous.dateAnnulationRdv","RendezVous.dateAnnulationRdv","","","",0,1,"","","","dateTime {[]} {[]}
+","Date d'annulation du rendez-vous.","Date d'annulation du rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.dateAnnulationRdv",0,1,"",""
+"RendezVous.pieceJointe","RendezVous.pieceJointe","","","",0,1,"","","","base64Binary {[]} {[]}
+","Informations supplémentaires à l'appui du rendez-vous fournies lors de la prise de rendez-vous.Cet élément peut être utilisé pour référencer un document représentant une prescription ou n'importe quelle autre pièce jointe.","Informations supplémentaires à l'appui du rendez-vous fournies lors de la prise de rendez-vous.Cet élément peut être utilisé pour référencer un document représentant une prescription ou n'importe quelle autre pièce jointe.","","","","","","","","","",,,,,"",,,,"RendezVous.pieceJointe",0,1,"",""
+"RendezVous.priorite","RendezVous.priorite","","","",0,1,"","","","Coding {[]} {[]}
+","Degré d'urgence du rendez-vous.","Degré d'urgence du rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.priorite",0,1,"",""
+"RendezVous.titreRdv","RendezVous.titreRdv","","","",0,1,"","","","string {[]} {[]}
+","Titre du rendez-vous.","Titre du rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.titreRdv",0,1,"",""
+"RendezVous.statutRdv","RendezVous.statutRdv","","","",0,1,"","","","Coding {[]} {[]}
+","Statut du rendez-vous (en attente, accepté, refusé).","Statut du rendez-vous (en attente, accepté, refusé).","","","","","","","","","",,,,,"",,,,"RendezVous.statutRdv",0,1,"",""
+"RendezVous.descriptionRdv","RendezVous.descriptionRdv","","","",0,1,"","","","string {[]} {[]}
+","Description du rendez-vous.","Description du rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.descriptionRdv",0,1,"",""
+"RendezVous.motifRdv","RendezVous.motifRdv","","","",0,1,"","","","string {[]} {[]}
+","Motif pour lequel le rendez–vous est pris.","Motif pour lequel le rendez–vous est pris.","","","","","","","","","",,,,,"",,,,"RendezVous.motifRdv",0,1,"",""
+"RendezVous.commentaire","RendezVous.commentaire","","","",0,1,"","","","string {[]} {[]}
+","Détails sur le rendez-vous.","Détails sur le rendez-vous.","","","","","","","","","",,,,,"",,,,"RendezVous.commentaire",0,1,"",""
