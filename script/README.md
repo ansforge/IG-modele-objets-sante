@@ -70,8 +70,8 @@ Environnement Python (pour Windows) :
 Actuellement :
 - Le sens des flèches est fixe (toujours "-->").
 - Les héritages ne sont pas affichés.
+- Les backbones sont affichés en bleu.
 
 Points à voir :
 * Diagramme global (uniquement les classes par partie sans lien).
-* Backbones (pas affichés).
 * Liens avec classes des autres parties (pas affichés).

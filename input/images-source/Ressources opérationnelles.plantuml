@@ -8,12 +8,17 @@ Class LieuRealisationOffre {
 Class EquipementSpecifique {
   typeEquipement : Coding [0..1]
   nbEquipementEnService : integer [0..1]
-  LimiteCaracteristiqueEquipement : Base [0..*]
 }
 
 Class CapacitePriseCharge {
   affectationTemporaire : Coding [0..1]
 }
 
+Class LimiteCaracteristiqueEquipement #LightBlue {
+  typeCaracteristique : Coding [0..1]
+  valeurLimite : Quantity [0..1]
+}
+
+EquipementSpecifique --> LimiteCaracteristiqueEquipement : 0..*
 
 @enduml

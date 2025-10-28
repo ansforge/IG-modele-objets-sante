@@ -10,9 +10,6 @@ Class ExerciceProfessionnel {
   dateEffetExercice : date [0..1]
   dateFinEffetExercice : date [0..1]
   departementPremierReferencementAE : Coding [0..1]
-  InscriptionOrdre : Base [0..*]
-  AttributionParticuliere : Base [0..1]
-  NiveauFormation : Base [0..*]
 }
 
 Class Professionnel {
@@ -52,7 +49,31 @@ Class SituationOperationnelle {
   carteVitaleAcceptee : boolean [0..1]
 }
 
+Class InscriptionOrdre #LightBlue {
+  ordre : Coding [0..1]
+  dateDebutInscription : date [0..1]
+  dateRadiation : date [0..1]
+  statutInscription : Coding [0..1]
+  conseilDepartemental : Coding [0..1]
+}
+
+Class AttributionParticuliere #LightBlue {
+  attributionParticuliere : Coding [0..1]
+  dateDebutReconnaissance : date [0..1]
+  dateAbandon : date [0..1]
+}
+
+Class NiveauFormation #LightBlue {
+  natureCycleFormation : Coding [0..1]
+  niveauFormationAcquis : Coding [0..1]
+  anneeUniversitaire : Coding [0..1]
+  dateFin : date [0..1]
+}
+
 ExerciceProfessionnel --> Professionnel : 1..1
+ExerciceProfessionnel --> InscriptionOrdre : 0..*
+ExerciceProfessionnel --> AttributionParticuliere : 0..1
+ExerciceProfessionnel --> NiveauFormation : 0..*
 SavoirFaire --> ExerciceProfessionnel : 1..1
 SituationExercice --> ExerciceProfessionnel : 1..1
 SituationOperationnelle --> ExerciceProfessionnel : 1..1

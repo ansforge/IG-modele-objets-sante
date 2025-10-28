@@ -3,7 +3,6 @@
 Class PersonnePriseCharge {
   idPersonnePriseCharge : Identifier [0..*]
   preferenceCommunication : Coding [0..1]
-  INS : Base [0..*]
 }
 
 Class VieQuotidienne {
@@ -72,5 +71,18 @@ Class PlageReference {
   guideTextuel : string [0..1]
 }
 
+Class INS #LightBlue {
+  matricule : Identifier [1..1]
+  nomNaissance : string [1..1]
+  listePrenomsNaissance : string [1..1]
+  sexe : Coding [1..1]
+  dateNaissance : dateTime [1..1]
+  lieuNaissance : Coding [1..1]
+  premierPrenomNaissance : string [1..1]
+  nomUtilise : string [1..1]
+  prenomUtilise : string [1..1]
+}
+
+PersonnePriseCharge --> INS : 0..*
 
 @enduml

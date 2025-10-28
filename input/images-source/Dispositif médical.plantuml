@@ -17,8 +17,20 @@ Class DispositifMedical {
   actif : boolean [0..1]
   codeLPP : boolean [0..1]
   irmCompatible : Coding [0..1]
-  SupportIUD : Base [0..*]
 }
 
+Class SupportIUD #LightBlue {
+  IUDID : Identifier [0..1]
+  IUDIPNumeroSerie : Identifier [0..1]
+  IUDIPNumeroLot : Identifier [0..1]
+  IUDIPIdLogiciel : Identifier [0..1]
+  IUDIPDateFabrication : date [0..1]
+  IUDIPDateExpiration : date [0..1]
+  AIDC : base64Binary [0..1]
+  marquageClair : string [0..1]
+  typeSupportIUD : Coding [0..1]
+}
+
+DispositifMedical --> SupportIUD : 0..*
 
 @enduml

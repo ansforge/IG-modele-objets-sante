@@ -23,8 +23,12 @@ Class OffreOperationnelle {
   typeFermeture : Coding [0..1]
   dateFermeture : date [0..1]
   datePrevisionnelleReouverture : date [0..1]
-  ActiviteOperationnelle : Base [1..*]
 }
 
+Class ActiviteOperationnelle #LightBlue {
+  activiteOperationnelle : Coding [0..1]
+}
+
+OffreOperationnelle --> ActiviteOperationnelle : 1..*
 
 @enduml
