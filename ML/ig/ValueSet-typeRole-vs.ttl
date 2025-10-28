@@ -11,13 +11,16 @@
   fhir:id [ fhir:v "typeRole-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs typeRole-vs</b></p><a name=\"typeRole-vs\"> </a><a name=\"hctypeRole-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R289-TypeFonction.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version ?20231215120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R37-TypeProfessionFonction.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version ?20231215120000</span></li></ul></div>"^^rdf:XMLLiteral
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs typeRole-vs</b></p><a name=\"typeRole-vs\"> </a><a name=\"hctypeRole-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R289-TypeFonction.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version ?20231215120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R37-TypeProfessionFonction.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version ?20231215120000</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
-  fhir:url [ fhir:v "https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs"^^xsd:anyURI] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs>
+  ] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TyperoleVs"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-28T14:16:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-28T15:15:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -28,16 +31,25 @@
   ] ) ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
-       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
        fhir:code [ fhir:v "FR" ] ;
        fhir:display [ fhir:v "FRANCE" ]
      ] )
   ] ) ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction>
+       ]
      ] [
-       fhir:system [ fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction"^^xsd:anyURI ]
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction>
+       ]
      ] )
   ] . # 
 
