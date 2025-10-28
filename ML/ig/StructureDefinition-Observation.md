@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Observation.csv), [E
   "name" : "Observation",
   "title" : "Observation",
   "status" : "draft",
-  "date" : "2025-10-28T11:41:28+00:00",
+  "date" : "2025-10-28T14:16:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
