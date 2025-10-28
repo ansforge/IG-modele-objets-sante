@@ -29,7 +29,7 @@ def get_valueset(termino, attribute, url, url_termino, output_path):
         output_path (str): Chemin de destination pour la création des fichiers.
         str: URL du jeu de valeur associé à l'attribut.
     """
-    tre = [t for t in termino if t.startswith("TRE_")]
+    tre = [t.split(' ')[0] for t in termino if t.startswith("TRE_")]
     if len(tre) == 1:
         url_vs = url_termino + tre[0] + "/FHIR/" + tre[0].replace('_', '-') + "?vs"
     else:
@@ -165,31 +165,33 @@ def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, s
         "min": 0,
         "max": "*",
     })
-    for _, row in group.iterrows():
-        (element, custom, common) = create_element(row, name, url, url_termino, conf, custom, common, output_path)
-        if element is not None:
-            elements.append(element)
+    backbones = []
     if name in conf["backbones"].keys():
         backbones = conf["backbones"][name].keys()
-        for backbone in backbones:
-            data_backbone = data[data["Classe"] == backbone]
-            backbone_without_attribute = data_backbone[data_backbone['Attribut'].isnull()]
-            backbone_desc = backbone_without_attribute.iloc[0]['Description']
-            if len(backbone_without_attribute) > 1:
-                print("Several descriptions for class (backbone): " + name)
-            elements.append({
-                "id": name + '.' + backbone,
-                "path": name + '.' + backbone,
-                "definition": backbone_desc.strip(),
-                "short": backbone_desc.strip(),
-                "min": int(conf["backbones"][name][backbone]["min"]), 
-                "max": str(conf["backbones"][name][backbone]["max"]),
-                "type": [{ "code": "Base" }]
-            })
-            for _, row in data_backbone.iterrows():
-                (element, custom, common) = create_element(row, name + '.' + backbone, url, url_termino, conf, custom, common, output_path)
-                if element is not None:
-                    elements.append(element)
+    for _, row in group.iterrows():
+        if row["Type"].strip() not in backbones:
+            (element, custom, common) = create_element(row, name, url, url_termino, conf, custom, common, output_path)
+            if element is not None:
+                elements.append(element)
+    for backbone in backbones:
+        data_backbone = data[data["Classe"] == backbone]
+        backbone_without_attribute = data_backbone[data_backbone['Attribut'].isnull()]
+        backbone_desc = backbone_without_attribute.iloc[0]['Description']
+        if len(backbone_without_attribute) > 1:
+            print("Several descriptions for class (backbone): " + name)
+        elements.append({
+            "id": name + '.' + backbone,
+            "path": name + '.' + backbone,
+            "definition": backbone_desc.strip(),
+            "short": backbone_desc.strip(),
+            "min": int(conf["backbones"][name][backbone]["min"]), 
+            "max": str(conf["backbones"][name][backbone]["max"]),
+            "type": [{ "code": "Base" }]
+        })
+        for _, row in data_backbone.iterrows():
+            (element, custom, common) = create_element(row, name + '.' + backbone, url, url_termino, conf, custom, common, output_path)
+            if element is not None:
+                elements.append(element)
     sd["differential"]["element"] = elements
     with open(output_path + name + ".json", "w", encoding="utf-8") as outfile:
         json.dump(sd, outfile, ensure_ascii=False)

@@ -17,6 +17,7 @@ Alias: $TRE-R40-CompetenceExclusive = https://mos.esante.gouv.fr/NOS/TRE_R40-Com
 Alias: $TRE-R42-DESCnonQualifiant = https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant
 Alias: $TRE-R97-DroitExerciceCompl = https://mos.esante.gouv.fr/NOS/TRE_R97-DroitExerciceCompl/FHIR/TRE-R97-DroitExerciceCompl
 Alias: $TRE-R266-FamilleActiviteOperationnelleHorsSerafin = https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin
+Alias: $TRE-R265-PrestationPilotageSerafin = https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin
 Alias: $TRE-R45-FonctionQualifiee = https://mos.esante.gouv.fr/NOS/TRE_R45-FonctionQualifiee/FHIR/TRE-R45-FonctionQualifiee
 Alias: $TRE-G13-OrientationParticuliere = https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere
 Alias: $TRE-R268-PaysProvenanceISO = https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO
