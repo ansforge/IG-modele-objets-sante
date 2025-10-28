@@ -1,0 +1,32 @@
+@startuml
+
+Class Demande {
+  identifiantDemande : Identifier [0..1]
+  dateDemande : date [0..1]
+  demandeUrgente : boolean [0..1]
+}
+
+Class Decision {
+  dateDecision : date [0..1]
+  typeDecision : Coding [0..1]
+}
+
+Class DossierPersonnePriseCharge {
+  identifiantDossier : Identifier [0..1]
+}
+
+Class Document {
+  typeDocument : Coding [0..1]
+}
+
+Class NoteLiaison {
+  idNote : Identifier [0..1]
+  typeNote : Coding [0..1]
+  restrictionAudience : Coding [0..1]
+  dateHeureCreation : dateTime [0..1]
+  description : string [0..1]
+  urgenceNote : boolean [0..1]
+}
+
+
+@enduml

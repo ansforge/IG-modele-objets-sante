@@ -1,0 +1,76 @@
+@startuml
+
+Class PersonnePriseCharge {
+  idPersonnePriseCharge : Identifier [0..*]
+  preferenceCommunication : Coding [0..1]
+  INS : Base [0..*]
+}
+
+Class VieQuotidienne {
+  situationVieQuotidienne : Coding [0..*]
+  besoinVieQuotidienne : Coding [0..*]
+  compositionFoyer : Coding [0..1]
+}
+
+Class VieProfessionnelle {
+  dejaTravaille : boolean [0..1]
+  situationVieProfessionnelle : Coding [0..1]
+  situationSansEmploi : Coding [0..1]
+  besoinProfessionnel : Coding [0..*]
+}
+
+Class Emploi {
+  libelleEmploi : string [0..1]
+  dateDebutEmploi : date [0..1]
+  dateFinEmploi : date [0..1]
+  emploiRemunere : boolean [0..1]
+  emploiAdapteHandicape : boolean [0..1]
+}
+
+Class ArretTravail {
+  dateDebutArret : date [0..1]
+  motifArret : Coding [0..1]
+  rencontreServiceSocial : boolean [0..1]
+  dateRencontreServiceSocial : date [0..1]
+  rencontreMedecin : boolean [0..1]
+  dateRencontreMedecin : date [0..1]
+}
+
+Class VieScolaire {
+  typeScolarisation : Coding [0..1]
+  besoinScolarite : Coding [0..*]
+}
+
+Class Observation {
+  identifiant : Identifier [0..1]
+  statut : CodeableConcept [0..1]
+  categorie : CodeableConcept [0..1]
+  datePertinence : dateTime [0..1]
+  dateDisponibilite : dateTime [0..1]
+  commentaire : string [0..1]
+  partieAnatomie : CodeableConcept [0..1]
+  methode : CodeableConcept [0..1]
+  raison : string [0..1]
+  positionCorps : CodeableConcept [0..1]
+  momentMesure : CodeableConcept [0..1]
+  niveauEffort : CodeableConcept [0..1]
+  typeDiabete : CodeableConcept [0..1]
+  nombreJours : CodeableConcept [0..1]
+}
+
+Class ResultatObservation {
+  type : CodeableConcept [0..*]
+  valeur : Quantity [0..1]
+  interpretation : CodeableConcept [0..1]
+  raisonAbsence : CodeableConcept [0..1]
+}
+
+Class PlageReference {
+  borneInferieure : Quantity [0..1]
+  borneSuperieure : Quantity [0..1]
+  type : CodeableConcept [0..1]
+  guideTextuel : string [0..1]
+}
+
+
+@enduml

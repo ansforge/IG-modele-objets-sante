@@ -1,21 +1,56 @@
 @startuml
 
-Class ExerciceProfessionnel
-Class Professionnel
-Class SavoirFaire
-Class SituationExercice
-Class SituationOperationnelle
-Class Specialite
-Class SurspecialiteTransversale
-Class Competence
-Class CompetenceMetier
-Class CompetenceExclusive
-Class OrientationParticuliere
-Class CapaciteSavoirfaire
-Class QualificationPAC
-Class FonctionQualifiee
-Class DESCNonQualifiant
-Class DroitExerciceComplementaire
+Class ExerciceProfessionnel {
+  civiliteExercice : Coding [0..1]
+  nomExercice : string [0..1]
+  prenomExercice : string [0..1]
+  profession : Coding [0..1]
+  typeProfession : Coding [0..1]
+  categorieProfessionnelle : Coding [0..1]
+  dateEffetExercice : date [0..1]
+  dateFinEffetExercice : date [0..1]
+  departementPremierReferencementAE : Coding [0..1]
+  InscriptionOrdre : Base [0..*]
+  AttributionParticuliere : Base [0..1]
+  NiveauFormation : Base [0..*]
+}
+
+Class Professionnel {
+  idPP : Identifier [0..1]
+  typeIdNatPP : Coding [0..1]
+  idNatPS : Identifier [0..1]
+}
+
+Class SavoirFaire {
+  typeSavoirFaire : Coding [0..1]
+  dateReconnaissance : date [0..1]
+  dateAbandon : date [0..1]
+}
+
+Class SituationExercice {
+  role : Coding [0..1]
+  typeRole : Coding [0..1]
+  modeExercice : Coding [0..1]
+  numeroAM : Identifier [0..1]
+  dateDebutActivite : date [0..1]
+  dateFinActivite : date [0..1]
+  genreActivite : Coding [0..1]
+  motifFinActivite : Coding [0..1]
+  statutHospitalier : Coding [0..1]
+  sectionOrdrePharmacien : Coding [0..1]
+  sousSectionOrdrePharmacien : Coding [0..1]
+  typeActiviteLiberale : Coding [0..1]
+  statutPSSSA : Coding [0..1]
+}
+
+Class SituationOperationnelle {
+  identifiantSituationOperationnelle : Identifier [0..1]
+  modeExerciceOffre : Coding [0..1]
+  competenceSpecifique : Coding [0..*]
+  secteurConventionnement : Coding [0..1]
+  optionContratAccesAuxSoins : boolean [0..1]
+  carteVitaleAcceptee : boolean [0..1]
+}
 
 ExerciceProfessionnel --> Professionnel : 1..1
 SavoirFaire --> ExerciceProfessionnel : 1..1

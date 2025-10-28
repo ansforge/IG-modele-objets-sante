@@ -1,0 +1,40 @@
+@startuml
+
+Class Agenda {
+  idAgenda : Identifier [0..1]
+  nomAgenda : string [0..1]
+  dateCreation : date [0..1]
+  dateDebutPlanification : dateTime [0..1]
+  dateFinPlanification : dateTime [0..1]
+}
+
+Class Creneau {
+  idCreneau : Identifier [0..1]
+  statut : Coding [0..1]
+  dateDebut : dateTime [0..1]
+  dateFin : dateTime [0..1]
+  informationComplementaire : string [0..1]
+}
+
+Class RendezVous {
+  idRdv : Identifier [0..1]
+  typeRdv : Coding [0..1]
+  datePriseRdv : dateTime [0..1]
+  dateDebutRdv : dateTime [0..1]
+  dateFinRdv : dateTime [0..1]
+  dateAnnulationRdv : dateTime [0..1]
+  pieceJointe : base64Binary [0..1]
+  priorite : Coding [0..1]
+  titreRdv : string [0..1]
+  statutRdv : Coding [0..1]
+  descriptionRdv : string [0..1]
+  motifRdv : string [0..1]
+  commentaire : string [0..1]
+}
+
+Class PlageDisponibilite {
+  statutPlageDisponibilite : Coding [0..1]
+}
+
+
+@enduml

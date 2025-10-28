@@ -68,9 +68,10 @@ Environnement Python (pour Windows) :
 ### Notes
 
 Actuellement :
-- Seuls les liens entre classes de la partie concernée sont affichés (pas ceux avec des classes des autres parties).
-- Seuls le nom des classes sont  affichés (pas les attributs).
 - Le sens des flèches est fixe (toujours "-->").
+- Les héritages ne sont pas affichés.
 
 Points à voir :
-* Héritages. 
+* Diagramme global (uniquement les classes par partie sans lien).
+* Backbones (pas affichés).
+* Liens avec classes des autres parties (pas affichés).

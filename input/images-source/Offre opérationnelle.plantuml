@@ -1,0 +1,30 @@
+@startuml
+
+Class OffreOperationnelle {
+  familleActiviteOperationnelle : Coding [0..1]
+  identifiantOffre : Identifier [0..1]
+  nomOffre : string [0..1]
+  typeOffre : Coding [0..1]
+  champActivite : Coding [0..1]
+  temporaliteAccueil : Coding [0..1]
+  modePriseEnCharge : Coding [0..1]
+  modaliteAccueil : Coding [0..*]
+  modeGestion : Coding [0..*]
+  uniteSensible : boolean [0..1]
+  acteSpecifique : Coding [0..*]
+  acteRealiseHorsCabinet : Coding [0..*]
+  specialisationPriseEnCharge : Coding [0..*]
+  habilitationAuxSoinsSansConsentement : boolean [0..1]
+  ouvertureAnnuelle : Coding [0..1]
+  secteurPsychiatrique : string [0..*]
+  professionRessource : Coding [0..*]
+  competenceSpecifique : Coding [0..*]
+  niveauExpertise : Coding [0..*]
+  typeFermeture : Coding [0..1]
+  dateFermeture : date [0..1]
+  datePrevisionnelleReouverture : date [0..1]
+  ActiviteOperationnelle : Base [1..*]
+}
+
+
+@enduml

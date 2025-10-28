@@ -1,7 +1,28 @@
 @startuml
 
-Class CarteProfessionnel
-Class Certificat
+Class CarteProfessionnel {
+  typeCarte : Coding [0..1]
+  numeroCarte : string [0..1]
+  dateDebutValidite : dateTime [0..1]
+  dateFinValidite : dateTime [0..1]
+  dateOpposition : dateTime [0..1]
+}
 
+Class Certificat {
+  numeroSerie : string [0..1]
+  dNEmetteur : string [0..1]
+  dNSujet : string [0..1]
+  dateDebutValidite : dateTime [0..1]
+  dateFinValidite : dateTime [0..1]
+  usage : string [0..1]
+  domaine : string [0..1]
+  categorieProduit : Coding [0..1]
+  typeCarte : Coding [0..1]
+  tokenId : string [0..1]
+  valeurBinaire : base64Binary [0..1]
+  statutPublication : string [0..1]
+}
+
+CarteProfessionnel --> Certificat : 1..*
 
 @enduml

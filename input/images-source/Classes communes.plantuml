@@ -1,31 +1,164 @@
 @startuml
 
-Class BoiteLettreMSS
-Class Diplome
-Class PersonnePhysique
-Class Adresse
-Class Telecommunication
-Class Horaire
-Class Contact
-Class Lieu
-Class DivisionTerritoriale
-Class Patientele
-Class DiplomeEtat
-Class DiplomeEtudeSpecialisee
-Class FormationSpecialiseeTransversale
-Class DESC1
-Class DESC2
-Class DiplomeEEE
-Class DiplomeEES
-Class DiplomeUniversitaire
-Class CertificatEtudeSpeciale
-Class Attestation
-Class CapaciteDiplome
-Class DiplomeDivers
-Class AutreDiplomeObtenu
-Class DiplomeDeuxiemeCycleNonQualifiant
-Class LangueParlee
-Class CoordonneeGeographique
+Class BoiteLettreMSS {
+  typeBAL : Coding [0..1]
+  description : string [0..1]
+  responsable : string [0..1]
+  serviceRattachement : string [0..1]
+  dematerialisation : boolean [0..1]
+  listeRouge : boolean [0..1]
+}
 
+Class Diplome {
+  typeDiplome : Coding [0..1]
+  lieuFormation : Coding [0..1]
+  dateDiplome : date [0..1]
+  numeroDiplome : string [0..1]
+}
+
+Class PersonnePhysique {
+  civilite : Coding [0..1]
+  nomFamille : string [0..1]
+  nomUsage : string [0..1]
+  prenom : string [0..*]
+  prenomUsuel : string [0..1]
+  pseudonyme : string [0..1]
+  surnom : string [0..1]
+  sexeAdministratif : Coding [0..1]
+  sexe : Coding [0..1]
+  situationFamiliale : Coding [0..1]
+  dateNaissance : date [0..1]
+  dateDeces : date [0..1]
+  communeNaissance : Coding [0..1]
+  departementNaissance : Coding [0..1]
+  paysNaissance : Coding [0..1]
+  lieuNaissance : Coding [0..1]
+  statutEtatCivil : Coding [0..1]
+  dateStatutEtatCivil : date [0..1]
+  dateAcquisitionNatFR : date [0..1]
+  paysNationalite : Coding [0..1]
+  paysResidence : Coding [0..1]
+  professionCategorieSocioProfessionnelle : Coding [0..1]
+  causeMortalite : Coding [0..1]
+  tailleCorporelle : Quantity [0..1]
+  poidsCorporel : Quantity [0..1]
+  surfaceCorporelle : Quantity [0..1]
+  indiceMasseCorporelle : Quantity [0..1]
+}
+
+Class Adresse {
+  identificationDestinataire : string [0..1]
+  identificationDomicilie : string [0..1]
+  pointRemise : string [0..1]
+  complementPointGeographique : string [0..1]
+  numeroVoie : string [0..1]
+  extension : string [0..1]
+  typeVoie : Coding [0..1]
+  libelleVoie : string [0..1]
+  lieuDit : string [0..1]
+  mentionDistribution : string [0..1]
+  codePostal : Coding [0..1]
+  localite : string [0..1]
+  COGCommune : Coding [0..1]
+  internationalDivisionTerritoriale : string [0..1]
+  internationalPays : string [0..1]
+  type : Coding [0..*]
+  ligneUne : string [0..1]
+  ligneDeux : string [0..1]
+  ligneTrois : string [0..1]
+  ligneQuatre : string [0..1]
+  ligneCinq : string [0..1]
+  ligneSix : string [0..1]
+  ligneSept : string [0..1]
+}
+
+Class Telecommunication {
+  canal : Coding [0..1]
+  adresseTelecom : string [0..1]
+  typeMessagerie : Coding [0..1]
+  utilisation : string [0..1]
+  niveauConfidentialite : Coding [0..1]
+}
+
+Class Horaire {
+  idPlageHoraire : Identifier [0..1]
+  typePlageHoraire : Coding [0..1]
+  ouvertureFermeture : boolean [0..1]
+  jourSemaine : integer [0..1]
+  heureDebut : time [0..1]
+  heureFin : time [0..1]
+  frequencePlageHoraire : Coding [0..1]
+  debutDateEffective : date [0..1]
+  finDateEffective : date [0..1]
+  dateDeclarationPlageHoraire : date [0..1]
+  commentaire : string [0..*]
+}
+
+Class Contact {
+  IdContact : Identifier [0..1]
+  nom : string [0..1]
+  fonction : string [0..1]
+  fonctionContact : Coding [0..1]
+  natureContact : Coding [0..1]
+  description : string [0..1]
+  type : Coding [0..1]
+  role : Coding [0..1]
+  relation : Coding [0..1]
+  dateDebut : dateTime [0..1]
+  dateFin : dateTime [0..1]
+  niveauConfidentialite : Coding [0..1]
+}
+
+Class Lieu {
+  identifiant : Identifier [0..*]
+  nom : string [0..1]
+  description : string [0..1]
+  typeLieu : Coding [0..1]
+  fonctionLieu : Coding [0..1]
+  statut : Coding [0..1]
+  accessibiliteLieu : Coding [0..1]
+  communeCOG : Coding [0..1]
+}
+
+Class DivisionTerritoriale {
+  type : Coding [0..1]
+  code : Coding [0..1]
+}
+
+Class Patientele {
+  ageMin : Quantity [0..1]
+  ageMax : Quantity [0..1]
+  classeAge : Coding [0..*]
+  publicPrisEnCharge : Coding [0..*]
+}
+
+Class LangueParlee {
+  langueParlee : Coding [0..1]
+  dateFin : date [0..1]
+}
+
+Class CoordonneeGeographique {
+  systemeGeodesique : Identifier [0..1]
+  latitude : Quantity [0..1]
+  directionLatitude : Coding [0..1]
+  longitude : Quantity [0..1]
+  directionLongitude : Coding [0..1]
+  systemeAltimetrique : Identifier [0..1]
+  altitude : Quantity [0..1]
+  typePrecision : Coding [0..1]
+  precision : integer [0..1]
+  coordonneeFiable : boolean [0..1]
+}
+
+BoiteLettreMSS --> Telecommunication : 0..1
+BoiteLettreMSS --> Telecommunication : 0..1
+PersonnePhysique --> LangueParlee : 0..*
+Contact --> PersonnePhysique : 0..1
+Contact --> Adresse : 0..1
+Contact --> Lieu : 0..*
+Contact --> Telecommunication : 0..*
+Lieu --> Adresse : 0..1
+Lieu --> CoordonneeGeographique : 0..1
+Lieu --> Telecommunication : 0..*
 
 @enduml

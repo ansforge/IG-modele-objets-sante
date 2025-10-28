@@ -1,12 +1,81 @@
 @startuml
 
-Class ActiviteSoinAutorisee
-Class AutreActiviteSoumiseAutorisation
-Class ActiviteSoumiseReconnaissance
-Class ActiviteSociale
-Class ActiviteEnseignement
-Class EquipementMaterielLourd
-Class CapaciteActiviteExercee
+Class ActiviteSoinAutorisee {
+  numeroAutorisationARHGOS : Identifier [0..1]
+  dateDecision : date [0..1]
+  activite : Coding [0..1]
+  modalite : Coding [0..1]
+  forme : Coding [0..1]
+  datePremiereMEO : date [0..1]
+  dateFin : date [0..1]
+  suppressionAutorisation : boolean [0..1]
+  suppressionImplantation : boolean [0..1]
+}
+
+Class AutreActiviteSoumiseAutorisation {
+  numeroAutorisationARHGOS : Identifier [0..1]
+  dateDecision : date [0..1]
+  activite : Coding [0..1]
+  modalite : Coding [0..1]
+  forme : Coding [0..1]
+  datePremiereMEO : date [0..1]
+  dateFin : date [0..1]
+}
+
+Class ActiviteSoumiseReconnaissance {
+  numeroRCARHGOS : Identifier [0..1]
+  activite : Coding [0..1]
+  modalite : Coding [0..1]
+  forme : Coding [0..1]
+  numeroContratCPOM : Identifier [0..1]
+  dateEffetCPOM : date [0..1]
+  dateFinCPOM : date [0..1]
+  dateReconnaissance : date [0..1]
+  indicateurReconnaissanceRegionale : boolean [0..1]
+}
+
+Class ActiviteSociale {
+  dateAutorisation : date [0..1]
+  dateMajAutorisation : date [0..1]
+  dateDerniereInstallation : date [0..1]
+  agregatDisciplineEquipementSocialeNiv1 : Coding [0..1]
+  agregatDisciplineEquipementSocialeNiv2 : Coding [0..1]
+  agregatDisciplineEquipementSocialeNiv3 : Coding [0..1]
+  disciplineEquipementSociale : Coding [0..1]
+  modeFonctionnement : Coding [0..1]
+  agregatClienteleNiv2 : Coding [0..1]
+  agregatClienteleNiv3 : Coding [0..1]
+  clientele : Coding [0..1]
+  suppressionAutorisation : boolean [0..1]
+  suppressionInstallation : boolean [0..1]
+  sourceInformationInstallation : Coding [0..1]
+}
+
+Class ActiviteEnseignement {
+  agregatDisciplineEnseignementNiv1 : Coding [0..1]
+  agregatDisciplineEnseignementNiv2 : Coding [0..1]
+  agregatDisciplineEnseignementNiv3 : Coding [0..1]
+  disciplineEnseignement : Coding [0..1]
+  modeFonctionnement : Coding [0..1]
+  dateAutorisation : date [0..1]
+  suppressionAutorisation : boolean [0..1]
+}
+
+Class EquipementMaterielLourd {
+  numeroAutorisationARHGOS : Identifier [0..1]
+  equipementMaterielLourd : Coding [0..1]
+  dateDecision : date [0..1]
+  datePremiereMEO : date [0..1]
+  dateFin : date [0..1]
+  suppressionAutorisation : boolean [0..1]
+  marque : string [0..1]
+  numeroSerie : string [0..1]
+}
+
+Class CapaciteActiviteExercee {
+  habilitationAideSociale : Coding [0..1]
+  modeFinacement : Coding [0..1]
+}
 
 
 @enduml

@@ -1,0 +1,24 @@
+@startuml
+
+Class DispositifMedical {
+  identifiantLocalDM : Identifier [0..*]
+  classeRisque : Coding [0..1]
+  reference : Identifier [0..1]
+  modele : string [0..1]
+  nomCommercial : string [0..1]
+  codeEMDN : Coding [0..1]
+  usageUnique : boolean [0..1]
+  nombreReutilisation : integer [0..1]
+  sterile : boolean [0..1]
+  sterilisationAvantUtilisation : boolean [0..1]
+  contientLatex : boolean [0..1]
+  substanceCMR1A1B : boolean [0..1]
+  implantable : boolean [0..1]
+  actif : boolean [0..1]
+  codeLPP : boolean [0..1]
+  irmCompatible : Coding [0..1]
+  SupportIUD : Base [0..*]
+}
+
+
+@enduml

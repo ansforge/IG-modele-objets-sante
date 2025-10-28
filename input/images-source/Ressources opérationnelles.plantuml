@@ -1,0 +1,19 @@
+@startuml
+
+Class LieuRealisationOffre {
+  idExterneSynchro : Identifier [0..1]
+  nomExterneSynchro : string [0..1]
+}
+
+Class EquipementSpecifique {
+  typeEquipement : Coding [0..1]
+  nbEquipementEnService : integer [0..1]
+  LimiteCaracteristiqueEquipement : Base [0..*]
+}
+
+Class CapacitePriseCharge {
+  affectationTemporaire : Coding [0..1]
+}
+
+
+@enduml

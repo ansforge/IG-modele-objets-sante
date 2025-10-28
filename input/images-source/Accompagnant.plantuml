@@ -1,0 +1,16 @@
+@startuml
+
+Class Parent {
+  autoriteParentale : boolean [0..1]
+}
+
+Class AidantDemarche {
+  typeAidantDemarche : Coding [0..1]
+}
+
+Class MesureProtection {
+  typeMesureProtection : Coding [0..1]
+}
+
+
+@enduml
