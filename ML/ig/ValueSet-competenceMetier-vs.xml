@@ -3,13 +3,13 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="competenceMetier-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs competenceMetier-vs</b></p><a name="competenceMetier-vs"> </a><a name="hccompetenceMetier-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS</code></a><span title="Version is not explicitly stated, which means it is fixed to 20241213120000, the version found through the package references"> version &#x1F4E6;20241213120000</span></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html"><code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier</code></a><span title="Version is not explicitly stated, which means it is fixed to 20250625120000, the version found through the package references"> version &#x1F4E6;20250625120000</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs competenceMetier-vs</b></p><a name="competenceMetier-vs"> </a><a name="hccompetenceMetier-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html"><code>https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier</code></a><span title="Version is not explicitly stated, which means it is fixed to 20250625120000, the version found through the package references"> version &#x1F4E6;20250625120000</span></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS</code></a><span title="Version is not explicitly stated, which means it is fixed to 20241213120000, the version found through the package references"> version &#x1F4E6;20241213120000</span></li></ul></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs"/>
   <version value="0.1.0"/>
-  <name value="CompetencemetiereVs"/>
+  <name value="CompetencemetierVs"/>
   <status value="draft"/>
-  <date value="2025-10-29T10:18:40+00:00"/>
+  <date value="2025-10-29T11:46:56+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -27,10 +27,10 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"/>
+      <system value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"/>
     </include>
     <include>
-      <system value="https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"/>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"/>
     </include>
   </compose>
 </ValueSet>

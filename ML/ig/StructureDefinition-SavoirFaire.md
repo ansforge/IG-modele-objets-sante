@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SavoirFaire.csv), [E
   "name" : "SavoirFaire",
   "title" : "SavoirFaire",
   "status" : "draft",
-  "date" : "2025-10-29T10:18:40+00:00",
+  "date" : "2025-10-29T11:46:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -124,10 +124,10 @@ Other representations of profile: [CSV](StructureDefinition-SavoirFaire.csv), [E
         ]
       },
       {
-        "id" : "SavoirFaire.exerciceProfessionnel",
-        "path" : "SavoirFaire.exerciceProfessionnel",
-        "short" : "Lien vers la classe ExerciceProfessionnel.",
-        "definition" : "Lien vers la classe ExerciceProfessionnel.",
+        "id" : "SavoirFaire.ExerciceProfessionnel",
+        "path" : "SavoirFaire.ExerciceProfessionnel",
+        "short" : "Lien vers la classe ExerciceProfessionnel",
+        "definition" : "Lien vers la classe ExerciceProfessionnel",
         "min" : 1,
         "max" : "1",
         "type" : [

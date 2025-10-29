@@ -109,7 +109,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [CodeVs](ValueSet-code-vs.md) |
 | [CompetenceVs](ValueSet-competence-vs.md) |
 | [CompetenceexclusiveVs](ValueSet-competenceExclusive-vs.md) |
-| [CompetencemetiereVs](ValueSet-competenceMetier-vs.md) |
+| [CompetencemetierVs](ValueSet-competenceMetier-vs.md) |
 | [DescnonqualifiantVs](ValueSet-DESCNonQualifiant-vs.md) |
 | [DroitexercicecomplementaireVs](ValueSet-droitExerciceComplementaire-vs.md) |
 | [FamilleactiviteoperationnelleVs](ValueSet-familleActiviteOperationnelle-vs.md) |

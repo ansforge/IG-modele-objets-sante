@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EntiteGeographique.c
   "name" : "EntiteGeographique",
   "title" : "EntiteGeographique",
   "status" : "draft",
-  "date" : "2025-10-29T10:18:40+00:00",
+  "date" : "2025-10-29T11:46:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -761,10 +761,10 @@ Other representations of profile: [CSV](StructureDefinition-EntiteGeographique.c
         ]
       },
       {
-        "id" : "EntiteGeographique.entiteJuridique",
-        "path" : "EntiteGeographique.entiteJuridique",
-        "short" : "Lien vers la classe EntiteJuridique.",
-        "definition" : "Lien vers la classe EntiteJuridique.",
+        "id" : "EntiteGeographique.EntiteJuridique",
+        "path" : "EntiteGeographique.EntiteJuridique",
+        "short" : "Lien vers la classe EntiteJuridique",
+        "definition" : "Lien vers la classe EntiteJuridique",
         "min" : 1,
         "max" : "1",
         "type" : [

@@ -1,15 +1,15 @@
-# CompetencemetiereVs - Modèle des Objets de Santé (MOS) v0.1.0
+# CompetencemetierVs - Modèle des Objets de Santé (MOS) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **CompetencemetiereVs**
+* **CompetencemetierVs**
 
-## ValueSet: CompetencemetiereVs 
+## ValueSet: CompetencemetierVs 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:CompetencemetiereVs |
+| Draft as of 2025-10-29 | *Computable Name*:CompetencemetierVs |
 
  **References** 
 
@@ -19,8 +19,8 @@
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)version 📦20241213120000
 * Inclut tous les codes définis dans [`https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html)version 📦20250625120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)version 📦20241213120000
 
  
 
@@ -51,9 +51,9 @@ Ce jeu de valeur (ValueSet) contient 326 concepts
   "id" : "competenceMetier-vs",
   "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs",
   "version" : "0.1.0",
-  "name" : "CompetencemetiereVs",
+  "name" : "CompetencemetierVs",
   "status" : "draft",
-  "date" : "2025-10-29T10:18:40+00:00",
+  "date" : "2025-10-29T11:46:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -80,10 +80,10 @@ Ce jeu de valeur (ValueSet) contient 326 concepts
   "compose" : {
     "include" : [
       {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"
       },
       {
-        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"
+        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
       }
     ]
   }

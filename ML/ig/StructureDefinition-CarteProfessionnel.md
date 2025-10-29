@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CarteProfessionnel.c
   "name" : "CarteProfessionnel",
   "title" : "CarteProfessionnel",
   "status" : "draft",
-  "date" : "2025-10-29T10:18:40+00:00",
+  "date" : "2025-10-29T11:46:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -150,10 +150,10 @@ Other representations of profile: [CSV](StructureDefinition-CarteProfessionnel.c
         ]
       },
       {
-        "id" : "CarteProfessionnel.certificat",
-        "path" : "CarteProfessionnel.certificat",
-        "short" : "Lien vers la classe Certificat.",
-        "definition" : "Lien vers la classe Certificat.",
+        "id" : "CarteProfessionnel.Certificat",
+        "path" : "CarteProfessionnel.Certificat",
+        "short" : "Lien vers la classe Certificat",
+        "definition" : "Lien vers la classe Certificat",
         "min" : 1,
         "max" : "*",
         "type" : [
