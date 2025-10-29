@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Emploi.csv), [Excel]
   "name" : "Emploi",
   "title" : "Emploi",
   "status" : "draft",
-  "date" : "2025-10-29T11:46:56+00:00",
+  "date" : "2025-10-29T12:55:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

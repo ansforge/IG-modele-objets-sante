@@ -904,6 +904,7 @@ package IG #DDDDDD{
              SituationExercice.adresseSE => [0..*]
              SituationExercice.boiteLettresMSS => [0..*]
              SituationExercice.ExerciceProfessionnel => [1..1]
+             SituationExercice.EntiteGeographique => [0..1]
         } 
 
         class SituationOperationnelle{
@@ -918,6 +919,7 @@ package IG #DDDDDD{
              SituationOperationnelle.carteVitaleAcceptee => [0..1]
              SituationOperationnelle.telecommunication => [0..1]
              SituationOperationnelle.ExerciceProfessionnel => [1..1]
+             SituationOperationnelle.OffreOperationnelle => [1..1]
         } 
 
         class Specialite{

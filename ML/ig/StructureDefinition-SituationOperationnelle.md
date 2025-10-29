@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SituationOperationne
   "name" : "SituationOperationnelle",
   "title" : "SituationOperationnelle",
   "status" : "draft",
-  "date" : "2025-10-29T11:46:56+00:00",
+  "date" : "2025-10-29T12:55:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -206,6 +206,19 @@ Other representations of profile: [CSV](StructureDefinition-SituationOperationne
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel"
+          }
+        ]
+      },
+      {
+        "id" : "SituationOperationnelle.OffreOperationnelle",
+        "path" : "SituationOperationnelle.OffreOperationnelle",
+        "short" : "Lien vers la classe OffreOperationnelle",
+        "definition" : "Lien vers la classe OffreOperationnelle",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle"
           }
         ]
       }

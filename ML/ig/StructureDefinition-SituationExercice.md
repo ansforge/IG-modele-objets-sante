@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SituationExercice.cs
   "name" : "SituationExercice",
   "title" : "SituationExercice",
   "status" : "draft",
-  "date" : "2025-10-29T11:46:56+00:00",
+  "date" : "2025-10-29T12:55:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -338,6 +338,19 @@ Other representations of profile: [CSV](StructureDefinition-SituationExercice.cs
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel"
+          }
+        ]
+      },
+      {
+        "id" : "SituationExercice.EntiteGeographique",
+        "path" : "SituationExercice.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
           }
         ]
       }

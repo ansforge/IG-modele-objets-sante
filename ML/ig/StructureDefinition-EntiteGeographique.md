@@ -16,7 +16,7 @@ L’Entité Géographique (EG) correspond à la notion d’établissement : ** P
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [SituationExercice](StructureDefinition-SituationExercice.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/EntiteGeographique)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EntiteGeographique.c
   "name" : "EntiteGeographique",
   "title" : "EntiteGeographique",
   "status" : "draft",
-  "date" : "2025-10-29T11:46:56+00:00",
+  "date" : "2025-10-29T12:55:39+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
