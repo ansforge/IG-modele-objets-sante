@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CompetenceExclusive | *Version*:0.1.0 |
-| Draft as of 2025-10-28 | *Computable Name*:CompetenceExclusive |
+| Draft as of 2025-10-29 | *Computable Name*:CompetenceExclusive |
 
  
 La compétence exclusive est une compétence exercée à titre exclusif. Un professionnel ne peut exercer à la fois une compétence exclusive et une spécialité.Dans le cadre du modèle, une compétence exclusive est un type de savoir-faire. La classe CompetenceExclusive est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CompetenceExclusive.
   "name" : "CompetenceExclusive",
   "title" : "CompetenceExclusive",
   "status" : "draft",
-  "date" : "2025-10-28T15:15:51+00:00",
+  "date" : "2025-10-29T10:18:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

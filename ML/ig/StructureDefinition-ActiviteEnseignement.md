@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteEnseignement | *Version*:0.1.0 |
-| Draft as of 2025-10-28 | *Computable Name*:ActiviteEnseignement |
+| Draft as of 2025-10-29 | *Computable Name*:ActiviteEnseignement |
 
  
 Les activités d’enseignement aux professions sanitaires et sociales sont enregistrées dans FINESS et rattachées aux établissements de formation (EG). Le périmètre comprend les formations sanitaires et sociales préparant à un diplôme d’état délivré par l’administration sanitaire et sociale. Sont exclues les formations aux professions médicales préparées en université, hormis les formations et écoles de sages-femmes.Ces formations sont soumises à un arrêté d’agrément de la Région. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ActiviteEnseignement
   "name" : "ActiviteEnseignement",
   "title" : "ActiviteEnseignement",
   "status" : "draft",
-  "date" : "2025-10-28T15:15:51+00:00",
+  "date" : "2025-10-29T10:18:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

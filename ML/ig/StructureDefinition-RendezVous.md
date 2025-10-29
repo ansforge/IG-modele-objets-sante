@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous | *Version*:0.1.0 |
-| Draft as of 2025-10-28 | *Computable Name*:RendezVous |
+| Draft as of 2025-10-29 | *Computable Name*:RendezVous |
 
  
 Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RendezVous.csv), [Ex
   "name" : "RendezVous",
   "title" : "RendezVous",
   "status" : "draft",
-  "date" : "2025-10-28T15:15:51+00:00",
+  "date" : "2025-10-29T10:18:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

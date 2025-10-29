@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoumiseReconnaissance | *Version*:0.1.0 |
-| Draft as of 2025-10-28 | *Computable Name*:ActiviteSoumiseReconnaissance |
+| Draft as of 2025-10-29 | *Computable Name*:ActiviteSoumiseReconnaissance |
 
  
 On distingue plusieurs types d’activités sanitaires des établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «activités soumises à reconnaissance contractuelle» (acronyme communément utilisé : ASR).Une ASR est une activité non soumise à autorisation du DG ARS mais soumise à reconnaissance contractuelle dans le cadre et la durée du CPOM (contrat pluriannuel d’objectif et de moyens).La nomenclature est articulée en trois niveaux systématiquement renseignés : ** Activité reconnue contractuellement communément appelée reconnaissance.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe, les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des activités soumises à reconnaissance contractuelle.Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS. Dans FINESS, les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description.Une reconnaissance contractuelle est nécessairement rattachée à un contrat CPOM. Au sens ARHGOS, un contrat CPOM correspond à un couple unique entité juridique (EJ)/établissement (EG).A noter qu’initialement il existait une distinction entre les reconnaissances dites nationales (issues du guide méthodologique CPOM de la DGOS) et les reconnaissances dites régionales. Depuis 2019, toutes les reconnaissances contractuelles sont de type national. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ActiviteSoumiseRecon
   "name" : "ActiviteSoumiseReconnaissance",
   "title" : "ActiviteSoumiseReconnaissance",
   "status" : "draft",
-  "date" : "2025-10-28T15:15:51+00:00",
+  "date" : "2025-10-29T10:18:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

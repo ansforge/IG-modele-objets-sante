@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche | *Version*:0.1.0 |
-| Draft as of 2025-10-28 | *Computable Name*:AidantDemarche |
+| Draft as of 2025-10-29 | *Computable Name*:AidantDemarche |
 
  
 Personne physique ou morale aidant l’individu dans ses démarches. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-AidantDemarche.csv),
   "name" : "AidantDemarche",
   "title" : "AidantDemarche",
   "status" : "draft",
-  "date" : "2025-10-28T15:15:51+00:00",
+  "date" : "2025-10-29T10:18:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
