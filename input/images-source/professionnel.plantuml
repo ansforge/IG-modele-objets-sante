@@ -71,11 +71,11 @@ Class NiveauFormation #LightBlue {
 }
 
 ExerciceProfessionnel --> Professionnel : 1..1
-ExerciceProfessionnel --> InscriptionOrdre : 0..*
-ExerciceProfessionnel --> AttributionParticuliere : 0..1
-ExerciceProfessionnel --> NiveauFormation : 0..*
 SavoirFaire --> ExerciceProfessionnel : 1..1
 SituationExercice --> ExerciceProfessionnel : 1..1
 SituationOperationnelle --> ExerciceProfessionnel : 1..1
+ExerciceProfessionnel --> InscriptionOrdre : 0..*
+ExerciceProfessionnel --> AttributionParticuliere : 0..1
+ExerciceProfessionnel --> NiveauFormation : 0..*
 
 @enduml

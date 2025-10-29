@@ -1,0 +1,87 @@
+@startuml
+
+package "Professionnel" {
+  Class ExerciceProfessionnel
+  Class Professionnel
+  Class SavoirFaire
+  Class SituationExercice
+  Class SituationOperationnelle
+}
+
+package "Dispositif d'authentification" {
+  Class CarteProfessionnel
+  Class Certificat
+}
+
+package "Structure" {
+  Class EntiteJuridique
+  Class EntiteGeographique
+}
+
+package "Autorisation" {
+  Class ActiviteSoinAutorisee
+  Class AutreActiviteSoumiseAutorisation
+  Class ActiviteSoumiseReconnaissance
+  Class ActiviteSociale
+  Class ActiviteEnseignement
+  Class EquipementMaterielLourd
+  Class CapaciteActiviteExercee
+}
+
+package "Offre opérationnelle" {
+  Class OffreOperationnelle
+}
+
+package "Ressources opérationnelles" {
+  Class LieuRealisationOffre
+  Class EquipementSpecifique
+  Class CapacitePriseCharge
+}
+
+package "Organisation opérationnelle" {
+}
+
+package "Accord" {
+  Class AutorisationExercice
+  Class Convention
+  Class LicenceExploitation
+}
+
+package "Personne prise en charge" {
+  Class PersonnePriseCharge
+  Class VieQuotidienne
+  Class VieProfessionnelle
+  Class Emploi
+  Class ArretTravail
+  Class VieScolaire
+  Class Observation
+  Class ResultatObservation
+  Class PlageReference
+}
+
+package "Accompagnant" {
+  Class Parent
+  Class AidantDemarche
+  Class MesureProtection
+}
+
+package "Dossier" {
+  Class Demande
+  Class Decision
+  Class DossierPersonnePriseCharge
+  Class Document
+  Class NoteLiaison
+}
+
+package "Agenda" {
+  Class Agenda
+  Class Creneau
+  Class RendezVous
+  Class PlageDisponibilite
+}
+
+package "Dispositif médical" {
+  Class DispositifMedical
+}
+
+@enduml
