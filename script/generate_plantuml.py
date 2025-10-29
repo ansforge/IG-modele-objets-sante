@@ -4,6 +4,15 @@ import codecs
 from fhir.resources.R4B.structuredefinition import StructureDefinition
 
 def get_elements(sd, sections):
+    """
+    Récupère les éléments d'une structure definition nécessaires pour générer le diagramme.
+    
+    Args:
+        sd (dict) : Structure definition au format json.
+        sections (dict) : Dictionnaire des classes par section (utile pour les références).
+    Returns:
+        list[str]: Liste de sous-chaînes correspondant à chaque segment trouvé.
+    """
     elements = []
     refs = []
     backbones = {}
@@ -51,6 +60,13 @@ def get_elements(sd, sections):
     return {"elements": elements, "backbones": backbones, "references": refs}
 
 def generate_plantuml_parts(path, sections):
+    """
+    Génère les diagrammes par parties au format plantuml.
+    
+    Args:
+        path (str) : Chemin de la racine de l'IG.
+        sections (dict) : Dictionnaire des classes par section.
+    """
     data = {}
     for section, files in sections.items():
         if section not in ["Classes communes", "Types de données"]:
@@ -103,6 +119,14 @@ def generate_plantuml_parts(path, sections):
                 f.write("\n@enduml")
 
 def generate_plantuml_global(path, sections, conf):
+    """
+    Génère le diagramme global au format plantuml.
+    
+    Args:
+        path (str) : Chemin de la racine de l'IG.
+        sections (dict) : Dictionnaire des classes par section.
+        conf (dict) : Paramètres de configuration utilisés pour la conversion (pour identifier les héritages).
+    """
     inheritances = [val for sub_list in conf["inheritance"].values() for val in sub_list]
     with open(os.path.join(path, "input", "images-source", "global.plantuml"), 'w', encoding="utf-8") as f:
         f.write("@startuml\n")

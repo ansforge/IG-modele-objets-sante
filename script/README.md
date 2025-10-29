@@ -17,6 +17,7 @@ La conversion a été réalisée uniquement sur la partie Professionnel, à part
     * types.class : Types de données du MOS qui deviennent des classes dans le modèle logique FHIR. 
     * backbones : Classes pour lesquelles certains éléments deviennent des backbones.
     * inheritance : Classes ayant des classes filles.
+    * references : References entre classes.
 * Installer [goFSH](https://github.com/FHIR/GoFSH), Python (version 3.10.11) et les librairies Python nécessaires indiquées dans le fichier [requirements.txt](./requirements.txt).
 * Installer Python 3.10 
 
