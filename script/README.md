@@ -37,28 +37,6 @@ Environnement Python (pour Windows) :
 * L'attribut `metadonnee` est ignoré.
 * Les tables d'association sont ignorées.
 * Les élements FHIR `short` et `definition`sont tous deux remplis avec la définition issue du MOS qui peuvent être assez longue.
-* Les liens entre les classes ont été ajoutés à la main pour la partie Professionnel, voici les lignes à ajouter dans les différents fichiers fsh :
-    * VieQuotidienne.fsh : 
-    `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
-    * VieProfessionnelle.fsh : 
-    `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
-    * VieSociale.fsh : 
-    `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
-    * ArretTravail.fsh : 
-    `* vieProfessionnelle 1..1 Reference(VieProfessionnelle) "Lien vers la classe VieProfessionnelle."`
-    * Emploi.fsh : 
-    `* vieProfessionnelle 1..1 Reference(VieProfessionnelle) "Lien vers la classe VieProfessionnelle."`
-    * Observation.fsh : 
-    `* personnePrisecharge 1..1 Reference(PersonnePrisecharge) "Lien vers la classe PersonnePrisecharge."`
-* La tre-r394-competence-metier a été ajoutée à la main car elle est au nouveau format, voici les lignes à ajouter dans les différents fichiers fsh : 
-    * CompetencemetierVs.fsh (à créer) : 
-    ```
-    ValueSet: CompetencemetierVs
-    Id: competenceMetier-vs
-    * ^status = #draft
-    * include codes from system $TRE-R01-EnsembleSavoirFaire-CISIS
-    * include codes from system $tre-r394-competence-metier
-    ```
 
 ## Génération de diagrammes
 

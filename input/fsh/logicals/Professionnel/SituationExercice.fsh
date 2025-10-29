@@ -32,3 +32,4 @@ Description: "Caractéristiques de l'exercice d’un professionnel pendant une p
 * adresseSE 0..* Adresse "Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice." "Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice."
 * boiteLettresMSS 0..* BoiteLettreMSS "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice." "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice."
 * ExerciceProfessionnel 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel "Lien vers la classe ExerciceProfessionnel" "Lien vers la classe ExerciceProfessionnel"
+* EntiteGeographique 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"

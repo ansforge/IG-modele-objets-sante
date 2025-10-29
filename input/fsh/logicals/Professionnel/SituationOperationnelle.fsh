@@ -1,5 +1,4 @@
 Logical: SituationOperationnelle
-Parent: $Base
 Id: SituationOperationnelle
 Title: "SituationOperationnelle"
 Description: "Caractérise les conditions d'exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle."
@@ -18,3 +17,4 @@ Description: "Caractérise les conditions d'exercice du professionnel dans la mi
 * carteVitaleAcceptee 0..1 boolean "L’indicateur Carte Vitale acceptée précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas. 0 : pas de prise en charge de la carte vitale1 : prise en charge de la carte vitale." "L’indicateur Carte Vitale acceptée précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas. 0 : pas de prise en charge de la carte vitale1 : prise en charge de la carte vitale."
 * telecommunication 0..1 Telecommunication "Adresse de télécommunication du professionnel dans le cadre de l'offre décrite." "Adresse de télécommunication du professionnel dans le cadre de l'offre décrite."
 * ExerciceProfessionnel 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel "Lien vers la classe ExerciceProfessionnel" "Lien vers la classe ExerciceProfessionnel"
+* OffreOperationnelle 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle "Lien vers la classe OffreOperationnelle" "Lien vers la classe OffreOperationnelle"

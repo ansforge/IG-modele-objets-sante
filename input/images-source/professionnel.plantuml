@@ -70,10 +70,20 @@ Class NiveauFormation #LightBlue {
   dateFin : date [0..1]
 }
 
+
+package "Structure" {
+  Class EntiteGeographique
+}
+
+package "Offre opérationnelle" {
+  Class OffreOperationnelle
+}
 ExerciceProfessionnel --> Professionnel : 1..1
 SavoirFaire --> ExerciceProfessionnel : 1..1
 SituationExercice --> ExerciceProfessionnel : 1..1
 SituationOperationnelle --> ExerciceProfessionnel : 1..1
+SituationExercice --> EntiteGeographique : 0..1
+SituationOperationnelle --> OffreOperationnelle : 1..1
 ExerciceProfessionnel --> InscriptionOrdre : 0..*
 ExerciceProfessionnel --> AttributionParticuliere : 0..1
 ExerciceProfessionnel --> NiveauFormation : 0..*
