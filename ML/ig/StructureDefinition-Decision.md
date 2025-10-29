@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Decision.csv), [Exce
   "name" : "Decision",
   "title" : "Decision",
   "status" : "draft",
-  "date" : "2025-10-29T12:55:39+00:00",
+  "date" : "2025-10-29T15:03:41+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
