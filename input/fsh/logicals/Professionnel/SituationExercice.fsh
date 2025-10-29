@@ -1,5 +1,4 @@
 Logical: SituationExercice
-Parent: $Base
 Id: SituationExercice
 Title: "SituationExercice"
 Description: "Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."
@@ -32,4 +31,4 @@ Description: "Caractéristiques de l'exercice d’un professionnel pendant une p
 * telecommunication 0..* Telecommunication "Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice." "Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice."
 * adresseSE 0..* Adresse "Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice." "Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice."
 * boiteLettresMSS 0..* BoiteLettreMSS "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice." "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice."
-* exerciceProfessionnel 1..1 ExerciceProfessionnel "Lien vers la classe ExerciceProfessionnel." 
+* ExerciceProfessionnel 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel "Lien vers la classe ExerciceProfessionnel" "Lien vers la classe ExerciceProfessionnel"

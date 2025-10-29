@@ -14,10 +14,10 @@ def split_nomenclatures(text):
     Returns:
         list[str]: Liste de sous-chaînes correspondant à chaque segment trouvé.
     """
-    splits = re.findall(r'(?:TRE_|ASS_).*?(?=TRE_|ASS_|$)', text)
+    splits = re.findall(r'(?:TRE_|ASS_|tre-).*?(?=TRE_|ASS_|tre-|$)', text)
     return splits
 
-def get_valueset(termino, attribute, url, url_termino, output_path):
+def get_valueset(termino, attribute, url, url_termino, url_termino_new, output_path):
     """
     Retourne l'url du jeu de valeur associé à un attribut et le crée si nécessaire (cas plusieurs nomenclatures).
 
@@ -26,17 +26,24 @@ def get_valueset(termino, attribute, url, url_termino, output_path):
         attribute (str): Nom de l'attribut.
         url (str): URL canonique de l'IG.
         url_termino (str): URL canonique des nomenclatures.
+        url_termino_new (str): URL canonique des nouvelles nomenclatures.
         output_path (str): Chemin de destination pour la création des fichiers.
         str: URL du jeu de valeur associé à l'attribut.
     """
-    tre = [t.split(' ')[0] for t in termino if t.startswith("TRE_")]
+    tre = [t.split(' ')[0] for t in termino if t.startswith(("TRE_", "tre-"))]
     if len(tre) == 1:
-        url_vs = url_termino + tre[0] + "/FHIR/" + tre[0].replace('_', '-') + "?vs"
+        if tre[0].startswith("tre-"):
+            url_vs = url_termino_new + tre[0] + "?vs"
+        else: 
+            url_vs = url_termino + tre[0] + "/FHIR/" + tre[0].replace('_', '-') + "?vs"
     else:
         name = attribute
         include = []
         for t in tre:
-            include.append({"system": url_termino + t + "/FHIR/" + t.replace("_", "-")})
+            if t.startswith("tre-"):
+                include.append({"system": url_termino_new + t})
+            else:
+                include.append({"system": url_termino + t + "/FHIR/" + t.replace("_", "-")})
         vs = {
             "resourceType": "ValueSet",
             "id": name + "-vs",
@@ -51,7 +58,7 @@ def get_valueset(termino, attribute, url, url_termino, output_path):
         url_vs = name + "-vs"
     return url_vs
 
-def create_element(row, base, url, url_termino, conf, custom, common, output_path):
+def create_element(row, base, url, url_termino, url_termino_new, conf, custom, common, output_path):
     """
     Retourne l'élément d'une StructureDefinition FHIR au format json.
 
@@ -84,7 +91,7 @@ def create_element(row, base, url, url_termino, conf, custom, common, output_pat
                     if not pd.isnull(row["Nomenclature"]) and len(row["Nomenclature"].strip()) > 0:
                         nomenclatures = split_nomenclatures(row["Nomenclature"])
                         if len(nomenclatures) > 0:
-                            binding = get_valueset(nomenclatures, attribute, url, url_termino, output_path)
+                            binding = get_valueset(nomenclatures, attribute, url, url_termino, url_termino_new, output_path)
                         else:
                             print("Incorrect nomenclature format for attribute " + attribute + " of type " + type + ": " + row["Nomenclature"])
                     else:
@@ -113,7 +120,7 @@ def create_element(row, base, url, url_termino, conf, custom, common, output_pat
                 }
     return (element, custom, common)
 
-def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, sections, output_path):
+def create_sd(name, url, url_termino, url_termino_new, conf, data, inheritance, custom, common, sections, output_path):
     """
     Crée la StructureDefinition FHIR au format json.
 
@@ -170,7 +177,7 @@ def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, s
         backbones = conf["backbones"][name].keys()
     for _, row in group.iterrows():
         if row["Type"].strip() not in backbones:
-            (element, custom, common) = create_element(row, name, url, url_termino, conf, custom, common, output_path)
+            (element, custom, common) = create_element(row, name, url, url_termino, url_termino_new, conf, custom, common, output_path)
             if element is not None:
                 elements.append(element)
     for backbone in backbones:
@@ -189,16 +196,27 @@ def create_sd(name, url, url_termino, conf, data, inheritance, custom, common, s
             "type": [{ "code": "Base" }]
         })
         for _, row in data_backbone.iterrows():
-            (element, custom, common) = create_element(row, name + '.' + backbone, url, url_termino, conf, custom, common, output_path)
+            (element, custom, common) = create_element(row, name + '.' + backbone, url, url_termino, url_termino_new, conf, custom, common, output_path)
             if element is not None:
                 elements.append(element)
+    if name in conf["references"]:
+        for ref, ref_info in conf["references"][name].items():
+            elements.append({
+                "id": name + '.' + ref,
+                "path": name + '.' + ref,
+                "definition": f"Lien vers la classe {ref}",
+                "short": f"Lien vers la classe {ref}",
+                "min": int(ref_info["min"]), 
+                "max": str(ref_info["max"]),
+                "type": [{ "code": f"https://interop.esante.gouv.fr/ig/mos/StructureDefinition/{ref}"}]
+            })
     sd["differential"]["element"] = elements
     with open(output_path + name + ".json", "w", encoding="utf-8") as outfile:
         json.dump(sd, outfile, ensure_ascii=False)
     sections[section].append(name)
     return (custom, common, sections)
 
-def mos2ml(MOS_path, conf_path,  url, url_termino, output_path, parts = None):
+def mos2ml(MOS_path, conf_path,  url, url_termino, url_termino_new, output_path, parts = None):
     """
     Convertit le MOS au format excel (extrait de Modelio) en modèle logique FHIR (fichiers JSON).
 
@@ -230,7 +248,7 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, output_path, parts = None):
                 inheritance = backones_reverse[name]
             else: 
                 inheritance = None
-            (custom, common, sections) = create_sd(name, url, url_termino, conf, data, inheritance, custom, common, sections, output_path)
+            (custom, common, sections) = create_sd(name, url, url_termino, url_termino_new, conf, data, inheritance, custom, common, sections, output_path)
     processed = []
     while len(common) > 0:
         c = common.pop(0)
@@ -241,7 +259,7 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, output_path, parts = None):
             inheritance = backones_reverse [c]
         else: 
             inheritance = None
-        (custom, common, sections) = create_sd(c, url, url_termino, conf, data_c, inheritance, custom, common, sections, output_path)
+        (custom, common, sections) = create_sd(c, url, url_termino, url_termino_new, conf, data_c, inheritance, custom, common, sections, output_path)
         if c in conf["inheritance"]:
             common.extend(conf["inheritance"][c])
         processed.append(c)
@@ -252,10 +270,11 @@ MOS_path = "MOS.xlsx"
 conf_path = "conf.json"
 url = "https://interop.esante.gouv.fr/ig/mos/"
 url_termino = "https://mos.esante.gouv.fr/NOS/"
+url_termino_new = "https://smt.esante.gouv.fr/fhir/CodeSystem/"
 output_path = "./json/"
 parts = ["Professionnel", "Structure", "Dispositif d'authentification", "Autorisation", "Accord", "Dossier", "Agenda", "Offre opérationnelle", "Ressources opérationnelles", "Dispositif médical", "Accompagnant", "Personne prise en charge"]
 
-sections = mos2ml(MOS_path, conf_path, url, url_termino, output_path, parts)
+sections = mos2ml(MOS_path, conf_path, url, url_termino, url_termino_new, output_path, parts)
 with open("sections.json", 'w') as fp:
     json.dump(sections, fp)
 # Le fichier sushi-config.yaml est modifié par goFSH donc il est sauvegardé pour remettre la bonne version ensuite.
