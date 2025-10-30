@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Attestation | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:Attestation |
+| Draft as of 2025-10-30 | *Computable Name*:Attestation |
 
  
 L’attestation est attribuée au terme d’une formation universitaire. Pour les professions médicales et de la pharmacie, les attestations ont été remplacées par les diplômes universitaires (DU).Dans le cadre du modèle, une attestation est un type de diplôme. La classe Attestation est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Attestation.csv), [E
   "name" : "Attestation",
   "title" : "Attestation",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

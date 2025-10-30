@@ -8,3 +8,5 @@
 
 Cette partie présente les différents concepts utilisés pour définir et caractériser une personne prise en charge (personne physique). Cette partie sera complétée au fur et à mesure de l’avancement des projets en relation avec la personne prise en charge.
 
+  
+

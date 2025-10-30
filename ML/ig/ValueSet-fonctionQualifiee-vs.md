@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/fonctionQualifiee-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:FonctionqualifieeVs |
+| Draft as of 2025-10-30 | *Computable Name*:FonctionqualifieeVs |
 
  **References** 
 
@@ -53,7 +53,7 @@ Ce jeu de valeur (ValueSet) contient 330 concepts
   "version" : "0.1.0",
   "name" : "FonctionqualifieeVs",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -2,8 +2,8 @@ MOS : Validation Results
 =========================================
 
 err = 2, warn = 551, info = 2
-IG Publisher Version: 2.0.24
-Generated Wed Oct 29 15:08:08 UTC 2025. FHIR version 4.0.1 for ans.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/mos)
+IG Publisher Version: 2.0.25
+Generated Thu Oct 30 13:12:44 UTC 2025. FHIR version 4.0.1 for ans.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/mos)
  Build Errors : 6 / 30 / 0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fr.mos : 0 / 1 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteEnseignement : 0 / 10 / 1
@@ -146,12 +146,12 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/surspecialiteTransversale-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/typeProfession-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/typeRole-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 224, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
-ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 225, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
-ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 226, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
-ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 232, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
-ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 233, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
-ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 246, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 247, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 254, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 255, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-ans.fr.mos.json ==
@@ -685,8 +685,8 @@ WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet.compose.include[1].system: N
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [34a39349-11d0-4891-8a86-3029115107d9]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
-Information: X-Request-Id: 02117d87-7d54-479a-8e21-1e9614ff3518
+ERROR: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [fab8f2d5-a370-4cdd-8d73-a89032d30e74]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
+Information: X-Request-Id: ca059fef-653d-4760-818d-fb8aaac64832
 == fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs.json ==
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -721,8 +721,8 @@ WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet.compose.include[1].
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [e7c037c3-a2dd-4309-8287-f32f5958cefd]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
-Information: X-Request-Id: cdc2c5c4-ce5a-45f4-b33f-79193a50751e
+ERROR: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [0e0ca99f-709d-42a9-b8f2-dc0bb97c19f6]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
+Information: X-Request-Id: 795adb20-bc75-43e2-815b-5bfff8ec97c0
 == fsh-generated/resources/ValueSet-fonctionQualifiee-vs.json ==
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

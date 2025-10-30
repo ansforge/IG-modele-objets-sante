@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:MOS |
+| Draft as of 2025-10-30 | *Computable Name*:MOS |
 
  **Brief description of this Implementation Guide**
  [Add a brief description of this IG in English] 
@@ -85,7 +85,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -2389,11 +2389,44 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
               "extension" : [
                 {
                   "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "professionnel.html"
+                  "valueUrl" : "accompagnant.html"
                 }
               ],
-              "nameUrl" : "professionnel.html",
-              "title" : "Professionnel",
+              "nameUrl" : "accompagnant.html",
+              "title" : "Accompagnant",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "accord.html"
+                }
+              ],
+              "nameUrl" : "accord.html",
+              "title" : "Accord",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "agenda.html"
+                }
+              ],
+              "nameUrl" : "agenda.html",
+              "title" : "Agenda",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "autorisation.html"
+                }
+              ],
+              "nameUrl" : "autorisation.html",
+              "title" : "Autorisation",
               "generation" : "markdown"
             },
             {
@@ -2411,11 +2444,33 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
               "extension" : [
                 {
                   "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "structure.html"
+                  "valueUrl" : "dispositif-medical.html"
                 }
               ],
-              "nameUrl" : "structure.html",
-              "title" : "Structure",
+              "nameUrl" : "dispositif-medical.html",
+              "title" : "Dispositif médical",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "dossier.html"
+                }
+              ],
+              "nameUrl" : "dossier.html",
+              "title" : "Dossier",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "offre-operationnelle.html"
+                }
+              ],
+              "nameUrl" : "offre-operationnelle.html",
+              "title" : "Offre opérationnelle",
               "generation" : "markdown"
             },
             {
@@ -2433,11 +2488,33 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
               "extension" : [
                 {
                   "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "professionnel.html"
+                }
+              ],
+              "nameUrl" : "professionnel.html",
+              "title" : "Professionnel",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
                   "valueUrl" : "ressops.html"
                 }
               ],
               "nameUrl" : "ressops.html",
               "title" : "Ressources opérationnelles",
+              "generation" : "markdown"
+            },
+            {
+              "extension" : [
+                {
+                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+                  "valueUrl" : "structure.html"
+                }
+              ],
+              "nameUrl" : "structure.html",
+              "title" : "Structure",
               "generation" : "markdown"
             }
           ]

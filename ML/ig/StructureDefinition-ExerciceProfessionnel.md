@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:ExerciceProfessionnel |
+| Draft as of 2025-10-30 | *Computable Name*:ExerciceProfessionnel |
 
  
 Informations décrivant notamment la profession exercée, l’identité d’exercice d’un professionnel et le cadre de son exercice (civil, agent public, etc.).Il peut exister plusieurs exercices professionnels pour une personne à un instant donné. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
   "name" : "ExerciceProfessionnel",
   "title" : "ExerciceProfessionnel",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

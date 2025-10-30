@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-29T15:03:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-30T13:09:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -3714,16 +3714,73 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "professionnel.html"^^xsd:anyURI ;
-               fhir:l fhir:professionnel.html
+               fhir:v "accompagnant.html"^^xsd:anyURI ;
+               fhir:l fhir:accompagnant.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "professionnel.html"^^xsd:anyURI ;
-             fhir:l fhir:professionnel.html
+             fhir:v "accompagnant.html"^^xsd:anyURI ;
+             fhir:l fhir:accompagnant.html
            ] ;
-           fhir:title [ fhir:v "Professionnel" ] ;
+           fhir:title [ fhir:v "Accompagnant" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "accord.html"^^xsd:anyURI ;
+               fhir:l fhir:accord.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "accord.html"^^xsd:anyURI ;
+             fhir:l fhir:accord.html
+           ] ;
+           fhir:title [ fhir:v "Accord" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "agenda.html"^^xsd:anyURI ;
+               fhir:l fhir:agenda.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "agenda.html"^^xsd:anyURI ;
+             fhir:l fhir:agenda.html
+           ] ;
+           fhir:title [ fhir:v "Agenda" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "autorisation.html"^^xsd:anyURI ;
+               fhir:l fhir:autorisation.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "autorisation.html"^^xsd:anyURI ;
+             fhir:l fhir:autorisation.html
+           ] ;
+           fhir:title [ fhir:v "Autorisation" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -3752,16 +3809,54 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "structure.html"^^xsd:anyURI ;
-               fhir:l fhir:structure.html
+               fhir:v "dispositif-medical.html"^^xsd:anyURI ;
+               fhir:l fhir:dispositif-medical.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "structure.html"^^xsd:anyURI ;
-             fhir:l fhir:structure.html
+             fhir:v "dispositif-medical.html"^^xsd:anyURI ;
+             fhir:l fhir:dispositif-medical.html
            ] ;
-           fhir:title [ fhir:v "Structure" ] ;
+           fhir:title [ fhir:v "Dispositif médical" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "dossier.html"^^xsd:anyURI ;
+               fhir:l fhir:dossier.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "dossier.html"^^xsd:anyURI ;
+             fhir:l fhir:dossier.html
+           ] ;
+           fhir:title [ fhir:v "Dossier" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "offre-operationnelle.html"^^xsd:anyURI ;
+               fhir:l fhir:offre-operationnelle.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "offre-operationnelle.html"^^xsd:anyURI ;
+             fhir:l fhir:offre-operationnelle.html
+           ] ;
+           fhir:title [ fhir:v "Offre opérationnelle" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -3790,6 +3885,25 @@
              ] ;
              fhir:value [
                a fhir:Url ;
+               fhir:v "professionnel.html"^^xsd:anyURI ;
+               fhir:l fhir:professionnel.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "professionnel.html"^^xsd:anyURI ;
+             fhir:l fhir:professionnel.html
+           ] ;
+           fhir:title [ fhir:v "Professionnel" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
                fhir:v "ressops.html"^^xsd:anyURI ;
                fhir:l fhir:ressops.html
              ]
@@ -3800,6 +3914,25 @@
              fhir:l fhir:ressops.html
            ] ;
            fhir:title [ fhir:v "Ressources opérationnelles" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "structure.html"^^xsd:anyURI ;
+               fhir:l fhir:structure.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "structure.html"^^xsd:anyURI ;
+             fhir:l fhir:structure.html
+           ] ;
+           fhir:title [ fhir:v "Structure" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] [

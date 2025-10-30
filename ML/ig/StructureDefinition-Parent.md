@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Parent | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:Parent |
+| Draft as of 2025-10-30 | *Computable Name*:Parent |
 
  
 Personne liée par un lien de filiation à un enfant 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Parent.csv), [Excel]
   "name" : "Parent",
   "title" : "Parent",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

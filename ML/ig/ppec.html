@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3.4"}
-    h3,h4,h5,h6{--heading-prefix:"3.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.9"}
+    h3,h4,h5,h6{--heading-prefix:"3.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -99,19 +99,40 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="professionnel.html">Professionnel</a>
+        <a href="accompagnant.html">Accompagnant</a>
+      </li>
+      <li>
+        <a href="accord.html">Accord</a>
+      </li>
+      <li>
+        <a href="agenda.html">Agenda</a>
+      </li>
+      <li>
+        <a href="autorisation.html">Autorisation</a>
       </li>
       <li>
         <a href="dispo-authent.html">Dispositif d&apos;authentification</a>
       </li>
       <li>
-        <a href="structure.html">Structure</a>
+        <a href="dispositif-medical.html">Dispositif médical</a>
+      </li>
+      <li>
+        <a href="dossier.html">Dossier</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre opérationnelle</a>
       </li>
       <li>
         <a href="ppec.html">Personne prise en charge</a>
       </li>
       <li>
+        <a href="professionnel.html">Professionnel</a>
+      </li>
+      <li>
         <a href="ressops.html">Ressources opérationnelles</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
       </li>
     </ul>
   </li>
@@ -156,11 +177,11 @@
 
           <span style="float:right;">
 
-            <a href="structure.html">&lt;prev</a> | 
+            <a href="offre-operationnelle.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="ressops.html">next&gt;</a>
+          | <a href="professionnel.html">next&gt;</a>
 
           </span>
 
@@ -204,6 +225,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Cette partie présente les différents concepts utilisés pour définir et caractériser une personne prise en charge (personne physique).
 Cette partie sera complétée au fur et à mesure de l’avancement des projets en relation avec la personne prise en charge.</p>
 
+<div class="figure" style="width:100%; overflow-x:auto;">
+  <p style="margin: 0; padding: 0;">
+    <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="316px" preserveAspectRatio="none" style="width:791px;height:316px;background:#FFFFFF;" version="1.1" viewBox="0 0 791 316" width="791px" zoomAndPan="magnify"><defs /><g><!--class Demande--><g id="elem_Demande"><rect codeLine="2" fill="#F1F1F1" height="96.8906" id="Demande" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="259" x="7" y="7" /><ellipse cx="98.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M101.2188,28.6406 Q100.6406,28.9375 100,29.0781 Q99.3594,29.2344 98.6563,29.2344 Q96.1563,29.2344 94.8281,27.5938 Q93.5156,25.9375 93.5156,22.8125 Q93.5156,19.6875 94.8281,18.0313 Q96.1563,16.375 98.6563,16.375 Q99.3594,16.375 100,16.5313 Q100.6563,16.6875 101.2188,16.9844 L101.2188,19.7031 Q100.5938,19.125 100,18.8594 Q99.4063,18.5781 98.7813,18.5781 Q97.4375,18.5781 96.75,19.6563 Q96.0625,20.7188 96.0625,22.8125 Q96.0625,24.9063 96.75,25.9844 Q97.4375,27.0469 98.7813,27.0469 Q99.4063,27.0469 100,26.7813 Q100.5938,26.5 101.2188,25.9219 L101.2188,28.6406 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="118.75" y="27.8467">Demande</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="265" y1="39" y2="39" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="247" x="13" y="55.9951">identifiantDemande : Identifier [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="13" y="72.292">dateDemande : date [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="231" x="13" y="88.5889">demandeUrgente : boolean [0..1]</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="265" y1="95.8906" y2="95.8906" /></g><!--class Decision--><g id="elem_Decision"><rect codeLine="8" fill="#F1F1F1" height="80.5938" id="Decision" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="204" x="301.5" y="15" /><ellipse cx="369.25" cy="31" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M372.2188,36.6406 Q371.6406,36.9375 371,37.0781 Q370.3594,37.2344 369.6563,37.2344 Q367.1563,37.2344 365.8281,35.5938 Q364.5156,33.9375 364.5156,30.8125 Q364.5156,27.6875 365.8281,26.0313 Q367.1563,24.375 369.6563,24.375 Q370.3594,24.375 371,24.5313 Q371.6563,24.6875 372.2188,24.9844 L372.2188,27.7031 Q371.5938,27.125 371,26.8594 Q370.4063,26.5781 369.7813,26.5781 Q368.4375,26.5781 367.75,27.6563 Q367.0625,28.7188 367.0625,30.8125 Q367.0625,32.9063 367.75,33.9844 Q368.4375,35.0469 369.7813,35.0469 Q370.4063,35.0469 371,34.7813 Q371.5938,34.5 372.2188,33.9219 L372.2188,36.6406 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="389.75" y="35.8467">Decision</text><line style="stroke:#181818;stroke-width:0.5;" x1="302.5" x2="504.5" y1="47" y2="47" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="307.5" y="63.9951">dateDecision : date [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="307.5" y="80.292">typeDecision : Coding [0..1]</text><line style="stroke:#181818;stroke-width:0.5;" x1="302.5" x2="504.5" y1="87.5938" y2="87.5938" /></g><!--class DossierPersonnePriseCharge--><g id="elem_DossierPersonnePriseCharge"><rect codeLine="13" fill="#F1F1F1" height="64.2969" id="DossierPersonnePriseCharge" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="244" x="540.5" y="23.5" /><ellipse cx="559.1" cy="39.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M562.0688,45.1406 Q561.4906,45.4375 560.85,45.5781 Q560.2094,45.7344 559.5063,45.7344 Q557.0063,45.7344 555.6781,44.0938 Q554.3656,42.4375 554.3656,39.3125 Q554.3656,36.1875 555.6781,34.5313 Q557.0063,32.875 559.5063,32.875 Q560.2094,32.875 560.85,33.0313 Q561.5063,33.1875 562.0688,33.4844 L562.0688,36.2031 Q561.4438,35.625 560.85,35.3594 Q560.2563,35.0781 559.6313,35.0781 Q558.2875,35.0781 557.6,36.1563 Q556.9125,37.2188 556.9125,39.3125 Q556.9125,41.4063 557.6,42.4844 Q558.2875,43.5469 559.6313,43.5469 Q560.2563,43.5469 560.85,43.2813 Q561.4438,43 562.0688,42.4219 L562.0688,45.1406 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="204" x="573.9" y="44.3467">DossierPersonnePriseCharge</text><line style="stroke:#181818;stroke-width:0.5;" x1="541.5" x2="783.5" y1="55.5" y2="55.5" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="546.5" y="72.4951">identifiantDossier : Identifier [0..1]</text><line style="stroke:#181818;stroke-width:0.5;" x1="541.5" x2="783.5" y1="79.7969" y2="79.7969" /></g><!--class Document--><g id="elem_Document"><rect codeLine="17" fill="#F1F1F1" height="64.2969" id="Document" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="217" x="28" y="205" /><ellipse cx="95.75" cy="221" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M98.7188,226.6406 Q98.1406,226.9375 97.5,227.0781 Q96.8594,227.2344 96.1563,227.2344 Q93.6563,227.2344 92.3281,225.5938 Q91.0156,223.9375 91.0156,220.8125 Q91.0156,217.6875 92.3281,216.0313 Q93.6563,214.375 96.1563,214.375 Q96.8594,214.375 97.5,214.5313 Q98.1563,214.6875 98.7188,214.9844 L98.7188,217.7031 Q98.0938,217.125 97.5,216.8594 Q96.9063,216.5781 96.2813,216.5781 Q94.9375,216.5781 94.25,217.6563 Q93.5625,218.7188 93.5625,220.8125 Q93.5625,222.9063 94.25,223.9844 Q94.9375,225.0469 96.2813,225.0469 Q96.9063,225.0469 97.5,224.7813 Q98.0938,224.5 98.7188,223.9219 L98.7188,226.6406 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="116.25" y="225.8467">Document</text><line style="stroke:#181818;stroke-width:0.5;" x1="29" x2="244" y1="237" y2="237" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="34" y="253.9951">typeDocument : Coding [0..1]</text><line style="stroke:#181818;stroke-width:0.5;" x1="29" x2="244" y1="261.2969" y2="261.2969" /></g><!--class NoteLiaison--><g id="elem_NoteLiaison"><rect codeLine="21" fill="#F1F1F1" height="145.7813" id="NoteLiaison" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="261" x="280" y="164" /><ellipse cx="366.25" cy="180" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M369.2188,185.6406 Q368.6406,185.9375 368,186.0781 Q367.3594,186.2344 366.6563,186.2344 Q364.1563,186.2344 362.8281,184.5938 Q361.5156,182.9375 361.5156,179.8125 Q361.5156,176.6875 362.8281,175.0313 Q364.1563,173.375 366.6563,173.375 Q367.3594,173.375 368,173.5313 Q368.6563,173.6875 369.2188,173.9844 L369.2188,176.7031 Q368.5938,176.125 368,175.8594 Q367.4063,175.5781 366.7813,175.5781 Q365.4375,175.5781 364.75,176.6563 Q364.0625,177.7188 364.0625,179.8125 Q364.0625,181.9063 364.75,182.9844 Q365.4375,184.0469 366.7813,184.0469 Q367.4063,184.0469 368,183.7813 Q368.5938,183.5 369.2188,182.9219 L369.2188,185.6406 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="386.75" y="184.8467">NoteLiaison</text><line style="stroke:#181818;stroke-width:0.5;" x1="281" x2="540" y1="196" y2="196" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="286" y="212.9951">idNote : Identifier [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="165" x="286" y="229.292">typeNote : Coding [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="286" y="245.5889">restrictionAudience : Coding [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="249" x="286" y="261.8857">dateHeureCreation : dateTime [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="286" y="278.1826">description : string [0..1]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="200" x="286" y="294.4795">urgenceNote : boolean [0..1]</text><line style="stroke:#181818;stroke-width:0.5;" x1="281" x2="540" y1="301.7813" y2="301.7813" /></g></g></svg>
+  </p>
+</div>
+
+
 
 
 </div>
@@ -226,7 +254,7 @@ Cette partie sera complétée au fur et à mesure de l’avancement des projets 
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="structure.html">&lt;prev</a>
+                <a href="offre-operationnelle.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -234,7 +262,7 @@ Cette partie sera complétée au fur et à mesure de l’avancement des projets 
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="ressops.html">next&gt;</a>
+                <a href="professionnel.html">next&gt;</a>
 
               </td>
             </tr>
@@ -244,7 +272,7 @@ Cette partie sera complétée au fur et à mesure de l’avancement des projets 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 29, 2025 15:03+0000">2025-10-29</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 30, 2025 13:09+0000">2025-10-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

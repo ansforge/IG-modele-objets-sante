@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:EquipementSpecifique |
+| Draft as of 2025-10-30 | *Computable Name*:EquipementSpecifique |
 
  
 Un équipement spécifique est une ressource matérielle discriminante pour la réalisation d’une prestation et sert à faciliter l’orientation du patient. Un équipement spécifique est une ressource propre de la structure ou mise à disposition dans le cadre d’une convention à la condition qu’elle soit utilisée sur site.Les équipements décrits dans cette classe concernent des actes spécifiques ou non. Seules les ressources discriminantes sont retenues, c’est-à-dire que les seuls équipements décrits concernent les équipements qui ne sont pas implicites pour un acte donné. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EquipementSpecifique
   "name" : "EquipementSpecifique",
   "title" : "EquipementSpecifique",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

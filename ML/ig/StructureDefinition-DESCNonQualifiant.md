@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESCNonQualifiant | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:DESCNonQualifiant |
+| Draft as of 2025-10-30 | *Computable Name*:DESCNonQualifiant |
 
  
 Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu’il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DESCNonQualifiant.cs
   "name" : "DESCNonQualifiant",
   "title" : "DESCNonQualifiant",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

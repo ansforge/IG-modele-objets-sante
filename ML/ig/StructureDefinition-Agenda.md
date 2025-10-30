@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:Agenda |
+| Draft as of 2025-10-30 | *Computable Name*:Agenda |
 
  
 Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de créneaux, des plages de disponibilité et des rendez-vous sur une période définie. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Agenda.csv), [Excel]
   "name" : "Agenda",
   "title" : "Agenda",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:Adresse |
+| Draft as of 2025-10-30 | *Computable Name*:Adresse |
 
  
 Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d’après la norme NF Z 10-011. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Adresse.csv), [Excel
   "name" : "Adresse",
   "title" : "Adresse",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

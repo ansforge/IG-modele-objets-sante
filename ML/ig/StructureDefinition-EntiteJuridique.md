@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique | *Version*:0.1.0 |
-| Draft as of 2025-10-29 | *Computable Name*:EntiteJuridique |
+| Draft as of 2025-10-30 | *Computable Name*:EntiteJuridique |
 
  
 L’Entité Juridique (EJ) correspond à la notion de personne morale :** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d’exercer ses activités dans des établissements; chaque EJ dispose d’un statut juridique de la personne morale;** Pour les autres types de structures, une EJ est une personne morale inscrite dans le SIRENE, identifiée par son numéro Siren. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EntiteJuridique.csv)
   "name" : "EntiteJuridique",
   "title" : "EntiteJuridique",
   "status" : "draft",
-  "date" : "2025-10-29T15:03:41+00:00",
+  "date" : "2025-10-30T13:09:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
