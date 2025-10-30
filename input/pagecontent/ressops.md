@@ -3,7 +3,7 @@ La partie Ressources Opérationnelles regroupe les classes qui décrivent les mo
 
 <div class="figure" style="width:100%; overflow-x:auto;">
   <p style="margin: 0; padding: 0;">
-    {% include dossier.svg %}
+    {% include Dossier.svg %}
   </p>
 </div>
 
