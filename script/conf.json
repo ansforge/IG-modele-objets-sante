@@ -113,7 +113,10 @@
             "EntiteGeographique" : {"min": 1, "max": "*"}
         },
         "PersonnePriseCharge":{
-            "Professionnel" : {"min": 0, "max": 1} 
+            "Professionnel" : {"min": 0, "max": "*"} 
+        }, 
+        "Professionnel":{
+            "PersonnePriseCharge" : {"min": 0, "max": "*"} 
         }, 
         "NoteLiaison":{
             "Professionnel" : {"min": 0, "max": 1}, 

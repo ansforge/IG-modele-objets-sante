@@ -91,7 +91,7 @@ package "Professionnel" {
 package "Structure" {
   Class EntiteGeographique
 }
-PersonnePriseCharge --> Professionnel : 0..1
+PersonnePriseCharge --> Professionnel : 0..*
 VieQuotidienne --> PersonnePriseCharge : 1..1
 VieProfessionnelle --> PersonnePriseCharge : 1..1
 Emploi --> VieProfessionnelle : 1..1
