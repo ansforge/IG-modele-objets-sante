@@ -22,4 +22,16 @@ Class LicenceExploitation {
 }
 
 
+package "Professionnel" {
+  Class Professionnel
+}
+
+package "Structure" {
+  Class EntiteGeographique
+  Class EntiteGeographique
+}
+AutorisationExercice --> Professionnel : 0..1
+Convention --> EntiteGeographique : 1..1
+LicenceExploitation --> EntiteGeographique : 1..1
+
 @enduml

@@ -11,3 +11,5 @@ Description: "L'emploi définit l'exercice d'une profession dans le cadre d'une 
 * dateFinEmploi 0..1 date "Date de fin de l'emploi." "Date de fin de l'emploi."
 * emploiRemunere 0..1 boolean "Indique que l’emploi est rémunéré ou non." "Indique que l’emploi est rémunéré ou non."
 * emploiAdapteHandicape 0..1 boolean "Indique que l’emploi est adapté à la personne en situation de handicap ou non." "Indique que l’emploi est adapté à la personne en situation de handicap ou non."
+* VieProfessionnelle 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieProfessionnelle "Lien vers la classe VieProfessionnelle" "Lien vers la classe VieProfessionnelle"
+* EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"

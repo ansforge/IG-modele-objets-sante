@@ -23,6 +23,18 @@ Class Certificat {
   statutPublication : string [0..1]
 }
 
+
+package "Professionnel" {
+  Class ExerciceProfessionnel
+  Class ExerciceProfessionnel
+}
+
+package "Structure" {
+  Class EntiteGeographique
+}
 CarteProfessionnel --> Certificat : 1..*
+CarteProfessionnel --> ExerciceProfessionnel : 1..1
+Certificat --> ExerciceProfessionnel : 0..1
+Certificat --> EntiteGeographique : 0..1
 
 @enduml

@@ -19,6 +19,8 @@ Class LimiteCaracteristiqueEquipement #LightBlue {
   valeurLimite : Quantity [0..1]
 }
 
+EquipementSpecifique --> LieuRealisationOffre : 1..1
+CapacitePriseCharge --> LieuRealisationOffre : 1..1
 EquipementSpecifique --> LimiteCaracteristiqueEquipement : 0..*
 
 @enduml

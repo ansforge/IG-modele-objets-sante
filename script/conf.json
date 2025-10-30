@@ -41,28 +41,104 @@
         "SavoirFaire": ["Specialite", "SurspecialiteTransversale", "Competence", "CompetenceMetier", "CompetenceExclusive", "OrientationParticuliere", "CapaciteSavoirfaire", "QualificationPAC", "FonctionQualifiee", "DESCNonQualifiant", "DroitExerciceComplementaire"]
     },
     "references": {
-        "ExerciceProfessionnel": {
-            "Professionnel": {"min": 1, "max": "1"}
+        "AutorisationExercice": {
+           "Professionnel" : {"min": 0, "max": 1} 
         },
-        "SituationExercice": {
-            "ExerciceProfessionnel": {"min": 1, "max": "1"},
-            "EntiteGeographique": {"min": 0, "max": "1"}   
+        "ActiviteSoinAutorise": {
+           "EntiteGeographique" : {"min": 1, "max": 1} 
         },
-        "SavoirFaire": {
-            "ExerciceProfessionnel": {"min": 1, "max": "1"}  
+        "AutreActiviteSoumiseAutorisation": {
+           "EntiteGeographique" : {"min": 1, "max": 1} 
         },
-        "SituationOperationnelle": {
-            "ExerciceProfessionnel": {"min": 1, "max": "1"},
-            "OffreOperationnelle": {"min": 1, "max": "1"}
+        "ActiviteSoumiseReconnaissance": {
+           "EntiteGeographique" : {"min": 1, "max": 1} 
         },
-        "EntiteGeographique": {
-            "EntiteJuridique": {"min": 1, "max": "1"}  
+        "ActiviteSociale": {
+           "EntiteGeographique" : {"min": 1, "max": 1} 
+        },
+        "ActiviteEnseignement": {
+           "EntiteGeographique" : {"min": 1, "max": 1} 
+        },
+        "ArretTravail": {
+           "VieProfessionnelle" : {"min": 1, "max": 1} 
         },
         "CarteProfessionnel": {
-            "Certificat": {"min": 1, "max": "*"}  
+            "Certificat": {"min": 1, "max": "*"}, 
+            "ExerciceProfessionnel": {"min": 1, "max": 1}
+        },
+        "Certificat": {
+            "ExerciceProfessionnel": {"min": 0, "max": "1"}, 
+            "EntiteGeographique": {"min": 0, "max": "1"}
+        },
+        "CapaciteActiviteExercee": {
+           "EntiteGeographique" : {"min": 0, "max": 1}, 
+           "ActiviteSociale" : {"min": 0, "max": 1}
+        },
+        "CapaciteHabitation": {
+           "EntiteGeographique" : {"min": 0, "max": 1}, 
+           "LieuRealisationOffre" : {"min": 1, "max": 1}
+        },
+        "CapacitePriseCharge": {
+            "LieuRealisationOffre" : {"min": 1, "max": 1}
+        },
+        "Convention": {
+           "EntiteGeographique" : {"min": 1, "max": 1} 
+        },
+        "DispositifMedical": {
+            "EntiteJuridique": {"min": 1, "max": 1}
+        },
+        "ExerciceProfessionnel": {
+            "Professionnel": {"min": 1, "max": 1}
+        },
+        "EntiteGeographique": {
+            "EntiteJuridique": {"min": 1, "max": 1}  
+        },
+        "EquipementMaterielLourd": {
+           "EntiteGeographique" : {"min": 1, "max": 1} 
+        },
+        "EquipementSpecifique": {
+           "LieuRealisationOffre" : {"min": 1, "max": 1} 
+        },
+        "Emploi": {
+           "VieProfessionnelle" : {"min": 1, "max": 1}, 
+           "EntiteGeographique" : {"min": 1, "max": 1} 
+        },
+        "LicenceExploitation": {
+           "EntiteGeographique" : {"min": 1, "max": 1} 
         },
         "OffreOperationnelle": {
             "EntiteGeographique" : {"min": 0, "max": 1}
+        },
+        "OrganisationInterne":{
+            "EntiteGeographique" : {"min": 1, "max": "*"}
+        },
+        "PersonnePriseCharge":{
+            "Professionnel" : {"min": 0, "max": 1} 
+        }, 
+        "NoteLiaison":{
+            "Professionnel" : {"min": 0, "max": 1}, 
+            "EntiteGeographique": {"min": 0, "max": 1}, 
+            "PersonnePriseCharge": {"min": 0, "max": 1} 
+        },
+        "SituationExercice": {
+            "ExerciceProfessionnel": {"min": 1, "max": 1},
+            "EntiteGeographique": {"min": 0, "max": 1}   
+        },
+        "SavoirFaire": {
+            "ExerciceProfessionnel": {"min": 1, "max": 1}  
+        },
+        "SituationOperationnelle": {
+            "ExerciceProfessionnel": {"min": 1, "max": 1},
+            "OffreOperationnelle": {"min": 1, "max": 1}
+        }, 
+        "VieQuotidienne": {
+            "PersonnePriseCharge": {"min": 1, "max": 1}  
+        }, 
+        "VieProfessionnelle": {
+            "PersonnePriseCharge": {"min": 1, "max": 1}  
+        },
+        "VieSocolaire": {
+            "PersonnePriseCharge": {"min": 1, "max": 1}  
         }
     }
 }

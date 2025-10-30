@@ -83,6 +83,20 @@ Class INS #LightBlue {
   prenomUtilise : string [1..1]
 }
 
+
+package "Professionnel" {
+  Class Professionnel
+}
+
+package "Structure" {
+  Class EntiteGeographique
+}
+PersonnePriseCharge --> Professionnel : 0..1
+VieQuotidienne --> PersonnePriseCharge : 1..1
+VieProfessionnelle --> PersonnePriseCharge : 1..1
+Emploi --> VieProfessionnelle : 1..1
+ArretTravail --> VieProfessionnelle : 1..1
+Emploi --> EntiteGeographique : 1..1
 PersonnePriseCharge --> INS : 0..*
 
 @enduml

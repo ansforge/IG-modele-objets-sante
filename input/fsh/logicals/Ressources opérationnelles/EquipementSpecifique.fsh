@@ -13,3 +13,4 @@ Description: "Un équipement spécifique est une ressource matérielle discrimin
 * LimiteCaracteristiqueEquipement.typeCaracteristique 0..1 Coding "Indique la caractéristique de l'équipement pour laquelle une valeur limite est précisée." "Indique la caractéristique de l'équipement pour laquelle une valeur limite est précisée."
 * LimiteCaracteristiqueEquipement.typeCaracteristique from https://mos.esante.gouv.fr/NOS/TRE_R340-TypeCaracteristiqueEquipement/FHIR/TRE-R340-TypeCaracteristiqueEquipement?vs (preferred)
 * LimiteCaracteristiqueEquipement.valeurLimite 0..1 Quantity "Correspond à la valeur extrême associée à une caractéristique de l'équipement." "Correspond à la valeur extrême associée à une caractéristique de l'équipement."
+* LieuRealisationOffre 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre "Lien vers la classe LieuRealisationOffre" "Lien vers la classe LieuRealisationOffre"

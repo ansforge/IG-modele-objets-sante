@@ -18,3 +18,4 @@ Description: "Les activités d’enseignement aux professions sanitaires et soci
 * modeFonctionnement from https://mos.esante.gouv.fr/NOS/TRE_R209-TypeActivite/FHIR/TRE-R209-TypeActivite?vs (preferred)
 * dateAutorisation 0..1 date "Date de l’arrêté autorisant l’exercice de l’activité décrite." "Date de l’arrêté autorisant l’exercice de l’activité décrite."
 * suppressionAutorisation 0..1 boolean "Indicateur de suppression de l'autorisation d’activité d’enseignement." "Indicateur de suppression de l'autorisation d’activité d’enseignement."
+* EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"

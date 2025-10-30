@@ -1,4 +1,5 @@
 Logical: SituationOperationnelle
+Parent: $Base
 Id: SituationOperationnelle
 Title: "SituationOperationnelle"
 Description: "Caractérise les conditions d'exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle."

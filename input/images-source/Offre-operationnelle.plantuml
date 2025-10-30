@@ -29,6 +29,11 @@ Class ActiviteOperationnelle #LightBlue {
   activiteOperationnelle : Coding [0..1]
 }
 
+
+package "Structure" {
+  Class EntiteGeographique
+}
+OffreOperationnelle --> EntiteGeographique : 0..1
 OffreOperationnelle --> ActiviteOperationnelle : 1..*
 
 @enduml

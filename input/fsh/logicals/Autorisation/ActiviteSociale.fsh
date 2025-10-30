@@ -33,3 +33,4 @@ Description: "Les équipements sociaux représentent les activités des établis
 * suppressionInstallation 0..1 boolean "Indicateur de suppression de l’installation de l'activité sociale." "Indicateur de suppression de l’installation de l'activité sociale."
 * sourceInformationInstallation 0..1 Coding "Source ayant permis le constat." "Source ayant permis le constat."
 * sourceInformationInstallation from https://mos.esante.gouv.fr/NOS/TRE_R301-SourceInformationInstallation/FHIR/TRE-R301-SourceInformationInstallation?vs (preferred)
+* EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"

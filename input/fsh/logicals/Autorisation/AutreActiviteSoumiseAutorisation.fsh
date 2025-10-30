@@ -16,3 +16,4 @@ Description: "On distingue plusieurs types d’activités sanitaires des établi
 * forme from https://mos.esante.gouv.fr/NOS/TRE_R276-FormeActivite/FHIR/TRE-R276-FormeActivite?vs (preferred)
 * datePremiereMEO 0..1 date "Date de première mise en œuvre de l’activité. Elle doit être postérieure ou égale à la date de décision.Synonyme FINESS : date de mise en œuvre" "Date de première mise en œuvre de l’activité. Elle doit être postérieure ou égale à la date de décision.Synonyme FINESS : date de mise en œuvre"
 * dateFin 0..1 date "Date d'échéance de l'autorisation.Synonyme FINESS : date de fin de mise en œuvre" "Date d'échéance de l'autorisation.Synonyme FINESS : date de fin de mise en œuvre"
+* EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"

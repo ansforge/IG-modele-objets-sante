@@ -14,3 +14,4 @@ Description: "L'accès aux professions de santé est soumis à des conditions co
 * dateFinAutorisation 0..1 date "Date de fin de validité de l'autorisation." "Date de fin de validité de l'autorisation."
 * profession 0..1 Coding "Profession pour laquelle l'autorisation est délivrée." "Profession pour laquelle l'autorisation est délivrée."
 * profession from https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante?vs (preferred)
+* Professionnel 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel "Lien vers la classe Professionnel" "Lien vers la classe Professionnel"

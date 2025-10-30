@@ -78,4 +78,20 @@ Class CapaciteActiviteExercee {
 }
 
 
+package "Structure" {
+  Class EntiteGeographique
+  Class EntiteGeographique
+  Class EntiteGeographique
+  Class EntiteGeographique
+  Class EntiteGeographique
+  Class EntiteGeographique
+}
+AutreActiviteSoumiseAutorisation --> EntiteGeographique : 1..1
+ActiviteSoumiseReconnaissance --> EntiteGeographique : 1..1
+ActiviteSociale --> EntiteGeographique : 1..1
+ActiviteEnseignement --> EntiteGeographique : 1..1
+EquipementMaterielLourd --> EntiteGeographique : 1..1
+CapaciteActiviteExercee --> EntiteGeographique : 0..1
+CapaciteActiviteExercee --> ActiviteSociale : 0..1
+
 @enduml

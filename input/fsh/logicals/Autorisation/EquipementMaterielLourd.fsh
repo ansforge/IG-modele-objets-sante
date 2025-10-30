@@ -15,3 +15,4 @@ Description: "Les équipements matériels lourds (EML) sont mis en œuvre au sei
 * suppressionAutorisation 0..1 boolean "Indicateur de suppression de l'autorisation de l'EML. Donnée propre à FINESS." "Indicateur de suppression de l'autorisation de l'EML. Donnée propre à FINESS."
 * marque 0..1 string "Marque de l'équipement matériel lourd (EML)." "Marque de l'équipement matériel lourd (EML)."
 * numeroSerie 0..1 string "Numéro de série de l'équipement matériel lourd (EML)." "Numéro de série de l'équipement matériel lourd (EML)."
+* EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"

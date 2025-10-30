@@ -1,4 +1,5 @@
 Logical: CarteProfessionnel
+Parent: $Base
 Id: CarteProfessionnel
 Title: "CarteProfessionnel"
 Description: "Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes."
@@ -12,3 +13,4 @@ Description: "Données descriptives du moyen d’identification des personnes ph
 * dateFinValidite 0..1 dateTime "Date et heure de fin de validité de la carte. La date est en UTC (avec translation de l'heure locale en heure UTC par ajout du décalage négatif ou retranchement du décalage positif)." "Date et heure de fin de validité de la carte. La date est en UTC (avec translation de l'heure locale en heure UTC par ajout du décalage négatif ou retranchement du décalage positif)."
 * dateOpposition 0..1 dateTime "Date de mise en opposition de la carte. Cette opposition implique la révocation des certifications embarquées dans la carte." "Date de mise en opposition de la carte. Cette opposition implique la révocation des certifications embarquées dans la carte."
 * Certificat 1..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat "Lien vers la classe Certificat" "Lien vers la classe Certificat"
+* ExerciceProfessionnel 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel "Lien vers la classe ExerciceProfessionnel" "Lien vers la classe ExerciceProfessionnel"

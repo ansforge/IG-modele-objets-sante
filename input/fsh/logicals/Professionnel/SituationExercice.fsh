@@ -1,4 +1,5 @@
 Logical: SituationExercice
+Parent: $Base
 Id: SituationExercice
 Title: "SituationExercice"
 Description: "Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)."

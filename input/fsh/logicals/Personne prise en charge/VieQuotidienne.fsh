@@ -11,3 +11,4 @@ Description: "/!\\ Classe en cours de constructionInformations relatives à la v
 * besoinVieQuotidienne 0..* Coding "Besoins de la personne dans sa vie quotidienne." "Besoins de la personne dans sa vie quotidienne."
 * besoinVieQuotidienne from besoinVieQuotidienne-vs (preferred)
 * compositionFoyer 0..1 Coding "Désigne avec qui vit la personne prise en charge dans son logement." "Désigne avec qui vit la personne prise en charge dans son logement."
+* PersonnePriseCharge 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge "Lien vers la classe PersonnePriseCharge" "Lien vers la classe PersonnePriseCharge"

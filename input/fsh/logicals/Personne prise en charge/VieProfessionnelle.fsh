@@ -14,3 +14,4 @@ Description: "/!\\ Classe en cours de constructionInformations relatives à la v
 * situationSansEmploi from https://mos.esante.gouv.fr/NOS/TRE_R326-SituationSansEmploi/FHIR/TRE-R326-SituationSansEmploi?vs (preferred)
 * besoinProfessionnel 0..* Coding "Besoins de la personne dans sa vie professionnelle." "Besoins de la personne dans sa vie professionnelle."
 * besoinProfessionnel from https://mos.esante.gouv.fr/NOS/TRE_R324-BesoinSoutienProjetProfessionnel/FHIR/TRE-R324-BesoinSoutienProjetProfessionnel?vs (preferred)
+* PersonnePriseCharge 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge "Lien vers la classe PersonnePriseCharge" "Lien vers la classe PersonnePriseCharge"

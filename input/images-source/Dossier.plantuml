@@ -29,4 +29,19 @@ Class NoteLiaison {
 }
 
 
+package "Professionnel" {
+  Class Professionnel
+}
+
+package "Structure" {
+  Class EntiteGeographique
+}
+
+package "Personne prise en charge" {
+  Class PersonnePriseCharge
+}
+NoteLiaison --> Professionnel : 0..1
+NoteLiaison --> EntiteGeographique : 0..1
+NoteLiaison --> PersonnePriseCharge : 0..1
+
 @enduml

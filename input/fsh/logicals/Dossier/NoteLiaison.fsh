@@ -12,3 +12,6 @@ Description: "Les notes de liaison permet d’assurer un suivi « terrain » de 
 * dateHeureCreation 0..1 dateTime "Date à laquelle la note est déclarée." "Date à laquelle la note est déclarée."
 * description 0..1 string "Il s’agit d’une description ou du titre de la note." "Il s’agit d’une description ou du titre de la note."
 * urgenceNote 0..1 boolean "Indique l’urgence de la note afin d’identifier la façon dont elle sera prise en charge." "Indique l’urgence de la note afin d’identifier la façon dont elle sera prise en charge."
+* Professionnel 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel "Lien vers la classe Professionnel" "Lien vers la classe Professionnel"
+* EntiteGeographique 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* PersonnePriseCharge 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge "Lien vers la classe PersonnePriseCharge" "Lien vers la classe PersonnePriseCharge"
