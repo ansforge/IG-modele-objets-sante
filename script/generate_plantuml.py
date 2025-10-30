@@ -93,6 +93,7 @@ def generate_plantuml_parts(path, sections):
             filename = unicodedata.normalize("NFKD", section)\
                 .encode("ascii", "ignore")\
                 .decode("ascii")\
+                .replace("'", "")\
                 .replace(" ", "-")
             with open(os.path.join(path, "input", "images-source", filename + ".plantuml"), 'w', encoding="utf-8") as f:
                 f.write("@startuml\n")
