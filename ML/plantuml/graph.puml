@@ -833,7 +833,7 @@ package IG #DDDDDD{
              PersonnePriseCharge.INS.premierPrenomNaissance => [1..1]
              PersonnePriseCharge.INS.nomUtilise => [1..1]
              PersonnePriseCharge.INS.prenomUtilise => [1..1]
-             PersonnePriseCharge.Professionnel => [0..1]
+             PersonnePriseCharge.Professionnel => [0..*]
         } 
 
         class PlageDisponibilite{
@@ -864,6 +864,7 @@ package IG #DDDDDD{
              Professionnel.adresseCorrespondance => [0..*]
              Professionnel.telecommunication => [0..*]
              Professionnel.boiteLettresMSS => [0..*]
+             Professionnel.PersonnePriseCharge => [0..*]
         } 
 
         class QualificationPAC{

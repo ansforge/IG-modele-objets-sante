@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
   "name" : "Professionnel",
   "title" : "Professionnel",
   "status" : "draft",
-  "date" : "2025-10-30T16:36:55+00:00",
+  "date" : "2025-10-30T16:59:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -185,6 +185,19 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS"
+          }
+        ]
+      },
+      {
+        "id" : "Professionnel.PersonnePriseCharge",
+        "path" : "Professionnel.PersonnePriseCharge",
+        "short" : "Lien vers la classe PersonnePriseCharge",
+        "definition" : "Lien vers la classe PersonnePriseCharge",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
           }
         ]
       }

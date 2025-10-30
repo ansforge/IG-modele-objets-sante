@@ -16,7 +16,7 @@ Personne physique bénéficiaire de soins, d’examens, d’actes de prévention
 
 **Usages:**
 
-* Use this Logical Model: [NoteLiaison](StructureDefinition-NoteLiaison.md), [VieProfessionnelle](StructureDefinition-VieProfessionnelle.md) and [VieQuotidienne](StructureDefinition-VieQuotidienne.md)
+* Use this Logical Model: [NoteLiaison](StructureDefinition-NoteLiaison.md), [Professionnel](StructureDefinition-Professionnel.md), [VieProfessionnelle](StructureDefinition-VieProfessionnelle.md) and [VieQuotidienne](StructureDefinition-VieQuotidienne.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/PersonnePriseCharge)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePriseCharge.
   "name" : "PersonnePriseCharge",
   "title" : "PersonnePriseCharge",
   "status" : "draft",
-  "date" : "2025-10-30T16:36:55+00:00",
+  "date" : "2025-10-30T16:59:08+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -294,7 +294,7 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePriseCharge.
         "short" : "Lien vers la classe Professionnel",
         "definition" : "Lien vers la classe Professionnel",
         "min" : 0,
-        "max" : "1",
+        "max" : "*",
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel"
