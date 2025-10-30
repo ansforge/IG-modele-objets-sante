@@ -84,3 +84,98 @@ menu:
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
+
+
+groups:
+   Accompagnant:
+     name: Accompagnant
+     resources:
+     - StructureDefinition/AidantDemarche
+     - StructureDefinition/MesureProtection
+     - StructureDefinition/Parent
+   Accord:
+     name: Accord
+     resources:
+     - StructureDefinition/AutorisationExercice
+     - StructureDefinition/Convention
+     - StructureDefinition/LicenceExploitation
+   Agenda:
+     name: Agenda
+     resources:
+     - StructureDefinition/Agenda
+     - StructureDefinition/Creneau
+     - StructureDefinition/PlageDisponibilite
+     - StructureDefinition/RendezVous
+   Autorisation:
+     name: Accord
+     resources:
+     - StructureDefinition/ActiviteEnseignement
+     - StructureDefinition/ActiviteSociale
+     - StructureDefinition/ActiviteSoinAutorisee
+     - StructureDefinition/ActiviteSoumiseReconnaissance
+     - StructureDefinition/AutreActiviteSoumiseAutorisation
+     - StructureDefinition/CapaciteActiviteExercee
+     - StructureDefinition/EquipementMaterielLourd
+   Dispositif:
+     name: Dispositif d'authentification
+     resources:
+     - StructureDefinition/CarteProfesionnel
+     - StructureDefinition/Certificat
+   DM:
+     name: Dispositif médical
+     resources:
+     - StructureDefinition/DispositifMedical
+   Dossier:
+     name: Dispositif médical
+     resources:
+     - StructureDefinition/Decision
+     - StructureDefinition/Demande
+     - StructureDefinition/Document
+     - StructureDefinition/DossierPersonnePriseCharge
+     - StructureDefinition/NoteLiaison
+   Offre:
+     name: Offre opérationnelle
+     resources:
+     - StructureDefinition/OffreOperationnelle
+   Personne:
+     name: Personne prise en charge
+     resources:
+     - StructureDefinition/ArretTravail
+     - StructureDefinition/Emploi
+     - StructureDefinition/Observation
+     - StructureDefinition/PersonnePriseCharge
+     - StructureDefinition/PlageReference
+     - StructureDefinition/ResultatObservation
+     - StructureDefinition/VieProfesionnelle
+     - StructureDefinition/VieQuotidienne
+     - StructureDefinition/VieScolaire
+   Professionnel:
+     name: Professionnel
+     resources:
+     - StructureDefinition/CapaciteSavoirFaire
+     - StructureDefinition/Competence
+     - StructureDefinition/CompetenceExclusive
+     - StructureDefinition/CompetenceMetier
+     - StructureDefinition/DESCNonQualifiant
+     - StructureDefinition/DroitExerciceComplementaire
+     - StructureDefinition/ExerciceProfessionnel
+     - StructureDefinition/FonctionQualifiee
+     - StructureDefinition/OrientationParticuliere
+     - StructureDefinition/Professionnel
+     - StructureDefinition/QualificationPAC
+     - StructureDefinition/SavoirFaire
+     - StructureDefinition/SituationExercice
+     - StructureDefinition/SituationOperationnelle
+     - StructureDefinition/Specialite
+     - StructureDefinition/SurspecialiteTransversale
+   Ressources:
+     name: Ressources opérationnelles
+     resources:
+     - StructureDefinition/CapacitePriseCharge
+     - StructureDefinition/EquipementSpecifique
+     - StructureDefinition/LieuRealisationOffre
+   Structure:
+     name: Structure
+     resources:
+     - StructureDefinition/EntiteGeographique
+     - StructureDefinition/EntiteJuridique
