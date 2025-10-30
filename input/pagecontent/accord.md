@@ -1,15 +1,17 @@
-Cette partie présente les différents concepts utilisés pour définir et caractériser un professionnel (Personne physique) et ses modalités d'exercice.
+Cette partie décrit les modalités réglementaires, contractuelles ou de financement qui régissent l’exercice voire l’existence des principaux objets métiers de la sphère (activité, professionnel, structure, bien d’équipement). Un accord est donné par une autorité institutionnelle comme un ordre professionnel, une ARS, ou l’assurance maladie. 
 
-### Remarques
+L’accord peut intervenir entre plusieurs acteurs dans le cas, par exemple, de convention tripartite. Plusieurs types d’accord peuvent être répertoriés en cible : 
+* autorisation (ex : accord entre l’ARS et l’entité juridique à laquelle est donnée l’autorisation);
+* autorisation d’exercice (ex : lors de l’inscription à l’ordre d’un professionnel);
+* contrat (ex : convention entre un professionnel et l’assurance maladie, etc.);
+* agrément (ex : agrément donné par l’ARS à une entreprise de transport sanitaire pour ses véhicules);
+* etc.
 
-* Les définitions des classes et attributs de cette partie sont toujours sujettes à des ajouts en concertation avec les autorités d'enregistrement (AE) lors de l'étude de nouveaux concepts.
-* La classe "SavoirFaire" et ses classes spécialisées sont décrites dans cette partie, dans un diagramme dédié.
-* La classe "Diplome" et ses classes spécialisées sont décrites dans la partie "Classes Communes", dans un diagramme dédié.
-* Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans leur propre partie (ou package).
+Ref.: DSSIS_CibleIntermédiaire_20131122_v2.docx
+Remarque : Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans d'autres parties (ou packages).
 
 <div class="figure" style="width:100%; overflow-x:auto;">
   <p style="margin: 0; padding: 0;">
     {% include accord.svg %}
   </p>
 </div>
-
