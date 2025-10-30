@@ -16,7 +16,7 @@
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [ArretTravail](StructureDefinition-ArretTravail.md) and [Emploi](StructureDefinition-Emploi.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/VieProfessionnelle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-VieProfessionnelle.c
   "name" : "VieProfessionnelle",
   "title" : "VieProfessionnelle",
   "status" : "draft",
-  "date" : "2025-10-30T15:20:59+00:00",
+  "date" : "2025-10-30T16:36:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -156,6 +156,19 @@ Other representations of profile: [CSV](StructureDefinition-VieProfessionnelle.c
           "strength" : "preferred",
           "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R324-BesoinSoutienProjetProfessionnel/FHIR/TRE-R324-BesoinSoutienProjetProfessionnel?vs"
         }
+      },
+      {
+        "id" : "VieProfessionnelle.PersonnePriseCharge",
+        "path" : "VieProfessionnelle.PersonnePriseCharge",
+        "short" : "Lien vers la classe PersonnePriseCharge",
+        "definition" : "Lien vers la classe PersonnePriseCharge",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+          }
+        ]
       }
     ]
   }

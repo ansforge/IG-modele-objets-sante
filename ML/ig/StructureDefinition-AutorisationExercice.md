@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-AutorisationExercice
   "name" : "AutorisationExercice",
   "title" : "AutorisationExercice",
   "status" : "draft",
-  "date" : "2025-10-30T15:20:59+00:00",
+  "date" : "2025-10-30T16:36:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -156,6 +156,19 @@ Other representations of profile: [CSV](StructureDefinition-AutorisationExercice
           "strength" : "preferred",
           "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante?vs"
         }
+      },
+      {
+        "id" : "AutorisationExercice.Professionnel",
+        "path" : "AutorisationExercice.Professionnel",
+        "short" : "Lien vers la classe Professionnel",
+        "definition" : "Lien vers la classe Professionnel",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel"
+          }
+        ]
       }
     ]
   }

@@ -17,6 +17,7 @@ package IG #DDDDDD{
              ActiviteEnseignement.modeFonctionnement => [0..1]
              ActiviteEnseignement.dateAutorisation => [0..1]
              ActiviteEnseignement.suppressionAutorisation => [0..1]
+             ActiviteEnseignement.EntiteGeographique => [1..1]
         } 
 
         class ActiviteSociale{
@@ -40,6 +41,7 @@ package IG #DDDDDD{
              ActiviteSociale.suppressionAutorisation => [0..1]
              ActiviteSociale.suppressionInstallation => [0..1]
              ActiviteSociale.sourceInformationInstallation => [0..1]
+             ActiviteSociale.EntiteGeographique => [1..1]
         } 
 
         class ActiviteSoinAutorisee{
@@ -68,6 +70,7 @@ package IG #DDDDDD{
              ActiviteSoumiseReconnaissance.dateFinCPOM => [0..1]
              ActiviteSoumiseReconnaissance.dateReconnaissance => [0..1]
              ActiviteSoumiseReconnaissance.indicateurReconnaissanceRegionale => [0..1]
+             ActiviteSoumiseReconnaissance.EntiteGeographique => [1..1]
         } 
 
         class Adresse{
@@ -126,6 +129,7 @@ package IG #DDDDDD{
              ArretTravail.dateRencontreServiceSocial => [0..1]
              ArretTravail.rencontreMedecin => [0..1]
              ArretTravail.dateRencontreMedecin => [0..1]
+             ArretTravail.VieProfessionnelle => [1..1]
         } 
 
         class Attestation{
@@ -142,6 +146,7 @@ package IG #DDDDDD{
              AutorisationExercice.dateDebutAutorisation => [0..1]
              AutorisationExercice.dateFinAutorisation => [0..1]
              AutorisationExercice.profession => [0..1]
+             AutorisationExercice.Professionnel => [0..1]
         } 
 
         class AutreActiviteSoumiseAutorisation{
@@ -154,6 +159,7 @@ package IG #DDDDDD{
              AutreActiviteSoumiseAutorisation.forme => [0..1]
              AutreActiviteSoumiseAutorisation.datePremiereMEO => [0..1]
              AutreActiviteSoumiseAutorisation.dateFin => [0..1]
+             AutreActiviteSoumiseAutorisation.EntiteGeographique => [1..1]
         } 
 
         class AutreDiplomeObtenu{
@@ -180,6 +186,8 @@ package IG #DDDDDD{
              CapaciteActiviteExercee => [None..None]
              CapaciteActiviteExercee.habilitationAideSociale => [0..1]
              CapaciteActiviteExercee.modeFinacement => [0..1]
+             CapaciteActiviteExercee.EntiteGeographique => [0..1]
+             CapaciteActiviteExercee.ActiviteSociale => [0..1]
         } 
 
         class CapaciteDiplome{
@@ -192,6 +200,7 @@ package IG #DDDDDD{
 
              CapacitePriseCharge => [None..None]
              CapacitePriseCharge.affectationTemporaire => [0..1]
+             CapacitePriseCharge.LieuRealisationOffre => [1..1]
         } 
 
         class CapaciteSavoirfaire{
@@ -209,6 +218,7 @@ package IG #DDDDDD{
              CarteProfessionnel.dateFinValidite => [0..1]
              CarteProfessionnel.dateOpposition => [0..1]
              CarteProfessionnel.Certificat => [1..*]
+             CarteProfessionnel.ExerciceProfessionnel => [1..1]
         } 
 
         class Certificat{
@@ -227,6 +237,8 @@ package IG #DDDDDD{
              Certificat.tokenId => [0..1]
              Certificat.valeurBinaire => [0..1]
              Certificat.statutPublication => [0..1]
+             Certificat.ExerciceProfessionnel => [0..1]
+             Certificat.EntiteGeographique => [0..1]
         } 
 
         class CertificatEtudeSpeciale{
@@ -281,6 +293,7 @@ package IG #DDDDDD{
              Convention.titre => [0..1]
              Convention.dateDebutConvention => [0..1]
              Convention.dateFinConvention => [0..1]
+             Convention.EntiteGeographique => [1..1]
         } 
 
         class CoordonneeGeographique{
@@ -421,6 +434,7 @@ package IG #DDDDDD{
              DispositifMedical.SupportIUD.AIDC => [0..1]
              DispositifMedical.SupportIUD.marquageClair => [0..1]
              DispositifMedical.SupportIUD.typeSupportIUD => [0..1]
+             DispositifMedical.EntiteJuridique => [1..1]
         } 
 
         class DivisionTerritoriale{
@@ -456,6 +470,8 @@ package IG #DDDDDD{
              Emploi.dateFinEmploi => [0..1]
              Emploi.emploiRemunere => [0..1]
              Emploi.emploiAdapteHandicape => [0..1]
+             Emploi.VieProfessionnelle => [1..1]
+             Emploi.EntiteGeographique => [1..1]
         } 
 
         class EntiteGeographique{
@@ -552,6 +568,7 @@ package IG #DDDDDD{
              EquipementMaterielLourd.suppressionAutorisation => [0..1]
              EquipementMaterielLourd.marque => [0..1]
              EquipementMaterielLourd.numeroSerie => [0..1]
+             EquipementMaterielLourd.EntiteGeographique => [1..1]
         } 
 
         class EquipementSpecifique{
@@ -562,6 +579,7 @@ package IG #DDDDDD{
              EquipementSpecifique.LimiteCaracteristiqueEquipement => [0..*]
              EquipementSpecifique.LimiteCaracteristiqueEquipement.typeCaracteristique => [0..1]
              EquipementSpecifique.LimiteCaracteristiqueEquipement.valeurLimite => [0..1]
+             EquipementSpecifique.LieuRealisationOffre => [1..1]
         } 
 
         class ExerciceProfessionnel{
@@ -637,6 +655,7 @@ package IG #DDDDDD{
              LicenceExploitation.numeroLicence => [0..1]
              LicenceExploitation.dateDebutLicence => [0..1]
              LicenceExploitation.dateFinLicence => [0..1]
+             LicenceExploitation.EntiteGeographique => [1..1]
         } 
 
         class Lieu{
@@ -680,6 +699,9 @@ package IG #DDDDDD{
              NoteLiaison.dateHeureCreation => [0..1]
              NoteLiaison.description => [0..1]
              NoteLiaison.urgenceNote => [0..1]
+             NoteLiaison.Professionnel => [0..1]
+             NoteLiaison.EntiteGeographique => [0..1]
+             NoteLiaison.PersonnePriseCharge => [0..1]
         } 
 
         class Observation{
@@ -732,6 +754,7 @@ package IG #DDDDDD{
              OffreOperationnelle.boiteLettreMSS => [0..*]
              OffreOperationnelle.ActiviteOperationnelle => [1..*]
              OffreOperationnelle.ActiviteOperationnelle.activiteOperationnelle => [0..1]
+             OffreOperationnelle.EntiteGeographique => [0..1]
         } 
 
         class OrientationParticuliere{
@@ -810,6 +833,7 @@ package IG #DDDDDD{
              PersonnePriseCharge.INS.premierPrenomNaissance => [1..1]
              PersonnePriseCharge.INS.nomUtilise => [1..1]
              PersonnePriseCharge.INS.prenomUtilise => [1..1]
+             PersonnePriseCharge.Professionnel => [0..1]
         } 
 
         class PlageDisponibilite{
@@ -952,6 +976,7 @@ package IG #DDDDDD{
              VieProfessionnelle.situationVieProfessionnelle => [0..1]
              VieProfessionnelle.situationSansEmploi => [0..1]
              VieProfessionnelle.besoinProfessionnel => [0..*]
+             VieProfessionnelle.PersonnePriseCharge => [1..1]
         } 
 
         class VieQuotidienne{
@@ -960,6 +985,7 @@ package IG #DDDDDD{
              VieQuotidienne.situationVieQuotidienne => [0..*]
              VieQuotidienne.besoinVieQuotidienne => [0..*]
              VieQuotidienne.compositionFoyer => [0..1]
+             VieQuotidienne.PersonnePriseCharge => [1..1]
         } 
 
         class VieScolaire{

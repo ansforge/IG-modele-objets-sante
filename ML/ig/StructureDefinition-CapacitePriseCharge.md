@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CapacitePriseCharge.
   "name" : "CapacitePriseCharge",
   "title" : "CapacitePriseCharge",
   "status" : "draft",
-  "date" : "2025-10-30T15:20:59+00:00",
+  "date" : "2025-10-30T16:36:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -96,6 +96,19 @@ Other representations of profile: [CSV](StructureDefinition-CapacitePriseCharge.
           "strength" : "preferred",
           "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R329-NatureCapacite/FHIR/TRE-R329-NatureCapacite?vs"
         }
+      },
+      {
+        "id" : "CapacitePriseCharge.LieuRealisationOffre",
+        "path" : "CapacitePriseCharge.LieuRealisationOffre",
+        "short" : "Lien vers la classe LieuRealisationOffre",
+        "definition" : "Lien vers la classe LieuRealisationOffre",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre"
+          }
+        ]
       }
     ]
   }

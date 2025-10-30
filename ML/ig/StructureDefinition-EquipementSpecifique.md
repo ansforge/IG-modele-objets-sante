@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EquipementSpecifique
   "name" : "EquipementSpecifique",
   "title" : "EquipementSpecifique",
   "status" : "draft",
-  "date" : "2025-10-30T15:20:59+00:00",
+  "date" : "2025-10-30T16:36:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -150,6 +150,19 @@ Other representations of profile: [CSV](StructureDefinition-EquipementSpecifique
         "type" : [
           {
             "code" : "Quantity"
+          }
+        ]
+      },
+      {
+        "id" : "EquipementSpecifique.LieuRealisationOffre",
+        "path" : "EquipementSpecifique.LieuRealisationOffre",
+        "short" : "Lien vers la classe LieuRealisationOffre",
+        "definition" : "Lien vers la classe LieuRealisationOffre",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre"
           }
         ]
       }

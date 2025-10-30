@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Convention.csv), [Ex
   "name" : "Convention",
   "title" : "Convention",
   "status" : "draft",
-  "date" : "2025-10-30T15:20:59+00:00",
+  "date" : "2025-10-30T16:36:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -129,6 +129,19 @@ Other representations of profile: [CSV](StructureDefinition-Convention.csv), [Ex
         "type" : [
           {
             "code" : "date"
+          }
+        ]
+      },
+      {
+        "id" : "Convention.EntiteGeographique",
+        "path" : "Convention.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
           }
         ]
       }

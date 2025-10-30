@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CapaciteActiviteExer
   "name" : "CapaciteActiviteExercee",
   "title" : "CapaciteActiviteExercee",
   "status" : "draft",
-  "date" : "2025-10-30T15:20:59+00:00",
+  "date" : "2025-10-30T16:36:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -103,6 +103,32 @@ Other representations of profile: [CSV](StructureDefinition-CapaciteActiviteExer
         "type" : [
           {
             "code" : "Coding"
+          }
+        ]
+      },
+      {
+        "id" : "CapaciteActiviteExercee.EntiteGeographique",
+        "path" : "CapaciteActiviteExercee.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
+      },
+      {
+        "id" : "CapaciteActiviteExercee.ActiviteSociale",
+        "path" : "CapaciteActiviteExercee.ActiviteSociale",
+        "short" : "Lien vers la classe ActiviteSociale",
+        "definition" : "Lien vers la classe ActiviteSociale",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSociale"
           }
         ]
       }

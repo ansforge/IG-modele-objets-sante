@@ -16,7 +16,7 @@ Les équipements sociaux représentent les activités des établissements du dom
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/ActiviteSociale)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ActiviteSociale.csv)
   "name" : "ActiviteSociale",
   "title" : "ActiviteSociale",
   "status" : "draft",
-  "date" : "2025-10-30T15:20:59+00:00",
+  "date" : "2025-10-30T16:36:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -349,6 +349,19 @@ Other representations of profile: [CSV](StructureDefinition-ActiviteSociale.csv)
           "strength" : "preferred",
           "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R301-SourceInformationInstallation/FHIR/TRE-R301-SourceInformationInstallation?vs"
         }
+      },
+      {
+        "id" : "ActiviteSociale.EntiteGeographique",
+        "path" : "ActiviteSociale.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
       }
     ]
   }

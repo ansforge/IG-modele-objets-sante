@@ -16,7 +16,7 @@ L’Entité Géographique (EG) correspond à la notion d’établissement : ** P
 
 **Usages:**
 
-* Use this Logical Model: [SituationExercice](StructureDefinition-SituationExercice.md)
+* Use this Logical Model: [ActiviteEnseignement](StructureDefinition-ActiviteEnseignement.md), [ActiviteSociale](StructureDefinition-ActiviteSociale.md), [ActiviteSoumiseReconnaissance](StructureDefinition-ActiviteSoumiseReconnaissance.md), [AutreActiviteSoumiseAutorisation](StructureDefinition-AutreActiviteSoumiseAutorisation.md)...Show 9 more,[CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md),[Certificat](StructureDefinition-Certificat.md),[Convention](StructureDefinition-Convention.md),[Emploi](StructureDefinition-Emploi.md),[EquipementMaterielLourd](StructureDefinition-EquipementMaterielLourd.md),[LicenceExploitation](StructureDefinition-LicenceExploitation.md),[NoteLiaison](StructureDefinition-NoteLiaison.md),[OffreOperationnelle](StructureDefinition-OffreOperationnelle.md)and[SituationExercice](StructureDefinition-SituationExercice.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/EntiteGeographique)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EntiteGeographique.c
   "name" : "EntiteGeographique",
   "title" : "EntiteGeographique",
   "status" : "draft",
-  "date" : "2025-10-30T15:20:59+00:00",
+  "date" : "2025-10-30T16:36:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
