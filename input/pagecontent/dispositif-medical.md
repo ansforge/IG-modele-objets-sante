@@ -1,15 +1,12 @@
-Cette partie présente les différents concepts utilisés pour définir et caractériser un professionnel (Personne physique) et ses modalités d'exercice.
+Cette partie présente le dispositif médical tel que défini dans le règlement (UE) 2017/745 du parlement européen et du conseil du 5 avril 2017. 
+Tous les dispositifs certifiés par ce règlement doivent porter un identifiant unique (IUD) et être enregistrés dans la base européenne EUDAMED
+L'entité juridique liée au dispositif médical représente le fabricant du dispositif. 
 
-### Remarques
-
-* Les définitions des classes et attributs de cette partie sont toujours sujettes à des ajouts en concertation avec les autorités d'enregistrement (AE) lors de l'étude de nouveaux concepts.
-* La classe "SavoirFaire" et ses classes spécialisées sont décrites dans cette partie, dans un diagramme dédié.
-* La classe "Diplome" et ses classes spécialisées sont décrites dans la partie "Classes Communes", dans un diagramme dédié.
-* Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans leur propre partie (ou package).
+Remarque : Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans d'autres parties (ou packages).
 
 <div class="figure" style="width:100%; overflow-x:auto;">
   <p style="margin: 0; padding: 0;">
-    {% include accompagnant.svg %}
+    {%include accompagnant.svg%}
   </p>
 </div>
 
