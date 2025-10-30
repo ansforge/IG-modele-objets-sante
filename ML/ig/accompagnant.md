@@ -10,5 +10,5 @@ Toutes les entités qui protègent, aident, accompagnent la personne.
 
 Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).
 
-<?xml version=”1.0” encoding=”us-ascii” standalone=”no”?>
+  
 
