@@ -85,7 +85,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-10-30T14:16:37+00:00",
+  "date" : "2025-10-30T15:20:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -827,6 +827,56 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
+    "grouping" : [
+      {
+        "id" : "Accompagnant",
+        "name" : "Accompagnant"
+      },
+      {
+        "id" : "Accord",
+        "name" : "Accord"
+      },
+      {
+        "id" : "Agenda",
+        "name" : "Agenda"
+      },
+      {
+        "id" : "Autorisation",
+        "name" : "Accord"
+      },
+      {
+        "id" : "Dispositif",
+        "name" : "Dispositif d'authentification"
+      },
+      {
+        "id" : "DM",
+        "name" : "Dispositif médical"
+      },
+      {
+        "id" : "Dossier",
+        "name" : "Dispositif médical"
+      },
+      {
+        "id" : "Offre",
+        "name" : "Offre opérationnelle"
+      },
+      {
+        "id" : "Personne",
+        "name" : "Personne prise en charge"
+      },
+      {
+        "id" : "Professionnel",
+        "name" : "Professionnel"
+      },
+      {
+        "id" : "Ressources",
+        "name" : "Ressources opérationnelles"
+      },
+      {
+        "id" : "Structure",
+        "name" : "Structure"
+      }
+    ],
     "resource" : [
       {
         "extension" : [
@@ -840,7 +890,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "ActiviteEnseignement",
         "description" : "Les activités d’enseignement aux professions sanitaires et sociales sont enregistrées dans FINESS et rattachées aux établissements de formation (EG). Le périmètre comprend les formations sanitaires et sociales préparant à un diplôme d’état délivré par l’administration sanitaire et sociale. Sont exclues les formations aux professions médicales préparées en université, hormis les formations et écoles de sages-femmes.Ces formations sont soumises à un arrêté d’agrément de la Région.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Autorisation"
       },
       {
         "extension" : [
@@ -854,7 +905,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "ActiviteSociale",
         "description" : "Les équipements sociaux représentent les activités des établissements du domaine social et médico-social enregistrés dans FINESS.Le champ de FINESS comprend l’ensemble des établissements et services sociaux et médico-sociaux (ESSMS), soumis à autorisation préalable, ainsi que quelques catégories d’établissements n’entrant pas dans le régime de l’autorisation.Pour indiquer les services offerts, FINESS identifie ceux-ci à l'aide d'un triplet composé des éléments suivants : discipline d’équipement, mode de fonctionnement (appelé aussi type d’activité) et clientèle.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Autorisation"
       },
       {
         "extension" : [
@@ -868,7 +920,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "ActiviteSoinAutorisee",
         "description" : "On distingue plusieurs types d’activités sanitaires rattachées aux établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «activités de soins» (acronyme communément utilisé : AS).Les activités de soins sont les activités des établissements sanitaires autorisées par arrêté du Directeur Général de l’ARS dans le cadre de l’article L. 6122-1 du CSP, pour une durée de 7 ans, durée fixe par voie réglementaire.D’après l’article L. 6122-1 du CSP, sont soumis à l’autorisation de l’agence régionale de santé les projets relatifs à la création de tout établissement de santé, la création, la conversion et le regroupement des activités de soins, y compris sous la forme d’alternatives à l’hospitalisation ou d’hospitalisation à domicile. La liste des activités de soins est fixée par décret en Conseil d’État. L’article R. 6122-25 du CSP référence ces activités de soins.Toute activité de soins fait l’objet d’un arrêté qui mentionne sa nature (triplet activité, modalité, forme, cf. plus bas), le numéro FINESS de l’entité juridique responsable (EJ) et le numéro FINESS de l’établissement (i.e. l’entité géographique, EG) dans lequel elle est implantée (synonyme : mise en œuvre). La modélisation actuelle prévoit que l’EG d’implantation est toujours rattachée juridiquement à l’EJ dans FINESS.La nomenclature est articulée en trois niveaux systématiquement renseignés : ** Activité de soins.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe : ** Les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des activités de soins.** Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :     ** Une autorisation est « active » à la date du jour si :          ** sa date de première mise en œuvre est renseignée et inférieure ou égale à la date du jour;          ** sa date d'échéance est supérieure ou égale à la date du jour.     ** Dans FINESS, les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description.     ** De rares attributs sont spécifiques à FINESS.Le périmètre des autorisations des activités de soins présentes dans FINESS recouvre :1- Les autorisations en attente de première mise en œuvre : la date de début (i.e. date de première mise en œuvre) n'est pas renseignée ou supérieure à la date du jour;2- Les autorisations actives:      ** la date début (i.e. date de première mise en œuvre) est renseignée et inférieure ou égale à la date du jour,     ** la date de fin est supérieure ou égale à la date du jour;3- Les autorisations échues, dont la date de fin est inférieure à la date du jour, et qui couvrent plusieurs cas :     a- Le renouvellement est en cours d’instruction (cas le plus courant),     b- Un autre événement (injonction, changement d’implantation,…) est en cours d’instruction au vu du dossier,     c- L’autorisation va devenir caduque, après quoi elle ne sera plus présente dans FINESS;     Dans chacun des 3 cas (a, b, c), la mise à jour dans les bases de données va avoir lieu (SI ARHGOS > SI FINESS > service de publication annuaire santé de l'ANS).     En attendant la mise à jour des bases de données, il est possible de considérer les autorisations échues présentes dans FINESS comme toujours actives.     Les autorisations caduques ou retirées ne sont pas présentes dans FINESS.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Autorisation"
       },
       {
         "extension" : [
@@ -882,7 +935,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "ActiviteSoumiseReconnaissance",
         "description" : "On distingue plusieurs types d’activités sanitaires des établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «activités soumises à reconnaissance contractuelle» (acronyme communément utilisé : ASR).Une ASR est une activité non soumise à autorisation du DG ARS mais soumise à reconnaissance contractuelle dans le cadre et la durée du CPOM (contrat pluriannuel d’objectif et de moyens).La nomenclature est articulée en trois niveaux systématiquement renseignés : **  Activité reconnue contractuellement communément appelée reconnaissance.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe, les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des activités soumises à reconnaissance contractuelle.Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS. Dans FINESS, les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description.Une reconnaissance contractuelle est nécessairement rattachée à un contrat CPOM. Au sens ARHGOS, un contrat CPOM correspond à un couple unique entité juridique (EJ)/établissement (EG).A noter qu’initialement il existait une distinction entre les reconnaissances dites nationales (issues du guide méthodologique CPOM de la DGOS) et les reconnaissances dites régionales. Depuis 2019, toutes les reconnaissances contractuelles sont de type national.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Autorisation"
       },
       {
         "extension" : [
@@ -910,7 +964,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Agenda",
         "description" : "Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de créneaux, des plages de disponibilité et des rendez-vous sur une période définie.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Agenda"
       },
       {
         "extension" : [
@@ -924,7 +979,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "AidantDemarche",
         "description" : "Personne physique ou morale aidant l'individu dans ses démarches.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Accompagnant"
       },
       {
         "extension" : [
@@ -938,7 +994,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "ArretTravail",
         "description" : "Selon le code du travail, l'arrêt de travail est une période de suspension du contrat de travail en raison d’une maladie ou d’un accident du travail d’origine professionnelle ou non professionnelle. L’arrêt de travail est justifié par une prescription médicale.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       },
       {
         "extension" : [
@@ -966,7 +1023,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "AutorisationExercice",
         "description" : "L'accès aux professions de santé est soumis à des conditions concernant les diplômes obtenus : généralement est requis un diplôme français (DE de médecine, etc. ou européen (dans les professions pour lesquelles il existe des accords de reconnaissance mutuelle des diplômes).Pour les personnes ne remplissant pas ces conditions (diplômes hors UE, par exemple), les diplômes obtenus doivent être complétés d'une autorisation afin de permettre l'entrée dans la profession.Il peut s'agir:** d'une autorisation délivrée par le Ministère de la Santé,** d'une autorisation délivrée par l'Ordre au vu de la jurisprudence (Hochsmann, etc.).",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Accord"
       },
       {
         "extension" : [
@@ -980,7 +1038,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "AutreActiviteSoumiseAutorisation",
         "description" : "On distingue plusieurs types d’activités sanitaires des établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «autres activités soumises à autorisation» (acronyme communément utilisé : AASA). Les AASA sont soumises à l’autorisation du Directeur Général de l’ARS selon des modalités et des durées différentes particulières.  Elles sont au nombre de 5 (instruction n° DGOS/SR6/R3/R4/DREES/DMSI/2014/364 du 24décembre 2014) :1. Chirurgie esthétique2. Prélèvements d’organes, de tissus, de cellules3. Dépôts de sang4. Lieux de recherches de la personne humaine5. LactariumsLa nomenclature est articulée en trois niveaux systématiquement renseignés : ** Autre Activité.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe :** Les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des autres activités soumises à autorisation ; ** Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :     ** Seules les autorisations non caduques sont transmises à FINESS par ARHGOS et sont donc publiées par l’ANS. Hormis les autorisations en attente de première mise en œuvre, toutes les autorisations publiées peuvent donc être considérées comme actives.     ** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Autorisation"
       },
       {
         "extension" : [
@@ -1048,7 +1107,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "CapaciteActiviteExercee",
         "description" : "Capacité définie au regard de l'activité.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Autorisation"
       },
       {
         "extension" : [
@@ -1076,7 +1136,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "CapacitePriseCharge",
         "description" : "La capacite de prise en charge indique à quelle affectation sont destinés les lits qui seront rattachés à cette classe.Elle permet d’éviter de la duplication de l'offre ou du lieu de prise en charge lorsque des lits doivent être réservés dans le cadre d’une gestion de crise.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Ressources"
       },
       {
         "extension" : [
@@ -1090,7 +1151,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "CapaciteSavoirfaire",
         "description" : "La capacité, en tant que savoir-faire, représente la reconnaissance par l'ordre d'un diplôme de capacité. Elle complète les savoir-faire principaux, notamment les spécialités.Une capacité est un type de savoir-faire. La classe Capacite est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1117,7 +1179,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "CarteProfessionnel",
         "description" : "Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Dispositif"
       },
       {
         "extension" : [
@@ -1144,7 +1207,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Certificat",
         "description" : "Données descriptives du moyen d’identification par certificat. Il s'agit des certificats utilisés par les professionnels et les structures.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Dispositif"
       },
       {
         "extension" : [
@@ -1185,7 +1249,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Competence",
         "description" : "Extrait du rapport de l'ONDPS sur la médecine générale (Tome 1 2006-2007): \"La compétence était un titre délivré par l’ordre national des médecins en application du précédent règlement de qualification (Article 3 de l'arrêté du 4 septembre 1970), aux praticiens dits «ancien régime» ayant débuté leurs études médicales avant la réforme de 1982. Ce titre était accordé après avis d’une commission ordinale spécifique. Les compétences, dont la liste était fixée par arrêté, portaient soit sur des disciplines ne correspondant pas à des spécialités qualifiantes (médecine légale ou allergologie par exemple), soit sur des spécialités médicales, le praticien compétent ne pouvant l’exercer que dans le cadre de sa spécialité d’inscription à l’ordre. Les compétences ne peuvent plus être délivrées aux médecins issus du nouveau régime, c’est-à-dire ayant débuté leurs études à compter de l’année universitaire 1984-1985. Toutefois, pour ceux de l’ancien régime et à titre transitoire, le dépôt d’une demande de qualification était possible jusqu’au 31 décembre 2004 et ces praticiens peuvent s’en prévaloir jusqu’à la fin leur période d’activité professionnelle.Une compétence est un type de savoir-faire. La classe Competence est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1199,7 +1264,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "CompetenceExclusive",
         "description" : "La compétence exclusive est une compétence exercée à titre exclusif. Un professionnel ne peut exercer à la fois une compétence exclusive et une spécialité.Dans le cadre du modèle, une compétence exclusive est un type de savoir-faire. La classe CompetenceExclusive est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1226,7 +1292,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "CompetenceMetier",
         "description" : "La compétence métier désigne un type de savoir-faire opérationnel, transversal ou spécifique, acquis et exercé à titre non exclusif dans le cadre d’une activité professionnelle reconnue. Elle reflète une expertise fonctionnelle ou technique mobilisée dans l’exercice quotidien du professionnel de santé.Contrairement aux spécialités ordinales ou compétences de médecines, la compétence métier n’est pas nécessairement encadrée par un diplôme ou une qualification ordinale, mais elle peut être attestée par l’expérience, des formations spécifiques, ou une reconnaissance institutionnelle (ex. : missions ANS, ARS, établissements de santé, etc.).Dans le cadre du modèle, la classe CompétenceMetier est représentée comme une spécialisation de la classe SavoirFaire, i-e un TypeDeSavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. Elle se distingue des autres types de savoir-faire par son ancrage dans les pratiques professionnelles et organisationnelles, plutôt que dans une logique de qualification médicale ou réglementaire.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1280,7 +1347,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Convention",
         "description" : "Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Accord"
       },
       {
         "extension" : [
@@ -1308,7 +1376,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Creneau",
         "description" : "Un créneau d’un agenda est un intervalle de temps, disponible ou occupé.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Agenda"
       },
       {
         "extension" : [
@@ -1322,7 +1391,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Decision",
         "description" : "Acte par lequel une autorité prend parti après examen d'une demande.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Dossier"
       },
       {
         "extension" : [
@@ -1336,7 +1406,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Demande",
         "description" : "Besoin(s) et/ou souhait(s) exprimés de manière officielle.Le contenu de la demande peut être un document : une lettre, un formulaire, etc. La demande peut également être accompagnée si besoin de pièces jointes.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Dossier"
       },
       {
         "extension" : [
@@ -1378,7 +1449,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "DESCNonQualifiant",
         "description" : "Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu'il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1517,7 +1589,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "DispositifMedical",
         "description" : "L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017 définit un dispositif médical (DM) comme tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l'homme pour l'une ou plusieurs des fins médicales précises suivantes:** diagnostic, prévention, contrôle, prédiction, pronostic, traitement ou atténuation d'une maladie,** diagnostic, contrôle, traitement, atténuation d'une blessure ou d'un handicap ou compensation de ceux-ci,** investigation, remplacement ou modification d'une structure ou fonction anatomique ou d'un processus ou état physiologique ou pathologique,** communication d'informations au moyen d'un examen in vitro d'échantillons provenant du corps humain, y compris les dons d'organes, de sang et de tissus,et dont l'action principale voulue dans ou sur le corps humain n'est pas obtenue par des moyens pharmacologiques ou immunologiques ni par métabolisme, mais dont la fonction peut être assistée par de tels moyens. Les produits ci-après sont également réputés être des dispositifs médicaux :** les dispositifs destinés à la maîtrise de la conception ou à l'assistance à celle-ci,** les produits spécifiquement destinés au nettoyage, à la désinfection ou à la stérilisation des dispositifs visés à l'article 1er, paragraphe 4, et de ceux visés au premier alinéa du présent point.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "DM"
       },
       {
         "extension" : [
@@ -1545,7 +1618,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Document",
         "description" : "Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Dossier"
       },
       {
         "extension" : [
@@ -1559,7 +1633,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "DossierPersonnePriseCharge",
         "description" : "Un dossier regroupe l'ensemble des informations et des documents liés à une personne.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Dossier"
       },
       {
         "extension" : [
@@ -1573,7 +1648,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "DroitExerciceComplementaire",
         "description" : "Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d'exercice dans l'une des spécialités définies par un des DESC de médecine du groupe I.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1600,7 +1676,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Emploi",
         "description" : "L'emploi définit l'exercice d'une profession dans le cadre d'une activité rémunérée. Il est alors régi par un contrat signé entre un employeur et un employé.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       },
       {
         "extension" : [
@@ -1614,7 +1691,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "EntiteGeographique",
         "description" : "L'Entité Géographique (EG) correspond à la notion d'établissement : ** Pour les établissements inscrits au FINESS, cette notion d'établissement résulte du croisement de trois critères :     - Un critère géographique : Est un établissement tout lieu dont l'implantation d’activité(s) ou d’équipement(s) est géographiquement distincte d'une autre implantation. Ainsi un Centre Hospitalier Régional comprend autant d'établissements que d'implantations géographiques différentes. Un établissement principal et son établissement secondaire situé à 1 km constituent deux établissements distincts dans FINESS. L'implantation géographique peut-être décrite soit avec l'attribut addresseEG soit au travers de la classe Lieu.    - Un critère budgétaire : Pour une même implantation géographique, on distingue autant d'établissements du secteur public qu'il y a de budgets distincts (budget général, budget annexe).Ainsi un ESAT et son foyer d'hébergement constituent deux établissements même s'ils sont implantés à la même adresse.     - Un critère d’activité : Pour une même implantation géographique et un même budget, on distingue autant d'établissements que de « catégorie d’établissement » décrivant l’activité principale autorisée.Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constituent deux établissements même s'ils sont implantés à la même adresse.** Pour les entreprises inscrites dans le SIRENE, l'EG correspond à un établissement de la personne morale, elle est identifiée par un numéro Siret.Synonymes: Etablissement, structure",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Structure"
       },
       {
         "extension" : [
@@ -1628,7 +1706,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "EntiteJuridique",
         "description" : "L'Entité Juridique (EJ) correspond à la notion de personne morale :** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d'exercer ses activités dans des établissements; chaque EJ dispose d'un statut juridique de la personne morale;** Pour les autres types de structures, une EJ est une personne morale inscrite dans le SIRENE, identifiée par son numéro Siren.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Structure"
       },
       {
         "extension" : [
@@ -1642,7 +1721,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "EquipementMaterielLourd",
         "description" : "Les équipements matériels lourds (EML) sont mis en œuvre au sein d’établissements. Ce sont des équipements mobiliers destinés à pourvoir soit au diagnostic, soit à la thérapeutique, et dont les conditions d’installation et de fonctionnement sont particulièrement onéreuses. Exemples : scanographes, caméras à scintillation, etc.Ils sont soumis à l'autorisation du Directeur Général de l’ARS et leur liste est fixée par décret en Conseil d'Etat. L’article R. 6122-2 du CSP référence ces équipements matériels lourds.L’arrêté du DG ARS mentionne le type d’EML, le numéro FINESS de l’entité juridique responsable (EJ) et le numéro FINESS de l’établissement (i.e. l’entité géographique, EG) dans lequel elle est implantée (synonyme : mise en œuvre). La modélisation actuelle prévoit que l’EG d’implantation est toujours rattaché juridiquement à l’EJ dans FINESS.Les attributs de classe sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des EML.Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :** Une autorisation est « active » à la date du jour si :    ** sa date de première mise en œuvre est renseignée et inférieure ou égale à la date du jour    ** sa date d'échéance est supérieure ou égale à la date du jour.** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS.Le périmètre des autorisations des équipements matériels lourds présentes dans FINESS recouvre :1- Les autorisations en attente de première mise en œuvre : la date de début (i.e. date de première mise en œuvre) n'est pas renseignée ou supérieure à la date du jour;2- Les autorisations actives:      ** la date début (i.e. date de première mise en œuvre) est renseignée et inférieure ou égale à la date du jour,     ** la date de fin est supérieure ou égale à la date du jour;3- Les autorisations échues, dont la date de fin est inférieure à la date du jour, et qui couvrent plusieurs cas :        a- Le renouvellement est en cours d’instruction (cas le plus courant);        b- Un autre événement (injonction, changement d’implantation,…) est en cours d’instruction au vu du dossier;        c- L’autorisation va devenir caduque, après quoi elle ne sera plus présente dans FINESS;        Dans chacun des 3 cas (a, b, c), la mise à jour dans les bases de données va avoir lieu (SI ARHGOS > SI FINESS > service de publication annuaire santé de l'ANS). En attendant la mise à jour des bases de données, il est possible de considérer les autorisations échues présentes dans FINESS comme toujours actives.        Les autorisations caduques ou retirées ne sont pas présentes dans FINESS.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Autorisation"
       },
       {
         "extension" : [
@@ -1656,7 +1736,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "EquipementSpecifique",
         "description" : "Un équipement spécifique est une ressource matérielle discriminante pour la réalisation d'une prestation et sert à faciliter l’orientation du patient. Un équipement spécifique est une ressource propre de la structure ou mise à disposition dans le cadre d'une convention à la condition qu’elle soit utilisée sur site.Les équipements décrits dans cette classe concernent des actes spécifiques ou non. Seules les ressources discriminantes sont retenues, c’est-à-dire que les seuls équipements décrits concernent les équipements qui ne sont pas implicites pour un acte donné.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Ressources"
       },
       {
         "extension" : [
@@ -1670,7 +1751,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "ExerciceProfessionnel",
         "description" : "Informations décrivant notamment la profession exercée, l'identité d'exercice d'un professionnel et le cadre de son exercice (civil, agent public, etc.).Il peut exister plusieurs exercices professionnels pour une personne à un instant donné.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1697,7 +1779,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "FonctionQualifiee",
         "description" : "Expérience pratique exigée par le code de la santé publique (art R5124-16) pour exercer certaines fonctions dans l’industrie pharmaceutique et la distribution en gros. Ces dispositions s’appliquent uniquement à la profession de pharmacien.L’expérience pratique est en liaison avec les activités de l’établissement pharmaceutique telles que définies par l’ANSM ou l’ANSES.A ce jour, cinq expériences pratiques sont identifiées dont trois sont imbriquées. L’expérience pratique de \"Fabricant\" inclut celle d’\"Exploitant\" qui inclut celle de \"Distribution\".  Une fonction qualifiée est un type de savoir-faire. La classe FonctionQualifiee est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1766,7 +1849,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "LicenceExploitation",
         "description" : "Informations descriptives de la licence d’exploitation d’une officine.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Accord"
       },
       {
         "extension" : [
@@ -1807,7 +1891,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "LieuRealisationOffre",
         "description" : "Espace disposant d'un ensemble de ressources pour réaliser une offre. Lorsque les ressources qui contribuent à l'offre sont mobiles, le lieu de réalisation de l'offre correspond au lieu administratif où est organisée la prise en charge.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Ressources"
       },
       {
         "extension" : [
@@ -1821,7 +1906,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "MesureProtection",
         "description" : "La maladie, le handicap, l'accident peuvent altérer les facultés d'une personne et la rendre incapable de défendre ses intérêts. Le juge peut alors décider d'une mesure de protection juridique par laquelle une autre personne l'aide à protéger ses intérêts. La protection doit être la moins contraignante possible, et en priorité être exercée par la famille. Elle distingue aussi les cas où la personne conserve encore ses facultés, mais est en grande difficulté sociale. (service-public.fr)",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Accompagnant"
       },
       {
         "extension" : [
@@ -1835,7 +1921,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "NoteLiaison",
         "description" : "Les notes de liaison permet d’assurer un suivi « terrain » de la personne prise en charge et de garder en temps réel, une vue précise de la situation de cette personne prise en charge.Les notes peuvent concerner, par exemple, des symptômes observés, des résultats d’analyses, des avis et observations, etc.Les notes sont créées automatiquement ou manuellement, par des professionnels, des dispositifs médicaux, des logiciels métier, une personne tierce en contact direct ou indirect avec la personne prise en charge, ou bien par la personne prise en charge elle-même. Note : les logiciels métier et systèmes ne sont pas représentés dans le MOS.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Dossier"
       },
       {
         "extension" : [
@@ -1849,7 +1936,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Observation",
         "description" : "Une mesure ou une déclaration constitue une observation effectuée sur une personne.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       },
       {
         "extension" : [
@@ -1863,7 +1951,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "OffreOperationnelle",
         "description" : "L'Offre opérationnelle correspond aux prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Offre"
       },
       {
         "extension" : [
@@ -1877,7 +1966,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "OrientationParticuliere",
         "description" : "Caractérise une orientation d'exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -1904,7 +1994,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Parent",
         "description" : "Personne liée par un lien de filiation à un enfant",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Accompagnant"
       },
       {
         "extension" : [
@@ -1972,7 +2063,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "PersonnePriseCharge",
         "description" : "Personne physique bénéficiaire de soins, d'examens, d'actes de prévention ou de services. Selon le contexte, la personne prise en charge peut être un patient ou un usager.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       },
       {
         "extension" : [
@@ -1986,7 +2078,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "PlageDisponibilite",
         "description" : "Horaires de disponibilité pour la prise de rendez - vous de l'agenda. Par exception, cet objet permet de renseigner les périodes sur lesquelles l'agenda est indisponible à la prise de rendez - vous.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Agenda"
       },
       {
         "extension" : [
@@ -2000,7 +2093,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "PlageReference",
         "description" : "La plage de référence, constituée d’une borne inférieure et d’une borne supérieure, fournit un guide pour interpréter une valeur en la comparant à ces bornes.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       },
       {
         "extension" : [
@@ -2027,7 +2121,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Professionnel",
         "description" : "Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -2067,7 +2162,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "QualificationPAC",
         "description" : "La qualification de praticien adjoint contractuel autorise à exercer en établissement sans être qualifié ni en médecine générale, ni en spécialité. Cela concerne des médecins à diplôme étranger dont la qualification a été reconnue avant l'instauration de l'autorisation d'exercice, et qui n'ont pas fait de démarche pour obtenir cette autorisation (environ 500 médecins concernés).Une qualification de praticien adjoint contractuel est un type de savoir-faire. La classe QualificationPAC est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -2107,7 +2203,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "RendezVous",
         "description" : "Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Agenda"
       },
       {
         "extension" : [
@@ -2121,7 +2218,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "ResultatObservation",
         "description" : "Résultat de la mesure ou de l’observation effectuée sur un personne.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       },
       {
         "extension" : [
@@ -2148,7 +2246,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "SavoirFaire",
         "description" : "Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -2188,7 +2287,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "SituationExercice",
         "description" : "Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS).",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -2202,7 +2302,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "SituationOperationnelle",
         "description" : "Caractérise les conditions d'exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -2216,7 +2317,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "Specialite",
         "description" : "Spécialité médicale ou odontologique, reconnue par une autorité d'enregistrement (Ordre ou SSA), soit sur la base d'un diplôme de spécialité (DES ou DESC de groupe II, CES jusqu'en 1991), soit via une commission de qualification.En France, l'exercice d'une spécialité est exclusif, c'est-à-dire qu'on ne peut exercer qu'une seule spécialité, celle qui fait l'objet d'une qualification par le Conseil de l'ordre. Un médecin titulaire d'un DESC de type II qui s'ajoute à son DES, a donc 2 qualifications possibles. Lorsqu'il s'inscrit au tableau de l'ordre des médecins, il doit déclarer sa spécialité d'exercice. S'il choisit celle de son DESC, il ne peut pas exercer la spécialité de son DES. Toutefois, il peut, dans le futur, choisir le retour à la spécialité originelle portée par le DES. Ainsi, la création en 2004 du DESC de Gériatrie a marqué la naissance de la qualification de spécialiste en gériatrie (la gériatrie étant auparavant un mode d'exercice particulier de la médecine, concernant des généralistes et des spécialistes).Dans le cadre du modèle, une spécialité est un type de savoir-faire. La classe Specialite est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -2243,7 +2345,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "SurspecialiteTransversale",
         "description" : "La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Professionnel"
       },
       {
         "extension" : [
@@ -2310,7 +2413,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "VieProfessionnelle",
         "description" : "/!\\ Classe en cours de constructionInformations relatives à la vie professionnelle de la personne prise en charge.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       },
       {
         "extension" : [
@@ -2324,7 +2428,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "VieQuotidienne",
         "description" : "/!\\ Classe en cours de constructionInformations relatives à la vie quotidienne de la personne prise en charge.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       },
       {
         "extension" : [
@@ -2338,7 +2443,8 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "VieScolaire",
         "description" : "/!\\ Classe en cours de constructionInformations relatives à la vie scolaire de la personne prise en charge.",
-        "exampleBoolean" : false
+        "exampleBoolean" : false,
+        "groupingId" : "Personne"
       }
     ],
     "page" : {

@@ -53,7 +53,7 @@ Ce jeu de valeur (ValueSet) contient 16 concepts
   "version" : "0.1.0",
   "name" : "ProfessioncategoriesocioprofessionnelleVs",
   "status" : "draft",
-  "date" : "2025-10-30T14:16:37+00:00",
+  "date" : "2025-10-30T15:20:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

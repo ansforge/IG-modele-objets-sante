@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-10-30T14:16:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-10-30T15:20:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1347,6 +1347,43 @@
          fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
        ]
      ] ) ;
+     fhir:grouping ( [
+       fhir:id [ fhir:v "Accompagnant" ] ;
+       fhir:name [ fhir:v "Accompagnant" ]
+     ] [
+       fhir:id [ fhir:v "Accord" ] ;
+       fhir:name [ fhir:v "Accord" ]
+     ] [
+       fhir:id [ fhir:v "Agenda" ] ;
+       fhir:name [ fhir:v "Agenda" ]
+     ] [
+       fhir:id [ fhir:v "Autorisation" ] ;
+       fhir:name [ fhir:v "Accord" ]
+     ] [
+       fhir:id [ fhir:v "Dispositif" ] ;
+       fhir:name [ fhir:v "Dispositif d'authentification" ]
+     ] [
+       fhir:id [ fhir:v "DM" ] ;
+       fhir:name [ fhir:v "Dispositif médical" ]
+     ] [
+       fhir:id [ fhir:v "Dossier" ] ;
+       fhir:name [ fhir:v "Dispositif médical" ]
+     ] [
+       fhir:id [ fhir:v "Offre" ] ;
+       fhir:name [ fhir:v "Offre opérationnelle" ]
+     ] [
+       fhir:id [ fhir:v "Personne" ] ;
+       fhir:name [ fhir:v "Personne prise en charge" ]
+     ] [
+       fhir:id [ fhir:v "Professionnel" ] ;
+       fhir:name [ fhir:v "Professionnel" ]
+     ] [
+       fhir:id [ fhir:v "Ressources" ] ;
+       fhir:name [ fhir:v "Ressources opérationnelles" ]
+     ] [
+       fhir:id [ fhir:v "Structure" ] ;
+       fhir:name [ fhir:v "Structure" ]
+     ] ) ;
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [
@@ -1367,7 +1404,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1388,7 +1426,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1409,7 +1448,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1430,7 +1470,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1472,7 +1513,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Agenda" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1493,7 +1535,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Accompagnant" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1514,7 +1557,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1556,7 +1600,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Accord" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1577,7 +1622,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1680,7 +1726,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1722,7 +1769,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1743,7 +1791,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1784,7 +1833,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Dispositif" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1825,7 +1875,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Dispositif" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1887,7 +1938,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1908,7 +1960,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1949,7 +2002,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2031,7 +2085,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Accord" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2073,7 +2128,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Agenda" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2094,7 +2150,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2115,7 +2172,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2178,7 +2236,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2387,7 +2446,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "DM" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2429,7 +2489,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2450,7 +2511,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2471,7 +2533,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2512,7 +2575,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2533,7 +2597,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Structure" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2554,7 +2619,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Structure" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2575,7 +2641,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2596,7 +2663,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2617,7 +2685,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2658,7 +2727,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2762,7 +2832,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Accord" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2824,7 +2895,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2845,7 +2917,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Accompagnant" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2866,7 +2939,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2887,7 +2961,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2908,7 +2983,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Offre" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2929,7 +3005,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2970,7 +3047,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Accompagnant" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3073,7 +3151,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3094,7 +3173,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Agenda" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3115,7 +3195,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3156,7 +3237,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3217,7 +3299,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3278,7 +3361,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Agenda" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3299,7 +3383,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3340,7 +3425,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3401,7 +3487,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3422,7 +3509,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3443,7 +3531,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3484,7 +3573,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3586,7 +3676,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3607,7 +3698,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3628,7 +3720,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

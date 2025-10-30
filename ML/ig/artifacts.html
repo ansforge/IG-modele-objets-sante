@@ -181,7 +181,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-ActiviteEnseignement.html">next&gt;</a>
+          | <a href="StructureDefinition-AidantDemarche.html">next&gt;</a>
 
           </span>
 
@@ -215,10 +215,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Logical Models</a>
+         <a href="#1">Accompagnant</a>
       </li>
       <li>
-         <a href="#2">Terminology: Value Sets</a>
+         <a href="#2">Accord</a>
+      </li>
+      <li>
+         <a href="#3">Agenda</a>
+      </li>
+      <li>
+         <a href="#4">Accord</a>
+      </li>
+      <li>
+         <a href="#5">Dispositif d'authentification</a>
+      </li>
+      <li>
+         <a href="#6">Dispositif médical</a>
+      </li>
+      <li>
+         <a href="#7">Dispositif médical</a>
+      </li>
+      <li>
+         <a href="#8">Offre opérationnelle</a>
+      </li>
+      <li>
+         <a href="#9">Personne prise en charge</a>
+      </li>
+      <li>
+         <a href="#10">Professionnel</a>
+      </li>
+      <li>
+         <a href="#11">Ressources opérationnelles</a>
+      </li>
+      <li>
+         <a href="#12">Structure</a>
+      </li>
+      <li>
+         <a href="#13">Structures: Logical Models</a>
+      </li>
+      <li>
+         <a href="#14">Terminology: Value Sets</a>
       </li>
    </ul>
 </div>
@@ -227,8 +263,122 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:html="http://www.w3.org/1999/xhtml">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Structures: Logical Models </h3>
-    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+   <h3>Accompagnant </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AidantDemarche.html"
+                  title="StructureDefinition/AidantDemarche">AidantDemarche</a>
+            </td>
+            <td>
+<p>Personne physique ou morale aidant l’individu dans ses démarches.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MesureProtection.html"
+                  title="StructureDefinition/MesureProtection">MesureProtection</a>
+            </td>
+            <td>
+<p>La maladie, le handicap, l’accident peuvent altérer les facultés d’une personne et la rendre incapable de défendre ses intérêts. Le juge peut alors décider d’une mesure de protection juridique par laquelle une autre personne l’aide à protéger ses intérêts. La protection doit être la moins contraignante possible, et en priorité être exercée par la famille. Elle distingue aussi les cas où la personne conserve encore ses facultés, mais est en grande difficulté sociale. (service-public.fr)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Parent.html"
+                  title="StructureDefinition/Parent">Parent</a>
+            </td>
+            <td>
+<p>Personne liée par un lien de filiation à un enfant</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Accord </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AutorisationExercice.html"
+                  title="StructureDefinition/AutorisationExercice">AutorisationExercice</a>
+            </td>
+            <td>
+<p>L’accès aux professions de santé est soumis à des conditions concernant les diplômes obtenus : généralement est requis un diplôme français (DE de médecine, etc. ou européen (dans les professions pour lesquelles il existe des accords de reconnaissance mutuelle des diplômes).Pour les personnes ne remplissant pas ces conditions (diplômes hors UE, par exemple), les diplômes obtenus doivent être complétés d’une autorisation afin de permettre l’entrée dans la profession.Il peut s’agir:** d’une autorisation délivrée par le Ministère de la Santé,** d’une autorisation délivrée par l’Ordre au vu de la jurisprudence (Hochsmann, etc.).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Convention.html"
+                  title="StructureDefinition/Convention">Convention</a>
+            </td>
+            <td>
+<p>Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LicenceExploitation.html"
+                  title="StructureDefinition/LicenceExploitation">LicenceExploitation</a>
+            </td>
+            <td>
+<p>Informations descriptives de la licence d’exploitation d’une officine.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Agenda </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Agenda.html"
+                  title="StructureDefinition/Agenda">Agenda</a>
+            </td>
+            <td>
+<p>Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de créneaux, des plages de disponibilité et des rendez-vous sur une période définie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Creneau.html"
+                  title="StructureDefinition/Creneau">Creneau</a>
+            </td>
+            <td>
+<p>Un créneau d’un agenda est un intervalle de temps, disponible ou occupé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PlageDisponibilite.html"
+                  title="StructureDefinition/PlageDisponibilite">PlageDisponibilite</a>
+            </td>
+            <td>
+<p>Horaires de disponibilité pour la prise de rendez - vous de l’agenda. Par exception, cet objet permet de renseigner les périodes sur lesquelles l’agenda est indisponible à la prise de rendez - vous.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RendezVous.html"
+                  title="StructureDefinition/RendezVous">RendezVous</a>
+            </td>
+            <td>
+<p>Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Accord </h3>
+    
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -270,83 +420,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Adresse.html"
-                  title="StructureDefinition/Adresse">Adresse</a>
-            </td>
-            <td>
-<p>Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d’après la norme NF Z 10-011.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Agenda.html"
-                  title="StructureDefinition/Agenda">Agenda</a>
-            </td>
-            <td>
-<p>Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de créneaux, des plages de disponibilité et des rendez-vous sur une période définie.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AidantDemarche.html"
-                  title="StructureDefinition/AidantDemarche">AidantDemarche</a>
-            </td>
-            <td>
-<p>Personne physique ou morale aidant l’individu dans ses démarches.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ArretTravail.html"
-                  title="StructureDefinition/ArretTravail">ArretTravail</a>
-            </td>
-            <td>
-<p>Selon le code du travail, l’arrêt de travail est une période de suspension du contrat de travail en raison d’une maladie ou d’un accident du travail d’origine professionnelle ou non professionnelle. L’arrêt de travail est justifié par une prescription médicale.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Attestation.html"
-                  title="StructureDefinition/Attestation">Attestation</a>
-            </td>
-            <td>
-<p>L’attestation est attribuée au terme d’une formation universitaire. Pour les professions médicales et de la pharmacie, les attestations ont été remplacées par les diplômes universitaires (DU).Dans le cadre du modèle, une attestation est un type de diplôme. La classe Attestation est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AutorisationExercice.html"
-                  title="StructureDefinition/AutorisationExercice">AutorisationExercice</a>
-            </td>
-            <td>
-<p>L’accès aux professions de santé est soumis à des conditions concernant les diplômes obtenus : généralement est requis un diplôme français (DE de médecine, etc. ou européen (dans les professions pour lesquelles il existe des accords de reconnaissance mutuelle des diplômes).Pour les personnes ne remplissant pas ces conditions (diplômes hors UE, par exemple), les diplômes obtenus doivent être complétés d’une autorisation afin de permettre l’entrée dans la profession.Il peut s’agir:** d’une autorisation délivrée par le Ministère de la Santé,** d’une autorisation délivrée par l’Ordre au vu de la jurisprudence (Hochsmann, etc.).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-AutreActiviteSoumiseAutorisation.html"
                   title="StructureDefinition/AutreActiviteSoumiseAutorisation">AutreActiviteSoumiseAutorisation</a>
             </td>
             <td>
 <p>On distingue plusieurs types d’activités sanitaires des établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «autres activités soumises à autorisation» (acronyme communément utilisé : AASA). Les AASA sont soumises à l’autorisation du Directeur Général de l’ARS selon des modalités et des durées différentes particulières.  Elles sont au nombre de 5 (instruction n° DGOS/SR6/R3/R4/DREES/DMSI/2014/364 du 24décembre 2014) :1. Chirurgie esthétique2. Prélèvements d’organes, de tissus, de cellules3. Dépôts de sang4. Lieux de recherches de la personne humaine5. LactariumsLa nomenclature est articulée en trois niveaux systématiquement renseignés : ** Autre Activité.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe :** Les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des autres activités soumises à autorisation ; ** Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :     ** Seules les autorisations non caduques sont transmises à FINESS par ARHGOS et sont donc publiées par l’ANS. Hormis les autorisations en attente de première mise en œuvre, toutes les autorisations publiées peuvent donc être considérées comme actives.     ** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-AutreDiplomeObtenu.html"
-                  title="StructureDefinition/AutreDiplomeObtenu">AutreDiplomeObtenu</a>
-            </td>
-            <td>
-<p>Diplôme autre qu’un diplôme d’Etat, une qualification, un diplôme d’études spécialisées, un DESC1, un DESC2, un diplôme de l’espace économique européen, un diplôme européen d’études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-BoiteLettreMSS.html"
-                  title="StructureDefinition/BoiteLettreMSS">BoiteLettreMSS</a>
-            </td>
-            <td>
-<p>Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS</p>
 </td>
          </tr>
          <tr>
@@ -360,31 +438,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-CapaciteDiplome.html"
-                  title="StructureDefinition/CapaciteDiplome">CapaciteDiplome</a>
+               <a href="StructureDefinition-EquipementMaterielLourd.html"
+                  title="StructureDefinition/EquipementMaterielLourd">EquipementMaterielLourd</a>
             </td>
             <td>
-<p>En France, la capacité de médecine est un diplôme (2 ans d’études) réservé aux docteurs en médecine (généralistes ou spécialistes), leur conférant certaines compétences supplémentaires dans leur exercice ou un champ d’exercice plus large (réf. décret du 29 avril 1988). Les capacités ne confèrent pas la qualification aux spécialistes auprès de l’Ordre des médecins, mais celui-ci les reconnait comme des titres auxquels peuvent prétendre les médecins (par exemple sur leur plaque) pour justifier de compétences supplémentaires auprès de leurs patients.Une capacité est un type de diplôme. La classe CapaciteDiplome est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+<p>Les équipements matériels lourds (EML) sont mis en œuvre au sein d’établissements. Ce sont des équipements mobiliers destinés à pourvoir soit au diagnostic, soit à la thérapeutique, et dont les conditions d’installation et de fonctionnement sont particulièrement onéreuses. Exemples : scanographes, caméras à scintillation, etc.Ils sont soumis à l’autorisation du Directeur Général de l’ARS et leur liste est fixée par décret en Conseil d’Etat. L’article R. 6122-2 du CSP référence ces équipements matériels lourds.L’arrêté du DG ARS mentionne le type d’EML, le numéro FINESS de l’entité juridique responsable (EJ) et le numéro FINESS de l’établissement (i.e. l’entité géographique, EG) dans lequel elle est implantée (synonyme : mise en œuvre). La modélisation actuelle prévoit que l’EG d’implantation est toujours rattaché juridiquement à l’EJ dans FINESS.Les attributs de classe sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des EML.Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :** Une autorisation est « active » à la date du jour si :    ** sa date de première mise en œuvre est renseignée et inférieure ou égale à la date du jour    ** sa date d’échéance est supérieure ou égale à la date du jour.** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS.Le périmètre des autorisations des équipements matériels lourds présentes dans FINESS recouvre :1- Les autorisations en attente de première mise en œuvre : la date de début (i.e. date de première mise en œuvre) n’est pas renseignée ou supérieure à la date du jour;2- Les autorisations actives:      ** la date début (i.e. date de première mise en œuvre) est renseignée et inférieure ou égale à la date du jour,     ** la date de fin est supérieure ou égale à la date du jour;3- Les autorisations échues, dont la date de fin est inférieure à la date du jour, et qui couvrent plusieurs cas :        a- Le renouvellement est en cours d’instruction (cas le plus courant);        b- Un autre événement (injonction, changement d’implantation,…) est en cours d’instruction au vu du dossier;        c- L’autorisation va devenir caduque, après quoi elle ne sera plus présente dans FINESS;        Dans chacun des 3 cas (a, b, c), la mise à jour dans les bases de données va avoir lieu (SI ARHGOS &gt; SI FINESS &gt; service de publication annuaire santé de l’ANS). En attendant la mise à jour des bases de données, il est possible de considérer les autorisations échues présentes dans FINESS comme toujours actives.        Les autorisations caduques ou retirées ne sont pas présentes dans FINESS.</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-CapacitePriseCharge.html"
-                  title="StructureDefinition/CapacitePriseCharge">CapacitePriseCharge</a>
-            </td>
-            <td>
-<p>La capacite de prise en charge indique à quelle affectation sont destinés les lits qui seront rattachés à cette classe.Elle permet d’éviter de la duplication de l’offre ou du lieu de prise en charge lorsque des lits doivent être réservés dans le cadre d’une gestion de crise.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-CapaciteSavoirfaire.html"
-                  title="StructureDefinition/CapaciteSavoirfaire">CapaciteSavoirfaire</a>
-            </td>
-            <td>
-<p>La capacité, en tant que savoir-faire, représente la reconnaissance par l’ordre d’un diplôme de capacité. Elle complète les savoir-faire principaux, notamment les spécialités.Une capacité est un type de savoir-faire. La classe Capacite est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
-</td>
-         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Dispositif d'authentification </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-CarteProfessionnel.html"
@@ -403,13 +471,197 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Données descriptives du moyen d’identification par certificat. Il s’agit des certificats utilisés par les professionnels et les structures.</p>
 </td>
          </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Dispositif médical </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-CertificatEtudeSpeciale.html"
-                  title="StructureDefinition/CertificatEtudeSpeciale">CertificatEtudeSpeciale</a>
+               <a href="StructureDefinition-DispositifMedical.html"
+                  title="StructureDefinition/DispositifMedical">DispositifMedical</a>
             </td>
             <td>
-<p>Les Certificat d’études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d’études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+<p>L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017 définit un dispositif médical (DM) comme tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l’homme pour l’une ou plusieurs des fins médicales précises suivantes:** diagnostic, prévention, contrôle, prédiction, pronostic, traitement ou atténuation d’une maladie,** diagnostic, contrôle, traitement, atténuation d’une blessure ou d’un handicap ou compensation de ceux-ci,** investigation, remplacement ou modification d’une structure ou fonction anatomique ou d’un processus ou état physiologique ou pathologique,** communication d’informations au moyen d’un examen in vitro d’échantillons provenant du corps humain, y compris les dons d’organes, de sang et de tissus,et dont l’action principale voulue dans ou sur le corps humain n’est pas obtenue par des moyens pharmacologiques ou immunologiques ni par métabolisme, mais dont la fonction peut être assistée par de tels moyens. Les produits ci-après sont également réputés être des dispositifs médicaux :** les dispositifs destinés à la maîtrise de la conception ou à l’assistance à celle-ci,** les produits spécifiquement destinés au nettoyage, à la désinfection ou à la stérilisation des dispositifs visés à l’article 1er, paragraphe 4, et de ceux visés au premier alinéa du présent point.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Dispositif médical </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Decision.html"
+                  title="StructureDefinition/Decision">Decision</a>
+            </td>
+            <td>
+<p>Acte par lequel une autorité prend parti après examen d’une demande.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Demande.html"
+                  title="StructureDefinition/Demande">Demande</a>
+            </td>
+            <td>
+<p>Besoin(s) et/ou souhait(s) exprimés de manière officielle.Le contenu de la demande peut être un document : une lettre, un formulaire, etc. La demande peut également être accompagnée si besoin de pièces jointes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Document.html"
+                  title="StructureDefinition/Document">Document</a>
+            </td>
+            <td>
+<p>Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DossierPersonnePriseCharge.html"
+                  title="StructureDefinition/DossierPersonnePriseCharge">DossierPersonnePriseCharge</a>
+            </td>
+            <td>
+<p>Un dossier regroupe l’ensemble des informations et des documents liés à une personne.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NoteLiaison.html"
+                  title="StructureDefinition/NoteLiaison">NoteLiaison</a>
+            </td>
+            <td>
+<p>Les notes de liaison permet d’assurer un suivi « terrain » de la personne prise en charge et de garder en temps réel, une vue précise de la situation de cette personne prise en charge.Les notes peuvent concerner, par exemple, des symptômes observés, des résultats d’analyses, des avis et observations, etc.Les notes sont créées automatiquement ou manuellement, par des professionnels, des dispositifs médicaux, des logiciels métier, une personne tierce en contact direct ou indirect avec la personne prise en charge, ou bien par la personne prise en charge elle-même. Note : les logiciels métier et systèmes ne sont pas représentés dans le MOS.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="8"> </a>
+   <h3>Offre opérationnelle </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OffreOperationnelle.html"
+                  title="StructureDefinition/OffreOperationnelle">OffreOperationnelle</a>
+            </td>
+            <td>
+<p>L’Offre opérationnelle correspond aux prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d’une personne.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="9"> </a>
+   <h3>Personne prise en charge </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ArretTravail.html"
+                  title="StructureDefinition/ArretTravail">ArretTravail</a>
+            </td>
+            <td>
+<p>Selon le code du travail, l’arrêt de travail est une période de suspension du contrat de travail en raison d’une maladie ou d’un accident du travail d’origine professionnelle ou non professionnelle. L’arrêt de travail est justifié par une prescription médicale.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Emploi.html"
+                  title="StructureDefinition/Emploi">Emploi</a>
+            </td>
+            <td>
+<p>L’emploi définit l’exercice d’une profession dans le cadre d’une activité rémunérée. Il est alors régi par un contrat signé entre un employeur et un employé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Observation.html"
+                  title="StructureDefinition/Observation">Observation</a>
+            </td>
+            <td>
+<p>Une mesure ou une déclaration constitue une observation effectuée sur une personne.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PersonnePriseCharge.html"
+                  title="StructureDefinition/PersonnePriseCharge">PersonnePriseCharge</a>
+            </td>
+            <td>
+<p>Personne physique bénéficiaire de soins, d’examens, d’actes de prévention ou de services. Selon le contexte, la personne prise en charge peut être un patient ou un usager.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PlageReference.html"
+                  title="StructureDefinition/PlageReference">PlageReference</a>
+            </td>
+            <td>
+<p>La plage de référence, constituée d’une borne inférieure et d’une borne supérieure, fournit un guide pour interpréter une valeur en la comparant à ces bornes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ResultatObservation.html"
+                  title="StructureDefinition/ResultatObservation">ResultatObservation</a>
+            </td>
+            <td>
+<p>Résultat de la mesure ou de l’observation effectuée sur un personne.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-VieProfessionnelle.html"
+                  title="StructureDefinition/VieProfessionnelle">VieProfessionnelle</a>
+            </td>
+            <td>
+<p>/!\ Classe en cours de constructionInformations relatives à la vie professionnelle de la personne prise en charge.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-VieQuotidienne.html"
+                  title="StructureDefinition/VieQuotidienne">VieQuotidienne</a>
+            </td>
+            <td>
+<p>/!\ Classe en cours de constructionInformations relatives à la vie quotidienne de la personne prise en charge.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-VieScolaire.html"
+                  title="StructureDefinition/VieScolaire">VieScolaire</a>
+            </td>
+            <td>
+<p>/!\ Classe en cours de constructionInformations relatives à la vie scolaire de la personne prise en charge.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="10"> </a>
+   <h3>Professionnel </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CapaciteSavoirfaire.html"
+                  title="StructureDefinition/CapaciteSavoirfaire">CapaciteSavoirfaire</a>
+            </td>
+            <td>
+<p>La capacité, en tant que savoir-faire, représente la reconnaissance par l’ordre d’un diplôme de capacité. Elle complète les savoir-faire principaux, notamment les spécialités.Une capacité est un type de savoir-faire. La classe Capacite est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
 </td>
          </tr>
          <tr>
@@ -441,6 +693,237 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-DESCNonQualifiant.html"
+                  title="StructureDefinition/DESCNonQualifiant">DESCNonQualifiant</a>
+            </td>
+            <td>
+<p>Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu’il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DroitExerciceComplementaire.html"
+                  title="StructureDefinition/DroitExerciceComplementaire">DroitExerciceComplementaire</a>
+            </td>
+            <td>
+<p>Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d’exercice dans l’une des spécialités définies par un des DESC de médecine du groupe I.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ExerciceProfessionnel.html"
+                  title="StructureDefinition/ExerciceProfessionnel">ExerciceProfessionnel</a>
+            </td>
+            <td>
+<p>Informations décrivant notamment la profession exercée, l’identité d’exercice d’un professionnel et le cadre de son exercice (civil, agent public, etc.).Il peut exister plusieurs exercices professionnels pour une personne à un instant donné.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-FonctionQualifiee.html"
+                  title="StructureDefinition/FonctionQualifiee">FonctionQualifiee</a>
+            </td>
+            <td>
+<p>Expérience pratique exigée par le code de la santé publique (art R5124-16) pour exercer certaines fonctions dans l’industrie pharmaceutique et la distribution en gros. Ces dispositions s’appliquent uniquement à la profession de pharmacien.L’expérience pratique est en liaison avec les activités de l’établissement pharmaceutique telles que définies par l’ANSM ou l’ANSES.A ce jour, cinq expériences pratiques sont identifiées dont trois sont imbriquées. L’expérience pratique de “Fabricant” inclut celle d’”Exploitant” qui inclut celle de “Distribution”.  Une fonction qualifiée est un type de savoir-faire. La classe FonctionQualifiee est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OrientationParticuliere.html"
+                  title="StructureDefinition/OrientationParticuliere">OrientationParticuliere</a>
+            </td>
+            <td>
+<p>Caractérise une orientation d’exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Professionnel.html"
+                  title="StructureDefinition/Professionnel">Professionnel</a>
+            </td>
+            <td>
+<p>Données d’identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-QualificationPAC.html"
+                  title="StructureDefinition/QualificationPAC">QualificationPAC</a>
+            </td>
+            <td>
+<p>La qualification de praticien adjoint contractuel autorise à exercer en établissement sans être qualifié ni en médecine générale, ni en spécialité. Cela concerne des médecins à diplôme étranger dont la qualification a été reconnue avant l’instauration de l’autorisation d’exercice, et qui n’ont pas fait de démarche pour obtenir cette autorisation (environ 500 médecins concernés).Une qualification de praticien adjoint contractuel est un type de savoir-faire. La classe QualificationPAC est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SavoirFaire.html"
+                  title="StructureDefinition/SavoirFaire">SavoirFaire</a>
+            </td>
+            <td>
+<p>Prérogatives d’exercice d’un professionnel reconnues par une autorité d’enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SituationExercice.html"
+                  title="StructureDefinition/SituationExercice">SituationExercice</a>
+            </td>
+            <td>
+<p>Caractéristiques de l’exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l’exception des remplaçants).Synonymes : Activité (RPPS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SituationOperationnelle.html"
+                  title="StructureDefinition/SituationOperationnelle">SituationOperationnelle</a>
+            </td>
+            <td>
+<p>Caractérise les conditions d’exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Specialite.html"
+                  title="StructureDefinition/Specialite">Specialite</a>
+            </td>
+            <td>
+<p>Spécialité médicale ou odontologique, reconnue par une autorité d’enregistrement (Ordre ou SSA), soit sur la base d’un diplôme de spécialité (DES ou DESC de groupe II, CES jusqu’en 1991), soit via une commission de qualification.En France, l’exercice d’une spécialité est exclusif, c’est-à-dire qu’on ne peut exercer qu’une seule spécialité, celle qui fait l’objet d’une qualification par le Conseil de l’ordre. Un médecin titulaire d’un DESC de type II qui s’ajoute à son DES, a donc 2 qualifications possibles. Lorsqu’il s’inscrit au tableau de l’ordre des médecins, il doit déclarer sa spécialité d’exercice. S’il choisit celle de son DESC, il ne peut pas exercer la spécialité de son DES. Toutefois, il peut, dans le futur, choisir le retour à la spécialité originelle portée par le DES. Ainsi, la création en 2004 du DESC de Gériatrie a marqué la naissance de la qualification de spécialiste en gériatrie (la gériatrie étant auparavant un mode d’exercice particulier de la médecine, concernant des généralistes et des spécialistes).Dans le cadre du modèle, une spécialité est un type de savoir-faire. La classe Specialite est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SurspecialiteTransversale.html"
+                  title="StructureDefinition/SurspecialiteTransversale">SurspecialiteTransversale</a>
+            </td>
+            <td>
+<p>La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="11"> </a>
+   <h3>Ressources opérationnelles </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CapacitePriseCharge.html"
+                  title="StructureDefinition/CapacitePriseCharge">CapacitePriseCharge</a>
+            </td>
+            <td>
+<p>La capacite de prise en charge indique à quelle affectation sont destinés les lits qui seront rattachés à cette classe.Elle permet d’éviter de la duplication de l’offre ou du lieu de prise en charge lorsque des lits doivent être réservés dans le cadre d’une gestion de crise.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EquipementSpecifique.html"
+                  title="StructureDefinition/EquipementSpecifique">EquipementSpecifique</a>
+            </td>
+            <td>
+<p>Un équipement spécifique est une ressource matérielle discriminante pour la réalisation d’une prestation et sert à faciliter l’orientation du patient. Un équipement spécifique est une ressource propre de la structure ou mise à disposition dans le cadre d’une convention à la condition qu’elle soit utilisée sur site.Les équipements décrits dans cette classe concernent des actes spécifiques ou non. Seules les ressources discriminantes sont retenues, c’est-à-dire que les seuls équipements décrits concernent les équipements qui ne sont pas implicites pour un acte donné.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LieuRealisationOffre.html"
+                  title="StructureDefinition/LieuRealisationOffre">LieuRealisationOffre</a>
+            </td>
+            <td>
+<p>Espace disposant d’un ensemble de ressources pour réaliser une offre. Lorsque les ressources qui contribuent à l’offre sont mobiles, le lieu de réalisation de l’offre correspond au lieu administratif où est organisée la prise en charge.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="12"> </a>
+   <h3>Structure </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EntiteGeographique.html"
+                  title="StructureDefinition/EntiteGeographique">EntiteGeographique</a>
+            </td>
+            <td>
+<p>L’Entité Géographique (EG) correspond à la notion d’établissement : ** Pour les établissements inscrits au FINESS, cette notion d’établissement résulte du croisement de trois critères :     - Un critère géographique : Est un établissement tout lieu dont l’implantation d’activité(s) ou d’équipement(s) est géographiquement distincte d’une autre implantation. Ainsi un Centre Hospitalier Régional comprend autant d’établissements que d’implantations géographiques différentes. Un établissement principal et son établissement secondaire situé à 1 km constituent deux établissements distincts dans FINESS. L’implantation géographique peut-être décrite soit avec l’attribut addresseEG soit au travers de la classe Lieu.    - Un critère budgétaire : Pour une même implantation géographique, on distingue autant d’établissements du secteur public qu’il y a de budgets distincts (budget général, budget annexe).Ainsi un ESAT et son foyer d’hébergement constituent deux établissements même s’ils sont implantés à la même adresse.     - Un critère d’activité : Pour une même implantation géographique et un même budget, on distingue autant d’établissements que de « catégorie d’établissement » décrivant l’activité principale autorisée.Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constituent deux établissements même s’ils sont implantés à la même adresse.** Pour les entreprises inscrites dans le SIRENE, l’EG correspond à un établissement de la personne morale, elle est identifiée par un numéro Siret.Synonymes: Etablissement, structure</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EntiteJuridique.html"
+                  title="StructureDefinition/EntiteJuridique">EntiteJuridique</a>
+            </td>
+            <td>
+<p>L’Entité Juridique (EJ) correspond à la notion de personne morale :** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d’exercer ses activités dans des établissements; chaque EJ dispose d’un statut juridique de la personne morale;** Pour les autres types de structures, une EJ est une personne morale inscrite dans le SIRENE, identifiée par son numéro Siren.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="13"> </a>
+   <h3>Structures: Logical Models </h3>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Adresse.html"
+                  title="StructureDefinition/Adresse">Adresse</a>
+            </td>
+            <td>
+<p>Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d’après la norme NF Z 10-011.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Attestation.html"
+                  title="StructureDefinition/Attestation">Attestation</a>
+            </td>
+            <td>
+<p>L’attestation est attribuée au terme d’une formation universitaire. Pour les professions médicales et de la pharmacie, les attestations ont été remplacées par les diplômes universitaires (DU).Dans le cadre du modèle, une attestation est un type de diplôme. La classe Attestation est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AutreDiplomeObtenu.html"
+                  title="StructureDefinition/AutreDiplomeObtenu">AutreDiplomeObtenu</a>
+            </td>
+            <td>
+<p>Diplôme autre qu’un diplôme d’Etat, une qualification, un diplôme d’études spécialisées, un DESC1, un DESC2, un diplôme de l’espace économique européen, un diplôme européen d’études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-BoiteLettreMSS.html"
+                  title="StructureDefinition/BoiteLettreMSS">BoiteLettreMSS</a>
+            </td>
+            <td>
+<p>Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CapaciteDiplome.html"
+                  title="StructureDefinition/CapaciteDiplome">CapaciteDiplome</a>
+            </td>
+            <td>
+<p>En France, la capacité de médecine est un diplôme (2 ans d’études) réservé aux docteurs en médecine (généralistes ou spécialistes), leur conférant certaines compétences supplémentaires dans leur exercice ou un champ d’exercice plus large (réf. décret du 29 avril 1988). Les capacités ne confèrent pas la qualification aux spécialistes auprès de l’Ordre des médecins, mais celui-ci les reconnait comme des titres auxquels peuvent prétendre les médecins (par exemple sur leur plaque) pour justifier de compétences supplémentaires auprès de leurs patients.Une capacité est un type de diplôme. La classe CapaciteDiplome est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CertificatEtudeSpeciale.html"
+                  title="StructureDefinition/CertificatEtudeSpeciale">CertificatEtudeSpeciale</a>
+            </td>
+            <td>
+<p>Les Certificat d’études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d’études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-Contact.html"
                   title="StructureDefinition/Contact">Contact</a>
             </td>
@@ -450,29 +933,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Convention.html"
-                  title="StructureDefinition/Convention">Convention</a>
-            </td>
-            <td>
-<p>Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-CoordonneeGeographique.html"
                   title="StructureDefinition/CoordonneeGeographique">CoordonneeGeographique</a>
             </td>
             <td>
 <p>Ensemble des coordonnées géographiques d’un point spécifique telles que la longitude, la latitude et l’altitude, exprimées suivant un système géodésique choisi. Il convient de distinguer les coordonnées géographiques des coordonnées projetées suivant différents systèmes de projection.Note complémentaire sur l’usage de la classe :1) Usage d’un autre méridien que Greenwich : Le méridien origine peut être celui de Greenwich (méridien international), ou encore celui propre à la géodésie d’un pays (historiquement méridien de Paris pour la France). Mais chaque méridien origine est défini numériquement par sa longitude par rapport au méridien international.2) Les normes OGC n’imposent pas de choix sur les systèmes : Situation sur le terrain: Systèmes les plus couramment utilisés en France métropolitaine et dans les départements d’Outre-mer:• France métropolitaine : 21 systèmes• Guadeloupe : 6 systèmes• Martinique : 4 systèmes• Guyane : 5 systèmes• Réunion : 4 systèmes3) Systèmes géographiques, planimétriques et altimétriques : Voir décret simple 2006-272 du 03 mars 2006 modifiant le décret n° 2000-1276 du 26 décembre 2000.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Creneau.html"
-                  title="StructureDefinition/Creneau">Creneau</a>
-            </td>
-            <td>
-<p>Un créneau d’un agenda est un intervalle de temps, disponible ou occupé.</p>
 </td>
          </tr>
          <tr>
@@ -489,33 +954,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Les DESC de groupe II ou qualifiants (3 ans d’études) représentent des spécialités par eux-mêmes. Dans le cadre du modèle, un DESC de groupe II est un type de diplôme. La classe DESC2 est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DESCNonQualifiant.html"
-                  title="StructureDefinition/DESCNonQualifiant">DESCNonQualifiant</a>
-            </td>
-            <td>
-<p>Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu’il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Decision.html"
-                  title="StructureDefinition/Decision">Decision</a>
-            </td>
-            <td>
-<p>Acte par lequel une autorité prend parti après examen d’une demande.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Demande.html"
-                  title="StructureDefinition/Demande">Demande</a>
-            </td>
-            <td>
-<p>Besoin(s) et/ou souhait(s) exprimés de manière officielle.Le contenu de la demande peut être un document : une lettre, un formulaire, etc. La demande peut également être accompagnée si besoin de pièces jointes.</p>
 </td>
          </tr>
          <tr>
@@ -592,110 +1030,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DispositifMedical.html"
-                  title="StructureDefinition/DispositifMedical">DispositifMedical</a>
-            </td>
-            <td>
-<p>L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017 définit un dispositif médical (DM) comme tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l’homme pour l’une ou plusieurs des fins médicales précises suivantes:** diagnostic, prévention, contrôle, prédiction, pronostic, traitement ou atténuation d’une maladie,** diagnostic, contrôle, traitement, atténuation d’une blessure ou d’un handicap ou compensation de ceux-ci,** investigation, remplacement ou modification d’une structure ou fonction anatomique ou d’un processus ou état physiologique ou pathologique,** communication d’informations au moyen d’un examen in vitro d’échantillons provenant du corps humain, y compris les dons d’organes, de sang et de tissus,et dont l’action principale voulue dans ou sur le corps humain n’est pas obtenue par des moyens pharmacologiques ou immunologiques ni par métabolisme, mais dont la fonction peut être assistée par de tels moyens. Les produits ci-après sont également réputés être des dispositifs médicaux :** les dispositifs destinés à la maîtrise de la conception ou à l’assistance à celle-ci,** les produits spécifiquement destinés au nettoyage, à la désinfection ou à la stérilisation des dispositifs visés à l’article 1er, paragraphe 4, et de ceux visés au premier alinéa du présent point.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-DivisionTerritoriale.html"
                   title="StructureDefinition/DivisionTerritoriale">DivisionTerritoriale</a>
             </td>
             <td>
 <p>Une division territoriale est un territoire.Le territoire peut correspondre à une commune, un département, une région, un territoire, un pays, un canton ou un arrondissement au sens du référentiel administratif que représente le Code Officiel Géographique pour la France (INSEE). Pour les autres pays, cela peut être un état, un land, un comté, une province, etc. suivant leur découpage territorial.Autres zonages:Le territoire peut correspondre à un territoire de santé, un bassin de santé, une unité urbaine, un regroupement de communes, etc.Afin de distinguer les divisions territoriales, il est recommandé de toujours indiquer le type d’une division territoriale.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Document.html"
-                  title="StructureDefinition/Document">Document</a>
-            </td>
-            <td>
-<p>Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DossierPersonnePriseCharge.html"
-                  title="StructureDefinition/DossierPersonnePriseCharge">DossierPersonnePriseCharge</a>
-            </td>
-            <td>
-<p>Un dossier regroupe l’ensemble des informations et des documents liés à une personne.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DroitExerciceComplementaire.html"
-                  title="StructureDefinition/DroitExerciceComplementaire">DroitExerciceComplementaire</a>
-            </td>
-            <td>
-<p>Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d’exercice dans l’une des spécialités définies par un des DESC de médecine du groupe I.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Emploi.html"
-                  title="StructureDefinition/Emploi">Emploi</a>
-            </td>
-            <td>
-<p>L’emploi définit l’exercice d’une profession dans le cadre d’une activité rémunérée. Il est alors régi par un contrat signé entre un employeur et un employé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-EntiteGeographique.html"
-                  title="StructureDefinition/EntiteGeographique">EntiteGeographique</a>
-            </td>
-            <td>
-<p>L’Entité Géographique (EG) correspond à la notion d’établissement : ** Pour les établissements inscrits au FINESS, cette notion d’établissement résulte du croisement de trois critères :     - Un critère géographique : Est un établissement tout lieu dont l’implantation d’activité(s) ou d’équipement(s) est géographiquement distincte d’une autre implantation. Ainsi un Centre Hospitalier Régional comprend autant d’établissements que d’implantations géographiques différentes. Un établissement principal et son établissement secondaire situé à 1 km constituent deux établissements distincts dans FINESS. L’implantation géographique peut-être décrite soit avec l’attribut addresseEG soit au travers de la classe Lieu.    - Un critère budgétaire : Pour une même implantation géographique, on distingue autant d’établissements du secteur public qu’il y a de budgets distincts (budget général, budget annexe).Ainsi un ESAT et son foyer d’hébergement constituent deux établissements même s’ils sont implantés à la même adresse.     - Un critère d’activité : Pour une même implantation géographique et un même budget, on distingue autant d’établissements que de « catégorie d’établissement » décrivant l’activité principale autorisée.Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constituent deux établissements même s’ils sont implantés à la même adresse.** Pour les entreprises inscrites dans le SIRENE, l’EG correspond à un établissement de la personne morale, elle est identifiée par un numéro Siret.Synonymes: Etablissement, structure</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-EntiteJuridique.html"
-                  title="StructureDefinition/EntiteJuridique">EntiteJuridique</a>
-            </td>
-            <td>
-<p>L’Entité Juridique (EJ) correspond à la notion de personne morale :** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d’exercer ses activités dans des établissements; chaque EJ dispose d’un statut juridique de la personne morale;** Pour les autres types de structures, une EJ est une personne morale inscrite dans le SIRENE, identifiée par son numéro Siren.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-EquipementMaterielLourd.html"
-                  title="StructureDefinition/EquipementMaterielLourd">EquipementMaterielLourd</a>
-            </td>
-            <td>
-<p>Les équipements matériels lourds (EML) sont mis en œuvre au sein d’établissements. Ce sont des équipements mobiliers destinés à pourvoir soit au diagnostic, soit à la thérapeutique, et dont les conditions d’installation et de fonctionnement sont particulièrement onéreuses. Exemples : scanographes, caméras à scintillation, etc.Ils sont soumis à l’autorisation du Directeur Général de l’ARS et leur liste est fixée par décret en Conseil d’Etat. L’article R. 6122-2 du CSP référence ces équipements matériels lourds.L’arrêté du DG ARS mentionne le type d’EML, le numéro FINESS de l’entité juridique responsable (EJ) et le numéro FINESS de l’établissement (i.e. l’entité géographique, EG) dans lequel elle est implantée (synonyme : mise en œuvre). La modélisation actuelle prévoit que l’EG d’implantation est toujours rattaché juridiquement à l’EJ dans FINESS.Les attributs de classe sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des EML.Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :** Une autorisation est « active » à la date du jour si :    ** sa date de première mise en œuvre est renseignée et inférieure ou égale à la date du jour    ** sa date d’échéance est supérieure ou égale à la date du jour.** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS.Le périmètre des autorisations des équipements matériels lourds présentes dans FINESS recouvre :1- Les autorisations en attente de première mise en œuvre : la date de début (i.e. date de première mise en œuvre) n’est pas renseignée ou supérieure à la date du jour;2- Les autorisations actives:      ** la date début (i.e. date de première mise en œuvre) est renseignée et inférieure ou égale à la date du jour,     ** la date de fin est supérieure ou égale à la date du jour;3- Les autorisations échues, dont la date de fin est inférieure à la date du jour, et qui couvrent plusieurs cas :        a- Le renouvellement est en cours d’instruction (cas le plus courant);        b- Un autre événement (injonction, changement d’implantation,…) est en cours d’instruction au vu du dossier;        c- L’autorisation va devenir caduque, après quoi elle ne sera plus présente dans FINESS;        Dans chacun des 3 cas (a, b, c), la mise à jour dans les bases de données va avoir lieu (SI ARHGOS &gt; SI FINESS &gt; service de publication annuaire santé de l’ANS). En attendant la mise à jour des bases de données, il est possible de considérer les autorisations échues présentes dans FINESS comme toujours actives.        Les autorisations caduques ou retirées ne sont pas présentes dans FINESS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-EquipementSpecifique.html"
-                  title="StructureDefinition/EquipementSpecifique">EquipementSpecifique</a>
-            </td>
-            <td>
-<p>Un équipement spécifique est une ressource matérielle discriminante pour la réalisation d’une prestation et sert à faciliter l’orientation du patient. Un équipement spécifique est une ressource propre de la structure ou mise à disposition dans le cadre d’une convention à la condition qu’elle soit utilisée sur site.Les équipements décrits dans cette classe concernent des actes spécifiques ou non. Seules les ressources discriminantes sont retenues, c’est-à-dire que les seuls équipements décrits concernent les équipements qui ne sont pas implicites pour un acte donné.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ExerciceProfessionnel.html"
-                  title="StructureDefinition/ExerciceProfessionnel">ExerciceProfessionnel</a>
-            </td>
-            <td>
-<p>Informations décrivant notamment la profession exercée, l’identité d’exercice d’un professionnel et le cadre de son exercice (civil, agent public, etc.).Il peut exister plusieurs exercices professionnels pour une personne à un instant donné.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-FonctionQualifiee.html"
-                  title="StructureDefinition/FonctionQualifiee">FonctionQualifiee</a>
-            </td>
-            <td>
-<p>Expérience pratique exigée par le code de la santé publique (art R5124-16) pour exercer certaines fonctions dans l’industrie pharmaceutique et la distribution en gros. Ces dispositions s’appliquent uniquement à la profession de pharmacien.L’expérience pratique est en liaison avec les activités de l’établissement pharmaceutique telles que définies par l’ANSM ou l’ANSES.A ce jour, cinq expériences pratiques sont identifiées dont trois sont imbriquées. L’expérience pratique de “Fabricant” inclut celle d’”Exploitant” qui inclut celle de “Distribution”.  Une fonction qualifiée est un type de savoir-faire. La classe FonctionQualifiee est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
 </td>
          </tr>
          <tr>
@@ -727,82 +1066,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-LicenceExploitation.html"
-                  title="StructureDefinition/LicenceExploitation">LicenceExploitation</a>
-            </td>
-            <td>
-<p>Informations descriptives de la licence d’exploitation d’une officine.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-Lieu.html" title="StructureDefinition/Lieu">Lieu</a>
             </td>
             <td>
 <p>Informations relatives à une portion déterminée de l’espace, fixe ou mobile du point de vue de son affectation ou de ce qui s’y passe.Cas particulier de l’entité géographique : plusieurs lieux peuvent être associés à une même EG, ils peuvent décrire, à la fois, son addresse et des lieux spécifiques à l’EG.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-LieuRealisationOffre.html"
-                  title="StructureDefinition/LieuRealisationOffre">LieuRealisationOffre</a>
-            </td>
-            <td>
-<p>Espace disposant d’un ensemble de ressources pour réaliser une offre. Lorsque les ressources qui contribuent à l’offre sont mobiles, le lieu de réalisation de l’offre correspond au lieu administratif où est organisée la prise en charge.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-MesureProtection.html"
-                  title="StructureDefinition/MesureProtection">MesureProtection</a>
-            </td>
-            <td>
-<p>La maladie, le handicap, l’accident peuvent altérer les facultés d’une personne et la rendre incapable de défendre ses intérêts. Le juge peut alors décider d’une mesure de protection juridique par laquelle une autre personne l’aide à protéger ses intérêts. La protection doit être la moins contraignante possible, et en priorité être exercée par la famille. Elle distingue aussi les cas où la personne conserve encore ses facultés, mais est en grande difficulté sociale. (service-public.fr)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-NoteLiaison.html"
-                  title="StructureDefinition/NoteLiaison">NoteLiaison</a>
-            </td>
-            <td>
-<p>Les notes de liaison permet d’assurer un suivi « terrain » de la personne prise en charge et de garder en temps réel, une vue précise de la situation de cette personne prise en charge.Les notes peuvent concerner, par exemple, des symptômes observés, des résultats d’analyses, des avis et observations, etc.Les notes sont créées automatiquement ou manuellement, par des professionnels, des dispositifs médicaux, des logiciels métier, une personne tierce en contact direct ou indirect avec la personne prise en charge, ou bien par la personne prise en charge elle-même. Note : les logiciels métier et systèmes ne sont pas représentés dans le MOS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Observation.html"
-                  title="StructureDefinition/Observation">Observation</a>
-            </td>
-            <td>
-<p>Une mesure ou une déclaration constitue une observation effectuée sur une personne.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-OffreOperationnelle.html"
-                  title="StructureDefinition/OffreOperationnelle">OffreOperationnelle</a>
-            </td>
-            <td>
-<p>L’Offre opérationnelle correspond aux prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d’une personne.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-OrientationParticuliere.html"
-                  title="StructureDefinition/OrientationParticuliere">OrientationParticuliere</a>
-            </td>
-            <td>
-<p>Caractérise une orientation d’exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Parent.html"
-                  title="StructureDefinition/Parent">Parent</a>
-            </td>
-            <td>
-<p>Personne liée par un lien de filiation à un enfant</p>
 </td>
          </tr>
          <tr>
@@ -825,114 +1092,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-PersonnePriseCharge.html"
-                  title="StructureDefinition/PersonnePriseCharge">PersonnePriseCharge</a>
-            </td>
-            <td>
-<p>Personne physique bénéficiaire de soins, d’examens, d’actes de prévention ou de services. Selon le contexte, la personne prise en charge peut être un patient ou un usager.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PlageDisponibilite.html"
-                  title="StructureDefinition/PlageDisponibilite">PlageDisponibilite</a>
-            </td>
-            <td>
-<p>Horaires de disponibilité pour la prise de rendez - vous de l’agenda. Par exception, cet objet permet de renseigner les périodes sur lesquelles l’agenda est indisponible à la prise de rendez - vous.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PlageReference.html"
-                  title="StructureDefinition/PlageReference">PlageReference</a>
-            </td>
-            <td>
-<p>La plage de référence, constituée d’une borne inférieure et d’une borne supérieure, fournit un guide pour interpréter une valeur en la comparant à ces bornes.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Professionnel.html"
-                  title="StructureDefinition/Professionnel">Professionnel</a>
-            </td>
-            <td>
-<p>Données d’identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-QualificationPAC.html"
-                  title="StructureDefinition/QualificationPAC">QualificationPAC</a>
-            </td>
-            <td>
-<p>La qualification de praticien adjoint contractuel autorise à exercer en établissement sans être qualifié ni en médecine générale, ni en spécialité. Cela concerne des médecins à diplôme étranger dont la qualification a été reconnue avant l’instauration de l’autorisation d’exercice, et qui n’ont pas fait de démarche pour obtenir cette autorisation (environ 500 médecins concernés).Une qualification de praticien adjoint contractuel est un type de savoir-faire. La classe QualificationPAC est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-RendezVous.html"
-                  title="StructureDefinition/RendezVous">RendezVous</a>
-            </td>
-            <td>
-<p>Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ResultatObservation.html"
-                  title="StructureDefinition/ResultatObservation">ResultatObservation</a>
-            </td>
-            <td>
-<p>Résultat de la mesure ou de l’observation effectuée sur un personne.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SavoirFaire.html"
-                  title="StructureDefinition/SavoirFaire">SavoirFaire</a>
-            </td>
-            <td>
-<p>Prérogatives d’exercice d’un professionnel reconnues par une autorité d’enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SituationExercice.html"
-                  title="StructureDefinition/SituationExercice">SituationExercice</a>
-            </td>
-            <td>
-<p>Caractéristiques de l’exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l’exception des remplaçants).Synonymes : Activité (RPPS).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SituationOperationnelle.html"
-                  title="StructureDefinition/SituationOperationnelle">SituationOperationnelle</a>
-            </td>
-            <td>
-<p>Caractérise les conditions d’exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Specialite.html"
-                  title="StructureDefinition/Specialite">Specialite</a>
-            </td>
-            <td>
-<p>Spécialité médicale ou odontologique, reconnue par une autorité d’enregistrement (Ordre ou SSA), soit sur la base d’un diplôme de spécialité (DES ou DESC de groupe II, CES jusqu’en 1991), soit via une commission de qualification.En France, l’exercice d’une spécialité est exclusif, c’est-à-dire qu’on ne peut exercer qu’une seule spécialité, celle qui fait l’objet d’une qualification par le Conseil de l’ordre. Un médecin titulaire d’un DESC de type II qui s’ajoute à son DES, a donc 2 qualifications possibles. Lorsqu’il s’inscrit au tableau de l’ordre des médecins, il doit déclarer sa spécialité d’exercice. S’il choisit celle de son DESC, il ne peut pas exercer la spécialité de son DES. Toutefois, il peut, dans le futur, choisir le retour à la spécialité originelle portée par le DES. Ainsi, la création en 2004 du DESC de Gériatrie a marqué la naissance de la qualification de spécialiste en gériatrie (la gériatrie étant auparavant un mode d’exercice particulier de la médecine, concernant des généralistes et des spécialistes).Dans le cadre du modèle, une spécialité est un type de savoir-faire. La classe Specialite est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SurspecialiteTransversale.html"
-                  title="StructureDefinition/SurspecialiteTransversale">SurspecialiteTransversale</a>
-            </td>
-            <td>
-<p>La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-Telecommunication.html"
                   title="StructureDefinition/Telecommunication">Telecommunication</a>
             </td>
@@ -940,36 +1099,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-VieProfessionnelle.html"
-                  title="StructureDefinition/VieProfessionnelle">VieProfessionnelle</a>
-            </td>
-            <td>
-<p>/!\ Classe en cours de constructionInformations relatives à la vie professionnelle de la personne prise en charge.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-VieQuotidienne.html"
-                  title="StructureDefinition/VieQuotidienne">VieQuotidienne</a>
-            </td>
-            <td>
-<p>/!\ Classe en cours de constructionInformations relatives à la vie quotidienne de la personne prise en charge.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-VieScolaire.html"
-                  title="StructureDefinition/VieScolaire">VieScolaire</a>
-            </td>
-            <td>
-<p>/!\ Classe en cours de constructionInformations relatives à la vie scolaire de la personne prise en charge.</p>
-</td>
-         </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="14"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1165,7 +1297,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-ActiviteEnseignement.html">next&gt;</a>
+                <a href="StructureDefinition-AidantDemarche.html">next&gt;</a>
 
               </td>
             </tr>
@@ -1175,7 +1307,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 30, 2025 14:16+0000">2025-10-30</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 30, 2025 15:20+0000">2025-10-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
