@@ -1,6 +1,7 @@
 import json
 import os
 import codecs
+import unicodedata
 from fhir.resources.R4B.structuredefinition import StructureDefinition
 
 def get_elements(sd, sections):
@@ -89,7 +90,11 @@ def generate_plantuml_parts(path, sections):
                 refs_grouped[section_ref] = []
             refs_grouped[section_ref].append(ref)
         if len(sds.keys()) > 0:
-            with open(os.path.join(path, "input", "images-source", section + ".plantuml"), 'w', encoding="utf-8") as f:
+            filename = unicodedata.normalize("NFKD", section)\
+                .encode("ascii", "ignore")\
+                .decode("ascii")\
+                .replace(" ", "-")
+            with open(os.path.join(path, "input", "images-source", filename + ".plantuml"), 'w', encoding="utf-8") as f:
                 f.write("@startuml\n")
                 for sd in sds.keys():
                     f.write(f"\nClass {sd} {{\n")

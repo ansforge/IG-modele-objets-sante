@@ -3,7 +3,7 @@ Cette partie sera complétée au fur et à mesure de l'avancement des projets en
 
 <div class="figure" style="width:100%; overflow-x:auto;">
   <p style="margin: 0; padding: 0;">
-    {% include Dossier.svg %}
+    {% include Personne-prise-en-charge.svg %}
   </p>
 </div>
 

@@ -2,7 +2,7 @@ La partie Offre Opérationnelle correspond aux prestations que peut réaliser un
 
 <div class="figure" style="width:100%; overflow-x:auto;">
   <p style="margin: 0; padding: 0;">
-    {%include Accompagnant.svg%}
+    {%include Offre-operationnelle.svg%}
   </p>
 </div>
 
