@@ -22,10 +22,10 @@ def collectClasses(elem):
 for r in roots:
     collectClasses(r)
 
-print("Source;Target;Min;Max")
+print("Source;Target;SrcMin;SrcMax;TgtMin;TgtMax")
 
 for cls in classes:
-    for end in cls.getOwnedEnd():  # <= clé ici
+    for end in cls.getOwnedEnd():
         opp = end.getOpposite()
         if opp is None:
             continue
@@ -35,8 +35,15 @@ for cls in classes:
 
         src = cls.getName() or ""
         tgt = owner.getName() or ""
-        mn = end.getMultiplicityMin()
-        mx = end.getMultiplicityMax()
 
-        print(src + ";" + tgt + ";" + str(mn) + ";" + str(mx))
+        srcMin = end.getMultiplicityMin()
+        srcMax = end.getMultiplicityMax()
 
+        tgtMin = opp.getMultiplicityMin()
+        tgtMax = opp.getMultiplicityMax()
+
+        print(
+            src + ";" + tgt + ";" +
+            str(srcMin) + ";" + str(srcMax) + ";" +
+            str(tgtMin) + ";" + str(tgtMax)
+        )
