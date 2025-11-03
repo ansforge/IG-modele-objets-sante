@@ -1,1 +1,78 @@
-{"resourceType": "StructureDefinition", "id": "Document", "title": "Document", "url": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document", "name": "Document", "description": "Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.", "status": "draft", "kind": "logical", "abstract": false, "type": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document", "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base", "derivation": "specialization", "differential": {"element": [{"id": "Document", "path": "Document", "definition": "Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.", "short": "Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.", "min": 0, "max": "*"}, {"id": "Document.typeDocument", "path": "Document.typeDocument", "definition": "Type de document.", "short": "Type de document.", "min": 0, "max": "1", "type": [{"code": "Coding"}]}, {"id": "Document.Demande", "path": "Document.Demande", "definition": "Lien vers la classe Demande", "short": "Lien vers la classe Demande", "min": 0, "max": "*", "type": [{"code": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Demande"}]}, {"id": "Document.DossierPersonnePriseCharge", "path": "Document.DossierPersonnePriseCharge", "definition": "Lien vers la classe DossierPersonnePriseCharge", "short": "Lien vers la classe DossierPersonnePriseCharge", "min": 1, "max": "1", "type": [{"code": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DossierPersonnePriseCharge"}]}, {"id": "Document.NoteLiaison", "path": "Document.NoteLiaison", "definition": "Lien vers la classe NoteLiaison", "short": "Lien vers la classe NoteLiaison", "min": 0, "max": "*", "type": [{"code": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison"}]}, {"id": "Document.Fiche", "path": "Document.Fiche", "definition": "Lien vers la classe Fiche", "short": "Lien vers la classe Fiche", "min": 1, "max": "*", "type": [{"code": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Fiche"}]}]}}
+{
+    "resourceType": "StructureDefinition",
+    "id": "Document",
+    "title": "Document",
+    "url": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document",
+    "name": "Document",
+    "description": "Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.",
+    "status": "draft",
+    "kind": "logical",
+    "abstract": false,
+    "type": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document",
+    "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+    "derivation": "specialization",
+    "differential": {
+        "element": [
+            {
+                "id": "Document",
+                "path": "Document",
+                "definition": "Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.",
+                "short": "Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative.",
+                "min": 0,
+                "max": "*"
+            },
+            {
+                "id": "Document.typeDocument",
+                "path": "Document.typeDocument",
+                "definition": "Type de document.",
+                "short": "Type de document.",
+                "min": 0,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "Coding"
+                    }
+                ]
+            },
+            {
+                "id": "Document.Demande",
+                "path": "Document.Demande",
+                "definition": "Lien vers la classe Demande",
+                "short": "Lien vers la classe Demande",
+                "min": 0,
+                "max": "*",
+                "type": [
+                    {
+                        "code": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Demande"
+                    }
+                ]
+            },
+            {
+                "id": "Document.DossierPersonnePriseCharge",
+                "path": "Document.DossierPersonnePriseCharge",
+                "definition": "Lien vers la classe DossierPersonnePriseCharge",
+                "short": "Lien vers la classe DossierPersonnePriseCharge",
+                "min": 1,
+                "max": "1",
+                "type": [
+                    {
+                        "code": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DossierPersonnePriseCharge"
+                    }
+                ]
+            },
+            {
+                "id": "Document.NoteLiaison",
+                "path": "Document.NoteLiaison",
+                "definition": "Lien vers la classe NoteLiaison",
+                "short": "Lien vers la classe NoteLiaison",
+                "min": 0,
+                "max": "*",
+                "type": [
+                    {
+                        "code": "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison"
+                    }
+                ]
+            }
+        ]
+    }
+}
