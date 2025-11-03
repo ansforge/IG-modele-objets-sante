@@ -16,7 +16,7 @@ L’Entité Géographique (EG) correspond à la notion d’établissement : ** P
 
 **Usages:**
 
-* Use this Logical Model: [ActiviteEnseignement](StructureDefinition-ActiviteEnseignement.md), [ActiviteSociale](StructureDefinition-ActiviteSociale.md), [ActiviteSoumiseReconnaissance](StructureDefinition-ActiviteSoumiseReconnaissance.md), [AutreActiviteSoumiseAutorisation](StructureDefinition-AutreActiviteSoumiseAutorisation.md)...Show 9 more,[CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md),[Certificat](StructureDefinition-Certificat.md),[Convention](StructureDefinition-Convention.md),[Emploi](StructureDefinition-Emploi.md),[EquipementMaterielLourd](StructureDefinition-EquipementMaterielLourd.md),[LicenceExploitation](StructureDefinition-LicenceExploitation.md),[NoteLiaison](StructureDefinition-NoteLiaison.md),[OffreOperationnelle](StructureDefinition-OffreOperationnelle.md)and[SituationExercice](StructureDefinition-SituationExercice.md)
+* Use this Logical Model: [ActiviteEnseignement](StructureDefinition-ActiviteEnseignement.md), [ActiviteSociale](StructureDefinition-ActiviteSociale.md), [ActiviteSoinAutorisee](StructureDefinition-ActiviteSoinAutorisee.md), [ActiviteSoumiseReconnaissance](StructureDefinition-ActiviteSoumiseReconnaissance.md)...Show 20 more,[Agenda](StructureDefinition-Agenda.md),[AidantDemarche](StructureDefinition-AidantDemarche.md),[AutreActiviteSoumiseAutorisation](StructureDefinition-AutreActiviteSoumiseAutorisation.md),[CapaciteAccueil](StructureDefinition-CapaciteAccueil.md),[CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md),[CapaciteHabitation](StructureDefinition-CapaciteHabitation.md),[Certificat](StructureDefinition-Certificat.md),[Convention](StructureDefinition-Convention.md),[Emploi](StructureDefinition-Emploi.md),[EntiteJuridique](StructureDefinition-EntiteJuridique.md),[EquipementMaterielLourd](StructureDefinition-EquipementMaterielLourd.md),[LicenceExploitation](StructureDefinition-LicenceExploitation.md),[Lieu](StructureDefinition-Lieu.md),[MesureProtection](StructureDefinition-MesureProtection.md),[NoteLiaison](StructureDefinition-NoteLiaison.md),[OffreOperationnelle](StructureDefinition-OffreOperationnelle.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[RendezVous](StructureDefinition-RendezVous.md),[SituationExercice](StructureDefinition-SituationExercice.md)and[TarifPrestation](StructureDefinition-TarifPrestation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/EntiteGeographique)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EntiteGeographique.c
   "name" : "EntiteGeographique",
   "title" : "EntiteGeographique",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -761,6 +761,32 @@ Other representations of profile: [CSV](StructureDefinition-EntiteGeographique.c
         ]
       },
       {
+        "id" : "EntiteGeographique.SituationExercice",
+        "path" : "EntiteGeographique.SituationExercice",
+        "short" : "Lien vers la classe SituationExercice",
+        "definition" : "Lien vers la classe SituationExercice",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationExercice"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.Certificat",
+        "path" : "EntiteGeographique.Certificat",
+        "short" : "Lien vers la classe Certificat",
+        "definition" : "Lien vers la classe Certificat",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat"
+          }
+        ]
+      },
+      {
         "id" : "EntiteGeographique.EntiteJuridique",
         "path" : "EntiteGeographique.EntiteJuridique",
         "short" : "Lien vers la classe EntiteJuridique",
@@ -770,6 +796,279 @@ Other representations of profile: [CSV](StructureDefinition-EntiteGeographique.c
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.Lieu",
+        "path" : "EntiteGeographique.Lieu",
+        "short" : "Lien vers la classe Lieu",
+        "definition" : "Lien vers la classe Lieu",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.Convention",
+        "path" : "EntiteGeographique.Convention",
+        "short" : "Lien vers la classe Convention",
+        "definition" : "Lien vers la classe Convention",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Convention"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.EquipementMaterielLourd",
+        "path" : "EntiteGeographique.EquipementMaterielLourd",
+        "short" : "Lien vers la classe EquipementMaterielLourd",
+        "definition" : "Lien vers la classe EquipementMaterielLourd",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementMaterielLourd"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.LicenceExploitation",
+        "path" : "EntiteGeographique.LicenceExploitation",
+        "short" : "Lien vers la classe LicenceExploitation",
+        "definition" : "Lien vers la classe LicenceExploitation",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LicenceExploitation"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.ActiviteEnseignement",
+        "path" : "EntiteGeographique.ActiviteEnseignement",
+        "short" : "Lien vers la classe ActiviteEnseignement",
+        "definition" : "Lien vers la classe ActiviteEnseignement",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteEnseignement"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.TarifPrestation",
+        "path" : "EntiteGeographique.TarifPrestation",
+        "short" : "Lien vers la classe TarifPrestation",
+        "definition" : "Lien vers la classe TarifPrestation",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/TarifPrestation"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.ActiviteSoinAutorisee",
+        "path" : "EntiteGeographique.ActiviteSoinAutorisee",
+        "short" : "Lien vers la classe ActiviteSoinAutorisee",
+        "definition" : "Lien vers la classe ActiviteSoinAutorisee",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoinAutorisee"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.AutreActiviteSoumiseAutorisation",
+        "path" : "EntiteGeographique.AutreActiviteSoumiseAutorisation",
+        "short" : "Lien vers la classe AutreActiviteSoumiseAutorisation",
+        "definition" : "Lien vers la classe AutreActiviteSoumiseAutorisation",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutreActiviteSoumiseAutorisation"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.ActiviteSoumiseReconnaissance",
+        "path" : "EntiteGeographique.ActiviteSoumiseReconnaissance",
+        "short" : "Lien vers la classe ActiviteSoumiseReconnaissance",
+        "definition" : "Lien vers la classe ActiviteSoumiseReconnaissance",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoumiseReconnaissance"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.ActiviteSociale",
+        "path" : "EntiteGeographique.ActiviteSociale",
+        "short" : "Lien vers la classe ActiviteSociale",
+        "definition" : "Lien vers la classe ActiviteSociale",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSociale"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.CapaciteActiviteExercee",
+        "path" : "EntiteGeographique.CapaciteActiviteExercee",
+        "short" : "Lien vers la classe CapaciteActiviteExercee",
+        "definition" : "Lien vers la classe CapaciteActiviteExercee",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteExercee"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.OffreOperationnelle",
+        "path" : "EntiteGeographique.OffreOperationnelle",
+        "short" : "Lien vers la classe OffreOperationnelle",
+        "definition" : "Lien vers la classe OffreOperationnelle",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.OrganisationInterne",
+        "path" : "EntiteGeographique.OrganisationInterne",
+        "short" : "Lien vers la classe OrganisationInterne",
+        "definition" : "Lien vers la classe OrganisationInterne",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.Emploi",
+        "path" : "EntiteGeographique.Emploi",
+        "short" : "Lien vers la classe Emploi",
+        "definition" : "Lien vers la classe Emploi",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Emploi"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.AidantDemarche",
+        "path" : "EntiteGeographique.AidantDemarche",
+        "short" : "Lien vers la classe AidantDemarche",
+        "definition" : "Lien vers la classe AidantDemarche",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.MesureProtection",
+        "path" : "EntiteGeographique.MesureProtection",
+        "short" : "Lien vers la classe MesureProtection",
+        "definition" : "Lien vers la classe MesureProtection",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.NoteLiaison",
+        "path" : "EntiteGeographique.NoteLiaison",
+        "short" : "Lien vers la classe NoteLiaison",
+        "definition" : "Lien vers la classe NoteLiaison",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.Agenda",
+        "path" : "EntiteGeographique.Agenda",
+        "short" : "Lien vers la classe Agenda",
+        "definition" : "Lien vers la classe Agenda",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.RendezVous",
+        "path" : "EntiteGeographique.RendezVous",
+        "short" : "Lien vers la classe RendezVous",
+        "definition" : "Lien vers la classe RendezVous",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.CapaciteAccueil",
+        "path" : "EntiteGeographique.CapaciteAccueil",
+        "short" : "Lien vers la classe CapaciteAccueil",
+        "definition" : "Lien vers la classe CapaciteAccueil",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteAccueil"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteGeographique.CapaciteHabitation",
+        "path" : "EntiteGeographique.CapaciteHabitation",
+        "short" : "Lien vers la classe CapaciteHabitation",
+        "definition" : "Lien vers la classe CapaciteHabitation",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation"
           }
         ]
       }

@@ -16,7 +16,7 @@ Caractérise les conditions d’exercice du professionnel dans la mise en œuvre
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md) and [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/SituationOperationnelle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SituationOperationne
   "name" : "SituationOperationnelle",
   "title" : "SituationOperationnelle",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

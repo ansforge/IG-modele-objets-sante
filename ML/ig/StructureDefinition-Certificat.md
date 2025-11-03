@@ -16,7 +16,7 @@ Données descriptives du moyen d’identification par certificat. Il s’agit de
 
 **Usages:**
 
-* Use this Logical Model: [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md)
+* Use this Logical Model: [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md) and [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Certificat)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Certificat.csv), [Ex
   "name" : "Certificat",
   "title" : "Certificat",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -271,6 +271,19 @@ Other representations of profile: [CSV](StructureDefinition-Certificat.csv), [Ex
         ]
       },
       {
+        "id" : "Certificat.CarteProfessionnel",
+        "path" : "Certificat.CarteProfessionnel",
+        "short" : "Lien vers la classe CarteProfessionnel",
+        "definition" : "Lien vers la classe CarteProfessionnel",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CarteProfessionnel"
+          }
+        ]
+      },
+      {
         "id" : "Certificat.EntiteGeographique",
         "path" : "Certificat.EntiteGeographique",
         "short" : "Lien vers la classe EntiteGeographique",
@@ -280,6 +293,19 @@ Other representations of profile: [CSV](StructureDefinition-Certificat.csv), [Ex
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
+      },
+      {
+        "id" : "Certificat.EntiteJuridique",
+        "path" : "Certificat.EntiteJuridique",
+        "short" : "Lien vers la classe EntiteJuridique",
+        "definition" : "Lien vers la classe EntiteJuridique",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique"
           }
         ]
       }

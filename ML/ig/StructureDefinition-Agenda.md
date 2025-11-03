@@ -16,7 +16,7 @@ Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de cr�
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [Contact](StructureDefinition-Contact.md), [Creneau](StructureDefinition-Creneau.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md)...Show 5 more,[Lieu](StructureDefinition-Lieu.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md),[PlageDisponibilite](StructureDefinition-PlageDisponibilite.md)and[Professionnel](StructureDefinition-Professionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Agenda)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Agenda.csv), [Excel]
   "name" : "Agenda",
   "title" : "Agenda",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -142,6 +142,123 @@ Other representations of profile: [CSV](StructureDefinition-Agenda.csv), [Excel]
         "type" : [
           {
             "code" : "dateTime"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.PersonnePriseCharge",
+        "path" : "Agenda.PersonnePriseCharge",
+        "short" : "Lien vers la classe PersonnePriseCharge",
+        "definition" : "Lien vers la classe PersonnePriseCharge",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.Professionnel",
+        "path" : "Agenda.Professionnel",
+        "short" : "Lien vers la classe Professionnel",
+        "definition" : "Lien vers la classe Professionnel",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.Lieu",
+        "path" : "Agenda.Lieu",
+        "short" : "Lien vers la classe Lieu",
+        "definition" : "Lien vers la classe Lieu",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.Contact",
+        "path" : "Agenda.Contact",
+        "short" : "Lien vers la classe Contact",
+        "definition" : "Lien vers la classe Contact",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.EntiteGeographique",
+        "path" : "Agenda.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.EquipementSpecifique",
+        "path" : "Agenda.EquipementSpecifique",
+        "short" : "Lien vers la classe EquipementSpecifique",
+        "definition" : "Lien vers la classe EquipementSpecifique",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.OrganisationInterne",
+        "path" : "Agenda.OrganisationInterne",
+        "short" : "Lien vers la classe OrganisationInterne",
+        "definition" : "Lien vers la classe OrganisationInterne",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.Creneau",
+        "path" : "Agenda.Creneau",
+        "short" : "Lien vers la classe Creneau",
+        "definition" : "Lien vers la classe Creneau",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Creneau"
+          }
+        ]
+      },
+      {
+        "id" : "Agenda.PlageDisponibilite",
+        "path" : "Agenda.PlageDisponibilite",
+        "short" : "Lien vers la classe PlageDisponibilite",
+        "definition" : "Lien vers la classe PlageDisponibilite",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageDisponibilite"
           }
         ]
       }

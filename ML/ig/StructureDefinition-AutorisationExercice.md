@@ -16,7 +16,7 @@ L’accès aux professions de santé est soumis à des conditions concernant les
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [Professionnel](StructureDefinition-Professionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/AutorisationExercice)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-AutorisationExercice
   "name" : "AutorisationExercice",
   "title" : "AutorisationExercice",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

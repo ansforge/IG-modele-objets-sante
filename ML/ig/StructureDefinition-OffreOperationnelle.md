@@ -16,7 +16,7 @@ L’Offre opérationnelle correspond aux prestations que peut réaliser une stru
 
 **Usages:**
 
-* Use this Logical Model: [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
+* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md), [OrganisationInterne](StructureDefinition-OrganisationInterne.md), [Patientele](StructureDefinition-Patientele.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/OffreOperationnelle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-OffreOperationnelle.
   "name" : "OffreOperationnelle",
   "title" : "OffreOperationnelle",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -509,6 +509,32 @@ Other representations of profile: [CSV](StructureDefinition-OffreOperationnelle.
         }
       },
       {
+        "id" : "OffreOperationnelle.SituationOperationnelle",
+        "path" : "OffreOperationnelle.SituationOperationnelle",
+        "short" : "Lien vers la classe SituationOperationnelle",
+        "definition" : "Lien vers la classe SituationOperationnelle",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle"
+          }
+        ]
+      },
+      {
+        "id" : "OffreOperationnelle.Patientele",
+        "path" : "OffreOperationnelle.Patientele",
+        "short" : "Lien vers la classe Patientele",
+        "definition" : "Lien vers la classe Patientele",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele"
+          }
+        ]
+      },
+      {
         "id" : "OffreOperationnelle.EntiteGeographique",
         "path" : "OffreOperationnelle.EntiteGeographique",
         "short" : "Lien vers la classe EntiteGeographique",
@@ -518,6 +544,32 @@ Other representations of profile: [CSV](StructureDefinition-OffreOperationnelle.
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
+      },
+      {
+        "id" : "OffreOperationnelle.LieuRealisationOffre",
+        "path" : "OffreOperationnelle.LieuRealisationOffre",
+        "short" : "Lien vers la classe LieuRealisationOffre",
+        "definition" : "Lien vers la classe LieuRealisationOffre",
+        "min" : 1,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre"
+          }
+        ]
+      },
+      {
+        "id" : "OffreOperationnelle.OrganisationInterne",
+        "path" : "OffreOperationnelle.OrganisationInterne",
+        "short" : "Lien vers la classe OrganisationInterne",
+        "definition" : "Lien vers la classe OrganisationInterne",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne"
           }
         ]
       }

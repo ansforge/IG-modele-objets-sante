@@ -16,7 +16,7 @@ Résultat de la mesure ou de l’observation effectuée sur un personne.
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [Observation](StructureDefinition-Observation.md) and [PlageReference](StructureDefinition-PlageReference.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/ResultatObservation)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ResultatObservation.
   "name" : "ResultatObservation",
   "title" : "ResultatObservation",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -129,6 +129,32 @@ Other representations of profile: [CSV](StructureDefinition-ResultatObservation.
         "type" : [
           {
             "code" : "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id" : "ResultatObservation.Observation",
+        "path" : "ResultatObservation.Observation",
+        "short" : "Lien vers la classe Observation",
+        "definition" : "Lien vers la classe Observation",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Observation"
+          }
+        ]
+      },
+      {
+        "id" : "ResultatObservation.PlageReference",
+        "path" : "ResultatObservation.PlageReference",
+        "short" : "Lien vers la classe PlageReference",
+        "definition" : "Lien vers la classe PlageReference",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageReference"
           }
         ]
       }

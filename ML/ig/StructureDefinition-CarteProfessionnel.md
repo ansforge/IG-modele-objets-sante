@@ -16,7 +16,7 @@ Données descriptives du moyen d’identification des personnes physiques via un
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [Certificat](StructureDefinition-Certificat.md) and [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/CarteProfessionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CarteProfessionnel.c
   "name" : "CarteProfessionnel",
   "title" : "CarteProfessionnel",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -150,19 +150,6 @@ Other representations of profile: [CSV](StructureDefinition-CarteProfessionnel.c
         ]
       },
       {
-        "id" : "CarteProfessionnel.Certificat",
-        "path" : "CarteProfessionnel.Certificat",
-        "short" : "Lien vers la classe Certificat",
-        "definition" : "Lien vers la classe Certificat",
-        "min" : 1,
-        "max" : "*",
-        "type" : [
-          {
-            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat"
-          }
-        ]
-      },
-      {
         "id" : "CarteProfessionnel.ExerciceProfessionnel",
         "path" : "CarteProfessionnel.ExerciceProfessionnel",
         "short" : "Lien vers la classe ExerciceProfessionnel",
@@ -172,6 +159,19 @@ Other representations of profile: [CSV](StructureDefinition-CarteProfessionnel.c
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel"
+          }
+        ]
+      },
+      {
+        "id" : "CarteProfessionnel.Certificat",
+        "path" : "CarteProfessionnel.Certificat",
+        "short" : "Lien vers la classe Certificat",
+        "definition" : "Lien vers la classe Certificat",
+        "min" : 1,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat"
           }
         ]
       }

@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-03T13:49:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-03T18:48:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1718,6 +1718,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteAccueil> ;
+         fhir:reference [ fhir:v "StructureDefinition/CapaciteAccueil" ]
+       ] ;
+       fhir:name [ fhir:v "CapaciteAccueil" ] ;
+       fhir:description [ fhir:v "La capacité d'accueil indique les capacités d’hébergement (en lits ou en places) et donc le nombre de personnes pouvant être accueillies en même temps." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteExercee> ;
          fhir:reference [ fhir:v "StructureDefinition/CapaciteActiviteExercee" ]
        ] ;
@@ -1745,6 +1766,27 @@
        ] ;
        fhir:name [ fhir:v "CapaciteDiplome" ] ;
        fhir:description [ fhir:v "En France, la capacité de médecine est un diplôme (2 ans d'études) réservé aux docteurs en médecine (généralistes ou spécialistes), leur conférant certaines compétences supplémentaires dans leur exercice ou un champ d'exercice plus large (réf. décret du 29 avril 1988). Les capacités ne confèrent pas la qualification aux spécialistes auprès de l'Ordre des médecins, mais celui-ci les reconnait comme des titres auxquels peuvent prétendre les médecins (par exemple sur leur plaque) pour justifier de compétences supplémentaires auprès de leurs patients.Une capacité est un type de diplôme. La classe CapaciteDiplome est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation> ;
+         fhir:reference [ fhir:v "StructureDefinition/CapaciteHabitation" ]
+       ] ;
+       fhir:name [ fhir:v "CapaciteHabitation" ] ;
+       fhir:description [ fhir:v "La capacité d'habitation décrit des types d'habitation et le nombre d'habitations associées à ces types." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2782,6 +2824,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Groupement> ;
+         fhir:reference [ fhir:v "StructureDefinition/Groupement" ]
+       ] ;
+       fhir:name [ fhir:v "Groupement" ] ;
+       fhir:description [ fhir:v "Ensemble de personnes et d’entités ayant un ou des objectifs communs. Les propriétés du groupement sont distinctes de celles des membres qui le composent. Le groupement peut exister sur une période limitée et ses membres peuvent varier pour atteindre les objectifs fixés." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Horaire> ;
          fhir:reference [ fhir:v "StructureDefinition/Horaire" ]
        ] ;
@@ -2909,6 +2972,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Membre> ;
+         fhir:reference [ fhir:v "StructureDefinition/Membre" ]
+       ] ;
+       fhir:name [ fhir:v "Membre" ] ;
+       fhir:description [ fhir:v "Personne ou entité faisant partie d'un groupement." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureCapacite> ;
+         fhir:reference [ fhir:v "StructureDefinition/MesureCapacite" ]
+       ] ;
+       fhir:name [ fhir:v "MesureCapacite" ] ;
+       fhir:description [ fhir:v "Les mesures d’une capacité d’accueil précisent une série d’enregistrements indiquant la quantité de lits (ou de places) dans un statut particulier (disponible,…) et dans une temporalité donnée. Le cumul des mesures de capacité donne une vision complète de la capacité d’accueil." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection> ;
          fhir:reference [ fhir:v "StructureDefinition/MesureProtection" ]
        ] ;
@@ -2985,6 +3090,27 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Offre" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne> ;
+         fhir:reference [ fhir:v "StructureDefinition/OrganisationInterne" ]
+       ] ;
+       fhir:name [ fhir:v "OrganisationInterne" ] ;
+       fhir:description [ fhir:v "La classe Organisation Interne est une classe abstraite qui contient les attributs inhérents et communs aux classes décrivant l'organisation opérationnelle interne d'une EG permettant de délivrer la prestation.Une organisation interne peut être composée d’autres organisations internes. Par exemple, les unités fonctionnelles peuvent être regroupées au sein de services qui peuvent être regroupés en pôles.La description de cette organisation interne de l'EG n'est pas obligatoire. Lorsqu'elle est décrite cette organisation porte les ressources opérationnelles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3197,6 +3323,27 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Personne" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PoleActivite> ;
+         fhir:reference [ fhir:v "StructureDefinition/PoleActivite" ]
+       ] ;
+       fhir:name [ fhir:v "PoleActivite" ] ;
+       fhir:description [ fhir:v "Loi HPST, art.13: \"Pour les établissements publics de santé, le directeur définit l'organisation de l'établissement en pôles d'activité conformément au projet médical d'établissement, après avis [...]. Le directeur général de l'agence régionale de santé peut autoriser un établissement à ne pas créer de pôles d'activité quand l'effectif médical de l'établissement le justifie.Les pôles d'activité peuvent comporter des structures internes de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques ainsi que les structures médico-techniques qui leur sont associées\".Extrait de \"La loi HPST à l'hôpital, les clés pour comprendre - Ministère de la Santé- ANAP\": \"Les pôles d’activité clinique et médico-technique peuvent comporter des \"structures internes\" de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques\".Les pôles peuvent être multi-sites, c'est à dire qu'un même pôle peut comporter des structures internes situées dans différentes entités géographiques d'une même entité juridique." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3565,6 +3712,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/StructureInterne> ;
+         fhir:reference [ fhir:v "StructureDefinition/StructureInterne" ]
+       ] ;
+       fhir:name [ fhir:v "StructureInterne" ] ;
+       fhir:description [ fhir:v "Une structure interne peut être composée d'une ou plusieurs unités médicales fonctionnelles.L’appellation des structures internes des pôles est aussi laissée à la libre appréciation des établissements : il peut s’agir de services, d’unités, de centres, d’instituts, de départements, ou de toute autre appellation. Lorsque les services demeurent, les chefs de service sont placés sous l’autorité fonctionnelle du chef de pôle (cf. \"La loi HPST à l'hôpital, les clés pour comprendre\" - Ministère de la Santé - ANAP).Synonyme : Service, unité, centre, institut, département, etc." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SurspecialiteTransversale> ;
          fhir:reference [ fhir:v "StructureDefinition/SurspecialiteTransversale" ]
        ] ;
@@ -3591,6 +3759,27 @@
          fhir:reference [ fhir:v "ValueSet/surspecialiteTransversale-vs" ]
        ] ;
        fhir:name [ fhir:v "SurspecialitetransversaleVs" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/TarifPrestation> ;
+         fhir:reference [ fhir:v "StructureDefinition/TarifPrestation" ]
+       ] ;
+       fhir:name [ fhir:v "TarifPrestation" ] ;
+       fhir:description [ fhir:v "Prix des prestations et services d'une entité géographique." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -3652,6 +3841,27 @@
          fhir:reference [ fhir:v "ValueSet/typeRole-vs" ]
        ] ;
        fhir:name [ fhir:v "TyperoleVs" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/UniteFonctionnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/UniteFonctionnelle" ]
+       ] ;
+       fhir:name [ fhir:v "UniteFonctionnelle" ] ;
+       fhir:description [ fhir:v "L'unité fonctionnelle (UF) désigne la plus petite unité compatible avec les contraintes de gestion qui présente une activité médicale homogène." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

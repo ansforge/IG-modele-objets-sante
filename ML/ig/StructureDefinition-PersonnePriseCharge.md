@@ -16,7 +16,7 @@ Personne physique bénéficiaire de soins, d’examens, d’actes de prévention
 
 **Usages:**
 
-* Use this Logical Model: [NoteLiaison](StructureDefinition-NoteLiaison.md), [Professionnel](StructureDefinition-Professionnel.md), [VieProfessionnelle](StructureDefinition-VieProfessionnelle.md) and [VieQuotidienne](StructureDefinition-VieQuotidienne.md)
+* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md), [NoteLiaison](StructureDefinition-NoteLiaison.md), [Observation](StructureDefinition-Observation.md)...Show 5 more,[Professionnel](StructureDefinition-Professionnel.md),[RendezVous](StructureDefinition-RendezVous.md),[VieProfessionnelle](StructureDefinition-VieProfessionnelle.md),[VieQuotidienne](StructureDefinition-VieQuotidienne.md)and[VieScolaire](StructureDefinition-VieScolaire.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/PersonnePriseCharge)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePriseCharge.
   "name" : "PersonnePriseCharge",
   "title" : "PersonnePriseCharge",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -289,6 +289,84 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePriseCharge.
         ]
       },
       {
+        "id" : "PersonnePriseCharge.RendezVous",
+        "path" : "PersonnePriseCharge.RendezVous",
+        "short" : "Lien vers la classe RendezVous",
+        "definition" : "Lien vers la classe RendezVous",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePriseCharge.VieQuotidienne",
+        "path" : "PersonnePriseCharge.VieQuotidienne",
+        "short" : "Lien vers la classe VieQuotidienne",
+        "definition" : "Lien vers la classe VieQuotidienne",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieQuotidienne"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePriseCharge.VieProfessionnelle",
+        "path" : "PersonnePriseCharge.VieProfessionnelle",
+        "short" : "Lien vers la classe VieProfessionnelle",
+        "definition" : "Lien vers la classe VieProfessionnelle",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieProfessionnelle"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePriseCharge.VieScolaire",
+        "path" : "PersonnePriseCharge.VieScolaire",
+        "short" : "Lien vers la classe VieScolaire",
+        "definition" : "Lien vers la classe VieScolaire",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieScolaire"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePriseCharge.NoteLiaison",
+        "path" : "PersonnePriseCharge.NoteLiaison",
+        "short" : "Lien vers la classe NoteLiaison",
+        "definition" : "Lien vers la classe NoteLiaison",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePriseCharge.Observation",
+        "path" : "PersonnePriseCharge.Observation",
+        "short" : "Lien vers la classe Observation",
+        "definition" : "Lien vers la classe Observation",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Observation"
+          }
+        ]
+      },
+      {
         "id" : "PersonnePriseCharge.Professionnel",
         "path" : "PersonnePriseCharge.Professionnel",
         "short" : "Lien vers la classe Professionnel",
@@ -298,6 +376,32 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePriseCharge.
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePriseCharge.DossierPersonnePriseCharge",
+        "path" : "PersonnePriseCharge.DossierPersonnePriseCharge",
+        "short" : "Lien vers la classe DossierPersonnePriseCharge",
+        "definition" : "Lien vers la classe DossierPersonnePriseCharge",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DossierPersonnePriseCharge"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePriseCharge.Agenda",
+        "path" : "PersonnePriseCharge.Agenda",
+        "short" : "Lien vers la classe Agenda",
+        "definition" : "Lien vers la classe Agenda",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda"
           }
         ]
       }

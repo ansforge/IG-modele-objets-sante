@@ -16,7 +16,7 @@ L’Entité Juridique (EJ) correspond à la notion de personne morale :** Pour l
 
 **Usages:**
 
-* Use this Logical Model: [DispositifMedical](StructureDefinition-DispositifMedical.md) and [EntiteGeographique](StructureDefinition-EntiteGeographique.md)
+* Use this Logical Model: [Certificat](StructureDefinition-Certificat.md), [DispositifMedical](StructureDefinition-DispositifMedical.md) and [EntiteGeographique](StructureDefinition-EntiteGeographique.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/EntiteJuridique)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EntiteJuridique.csv)
   "name" : "EntiteJuridique",
   "title" : "EntiteJuridique",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -417,6 +417,45 @@ Other representations of profile: [CSV](StructureDefinition-EntiteJuridique.csv)
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteJuridique.EntiteGeographique",
+        "path" : "EntiteJuridique.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 1,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteJuridique.DispositifMedical",
+        "path" : "EntiteJuridique.DispositifMedical",
+        "short" : "Lien vers la classe DispositifMedical",
+        "definition" : "Lien vers la classe DispositifMedical",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DispositifMedical"
+          }
+        ]
+      },
+      {
+        "id" : "EntiteJuridique.Certificat",
+        "path" : "EntiteJuridique.Certificat",
+        "short" : "Lien vers la classe Certificat",
+        "definition" : "Lien vers la classe Certificat",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat"
           }
         ]
       }

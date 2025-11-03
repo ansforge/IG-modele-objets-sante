@@ -18,6 +18,7 @@ package IG #DDDDDD{
              ActiviteEnseignement.dateAutorisation => [0..1]
              ActiviteEnseignement.suppressionAutorisation => [0..1]
              ActiviteEnseignement.EntiteGeographique => [1..1]
+             ActiviteEnseignement.CapaciteActiviteExercee => [0..1]
         } 
 
         class ActiviteSociale{
@@ -42,6 +43,8 @@ package IG #DDDDDD{
              ActiviteSociale.suppressionInstallation => [0..1]
              ActiviteSociale.sourceInformationInstallation => [0..1]
              ActiviteSociale.EntiteGeographique => [1..1]
+             ActiviteSociale.CapaciteActiviteExercee => [0..*]
+             ActiviteSociale.CapaciteHabitation => [0..1]
         } 
 
         class ActiviteSoinAutorisee{
@@ -56,6 +59,7 @@ package IG #DDDDDD{
              ActiviteSoinAutorisee.dateFin => [0..1]
              ActiviteSoinAutorisee.suppressionAutorisation => [0..1]
              ActiviteSoinAutorisee.suppressionImplantation => [0..1]
+             ActiviteSoinAutorisee.EntiteGeographique => [1..1]
         } 
 
         class ActiviteSoumiseReconnaissance{
@@ -71,6 +75,7 @@ package IG #DDDDDD{
              ActiviteSoumiseReconnaissance.dateReconnaissance => [0..1]
              ActiviteSoumiseReconnaissance.indicateurReconnaissanceRegionale => [0..1]
              ActiviteSoumiseReconnaissance.EntiteGeographique => [1..1]
+             ActiviteSoumiseReconnaissance.CapaciteActiviteExercee => [0..1]
         } 
 
         class Adresse{
@@ -109,6 +114,15 @@ package IG #DDDDDD{
              Agenda.dateCreation => [0..1]
              Agenda.dateDebutPlanification => [0..1]
              Agenda.dateFinPlanification => [0..1]
+             Agenda.PersonnePriseCharge => [0..*]
+             Agenda.Professionnel => [0..*]
+             Agenda.Lieu => [0..*]
+             Agenda.Contact => [0..*]
+             Agenda.EntiteGeographique => [0..*]
+             Agenda.EquipementSpecifique => [0..*]
+             Agenda.OrganisationInterne => [0..*]
+             Agenda.Creneau => [0..*]
+             Agenda.PlageDisponibilite => [0..*]
         } 
 
         class AidantDemarche{
@@ -118,6 +132,8 @@ package IG #DDDDDD{
              AidantDemarche.aidantDemarche => [0..1]
              AidantDemarche.adresseAidantDemarche => [0..1]
              AidantDemarche.telecommunicationAidantDemarche => [0..*]
+             AidantDemarche.EntiteGeographique => [0..1]
+             AidantDemarche.PersonnePhysique => [0..*]
         } 
 
         class ArretTravail{
@@ -181,13 +197,24 @@ package IG #DDDDDD{
              BoiteLettreMSS.listeRouge => [0..1]
         } 
 
+        class CapaciteAccueil{
+
+             CapaciteAccueil => [None..None]
+             CapaciteAccueil.idCapaciteAccueil => [0..1]
+             CapaciteAccueil.MesureCapacite => [1..*]
+             CapaciteAccueil.EntiteGeographique => [0..1]
+        } 
+
         class CapaciteActiviteExercee{
 
              CapaciteActiviteExercee => [None..None]
              CapaciteActiviteExercee.habilitationAideSociale => [0..1]
              CapaciteActiviteExercee.modeFinacement => [0..1]
-             CapaciteActiviteExercee.EntiteGeographique => [0..1]
+             CapaciteActiviteExercee.ActiviteSoumiseReconnaissance => [0..1]
              CapaciteActiviteExercee.ActiviteSociale => [0..1]
+             CapaciteActiviteExercee.ActiviteEnseignement => [0..1]
+             CapaciteActiviteExercee.MesureCapacite => [0..1]
+             CapaciteActiviteExercee.EntiteGeographique => [0..1]
         } 
 
         class CapaciteDiplome{
@@ -196,11 +223,22 @@ package IG #DDDDDD{
              CapaciteDiplome.capaciteDiplome => [0..1]
         } 
 
+        class CapaciteHabitation{
+
+             CapaciteHabitation => [None..None]
+             CapaciteHabitation.typeHabitation => [0..1]
+             CapaciteHabitation.nbHabitation => [0..1]
+             CapaciteHabitation.ActiviteSociale => [0..1]
+             CapaciteHabitation.LieuRealisationOffre => [1..1]
+             CapaciteHabitation.EntiteGeographique => [0..1]
+        } 
+
         class CapacitePriseCharge{
 
              CapacitePriseCharge => [None..None]
              CapacitePriseCharge.affectationTemporaire => [0..1]
              CapacitePriseCharge.LieuRealisationOffre => [1..1]
+             CapacitePriseCharge.MesureCapacite => [0..1]
         } 
 
         class CapaciteSavoirfaire{
@@ -217,8 +255,8 @@ package IG #DDDDDD{
              CarteProfessionnel.dateDebutValidite => [0..1]
              CarteProfessionnel.dateFinValidite => [0..1]
              CarteProfessionnel.dateOpposition => [0..1]
-             CarteProfessionnel.Certificat => [1..*]
              CarteProfessionnel.ExerciceProfessionnel => [1..1]
+             CarteProfessionnel.Certificat => [1..*]
         } 
 
         class Certificat{
@@ -238,7 +276,9 @@ package IG #DDDDDD{
              Certificat.valeurBinaire => [0..1]
              Certificat.statutPublication => [0..1]
              Certificat.ExerciceProfessionnel => [0..1]
+             Certificat.CarteProfessionnel => [0..1]
              Certificat.EntiteGeographique => [0..1]
+             Certificat.EntiteJuridique => [0..1]
         } 
 
         class CertificatEtudeSpeciale{
@@ -284,6 +324,9 @@ package IG #DDDDDD{
              Contact.adresse => [0..1]
              Contact.lieu => [0..*]
              Contact.telecommunication => [0..*]
+             Contact.NoteLiaison => [0..*]
+             Contact.Agenda => [0..*]
+             Contact.RendezVous => [0..*]
         } 
 
         class Convention{
@@ -319,6 +362,8 @@ package IG #DDDDDD{
              Creneau.dateDebut => [0..1]
              Creneau.dateFin => [0..1]
              Creneau.informationComplementaire => [0..1]
+             Creneau.Agenda => [1..1]
+             Creneau.RendezVous => [0..*]
         } 
 
         class DESC1{
@@ -344,6 +389,7 @@ package IG #DDDDDD{
              Decision => [None..None]
              Decision.dateDecision => [0..1]
              Decision.typeDecision => [0..1]
+             Decision.Demande => [1..1]
         } 
 
         class Demande{
@@ -352,6 +398,9 @@ package IG #DDDDDD{
              Demande.identifiantDemande => [0..1]
              Demande.dateDemande => [0..1]
              Demande.demandeUrgente => [0..1]
+             Demande.Decision => [0..*]
+             Demande.Document => [0..*]
+             Demande.DossierPersonnePriseCharge => [1..1]
         } 
 
         class Diplome{
@@ -435,6 +484,7 @@ package IG #DDDDDD{
              DispositifMedical.SupportIUD.marquageClair => [0..1]
              DispositifMedical.SupportIUD.typeSupportIUD => [0..1]
              DispositifMedical.EntiteJuridique => [1..1]
+             DispositifMedical.NoteLiaison => [0..*]
         } 
 
         class DivisionTerritoriale{
@@ -448,12 +498,18 @@ package IG #DDDDDD{
 
              Document => [None..None]
              Document.typeDocument => [0..1]
+             Document.Demande => [0..*]
+             Document.DossierPersonnePriseCharge => [1..1]
+             Document.NoteLiaison => [0..*]
         } 
 
         class DossierPersonnePriseCharge{
 
              DossierPersonnePriseCharge => [None..None]
              DossierPersonnePriseCharge.identifiantDossier => [0..1]
+             DossierPersonnePriseCharge.PersonnePriseCharge => [1..1]
+             DossierPersonnePriseCharge.Demande => [0..*]
+             DossierPersonnePriseCharge.Document => [0..*]
         } 
 
         class DroitExerciceComplementaire{
@@ -525,7 +581,30 @@ package IG #DDDDDD{
              EntiteGeographique.telecommunication => [0..*]
              EntiteGeographique.boiteLettresMSS => [0..*]
              EntiteGeographique.commentaire => [0..1]
+             EntiteGeographique.SituationExercice => [0..*]
+             EntiteGeographique.Certificat => [0..*]
              EntiteGeographique.EntiteJuridique => [1..1]
+             EntiteGeographique.Lieu => [0..*]
+             EntiteGeographique.Convention => [0..*]
+             EntiteGeographique.EquipementMaterielLourd => [0..*]
+             EntiteGeographique.LicenceExploitation => [0..1]
+             EntiteGeographique.ActiviteEnseignement => [0..*]
+             EntiteGeographique.TarifPrestation => [0..*]
+             EntiteGeographique.ActiviteSoinAutorisee => [0..*]
+             EntiteGeographique.AutreActiviteSoumiseAutorisation => [0..*]
+             EntiteGeographique.ActiviteSoumiseReconnaissance => [0..*]
+             EntiteGeographique.ActiviteSociale => [0..*]
+             EntiteGeographique.CapaciteActiviteExercee => [0..*]
+             EntiteGeographique.OffreOperationnelle => [0..*]
+             EntiteGeographique.OrganisationInterne => [0..*]
+             EntiteGeographique.Emploi => [0..1]
+             EntiteGeographique.AidantDemarche => [0..1]
+             EntiteGeographique.MesureProtection => [0..1]
+             EntiteGeographique.NoteLiaison => [0..*]
+             EntiteGeographique.Agenda => [0..*]
+             EntiteGeographique.RendezVous => [0..*]
+             EntiteGeographique.CapaciteAccueil => [0..1]
+             EntiteGeographique.CapaciteHabitation => [0..*]
         } 
 
         class EntiteJuridique{
@@ -555,6 +634,9 @@ package IG #DDDDDD{
              EntiteJuridique.contact => [0..*]
              EntiteJuridique.telecommunication => [0..*]
              EntiteJuridique.boiteLettresMSS => [0..*]
+             EntiteJuridique.EntiteGeographique => [1..*]
+             EntiteJuridique.DispositifMedical => [0..*]
+             EntiteJuridique.Certificat => [0..1]
         } 
 
         class EquipementMaterielLourd{
@@ -580,6 +662,8 @@ package IG #DDDDDD{
              EquipementSpecifique.LimiteCaracteristiqueEquipement.typeCaracteristique => [0..1]
              EquipementSpecifique.LimiteCaracteristiqueEquipement.valeurLimite => [0..1]
              EquipementSpecifique.LieuRealisationOffre => [1..1]
+             EquipementSpecifique.Agenda => [0..*]
+             EquipementSpecifique.RendezVous => [0..*]
         } 
 
         class ExerciceProfessionnel{
@@ -611,7 +695,12 @@ package IG #DDDDDD{
              ExerciceProfessionnel.NiveauFormation.niveauFormationAcquis => [0..1]
              ExerciceProfessionnel.NiveauFormation.anneeUniversitaire => [0..1]
              ExerciceProfessionnel.NiveauFormation.dateFin => [0..1]
+             ExerciceProfessionnel.SituationExercice => [0..*]
+             ExerciceProfessionnel.Certificat => [0..*]
+             ExerciceProfessionnel.SavoirFaire => [0..*]
+             ExerciceProfessionnel.CarteProfessionnel => [0..*]
              ExerciceProfessionnel.Professionnel => [1..1]
+             ExerciceProfessionnel.SituationOperationnelle => [0..*]
         } 
 
         class FonctionQualifiee{
@@ -624,6 +713,16 @@ package IG #DDDDDD{
 
              FormationSpecialiseeTransversale => [None..None]
              FormationSpecialiseeTransversale.formationSpecialiseeTransversale => [0..1]
+        } 
+
+        class Groupement{
+
+             Groupement => [None..None]
+             Groupement.idGroupement => [0..1]
+             Groupement.dateCreation => [0..1]
+             Groupement.dateMAJ => [0..*]
+             Groupement.dateFin => [0..1]
+             Groupement.Membre => [0..*]
         } 
 
         class Horaire{
@@ -672,6 +771,10 @@ package IG #DDDDDD{
              Lieu.adresse => [0..1]
              Lieu.coordonneeGeographique => [0..1]
              Lieu.telecommunication => [0..*]
+             Lieu.EntiteGeographique => [0..*]
+             Lieu.LieuRealisationOffre => [1..1]
+             Lieu.Agenda => [0..*]
+             Lieu.RendezVous => [0..*]
         } 
 
         class LieuRealisationOffre{
@@ -679,6 +782,39 @@ package IG #DDDDDD{
              LieuRealisationOffre => [None..None]
              LieuRealisationOffre.idExterneSynchro => [0..1]
              LieuRealisationOffre.nomExterneSynchro => [0..1]
+             LieuRealisationOffre.OffreOperationnelle => [1..*]
+             LieuRealisationOffre.CapacitePriseCharge => [0..*]
+             LieuRealisationOffre.Lieu => [1..1]
+             LieuRealisationOffre.EquipementSpecifique => [0..*]
+             LieuRealisationOffre.CapaciteHabitation => [0..*]
+        } 
+
+        class Membre{
+
+             Membre => [None..None]
+             Membre.idMembre => [0..1]
+             Membre.dateEntree => [0..*]
+             Membre.dateSortie => [0..*]
+             Membre.adresse => [0..*]
+             Membre.telecommunication => [0..*]
+             Membre.Groupement => [0..*]
+        } 
+
+        class MesureCapacite{
+
+             MesureCapacite => [None..None]
+             MesureCapacite.natureCapacite => [0..1]
+             MesureCapacite.statutCapacite => [0..1]
+             MesureCapacite.temporaliteCapacite => [0..1]
+             MesureCapacite.nombreCapacite => [0..1]
+             MesureCapacite.precision => [0..1]
+             MesureCapacite.variation => [0..1]
+             MesureCapacite.typeSourceCapacite => [0..1]
+             MesureCapacite.dateMAJCapacite => [0..1]
+             MesureCapacite.dateConstatCapacite => [0..1]
+             MesureCapacite.CapaciteActiviteExercee => [1..1]
+             MesureCapacite.CapacitePriseCharge => [1..1]
+             MesureCapacite.CapaciteAccueil => [1..1]
         } 
 
         class MesureProtection{
@@ -688,6 +824,8 @@ package IG #DDDDDD{
              MesureProtection.personneProtectrice => [0..1]
              MesureProtection.adresseMesureProtection => [0..1]
              MesureProtection.telecommunicationMesureProtection => [0..*]
+             MesureProtection.EntiteGeographique => [0..1]
+             MesureProtection.PersonnePhysique => [0..*]
         } 
 
         class NoteLiaison{
@@ -700,8 +838,11 @@ package IG #DDDDDD{
              NoteLiaison.description => [0..1]
              NoteLiaison.urgenceNote => [0..1]
              NoteLiaison.Professionnel => [0..1]
+             NoteLiaison.PersonnePriseCharge => [1..1]
+             NoteLiaison.Document => [1..*]
              NoteLiaison.EntiteGeographique => [0..1]
-             NoteLiaison.PersonnePriseCharge => [0..1]
+             NoteLiaison.Contact => [0..1]
+             NoteLiaison.DispositifMedical => [0..1]
         } 
 
         class Observation{
@@ -721,6 +862,9 @@ package IG #DDDDDD{
              Observation.niveauEffort => [0..1]
              Observation.typeDiabete => [0..1]
              Observation.nombreJours => [0..1]
+             Observation.Professionnel => [0..1]
+             Observation.PersonnePriseCharge => [1..1]
+             Observation.ResultatObservation => [1..*]
         } 
 
         class OffreOperationnelle{
@@ -754,7 +898,30 @@ package IG #DDDDDD{
              OffreOperationnelle.boiteLettreMSS => [0..*]
              OffreOperationnelle.ActiviteOperationnelle => [1..*]
              OffreOperationnelle.ActiviteOperationnelle.activiteOperationnelle => [0..1]
+             OffreOperationnelle.SituationOperationnelle => [0..*]
+             OffreOperationnelle.Patientele => [1..1]
              OffreOperationnelle.EntiteGeographique => [0..1]
+             OffreOperationnelle.LieuRealisationOffre => [1..*]
+             OffreOperationnelle.OrganisationInterne => [0..1]
+        } 
+
+        class OrganisationInterne{
+
+             OrganisationInterne => [None..None]
+             OrganisationInterne.identifiantOI => [0..1]
+             OrganisationInterne.nomOI => [0..1]
+             OrganisationInterne.typeOI => [0..1]
+             OrganisationInterne.contact => [0..*]
+             OrganisationInterne.boiteLettresMSS => [0..*]
+             OrganisationInterne.dateOuverture => [0..1]
+             OrganisationInterne.dateFermeture => [0..1]
+             OrganisationInterne.typeFermeture => [0..1]
+             OrganisationInterne.datePrevisionnelleReouverture => [0..1]
+             OrganisationInterne.EntiteGeographique => [1..*]
+             OrganisationInterne.OrganisationInterne => [0..*]
+             OrganisationInterne.OffreOperationnelle => [1..*]
+             OrganisationInterne.Agenda => [0..*]
+             OrganisationInterne.RendezVous => [0..*]
         } 
 
         class OrientationParticuliere{
@@ -770,6 +937,7 @@ package IG #DDDDDD{
              Parent.personne => [0..1]
              Parent.adresseCorrespondance => [0..1]
              Parent.telecommunication => [0..*]
+             Parent.PersonnePhysique => [1..*]
         } 
 
         class Patientele{
@@ -779,6 +947,7 @@ package IG #DDDDDD{
              Patientele.ageMax => [0..1]
              Patientele.classeAge => [0..*]
              Patientele.publicPrisEnCharge => [0..*]
+             Patientele.OffreOperationnelle => [1..1]
         } 
 
         class PersonnePhysique{
@@ -812,6 +981,9 @@ package IG #DDDDDD{
              PersonnePhysique.poidsCorporel => [0..1]
              PersonnePhysique.surfaceCorporelle => [0..1]
              PersonnePhysique.indiceMasseCorporelle => [0..1]
+             PersonnePhysique.Parent => [0..*]
+             PersonnePhysique.MesureProtection => [0..1]
+             PersonnePhysique.AidantDemarche => [0..1]
         } 
 
         class PersonnePriseCharge{
@@ -833,7 +1005,15 @@ package IG #DDDDDD{
              PersonnePriseCharge.INS.premierPrenomNaissance => [1..1]
              PersonnePriseCharge.INS.nomUtilise => [1..1]
              PersonnePriseCharge.INS.prenomUtilise => [1..1]
+             PersonnePriseCharge.RendezVous => [0..*]
+             PersonnePriseCharge.VieQuotidienne => [0..1]
+             PersonnePriseCharge.VieProfessionnelle => [0..1]
+             PersonnePriseCharge.VieScolaire => [0..1]
+             PersonnePriseCharge.NoteLiaison => [0..*]
+             PersonnePriseCharge.Observation => [0..*]
              PersonnePriseCharge.Professionnel => [0..*]
+             PersonnePriseCharge.DossierPersonnePriseCharge => [1..1]
+             PersonnePriseCharge.Agenda => [0..*]
         } 
 
         class PlageDisponibilite{
@@ -841,6 +1021,7 @@ package IG #DDDDDD{
              PlageDisponibilite => [None..None]
              PlageDisponibilite.plageDisponibilite => [0..1]
              PlageDisponibilite.statutPlageDisponibilite => [0..1]
+             PlageDisponibilite.Agenda => [1..1]
         } 
 
         class PlageReference{
@@ -851,6 +1032,12 @@ package IG #DDDDDD{
              PlageReference.type => [0..1]
              PlageReference.trancheAge => [0..1]
              PlageReference.guideTextuel => [0..1]
+             PlageReference.ResultatObservation => [1..1]
+        } 
+
+        class PoleActivite{
+
+             PoleActivite => [None..None]
         } 
 
         class Professionnel{
@@ -864,7 +1051,13 @@ package IG #DDDDDD{
              Professionnel.adresseCorrespondance => [0..*]
              Professionnel.telecommunication => [0..*]
              Professionnel.boiteLettresMSS => [0..*]
+             Professionnel.ExerciceProfessionnel => [0..*]
+             Professionnel.NoteLiaison => [0..*]
+             Professionnel.Observation => [0..*]
+             Professionnel.AutorisationExercice => [0..*]
              Professionnel.PersonnePriseCharge => [0..*]
+             Professionnel.Agenda => [0..*]
+             Professionnel.RendezVous => [0..*]
         } 
 
         class QualificationPAC{
@@ -889,6 +1082,14 @@ package IG #DDDDDD{
              RendezVous.descriptionRdv => [0..1]
              RendezVous.motifRdv => [0..1]
              RendezVous.commentaire => [0..1]
+             RendezVous.PersonnePriseCharge => [0..*]
+             RendezVous.Creneau => [0..*]
+             RendezVous.EntiteGeographique => [0..*]
+             RendezVous.Professionnel => [0..*]
+             RendezVous.EquipementSpecifique => [0..*]
+             RendezVous.OrganisationInterne => [0..*]
+             RendezVous.Contact => [0..*]
+             RendezVous.Lieu => [0..*]
         } 
 
         class ResultatObservation{
@@ -898,6 +1099,8 @@ package IG #DDDDDD{
              ResultatObservation.valeur => [0..1]
              ResultatObservation.interpretation => [0..1]
              ResultatObservation.raisonAbsence => [0..1]
+             ResultatObservation.Observation => [1..1]
+             ResultatObservation.PlageReference => [0..*]
         } 
 
         class SavoirFaire{
@@ -953,10 +1156,21 @@ package IG #DDDDDD{
              Specialite.specialite => [0..1]
         } 
 
+        class StructureInterne{
+
+             StructureInterne => [None..None]
+        } 
+
         class SurspecialiteTransversale{
 
              SurspecialiteTransversale => [None..None]
              SurspecialiteTransversale.surspecialiteTransversale => [0..1]
+        } 
+
+        class TarifPrestation{
+
+             TarifPrestation => [None..None]
+             TarifPrestation.EntiteGeographique => [1..1]
         } 
 
         class Telecommunication{
@@ -969,6 +1183,11 @@ package IG #DDDDDD{
              Telecommunication.niveauConfidentialite => [0..1]
         } 
 
+        class UniteFonctionnelle{
+
+             UniteFonctionnelle => [None..None]
+        } 
+
         class VieProfessionnelle{
 
              VieProfessionnelle => [None..None]
@@ -978,6 +1197,8 @@ package IG #DDDDDD{
              VieProfessionnelle.situationSansEmploi => [0..1]
              VieProfessionnelle.besoinProfessionnel => [0..*]
              VieProfessionnelle.PersonnePriseCharge => [1..1]
+             VieProfessionnelle.Emploi => [0..*]
+             VieProfessionnelle.ArretTravail => [0..*]
         } 
 
         class VieQuotidienne{
@@ -994,6 +1215,7 @@ package IG #DDDDDD{
              VieScolaire => [None..None]
              VieScolaire.typeScolarisation => [0..1]
              VieScolaire.besoinScolarite => [0..*]
+             VieScolaire.PersonnePriseCharge => [1..1]
          }
 
      }
@@ -1173,11 +1395,19 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> CapaciteAccueil
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> CapaciteActiviteExercee
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
 
     classce22f11aadb3ecc630835fe34b52ad38 --> CapaciteDiplome
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CapaciteHabitation
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -1333,6 +1563,10 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> Groupement
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> Horaire
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
@@ -1353,6 +1587,14 @@ package "Ressources de base" #palegreen {
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> Membre
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> MesureCapacite
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> MesureProtection
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
@@ -1366,6 +1608,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> OffreOperationnelle
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> OrganisationInterne
 
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
@@ -1394,6 +1640,10 @@ package "Ressources de base" #palegreen {
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
     class095a1b43effec73955e31e790438de49 --> PlageReference
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PoleActivite
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
@@ -1427,13 +1677,25 @@ package "Ressources de base" #palegreen {
 
     class7cdfb2c203ef04e11cd48de87fe587af --> Specialite
 
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> StructureInterne
+
  class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
 
     class7cdfb2c203ef04e11cd48de87fe587af --> SurspecialiteTransversale
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 
+    class095a1b43effec73955e31e790438de49 --> TarifPrestation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
     class095a1b43effec73955e31e790438de49 --> Telecommunication
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> UniteFonctionnelle
 
  class "Base" as  class095a1b43effec73955e31e790438de49 
 

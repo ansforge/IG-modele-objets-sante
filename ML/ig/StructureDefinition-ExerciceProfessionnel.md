@@ -16,7 +16,7 @@ Informations décrivant notamment la profession exercée, l’identité d’exer
 
 **Usages:**
 
-* Use this Logical Model: [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [Certificat](StructureDefinition-Certificat.md), [SavoirFaire](StructureDefinition-SavoirFaire.md), [SituationExercice](StructureDefinition-SituationExercice.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
+* Use this Logical Model: [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [Certificat](StructureDefinition-Certificat.md), [Professionnel](StructureDefinition-Professionnel.md), [SavoirFaire](StructureDefinition-SavoirFaire.md)...Show 2 more,[SituationExercice](StructureDefinition-SituationExercice.md)and[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/ExerciceProfessionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
   "name" : "ExerciceProfessionnel",
   "title" : "ExerciceProfessionnel",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -467,6 +467,58 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
         ]
       },
       {
+        "id" : "ExerciceProfessionnel.SituationExercice",
+        "path" : "ExerciceProfessionnel.SituationExercice",
+        "short" : "Lien vers la classe SituationExercice",
+        "definition" : "Lien vers la classe SituationExercice",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationExercice"
+          }
+        ]
+      },
+      {
+        "id" : "ExerciceProfessionnel.Certificat",
+        "path" : "ExerciceProfessionnel.Certificat",
+        "short" : "Lien vers la classe Certificat",
+        "definition" : "Lien vers la classe Certificat",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat"
+          }
+        ]
+      },
+      {
+        "id" : "ExerciceProfessionnel.SavoirFaire",
+        "path" : "ExerciceProfessionnel.SavoirFaire",
+        "short" : "Lien vers la classe SavoirFaire",
+        "definition" : "Lien vers la classe SavoirFaire",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire"
+          }
+        ]
+      },
+      {
+        "id" : "ExerciceProfessionnel.CarteProfessionnel",
+        "path" : "ExerciceProfessionnel.CarteProfessionnel",
+        "short" : "Lien vers la classe CarteProfessionnel",
+        "definition" : "Lien vers la classe CarteProfessionnel",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CarteProfessionnel"
+          }
+        ]
+      },
+      {
         "id" : "ExerciceProfessionnel.Professionnel",
         "path" : "ExerciceProfessionnel.Professionnel",
         "short" : "Lien vers la classe Professionnel",
@@ -476,6 +528,19 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel"
+          }
+        ]
+      },
+      {
+        "id" : "ExerciceProfessionnel.SituationOperationnelle",
+        "path" : "ExerciceProfessionnel.SituationOperationnelle",
+        "short" : "Lien vers la classe SituationOperationnelle",
+        "definition" : "Lien vers la classe SituationOperationnelle",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle"
           }
         ]
       }

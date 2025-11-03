@@ -16,7 +16,7 @@ Les notes de liaison permet d’assurer un suivi « terrain » de la personne pr
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [Contact](StructureDefinition-Contact.md), [DispositifMedical](StructureDefinition-DispositifMedical.md), [Document](StructureDefinition-Document.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md)...Show 2 more,[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[Professionnel](StructureDefinition-Professionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/NoteLiaison)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-NoteLiaison.csv), [E
   "name" : "NoteLiaison",
   "title" : "NoteLiaison",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -172,6 +172,32 @@ Other representations of profile: [CSV](StructureDefinition-NoteLiaison.csv), [E
         ]
       },
       {
+        "id" : "NoteLiaison.PersonnePriseCharge",
+        "path" : "NoteLiaison.PersonnePriseCharge",
+        "short" : "Lien vers la classe PersonnePriseCharge",
+        "definition" : "Lien vers la classe PersonnePriseCharge",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+          }
+        ]
+      },
+      {
+        "id" : "NoteLiaison.Document",
+        "path" : "NoteLiaison.Document",
+        "short" : "Lien vers la classe Document",
+        "definition" : "Lien vers la classe Document",
+        "min" : 1,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document"
+          }
+        ]
+      },
+      {
         "id" : "NoteLiaison.EntiteGeographique",
         "path" : "NoteLiaison.EntiteGeographique",
         "short" : "Lien vers la classe EntiteGeographique",
@@ -185,15 +211,28 @@ Other representations of profile: [CSV](StructureDefinition-NoteLiaison.csv), [E
         ]
       },
       {
-        "id" : "NoteLiaison.PersonnePriseCharge",
-        "path" : "NoteLiaison.PersonnePriseCharge",
-        "short" : "Lien vers la classe PersonnePriseCharge",
-        "definition" : "Lien vers la classe PersonnePriseCharge",
+        "id" : "NoteLiaison.Contact",
+        "path" : "NoteLiaison.Contact",
+        "short" : "Lien vers la classe Contact",
+        "definition" : "Lien vers la classe Contact",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
-            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact"
+          }
+        ]
+      },
+      {
+        "id" : "NoteLiaison.DispositifMedical",
+        "path" : "NoteLiaison.DispositifMedical",
+        "short" : "Lien vers la classe DispositifMedical",
+        "definition" : "Lien vers la classe DispositifMedical",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DispositifMedical"
           }
         ]
       }

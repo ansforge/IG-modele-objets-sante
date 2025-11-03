@@ -16,7 +16,7 @@ Un dossier regroupe l’ensemble des informations et des documents liés à une 
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [Demande](StructureDefinition-Demande.md), [Document](StructureDefinition-Document.md) and [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DossierPersonnePriseCharge)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DossierPersonnePrise
   "name" : "DossierPersonnePriseCharge",
   "title" : "DossierPersonnePriseCharge",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -90,6 +90,45 @@ Other representations of profile: [CSV](StructureDefinition-DossierPersonnePrise
         "type" : [
           {
             "code" : "Identifier"
+          }
+        ]
+      },
+      {
+        "id" : "DossierPersonnePriseCharge.PersonnePriseCharge",
+        "path" : "DossierPersonnePriseCharge.PersonnePriseCharge",
+        "short" : "Lien vers la classe PersonnePriseCharge",
+        "definition" : "Lien vers la classe PersonnePriseCharge",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+          }
+        ]
+      },
+      {
+        "id" : "DossierPersonnePriseCharge.Demande",
+        "path" : "DossierPersonnePriseCharge.Demande",
+        "short" : "Lien vers la classe Demande",
+        "definition" : "Lien vers la classe Demande",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Demande"
+          }
+        ]
+      },
+      {
+        "id" : "DossierPersonnePriseCharge.Document",
+        "path" : "DossierPersonnePriseCharge.Document",
+        "short" : "Lien vers la classe Document",
+        "definition" : "Lien vers la classe Document",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document"
           }
         ]
       }

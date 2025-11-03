@@ -16,7 +16,7 @@ Espace disposant d’un ensemble de ressources pour réaliser une offre. Lorsque
 
 **Usages:**
 
-* Use this Logical Model: [CapacitePriseCharge](StructureDefinition-CapacitePriseCharge.md) and [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md)
+* Use this Logical Model: [CapaciteHabitation](StructureDefinition-CapaciteHabitation.md), [CapacitePriseCharge](StructureDefinition-CapacitePriseCharge.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md), [Lieu](StructureDefinition-Lieu.md) and [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/LieuRealisationOffre)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-LieuRealisationOffre
   "name" : "LieuRealisationOffre",
   "title" : "LieuRealisationOffre",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -103,6 +103,71 @@ Other representations of profile: [CSV](StructureDefinition-LieuRealisationOffre
         "type" : [
           {
             "code" : "string"
+          }
+        ]
+      },
+      {
+        "id" : "LieuRealisationOffre.OffreOperationnelle",
+        "path" : "LieuRealisationOffre.OffreOperationnelle",
+        "short" : "Lien vers la classe OffreOperationnelle",
+        "definition" : "Lien vers la classe OffreOperationnelle",
+        "min" : 1,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle"
+          }
+        ]
+      },
+      {
+        "id" : "LieuRealisationOffre.CapacitePriseCharge",
+        "path" : "LieuRealisationOffre.CapacitePriseCharge",
+        "short" : "Lien vers la classe CapacitePriseCharge",
+        "definition" : "Lien vers la classe CapacitePriseCharge",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapacitePriseCharge"
+          }
+        ]
+      },
+      {
+        "id" : "LieuRealisationOffre.Lieu",
+        "path" : "LieuRealisationOffre.Lieu",
+        "short" : "Lien vers la classe Lieu",
+        "definition" : "Lien vers la classe Lieu",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu"
+          }
+        ]
+      },
+      {
+        "id" : "LieuRealisationOffre.EquipementSpecifique",
+        "path" : "LieuRealisationOffre.EquipementSpecifique",
+        "short" : "Lien vers la classe EquipementSpecifique",
+        "definition" : "Lien vers la classe EquipementSpecifique",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique"
+          }
+        ]
+      },
+      {
+        "id" : "LieuRealisationOffre.CapaciteHabitation",
+        "path" : "LieuRealisationOffre.CapaciteHabitation",
+        "short" : "Lien vers la classe CapaciteHabitation",
+        "definition" : "Lien vers la classe CapaciteHabitation",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation"
           }
         ]
       }

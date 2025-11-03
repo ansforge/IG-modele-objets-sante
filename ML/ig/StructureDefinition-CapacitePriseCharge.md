@@ -16,7 +16,7 @@ La capacite de prise en charge indique à quelle affectation sont destinés les 
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md) and [MesureCapacite](StructureDefinition-MesureCapacite.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/CapacitePriseCharge)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CapacitePriseCharge.
   "name" : "CapacitePriseCharge",
   "title" : "CapacitePriseCharge",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -107,6 +107,19 @@ Other representations of profile: [CSV](StructureDefinition-CapacitePriseCharge.
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre"
+          }
+        ]
+      },
+      {
+        "id" : "CapacitePriseCharge.MesureCapacite",
+        "path" : "CapacitePriseCharge.MesureCapacite",
+        "short" : "Lien vers la classe MesureCapacite",
+        "definition" : "Lien vers la classe MesureCapacite",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureCapacite"
           }
         ]
       }

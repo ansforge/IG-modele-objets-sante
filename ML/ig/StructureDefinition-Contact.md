@@ -16,7 +16,7 @@ Personne ou service qui agit comme point de contact auprès d’une autre person
 
 **Usages:**
 
-* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md) and [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)
+* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [NoteLiaison](StructureDefinition-NoteLiaison.md)...Show 4 more,[OffreOperationnelle](StructureDefinition-OffreOperationnelle.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[RendezVous](StructureDefinition-RendezVous.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Contact)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Contact.csv), [Excel
   "name" : "Contact",
   "title" : "Contact",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -309,6 +309,45 @@ Other representations of profile: [CSV](StructureDefinition-Contact.csv), [Excel
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication"
+          }
+        ]
+      },
+      {
+        "id" : "Contact.NoteLiaison",
+        "path" : "Contact.NoteLiaison",
+        "short" : "Lien vers la classe NoteLiaison",
+        "definition" : "Lien vers la classe NoteLiaison",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison"
+          }
+        ]
+      },
+      {
+        "id" : "Contact.Agenda",
+        "path" : "Contact.Agenda",
+        "short" : "Lien vers la classe Agenda",
+        "definition" : "Lien vers la classe Agenda",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda"
+          }
+        ]
+      },
+      {
+        "id" : "Contact.RendezVous",
+        "path" : "Contact.RendezVous",
+        "short" : "Lien vers la classe RendezVous",
+        "definition" : "Lien vers la classe RendezVous",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous"
           }
         ]
       }

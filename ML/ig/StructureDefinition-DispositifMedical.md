@@ -16,7 +16,7 @@ L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017 définit un d
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [EntiteJuridique](StructureDefinition-EntiteJuridique.md) and [NoteLiaison](StructureDefinition-NoteLiaison.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DispositifMedical)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DispositifMedical.cs
   "name" : "DispositifMedical",
   "title" : "DispositifMedical",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -428,6 +428,19 @@ Other representations of profile: [CSV](StructureDefinition-DispositifMedical.cs
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique"
+          }
+        ]
+      },
+      {
+        "id" : "DispositifMedical.NoteLiaison",
+        "path" : "DispositifMedical.NoteLiaison",
+        "short" : "Lien vers la classe NoteLiaison",
+        "definition" : "Lien vers la classe NoteLiaison",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison"
           }
         ]
       }

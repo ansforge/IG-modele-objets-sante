@@ -16,7 +16,7 @@ Une patientèle est un ensemble de patients présentant des caractéristiques pe
 
 **Usages:**
 
-* Use this Logical Model: [ActiviteSociale](StructureDefinition-ActiviteSociale.md) and [PlageReference](StructureDefinition-PlageReference.md)
+* Use this Logical Model: [ActiviteSociale](StructureDefinition-ActiviteSociale.md), [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md) and [PlageReference](StructureDefinition-PlageReference.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Patientele)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Patientele.csv), [Ex
   "name" : "Patientele",
   "title" : "Patientele",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -139,6 +139,19 @@ Other representations of profile: [CSV](StructureDefinition-Patientele.csv), [Ex
           "strength" : "preferred",
           "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R239-PublicPrisEnCharge/FHIR/TRE-R239-PublicPrisEnCharge?vs"
         }
+      },
+      {
+        "id" : "Patientele.OffreOperationnelle",
+        "path" : "Patientele.OffreOperationnelle",
+        "short" : "Lien vers la classe OffreOperationnelle",
+        "definition" : "Lien vers la classe OffreOperationnelle",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle"
+          }
+        ]
       }
     ]
   }

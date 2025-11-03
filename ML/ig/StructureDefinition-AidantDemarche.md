@@ -16,7 +16,7 @@ Personne physique ou morale aidant l’individu dans ses démarches.
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md) and [PersonnePhysique](StructureDefinition-PersonnePhysique.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/AidantDemarche)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-AidantDemarche.csv),
   "name" : "AidantDemarche",
   "title" : "AidantDemarche",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -129,6 +129,32 @@ Other representations of profile: [CSV](StructureDefinition-AidantDemarche.csv),
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication"
+          }
+        ]
+      },
+      {
+        "id" : "AidantDemarche.EntiteGeographique",
+        "path" : "AidantDemarche.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
+      },
+      {
+        "id" : "AidantDemarche.PersonnePhysique",
+        "path" : "AidantDemarche.PersonnePhysique",
+        "short" : "Lien vers la classe PersonnePhysique",
+        "definition" : "Lien vers la classe PersonnePhysique",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique"
           }
         ]
       }

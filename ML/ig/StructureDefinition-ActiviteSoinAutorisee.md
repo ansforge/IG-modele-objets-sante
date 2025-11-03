@@ -16,7 +16,7 @@ On distingue plusieurs types d’activités sanitaires rattachées aux établiss
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/ActiviteSoinAutorisee)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ActiviteSoinAutorise
   "name" : "ActiviteSoinAutorisee",
   "title" : "ActiviteSoinAutorisee",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -206,6 +206,19 @@ Other representations of profile: [CSV](StructureDefinition-ActiviteSoinAutorise
         "type" : [
           {
             "code" : "boolean"
+          }
+        ]
+      },
+      {
+        "id" : "ActiviteSoinAutorisee.EntiteGeographique",
+        "path" : "ActiviteSoinAutorisee.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
           }
         ]
       }

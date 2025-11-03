@@ -16,7 +16,7 @@ Informations relatives à une portion déterminée de l’espace, fixe ou mobile
 
 **Usages:**
 
-* Use this Logical Model: [Contact](StructureDefinition-Contact.md) and [EntiteGeographique](StructureDefinition-EntiteGeographique.md)
+* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [Contact](StructureDefinition-Contact.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md) and [RendezVous](StructureDefinition-RendezVous.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Lieu)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Lieu.csv), [Excel](S
   "name" : "Lieu",
   "title" : "Lieu",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -232,6 +232,58 @@ Other representations of profile: [CSV](StructureDefinition-Lieu.csv), [Excel](S
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication"
+          }
+        ]
+      },
+      {
+        "id" : "Lieu.EntiteGeographique",
+        "path" : "Lieu.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
+      },
+      {
+        "id" : "Lieu.LieuRealisationOffre",
+        "path" : "Lieu.LieuRealisationOffre",
+        "short" : "Lien vers la classe LieuRealisationOffre",
+        "definition" : "Lien vers la classe LieuRealisationOffre",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre"
+          }
+        ]
+      },
+      {
+        "id" : "Lieu.Agenda",
+        "path" : "Lieu.Agenda",
+        "short" : "Lien vers la classe Agenda",
+        "definition" : "Lien vers la classe Agenda",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda"
+          }
+        ]
+      },
+      {
+        "id" : "Lieu.RendezVous",
+        "path" : "Lieu.RendezVous",
+        "short" : "Lien vers la classe RendezVous",
+        "definition" : "Lien vers la classe RendezVous",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous"
           }
         ]
       }

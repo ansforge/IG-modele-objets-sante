@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePhysique.csv
   "name" : "PersonnePhysique",
   "title" : "PersonnePhysique",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -485,6 +485,45 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePhysique.csv
         "type" : [
           {
             "code" : "Quantity"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePhysique.Parent",
+        "path" : "PersonnePhysique.Parent",
+        "short" : "Lien vers la classe Parent",
+        "definition" : "Lien vers la classe Parent",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Parent"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePhysique.MesureProtection",
+        "path" : "PersonnePhysique.MesureProtection",
+        "short" : "Lien vers la classe MesureProtection",
+        "definition" : "Lien vers la classe MesureProtection",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection"
+          }
+        ]
+      },
+      {
+        "id" : "PersonnePhysique.AidantDemarche",
+        "path" : "PersonnePhysique.AidantDemarche",
+        "short" : "Lien vers la classe AidantDemarche",
+        "definition" : "Lien vers la classe AidantDemarche",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche"
           }
         ]
       }

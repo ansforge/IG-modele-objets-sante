@@ -16,7 +16,7 @@ Rencontre prévue entre au moins deux personnes à une heure et dans un lieu dé
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [Contact](StructureDefinition-Contact.md), [Creneau](StructureDefinition-Creneau.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md)...Show 4 more,[Lieu](StructureDefinition-Lieu.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[Professionnel](StructureDefinition-Professionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/RendezVous)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RendezVous.csv), [Ex
   "name" : "RendezVous",
   "title" : "RendezVous",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -246,6 +246,110 @@ Other representations of profile: [CSV](StructureDefinition-RendezVous.csv), [Ex
         "type" : [
           {
             "code" : "string"
+          }
+        ]
+      },
+      {
+        "id" : "RendezVous.PersonnePriseCharge",
+        "path" : "RendezVous.PersonnePriseCharge",
+        "short" : "Lien vers la classe PersonnePriseCharge",
+        "definition" : "Lien vers la classe PersonnePriseCharge",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+          }
+        ]
+      },
+      {
+        "id" : "RendezVous.Creneau",
+        "path" : "RendezVous.Creneau",
+        "short" : "Lien vers la classe Creneau",
+        "definition" : "Lien vers la classe Creneau",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Creneau"
+          }
+        ]
+      },
+      {
+        "id" : "RendezVous.EntiteGeographique",
+        "path" : "RendezVous.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+          }
+        ]
+      },
+      {
+        "id" : "RendezVous.Professionnel",
+        "path" : "RendezVous.Professionnel",
+        "short" : "Lien vers la classe Professionnel",
+        "definition" : "Lien vers la classe Professionnel",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel"
+          }
+        ]
+      },
+      {
+        "id" : "RendezVous.EquipementSpecifique",
+        "path" : "RendezVous.EquipementSpecifique",
+        "short" : "Lien vers la classe EquipementSpecifique",
+        "definition" : "Lien vers la classe EquipementSpecifique",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique"
+          }
+        ]
+      },
+      {
+        "id" : "RendezVous.OrganisationInterne",
+        "path" : "RendezVous.OrganisationInterne",
+        "short" : "Lien vers la classe OrganisationInterne",
+        "definition" : "Lien vers la classe OrganisationInterne",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne"
+          }
+        ]
+      },
+      {
+        "id" : "RendezVous.Contact",
+        "path" : "RendezVous.Contact",
+        "short" : "Lien vers la classe Contact",
+        "definition" : "Lien vers la classe Contact",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact"
+          }
+        ]
+      },
+      {
+        "id" : "RendezVous.Lieu",
+        "path" : "RendezVous.Lieu",
+        "short" : "Lien vers la classe Lieu",
+        "definition" : "Lien vers la classe Lieu",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu"
           }
         ]
       }

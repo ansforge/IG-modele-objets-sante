@@ -16,7 +16,7 @@ Capacité définie au regard de l’activité.
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [ActiviteEnseignement](StructureDefinition-ActiviteEnseignement.md), [ActiviteSociale](StructureDefinition-ActiviteSociale.md), [ActiviteSoumiseReconnaissance](StructureDefinition-ActiviteSoumiseReconnaissance.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md) and [MesureCapacite](StructureDefinition-MesureCapacite.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/CapaciteActiviteExercee)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CapaciteActiviteExer
   "name" : "CapaciteActiviteExercee",
   "title" : "CapaciteActiviteExercee",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -107,15 +107,15 @@ Other representations of profile: [CSV](StructureDefinition-CapaciteActiviteExer
         ]
       },
       {
-        "id" : "CapaciteActiviteExercee.EntiteGeographique",
-        "path" : "CapaciteActiviteExercee.EntiteGeographique",
-        "short" : "Lien vers la classe EntiteGeographique",
-        "definition" : "Lien vers la classe EntiteGeographique",
+        "id" : "CapaciteActiviteExercee.ActiviteSoumiseReconnaissance",
+        "path" : "CapaciteActiviteExercee.ActiviteSoumiseReconnaissance",
+        "short" : "Lien vers la classe ActiviteSoumiseReconnaissance",
+        "definition" : "Lien vers la classe ActiviteSoumiseReconnaissance",
         "min" : 0,
         "max" : "1",
         "type" : [
           {
-            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoumiseReconnaissance"
           }
         ]
       },
@@ -129,6 +129,45 @@ Other representations of profile: [CSV](StructureDefinition-CapaciteActiviteExer
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSociale"
+          }
+        ]
+      },
+      {
+        "id" : "CapaciteActiviteExercee.ActiviteEnseignement",
+        "path" : "CapaciteActiviteExercee.ActiviteEnseignement",
+        "short" : "Lien vers la classe ActiviteEnseignement",
+        "definition" : "Lien vers la classe ActiviteEnseignement",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteEnseignement"
+          }
+        ]
+      },
+      {
+        "id" : "CapaciteActiviteExercee.MesureCapacite",
+        "path" : "CapaciteActiviteExercee.MesureCapacite",
+        "short" : "Lien vers la classe MesureCapacite",
+        "definition" : "Lien vers la classe MesureCapacite",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureCapacite"
+          }
+        ]
+      },
+      {
+        "id" : "CapaciteActiviteExercee.EntiteGeographique",
+        "path" : "CapaciteActiviteExercee.EntiteGeographique",
+        "short" : "Lien vers la classe EntiteGeographique",
+        "definition" : "Lien vers la classe EntiteGeographique",
+        "min" : 0,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique"
           }
         ]
       }

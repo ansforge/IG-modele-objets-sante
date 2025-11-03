@@ -16,7 +16,7 @@ Informations descriptives des boîtes aux lettres du service de messagerie sécu
 
 **Usages:**
 
-* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md)...Show 2 more,[Professionnel](StructureDefinition-Professionnel.md)and[SituationExercice](StructureDefinition-SituationExercice.md)
+* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md)...Show 3 more,[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[Professionnel](StructureDefinition-Professionnel.md)and[SituationExercice](StructureDefinition-SituationExercice.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/BoiteLettreMSS)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-BoiteLettreMSS.csv),
   "name" : "BoiteLettreMSS",
   "title" : "BoiteLettreMSS",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

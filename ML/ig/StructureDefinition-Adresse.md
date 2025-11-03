@@ -16,7 +16,7 @@ Adresse géopostale. Un emplacement auquel une personne ou une organisation peut
 
 **Usages:**
 
-* Use this Logical Model: [AidantDemarche](StructureDefinition-AidantDemarche.md), [Contact](StructureDefinition-Contact.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md)...Show 6 more,[Lieu](StructureDefinition-Lieu.md),[MesureProtection](StructureDefinition-MesureProtection.md),[Parent](StructureDefinition-Parent.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md),[Professionnel](StructureDefinition-Professionnel.md)and[SituationExercice](StructureDefinition-SituationExercice.md)
+* Use this Logical Model: [AidantDemarche](StructureDefinition-AidantDemarche.md), [Contact](StructureDefinition-Contact.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md)...Show 7 more,[Lieu](StructureDefinition-Lieu.md),[Membre](StructureDefinition-Membre.md),[MesureProtection](StructureDefinition-MesureProtection.md),[Parent](StructureDefinition-Parent.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md),[Professionnel](StructureDefinition-Professionnel.md)and[SituationExercice](StructureDefinition-SituationExercice.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Adresse)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Adresse.csv), [Excel
   "name" : "Adresse",
   "title" : "Adresse",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

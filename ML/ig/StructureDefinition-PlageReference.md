@@ -16,7 +16,7 @@ La plage de référence, constituée d’une borne inférieure et d’une borne 
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [ResultatObservation](StructureDefinition-ResultatObservation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/PlageReference)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PlageReference.csv),
   "name" : "PlageReference",
   "title" : "PlageReference",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -142,6 +142,19 @@ Other representations of profile: [CSV](StructureDefinition-PlageReference.csv),
         "type" : [
           {
             "code" : "string"
+          }
+        ]
+      },
+      {
+        "id" : "PlageReference.ResultatObservation",
+        "path" : "PlageReference.ResultatObservation",
+        "short" : "Lien vers la classe ResultatObservation",
+        "definition" : "Lien vers la classe ResultatObservation",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ResultatObservation"
           }
         ]
       }

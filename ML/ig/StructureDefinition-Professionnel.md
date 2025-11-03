@@ -16,7 +16,7 @@ Données d’identification pérennes d’une personne physique, qui travaille e
 
 **Usages:**
 
-* Use this Logical Model: [AutorisationExercice](StructureDefinition-AutorisationExercice.md), [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [NoteLiaison](StructureDefinition-NoteLiaison.md) and [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)
+* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [AutorisationExercice](StructureDefinition-AutorisationExercice.md), [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [NoteLiaison](StructureDefinition-NoteLiaison.md)...Show 3 more,[Observation](StructureDefinition-Observation.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[RendezVous](StructureDefinition-RendezVous.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Professionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
   "name" : "Professionnel",
   "title" : "Professionnel",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -189,6 +189,58 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
         ]
       },
       {
+        "id" : "Professionnel.ExerciceProfessionnel",
+        "path" : "Professionnel.ExerciceProfessionnel",
+        "short" : "Lien vers la classe ExerciceProfessionnel",
+        "definition" : "Lien vers la classe ExerciceProfessionnel",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel"
+          }
+        ]
+      },
+      {
+        "id" : "Professionnel.NoteLiaison",
+        "path" : "Professionnel.NoteLiaison",
+        "short" : "Lien vers la classe NoteLiaison",
+        "definition" : "Lien vers la classe NoteLiaison",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison"
+          }
+        ]
+      },
+      {
+        "id" : "Professionnel.Observation",
+        "path" : "Professionnel.Observation",
+        "short" : "Lien vers la classe Observation",
+        "definition" : "Lien vers la classe Observation",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Observation"
+          }
+        ]
+      },
+      {
+        "id" : "Professionnel.AutorisationExercice",
+        "path" : "Professionnel.AutorisationExercice",
+        "short" : "Lien vers la classe AutorisationExercice",
+        "definition" : "Lien vers la classe AutorisationExercice",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutorisationExercice"
+          }
+        ]
+      },
+      {
         "id" : "Professionnel.PersonnePriseCharge",
         "path" : "Professionnel.PersonnePriseCharge",
         "short" : "Lien vers la classe PersonnePriseCharge",
@@ -198,6 +250,32 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+          }
+        ]
+      },
+      {
+        "id" : "Professionnel.Agenda",
+        "path" : "Professionnel.Agenda",
+        "short" : "Lien vers la classe Agenda",
+        "definition" : "Lien vers la classe Agenda",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda"
+          }
+        ]
+      },
+      {
+        "id" : "Professionnel.RendezVous",
+        "path" : "Professionnel.RendezVous",
+        "short" : "Lien vers la classe RendezVous",
+        "definition" : "Lien vers la classe RendezVous",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous"
           }
         ]
       }

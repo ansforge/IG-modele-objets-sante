@@ -16,7 +16,7 @@
 
 **Usages:**
 
-* Use this Logical Model: [ArretTravail](StructureDefinition-ArretTravail.md) and [Emploi](StructureDefinition-Emploi.md)
+* Use this Logical Model: [ArretTravail](StructureDefinition-ArretTravail.md), [Emploi](StructureDefinition-Emploi.md) and [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/VieProfessionnelle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-VieProfessionnelle.c
   "name" : "VieProfessionnelle",
   "title" : "VieProfessionnelle",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -167,6 +167,32 @@ Other representations of profile: [CSV](StructureDefinition-VieProfessionnelle.c
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+          }
+        ]
+      },
+      {
+        "id" : "VieProfessionnelle.Emploi",
+        "path" : "VieProfessionnelle.Emploi",
+        "short" : "Lien vers la classe Emploi",
+        "definition" : "Lien vers la classe Emploi",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Emploi"
+          }
+        ]
+      },
+      {
+        "id" : "VieProfessionnelle.ArretTravail",
+        "path" : "VieProfessionnelle.ArretTravail",
+        "short" : "Lien vers la classe ArretTravail",
+        "definition" : "Lien vers la classe ArretTravail",
+        "min" : 0,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ArretTravail"
           }
         ]
       }

@@ -16,7 +16,7 @@
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/VieScolaire)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-VieScolaire.csv), [E
   "name" : "VieScolaire",
   "title" : "VieScolaire",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -113,6 +113,19 @@ Other representations of profile: [CSV](StructureDefinition-VieScolaire.csv), [E
           "strength" : "preferred",
           "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinScolarite-vs"
         }
+      },
+      {
+        "id" : "VieScolaire.PersonnePriseCharge",
+        "path" : "VieScolaire.PersonnePriseCharge",
+        "short" : "Lien vers la classe PersonnePriseCharge",
+        "definition" : "Lien vers la classe PersonnePriseCharge",
+        "min" : 1,
+        "max" : "1",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge"
+          }
+        ]
       }
     ]
   }

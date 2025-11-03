@@ -16,7 +16,7 @@ Personne liée par un lien de filiation à un enfant
 
 **Usages:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Use this Logical Model: [PersonnePhysique](StructureDefinition-PersonnePhysique.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Parent)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Parent.csv), [Excel]
   "name" : "Parent",
   "title" : "Parent",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -129,6 +129,19 @@ Other representations of profile: [CSV](StructureDefinition-Parent.csv), [Excel]
         "type" : [
           {
             "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication"
+          }
+        ]
+      },
+      {
+        "id" : "Parent.PersonnePhysique",
+        "path" : "Parent.PersonnePhysique",
+        "short" : "Lien vers la classe PersonnePhysique",
+        "definition" : "Lien vers la classe PersonnePhysique",
+        "min" : 1,
+        "max" : "*",
+        "type" : [
+          {
+            "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique"
           }
         ]
       }

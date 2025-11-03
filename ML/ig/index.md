@@ -69,7 +69,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ActiviteEnseignement](StructureDefinition-ActiviteEnseignement.md), [ActiviteSociale](StructureDefinition-ActiviteSociale.md)...Show 109 more,[ActiviteSoinAutorisee](StructureDefinition-ActiviteSoinAutorisee.md),[ActiviteSoumiseReconnaissance](StructureDefinition-ActiviteSoumiseReconnaissance.md),[Adresse](StructureDefinition-Adresse.md),[Agenda](StructureDefinition-Agenda.md),[AidantDemarche](StructureDefinition-AidantDemarche.md),[ArretTravail](StructureDefinition-ArretTravail.md),[Attestation](StructureDefinition-Attestation.md),[AutorisationExercice](StructureDefinition-AutorisationExercice.md),[AutreActiviteSoumiseAutorisation](StructureDefinition-AutreActiviteSoumiseAutorisation.md),[AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md),[BesoinscolariteVs](ValueSet-besoinScolarite-vs.md),[BesoinviequotidienneVs](ValueSet-besoinVieQuotidienne-vs.md),[BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md),[CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md),[CapaciteDiplome](StructureDefinition-CapaciteDiplome.md),[CapacitePriseCharge](StructureDefinition-CapacitePriseCharge.md),[CapaciteSavoirfaire](StructureDefinition-CapaciteSavoirfaire.md),[CapacitesavoirfaireVs](ValueSet-capaciteSavoirFaire-vs.md),[CarteProfessionnel](StructureDefinition-CarteProfessionnel.md),[CategorieetablissementVs](ValueSet-categorieEtablissement-vs.md),[Certificat](StructureDefinition-Certificat.md),[CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md),[CodeVs](ValueSet-code-vs.md),[Competence](StructureDefinition-Competence.md),[CompetenceExclusive](StructureDefinition-CompetenceExclusive.md),[CompetenceMetier](StructureDefinition-CompetenceMetier.md),[CompetenceVs](ValueSet-competence-vs.md),[CompetenceexclusiveVs](ValueSet-competenceExclusive-vs.md),[CompetencemetierVs](ValueSet-competenceMetier-vs.md),[Contact](StructureDefinition-Contact.md),[Convention](StructureDefinition-Convention.md),[CoordonneeGeographique](StructureDefinition-CoordonneeGeographique.md),[Creneau](StructureDefinition-Creneau.md),[DESC1](StructureDefinition-DESC1.md),[DESC2](StructureDefinition-DESC2.md),[DESCNonQualifiant](StructureDefinition-DESCNonQualifiant.md),[Decision](StructureDefinition-Decision.md),[Demande](StructureDefinition-Demande.md),[DescnonqualifiantVs](ValueSet-DESCNonQualifiant-vs.md),[Diplome](StructureDefinition-Diplome.md),[DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md),[DiplomeDivers](StructureDefinition-DiplomeDivers.md),[DiplomeEEE](StructureDefinition-DiplomeEEE.md),[DiplomeEES](StructureDefinition-DiplomeEES.md),[DiplomeEtat](StructureDefinition-DiplomeEtat.md),[DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md),[DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md),[DispositifMedical](StructureDefinition-DispositifMedical.md),[DivisionTerritoriale](StructureDefinition-DivisionTerritoriale.md),[Document](StructureDefinition-Document.md),[DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md),[DroitExerciceComplementaire](StructureDefinition-DroitExerciceComplementaire.md),[DroitexercicecomplementaireVs](ValueSet-droitExerciceComplementaire-vs.md),[Emploi](StructureDefinition-Emploi.md),[EntiteGeographique](StructureDefinition-EntiteGeographique.md),[EntiteJuridique](StructureDefinition-EntiteJuridique.md),[EquipementMaterielLourd](StructureDefinition-EquipementMaterielLourd.md),[EquipementSpecifique](StructureDefinition-EquipementSpecifique.md),[ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md),[FamilleactiviteoperationnelleVs](ValueSet-familleActiviteOperationnelle-vs.md),[FonctionQualifiee](StructureDefinition-FonctionQualifiee.md),[FonctionqualifieeVs](ValueSet-fonctionQualifiee-vs.md),[FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md),[Horaire](StructureDefinition-Horaire.md),[LangueParlee](StructureDefinition-LangueParlee.md),[LicenceExploitation](StructureDefinition-LicenceExploitation.md),[Lieu](StructureDefinition-Lieu.md),[LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md),[LieunaissanceVs](ValueSet-lieuNaissance-vs.md),[MOS](index.md),[MesureProtection](StructureDefinition-MesureProtection.md),[NoteLiaison](StructureDefinition-NoteLiaison.md),[Observation](StructureDefinition-Observation.md),[OffreOperationnelle](StructureDefinition-OffreOperationnelle.md),[OrientationParticuliere](StructureDefinition-OrientationParticuliere.md),[OrientationparticuliereVs](ValueSet-orientationParticuliere-vs.md),[Parent](StructureDefinition-Parent.md),[Patientele](StructureDefinition-Patientele.md),[PaysnaissanceVs](ValueSet-paysNaissance-vs.md),[PaysnationaliteVs](ValueSet-paysNationalite-vs.md),[PersonnePhysique](StructureDefinition-PersonnePhysique.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md),[PlageDisponibilite](StructureDefinition-PlageDisponibilite.md),[PlageReference](StructureDefinition-PlageReference.md),[ProfessionVs](ValueSet-profession-vs.md),[ProfessioncategoriesocioprofessionnelleVs](ValueSet-professionCategorieSocioProfessionnelle-vs.md),[Professionnel](StructureDefinition-Professionnel.md),[ProfessionressourceVs](ValueSet-professionRessource-vs.md),[QualificationPAC](StructureDefinition-QualificationPAC.md),[QualificationpacVs](ValueSet-qualificationPAC-vs.md),[RelationVs](ValueSet-relation-vs.md),[RendezVous](StructureDefinition-RendezVous.md),[ResultatObservation](StructureDefinition-ResultatObservation.md),[RoleVs](ValueSet-role-vs.md),[SavoirFaire](StructureDefinition-SavoirFaire.md),[SecteuractiviteVs](ValueSet-secteurActivite-vs.md),[SexeVs](ValueSet-sexe-vs.md),[SituationExercice](StructureDefinition-SituationExercice.md),[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md),[Specialite](StructureDefinition-Specialite.md),[SpecialiteVs](ValueSet-specialite-vs.md),[SurspecialiteTransversale](StructureDefinition-SurspecialiteTransversale.md),[SurspecialitetransversaleVs](ValueSet-surspecialiteTransversale-vs.md),[Telecommunication](StructureDefinition-Telecommunication.md),[TypeprofessionVs](ValueSet-typeProfession-vs.md),[TyperoleVs](ValueSet-typeRole-vs.md),[VieProfessionnelle](StructureDefinition-VieProfessionnelle.md),[VieQuotidienne](StructureDefinition-VieQuotidienne.md)and[VieScolaire](StructureDefinition-VieScolaire.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [ActiviteEnseignement](StructureDefinition-ActiviteEnseignement.md), [ActiviteSociale](StructureDefinition-ActiviteSociale.md)...Show 119 more,[ActiviteSoinAutorisee](StructureDefinition-ActiviteSoinAutorisee.md),[ActiviteSoumiseReconnaissance](StructureDefinition-ActiviteSoumiseReconnaissance.md),[Adresse](StructureDefinition-Adresse.md),[Agenda](StructureDefinition-Agenda.md),[AidantDemarche](StructureDefinition-AidantDemarche.md),[ArretTravail](StructureDefinition-ArretTravail.md),[Attestation](StructureDefinition-Attestation.md),[AutorisationExercice](StructureDefinition-AutorisationExercice.md),[AutreActiviteSoumiseAutorisation](StructureDefinition-AutreActiviteSoumiseAutorisation.md),[AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md),[BesoinscolariteVs](ValueSet-besoinScolarite-vs.md),[BesoinviequotidienneVs](ValueSet-besoinVieQuotidienne-vs.md),[BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md),[CapaciteAccueil](StructureDefinition-CapaciteAccueil.md),[CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md),[CapaciteDiplome](StructureDefinition-CapaciteDiplome.md),[CapaciteHabitation](StructureDefinition-CapaciteHabitation.md),[CapacitePriseCharge](StructureDefinition-CapacitePriseCharge.md),[CapaciteSavoirfaire](StructureDefinition-CapaciteSavoirfaire.md),[CapacitesavoirfaireVs](ValueSet-capaciteSavoirFaire-vs.md),[CarteProfessionnel](StructureDefinition-CarteProfessionnel.md),[CategorieetablissementVs](ValueSet-categorieEtablissement-vs.md),[Certificat](StructureDefinition-Certificat.md),[CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md),[CodeVs](ValueSet-code-vs.md),[Competence](StructureDefinition-Competence.md),[CompetenceExclusive](StructureDefinition-CompetenceExclusive.md),[CompetenceMetier](StructureDefinition-CompetenceMetier.md),[CompetenceVs](ValueSet-competence-vs.md),[CompetenceexclusiveVs](ValueSet-competenceExclusive-vs.md),[CompetencemetierVs](ValueSet-competenceMetier-vs.md),[Contact](StructureDefinition-Contact.md),[Convention](StructureDefinition-Convention.md),[CoordonneeGeographique](StructureDefinition-CoordonneeGeographique.md),[Creneau](StructureDefinition-Creneau.md),[DESC1](StructureDefinition-DESC1.md),[DESC2](StructureDefinition-DESC2.md),[DESCNonQualifiant](StructureDefinition-DESCNonQualifiant.md),[Decision](StructureDefinition-Decision.md),[Demande](StructureDefinition-Demande.md),[DescnonqualifiantVs](ValueSet-DESCNonQualifiant-vs.md),[Diplome](StructureDefinition-Diplome.md),[DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md),[DiplomeDivers](StructureDefinition-DiplomeDivers.md),[DiplomeEEE](StructureDefinition-DiplomeEEE.md),[DiplomeEES](StructureDefinition-DiplomeEES.md),[DiplomeEtat](StructureDefinition-DiplomeEtat.md),[DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md),[DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md),[DispositifMedical](StructureDefinition-DispositifMedical.md),[DivisionTerritoriale](StructureDefinition-DivisionTerritoriale.md),[Document](StructureDefinition-Document.md),[DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md),[DroitExerciceComplementaire](StructureDefinition-DroitExerciceComplementaire.md),[DroitexercicecomplementaireVs](ValueSet-droitExerciceComplementaire-vs.md),[Emploi](StructureDefinition-Emploi.md),[EntiteGeographique](StructureDefinition-EntiteGeographique.md),[EntiteJuridique](StructureDefinition-EntiteJuridique.md),[EquipementMaterielLourd](StructureDefinition-EquipementMaterielLourd.md),[EquipementSpecifique](StructureDefinition-EquipementSpecifique.md),[ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md),[FamilleactiviteoperationnelleVs](ValueSet-familleActiviteOperationnelle-vs.md),[FonctionQualifiee](StructureDefinition-FonctionQualifiee.md),[FonctionqualifieeVs](ValueSet-fonctionQualifiee-vs.md),[FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md),[Groupement](StructureDefinition-Groupement.md),[Horaire](StructureDefinition-Horaire.md),[LangueParlee](StructureDefinition-LangueParlee.md),[LicenceExploitation](StructureDefinition-LicenceExploitation.md),[Lieu](StructureDefinition-Lieu.md),[LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md),[LieunaissanceVs](ValueSet-lieuNaissance-vs.md),[MOS](index.md),[Membre](StructureDefinition-Membre.md),[MesureCapacite](StructureDefinition-MesureCapacite.md),[MesureProtection](StructureDefinition-MesureProtection.md),[NoteLiaison](StructureDefinition-NoteLiaison.md),[Observation](StructureDefinition-Observation.md),[OffreOperationnelle](StructureDefinition-OffreOperationnelle.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[OrientationParticuliere](StructureDefinition-OrientationParticuliere.md),[OrientationparticuliereVs](ValueSet-orientationParticuliere-vs.md),[Parent](StructureDefinition-Parent.md),[Patientele](StructureDefinition-Patientele.md),[PaysnaissanceVs](ValueSet-paysNaissance-vs.md),[PaysnationaliteVs](ValueSet-paysNationalite-vs.md),[PersonnePhysique](StructureDefinition-PersonnePhysique.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md),[PlageDisponibilite](StructureDefinition-PlageDisponibilite.md),[PlageReference](StructureDefinition-PlageReference.md),[PoleActivite](StructureDefinition-PoleActivite.md),[ProfessionVs](ValueSet-profession-vs.md),[ProfessioncategoriesocioprofessionnelleVs](ValueSet-professionCategorieSocioProfessionnelle-vs.md),[Professionnel](StructureDefinition-Professionnel.md),[ProfessionressourceVs](ValueSet-professionRessource-vs.md),[QualificationPAC](StructureDefinition-QualificationPAC.md),[QualificationpacVs](ValueSet-qualificationPAC-vs.md),[RelationVs](ValueSet-relation-vs.md),[RendezVous](StructureDefinition-RendezVous.md),[ResultatObservation](StructureDefinition-ResultatObservation.md),[RoleVs](ValueSet-role-vs.md),[SavoirFaire](StructureDefinition-SavoirFaire.md),[SecteuractiviteVs](ValueSet-secteurActivite-vs.md),[SexeVs](ValueSet-sexe-vs.md),[SituationExercice](StructureDefinition-SituationExercice.md),[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md),[Specialite](StructureDefinition-Specialite.md),[SpecialiteVs](ValueSet-specialite-vs.md),[StructureInterne](StructureDefinition-StructureInterne.md),[SurspecialiteTransversale](StructureDefinition-SurspecialiteTransversale.md),[SurspecialitetransversaleVs](ValueSet-surspecialiteTransversale-vs.md),[TarifPrestation](StructureDefinition-TarifPrestation.md),[Telecommunication](StructureDefinition-Telecommunication.md),[TypeprofessionVs](ValueSet-typeProfession-vs.md),[TyperoleVs](ValueSet-typeRole-vs.md),[UniteFonctionnelle](StructureDefinition-UniteFonctionnelle.md),[VieProfessionnelle](StructureDefinition-VieProfessionnelle.md),[VieQuotidienne](StructureDefinition-VieQuotidienne.md)and[VieScolaire](StructureDefinition-VieScolaire.md)
 
 
 
@@ -85,7 +85,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-11-03T13:49:33+00:00",
+  "date" : "2025-11-03T18:48:51+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -1103,6 +1103,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/CapaciteAccueil"
+        },
+        "name" : "CapaciteAccueil",
+        "description" : "La capacité d'accueil indique les capacités d’hébergement (en lits ou en places) et donc le nombre de personnes pouvant être accueillies en même temps.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/CapaciteActiviteExercee"
         },
         "name" : "CapaciteActiviteExercee",
@@ -1122,6 +1136,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         },
         "name" : "CapaciteDiplome",
         "description" : "En France, la capacité de médecine est un diplôme (2 ans d'études) réservé aux docteurs en médecine (généralistes ou spécialistes), leur conférant certaines compétences supplémentaires dans leur exercice ou un champ d'exercice plus large (réf. décret du 29 avril 1988). Les capacités ne confèrent pas la qualification aux spécialistes auprès de l'Ordre des médecins, mais celui-ci les reconnait comme des titres auxquels peuvent prétendre les médecins (par exemple sur leur plaque) pour justifier de compétences supplémentaires auprès de leurs patients.Une capacité est un type de diplôme. La classe CapaciteDiplome est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/CapaciteHabitation"
+        },
+        "name" : "CapaciteHabitation",
+        "description" : "La capacité d'habitation décrit des types d'habitation et le nombre d'habitations associées à ces types.",
         "exampleBoolean" : false
       },
       {
@@ -1817,6 +1845,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/Groupement"
+        },
+        "name" : "Groupement",
+        "description" : "Ensemble de personnes et d’entités ayant un ou des objectifs communs. Les propriétés du groupement sont distinctes de celles des membres qui le composent. Le groupement peut exister sur une période limitée et ses membres peuvent varier pour atteindre les objectifs fixés.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/Horaire"
         },
         "name" : "Horaire",
@@ -1902,6 +1944,34 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/Membre"
+        },
+        "name" : "Membre",
+        "description" : "Personne ou entité faisant partie d'un groupement.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/MesureCapacite"
+        },
+        "name" : "MesureCapacite",
+        "description" : "Les mesures d’une capacité d’accueil précisent une série d’enregistrements indiquant la quantité de lits (ou de places) dans un statut particulier (disponible,…) et dans une temporalité donnée. Le cumul des mesures de capacité donne une vision complète de la capacité d’accueil.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/MesureProtection"
         },
         "name" : "MesureProtection",
@@ -1953,6 +2023,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "description" : "L'Offre opérationnelle correspond aux prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne.",
         "exampleBoolean" : false,
         "groupingId" : "Offre"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/OrganisationInterne"
+        },
+        "name" : "OrganisationInterne",
+        "description" : "La classe Organisation Interne est une classe abstraite qui contient les attributs inhérents et communs aux classes décrivant l'organisation opérationnelle interne d'une EG permettant de délivrer la prestation.Une organisation interne peut être composée d’autres organisations internes. Par exemple, les unités fonctionnelles peuvent être regroupées au sein de services qui peuvent être regroupés en pôles.La description de cette organisation interne de l'EG n'est pas obligatoire. Lorsqu'elle est décrite cette organisation porte les ressources opérationnelles.",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -2095,6 +2179,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
         "description" : "La plage de référence, constituée d’une borne inférieure et d’une borne supérieure, fournit un guide pour interpréter une valeur en la comparant à ces bornes.",
         "exampleBoolean" : false,
         "groupingId" : "Personne"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/PoleActivite"
+        },
+        "name" : "PoleActivite",
+        "description" : "Loi HPST, art.13: \"Pour les établissements publics de santé, le directeur définit l'organisation de l'établissement en pôles d'activité conformément au projet médical d'établissement, après avis [...]. Le directeur général de l'agence régionale de santé peut autoriser un établissement à ne pas créer de pôles d'activité quand l'effectif médical de l'établissement le justifie.Les pôles d'activité peuvent comporter des structures internes de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques ainsi que les structures médico-techniques qui leur sont associées\".Extrait de \"La loi HPST à l'hôpital, les clés pour comprendre - Ministère de la Santé- ANAP\": \"Les pôles d’activité clinique et médico-technique peuvent comporter des \"structures internes\" de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques\".Les pôles peuvent être multi-sites, c'est à dire qu'un même pôle peut comporter des structures internes situées dans différentes entités géographiques d'une même entité juridique.",
+        "exampleBoolean" : false
       },
       {
         "extension" : [
@@ -2341,6 +2439,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }
         ],
         "reference" : {
+          "reference" : "StructureDefinition/StructureInterne"
+        },
+        "name" : "StructureInterne",
+        "description" : "Une structure interne peut être composée d'une ou plusieurs unités médicales fonctionnelles.L’appellation des structures internes des pôles est aussi laissée à la libre appréciation des établissements : il peut s’agir de services, d’unités, de centres, d’instituts, de départements, ou de toute autre appellation. Lorsque les services demeurent, les chefs de service sont placés sous l’autorité fonctionnelle du chef de pôle (cf. \"La loi HPST à l'hôpital, les clés pour comprendre\" - Ministère de la Santé - ANAP).Synonyme : Service, unité, centre, institut, département, etc.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
           "reference" : "StructureDefinition/SurspecialiteTransversale"
         },
         "name" : "SurspecialiteTransversale",
@@ -2359,6 +2471,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "reference" : "ValueSet/surspecialiteTransversale-vs"
         },
         "name" : "SurspecialitetransversaleVs",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/TarifPrestation"
+        },
+        "name" : "TarifPrestation",
+        "description" : "Prix des prestations et services d'une entité géographique.",
         "exampleBoolean" : false
       },
       {
@@ -2399,6 +2525,20 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           "reference" : "ValueSet/typeRole-vs"
         },
         "name" : "TyperoleVs",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:logical"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/UniteFonctionnelle"
+        },
+        "name" : "UniteFonctionnelle",
+        "description" : "L'unité fonctionnelle (UF) désigne la plus petite unité compatible avec les contraintes de gestion qui présente une activité médicale homogène.",
         "exampleBoolean" : false
       },
       {

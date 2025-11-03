@@ -29,3 +29,9 @@
 ","Type de diabète.","Type de diabète.","","","","","","","","","",,,,,"",,,,"Observation.typeDiabete",0,1,"",""
 "Observation.nombreJours","Observation.nombreJours","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.","Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie.","","","","","","","","","",,,,,"",,,,"Observation.nombreJours",0,1,"",""
+"Observation.Professionnel","Observation.Professionnel","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel {[]} {[]}
+","Lien vers la classe Professionnel","Lien vers la classe Professionnel","","","","","","","","","",,,,,"",,,,"Observation.Professionnel",0,1,"",""
+"Observation.PersonnePriseCharge","Observation.PersonnePriseCharge","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge {[]} {[]}
+","Lien vers la classe PersonnePriseCharge","Lien vers la classe PersonnePriseCharge","","","","","","","","","",,,,,"",,,,"Observation.PersonnePriseCharge",1,1,"",""
+"Observation.ResultatObservation","Observation.ResultatObservation","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ResultatObservation {[]} {[]}
+","Lien vers la classe ResultatObservation","Lien vers la classe ResultatObservation","","","","","","","","","",,,,,"",,,,"Observation.ResultatObservation",1,*,"",""
