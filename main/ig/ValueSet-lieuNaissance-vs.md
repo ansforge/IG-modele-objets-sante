@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/lieuNaissance-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:LieunaissanceVs |
+| Draft as of 2025-11-03 | *Computable Name*:LieunaissanceVs |
 
  **References** 
 
@@ -19,8 +19,8 @@
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R20-Pays.html) version 📦20250328120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R13-CommuneOM.html) version Not Stated (use latest from terminology server)
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R20-Pays.html)version 📦20250328120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R13-CommuneOM.html)version Not Stated (use latest from terminology server)
 
  
 
@@ -58,7 +58,7 @@ Ce jeu de valeurs (ValueSet) a 39,532 codes. Pour garder la publication gérable
   "version" : "0.1.0",
   "name" : "LieunaissanceVs",
   "status" : "draft",
-  "date" : "2025-10-13T08:07:44+00:00",
+  "date" : "2025-11-03T16:45:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

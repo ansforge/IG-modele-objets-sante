@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:RoleVs |
+| Draft as of 2025-11-03 | *Computable Name*:RoleVs |
 
  **References** 
 
@@ -19,9 +19,9 @@
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R21-Fonction.html) version 📦20250623120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R96-AutreFonctionSanitaire.html) version 📦20231215120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R85-RolePriseCharge.html) version 📦20250328120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R21-Fonction.html)version 📦20250623120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R96-AutreFonctionSanitaire.html)version 📦20231215120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R85-RolePriseCharge.html)version 📦20250328120000
 
  
 
@@ -54,7 +54,7 @@ Ce jeu de valeur (ValueSet) contient 137 concepts
   "version" : "0.1.0",
   "name" : "RoleVs",
   "status" : "draft",
-  "date" : "2025-10-13T08:07:44+00:00",
+  "date" : "2025-11-03T16:45:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

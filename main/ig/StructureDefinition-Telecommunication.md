@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:Telecommunication |
+| Draft as of 2025-11-03 | *Computable Name*:Telecommunication |
 
  
 Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée (téléphone, fax, e-mail, URL, etc.). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Telecommunication.cs
   "name" : "Telecommunication",
   "title" : "Telecommunication",
   "status" : "draft",
-  "date" : "2025-10-13T08:07:44+00:00",
+  "date" : "2025-11-03T16:45:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/qualificationPAC-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:QualificationpacVs |
+| Draft as of 2025-11-03 | *Computable Name*:QualificationpacVs |
 
  **References** 
 
@@ -19,8 +19,8 @@
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R44-QualificationPAC.html) version 📦20231215120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html) version 📦20241213120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R44-QualificationPAC.html)version 📦20231215120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)version 📦20241213120000
 
  
 
@@ -53,7 +53,7 @@ Ce jeu de valeur (ValueSet) contient 326 concepts
   "version" : "0.1.0",
   "name" : "QualificationpacVs",
   "status" : "draft",
-  "date" : "2025-10-13T08:07:44+00:00",
+  "date" : "2025-11-03T16:45:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

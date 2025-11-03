@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESC2 | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:DESC2 |
+| Draft as of 2025-11-03 | *Computable Name*:DESC2 |
 
  
 Les DESC de groupe II ou qualifiants (3 ans d’études) représentent des spécialités par eux-mêmes. Dans le cadre du modèle, un DESC de groupe II est un type de diplôme. La classe DESC2 est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DESC2.csv), [Excel](
   "name" : "DESC2",
   "title" : "DESC2",
   "status" : "draft",
-  "date" : "2025-10-13T08:07:44+00:00",
+  "date" : "2025-11-03T16:45:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:PaysnationaliteVs |
+| Draft as of 2025-11-03 | *Computable Name*:PaysnationaliteVs |
 
  **References** 
 
@@ -19,9 +19,9 @@
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R20-Pays.html) version 📦20250328120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R268-PaysProvenanceISO.html) version 📦20240126120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R89-RegroupementPays.html) version 📦20231215120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R20-Pays.html)version 📦20250328120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R268-PaysProvenanceISO.html)version 📦20240126120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R89-RegroupementPays.html)version 📦20231215120000
 
  
 
@@ -54,7 +54,7 @@ Ce jeu de valeur (ValueSet) contient 493 concepts
   "version" : "0.1.0",
   "name" : "PaysnationaliteVs",
   "status" : "draft",
-  "date" : "2025-10-13T08:07:44+00:00",
+  "date" : "2025-11-03T16:45:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

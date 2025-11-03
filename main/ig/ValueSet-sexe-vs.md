@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:SexeVs |
+| Draft as of 2025-11-03 | *Computable Name*:SexeVs |
 
  **References** 
 
@@ -19,9 +19,9 @@
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R249-Sexe/FHIR/TRE-R249-Sexe`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R249-Sexe.html) version 📦20231215120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R267-SexeProvenanceISO/FHIR/TRE-R267-SexeProvenanceISO`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R267-SexeProvenanceISO.html) version 📦20231215120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R303-HL7v3AdministrativeGender.html) version 📦20231215120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R249-Sexe/FHIR/TRE-R249-Sexe`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R249-Sexe.html)version 📦20231215120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R267-SexeProvenanceISO/FHIR/TRE-R267-SexeProvenanceISO`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R267-SexeProvenanceISO.html)version 📦20231215120000
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R303-HL7v3AdministrativeGender.html)version 📦20231215120000
 
  
 
@@ -54,7 +54,7 @@ Ce jeu de valeur (ValueSet) contient 13 concepts
   "version" : "0.1.0",
   "name" : "SexeVs",
   "status" : "draft",
-  "date" : "2025-10-13T08:07:44+00:00",
+  "date" : "2025-11-03T16:45:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

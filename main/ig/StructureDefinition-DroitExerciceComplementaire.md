@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DroitExerciceComplementaire | *Version*:0.1.0 |
-| Draft as of 2025-10-13 | *Computable Name*:DroitExerciceComplementaire |
+| Draft as of 2025-11-03 | *Computable Name*:DroitExerciceComplementaire |
 
  
 Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d’exercice dans l’une des spécialités définies par un des DESC de médecine du groupe I. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DroitExerciceComplem
   "name" : "DroitExerciceComplementaire",
   "title" : "DroitExerciceComplementaire",
   "status" : "draft",
-  "date" : "2025-10-13T08:07:44+00:00",
+  "date" : "2025-11-03T16:45:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
