@@ -1,4 +1,4 @@
-https://ansforge.github.io/IG-MOS/main/ig
+https://ansforge.github.io/IG-modele-objets-sante/main/ig
 
 [A MODIFIER : remplacer avec votre logo s'il ne s'agit pas d'un projet CI-SIS]
 
