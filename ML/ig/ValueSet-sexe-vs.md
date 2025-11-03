@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs | *Version*:0.1.0 |
-| Draft as of 2025-10-30 | *Computable Name*:SexeVs |
+| Draft as of 2025-11-03 | *Computable Name*:SexeVs |
 
  **References** 
 
@@ -54,7 +54,7 @@ Ce jeu de valeur (ValueSet) contient 13 concepts
   "version" : "0.1.0",
   "name" : "SexeVs",
   "status" : "draft",
-  "date" : "2025-10-30T16:59:08+00:00",
+  "date" : "2025-11-03T11:12:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Decision | *Version*:0.1.0 |
-| Draft as of 2025-10-30 | *Computable Name*:Decision |
+| Draft as of 2025-11-03 | *Computable Name*:Decision |
 
  
 Acte par lequel une autorité prend parti après examen d’une demande. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Decision.csv), [Exce
   "name" : "Decision",
   "title" : "Decision",
   "status" : "draft",
-  "date" : "2025-10-30T16:59:08+00:00",
+  "date" : "2025-11-03T11:12:25+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
