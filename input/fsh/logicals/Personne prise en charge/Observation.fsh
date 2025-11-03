@@ -20,3 +20,6 @@ Description: "Une mesure ou une déclaration constitue une observation effectué
 * niveauEffort 0..1 CodeableConcept "Définit le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire." "Définit le niveau d'effort (au repos, à l'effort, après l'effort) lors de la mesure de la fréquence respiratoire."
 * typeDiabete 0..1 CodeableConcept "Type de diabète." "Type de diabète."
 * nombreJours 0..1 CodeableConcept "Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie." "Nombre de jours. Utilisé pour les mesures du taux de glucose interstitiel et l’index de gestion de glycémie."
+* Professionnel 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel "Lien vers la classe Professionnel" "Lien vers la classe Professionnel"
+* PersonnePriseCharge 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge "Lien vers la classe PersonnePriseCharge" "Lien vers la classe PersonnePriseCharge"
+* ResultatObservation 1..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ResultatObservation "Lien vers la classe ResultatObservation" "Lien vers la classe ResultatObservation"

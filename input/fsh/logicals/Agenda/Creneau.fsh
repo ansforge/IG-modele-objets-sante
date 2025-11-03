@@ -11,3 +11,5 @@ Description: "Un créneau d’un agenda est un intervalle de temps, disponible o
 * dateDebut 0..1 dateTime "Date et heure du début du créneau horaire." "Date et heure du début du créneau horaire."
 * dateFin 0..1 dateTime "Date et heure de fin du créneau horaire." "Date et heure de fin du créneau horaire."
 * informationComplementaire 0..1 string "Commentaire lié au créneau." "Commentaire lié au créneau."
+* Agenda 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda "Lien vers la classe Agenda" "Lien vers la classe Agenda"
+* RendezVous 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous "Lien vers la classe RendezVous" "Lien vers la classe RendezVous"

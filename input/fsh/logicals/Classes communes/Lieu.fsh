@@ -20,3 +20,7 @@ Description: "Informations relatives à une portion déterminée de l'espace, fi
 * adresse 0..1 Adresse "Adresse géopostale du lieu." "Adresse géopostale du lieu."
 * coordonneeGeographique 0..1 CoordonneeGeographique "Coordonnées géographiques du lieu." "Coordonnées géographiques du lieu."
 * telecommunication 0..* Telecommunication "Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.)." "Adresse(s) de télécommunication du lieu (numéro de téléphone, adresse email, URL, etc.)."
+* EntiteGeographique 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* LieuRealisationOffre 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre "Lien vers la classe LieuRealisationOffre" "Lien vers la classe LieuRealisationOffre"
+* Agenda 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda "Lien vers la classe Agenda" "Lien vers la classe Agenda"
+* RendezVous 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous "Lien vers la classe RendezVous" "Lien vers la classe RendezVous"

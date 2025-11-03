@@ -10,3 +10,5 @@ Description: "La maladie, le handicap, l'accident peuvent altérer les facultés
 * personneProtectrice 0..1 PersonnePhysique "Personne responsable de la mesure de protection." "Personne responsable de la mesure de protection."
 * adresseMesureProtection 0..1 Adresse "Adresse(s) de correspondance de la mesure de protection." "Adresse(s) de correspondance de la mesure de protection."
 * telecommunicationMesureProtection 0..* Telecommunication "Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) de la mesure de protection." "Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) de la mesure de protection."
+* EntiteGeographique 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* PersonnePhysique 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique "Lien vers la classe PersonnePhysique" "Lien vers la classe PersonnePhysique"

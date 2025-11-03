@@ -18,3 +18,4 @@ Description: "On distingue plusieurs types d’activités sanitaires rattachées
 * dateFin 0..1 date "Date d'échéance de l'autorisation.Synonyme FINESS : date de fin de mise en œuvre" "Date d'échéance de l'autorisation.Synonyme FINESS : date de fin de mise en œuvre"
 * suppressionAutorisation 0..1 boolean "Indicateur de suppression de l'autorisation de l'activité de soins.Donnée propre à FINESS." "Indicateur de suppression de l'autorisation de l'activité de soins.Donnée propre à FINESS."
 * suppressionImplantation 0..1 boolean "Indicateur de suppression de l’implantation de l'activité de soins.Donnée propre à FINESS." "Indicateur de suppression de l’implantation de l'activité de soins.Donnée propre à FINESS."
+* EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"

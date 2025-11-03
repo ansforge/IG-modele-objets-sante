@@ -12,3 +12,4 @@ Description: "Une patientèle est un ensemble de patients présentant des caract
 * classeAge from https://mos.esante.gouv.fr/NOS/TRE_R208-ClasseAge/FHIR/TRE-R208-ClasseAge?vs (preferred)
 * publicPrisEnCharge 0..* Coding "Personnes âgées en perte d'autonomie et/ou personnes en situation de handicap." "Personnes âgées en perte d'autonomie et/ou personnes en situation de handicap."
 * publicPrisEnCharge from https://mos.esante.gouv.fr/NOS/TRE_R239-PublicPrisEnCharge/FHIR/TRE-R239-PublicPrisEnCharge?vs (preferred)
+* OffreOperationnelle 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle "Lien vers la classe OffreOperationnelle" "Lien vers la classe OffreOperationnelle"

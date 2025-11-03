@@ -19,3 +19,4 @@ Description: "Les activités d’enseignement aux professions sanitaires et soci
 * dateAutorisation 0..1 date "Date de l’arrêté autorisant l’exercice de l’activité décrite." "Date de l’arrêté autorisant l’exercice de l’activité décrite."
 * suppressionAutorisation 0..1 boolean "Indicateur de suppression de l'autorisation d’activité d’enseignement." "Indicateur de suppression de l'autorisation d’activité d’enseignement."
 * EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* CapaciteActiviteExercee 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteExercee "Lien vers la classe CapaciteActiviteExercee" "Lien vers la classe CapaciteActiviteExercee"

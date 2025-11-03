@@ -28,3 +28,6 @@ Description: "Personne ou service qui agit comme point de contact auprès d'une 
 * adresse 0..1 Adresse "Adresse géopostale du point de contact." "Adresse géopostale du point de contact."
 * lieu 0..* Lieu "Lieu(x) rattaché(s) au contact." "Lieu(x) rattaché(s) au contact."
 * telecommunication 0..* Telecommunication "Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.)." "Adresse(s) de télécommunication du contact (numéro de téléphone, adresse email, URL, etc.)."
+* NoteLiaison 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison "Lien vers la classe NoteLiaison" "Lien vers la classe NoteLiaison"
+* Agenda 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda "Lien vers la classe Agenda" "Lien vers la classe Agenda"
+* RendezVous 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous "Lien vers la classe RendezVous" "Lien vers la classe RendezVous"

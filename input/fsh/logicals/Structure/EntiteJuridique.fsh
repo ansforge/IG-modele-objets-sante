@@ -37,3 +37,6 @@ Description: "L'Entité Juridique (EJ) correspond à la notion de personne moral
 * contact 0..* Contact "Point(s) de contact de l'entité juridique." "Point(s) de contact de l'entité juridique."
 * telecommunication 0..* Telecommunication "Adresse(s) de télécommunication de l'entité juridique (numéro de téléphone, adresse email, URL, etc.)." "Adresse(s) de télécommunication de l'entité juridique (numéro de téléphone, adresse email, URL, etc.)."
 * boiteLettresMSS 0..* BoiteLettreMSS "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité juridique." "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à l'entité juridique."
+* EntiteGeographique 1..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* DispositifMedical 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DispositifMedical "Lien vers la classe DispositifMedical" "Lien vers la classe DispositifMedical"
+* Certificat 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat "Lien vers la classe Certificat" "Lien vers la classe Certificat"

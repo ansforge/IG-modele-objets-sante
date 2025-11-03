@@ -10,14 +10,13 @@ La conversion a été réalisée uniquement sur la partie Professionnel, à part
 
 ## Prérequis
 
-* Télécharger le MOS au format excel et le placer dans le dossier [script](./).
+* Récupérer les fichiers du MOS et des références au format excel et et les placer dans le dossier [script](./).
 * Renseigner le fichier de configuration [conf.json](./conf.json) (actuellement rempli uniquement pour la partie Professionnel).
     * types.mapping : Mapping des types de données du MOS vers les types de données FHIR.
     * types.custom : Types de données du MOS à mapper sur un type de données FHIR existant qui doit être profilé à la main.
     * types.class : Types de données du MOS qui deviennent des classes dans le modèle logique FHIR. 
     * backbones : Classes pour lesquelles certains éléments deviennent des backbones.
     * inheritance : Classes ayant des classes filles.
-    * references : References entre classes.
 * Installer [goFSH](https://github.com/FHIR/GoFSH), Python (version 3.10.11) et les librairies Python nécessaires indiquées dans le fichier [requirements.txt](./requirements.txt).
 * Installer Python 3.10 
 

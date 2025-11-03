@@ -44,4 +44,9 @@ Description: "Informations décrivant notamment la profession exercée, l'identi
 * NiveauFormation.anneeUniversitaire 0..1 Coding "Année universitaire, exemple : 2015-2016." "Année universitaire, exemple : 2015-2016."
 * NiveauFormation.anneeUniversitaire from https://mos.esante.gouv.fr/NOS/TRE_R225-AnneeUniversitaire/FHIR/TRE-R225-AnneeUniversitaire?vs (preferred)
 * NiveauFormation.dateFin 0..1 date "Date à laquelle le niveau de formation n’est plus actif (non visible hormis dans les données historisées). Cette date est renseignée par l’ordre à la clôture de l’exercice professionnel." "Date à laquelle le niveau de formation n’est plus actif (non visible hormis dans les données historisées). Cette date est renseignée par l’ordre à la clôture de l’exercice professionnel."
+* SituationExercice 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationExercice "Lien vers la classe SituationExercice" "Lien vers la classe SituationExercice"
+* Certificat 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat "Lien vers la classe Certificat" "Lien vers la classe Certificat"
+* SavoirFaire 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire "Lien vers la classe SavoirFaire" "Lien vers la classe SavoirFaire"
+* CarteProfessionnel 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CarteProfessionnel "Lien vers la classe CarteProfessionnel" "Lien vers la classe CarteProfessionnel"
 * Professionnel 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel "Lien vers la classe Professionnel" "Lien vers la classe Professionnel"
+* SituationOperationnelle 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle "Lien vers la classe SituationOperationnelle" "Lien vers la classe SituationOperationnelle"

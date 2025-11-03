@@ -33,3 +33,4 @@ Description: "L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017
 * SupportIUD.marquageClair 0..1 string "Le marquage en clair est une interprétation lisible des caractères d'information encodés dans le support IUD.En anglais HRI : Human Readable Interpretation" "Le marquage en clair est une interprétation lisible des caractères d'information encodés dans le support IUD.En anglais HRI : Human Readable Interpretation"
 * SupportIUD.typeSupportIUD 0..1 Coding "Type de technologie AIDC : code à barres, 1D, 2D ou RFID" "Type de technologie AIDC : code à barres, 1D, 2D ou RFID"
 * EntiteJuridique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique "Lien vers la classe EntiteJuridique" "Lien vers la classe EntiteJuridique"
+* NoteLiaison 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison "Lien vers la classe NoteLiaison" "Lien vers la classe NoteLiaison"

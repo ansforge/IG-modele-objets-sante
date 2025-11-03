@@ -34,3 +34,5 @@ Description: "Les équipements sociaux représentent les activités des établis
 * sourceInformationInstallation 0..1 Coding "Source ayant permis le constat." "Source ayant permis le constat."
 * sourceInformationInstallation from https://mos.esante.gouv.fr/NOS/TRE_R301-SourceInformationInstallation/FHIR/TRE-R301-SourceInformationInstallation?vs (preferred)
 * EntiteGeographique 1..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* CapaciteActiviteExercee 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteExercee "Lien vers la classe CapaciteActiviteExercee" "Lien vers la classe CapaciteActiviteExercee"
+* CapaciteHabitation 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation "Lien vers la classe CapaciteHabitation" "Lien vers la classe CapaciteHabitation"

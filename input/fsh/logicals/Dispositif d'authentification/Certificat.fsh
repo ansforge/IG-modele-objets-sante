@@ -22,4 +22,6 @@ Description: "Données descriptives du moyen d’identification par certificat. 
 * valeurBinaire 0..1 base64Binary "Valeur binaire du certificat (format .crt en hexadécimal, codé en ASCII)." "Valeur binaire du certificat (format .crt en hexadécimal, codé en ASCII)."
 * statutPublication 0..1 string "Le statut de publication indique si l’autorisation a été donnée ou pas de publier le certificat dans l’annuaire de publication des certificats." "Le statut de publication indique si l’autorisation a été donnée ou pas de publier le certificat dans l’annuaire de publication des certificats."
 * ExerciceProfessionnel 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel "Lien vers la classe ExerciceProfessionnel" "Lien vers la classe ExerciceProfessionnel"
+* CarteProfessionnel 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CarteProfessionnel "Lien vers la classe CarteProfessionnel" "Lien vers la classe CarteProfessionnel"
 * EntiteGeographique 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique "Lien vers la classe EntiteGeographique" "Lien vers la classe EntiteGeographique"
+* EntiteJuridique 0..1 https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique "Lien vers la classe EntiteJuridique" "Lien vers la classe EntiteJuridique"

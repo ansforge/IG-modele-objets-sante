@@ -120,7 +120,7 @@ def create_element(row, base, url, url_termino, url_termino_new, conf, custom, c
                 }
     return (element, custom, common)
 
-def create_sd(name, url, url_termino, url_termino_new, conf, data, inheritance, custom, common, sections, output_path):
+def create_sd(name, url, url_termino, url_termino_new, conf, data, refs, inheritance, custom, common, sections, output_path):
     """
     Crée la StructureDefinition FHIR au format json.
 
@@ -129,7 +129,8 @@ def create_sd(name, url, url_termino, url_termino_new, conf, data, inheritance, 
         url (str): URL canonique de l'IG.
         url_termino (str): URL canonique des nomenclatures.
         conf (dict): Paramètres de configuration pour la conversion.
-        data (DataFrame pandas): Données de l'excel MOS.
+        data (DataFrame pandas): Données du MOS au format excel.
+        refs (DataFrame pandas) : Données des références au format excel.
         inheritance (str): Classe mère.
         custom (list[str]): Liste des types de données à profiler.
         common (list[str]): Liste des classes communes utilisées.
@@ -199,29 +200,47 @@ def create_sd(name, url, url_termino, url_termino_new, conf, data, inheritance, 
             (element, custom, common) = create_element(row, name + '.' + backbone, url, url_termino, url_termino_new, conf, custom, common, output_path)
             if element is not None:
                 elements.append(element)
-    if name in conf["references"]:
-        for ref, ref_info in conf["references"][name].items():
+    refs_sd = refs[(refs["Source"] == name) | (refs["Target"] == name)]
+    refs_added = []
+    for _, row in refs_sd.iterrows():
+        if row["Source"] == name:
+            ref = row["Target"]
+            ref_min = row["SrcMin"]
+            ref_max = row["SrcMax"]
+        else: 
+            ref = row["Source"]
+            ref_min = row["TgtMin"]
+            ref_max = row["TgtMax"]
+        if ref not in backbones and ref not in refs_added:
+        # Cardinalités vides dans Modelio
+            if pd.isna(ref_min):
+                if ref_max == "*":
+                    ref_min = 0
+                elif ref_max == 1:
+                    ref_min = 1
             elements.append({
                 "id": name + '.' + ref,
                 "path": name + '.' + ref,
                 "definition": f"Lien vers la classe {ref}",
                 "short": f"Lien vers la classe {ref}",
-                "min": int(ref_info["min"]), 
-                "max": str(ref_info["max"]),
+                "min": int(ref_min), 
+                "max": str(ref_max),
                 "type": [{ "code": f"https://interop.esante.gouv.fr/ig/mos/StructureDefinition/{ref}"}]
             })
+            refs_added.append(ref)
     sd["differential"]["element"] = elements
     with open(output_path + name + ".json", "w", encoding="utf-8") as outfile:
         json.dump(sd, outfile, ensure_ascii=False)
     sections[section].append(name)
     return (custom, common, sections)
 
-def mos2ml(MOS_path, conf_path,  url, url_termino, url_termino_new, output_path, parts = None):
+def mos2ml(MOS_path, ref_path, conf_path, url, url_termino, url_termino_new, output_path, parts = None):
     """
     Convertit le MOS au format excel (extrait de Modelio) en modèle logique FHIR (fichiers JSON).
 
     Args:
-        MOS_path (str): Chemin du fichier MOS excel.
+        MOS_path (str): Chemin du fichier MOS excel (export Modelio).
+        ref_path (str): Chemin du fichier excel des références (export Modelio).
         conf_path (str): Chemin du fichier de configuration pour la conversion.
         url (str): URL canonique de l'IG.
         url_termino (str): URL canonique des nomenclatures.
@@ -231,6 +250,7 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, url_termino_new, output_path,
         sections (dict): Dictionnaire d'organisation des fichiers par partie.
     """
     data = pd.read_excel(MOS_path)
+    refs = pd.read_excel(ref_path)
     with open(conf_path, 'r') as file:
         conf = json.load(file)
     backbones_all = [key for section in conf["backbones"].values() for key in section]
@@ -239,16 +259,22 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, url_termino_new, output_path,
     data_common = data[data["Partie"] == "Classes communes"]
     if parts:
         data = data[data["Partie"].isin(parts)]
+    classes = data[data["Partie"] != "Classes communes"]["Classe"].dropna().unique()
+    common_classes = data_common["Classe"].dropna().unique()
     custom = []
     common = []
-    classes = data["Classe"].dropna().unique()
+    for _, row in refs.iterrows():
+        if row["Source"] in common_classes and row["Source"] not in common:
+            common.append(row["Source"])
+        if row["Target"] in common_classes and row["Target"] not in common:
+            common.append(row["Target"])
     for name in classes:
         if name not in backbones_all:
             if name in backones_reverse:
                 inheritance = backones_reverse[name]
             else: 
                 inheritance = None
-            (custom, common, sections) = create_sd(name, url, url_termino, url_termino_new, conf, data, inheritance, custom, common, sections, output_path)
+            (custom, common, sections) = create_sd(name, url, url_termino, url_termino_new, conf, data, refs, inheritance, custom, common, sections, output_path)
     processed = []
     while len(common) > 0:
         c = common.pop(0)
@@ -259,7 +285,7 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, url_termino_new, output_path,
             inheritance = backones_reverse [c]
         else: 
             inheritance = None
-        (custom, common, sections) = create_sd(c, url, url_termino, url_termino_new, conf, data_c, inheritance, custom, common, sections, output_path)
+        (custom, common, sections) = create_sd(c, url, url_termino, url_termino_new, conf, data_c, refs, inheritance, custom, common, sections, output_path)
         if c in conf["inheritance"]:
             common.extend(conf["inheritance"][c])
         processed.append(c)
@@ -267,14 +293,15 @@ def mos2ml(MOS_path, conf_path,  url, url_termino, url_termino_new, output_path,
 
 
 MOS_path = "MOS.xlsx"
+ref_path = "Reference.xlsx"
 conf_path = "conf.json"
 url = "https://interop.esante.gouv.fr/ig/mos/"
 url_termino = "https://mos.esante.gouv.fr/NOS/"
 url_termino_new = "https://smt.esante.gouv.fr/fhir/CodeSystem/"
 output_path = "./json/"
-parts = ["Professionnel", "Structure", "Dispositif d'authentification", "Autorisation", "Accord", "Dossier", "Agenda", "Offre opérationnelle", "Ressources opérationnelles", "Dispositif médical", "Accompagnant", "Personne prise en charge"]
+parts = ["Professionnel", "Structure", "Dispositif d'authentification", "Autorisation", "Accord", "Dossier", "Agenda", "Offre opérationnelle", "Ressources opérationnelles", "Dispositif médical", "Accompagnant", "Personne prise en charge", "Organisation opérationnelle"]
 
-sections = mos2ml(MOS_path, conf_path, url, url_termino, url_termino_new, output_path, parts)
+sections = mos2ml(MOS_path, ref_path, conf_path, url, url_termino, url_termino_new, output_path, parts)
 with open("sections.json", 'w') as fp:
     json.dump(sections, fp)
 # Le fichier sushi-config.yaml est modifié par goFSH donc il est sauvegardé pour remettre la bonne version ensuite.
