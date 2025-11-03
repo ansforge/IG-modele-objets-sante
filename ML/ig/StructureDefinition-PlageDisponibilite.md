@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PlageDisponibilite.c
   "name" : "PlageDisponibilite",
   "title" : "PlageDisponibilite",
   "status" : "draft",
-  "date" : "2025-11-03T11:13:02+00:00",
+  "date" : "2025-11-03T13:49:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
