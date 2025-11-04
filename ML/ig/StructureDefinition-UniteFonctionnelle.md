@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/UniteFonctionnelle | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:UniteFonctionnelle |
+| Draft as of 2025-11-04 | *Computable Name*:UniteFonctionnelle |
 
  
 L’unité fonctionnelle (UF) désigne la plus petite unité compatible avec les contraintes de gestion qui présente une activité médicale homogène. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-UniteFonctionnelle.c
   "name" : "UniteFonctionnelle",
   "title" : "UniteFonctionnelle",
   "status" : "draft",
-  "date" : "2025-11-03T18:48:51+00:00",
+  "date" : "2025-11-04T13:35:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEES | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:DiplomeEES |
+| Draft as of 2025-11-04 | *Computable Name*:DiplomeEES |
 
  
 Diplôme européen d’études spécialisées, d’un pays de l’espace économique européen (EEE), ouvrant l’accès à une spécialité, pour un professionnel s’inscrivant à l’ordre à compter de la date d’entrée du pays dans l’EEE (Directive européenne 2005-36 modifiée). L’annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l’EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DiplomeEES.csv), [Ex
   "name" : "DiplomeEES",
   "title" : "DiplomeEES",
   "status" : "draft",
-  "date" : "2025-11-03T18:48:51+00:00",
+  "date" : "2025-11-04T13:35:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

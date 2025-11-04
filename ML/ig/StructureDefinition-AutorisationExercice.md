@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutorisationExercice | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:AutorisationExercice |
+| Draft as of 2025-11-04 | *Computable Name*:AutorisationExercice |
 
  
 L’accès aux professions de santé est soumis à des conditions concernant les diplômes obtenus : généralement est requis un diplôme français (DE de médecine, etc. ou européen (dans les professions pour lesquelles il existe des accords de reconnaissance mutuelle des diplômes).Pour les personnes ne remplissant pas ces conditions (diplômes hors UE, par exemple), les diplômes obtenus doivent être complétés d’une autorisation afin de permettre l’entrée dans la profession.Il peut s’agir:** d’une autorisation délivrée par le Ministère de la Santé,** d’une autorisation délivrée par l’Ordre au vu de la jurisprudence (Hochsmann, etc.). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-AutorisationExercice
   "name" : "AutorisationExercice",
   "title" : "AutorisationExercice",
   "status" : "draft",
-  "date" : "2025-11-03T18:48:51+00:00",
+  "date" : "2025-11-04T13:35:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

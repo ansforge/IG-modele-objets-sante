@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageDisponibilite | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:PlageDisponibilite |
+| Draft as of 2025-11-04 | *Computable Name*:PlageDisponibilite |
 
  
 Horaires de disponibilité pour la prise de rendez - vous de l’agenda. Par exception, cet objet permet de renseigner les périodes sur lesquelles l’agenda est indisponible à la prise de rendez - vous. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PlageDisponibilite.c
   "name" : "PlageDisponibilite",
   "title" : "PlageDisponibilite",
   "status" : "draft",
-  "date" : "2025-11-03T18:48:51+00:00",
+  "date" : "2025-11-04T13:35:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

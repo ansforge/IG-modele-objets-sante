@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteAccueil | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:CapaciteAccueil |
+| Draft as of 2025-11-04 | *Computable Name*:CapaciteAccueil |
 
  
 La capacité d’accueil indique les capacités d’hébergement (en lits ou en places) et donc le nombre de personnes pouvant être accueillies en même temps. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CapaciteAccueil.csv)
   "name" : "CapaciteAccueil",
   "title" : "CapaciteAccueil",
   "status" : "draft",
-  "date" : "2025-11-03T18:48:51+00:00",
+  "date" : "2025-11-04T13:35:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

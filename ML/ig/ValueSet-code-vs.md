@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/code-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:CodeVs |
+| Draft as of 2025-11-04 | *Computable Name*:CodeVs |
 
  **References** 
 
@@ -62,7 +62,7 @@ Ce jeu de valeurs (ValueSet) a 39,691 codes. Pour garder la publication gérable
   "version" : "0.1.0",
   "name" : "CodeVs",
   "status" : "draft",
-  "date" : "2025-11-03T18:48:51+00:00",
+  "date" : "2025-11-04T13:35:30+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
