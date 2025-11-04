@@ -77,21 +77,19 @@ Class CapaciteActiviteExercee {
   modeFinacement : Coding [0..1]
 }
 
-
-package "Structure" {
-  Class EntiteGeographique
-  Class EntiteGeographique
-  Class EntiteGeographique
-  Class EntiteGeographique
-  Class EntiteGeographique
+package "Structure" as Structure_part {
   Class EntiteGeographique
 }
-AutreActiviteSoumiseAutorisation --> EntiteGeographique : 1..1
-ActiviteSoumiseReconnaissance --> EntiteGeographique : 1..1
-ActiviteSociale --> EntiteGeographique : 1..1
-ActiviteEnseignement --> EntiteGeographique : 1..1
-EquipementMaterielLourd --> EntiteGeographique : 1..1
-CapaciteActiviteExercee --> EntiteGeographique : 0..1
-CapaciteActiviteExercee --> ActiviteSociale : 0..1
+
+ActiviteSoinAutorisee "*" -- "1" EntiteGeographique
+AutreActiviteSoumiseAutorisation "*" -- "1" EntiteGeographique
+ActiviteSoumiseReconnaissance "*" -- "1" EntiteGeographique
+ActiviteSociale "*" -- "1" EntiteGeographique
+ActiviteEnseignement "*" -- "1" EntiteGeographique
+EquipementMaterielLourd "*" -- "1" EntiteGeographique
+CapaciteActiviteExercee "*" -- "0..1" EntiteGeographique
+ActiviteSoumiseReconnaissance "0..1" -- "0..1" CapaciteActiviteExercee
+ActiviteSociale "0..1" -- "*" CapaciteActiviteExercee
+ActiviteEnseignement "0..1" -- "0..1" CapaciteActiviteExercee
 
 @enduml

@@ -23,18 +23,19 @@ Class Certificat {
   statutPublication : string [0..1]
 }
 
-
-package "Professionnel" {
-  Class ExerciceProfessionnel
+package "Professionnel" as Professionnel_part {
   Class ExerciceProfessionnel
 }
 
-package "Structure" {
+package "Structure" as Structure_part {
   Class EntiteGeographique
+  Class EntiteJuridique
 }
-CarteProfessionnel --> Certificat : 1..*
-CarteProfessionnel --> ExerciceProfessionnel : 1..1
-Certificat --> ExerciceProfessionnel : 0..1
-Certificat --> EntiteGeographique : 0..1
+
+CarteProfessionnel "*" -- "1" ExerciceProfessionnel
+Certificat "*" -- "0..1" ExerciceProfessionnel
+CarteProfessionnel "0..1" -- "1..*" Certificat
+Certificat "*" -- "0..1" EntiteGeographique
+Certificat "0..1" -- "0..1" EntiteJuridique
 
 @enduml

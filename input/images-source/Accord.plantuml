@@ -21,17 +21,16 @@ Class LicenceExploitation {
   dateFinLicence : date [0..1]
 }
 
-
-package "Professionnel" {
+package "Professionnel" as Professionnel_part {
   Class Professionnel
 }
 
-package "Structure" {
-  Class EntiteGeographique
+package "Structure" as Structure_part {
   Class EntiteGeographique
 }
-AutorisationExercice --> Professionnel : 0..1
-Convention --> EntiteGeographique : 1..1
-LicenceExploitation --> EntiteGeographique : 1..1
+
+AutorisationExercice "*" -- "0..1" Professionnel
+Convention "*" -- "1" EntiteGeographique
+LicenceExploitation "0..1" -- "1" EntiteGeographique
 
 @enduml

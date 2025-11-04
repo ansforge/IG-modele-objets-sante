@@ -19,8 +19,20 @@ Class LimiteCaracteristiqueEquipement #LightBlue {
   valeurLimite : Quantity [0..1]
 }
 
-EquipementSpecifique --> LieuRealisationOffre : 1..1
-CapacitePriseCharge --> LieuRealisationOffre : 1..1
+package "Offre opérationnelle" as Offre_opérationnelle_part {
+  Class OffreOperationnelle
+}
+
+package "Agenda" as Agenda_part {
+  Class Agenda
+  Class RendezVous
+}
+
+LieuRealisationOffre "1..*" -- "1..*" OffreOperationnelle
+LieuRealisationOffre "1" -- "*" CapacitePriseCharge
+LieuRealisationOffre "1" -- "*" EquipementSpecifique
+EquipementSpecifique "*" -- "*" Agenda
+EquipementSpecifique "*" -- "*" RendezVous
 EquipementSpecifique --> LimiteCaracteristiqueEquipement : 0..*
 
 @enduml

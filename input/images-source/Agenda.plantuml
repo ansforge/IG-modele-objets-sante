@@ -36,5 +36,38 @@ Class PlageDisponibilite {
   statutPlageDisponibilite : Coding [0..1]
 }
 
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  Class PersonnePriseCharge
+}
+
+package "Professionnel" as Professionnel_part {
+  Class Professionnel
+}
+
+package "Structure" as Structure_part {
+  Class EntiteGeographique
+}
+
+package "Ressources opérationnelles" as Ressources_opérationnelles_part {
+  Class EquipementSpecifique
+}
+
+package "Organisation opérationnelle" as Organisation_opérationnelle_part {
+  Class OrganisationInterne
+}
+
+Agenda "*" -- "*" PersonnePriseCharge
+RendezVous "*" -- "*" PersonnePriseCharge
+Agenda "*" -- "*" Professionnel
+RendezVous "*" -- "*" Professionnel
+Agenda "*" -- "*" EntiteGeographique
+RendezVous "*" -- "*" EntiteGeographique
+Agenda "*" -- "*" EquipementSpecifique
+RendezVous "*" -- "*" EquipementSpecifique
+Agenda "*" -- "*" OrganisationInterne
+RendezVous "*" -- "*" OrganisationInterne
+Agenda "1" -- "*" Creneau
+Agenda "1" -- "*" PlageDisponibilite
+Creneau "*" -- "*" RendezVous
 
 @enduml

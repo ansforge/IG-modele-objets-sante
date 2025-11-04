@@ -31,11 +31,17 @@ Class SupportIUD #LightBlue {
   typeSupportIUD : Coding [0..1]
 }
 
-
-package "Structure" {
+package "Structure" as Structure_part {
   Class EntiteJuridique
 }
-DispositifMedical --> EntiteJuridique : 1..1
+
+package "Dossier" as Dossier_part {
+  Class NoteLiaison
+}
+
+DispositifMedical "*" -- "1" EntiteJuridique
+DispositifMedical "0..1" -- "*" NoteLiaison
+
 DispositifMedical --> SupportIUD : 0..*
 
 @enduml

@@ -70,25 +70,51 @@ Class NiveauFormation #LightBlue {
   dateFin : date [0..1]
 }
 
+package "Dispositif d'authentification" as Dispositif_d'authentification_part {
+  Class Certificat
+  Class CarteProfessionnel
+}
 
-package "Personne prise en charge" {
+package "Dossier" as Dossier_part {
+  Class NoteLiaison
+}
+
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  Class Observation
   Class PersonnePriseCharge
 }
 
-package "Structure" {
+package "Accord" as Accord_part {
+  Class AutorisationExercice
+}
+
+package "Agenda" as Agenda_part {
+  Class Agenda
+  Class RendezVous
+}
+
+package "Structure" as Structure_part {
   Class EntiteGeographique
 }
 
-package "Offre opérationnelle" {
+package "Offre opérationnelle" as Offre_opérationnelle_part {
   Class OffreOperationnelle
 }
-ExerciceProfessionnel --> Professionnel : 1..1
-SavoirFaire --> ExerciceProfessionnel : 1..1
-SituationExercice --> ExerciceProfessionnel : 1..1
-SituationOperationnelle --> ExerciceProfessionnel : 1..1
-Professionnel --> PersonnePriseCharge : 0..*
-SituationExercice --> EntiteGeographique : 0..1
-SituationOperationnelle --> OffreOperationnelle : 1..1
+
+ExerciceProfessionnel "1" -- "*" SituationExercice
+ExerciceProfessionnel "1" -- "*" SavoirFaire
+ExerciceProfessionnel "*" -- "1" Professionnel
+ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+ExerciceProfessionnel "0..1" -- "*" Certificat
+ExerciceProfessionnel "1" -- "*" CarteProfessionnel
+Professionnel "0..1" -- "*" NoteLiaison
+Professionnel "0..1" -- "*" Observation
+Professionnel "*" -- "*" PersonnePriseCharge
+Professionnel "0..1" -- "*" AutorisationExercice
+Professionnel "*" -- "*" Agenda
+Professionnel "*" -- "*" RendezVous
+SituationExercice "*" -- "0..1" EntiteGeographique
+SituationOperationnelle "*" -- "1" OffreOperationnelle
 ExerciceProfessionnel --> InscriptionOrdre : 0..*
 ExerciceProfessionnel --> AttributionParticuliere : 0..1
 ExerciceProfessionnel --> NiveauFormation : 0..*

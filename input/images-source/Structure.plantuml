@@ -67,6 +67,80 @@ Class EntiteGeographique {
   commentaire : string [0..1]
 }
 
-EntiteGeographique --> EntiteJuridique : 1..1
+package "Dispositif médical" as Dispositif_médical_part {
+  Class DispositifMedical
+}
+
+package "Dispositif d'authentification" as Dispositif_d'authentification_part {
+  Class Certificat
+}
+
+package "Professionnel" as Professionnel_part {
+  Class SituationExercice
+}
+
+package "Accord" as Accord_part {
+  Class Convention
+  Class LicenceExploitation
+}
+
+package "Autorisation" as Autorisation_part {
+  Class EquipementMaterielLourd
+  Class ActiviteEnseignement
+  Class ActiviteSoinAutorisee
+  Class AutreActiviteSoumiseAutorisation
+  Class ActiviteSoumiseReconnaissance
+  Class ActiviteSociale
+  Class CapaciteActiviteExercee
+}
+
+package "Offre opérationnelle" as Offre_opérationnelle_part {
+  Class OffreOperationnelle
+}
+
+package "Organisation opérationnelle" as Organisation_opérationnelle_part {
+  Class OrganisationInterne
+}
+
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  Class Emploi
+}
+
+package "Accompagnant" as Accompagnant_part {
+  Class AidantDemarche
+  Class MesureProtection
+}
+
+package "Dossier" as Dossier_part {
+  Class NoteLiaison
+}
+
+package "Agenda" as Agenda_part {
+  Class Agenda
+  Class RendezVous
+}
+
+EntiteJuridique "1" -- "1..*" EntiteGeographique
+EntiteJuridique "1" -- "*" DispositifMedical
+EntiteJuridique "0..1" -- "0..1" Certificat
+EntiteGeographique "0..1" -- "*" Certificat
+EntiteGeographique "0..1" -- "*" SituationExercice
+EntiteGeographique "1" -- "*" Convention
+EntiteGeographique "1" -- "0..1" LicenceExploitation
+EntiteGeographique "1" -- "*" EquipementMaterielLourd
+EntiteGeographique "1" -- "*" ActiviteEnseignement
+EntiteGeographique "1" -- "*" ActiviteSoinAutorisee
+EntiteGeographique "1" -- "*" AutreActiviteSoumiseAutorisation
+EntiteGeographique "1" -- "*" ActiviteSoumiseReconnaissance
+EntiteGeographique "1" -- "*" ActiviteSociale
+EntiteGeographique "0..1" -- "*" CapaciteActiviteExercee
+EntiteGeographique "0..1" -- "*" OffreOperationnelle
+EntiteGeographique "1..*" -- "*" OrganisationInterne
+EntiteGeographique "1" -- "0..1" Emploi
+EntiteGeographique "0..1" -- "0..1" AidantDemarche
+EntiteGeographique "0..1" -- "0..1" MesureProtection
+EntiteGeographique "0..1" -- "*" NoteLiaison
+EntiteGeographique "*" -- "*" Agenda
+EntiteGeographique "*" -- "*" RendezVous
 
 @enduml

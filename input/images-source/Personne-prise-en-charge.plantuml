@@ -83,20 +83,39 @@ Class INS #LightBlue {
   prenomUtilise : string [1..1]
 }
 
+package "Agenda" as Agenda_part {
+  Class RendezVous
+  Class Agenda
+}
 
-package "Professionnel" {
+package "Dossier" as Dossier_part {
+  Class NoteLiaison
+  Class DossierPersonnePriseCharge
+}
+
+package "Professionnel" as Professionnel_part {
   Class Professionnel
 }
 
-package "Structure" {
+package "Structure" as Structure_part {
   Class EntiteGeographique
 }
-PersonnePriseCharge --> Professionnel : 0..*
-VieQuotidienne --> PersonnePriseCharge : 1..1
-VieProfessionnelle --> PersonnePriseCharge : 1..1
-Emploi --> VieProfessionnelle : 1..1
-ArretTravail --> VieProfessionnelle : 1..1
-Emploi --> EntiteGeographique : 1..1
+
+PersonnePriseCharge "*" -- "*" RendezVous
+PersonnePriseCharge "*" -- "*" Agenda
+PersonnePriseCharge "1" -- "0..1" VieQuotidienne
+PersonnePriseCharge "1" -- "0..1" VieProfessionnelle
+PersonnePriseCharge "1" -- "0..1" VieScolaire
+PersonnePriseCharge "1" -- "*" Observation
+VieProfessionnelle "1" -- "*" Emploi
+VieProfessionnelle "1" -- "*" ArretTravail
+Observation "1" -- "1..*" ResultatObservation
+ResultatObservation "1" -- "*" PlageReference
+PersonnePriseCharge "1" -- "*" NoteLiaison
+PersonnePriseCharge "1" -- "1" DossierPersonnePriseCharge
+PersonnePriseCharge "*" -- "*" Professionnel
+Observation "*" -- "0..1" Professionnel
+Emploi "0..1" -- "1" EntiteGeographique
 PersonnePriseCharge --> INS : 0..*
 
 @enduml

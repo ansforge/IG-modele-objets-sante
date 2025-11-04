@@ -29,11 +29,27 @@ Class ActiviteOperationnelle #LightBlue {
   activiteOperationnelle : Coding [0..1]
 }
 
+package "Professionnel" as Professionnel_part {
+  Class SituationOperationnelle
+}
 
-package "Structure" {
+package "Structure" as Structure_part {
   Class EntiteGeographique
 }
-OffreOperationnelle --> EntiteGeographique : 0..1
+
+package "Ressources opérationnelles" as Ressources_opérationnelles_part {
+  Class LieuRealisationOffre
+}
+
+package "Organisation opérationnelle" as Organisation_opérationnelle_part {
+  Class OrganisationInterne
+}
+
+OffreOperationnelle "1" -- "*" SituationOperationnelle
+OffreOperationnelle "*" -- "0..1" EntiteGeographique
+OffreOperationnelle "1..*" -- "1..*" LieuRealisationOffre
+OffreOperationnelle "1..*" -- "0..1" OrganisationInterne
+
 OffreOperationnelle --> ActiviteOperationnelle : 1..*
 
 @enduml

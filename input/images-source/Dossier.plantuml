@@ -28,20 +28,31 @@ Class NoteLiaison {
   urgenceNote : boolean [0..1]
 }
 
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  Class PersonnePriseCharge
+}
 
-package "Professionnel" {
+package "Professionnel" as Professionnel_part {
   Class Professionnel
 }
 
-package "Structure" {
+package "Structure" as Structure_part {
   Class EntiteGeographique
 }
 
-package "Personne prise en charge" {
-  Class PersonnePriseCharge
+package "Dispositif médical" as Dispositif_médical_part {
+  Class DispositifMedical
 }
-NoteLiaison --> Professionnel : 0..1
-NoteLiaison --> EntiteGeographique : 0..1
-NoteLiaison --> PersonnePriseCharge : 0..1
+
+Demande "1" -- "*" Decision
+Demande "*" -- "*" Document
+Demande "*" -- "1" DossierPersonnePriseCharge
+DossierPersonnePriseCharge "1" -- "*" Document
+Document "1..*" -- "*" NoteLiaison
+DossierPersonnePriseCharge "1" -- "1" PersonnePriseCharge
+NoteLiaison "*" -- "1" PersonnePriseCharge
+NoteLiaison "*" -- "0..1" Professionnel
+NoteLiaison "*" -- "0..1" EntiteGeographique
+NoteLiaison "*" -- "0..1" DispositifMedical
 
 @enduml

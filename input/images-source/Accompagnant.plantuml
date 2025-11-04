@@ -12,5 +12,11 @@ Class MesureProtection {
   typeMesureProtection : Coding [0..1]
 }
 
+package "Structure" as Structure_part {
+  Class EntiteGeographique
+}
+
+AidantDemarche "0..1" -- "0..1" EntiteGeographique
+MesureProtection "0..1" -- "0..1" EntiteGeographique
 
 @enduml

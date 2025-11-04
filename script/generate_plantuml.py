@@ -29,10 +29,10 @@ def get_elements(sd, sections):
                         section_target = section
                 reference_info = {
                     "source": sd["name"],
-                    "min": element.get("min"),
-                    "max": element.get("max"),
+                    "min_s2t": element.get("min"),
+                    "max_s2t": element.get("max"),
                     "target": target,
-                    "section": section_target
+                    "section_t": section_target
                 }
                 refs.append(reference_info)
             elif type == "Base":
@@ -60,6 +60,15 @@ def get_elements(sd, sections):
                     })
     return {"elements": elements, "backbones": backbones, "references": refs}
 
+def get_ref_card(ref, data):
+    refs_section = data[ref["section_t"]]["references"]
+    for ref_section in refs_section:
+        if ref_section["source"] == ref["target"] and ref["source"] == ref_section["target"]:
+            ref["min_t2s"] = ref_section["min_s2t"]
+            ref["max_t2s"] = ref_section["max_s2t"]
+            break
+    return ref
+
 def generate_plantuml_parts(path, sections):
     """
     Génère les diagrammes par parties au format plantuml.
@@ -70,59 +79,80 @@ def generate_plantuml_parts(path, sections):
     """
     data = {}
     for section, files in sections.items():
-        if section not in ["Classes communes", "Types de données"]:
-            data[section] = {"classes": {}, "references": []}
-            if len(files) > 0:
-                for file in files:
-                    sd = json.load(codecs.open(os.path.join(path, "output", "StructureDefinition-" + file + ".json"), 'r', 'utf-8-sig'))
-                    if sd["baseDefinition"] == "http://hl7.org/fhir/StructureDefinition/Base":
-                        elements = get_elements(sd, sections)
-                        data[section]["references"].extend(elements["references"])
-                        elements.pop("references")
-                        data[section]["classes"][sd["name"]] = elements
+        data[section] = {"classes": {}, "references": []}
+        if len(files) > 0:
+            for file in files:
+                sd = json.load(codecs.open(os.path.join(path, "output", "StructureDefinition-" + file + ".json"), 'r', 'utf-8-sig'))
+                if sd["baseDefinition"] == "http://hl7.org/fhir/StructureDefinition/Base":
+                    elements = get_elements(sd, sections)
+                    data[section]["references"].extend(elements["references"])
+                    elements.pop("references")
+                    data[section]["classes"][sd["name"]] = elements
     for section in data.keys():
-        sds = data[section]["classes"]
-        refs = data[section]["references"]
-        refs_grouped = {}
-        for ref in refs:
-            section_ref = ref["section"]
-            if section_ref not in refs_grouped:
-                refs_grouped[section_ref] = []
-            refs_grouped[section_ref].append(ref)
-        if len(sds.keys()) > 0:
-            filename = unicodedata.normalize("NFKD", section)\
-                .encode("ascii", "ignore")\
-                .decode("ascii")\
-                .replace("'", "")\
-                .replace(" ", "-")
-            with open(os.path.join(path, "input", "images-source", filename + ".plantuml"), 'w', encoding="utf-8") as f:
-                f.write("@startuml\n")
-                for sd in sds.keys():
-                    f.write(f"\nClass {sd} {{\n")
-                    for elem in sds[sd]["elements"]:
-                        f.write(f"  {elem['name']} : {elem['type']} [{elem['min']}..{elem['max']}]\n")
-                    f.write("}\n")
-                for sd in sds.keys():
-                    for backbone in sds[sd]["backbones"].keys(): 
-                        f.write(f"\nClass {backbone} #LightBlue {{\n")
-                        for elem in sds[sd]["backbones"][backbone]["elements"]:
+        if section not in ["Classes communes", "Types de données"]:
+            sds = data[section]["classes"]
+            refs = data[section]["references"]
+            refs_grouped = {}
+            refs_added = []
+            for ref in refs:
+                section_ref = ref["section_t"]
+                if section_ref not in refs_grouped:
+                    refs_grouped[section_ref] = []
+                ref = get_ref_card(ref, data)
+                if not(any(set((ref["source"], ref["target"])) == set(t) for t in refs_added)):
+                    refs_grouped[section_ref].append(ref)
+                    refs_added.append((ref["source"], ref["target"]))
+            if len(sds.keys()) > 0:
+                filename = unicodedata.normalize("NFKD", section)\
+                    .encode("ascii", "ignore")\
+                    .decode("ascii")\
+                    .replace("'", "")\
+                    .replace(" ", "-")
+                with open(os.path.join(path, "input", "images-source", filename + ".plantuml"), 'w', encoding="utf-8") as f:
+                    f.write("@startuml\n")
+                    for sd in sds.keys():
+                        f.write(f"\nClass {sd} {{\n")
+                        for elem in sds[sd]["elements"]:
                             f.write(f"  {elem['name']} : {elem['type']} [{elem['min']}..{elem['max']}]\n")
                         f.write("}\n")
-                f.write("\n")
-                for section_ref, refs in refs_grouped.items():
-                    if section_ref not in [section, "Classes communes", "Types de données"]:
-                        f.write(f"\npackage \"{section_ref}\" {{\n")
-                        for ref in refs:
-                            f.write(f"  Class {ref['target']}\n")
-                        f.write("}\n")
-                for section_ref, refs in refs_grouped.items():
-                    if section_ref not in ["Classes communes", "Types de données"]:
-                        for ref in refs:
-                            f.write(f"{ref['source']} --> {ref['target']} : {ref['min']}..{ref['max']}\n")
-                for sd in sds.keys():
-                    for backbone, info in sds[sd]["backbones"].items():
-                        f.write(f"{sd} --> {backbone} : {info['min']}..{info['max']}\n")
-                f.write("\n@enduml")
+                    for sd in sds.keys():
+                        for backbone in sds[sd]["backbones"].keys(): 
+                            f.write(f"\nClass {backbone} #LightBlue {{\n")
+                            for elem in sds[sd]["backbones"][backbone]["elements"]:
+                                f.write(f"  {elem['name']} : {elem['type']} [{elem['min']}..{elem['max']}]\n")
+                            f.write("}\n")
+                    for section_ref, refs in refs_grouped.items():
+                        if section_ref not in [section, "Classes communes", "Types de données"]:
+                            f.write(f"\npackage \"{section_ref}\" as {section_ref.replace(' ', '_')}_part {{\n")
+                            refs_added = []
+                            for ref in refs:
+                                if ref["target"] not in refs_added:
+                                    f.write(f"  Class {ref['target']}\n")
+                                    refs_added.append(ref["target"])
+                            f.write("}\n")
+                    f.write("\n")
+                    for section_ref, refs in refs_grouped.items():
+                        if section_ref not in ["Classes communes", "Types de données"]:
+                            for ref in refs:
+                                if str(ref["min_s2t"]) == str(ref["max_s2t"]):
+                                    card_s2t = ref["min_s2t"]
+                                elif (ref["min_s2t"] == 0) & (ref["max_s2t"] == "*"):
+                                    card_s2t = "*"
+                                else:
+                                    card_s2t = f"{ref['min_s2t']}..{ref['max_s2t']}"
+                                if str(ref["min_t2s"]) == str(ref["max_t2s"]):
+                                    card_t2s = ref["min_t2s"]
+                                elif (ref["min_t2s"] == 0) & (ref["max_t2s"] == "*"):
+                                    card_t2s = "*"
+                                else:
+                                    card_t2s = f"{ref['min_t2s']}..{ref['max_t2s']}"
+                                f.write(f"{ref['source']} \"{card_t2s}\" -- \"{card_s2t}\" {ref['target']}\n")
+                    if len(sds[sd]["backbones"]) > 0:
+                        f.write("\n")
+                    for sd in sds.keys():
+                        for backbone, info in sds[sd]["backbones"].items():
+                            f.write(f"{sd} --> {backbone} : {info['min']}..{info['max']}\n")
+                    f.write("\n@enduml")
 
 def generate_plantuml_global(path, sections, conf):
     """
