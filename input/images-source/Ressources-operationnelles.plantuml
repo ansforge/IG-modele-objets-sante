@@ -1,16 +1,16 @@
 @startuml
 
-Class LieuRealisationOffre {
+Class "[[StructureDefinition-LieuRealisationOffre.html LieuRealisationOffre]]" as LieuRealisationOffre {
   idExterneSynchro : Identifier [0..1]
   nomExterneSynchro : string [0..1]
 }
 
-Class EquipementSpecifique {
+Class "[[StructureDefinition-EquipementSpecifique.html EquipementSpecifique]]" as EquipementSpecifique {
   typeEquipement : Coding [0..1]
   nbEquipementEnService : integer [0..1]
 }
 
-Class CapacitePriseCharge {
+Class "[[StructureDefinition-CapacitePriseCharge.html CapacitePriseCharge]]" as CapacitePriseCharge {
   affectationTemporaire : Coding [0..1]
 }
 
@@ -20,12 +20,12 @@ Class LimiteCaracteristiqueEquipement #LightBlue {
 }
 
 package "Offre opérationnelle" as Offre_opérationnelle_part {
-  Class OffreOperationnelle
+  Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
 }
 
 package "Agenda" as Agenda_part {
-  Class Agenda
-  Class RendezVous
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
 }
 
 LieuRealisationOffre "1..*" -- "1..*" OffreOperationnelle

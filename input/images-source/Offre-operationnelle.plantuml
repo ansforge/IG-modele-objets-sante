@@ -1,6 +1,6 @@
 @startuml
 
-Class OffreOperationnelle {
+Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle {
   familleActiviteOperationnelle : Coding [0..1]
   identifiantOffre : Identifier [0..1]
   nomOffre : string [0..1]
@@ -30,19 +30,19 @@ Class ActiviteOperationnelle #LightBlue {
 }
 
 package "Professionnel" as Professionnel_part {
-  Class SituationOperationnelle
+  Class "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle
 }
 
 package "Structure" as Structure_part {
-  Class EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
 package "Ressources opérationnelles" as Ressources_opérationnelles_part {
-  Class LieuRealisationOffre
+  Class "[[StructureDefinition-LieuRealisationOffre.html LieuRealisationOffre]]" as LieuRealisationOffre
 }
 
 package "Organisation opérationnelle" as Organisation_opérationnelle_part {
-  Class OrganisationInterne
+  Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne
 }
 
 OffreOperationnelle "1" -- "*" SituationOperationnelle

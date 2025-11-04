@@ -1,6 +1,6 @@
 @startuml
 
-Class Agenda {
+Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda {
   idAgenda : Identifier [0..1]
   nomAgenda : string [0..1]
   dateCreation : date [0..1]
@@ -8,7 +8,7 @@ Class Agenda {
   dateFinPlanification : dateTime [0..1]
 }
 
-Class Creneau {
+Class "[[StructureDefinition-Creneau.html Creneau]]" as Creneau {
   idCreneau : Identifier [0..1]
   statut : Coding [0..1]
   dateDebut : dateTime [0..1]
@@ -16,7 +16,7 @@ Class Creneau {
   informationComplementaire : string [0..1]
 }
 
-Class RendezVous {
+Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous {
   idRdv : Identifier [0..1]
   typeRdv : Coding [0..1]
   datePriseRdv : dateTime [0..1]
@@ -32,28 +32,28 @@ Class RendezVous {
   commentaire : string [0..1]
 }
 
-Class PlageDisponibilite {
+Class "[[StructureDefinition-PlageDisponibilite.html PlageDisponibilite]]" as PlageDisponibilite {
   statutPlageDisponibilite : Coding [0..1]
 }
 
 package "Personne prise en charge" as Personne_prise_en_charge_part {
-  Class PersonnePriseCharge
+  Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
 }
 
 package "Professionnel" as Professionnel_part {
-  Class Professionnel
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
 }
 
 package "Structure" as Structure_part {
-  Class EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
 package "Ressources opérationnelles" as Ressources_opérationnelles_part {
-  Class EquipementSpecifique
+  Class "[[StructureDefinition-EquipementSpecifique.html EquipementSpecifique]]" as EquipementSpecifique
 }
 
 package "Organisation opérationnelle" as Organisation_opérationnelle_part {
-  Class OrganisationInterne
+  Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne
 }
 
 Agenda "*" -- "*" PersonnePriseCharge

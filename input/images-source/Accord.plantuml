@@ -1,6 +1,6 @@
 @startuml
 
-Class AutorisationExercice {
+Class "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" as AutorisationExercice {
   typeAutorisation : Coding [0..1]
   disciplineAutorisee : Coding [0..1]
   dateDebutAutorisation : date [0..1]
@@ -8,25 +8,25 @@ Class AutorisationExercice {
   profession : Coding [0..1]
 }
 
-Class Convention {
+Class "[[StructureDefinition-Convention.html Convention]]" as Convention {
   numeroConvention : Identifier [0..1]
   titre : string [0..1]
   dateDebutConvention : date [0..1]
   dateFinConvention : date [0..1]
 }
 
-Class LicenceExploitation {
+Class "[[StructureDefinition-LicenceExploitation.html LicenceExploitation]]" as LicenceExploitation {
   numeroLicence : Identifier [0..1]
   dateDebutLicence : date [0..1]
   dateFinLicence : date [0..1]
 }
 
 package "Professionnel" as Professionnel_part {
-  Class Professionnel
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
 }
 
 package "Structure" as Structure_part {
-  Class EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
 AutorisationExercice "*" -- "0..1" Professionnel

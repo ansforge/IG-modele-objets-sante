@@ -1,6 +1,6 @@
 @startuml
 
-Class CarteProfessionnel {
+Class "[[StructureDefinition-CarteProfessionnel.html CarteProfessionnel]]" as CarteProfessionnel {
   typeCarte : Coding [0..1]
   numeroCarte : string [0..1]
   dateDebutValidite : dateTime [0..1]
@@ -8,7 +8,7 @@ Class CarteProfessionnel {
   dateOpposition : dateTime [0..1]
 }
 
-Class Certificat {
+Class "[[StructureDefinition-Certificat.html Certificat]]" as Certificat {
   numeroSerie : string [0..1]
   dNEmetteur : string [0..1]
   dNSujet : string [0..1]
@@ -24,12 +24,12 @@ Class Certificat {
 }
 
 package "Professionnel" as Professionnel_part {
-  Class ExerciceProfessionnel
+  Class "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel
 }
 
 package "Structure" as Structure_part {
-  Class EntiteGeographique
-  Class EntiteJuridique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique
 }
 
 CarteProfessionnel "*" -- "1" ExerciceProfessionnel

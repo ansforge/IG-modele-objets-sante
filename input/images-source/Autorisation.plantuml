@@ -1,6 +1,6 @@
 @startuml
 
-Class ActiviteSoinAutorisee {
+Class "[[StructureDefinition-ActiviteSoinAutorisee.html ActiviteSoinAutorisee]]" as ActiviteSoinAutorisee {
   numeroAutorisationARHGOS : Identifier [0..1]
   dateDecision : date [0..1]
   activite : Coding [0..1]
@@ -12,7 +12,7 @@ Class ActiviteSoinAutorisee {
   suppressionImplantation : boolean [0..1]
 }
 
-Class AutreActiviteSoumiseAutorisation {
+Class "[[StructureDefinition-AutreActiviteSoumiseAutorisation.html AutreActiviteSoumiseAutorisation]]" as AutreActiviteSoumiseAutorisation {
   numeroAutorisationARHGOS : Identifier [0..1]
   dateDecision : date [0..1]
   activite : Coding [0..1]
@@ -22,7 +22,7 @@ Class AutreActiviteSoumiseAutorisation {
   dateFin : date [0..1]
 }
 
-Class ActiviteSoumiseReconnaissance {
+Class "[[StructureDefinition-ActiviteSoumiseReconnaissance.html ActiviteSoumiseReconnaissance]]" as ActiviteSoumiseReconnaissance {
   numeroRCARHGOS : Identifier [0..1]
   activite : Coding [0..1]
   modalite : Coding [0..1]
@@ -34,7 +34,7 @@ Class ActiviteSoumiseReconnaissance {
   indicateurReconnaissanceRegionale : boolean [0..1]
 }
 
-Class ActiviteSociale {
+Class "[[StructureDefinition-ActiviteSociale.html ActiviteSociale]]" as ActiviteSociale {
   dateAutorisation : date [0..1]
   dateMajAutorisation : date [0..1]
   dateDerniereInstallation : date [0..1]
@@ -51,7 +51,7 @@ Class ActiviteSociale {
   sourceInformationInstallation : Coding [0..1]
 }
 
-Class ActiviteEnseignement {
+Class "[[StructureDefinition-ActiviteEnseignement.html ActiviteEnseignement]]" as ActiviteEnseignement {
   agregatDisciplineEnseignementNiv1 : Coding [0..1]
   agregatDisciplineEnseignementNiv2 : Coding [0..1]
   agregatDisciplineEnseignementNiv3 : Coding [0..1]
@@ -61,7 +61,7 @@ Class ActiviteEnseignement {
   suppressionAutorisation : boolean [0..1]
 }
 
-Class EquipementMaterielLourd {
+Class "[[StructureDefinition-EquipementMaterielLourd.html EquipementMaterielLourd]]" as EquipementMaterielLourd {
   numeroAutorisationARHGOS : Identifier [0..1]
   equipementMaterielLourd : Coding [0..1]
   dateDecision : date [0..1]
@@ -72,13 +72,13 @@ Class EquipementMaterielLourd {
   numeroSerie : string [0..1]
 }
 
-Class CapaciteActiviteExercee {
+Class "[[StructureDefinition-CapaciteActiviteExercee.html CapaciteActiviteExercee]]" as CapaciteActiviteExercee {
   habilitationAideSociale : Coding [0..1]
   modeFinacement : Coding [0..1]
 }
 
 package "Structure" as Structure_part {
-  Class EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
 ActiviteSoinAutorisee "*" -- "1" EntiteGeographique

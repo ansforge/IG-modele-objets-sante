@@ -1,91 +1,91 @@
 @startuml
 
 package "Professionnel" {
-  Class ExerciceProfessionnel
-  Class Professionnel
-  Class SavoirFaire
-  Class SituationExercice
-  Class SituationOperationnelle
+  Class "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+  Class "[[StructureDefinition-SavoirFaire.html SavoirFaire]]" as SavoirFaire
+  Class "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice
+  Class "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle
 }
 
 package "Dispositif d'authentification" {
-  Class CarteProfessionnel
-  Class Certificat
+  Class "[[StructureDefinition-CarteProfessionnel.html CarteProfessionnel]]" as CarteProfessionnel
+  Class "[[StructureDefinition-Certificat.html Certificat]]" as Certificat
 }
 
 package "Structure" {
-  Class EntiteJuridique
-  Class EntiteGeographique
+  Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
 package "Autorisation" {
-  Class ActiviteSoinAutorisee
-  Class AutreActiviteSoumiseAutorisation
-  Class ActiviteSoumiseReconnaissance
-  Class ActiviteSociale
-  Class ActiviteEnseignement
-  Class EquipementMaterielLourd
-  Class CapaciteActiviteExercee
+  Class "[[StructureDefinition-ActiviteSoinAutorisee.html ActiviteSoinAutorisee]]" as ActiviteSoinAutorisee
+  Class "[[StructureDefinition-AutreActiviteSoumiseAutorisation.html AutreActiviteSoumiseAutorisation]]" as AutreActiviteSoumiseAutorisation
+  Class "[[StructureDefinition-ActiviteSoumiseReconnaissance.html ActiviteSoumiseReconnaissance]]" as ActiviteSoumiseReconnaissance
+  Class "[[StructureDefinition-ActiviteSociale.html ActiviteSociale]]" as ActiviteSociale
+  Class "[[StructureDefinition-ActiviteEnseignement.html ActiviteEnseignement]]" as ActiviteEnseignement
+  Class "[[StructureDefinition-EquipementMaterielLourd.html EquipementMaterielLourd]]" as EquipementMaterielLourd
+  Class "[[StructureDefinition-CapaciteActiviteExercee.html CapaciteActiviteExercee]]" as CapaciteActiviteExercee
 }
 
 package "Offre opérationnelle" {
-  Class OffreOperationnelle
+  Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
 }
 
 package "Ressources opérationnelles" {
-  Class LieuRealisationOffre
-  Class EquipementSpecifique
-  Class CapacitePriseCharge
+  Class "[[StructureDefinition-LieuRealisationOffre.html LieuRealisationOffre]]" as LieuRealisationOffre
+  Class "[[StructureDefinition-EquipementSpecifique.html EquipementSpecifique]]" as EquipementSpecifique
+  Class "[[StructureDefinition-CapacitePriseCharge.html CapacitePriseCharge]]" as CapacitePriseCharge
 }
 
 package "Organisation opérationnelle" {
-  Class PoleActivite
-  Class StructureInterne
-  Class UniteFonctionnelle
-  Class OrganisationInterne
+  Class "[[StructureDefinition-PoleActivite.html PoleActivite]]" as PoleActivite
+  Class "[[StructureDefinition-StructureInterne.html StructureInterne]]" as StructureInterne
+  Class "[[StructureDefinition-UniteFonctionnelle.html UniteFonctionnelle]]" as UniteFonctionnelle
+  Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne
 }
 
 package "Accord" {
-  Class AutorisationExercice
-  Class Convention
-  Class LicenceExploitation
+  Class "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" as AutorisationExercice
+  Class "[[StructureDefinition-Convention.html Convention]]" as Convention
+  Class "[[StructureDefinition-LicenceExploitation.html LicenceExploitation]]" as LicenceExploitation
 }
 
 package "Personne prise en charge" {
-  Class PersonnePriseCharge
-  Class VieQuotidienne
-  Class VieProfessionnelle
-  Class Emploi
-  Class ArretTravail
-  Class VieScolaire
-  Class Observation
-  Class ResultatObservation
-  Class PlageReference
+  Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
+  Class "[[StructureDefinition-VieQuotidienne.html VieQuotidienne]]" as VieQuotidienne
+  Class "[[StructureDefinition-VieProfessionnelle.html VieProfessionnelle]]" as VieProfessionnelle
+  Class "[[StructureDefinition-Emploi.html Emploi]]" as Emploi
+  Class "[[StructureDefinition-ArretTravail.html ArretTravail]]" as ArretTravail
+  Class "[[StructureDefinition-VieScolaire.html VieScolaire]]" as VieScolaire
+  Class "[[StructureDefinition-Observation.html Observation]]" as Observation
+  Class "[[StructureDefinition-ResultatObservation.html ResultatObservation]]" as ResultatObservation
+  Class "[[StructureDefinition-PlageReference.html PlageReference]]" as PlageReference
 }
 
 package "Accompagnant" {
-  Class Parent
-  Class AidantDemarche
-  Class MesureProtection
+  Class "[[StructureDefinition-Parent.html Parent]]" as Parent
+  Class "[[StructureDefinition-AidantDemarche.html AidantDemarche]]" as AidantDemarche
+  Class "[[StructureDefinition-MesureProtection.html MesureProtection]]" as MesureProtection
 }
 
 package "Dossier" {
-  Class Demande
-  Class Decision
-  Class DossierPersonnePriseCharge
-  Class Document
-  Class NoteLiaison
+  Class "[[StructureDefinition-Demande.html Demande]]" as Demande
+  Class "[[StructureDefinition-Decision.html Decision]]" as Decision
+  Class "[[StructureDefinition-DossierPersonnePriseCharge.html DossierPersonnePriseCharge]]" as DossierPersonnePriseCharge
+  Class "[[StructureDefinition-Document.html Document]]" as Document
+  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
 }
 
 package "Agenda" {
-  Class Agenda
-  Class Creneau
-  Class RendezVous
-  Class PlageDisponibilite
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  Class "[[StructureDefinition-Creneau.html Creneau]]" as Creneau
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
+  Class "[[StructureDefinition-PlageDisponibilite.html PlageDisponibilite]]" as PlageDisponibilite
 }
 
 package "Dispositif médical" {
-  Class DispositifMedical
+  Class "[[StructureDefinition-DispositifMedical.html DispositifMedical]]" as DispositifMedical
 }
 
 @enduml

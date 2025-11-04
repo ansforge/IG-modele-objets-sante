@@ -1,6 +1,6 @@
 @startuml
 
-Class EntiteJuridique {
+Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique {
   numFINESS : Identifier [0..1]
   numSiren : Identifier [0..1]
   idNatStruct : Identifier [0..1]
@@ -23,7 +23,7 @@ Class EntiteJuridique {
   typeFermeture : Coding [0..1]
 }
 
-Class EntiteGeographique {
+Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique {
   numFINESS : Identifier [0..1]
   numSiret : Identifier [0..1]
   identifiantEG : Identifier [0..1]
@@ -68,56 +68,56 @@ Class EntiteGeographique {
 }
 
 package "Dispositif médical" as Dispositif_médical_part {
-  Class DispositifMedical
+  Class "[[StructureDefinition-DispositifMedical.html DispositifMedical]]" as DispositifMedical
 }
 
 package "Dispositif d'authentification" as Dispositif_d'authentification_part {
-  Class Certificat
+  Class "[[StructureDefinition-Certificat.html Certificat]]" as Certificat
 }
 
 package "Professionnel" as Professionnel_part {
-  Class SituationExercice
+  Class "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice
 }
 
 package "Accord" as Accord_part {
-  Class Convention
-  Class LicenceExploitation
+  Class "[[StructureDefinition-Convention.html Convention]]" as Convention
+  Class "[[StructureDefinition-LicenceExploitation.html LicenceExploitation]]" as LicenceExploitation
 }
 
 package "Autorisation" as Autorisation_part {
-  Class EquipementMaterielLourd
-  Class ActiviteEnseignement
-  Class ActiviteSoinAutorisee
-  Class AutreActiviteSoumiseAutorisation
-  Class ActiviteSoumiseReconnaissance
-  Class ActiviteSociale
-  Class CapaciteActiviteExercee
+  Class "[[StructureDefinition-EquipementMaterielLourd.html EquipementMaterielLourd]]" as EquipementMaterielLourd
+  Class "[[StructureDefinition-ActiviteEnseignement.html ActiviteEnseignement]]" as ActiviteEnseignement
+  Class "[[StructureDefinition-ActiviteSoinAutorisee.html ActiviteSoinAutorisee]]" as ActiviteSoinAutorisee
+  Class "[[StructureDefinition-AutreActiviteSoumiseAutorisation.html AutreActiviteSoumiseAutorisation]]" as AutreActiviteSoumiseAutorisation
+  Class "[[StructureDefinition-ActiviteSoumiseReconnaissance.html ActiviteSoumiseReconnaissance]]" as ActiviteSoumiseReconnaissance
+  Class "[[StructureDefinition-ActiviteSociale.html ActiviteSociale]]" as ActiviteSociale
+  Class "[[StructureDefinition-CapaciteActiviteExercee.html CapaciteActiviteExercee]]" as CapaciteActiviteExercee
 }
 
 package "Offre opérationnelle" as Offre_opérationnelle_part {
-  Class OffreOperationnelle
+  Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
 }
 
 package "Organisation opérationnelle" as Organisation_opérationnelle_part {
-  Class OrganisationInterne
+  Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne
 }
 
 package "Personne prise en charge" as Personne_prise_en_charge_part {
-  Class Emploi
+  Class "[[StructureDefinition-Emploi.html Emploi]]" as Emploi
 }
 
 package "Accompagnant" as Accompagnant_part {
-  Class AidantDemarche
-  Class MesureProtection
+  Class "[[StructureDefinition-AidantDemarche.html AidantDemarche]]" as AidantDemarche
+  Class "[[StructureDefinition-MesureProtection.html MesureProtection]]" as MesureProtection
 }
 
 package "Dossier" as Dossier_part {
-  Class NoteLiaison
+  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
 }
 
 package "Agenda" as Agenda_part {
-  Class Agenda
-  Class RendezVous
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
 }
 
 EntiteJuridique "1" -- "1..*" EntiteGeographique

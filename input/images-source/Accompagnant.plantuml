@@ -1,19 +1,19 @@
 @startuml
 
-Class Parent {
+Class "[[StructureDefinition-Parent.html Parent]]" as Parent {
   autoriteParentale : boolean [0..1]
 }
 
-Class AidantDemarche {
+Class "[[StructureDefinition-AidantDemarche.html AidantDemarche]]" as AidantDemarche {
   typeAidantDemarche : Coding [0..1]
 }
 
-Class MesureProtection {
+Class "[[StructureDefinition-MesureProtection.html MesureProtection]]" as MesureProtection {
   typeMesureProtection : Coding [0..1]
 }
 
 package "Structure" as Structure_part {
-  Class EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
 AidantDemarche "0..1" -- "0..1" EntiteGeographique

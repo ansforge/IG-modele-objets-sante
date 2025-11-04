@@ -1,6 +1,6 @@
 @startuml
 
-Class DispositifMedical {
+Class "[[StructureDefinition-DispositifMedical.html DispositifMedical]]" as DispositifMedical {
   identifiantLocalDM : Identifier [0..*]
   classeRisque : Coding [0..1]
   reference : Identifier [0..1]
@@ -32,11 +32,11 @@ Class SupportIUD #LightBlue {
 }
 
 package "Structure" as Structure_part {
-  Class EntiteJuridique
+  Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique
 }
 
 package "Dossier" as Dossier_part {
-  Class NoteLiaison
+  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
 }
 
 DispositifMedical "*" -- "1" EntiteJuridique

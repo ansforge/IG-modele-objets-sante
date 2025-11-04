@@ -111,7 +111,7 @@ def generate_plantuml_parts(path, sections):
                 with open(os.path.join(path, "input", "images-source", filename + ".plantuml"), 'w', encoding="utf-8") as f:
                     f.write("@startuml\n")
                     for sd in sds.keys():
-                        f.write(f"\nClass {sd} {{\n")
+                        f.write(f'\nClass "[[StructureDefinition-{sd}.html {sd}]]" as {sd} {{\n')
                         for elem in sds[sd]["elements"]:
                             f.write(f"  {elem['name']} : {elem['type']} [{elem['min']}..{elem['max']}]\n")
                         f.write("}\n")
@@ -127,7 +127,7 @@ def generate_plantuml_parts(path, sections):
                             refs_added = []
                             for ref in refs:
                                 if ref["target"] not in refs_added:
-                                    f.write(f"  Class {ref['target']}\n")
+                                    f.write(f'  Class "[[StructureDefinition-{ref["target"]}.html {ref["target"]}]]" as {ref["target"]}\n')
                                     refs_added.append(ref["target"])
                             f.write("}\n")
                     f.write("\n")
@@ -171,7 +171,7 @@ def generate_plantuml_global(path, sections, conf):
                 f.write(f"\npackage \"{section}\" {{\n")
                 for cl in classes:
                     if cl not in inheritances:
-                        f.write(f"  Class {cl}\n")
+                        f.write(f'  Class "[[StructureDefinition-{cl}.html {cl}]]" as {cl}\n')
                 f.write("}\n")
         f.write("\n@enduml")
 

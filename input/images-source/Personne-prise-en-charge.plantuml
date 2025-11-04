@@ -1,24 +1,24 @@
 @startuml
 
-Class PersonnePriseCharge {
+Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge {
   idPersonnePriseCharge : Identifier [0..*]
   preferenceCommunication : Coding [0..1]
 }
 
-Class VieQuotidienne {
+Class "[[StructureDefinition-VieQuotidienne.html VieQuotidienne]]" as VieQuotidienne {
   situationVieQuotidienne : Coding [0..*]
   besoinVieQuotidienne : Coding [0..*]
   compositionFoyer : Coding [0..1]
 }
 
-Class VieProfessionnelle {
+Class "[[StructureDefinition-VieProfessionnelle.html VieProfessionnelle]]" as VieProfessionnelle {
   dejaTravaille : boolean [0..1]
   situationVieProfessionnelle : Coding [0..1]
   situationSansEmploi : Coding [0..1]
   besoinProfessionnel : Coding [0..*]
 }
 
-Class Emploi {
+Class "[[StructureDefinition-Emploi.html Emploi]]" as Emploi {
   libelleEmploi : string [0..1]
   dateDebutEmploi : date [0..1]
   dateFinEmploi : date [0..1]
@@ -26,7 +26,7 @@ Class Emploi {
   emploiAdapteHandicape : boolean [0..1]
 }
 
-Class ArretTravail {
+Class "[[StructureDefinition-ArretTravail.html ArretTravail]]" as ArretTravail {
   dateDebutArret : date [0..1]
   motifArret : Coding [0..1]
   rencontreServiceSocial : boolean [0..1]
@@ -35,12 +35,12 @@ Class ArretTravail {
   dateRencontreMedecin : date [0..1]
 }
 
-Class VieScolaire {
+Class "[[StructureDefinition-VieScolaire.html VieScolaire]]" as VieScolaire {
   typeScolarisation : Coding [0..1]
   besoinScolarite : Coding [0..*]
 }
 
-Class Observation {
+Class "[[StructureDefinition-Observation.html Observation]]" as Observation {
   identifiant : Identifier [0..1]
   statut : CodeableConcept [0..1]
   categorie : CodeableConcept [0..1]
@@ -57,14 +57,14 @@ Class Observation {
   nombreJours : CodeableConcept [0..1]
 }
 
-Class ResultatObservation {
+Class "[[StructureDefinition-ResultatObservation.html ResultatObservation]]" as ResultatObservation {
   type : CodeableConcept [0..*]
   valeur : Quantity [0..1]
   interpretation : CodeableConcept [0..1]
   raisonAbsence : CodeableConcept [0..1]
 }
 
-Class PlageReference {
+Class "[[StructureDefinition-PlageReference.html PlageReference]]" as PlageReference {
   borneInferieure : Quantity [0..1]
   borneSuperieure : Quantity [0..1]
   type : CodeableConcept [0..1]
@@ -84,21 +84,21 @@ Class INS #LightBlue {
 }
 
 package "Agenda" as Agenda_part {
-  Class RendezVous
-  Class Agenda
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
 }
 
 package "Dossier" as Dossier_part {
-  Class NoteLiaison
-  Class DossierPersonnePriseCharge
+  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
+  Class "[[StructureDefinition-DossierPersonnePriseCharge.html DossierPersonnePriseCharge]]" as DossierPersonnePriseCharge
 }
 
 package "Professionnel" as Professionnel_part {
-  Class Professionnel
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
 }
 
 package "Structure" as Structure_part {
-  Class EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
 PersonnePriseCharge "*" -- "*" RendezVous

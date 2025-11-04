@@ -1,15 +1,15 @@
 @startuml
 
-Class PoleActivite {
+Class "[[StructureDefinition-PoleActivite.html PoleActivite]]" as PoleActivite {
 }
 
-Class StructureInterne {
+Class "[[StructureDefinition-StructureInterne.html StructureInterne]]" as StructureInterne {
 }
 
-Class UniteFonctionnelle {
+Class "[[StructureDefinition-UniteFonctionnelle.html UniteFonctionnelle]]" as UniteFonctionnelle {
 }
 
-Class OrganisationInterne {
+Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne {
   identifiantOI : Identifier [0..1]
   nomOI : string [0..1]
   typeOI : Coding [0..1]
@@ -20,16 +20,16 @@ Class OrganisationInterne {
 }
 
 package "Structure" as Structure_part {
-  Class EntiteGeographique
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
 package "Offre opérationnelle" as Offre_opérationnelle_part {
-  Class OffreOperationnelle
+  Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
 }
 
 package "Agenda" as Agenda_part {
-  Class Agenda
-  Class RendezVous
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
 }
 
 OrganisationInterne "*" -- "1..*" EntiteGeographique
