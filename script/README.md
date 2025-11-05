@@ -25,27 +25,30 @@ Environnement Python (pour Windows) :
 * Activer l'environnement : `env\Scripts\activate`.
 * Installer les requirements `pip install -r requirements.txt`.
 
-## Conversion
+## Script complet (pour Windows)
+
+* Se placer dans le dossier [script](./).
+* Exécuter le script [run_all.bat](./run_all.bat) : `.\run_all.bat`.
+
+## Scripts par étape 
+
+### Conversion
 
 * Se placer dans le dossier [script](./).
 * Exécuter le script python [mos2ml.py](./mos2ml.py) qui génère les ressources FHIR au format json dans le dossier [json](./json/) : `python mos2ml.py`.
 * Convertir les fichiers json en fsh dans le dossier [fsh](../input/fsh/) : `gofsh ./json -o ..`.
 * Exécuter le script python [fsh_files_organization.py](./fsh_files_organization.py) qui organise les fichiers fsh par partie du MOS dans le dossier [fsh](../input/fsh/logicals/) : `python fsh_files_organization.py`.
 
-### Notes
-
+Remarques :
 * L'attribut `metadonnee` est ignoré.
 * Les tables d'association sont ignorées.
 * Les élements FHIR `short` et `definition`sont tous deux remplis avec la définition issue du MOS qui peuvent être assez longue.
 
-## Génération de diagrammes
+### Génération de diagrammes
 
 * Exécuter `_genonce.bat` à la racine du projet.
 * Se placer dans le dossier [script](./) et exécuter le script python [generate_plantuml.py](./generate_plantuml.py) qui génère le diagramme global et les diagrammes par partie au format plantuml dans le dossier [images-source](../input/images-source/) : `python generate_plantuml.py`.
 
-### Notes
-
 Actuellement :
-- Le sens des flèches est fixe (toujours "-->").
 - Les héritages ne sont pas affichés.
 - Les backbones sont affichés en bleu.
