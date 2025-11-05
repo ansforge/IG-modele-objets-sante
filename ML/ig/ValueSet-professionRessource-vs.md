@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/professionRessource-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-04 | *Computable Name*:ProfessionressourceVs |
+| Draft as of 2025-11-05 | *Computable Name*:ProfessionressourceVs |
 
  **References** 
 
@@ -53,7 +53,7 @@ Ce jeu de valeur (ValueSet) contient 124 concepts
   "version" : "0.1.0",
   "name" : "ProfessionressourceVs",
   "status" : "draft",
-  "date" : "2025-11-04T14:33:37+00:00",
+  "date" : "2025-11-05T10:41:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Convention | *Version*:0.1.0 |
-| Draft as of 2025-11-04 | *Computable Name*:Convention |
+| Draft as of 2025-11-05 | *Computable Name*:Convention |
 
  
 Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Convention.csv), [Ex
   "name" : "Convention",
   "title" : "Convention",
   "status" : "draft",
-  "date" : "2025-11-04T14:33:37+00:00",
+  "date" : "2025-11-05T10:41:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

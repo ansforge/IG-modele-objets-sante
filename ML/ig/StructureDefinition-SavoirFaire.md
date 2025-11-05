@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire | *Version*:0.1.0 |
-| Draft as of 2025-11-04 | *Computable Name*:SavoirFaire |
+| Draft as of 2025-11-05 | *Computable Name*:SavoirFaire |
 
  
 Prérogatives d’exercice d’un professionnel reconnues par une autorité d’enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-SavoirFaire.csv), [E
   "name" : "SavoirFaire",
   "title" : "SavoirFaire",
   "status" : "draft",
-  "date" : "2025-11-04T14:33:37+00:00",
+  "date" : "2025-11-05T10:41:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

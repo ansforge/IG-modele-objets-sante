@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-04 | *Computable Name*:PaysnationaliteVs |
+| Draft as of 2025-11-05 | *Computable Name*:PaysnationaliteVs |
 
  **References** 
 
@@ -54,7 +54,7 @@ Ce jeu de valeur (ValueSet) contient 493 concepts
   "version" : "0.1.0",
   "name" : "PaysnationaliteVs",
   "status" : "draft",
-  "date" : "2025-11-04T14:33:37+00:00",
+  "date" : "2025-11-05T10:41:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
