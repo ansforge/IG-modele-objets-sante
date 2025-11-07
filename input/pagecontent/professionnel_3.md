@@ -9,7 +9,18 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 
 <div class="figure" style="width:100%; overflow-x:auto;">
   <p style="margin: 0; padding: 0;">
-    {% include professionnel.svg %}
+    {% include professionnel_3_1.svg %}
+  </p>
+</div>
+
+
+### Classe Professionnel
+
+Définition de la classe. 
+
+<div class="figure" style="width:100%; overflow-x:auto;">
+  <p style="margin: 0; padding: 0;">
+    {% include professionnel_3_2.svg %}
   </p>
 </div>
 
