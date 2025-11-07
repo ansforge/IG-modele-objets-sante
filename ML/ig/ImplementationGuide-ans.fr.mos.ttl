@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-05T10:41:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-07T16:48:20+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1372,6 +1372,9 @@
        fhir:id [ fhir:v "Offre" ] ;
        fhir:name [ fhir:v "Offre opérationnelle" ]
      ] [
+       fhir:id [ fhir:v "Organisation" ] ;
+       fhir:name [ fhir:v "Organisation opérationnelle" ]
+     ] [
        fhir:id [ fhir:v "Personne" ] ;
        fhir:name [ fhir:v "Personne prise en charge" ]
      ] [
@@ -1383,6 +1386,9 @@
      ] [
        fhir:id [ fhir:v "Structure" ] ;
        fhir:name [ fhir:v "Structure" ]
+     ] [
+       fhir:id [ fhir:v "Classes communes" ] ;
+       fhir:name [ fhir:v "Classes communes" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -1492,7 +1498,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1579,7 +1586,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1644,7 +1652,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1705,7 +1714,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1726,7 +1736,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1769,7 +1780,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1790,7 +1802,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1939,7 +1952,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2106,7 +2120,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2149,7 +2164,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2236,7 +2252,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2257,7 +2274,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2320,7 +2338,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2341,7 +2360,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2362,7 +2382,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2383,7 +2404,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2404,7 +2426,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2425,7 +2448,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2446,7 +2470,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2467,7 +2492,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2510,7 +2536,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2811,7 +2838,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2832,7 +2860,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2853,7 +2882,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2874,7 +2904,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2917,7 +2948,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2980,7 +3012,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3001,7 +3034,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3110,7 +3144,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Organisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3195,7 +3230,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3256,7 +3292,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3343,7 +3380,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Organisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3720,7 +3758,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Organisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3783,7 +3822,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3804,7 +3844,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -3865,7 +3906,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Organisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -4198,6 +4240,44 @@
              fhir:l fhir:professionnel.html
            ] ;
            fhir:title [ fhir:v "Professionnel" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "professionnel_2.html"^^xsd:anyURI ;
+               fhir:l fhir:professionnel_2.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "professionnel_2.html"^^xsd:anyURI ;
+             fhir:l fhir:professionnel_2.html
+           ] ;
+           fhir:title [ fhir:v "Professionnel_2" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "professionnel_3.html"^^xsd:anyURI ;
+               fhir:l fhir:professionnel_3.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "professionnel_3.html"^^xsd:anyURI ;
+             fhir:l fhir:professionnel_3.html
+           ] ;
+           fhir:title [ fhir:v "Professionnel_3" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [

@@ -129,6 +129,12 @@
         <a href="professionnel.html">Professionnel</a>
       </li>
       <li>
+        <a href="professionnel_2.html">Professionnel_2</a>
+      </li>
+      <li>
+        <a href="professionnel_3.html">Professionnel_3</a>
+      </li>
+      <li>
         <a href="ressops.html">Ressources opérationnelles</a>
       </li>
       <li>
@@ -239,22 +245,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#8">Offre opérationnelle</a>
       </li>
       <li>
-         <a href="#9">Personne prise en charge</a>
+         <a href="#9">Organisation opérationnelle</a>
       </li>
       <li>
-         <a href="#10">Professionnel</a>
+         <a href="#10">Personne prise en charge</a>
       </li>
       <li>
-         <a href="#11">Ressources opérationnelles</a>
+         <a href="#11">Professionnel</a>
       </li>
       <li>
-         <a href="#12">Structure</a>
+         <a href="#12">Ressources opérationnelles</a>
       </li>
       <li>
-         <a href="#13">Structures: Logical Models</a>
+         <a href="#13">Structure</a>
       </li>
       <li>
-         <a href="#14">Terminology: Value Sets</a>
+         <a href="#14">Classes communes</a>
+      </li>
+      <li>
+         <a href="#15">Terminology: Value Sets</a>
       </li>
    </ul>
 </div>
@@ -561,6 +570,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="9"> </a>
+   <h3>Organisation opérationnelle </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OrganisationInterne.html"
+                  title="StructureDefinition/OrganisationInterne">OrganisationInterne</a>
+            </td>
+            <td>
+<p>La classe Organisation Interne est une classe abstraite qui contient les attributs inhérents et communs aux classes décrivant l’organisation opérationnelle interne d’une EG permettant de délivrer la prestation.Une organisation interne peut être composée d’autres organisations internes. Par exemple, les unités fonctionnelles peuvent être regroupées au sein de services qui peuvent être regroupés en pôles.La description de cette organisation interne de l’EG n’est pas obligatoire. Lorsqu’elle est décrite cette organisation porte les ressources opérationnelles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PoleActivite.html"
+                  title="StructureDefinition/PoleActivite">PoleActivite</a>
+            </td>
+            <td>
+<p>Loi HPST, art.13: “Pour les établissements publics de santé, le directeur définit l’organisation de l’établissement en pôles d’activité conformément au projet médical d’établissement, après avis […]. Le directeur général de l’agence régionale de santé peut autoriser un établissement à ne pas créer de pôles d’activité quand l’effectif médical de l’établissement le justifie.Les pôles d’activité peuvent comporter des structures internes de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques ainsi que les structures médico-techniques qui leur sont associées”.Extrait de “La loi HPST à l’hôpital, les clés pour comprendre - Ministère de la Santé- ANAP”: “Les pôles d’activité clinique et médico-technique peuvent comporter des “structures internes” de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques”.Les pôles peuvent être multi-sites, c’est à dire qu’un même pôle peut comporter des structures internes situées dans différentes entités géographiques d’une même entité juridique.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StructureInterne.html"
+                  title="StructureDefinition/StructureInterne">StructureInterne</a>
+            </td>
+            <td>
+<p>Une structure interne peut être composée d’une ou plusieurs unités médicales fonctionnelles.L’appellation des structures internes des pôles est aussi laissée à la libre appréciation des établissements : il peut s’agir de services, d’unités, de centres, d’instituts, de départements, ou de toute autre appellation. Lorsque les services demeurent, les chefs de service sont placés sous l’autorité fonctionnelle du chef de pôle (cf. “La loi HPST à l’hôpital, les clés pour comprendre” - Ministère de la Santé - ANAP).Synonyme : Service, unité, centre, institut, département, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-UniteFonctionnelle.html"
+                  title="StructureDefinition/UniteFonctionnelle">UniteFonctionnelle</a>
+            </td>
+            <td>
+<p>L’unité fonctionnelle (UF) désigne la plus petite unité compatible avec les contraintes de gestion qui présente une activité médicale homogène.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="10"> </a>
    <h3>Personne prise en charge </h3>
     
 <table class="grid">
@@ -649,7 +702,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="10"> </a>
+   <a name="11"> </a>
    <h3>Professionnel </h3>
     
 <table class="grid">
@@ -801,7 +854,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="11"> </a>
+   <a name="12"> </a>
    <h3>Ressources opérationnelles </h3>
     
 <table class="grid">
@@ -836,7 +889,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="12"> </a>
+   <a name="13"> </a>
    <h3>Structure </h3>
     
 <table class="grid">
@@ -862,9 +915,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="13"> </a>
-   <h3>Structures: Logical Models </h3>
-    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+   <a name="14"> </a>
+   <h3>Classes communes </h3>
+    
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
@@ -1119,15 +1172,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-OrganisationInterne.html"
-                  title="StructureDefinition/OrganisationInterne">OrganisationInterne</a>
-            </td>
-            <td>
-<p>La classe Organisation Interne est une classe abstraite qui contient les attributs inhérents et communs aux classes décrivant l’organisation opérationnelle interne d’une EG permettant de délivrer la prestation.Une organisation interne peut être composée d’autres organisations internes. Par exemple, les unités fonctionnelles peuvent être regroupées au sein de services qui peuvent être regroupés en pôles.La description de cette organisation interne de l’EG n’est pas obligatoire. Lorsqu’elle est décrite cette organisation porte les ressources opérationnelles.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-Patientele.html"
                   title="StructureDefinition/Patientele">Patientele</a>
             </td>
@@ -1142,24 +1186,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Préambule:Les informations de la personne physique telles que le nom de naissance, le prénom, etc. sont utilisées dans d’autres contextes que celui de l’INS. Elles sont donc délibérément disjointes des informations constituant l’identité INS.Une personne physique est un individu titulaire de droits et d’obligations caractérisé par une identité civile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PoleActivite.html"
-                  title="StructureDefinition/PoleActivite">PoleActivite</a>
-            </td>
-            <td>
-<p>Loi HPST, art.13: “Pour les établissements publics de santé, le directeur définit l’organisation de l’établissement en pôles d’activité conformément au projet médical d’établissement, après avis […]. Le directeur général de l’agence régionale de santé peut autoriser un établissement à ne pas créer de pôles d’activité quand l’effectif médical de l’établissement le justifie.Les pôles d’activité peuvent comporter des structures internes de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques ainsi que les structures médico-techniques qui leur sont associées”.Extrait de “La loi HPST à l’hôpital, les clés pour comprendre - Ministère de la Santé- ANAP”: “Les pôles d’activité clinique et médico-technique peuvent comporter des “structures internes” de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques”.Les pôles peuvent être multi-sites, c’est à dire qu’un même pôle peut comporter des structures internes situées dans différentes entités géographiques d’une même entité juridique.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-StructureInterne.html"
-                  title="StructureDefinition/StructureInterne">StructureInterne</a>
-            </td>
-            <td>
-<p>Une structure interne peut être composée d’une ou plusieurs unités médicales fonctionnelles.L’appellation des structures internes des pôles est aussi laissée à la libre appréciation des établissements : il peut s’agir de services, d’unités, de centres, d’instituts, de départements, ou de toute autre appellation. Lorsque les services demeurent, les chefs de service sont placés sous l’autorité fonctionnelle du chef de pôle (cf. “La loi HPST à l’hôpital, les clés pour comprendre” - Ministère de la Santé - ANAP).Synonyme : Service, unité, centre, institut, département, etc.</p>
 </td>
          </tr>
          <tr>
@@ -1180,18 +1206,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-UniteFonctionnelle.html"
-                  title="StructureDefinition/UniteFonctionnelle">UniteFonctionnelle</a>
-            </td>
-            <td>
-<p>L’unité fonctionnelle (UF) désigne la plus petite unité compatible avec les contraintes de gestion qui présente une activité médicale homogène.</p>
-</td>
-         </tr>
       </tbody>
    </table>
-   <a name="14"> </a>
+   <a name="15"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -1397,7 +1414,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 5, 2025 10:41+0000">2025-11-05</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 7, 2025 16:48+0000">2025-11-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

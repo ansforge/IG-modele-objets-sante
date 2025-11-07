@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/code-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-05 | *Computable Name*:CodeVs |
+| Draft as of 2025-11-07 | *Computable Name*:CodeVs |
 
  **References** 
 
@@ -31,9 +31,9 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 Expansion from smt.esante.gouv.fr based on:
 
 * [codesystem TRE_G09_DepartementOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G09-DepartementOM.html)
+* [codesystem TRE_R13_CommuneOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R13-CommuneOM.html)
 * [codesystem TRE_R20_Pays v20250328120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R20-Pays.html)
 * [codesystem TRE_R30_RegionOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R30-RegionOM.html)
-* [system TRE_R13_CommuneOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R13-CommuneOM.html)
 
 Ce jeu de valeurs (ValueSet) a 39,691 codes. Pour garder la publication gérable, seulement une selection (1,000 codes) de lensemble des codes est affiché.
 
@@ -62,7 +62,7 @@ Ce jeu de valeurs (ValueSet) a 39,691 codes. Pour garder la publication gérable
   "version" : "0.1.0",
   "name" : "CodeVs",
   "status" : "draft",
-  "date" : "2025-11-05T10:41:12+00:00",
+  "date" : "2025-11-07T16:48:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

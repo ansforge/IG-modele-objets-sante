@@ -10,7 +10,7 @@
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-11-05T10:41:12+00:00",
+  "date" : "2025-11-07T16:48:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -665,6 +665,10 @@
       "name" : "Offre opérationnelle"
     },
     {
+      "id" : "Organisation",
+      "name" : "Organisation opérationnelle"
+    },
+    {
       "id" : "Personne",
       "name" : "Personne prise en charge"
     },
@@ -679,6 +683,10 @@
     {
       "id" : "Structure",
       "name" : "Structure"
+    },
+    {
+      "id" : "Classes communes",
+      "name" : "Classes communes"
     }],
     "resource" : [{
       "extension" : [{
@@ -742,7 +750,8 @@
       },
       "name" : "Adresse",
       "description" : "Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -793,7 +802,8 @@
       },
       "name" : "Attestation",
       "description" : "L’attestation est attribuée au terme d'une formation universitaire. Pour les professions médicales et de la pharmacie, les attestations ont été remplacées par les diplômes universitaires (DU).Dans le cadre du modèle, une attestation est un type de diplôme. La classe Attestation est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -831,7 +841,8 @@
       },
       "name" : "AutreDiplomeObtenu",
       "description" : "Diplôme autre qu'un diplôme d'Etat, une qualification, un diplôme d'études spécialisées, un DESC1, un DESC2, un diplôme de l'espace économique européen, un diplôme européen d'études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -865,7 +876,8 @@
       },
       "name" : "BoiteLettreMSS",
       "description" : "Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -877,7 +889,8 @@
       },
       "name" : "CapaciteAccueil",
       "description" : "La capacité d'accueil indique les capacités d’hébergement (en lits ou en places) et donc le nombre de personnes pouvant être accueillies en même temps.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -902,7 +915,8 @@
       },
       "name" : "CapaciteDiplome",
       "description" : "En France, la capacité de médecine est un diplôme (2 ans d'études) réservé aux docteurs en médecine (généralistes ou spécialistes), leur conférant certaines compétences supplémentaires dans leur exercice ou un champ d'exercice plus large (réf. décret du 29 avril 1988). Les capacités ne confèrent pas la qualification aux spécialistes auprès de l'Ordre des médecins, mais celui-ci les reconnait comme des titres auxquels peuvent prétendre les médecins (par exemple sur leur plaque) pour justifier de compétences supplémentaires auprès de leurs patients.Une capacité est un type de diplôme. La classe CapaciteDiplome est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -914,7 +928,8 @@
       },
       "name" : "CapaciteHabitation",
       "description" : "La capacité d'habitation décrit des types d'habitation et le nombre d'habitations associées à ces types.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1000,7 +1015,8 @@
       },
       "name" : "CertificatEtudeSpeciale",
       "description" : "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1095,7 +1111,8 @@
       },
       "name" : "Contact",
       "description" : "Personne ou service qui agit comme point de contact auprès d'une autre personne ou d'un autre service.Exemple: Point de contact avec une personne ou une organisation (un guichet d'accueil, une source d'information, etc.).",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1120,7 +1137,8 @@
       },
       "name" : "CoordonneeGeographique",
       "description" : "Ensemble des coordonnées géographiques d'un point spécifique telles que la longitude, la latitude et l'altitude, exprimées suivant un système géodésique choisi. Il convient de distinguer les coordonnées géographiques des coordonnées projetées suivant différents systèmes de projection.Note complémentaire sur l'usage de la classe :1) Usage d'un autre méridien que Greenwich : Le méridien origine peut être celui de Greenwich (méridien international), ou encore celui propre à la géodésie d'un pays (historiquement méridien de Paris pour la France). Mais chaque méridien origine est défini numériquement par sa longitude par rapport au méridien international.2) Les normes OGC n'imposent pas de choix sur les systèmes : Situation sur le terrain: Systèmes les plus couramment utilisés en France métropolitaine et dans les départements d'Outre-mer:• France métropolitaine : 21 systèmes• Guadeloupe : 6 systèmes• Martinique : 4 systèmes• Guyane : 5 systèmes• Réunion : 4 systèmes3) Systèmes géographiques, planimétriques et altimétriques : Voir décret simple 2006-272 du 03 mars 2006 modifiant le décret n° 2000-1276 du 26 décembre 2000.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1171,7 +1189,8 @@
       },
       "name" : "DESC1",
       "description" : "Les DESC de groupe I ou non qualifiants (2 ans d'études) offrent une compétence supplémentaire ou un champ d'exercice plus large que celui ouvert par le DES, mais ne changent pas la qualification officielle de leurs titulaires auprès de l'Ordre des Médecins. Ils peuvent aussi apporter à des spécialistes des connaissances générales intéressant plusieurs spécialités (allergologie, cancérologie, etc.). Certains de ces DESC sont redondants avec des capacités de médecine, obtenues par la formation continue des médecins déjà diplômés, par exemple la capacité de médecine d'urgence. Il est cependant probable que les capacités disparaissent au profit des DESC équivalents dans un avenir proche.Dans le cadre du modèle, un DESC de groupe I est un type de diplôme. La classe DESC1 est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1183,7 +1202,8 @@
       },
       "name" : "DESC2",
       "description" : "Les DESC de groupe II ou qualifiants (3 ans d'études) représentent des spécialités par eux-mêmes. Dans le cadre du modèle, un DESC de groupe II est un type de diplôme. La classe DESC2 est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1219,7 +1239,8 @@
       },
       "name" : "Diplome",
       "description" : "Un diplôme sanctionne un niveau de connaissances. L’Etat intervient, dans certains cas, sur le programme et la pédagogie de certains cursus diplômants, par exemple les diplômes d'Etat.La classe \"Diplome\" est une classe générale contenant les propriétés communes aux différents types de diplômes.Chaque diplôme est décrit dans le modèle comme une spécialisation de la classe Diplome et à ce titre, hérite des attributs de cette classe. Synonymes RPPS : Diplôme obtenu",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1231,7 +1252,8 @@
       },
       "name" : "DiplomeDeuxiemeCycleNonQualifiant",
       "description" : "Le diplôme de deuxième cycle non qualifiant enregistre un niveau de formation de fin de deuxième cycle, qui sanctionne une partie des études requises à l’exercice de la profession.Il ne donne pas droit à l’exercice de la profession  et son obtention ne change pas la qualification à venir des titulaires lorsqu’ils exerceront.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1243,7 +1265,8 @@
       },
       "name" : "DiplomeDivers",
       "description" : "Cette classe regroupe les diplômes qui ne peuvent être classés dans un type de diplôme explicite (CES, DESC1, DESC2, etc.).La classe DiplomeDivers est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1255,7 +1278,8 @@
       },
       "name" : "DiplomeEEE",
       "description" : "Diplôme d'un pays de l'espace économique européen (EEE), requis pour l'accès à la profession en France, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes au sein de l'EEE.Dans le cadre du modèle, un diplôme EEE est un type de diplôme. La classe DiplomeEEE est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1267,7 +1291,8 @@
       },
       "name" : "DiplomeEES",
       "description" : "Diplôme européen d'études spécialisées, d'un pays de l'espace économique européen (EEE), ouvrant l'accès à une spécialité, pour un professionnel s'inscrivant à l'ordre à compter de la date d'entrée du pays dans l'EEE (Directive européenne 2005-36 modifiée). L'annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes de spécialité au sein de l'EEE.Dans le cadre du modèle, un diplôme EES est un type de diplôme. La classe DiplomeEES est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1279,7 +1304,8 @@
       },
       "name" : "DiplomeEtat",
       "description" : "Un diplôme d'État, abrégé DE, est un diplôme français qui est souvent requis pour l'exercice de professions règlementées, notamment dans le champ de la santé.L'Etat intervient dans la définition du programme et la pédagogie du cursus diplômant.Cette classe comprend également des diplômes anciens existant avant la création du diplôme d'Etat de la profession et qui étaient requis, à cette époque, pour l'exercice de la profession.Par exemple, le diplôme d'Etat de docteur en chirurgie dentaire est requis depuis 1972 pour exercer la profession de chirurgien-dentiste. Avant 1972, le diplôme d'Etat de chirurgien-dentiste était requis. Ces deux diplômes sont donc présents dans la nomenclature des diplômes d'Etat français.Dans le cadre du modèle, un Diplôme d'Etat est considéré comme un type de diplôme. La classe DiplomeEtat est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1291,7 +1317,8 @@
       },
       "name" : "DiplomeEtudeSpecialisee",
       "description" : "Le diplôme d'études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l'internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l'internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d'un DES, accompagnant leur diplôme d'État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d'études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1303,7 +1330,8 @@
       },
       "name" : "DiplomeUniversitaire",
       "description" : "En France, un diplôme universitaire (DU) ou interuniversitaire (DIU) est un diplôme délivré par une université française, un grand établissement ou autre établissement public à caractère scientifique, culturel et professionnel, ou plusieurs établissements conjointement, contrairement aux diplômes nationaux qui sont délivrés au nom du ministère. Chaque ordre maintient une liste des DU reconnus.Dans le cadre du modèle, un diplôme universitaire est un type de diplôme. La classe DiplomeUniversitaire est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1328,7 +1356,8 @@
       },
       "name" : "DivisionTerritoriale",
       "description" : "Une division territoriale est un territoire.Le territoire peut correspondre à une commune, un département, une région, un territoire, un pays, un canton ou un arrondissement au sens du référentiel administratif que représente le Code Officiel Géographique pour la France (INSEE). Pour les autres pays, cela peut être un état, un land, un comté, une province, etc. suivant leur découpage territorial.Autres zonages:Le territoire peut correspondre à un territoire de santé, un bassin de santé, une unité urbaine, un regroupement de communes, etc.Afin de distinguer les divisions territoriales, il est recommandé de toujours indiquer le type d'une division territoriale.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1503,7 +1532,8 @@
       },
       "name" : "FormationSpecialiseeTransversale",
       "description" : "La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité.Dans le cadre du modèle, une formation spécialisée transversale est considérée comme un type de diplôme. La classe FormationSpecialiseeTransversale est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1515,7 +1545,8 @@
       },
       "name" : "Groupement",
       "description" : "Ensemble de personnes et d’entités ayant un ou des objectifs communs. Les propriétés du groupement sont distinctes de celles des membres qui le composent. Le groupement peut exister sur une période limitée et ses membres peuvent varier pour atteindre les objectifs fixés.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1527,7 +1558,8 @@
       },
       "name" : "Horaire",
       "description" : "La classe Horaire permet de définir les différentes plages d'un agenda d'une entité (jours et heures d'ouverture, période de fermeture, etc.).Synonymes (agendas partagés) : plages de disponibilités et d'indisponibilités",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1539,7 +1571,8 @@
       },
       "name" : "LangueParlee",
       "description" : "Langue parlée par une personne ou dans un service.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1564,7 +1597,8 @@
       },
       "name" : "Lieu",
       "description" : "Informations relatives à une portion déterminée de l'espace, fixe ou mobile du point de vue de son affectation ou de ce qui s'y passe.Cas particulier de l'entité géographique : plusieurs lieux peuvent être associés à une même EG, ils peuvent décrire, à la fois, son addresse et des lieux spécifiques à l'EG.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1600,7 +1634,8 @@
       },
       "name" : "Membre",
       "description" : "Personne ou entité faisant partie d'un groupement.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1612,7 +1647,8 @@
       },
       "name" : "MesureCapacite",
       "description" : "Les mesures d’une capacité d’accueil précisent une série d’enregistrements indiquant la quantité de lits (ou de places) dans un statut particulier (disponible,…) et dans une temporalité donnée. Le cumul des mesures de capacité donne une vision complète de la capacité d’accueil.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1676,7 +1712,8 @@
       },
       "name" : "OrganisationInterne",
       "description" : "La classe Organisation Interne est une classe abstraite qui contient les attributs inhérents et communs aux classes décrivant l'organisation opérationnelle interne d'une EG permettant de délivrer la prestation.Une organisation interne peut être composée d’autres organisations internes. Par exemple, les unités fonctionnelles peuvent être regroupées au sein de services qui peuvent être regroupés en pôles.La description de cette organisation interne de l'EG n'est pas obligatoire. Lorsqu'elle est décrite cette organisation porte les ressources opérationnelles.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Organisation"
     },
     {
       "extension" : [{
@@ -1725,7 +1762,8 @@
       },
       "name" : "Patientele",
       "description" : "Une patientèle est un ensemble de patients présentant des caractéristiques permettant d'orienter leur prise en charge par une structure de santé.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1759,7 +1797,8 @@
       },
       "name" : "PersonnePhysique",
       "description" : "Préambule:Les informations de la personne physique telles que le nom de naissance, le prénom, etc. sont utilisées dans d'autres contextes que celui de l'INS. Elles sont donc délibérément disjointes des informations constituant l'identité INS.Une personne physique est un individu titulaire de droits et d'obligations caractérisé par une identité civile.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -1810,7 +1849,8 @@
       },
       "name" : "PoleActivite",
       "description" : "Loi HPST, art.13: \"Pour les établissements publics de santé, le directeur définit l'organisation de l'établissement en pôles d'activité conformément au projet médical d'établissement, après avis [...]. Le directeur général de l'agence régionale de santé peut autoriser un établissement à ne pas créer de pôles d'activité quand l'effectif médical de l'établissement le justifie.Les pôles d'activité peuvent comporter des structures internes de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques ainsi que les structures médico-techniques qui leur sont associées\".Extrait de \"La loi HPST à l'hôpital, les clés pour comprendre - Ministère de la Santé- ANAP\": \"Les pôles d’activité clinique et médico-technique peuvent comporter des \"structures internes\" de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques\".Les pôles peuvent être multi-sites, c'est à dire qu'un même pôle peut comporter des structures internes situées dans différentes entités géographiques d'une même entité juridique.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Organisation"
     },
     {
       "extension" : [{
@@ -2025,7 +2065,8 @@
       },
       "name" : "StructureInterne",
       "description" : "Une structure interne peut être composée d'une ou plusieurs unités médicales fonctionnelles.L’appellation des structures internes des pôles est aussi laissée à la libre appréciation des établissements : il peut s’agir de services, d’unités, de centres, d’instituts, de départements, ou de toute autre appellation. Lorsque les services demeurent, les chefs de service sont placés sous l’autorité fonctionnelle du chef de pôle (cf. \"La loi HPST à l'hôpital, les clés pour comprendre\" - Ministère de la Santé - ANAP).Synonyme : Service, unité, centre, institut, département, etc.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Organisation"
     },
     {
       "extension" : [{
@@ -2061,7 +2102,8 @@
       },
       "name" : "TarifPrestation",
       "description" : "Prix des prestations et services d'une entité géographique.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -2073,7 +2115,8 @@
       },
       "name" : "Telecommunication",
       "description" : "Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée  (téléphone, fax, e-mail, URL, etc.).",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Classes communes"
     },
     {
       "extension" : [{
@@ -2107,7 +2150,8 @@
       },
       "name" : "UniteFonctionnelle",
       "description" : "L'unité fonctionnelle (UF) désigne la plus petite unité compatible avec les contraintes de gestion qui présente une activité médicale homogène.",
-      "exampleBoolean" : false
+      "exampleBoolean" : false,
+      "groupingId" : "Organisation"
     },
     {
       "extension" : [{
@@ -2270,6 +2314,24 @@
           }],
           "nameUrl" : "professionnel.html",
           "title" : "Professionnel",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "professionnel_2.html"
+          }],
+          "nameUrl" : "professionnel_2.html",
+          "title" : "Professionnel_2",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "professionnel_3.html"
+          }],
+          "nameUrl" : "professionnel_3.html",
+          "title" : "Professionnel_3",
           "generation" : "markdown"
         },
         {

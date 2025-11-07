@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu | *Version*:0.1.0 |
-| Draft as of 2025-11-05 | *Computable Name*:Lieu |
+| Draft as of 2025-11-07 | *Computable Name*:Lieu |
 
  
 Informations relatives à une portion déterminée de l’espace, fixe ou mobile du point de vue de son affectation ou de ce qui s’y passe.Cas particulier de l’entité géographique : plusieurs lieux peuvent être associés à une même EG, ils peuvent décrire, à la fois, son addresse et des lieux spécifiques à l’EG. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Lieu.csv), [Excel](S
   "name" : "Lieu",
   "title" : "Lieu",
   "status" : "draft",
-  "date" : "2025-11-05T10:41:12+00:00",
+  "date" : "2025-11-07T16:48:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

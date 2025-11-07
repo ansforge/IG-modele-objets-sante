@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/FonctionQualifiee | *Version*:0.1.0 |
-| Draft as of 2025-11-05 | *Computable Name*:FonctionQualifiee |
+| Draft as of 2025-11-07 | *Computable Name*:FonctionQualifiee |
 
  
 Expérience pratique exigée par le code de la santé publique (art R5124-16) pour exercer certaines fonctions dans l’industrie pharmaceutique et la distribution en gros. Ces dispositions s’appliquent uniquement à la profession de pharmacien.L’expérience pratique est en liaison avec les activités de l’établissement pharmaceutique telles que définies par l’ANSM ou l’ANSES.A ce jour, cinq expériences pratiques sont identifiées dont trois sont imbriquées. L’expérience pratique de “Fabricant” inclut celle d’”Exploitant” qui inclut celle de “Distribution”. Une fonction qualifiée est un type de savoir-faire. La classe FonctionQualifiee est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-FonctionQualifiee.cs
   "name" : "FonctionQualifiee",
   "title" : "FonctionQualifiee",
   "status" : "draft",
-  "date" : "2025-11-05T10:41:12+00:00",
+  "date" : "2025-11-07T16:48:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
