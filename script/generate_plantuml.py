@@ -110,6 +110,7 @@ def generate_plantuml_parts(path, sections):
                     .replace(" ", "-")
                 with open(os.path.join(path, "input", "images-source", filename + ".plantuml"), 'w', encoding="utf-8") as f:
                     f.write("@startuml\n")
+                    f.write("!theme carbon-gray\n")
                     for sd in sds.keys():
                         f.write(f'\nClass "[[StructureDefinition-{sd}.html {sd}]]" as {sd} {{\n')
                         for elem in sds[sd]["elements"]:
@@ -166,6 +167,7 @@ def generate_plantuml_global(path, sections, conf):
     inheritances = [val for sub_list in conf["inheritance"].values() for val in sub_list]
     with open(os.path.join(path, "input", "images-source", "global.plantuml"), 'w', encoding="utf-8") as f:
         f.write("@startuml\n")
+        f.write("!theme carbon-gray\n")
         for section, classes in sections.items():
             if section not in ["Classes communes", "Types de données"]:
                 f.write(f"\npackage \"{section}\" {{\n")

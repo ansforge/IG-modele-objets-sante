@@ -49,6 +49,10 @@ pages:
             title: Personne prise en charge        
         professionnel.md:
             title: Professionnel
+        professionnel_2.md:
+            title: Professionnel_2
+        professionnel_3.md:
+            title: Professionnel_3                      
         ressops.md:
             title: Ressources opérationnelles
         structure.md:
@@ -75,6 +79,8 @@ menu:
       Offre opérationnelle : offre-operationnelle.html
       Personne prise en charge: ppec.html
       Professionnel: professionnel.html
+      Professionnel_2 : professionnel_2.html
+      Professionnel_3 : professionnel_3.html
       Ressources opérationnelles: ressops.html
       Structure: structure.html
     Ressources de conformité: artifacts.html
@@ -137,6 +143,13 @@ groups:
      name: Offre opérationnelle
      resources:
      - StructureDefinition/OffreOperationnelle
+   Organisation:
+     name: Organisation opérationnelle
+     resources:
+     - StructureDefinition/OrganisationInterne     
+     - StructureDefinition/PoleActivite   
+     - StructureDefinition/StructureInterne     
+     - StructureDefinition/UniteFonctionnelle     
    Personne:
      name: Personne prise en charge
      resources:
@@ -179,3 +192,38 @@ groups:
      resources:
      - StructureDefinition/EntiteGeographique
      - StructureDefinition/EntiteJuridique
+   Classes communes:
+     name: Classes communes
+     resources:
+     - StructureDefinition/Adresse
+     - StructureDefinition/Attestation
+     - StructureDefinition/AutreDiplomeObtenu
+     - StructureDefinition/BoiteLettreMSS
+     - StructureDefinition/CapaciteAccueil
+     - StructureDefinition/CapaciteDiplome
+     - StructureDefinition/CapaciteHabitation
+     - StructureDefinition/CertificatEtudeSpeciale
+     - StructureDefinition/Contact
+     - StructureDefinition/CoordonneeGeographique
+     - StructureDefinition/DESC1
+     - StructureDefinition/DESC2
+     - StructureDefinition/Diplome
+     - StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant
+     - StructureDefinition/DiplomeDivers
+     - StructureDefinition/DiplomeEEE
+     - StructureDefinition/DiplomeEES
+     - StructureDefinition/DiplomeEtat
+     - StructureDefinition/DiplomeEtudeSpecialisee
+     - StructureDefinition/DiplomeUniversitaire
+     - StructureDefinition/DivisionTerritoriale
+     - StructureDefinition/FormationSpecialiseeTransversale
+     - StructureDefinition/Groupement
+     - StructureDefinition/Horaire
+     - StructureDefinition/LangueParlee
+     - StructureDefinition/Lieu
+     - StructureDefinition/Membre
+     - StructureDefinition/MesureCapacite
+     - StructureDefinition/Patientele
+     - StructureDefinition/PersonnePhysique
+     - StructureDefinition/TarifPrestation
+     - StructureDefinition/Telecommunication
