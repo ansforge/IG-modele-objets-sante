@@ -1,0 +1,96 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-ActiviteSoinAutorisee.html ActiviteSoinAutorisee]]" as ActiviteSoinAutorisee {
+  numeroAutorisationARHGOS : Identifier [0..1]
+  dateDecision : date [0..1]
+  activite : Coding [0..1]
+  modalite : Coding [0..1]
+  forme : Coding [0..1]
+  datePremiereMEO : date [0..1]
+  dateFin : date [0..1]
+  suppressionAutorisation : boolean [0..1]
+  suppressionImplantation : boolean [0..1]
+}
+
+Class "[[StructureDefinition-AutreActiviteSoumiseAutorisation.html AutreActiviteSoumiseAutorisation]]" as AutreActiviteSoumiseAutorisation {
+  numeroAutorisationARHGOS : Identifier [0..1]
+  dateDecision : date [0..1]
+  activite : Coding [0..1]
+  modalite : Coding [0..1]
+  forme : Coding [0..1]
+  datePremiereMEO : date [0..1]
+  dateFin : date [0..1]
+}
+
+Class "[[StructureDefinition-ActiviteSoumiseReconnaissance.html ActiviteSoumiseReconnaissance]]" as ActiviteSoumiseReconnaissance {
+  numeroRCARHGOS : Identifier [0..1]
+  activite : Coding [0..1]
+  modalite : Coding [0..1]
+  forme : Coding [0..1]
+  numeroContratCPOM : Identifier [0..1]
+  dateEffetCPOM : date [0..1]
+  dateFinCPOM : date [0..1]
+  dateReconnaissance : date [0..1]
+  indicateurReconnaissanceRegionale : boolean [0..1]
+}
+
+Class "[[StructureDefinition-ActiviteSociale.html ActiviteSociale]]" as ActiviteSociale {
+  dateAutorisation : date [0..1]
+  dateMajAutorisation : date [0..1]
+  dateDerniereInstallation : date [0..1]
+  agregatDisciplineEquipementSocialeNiv1 : Coding [0..1]
+  agregatDisciplineEquipementSocialeNiv2 : Coding [0..1]
+  agregatDisciplineEquipementSocialeNiv3 : Coding [0..1]
+  disciplineEquipementSociale : Coding [0..1]
+  modeFonctionnement : Coding [0..1]
+  agregatClienteleNiv2 : Coding [0..1]
+  agregatClienteleNiv3 : Coding [0..1]
+  clientele : Coding [0..1]
+  suppressionAutorisation : boolean [0..1]
+  suppressionInstallation : boolean [0..1]
+  sourceInformationInstallation : Coding [0..1]
+}
+
+Class "[[StructureDefinition-ActiviteEnseignement.html ActiviteEnseignement]]" as ActiviteEnseignement {
+  agregatDisciplineEnseignementNiv1 : Coding [0..1]
+  agregatDisciplineEnseignementNiv2 : Coding [0..1]
+  agregatDisciplineEnseignementNiv3 : Coding [0..1]
+  disciplineEnseignement : Coding [0..1]
+  modeFonctionnement : Coding [0..1]
+  dateAutorisation : date [0..1]
+  suppressionAutorisation : boolean [0..1]
+}
+
+Class "[[StructureDefinition-EquipementMaterielLourd.html EquipementMaterielLourd]]" as EquipementMaterielLourd {
+  numeroAutorisationARHGOS : Identifier [0..1]
+  equipementMaterielLourd : Coding [0..1]
+  dateDecision : date [0..1]
+  datePremiereMEO : date [0..1]
+  dateFin : date [0..1]
+  suppressionAutorisation : boolean [0..1]
+  marque : string [0..1]
+  numeroSerie : string [0..1]
+}
+
+Class "[[StructureDefinition-CapaciteActiviteExercee.html CapaciteActiviteExercee]]" as CapaciteActiviteExercee {
+  habilitationAideSociale : Coding [0..1]
+  modeFinacement : Coding [0..1]
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+ActiviteSoinAutorisee "*" -- "1" EntiteGeographique
+AutreActiviteSoumiseAutorisation "*" -- "1" EntiteGeographique
+ActiviteSoumiseReconnaissance "*" -- "1" EntiteGeographique
+ActiviteSociale "*" -- "1" EntiteGeographique
+ActiviteEnseignement "*" -- "1" EntiteGeographique
+EquipementMaterielLourd "*" -- "1" EntiteGeographique
+CapaciteActiviteExercee "*" -- "0..1" EntiteGeographique
+ActiviteSoumiseReconnaissance "0..1" -- "0..1" CapaciteActiviteExercee
+ActiviteSociale "0..1" -- "*" CapaciteActiviteExercee
+ActiviteEnseignement "0..1" -- "0..1" CapaciteActiviteExercee
+
+@enduml

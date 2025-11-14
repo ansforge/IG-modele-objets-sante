@@ -1,0 +1,42 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-PoleActivite.html PoleActivite]]" as PoleActivite {
+}
+
+Class "[[StructureDefinition-StructureInterne.html StructureInterne]]" as StructureInterne {
+}
+
+Class "[[StructureDefinition-UniteFonctionnelle.html UniteFonctionnelle]]" as UniteFonctionnelle {
+}
+
+Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne {
+  identifiantOI : Identifier [0..1]
+  nomOI : string [0..1]
+  typeOI : Coding [0..1]
+  dateOuverture : date [0..1]
+  dateFermeture : date [0..1]
+  typeFermeture : Coding [0..1]
+  datePrevisionnelleReouverture : date [0..1]
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+package "Offre opérationnelle" as Offre_opérationnelle_part {
+  Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
+}
+
+package "Agenda" as Agenda_part {
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
+}
+
+OrganisationInterne "*" -- "1..*" EntiteGeographique
+OrganisationInterne "*" -- "*" OrganisationInterne
+OrganisationInterne "0..1" -- "1..*" OffreOperationnelle
+OrganisationInterne "*" -- "*" Agenda
+OrganisationInterne "*" -- "*" RendezVous
+
+@enduml

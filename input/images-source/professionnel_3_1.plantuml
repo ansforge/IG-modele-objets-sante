@@ -1,0 +1,18 @@
+@startuml
+!theme carbon-gray
+skinparam linetype ortho
+
+
+object "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel
+
+object "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+
+object "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice
+
+object "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle
+
+Professionnel "1" --- "*" ExerciceProfessionnel
+ExerciceProfessionnel "1" --- "*" SituationExercice
+ExerciceProfessionnel "1" --- "*" SituationOperationnelle
+
+@enduml

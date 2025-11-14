@@ -1,0 +1,42 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-CarteProfessionnel.html CarteProfessionnel]]" as CarteProfessionnel {
+  typeCarte : Coding [0..1]
+  numeroCarte : string [0..1]
+  dateDebutValidite : dateTime [0..1]
+  dateFinValidite : dateTime [0..1]
+  dateOpposition : dateTime [0..1]
+}
+
+Class "[[StructureDefinition-Certificat.html Certificat]]" as Certificat {
+  numeroSerie : string [0..1]
+  dNEmetteur : string [0..1]
+  dNSujet : string [0..1]
+  dateDebutValidite : dateTime [0..1]
+  dateFinValidite : dateTime [0..1]
+  usage : string [0..1]
+  domaine : string [0..1]
+  categorieProduit : Coding [0..1]
+  typeCarte : Coding [0..1]
+  tokenId : string [0..1]
+  valeurBinaire : base64Binary [0..1]
+  statutPublication : string [0..1]
+}
+
+package "Professionnel" as Professionnel_part {
+  Class "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+  Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique
+}
+
+CarteProfessionnel "*" -- "1" ExerciceProfessionnel
+Certificat "*" -- "0..1" ExerciceProfessionnel
+CarteProfessionnel "0..1" -- "1..*" Certificat
+Certificat "*" -- "0..1" EntiteGeographique
+Certificat "0..1" -- "0..1" EntiteJuridique
+
+@enduml

@@ -1,0 +1,40 @@
+@startuml
+!theme carbon-gray
+
+object "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel 
+
+object "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel {
+  idPP : Identifier [0..1]
+  typeIdNatPP : Coding [0..1]
+  idNatPS : Identifier [0..1]
+}
+
+
+package "Dossier" as Dossier_part {
+  object "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
+}
+
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  object "[[StructureDefinition-Observation.html Observation]]" as Observation
+  object "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
+}
+
+package "Accord" as Accord_part {
+  object "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" as AutorisationExercice
+}
+
+package "Agenda" as Agenda_part {
+  object "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  object "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
+}
+
+
+Professionnel "0..1" -- "*" NoteLiaison
+Professionnel "0..1" -- "*" Observation
+Professionnel "*" -- "*" PersonnePriseCharge
+Professionnel "0..1" -- "*" AutorisationExercice
+Professionnel "*" -- "*" Agenda
+Professionnel "*" -- "*" RendezVous
+Professionnel "1" -- "*" ExerciceProfessionnel
+
+@enduml

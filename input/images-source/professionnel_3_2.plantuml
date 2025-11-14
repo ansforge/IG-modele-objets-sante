@@ -1,0 +1,54 @@
+@startuml
+!theme carbon-gray
+skinparam linetype ortho
+
+
+object "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel {
+  civiliteExercice : Coding [0..1]
+  nomExercice : string [0..1]
+  prenomExercice : string [0..1]
+  profession : Coding [0..1]
+  typeProfession : Coding [0..1]
+  categorieProfessionnelle : Coding [0..1]
+  dateEffetExercice : date [0..1]
+  dateFinEffetExercice : date [0..1]
+  departementPremierReferencementAE : Coding [0..1]
+  -- inscriptionOrdre [0..1] --
+  ordre : Coding [0..1]
+  dateDebutInscription : date [0..1]
+  dateRadiation : date [0..1]
+  statutInscription : Coding [0..1]
+  conseilDepartemental : Coding [0..1]
+  -- AttributionParticuliere [0..1] --
+  attributionParticuliere : Coding [0..1]
+  dateDebutReconnaissance : date [0..1]
+  dateAbandon : date [0..1]
+  -- NiveauFormation [0..*] -- 
+  natureCycleFormation : Coding [0..1]
+  niveauFormationAcquis : Coding [0..1]
+  anneeUniversitaire : Coding [0..1]
+  dateFin : date [0..1]
+}
+
+object "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+
+object "[[StructureDefinition-SavoirFaire.html SavoirFaire]]" as SavoirFaire
+
+object "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice 
+
+object "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle
+
+package "Dispositif d'authentification" as Dispositif_d'authentification_part {
+  object "[[StructureDefinition-Certificat.html Certificat]]" as Certificat
+  object "[[StructureDefinition-CarteProfessionnel.html CarteProfessionnel]]" as CarteProfessionnel
+}
+
+Professionnel "1" --- "*" ExerciceProfessionnel
+ExerciceProfessionnel "1" -- "*" SituationExercice
+ExerciceProfessionnel "1" -- "*" SavoirFaire
+ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+ExerciceProfessionnel "0..1" -right- "*" Certificat
+ExerciceProfessionnel "1" -right- "*" CarteProfessionnel
+
+@enduml
+

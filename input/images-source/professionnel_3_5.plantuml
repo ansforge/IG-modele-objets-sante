@@ -1,0 +1,27 @@
+@startuml
+!theme carbon-gray
+
+object "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel 
+
+object "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle {
+  identifiantSituationOperationnelle : Identifier [0..1]
+  modeExerciceOffre : Coding [0..1]
+  competenceSpecifique : Coding [0..*]
+  secteurConventionnement : Coding [0..1]
+  optionContratAccesAuxSoins : boolean [0..1]
+  carteVitaleAcceptee : boolean [0..1]
+}
+
+
+
+package "Offre opérationnelle" as Offre_opérationnelle_part {
+  object "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
+}
+
+
+ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+
+SituationOperationnelle "*" -- "1" OffreOperationnelle
+
+
+@enduml

@@ -1,4 +1,5 @@
 Logical: Adresse
+Parent: $Base
 Id: Adresse
 Title: "Adresse"
 Description: "Adresse géopostale. Un emplacement auquel une personne ou une organisation peut être trouvée ou être atteinte, d'après la norme NF Z 10-011."
