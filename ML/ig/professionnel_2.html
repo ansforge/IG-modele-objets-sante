@@ -225,8 +225,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#remarques" id="markdown-toc-remarques">Remarques</a></li>
+  <li><a href="#avantages" id="markdown-toc-avantages">Avantages</a></li>
+  <li><a href="#inconvénients" id="markdown-toc-inconvénients">Inconvénients</a></li>
+</ul>
+
 </div>
 <p>Cette partie présente les différents concepts utilisés pour définir et caractériser un professionnel (Personne physique) et ses modalités d’exercice.</p>
 
@@ -245,6 +250,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </p>
 </div>
 
+<h3 id="avantages">Avantages</h3>
+<ul>
+  <li>Compromis le plus proche du MOS actuel</li>
+  <li>Complétement automatisé, pas d’action manuelle</li>
+  <li>Version plus lisible, moins lourde</li>
+</ul>
+
+<h3 id="inconvénients">Inconvénients</h3>
+<ul>
+  <li>Difficulté de mise en page en passant uniquement par le PlantUML en raison du volume du schéma (beaucoup d’éléments)</li>
+</ul>
 
 
 
@@ -286,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 14, 2025 16:26+0000">2025-11-14</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Nov 14, 2025 16:42+0000">2025-11-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

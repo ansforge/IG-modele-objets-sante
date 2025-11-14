@@ -41,3 +41,12 @@ Définition de la classe.
 
   
 
+### Avantages
+
+* Représentation allégée, plus “pédagogique”
+* Complétement automatisé, pas d’action manuelle
+
+### Inconvénients
+
+* Version la plus éloignée du MOS actuel
+
