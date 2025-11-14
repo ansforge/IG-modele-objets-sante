@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-07 | *Computable Name*:CompetencemetierVs |
+| Draft as of 2025-11-14 | *Computable Name*:CompetencemetierVs |
 
  **References** 
 
@@ -53,7 +53,7 @@ Ce jeu de valeur (ValueSet) contient 326 concepts
   "version" : "0.1.0",
   "name" : "CompetencemetierVs",
   "status" : "draft",
-  "date" : "2025-11-07T16:48:20+00:00",
+  "date" : "2025-11-14T16:26:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

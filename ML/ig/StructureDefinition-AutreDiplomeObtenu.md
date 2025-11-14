@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutreDiplomeObtenu | *Version*:0.1.0 |
-| Draft as of 2025-11-07 | *Computable Name*:AutreDiplomeObtenu |
+| Draft as of 2025-11-14 | *Computable Name*:AutreDiplomeObtenu |
 
  
 Diplôme autre qu’un diplôme d’Etat, une qualification, un diplôme d’études spécialisées, un DESC1, un DESC2, un diplôme de l’espace économique européen, un diplôme européen d’études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-AutreDiplomeObtenu.c
   "name" : "AutreDiplomeObtenu",
   "title" : "AutreDiplomeObtenu",
   "status" : "draft",
-  "date" : "2025-11-07T16:48:20+00:00",
+  "date" : "2025-11-14T16:26:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

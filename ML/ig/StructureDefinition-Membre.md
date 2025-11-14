@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Membre | *Version*:0.1.0 |
-| Draft as of 2025-11-07 | *Computable Name*:Membre |
+| Draft as of 2025-11-14 | *Computable Name*:Membre |
 
  
 Personne ou entité faisant partie d’un groupement. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Membre.csv), [Excel]
   "name" : "Membre",
   "title" : "Membre",
   "status" : "draft",
-  "date" : "2025-11-07T16:48:20+00:00",
+  "date" : "2025-11-14T16:26:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureCapacite | *Version*:0.1.0 |
-| Draft as of 2025-11-07 | *Computable Name*:MesureCapacite |
+| Draft as of 2025-11-14 | *Computable Name*:MesureCapacite |
 
  
 Les mesures d’une capacité d’accueil précisent une série d’enregistrements indiquant la quantité de lits (ou de places) dans un statut particulier (disponible,…) et dans une temporalité donnée. Le cumul des mesures de capacité donne une vision complète de la capacité d’accueil. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-MesureCapacite.csv),
   "name" : "MesureCapacite",
   "title" : "MesureCapacite",
   "status" : "draft",
-  "date" : "2025-11-07T16:48:20+00:00",
+  "date" : "2025-11-14T16:26:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
