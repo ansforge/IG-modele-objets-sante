@@ -7,8 +7,8 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 * La classe "Diplome" et ses classes spécialisées sont décrites dans la partie "Classes Communes", dans un diagramme dédié.
 * Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans leur propre partie (ou package).
 
-<div class="figure" style="width:100%; overflow-x:auto;">
-  <p style="margin: 0; padding: 0;">
+<div class="figure" style="width:100%; overflow-x:auto;"> 
+<p style="margin: 0; padding: 0;">
     {% include professionnel.svg %}
   </p>
 </div>

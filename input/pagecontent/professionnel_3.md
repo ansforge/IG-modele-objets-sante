@@ -20,7 +20,36 @@ Définition de la classe.
 
 <div class="figure" style="width:100%; overflow-x:auto;">
   <p style="margin: 0; padding: 0;">
+    {% include professionnel_3_3.svg %}
+  </p>
+</div>
+
+### Classe Exercice professionnel
+
+Définition de la classe. 
+
+<div class="figure" style="width:100%; overflow-x:auto;">
+  <p style="margin: 0; padding: 0;">
     {% include professionnel_3_2.svg %}
   </p>
 </div>
 
+### Classe Situation Exercice
+
+Définition de la classe. 
+
+<div class="figure" style="width:100%; overflow-x:auto;">
+  <p style="margin: 0; padding: 0;">
+    {% include professionnel_3_4.svg %}
+  </p>
+</div>
+
+### Classe Situation Opérationelle
+
+Définition de la classe. 
+
+<div class="figure" style="width:100%; overflow-x:auto;">
+  <p style="margin: 0; padding: 0;">
+    {% include professionnel_3_5.svg %}
+  </p>
+</div>
