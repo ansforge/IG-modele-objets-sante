@@ -12,3 +12,13 @@ Cette partie présente les différents concepts utilisés pour définir et carac
     {% include professionnel_2_1.svg %}
   </p>
 </div>
+
+
+### Avantages
+* Compromis le plus proche du MOS actuel
+* Complétement automatisé, pas d'action manuelle
+* Version plus lisible, moins lourde
+
+
+### Inconvénients
+* Difficulté de mise en page en passant uniquement par le PlantUML en raison du volume du schéma (beaucoup d'éléments)

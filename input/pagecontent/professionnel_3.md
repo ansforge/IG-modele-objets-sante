@@ -53,3 +53,12 @@ Définition de la classe.
     {% include professionnel_3_5.svg %}
   </p>
 </div>
+
+
+
+### Avantages
+* Représentation allégée, plus "pédagogique"
+* Complétement automatisé, pas d'action manuelle
+
+### Inconvénients
+* Version la plus éloignée du MOS actuel
