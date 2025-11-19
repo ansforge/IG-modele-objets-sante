@@ -38,16 +38,18 @@ Cette partie présente les différents concepts utilisés pour définir et carac
   const svg = document.getElementById('mySvg');
 
   let scale = 1;
-  const zoomStep = 0.2;
+  const zoomStep = 0.15;
   const minScale = 0.3;
   const maxScale = 5;
 
   function applyZoom() {
     svg.style.transformOrigin = "center center";
-    svg.style.transition = "transform 0.15s ease-out";
     svg.style.transform = `scale(${scale})`;
   }
 
+  /* ---------------------------
+     ZOOM PAR BOUTONS
+  --------------------------- */
   document.getElementById('zoomIn').addEventListener('click', () => {
     scale = Math.min(maxScale, scale + zoomStep);
     applyZoom();
@@ -63,10 +65,55 @@ Cette partie présente les différents concepts utilisés pour définir et carac
     applyZoom();
   });
 
-  // Fullscreen
+  /* ---------------------------
+     ZOOM À LA MOLETTE
+  --------------------------- */
+  wrap.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
+    scale = Math.min(maxScale, Math.max(minScale, scale + delta));
+    applyZoom();
+  }, { passive: false });
+
+  /* ---------------------------
+     PINCH ZOOM (mobile)
+  --------------------------- */
+  let touchDistance = null;
+
+  wrap.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      touchDistance = Math.sqrt(dx*dx + dy*dy);
+    }
+  });
+
+  wrap.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const newDist = Math.sqrt(dx*dx + dy*dy);
+
+      if (touchDistance) {
+        const diff = newDist - touchDistance;
+
+        scale += diff * 0.0025;  // sensibilité
+        scale = Math.min(maxScale, Math.max(minScale, scale));
+        applyZoom();
+      }
+
+      touchDistance = newDist;
+    }
+  }, { passive: false });
+
+  /* ---------------------------
+     FULLSCREEN
+  --------------------------- */
   document.getElementById('fsBtn').addEventListener('click', async () => {
     if (!document.fullscreenElement) {
-      try { await wrap.requestFullscreen(); } catch(e){ console.error(e); }
+      await wrap.requestFullscreen();
     } else {
       await document.exitFullscreen();
     }
