@@ -11,90 +11,72 @@ Cette partie présente les différents concepts utilisés pour définir et carac
   <p style="margin: 0; padding: 0;">
     {% include professionnel.svg %}
   </p>
-  <button id="fsBtn" class="fs-btn" aria-pressed="false" aria-label="Plein écran">⤢</button>
+  <div class="btn-group-vertical position-absolute top-0 end-0 p-2" id="svgControls">
+    <button class="btn btn-light btn-sm" id="zoomIn"><i class="bi bi-zoom-in"></i></button>
+    <button class="btn btn-light btn-sm" id="zoomOut"><i class="bi bi-zoom-out"></i></button>
+    <button class="btn btn-light btn-sm" id="zoomReset"><i class="bi bi-arrow-counterclockwise"></i></button>
+    <button class="btn btn-light btn-sm" id="fsBtn"><i class="bi bi-arrows-fullscreen"></i></button>
+  </div>
 </div>
-
 
 <!-- CSS -->
 <style>
-.svg-wrap{
-  position: relative;
-  display: inline-block;
-  max-width: 100%;
-}
-.svg-wrap p svg{
-  display: block;
-  width: 100%; /* adaptatif */
-  height: auto;
-}
-.fs-btn{
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  z-index: 10;
-  padding: 6px 8px;
-  border: 1px solid rgba(0,0,0,0.12);
-  background: rgba(255,255,255,0.9);
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-}
-.svg-fullscreen { /* style optionnel en plein écran */
+.svg-fullscreen {
   width: 100vw !important;
   height: 100vh !important;
   max-width: none !important;
+}
+#svgControls .btn {
+  opacity: 0.9;
 }
 </style>
 
 <!-- JS -->
 <script>
-(function(){
+(function() {
   const wrap = document.getElementById('svgWrap');
-  const btn = document.getElementById('fsBtn');
+  const svg = document.getElementById('mySvg');
 
-  // Demande le fullscreen sur le conteneur
-  async function enterFullscreen() {
-    if (!document.fullscreenElement) {
-      try {
-        // some browsers require calling requestFullscreen on the element itself
-        await wrap.requestFullscreen();
-        btn.setAttribute('aria-pressed', 'true');
-      } catch (err) {
-        console.error('Erreur requestFullscreen:', err);
-      }
-    } else {
-      await exitFullscreen();
-    }
+  let scale = 1;
+  const zoomStep = 0.2;
+  const minScale = 0.3;
+  const maxScale = 5;
+
+  function applyZoom() {
+    svg.style.transformOrigin = "center center";
+    svg.style.transition = "transform 0.15s ease-out";
+    svg.style.transform = `scale(${scale})`;
   }
 
-  async function exitFullscreen() {
-    try {
-      if (document.fullscreenElement) {
-        await document.exitFullscreen();
-      }
-      btn.setAttribute('aria-pressed', 'false');
-    } catch (err) {
-      console.error('Erreur exitFullscreen:', err);
-    }
-  }
-
-  // Basculer au clic
-  btn.addEventListener('click', enterFullscreen);
-
-  // Mettre à jour le bouton si l'utilisateur quitte le fullscreen via ESC
-  document.addEventListener('fullscreenchange', () => {
-    const isFs = !!document.fullscreenElement;
-    btn.setAttribute('aria-pressed', String(isFs));
-    // Optionnel : ajouter une classe pour appliquer styles spécifiques en fullscreen
-    if (isFs) wrap.classList.add('svg-fullscreen');
-    else wrap.classList.remove('svg-fullscreen');
+  document.getElementById('zoomIn').addEventListener('click', () => {
+    scale = Math.min(maxScale, scale + zoomStep);
+    applyZoom();
   });
 
-  // Fallback for vendor prefixes older browsers (rare aujourd'hui)
+  document.getElementById('zoomOut').addEventListener('click', () => {
+    scale = Math.max(minScale, scale - zoomStep);
+    applyZoom();
+  });
+
+  document.getElementById('zoomReset').addEventListener('click', () => {
+    scale = 1;
+    applyZoom();
+  });
+
+  // Fullscreen
+  document.getElementById('fsBtn').addEventListener('click', async () => {
+    if (!document.fullscreenElement) {
+      try { await wrap.requestFullscreen(); } catch(e){ console.error(e); }
+    } else {
+      await document.exitFullscreen();
+    }
+  });
+
+  document.addEventListener('fullscreenchange', () => {
+    wrap.classList.toggle('svg-fullscreen', !!document.fullscreenElement);
+  });
 })();
 </script>
-
-
 
 ### Avantages
 * ISO MOS : reprise à l'identique des schémas du MOS
