@@ -36,9 +36,19 @@
     let startX = 0;
     let startY = 0;
 
+    // Fonction pour vérifier si on est en fullscreen
+    function isFullscreen() {
+      return document.fullscreenElement === wrap;
+    }
+
     function applyTransform() {
-      svg.style.transformOrigin = "center center";
-      svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      if (isFullscreen()) {
+        svg.style.transformOrigin = "center center";
+        svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      } else {
+        // En mode normal, pas de transformation
+        svg.style.transform = '';
+      }
     }
 
     // Récupérer les boutons de contrôle pour ce wrapper spécifique
@@ -50,6 +60,7 @@
     /* ZOOM PAR BOUTONS */
     if (zoomInBtn) {
       zoomInBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
         e.preventDefault();
         e.stopPropagation();
         scale = Math.min(maxScale, scale + zoomStep);
@@ -59,6 +70,7 @@
 
     if (zoomOutBtn) {
       zoomOutBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
         e.preventDefault();
         e.stopPropagation();
         scale = Math.max(minScale, scale - zoomStep);
@@ -68,6 +80,7 @@
 
     if (zoomResetBtn) {
       zoomResetBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
         e.preventDefault();
         e.stopPropagation();
         scale = 1;
@@ -79,6 +92,7 @@
 
     /* ZOOM À LA MOLETTE */
     wrap.addEventListener('wheel', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
       e.preventDefault();
       const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
       scale = Math.min(maxScale, Math.max(minScale, scale + delta));
@@ -87,6 +101,8 @@
 
     /* PAN (déplacement à la souris) */
     wrap.addEventListener('mousedown', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+
       // Ignorer si clic sur les boutons de contrôle
       if (e.target.closest('.svg-controls')) return;
 
@@ -134,6 +150,7 @@
     let lastTouchY = 0;
 
     wrap.addEventListener('touchstart', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
       if (e.touches.length === 2) {
         const dx = e.touches[0].clientX - e.touches[1].clientX;
         const dy = e.touches[0].clientY - e.touches[1].clientY;
@@ -148,6 +165,7 @@
     });
 
     wrap.addEventListener('touchmove', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
       if (e.touches.length === 2) {
         e.preventDefault();
 
@@ -204,7 +222,16 @@
       });
     }
 
-    // Pas besoin de gérer fullscreenchange car le CSS :fullscreen gère automatiquement l'affichage
+    // Gérer fullscreenchange pour réinitialiser quand on sort du fullscreen
+    document.addEventListener('fullscreenchange', () => {
+      if (!isFullscreen()) {
+        // Sortie du fullscreen : réinitialiser le zoom/pan
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      }
+    });
   }
 })();
 </script>

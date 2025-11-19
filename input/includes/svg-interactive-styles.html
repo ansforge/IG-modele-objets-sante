@@ -66,7 +66,9 @@
 
 .svg-controls {
   z-index: 99999 !important;
-  position: relative;
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
 }
 .svg-controls .btn {
   opacity: 0.9;
@@ -79,13 +81,29 @@
   background: white;
   color: var(--body-color);
 }
+/* Cacher les boutons zoom en mode normal */
+.svg-controls .svg-zoom-in,
+.svg-controls .svg-zoom-out,
+.svg-controls .svg-zoom-reset {
+  display: none;
+}
+/* Afficher les boutons zoom en fullscreen */
+.svg-wrap:fullscreen .svg-controls .svg-zoom-in,
+.svg-wrap:fullscreen .svg-controls .svg-zoom-out,
+.svg-wrap:fullscreen .svg-controls .svg-zoom-reset,
+.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-in,
+.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-out,
+.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-reset,
+.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-in,
+.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-out,
+.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-reset {
+  display: block;
+}
 
 /* Surcharge styles Bootstrap btn-group-vertical */
 .svg-controls.btn-group-vertical .btn {
   border-radius: 0.25rem !important;
   margin-top: 2px;
-}
-.svg-controls.btn-group-vertical .btn + .btn {
 }
 /* Surcharge Bootstrap en fullscreen */
 .svg-wrap:fullscreen .svg-controls,
@@ -111,22 +129,43 @@
 }
 .svg-wrap {
   position: relative;
+  cursor: default;
+  overflow: visible !important;
+  text-align: center;
+}
+/* SVG adapté à la largeur en mode normal et fullscreen */
+.svg-wrap svg {
+  transition: transform 0.1s ease-out;
+  display: block;
+  margin: 0 auto;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+}
+.svg-wrap > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Curseur grab uniquement en fullscreen */
+.svg-wrap:fullscreen,
+.svg-wrap:-webkit-full-screen,
+.svg-wrap:-moz-full-screen {
   cursor: grab;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
-.svg-wrap.grabbing {
+.svg-wrap:fullscreen.grabbing,
+.svg-wrap:-webkit-full-screen.grabbing,
+.svg-wrap:-moz-full-screen.grabbing {
   cursor: grabbing;
 }
-.svg-wrap.grabbing * {
+.svg-wrap:fullscreen.grabbing *,
+.svg-wrap:-webkit-full-screen.grabbing *,
+.svg-wrap:-moz-full-screen.grabbing * {
   user-select: none !important;
   -webkit-user-select: none !important;
-}
-.svg-wrap svg {
-  transition: transform 0.1s ease-out;
-  display: block;
-  margin: 0 auto;
 }
 </style>
