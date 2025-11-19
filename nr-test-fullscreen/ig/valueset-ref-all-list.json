@@ -1,0 +1,433 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/DESCNonQualifiant-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DescnonqualifiantVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DESCNonQualifiant.html" : "DESCNonQualifiant"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinScolarite-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BesoinscolariteVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R323-BesoinScolarite/FHIR/TRE-R323-BesoinScolarite",
+        "https://mos.esante.gouv.fr/NOS/TRE_R321-BesoinEntretienPersonnel/FHIR/TRE-R321-BesoinEntretienPersonnel",
+        "https://mos.esante.gouv.fr/NOS/TRE_R320-BesoinCommunication/FHIR/TRE-R320-BesoinCommunication",
+        "https://mos.esante.gouv.fr/NOS/TRE_R322-BesoinMobilite/FHIR/TRE-R322-BesoinMobilite"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VieScolaire.html" : "VieScolaire"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinVieQuotidienne-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BesoinviequotidienneVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R318-BesoinAideMobilite/FHIR/TRE-R318-BesoinAideMobilite",
+        "https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-VieQuotidienne.html" : "VieQuotidienne"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/capaciteSavoirFaire-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CapacitesavoirfaireVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R43-CapaciteSavoirFaire/FHIR/TRE-R43-CapaciteSavoirFaire",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-CapaciteSavoirfaire.html" : "CapaciteSavoirfaire"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEtablissement-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CategorieetablissementVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement",
+        "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EntiteGeographique.html" : "EntiteGeographique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/code-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CodeVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+        "https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM",
+        "https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM",
+        "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DivisionTerritoriale.html" : "DivisionTerritoriale"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/competence-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CompetenceVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Competence.html" : "Competence"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceExclusive-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CompetenceexclusiveVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R40-CompetenceExclusive/FHIR/TRE-R40-CompetenceExclusive",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-CompetenceExclusive.html" : "CompetenceExclusive"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CompetencemetierVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-CompetenceMetier.html" : "CompetenceMetier"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/droitExerciceComplementaire-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DroitexercicecomplementaireVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R97-DroitExerciceCompl/FHIR/TRE-R97-DroitExerciceCompl",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DroitExerciceComplementaire.html" : "DroitExerciceComplementaire"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/familleActiviteOperationnelle-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FamilleactiviteoperationnelleVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin",
+        "https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OffreOperationnelle.html" : "OffreOperationnelle"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/fonctionQualifiee-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "FonctionqualifieeVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R45-FonctionQualifiee/FHIR/TRE-R45-FonctionQualifiee",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-FonctionQualifiee.html" : "FonctionQualifiee"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/lieuNaissance-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LieunaissanceVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+        "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/orientationParticuliere-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OrientationparticuliereVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OrientationParticuliere.html" : "OrientationParticuliere"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNaissance-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PaysnaissanceVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+        "https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PaysnationaliteVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays",
+        "https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays",
+        "https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/profession-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ProfessionVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession",
+        "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+        "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ProfessioncategoriesocioprofessionnelleVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R292-INSEECategorieSocioProfessionnelleAgrNiv1/FHIR/TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1",
+        "https://mos.esante.gouv.fr/NOS/TRE_R262-CategorieSocioProfessionnelle/FHIR/TRE-R262-CategorieSocioProfessionnelle"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionRessource-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ProfessionressourceVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+        "https://mos.esante.gouv.fr/NOS/TRE_R356-ProfessionRessource/FHIR/TRE-R356-ProfessionRessource"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OffreOperationnelle.html" : "OffreOperationnelle"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/qualificationPAC-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "QualificationpacVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-QualificationPAC.html" : "QualificationPAC"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RelationVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R216-HL7RoleCode/FHIR/TRE-R216-HL7RoleCode",
+        "https://mos.esante.gouv.fr/NOS/TRE_R217-ProtectionJuridique/FHIR/TRE-R217-ProtectionJuridique"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Contact.html" : "Contact"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RoleVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+        "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
+        "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SituationExercice.html" : "SituationExercice"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/secteurActivite-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SecteuractiviteVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+        "https://mos.esante.gouv.fr/NOS/TRE_G19-SecteurActiviteADELI/FHIR/TRE-G19-SecteurActiviteADELI"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EntiteGeographique.html" : "EntiteGeographique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SexeVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R303-HL7v3AdministrativeGender/FHIR/TRE-R303-HL7v3AdministrativeGender",
+        "https://mos.esante.gouv.fr/NOS/TRE_R267-SexeProvenanceISO/FHIR/TRE-R267-SexeProvenanceISO",
+        "https://mos.esante.gouv.fr/NOS/TRE_R249-Sexe/FHIR/TRE-R249-Sexe"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PersonnePhysique.html" : "PersonnePhysique"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/specialite-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SpecialiteVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Specialite.html" : "Specialite"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/surspecialiteTransversale-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SurspecialitetransversaleVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale",
+        "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SurspecialiteTransversale.html" : "SurspecialiteTransversale"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/typeProfession-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TypeprofessionVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction",
+        "https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ExerciceProfessionnel.html" : "ExerciceProfessionnel"
+    },
+    {
+      "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TyperoleVs",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction",
+        "https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SituationExercice.html" : "SituationExercice"
+    }
+  ]
+}

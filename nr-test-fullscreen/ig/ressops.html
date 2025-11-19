@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Ressources opérationnelles - Modèle des Objets de Santé (MOS) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.13"}
+    h3,h4,h5,h6{--heading-prefix:"3.13"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="https://esante.gouv.fr/produits-services/ci-sis"><img height="50" alt="Visit the CI-SIS website" src="assets/images/ci-sis-logo.jpeg"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="classes_communes.html">Classes communes</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Composants élémentaires
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="accompagnant.html">Accompagnant</a>
+      </li>
+      <li>
+        <a href="accord.html">Accord</a>
+      </li>
+      <li>
+        <a href="agenda.html">Agenda</a>
+      </li>
+      <li>
+        <a href="autorisation.html">Autorisation</a>
+      </li>
+      <li>
+        <a href="dispo-authent.html">Dispositif d&apos;authentification</a>
+      </li>
+      <li>
+        <a href="dispositif-medical.html">Dispositif médical</a>
+      </li>
+      <li>
+        <a href="dossier.html">Dossier</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre opérationnelle</a>
+      </li>
+      <li>
+        <a href="ppec.html">Personne prise en charge</a>
+      </li>
+      <li>
+        <a href="professionnel.html">Professionnel</a>
+      </li>
+      <li>
+        <a href="professionnel_2.html">Professionnel_2</a>
+      </li>
+      <li>
+        <a href="professionnel_3.html">Professionnel_3</a>
+      </li>
+      <li>
+        <a href="ressops.html">Ressources opérationnelles</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='composants_elementaires.html'><b>Composants élémentaires</b></a></li><li><b>Ressources opérationnelles</b></li>
+
+          <span style="float:right;">
+
+            <a href="professionnel_3.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="structure.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Ressources opérationnelles</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>La partie Ressources Opérationnelles regroupe les classes qui décrivent les moyens qui peuvent être mis en œuvre pour réaliser la prestation.</p>
+
+<div class="figure" style="width:100%; overflow-x:auto;">
+  <p style="margin: 0; padding: 0;">
+    <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="553px" preserveAspectRatio="none" style="width:962px;height:553px;" version="1.1" viewBox="0 0 962 553" width="962px" zoomAndPan="magnify"><defs><linearGradient id="g121t3w8hs7nuh0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F4F4F4" /><stop offset="100%" stop-color="#F4F4F4" /></linearGradient></defs><g><!--cluster Offre_op?rationnelle_part--><g id="cluster_Offre_op&#233;rationnelle_part"><polygon fill="#FFFFFF" points="751,178,922,178,929,217.9688,945,217.9688,945,305,751,305,751,178" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="751" x2="929" y1="217.9688" y2="217.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="145" x="765" y="201.1387">Offre op&#233;rationnelle</text></g><!--cluster Agenda_part--><g id="cluster_Agenda_part"><polygon fill="#FFFFFF" points="264,402.5,344,402.5,351,442.4688,541,442.4688,541,529.5,264,529.5,264,402.5" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="264" x2="351" y1="442.4688" y2="442.4688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="278" y="425.6387">Agenda</text></g><!--class OffreOperationnelle--><g id="elem_OffreOperationnelle"><rect codeLine="23" fill="url(#g121t3w8hs7nuh0)" height="58.8047" id="OffreOperationnelle" style="stroke:#C6C6C6;stroke-width:1.0;" width="162" x="767" y="230" /><rect fill="url(#g121t3w8hs7nuh0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="162" x="767" y="230" /><ellipse cx="781" cy="251.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M782.8281,255.6523 Q782.4219,255.8555 781.9688,255.9648 Q781.5156,256.0742 781.0313,256.0742 Q779.25,256.0742 778.3125,254.918 Q777.3906,253.7461 777.3906,251.543 Q777.3906,249.3242 778.3125,248.168 Q779.25,246.9961 781.0313,246.9961 Q781.5156,246.9961 781.9688,247.1055 Q782.4375,247.1992 782.8281,247.418 L782.8281,249.3398 Q782.3906,248.9336 781.9688,248.7461 Q781.5469,248.543 781.1094,248.543 Q780.1563,248.543 779.6719,249.3086 Q779.1875,250.0586 779.1875,251.543 Q779.1875,253.0117 779.6719,253.7617 Q780.1563,254.5117 781.1094,254.5117 Q781.5469,254.5117 781.9688,254.3242 Q782.3906,254.1367 782.8281,253.7305 L782.8281,255.6523 Z " fill="#000000" /><a href="StructureDefinition-OffreOperationnelle.html" target="_top" title="StructureDefinition-OffreOperationnelle.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-OffreOperationnelle.html" xlink:show="new" xlink:title="StructureDefinition-OffreOperationnelle.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="112" x="804" y="255.2104">OffreOperationnelle</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="768" x2="928" y1="272.8047" y2="272.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="768" x2="928" y1="280.8047" y2="280.8047" /></g><!--class Agenda--><g id="elem_Agenda"><rect codeLine="27" fill="url(#g121t3w8hs7nuh0)" height="58.8047" id="Agenda" style="stroke:#C6C6C6;stroke-width:1.0;" width="92" x="280" y="454.5" /><rect fill="url(#g121t3w8hs7nuh0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="92" x="280" y="454.5" /><ellipse cx="294" cy="475.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M295.8281,480.1523 Q295.4219,480.3555 294.9688,480.4648 Q294.5156,480.5742 294.0313,480.5742 Q292.25,480.5742 291.3125,479.418 Q290.3906,478.2461 290.3906,476.043 Q290.3906,473.8242 291.3125,472.668 Q292.25,471.4961 294.0313,471.4961 Q294.5156,471.4961 294.9688,471.6055 Q295.4375,471.6992 295.8281,471.918 L295.8281,473.8398 Q295.3906,473.4336 294.9688,473.2461 Q294.5469,473.043 294.1094,473.043 Q293.1563,473.043 292.6719,473.8086 Q292.1875,474.5586 292.1875,476.043 Q292.1875,477.5117 292.6719,478.2617 Q293.1563,479.0117 294.1094,479.0117 Q294.5469,479.0117 294.9688,478.8242 Q295.3906,478.6367 295.8281,478.2305 L295.8281,480.1523 Z " fill="#000000" /><a href="StructureDefinition-Agenda.html" target="_top" title="StructureDefinition-Agenda.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-Agenda.html" xlink:show="new" xlink:title="StructureDefinition-Agenda.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="42" x="317" y="479.7104">Agenda</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="281" x2="371" y1="497.3047" y2="497.3047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="281" x2="371" y1="505.3047" y2="505.3047" /></g><!--class RendezVous--><g id="elem_RendezVous"><rect codeLine="28" fill="url(#g121t3w8hs7nuh0)" height="58.8047" id="RendezVous" style="stroke:#C6C6C6;stroke-width:1.0;" width="118" x="407" y="454.5" /><rect fill="url(#g121t3w8hs7nuh0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="118" x="407" y="454.5" /><ellipse cx="421" cy="475.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M422.8281,480.1523 Q422.4219,480.3555 421.9688,480.4648 Q421.5156,480.5742 421.0313,480.5742 Q419.25,480.5742 418.3125,479.418 Q417.3906,478.2461 417.3906,476.043 Q417.3906,473.8242 418.3125,472.668 Q419.25,471.4961 421.0313,471.4961 Q421.5156,471.4961 421.9688,471.6055 Q422.4375,471.6992 422.8281,471.918 L422.8281,473.8398 Q422.3906,473.4336 421.9688,473.2461 Q421.5469,473.043 421.1094,473.043 Q420.1563,473.043 419.6719,473.8086 Q419.1875,474.5586 419.1875,476.043 Q419.1875,477.5117 419.6719,478.2617 Q420.1563,479.0117 421.1094,479.0117 Q421.5469,479.0117 421.9688,478.8242 Q422.3906,478.6367 422.8281,478.2305 L422.8281,480.1523 Z " fill="#000000" /><a href="StructureDefinition-RendezVous.html" target="_top" title="StructureDefinition-RendezVous.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-RendezVous.html" xlink:show="new" xlink:title="StructureDefinition-RendezVous.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="68" x="444" y="479.7104">RendezVous</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="408" x2="524" y1="497.3047" y2="497.3047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="408" x2="524" y1="505.3047" y2="505.3047" /></g><!--class LieuRealisationOffre--><g id="elem_LieuRealisationOffre"><rect codeLine="3" fill="url(#g121t3w8hs7nuh0)" height="124.4141" id="LieuRealisationOffre" style="stroke:#C6C6C6;stroke-width:1.0;" width="227" x="496.5" y="7" /><rect fill="url(#g121t3w8hs7nuh0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="227" x="496.5" y="7" /><ellipse cx="539" cy="28.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M540.8281,32.6523 Q540.4219,32.8555 539.9688,32.9648 Q539.5156,33.0742 539.0313,33.0742 Q537.25,33.0742 536.3125,31.918 Q535.3906,30.7461 535.3906,28.543 Q535.3906,26.3242 536.3125,25.168 Q537.25,23.9961 539.0313,23.9961 Q539.5156,23.9961 539.9688,24.1055 Q540.4375,24.1992 540.8281,24.418 L540.8281,26.3398 Q540.3906,25.9336 539.9688,25.7461 Q539.5469,25.543 539.1094,25.543 Q538.1563,25.543 537.6719,26.3086 Q537.1875,27.0586 537.1875,28.543 Q537.1875,30.0117 537.6719,30.7617 Q538.1563,31.5117 539.1094,31.5117 Q539.5469,31.5117 539.9688,31.3242 Q540.3906,31.1367 540.8281,30.7305 L540.8281,32.6523 Z " fill="#000000" /><a href="StructureDefinition-LieuRealisationOffre.html" target="_top" title="StructureDefinition-LieuRealisationOffre.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-LieuRealisationOffre.html" xlink:show="new" xlink:title="StructureDefinition-LieuRealisationOffre.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="114" x="568" y="32.2104">LieuRealisationOffre</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="497.5" x2="722.5" y1="49.8047" y2="49.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="195" x="512.5" y="74.0151">idExterneSynchro : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="193" x="512.5" y="106.8198">nomExterneSynchro : string [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="497.5" x2="722.5" y1="123.4141" y2="123.4141" /></g><!--class EquipementSpecifique--><g id="elem_EquipementSpecifique"><rect codeLine="8" fill="url(#g121t3w8hs7nuh0)" height="124.4141" id="EquipementSpecifique" style="stroke:#C6C6C6;stroke-width:1.0;" width="255" x="198.5" y="197.5" /><rect fill="url(#g121t3w8hs7nuh0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="255" x="198.5" y="197.5" /><ellipse cx="249" cy="218.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M250.8281,223.1523 Q250.4219,223.3555 249.9688,223.4648 Q249.5156,223.5742 249.0313,223.5742 Q247.25,223.5742 246.3125,222.418 Q245.3906,221.2461 245.3906,219.043 Q245.3906,216.8242 246.3125,215.668 Q247.25,214.4961 249.0313,214.4961 Q249.5156,214.4961 249.9688,214.6055 Q250.4375,214.6992 250.8281,214.918 L250.8281,216.8398 Q250.3906,216.4336 249.9688,216.2461 Q249.5469,216.043 249.1094,216.043 Q248.1563,216.043 247.6719,216.8086 Q247.1875,217.5586 247.1875,219.043 Q247.1875,220.5117 247.6719,221.2617 Q248.1563,222.0117 249.1094,222.0117 Q249.5469,222.0117 249.9688,221.8242 Q250.3906,221.6367 250.8281,221.2305 L250.8281,223.1523 Z " fill="#000000" /><a href="StructureDefinition-EquipementSpecifique.html" target="_top" title="StructureDefinition-EquipementSpecifique.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-EquipementSpecifique.html" xlink:show="new" xlink:title="StructureDefinition-EquipementSpecifique.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="126" x="278" y="222.7104">EquipementSpecifique</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="199.5" x2="452.5" y1="240.3047" y2="240.3047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="176" x="214.5" y="264.5151">typeEquipement : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="223" x="214.5" y="297.3198">nbEquipementEnService : integer [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="199.5" x2="452.5" y1="313.9141" y2="313.9141" /></g><!--class CapacitePriseCharge--><g id="elem_CapacitePriseCharge"><rect codeLine="13" fill="url(#g121t3w8hs7nuh0)" height="91.6094" id="CapacitePriseCharge" style="stroke:#C6C6C6;stroke-width:1.0;" width="243" x="488.5" y="213.5" /><rect fill="url(#g121t3w8hs7nuh0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="243" x="488.5" y="213.5" /><ellipse cx="536.5" cy="234.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M538.3281,239.1523 Q537.9219,239.3555 537.4688,239.4648 Q537.0156,239.5742 536.5313,239.5742 Q534.75,239.5742 533.8125,238.418 Q532.8906,237.2461 532.8906,235.043 Q532.8906,232.8242 533.8125,231.668 Q534.75,230.4961 536.5313,230.4961 Q537.0156,230.4961 537.4688,230.6055 Q537.9375,230.6992 538.3281,230.918 L538.3281,232.8398 Q537.8906,232.4336 537.4688,232.2461 Q537.0469,232.043 536.6094,232.043 Q535.6563,232.043 535.1719,232.8086 Q534.6875,233.5586 534.6875,235.043 Q534.6875,236.5117 535.1719,237.2617 Q535.6563,238.0117 536.6094,238.0117 Q537.0469,238.0117 537.4688,237.8242 Q537.8906,237.6367 538.3281,237.2305 L538.3281,239.1523 Z " fill="#000000" /><a href="StructureDefinition-CapacitePriseCharge.html" target="_top" title="StructureDefinition-CapacitePriseCharge.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-CapacitePriseCharge.html" xlink:show="new" xlink:title="StructureDefinition-CapacitePriseCharge.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="119" x="565.5" y="238.7104">CapacitePriseCharge</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="489.5" x2="730.5" y1="256.3047" y2="256.3047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="211" x="504.5" y="280.5151">affectationTemporaire : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="489.5" x2="730.5" y1="297.1094" y2="297.1094" /></g><!--class LimiteCaracteristiqueEquipement--><g id="elem_LimiteCaracteristiqueEquipement"><rect codeLine="17" fill="#ADD8E6" height="124.4141" id="LimiteCaracteristiqueEquipement" style="stroke:#C6C6C6;stroke-width:1.0;" width="238" x="7" y="422" /><ellipse cx="21" cy="443.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M22.8281,447.6523 Q22.4219,447.8555 21.9688,447.9648 Q21.5156,448.0742 21.0313,448.0742 Q19.25,448.0742 18.3125,446.918 Q17.3906,445.7461 17.3906,443.543 Q17.3906,441.3242 18.3125,440.168 Q19.25,438.9961 21.0313,438.9961 Q21.5156,438.9961 21.9688,439.1055 Q22.4375,439.1992 22.8281,439.418 L22.8281,441.3398 Q22.3906,440.9336 21.9688,440.7461 Q21.5469,440.543 21.1094,440.543 Q20.1563,440.543 19.6719,441.3086 Q19.1875,442.0586 19.1875,443.543 Q19.1875,445.0117 19.6719,445.7617 Q20.1563,446.5117 21.1094,446.5117 Q21.5469,446.5117 21.9688,446.3242 Q22.3906,446.1367 22.8281,445.7305 L22.8281,447.6523 Z " fill="#000000" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="188" x="44" y="447.2104">LimiteCaracteristiqueEquipement</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="244" y1="464.8047" y2="464.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="196" x="23" y="489.0151">typeCaracteristique : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="162" x="23" y="521.8198">valeurLimite : Quantity [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="244" y1="538.4141" y2="538.4141" /></g><!--link LieuRealisationOffre to OffreOperationnelle--><g id="link_LieuRealisationOffre_OffreOperationnelle"><path codeLine="31" d="M697.81,131.02 C715.03,143.59 732.77,156.97 749,170 C772.73,189.05 798.31,211.99 817.52,229.73 " fill="none" id="LieuRealisationOffre-OffreOperationnelle" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="673.1173" y="160.7771">1..*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="775.7066" y="209.1594">1..*</text></g><!--link LieuRealisationOffre to CapacitePriseCharge--><g id="link_LieuRealisationOffre_CapacitePriseCharge"><path codeLine="32" d="M610,131.2 C610,157.97 610,188.81 610,213.43 " fill="none" id="LieuRealisationOffre-CapacitePriseCharge" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="590.5563" y="160.4832">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="592.0906" y="192.4785">*</text></g><!--link LieuRealisationOffre to EquipementSpecifique--><g id="link_LieuRealisationOffre_EquipementSpecifique"><path codeLine="33" d="M517.79,131.2 C485.89,152.38 450.14,176.11 418.23,197.28 " fill="none" id="LieuRealisationOffre-EquipementSpecifique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="488.8371" y="160.4832">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="410.8958" y="176.839">*</text></g><!--link EquipementSpecifique to Agenda--><g id="link_EquipementSpecifique_Agenda"><path codeLine="34" d="M326,321.59 C326,364.82 326,420.82 326,454.22 " fill="none" id="EquipementSpecifique-Agenda" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="308.6594" y="350.8619">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="307.5219" y="433.6475">*</text></g><!--link EquipementSpecifique to RendezVous--><g id="link_EquipementSpecifique_RendezVous"><path codeLine="35" d="M364.44,321.59 C391.64,364.82 426.88,420.82 447.89,454.22 " fill="none" id="EquipementSpecifique-RendezVous" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="351.0635" y="350.8619">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="456.9159" y="433.6475">*</text></g><!--link EquipementSpecifique to LimiteCaracteristiqueEquipement--><g id="link_EquipementSpecifique_LimiteCaracteristiqueEquipement"><path codeLine="36" d="M271.08,321.59 C244.3,351.39 212.06,387.26 184.78,417.6 " fill="none" id="EquipementSpecifique-to-LimiteCaracteristiqueEquipement" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="#C6C6C6" points="181.14,421.66,190.1339,417.6462,184.4848,417.9435,184.1875,412.2945,181.14,421.66" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="255" y="373.6387">0..*</text></g></g></svg>
+  </p>
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="professionnel_3.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="structure.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 09:20+0000">2025-11-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/mos/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

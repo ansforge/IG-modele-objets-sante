@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "profession-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs profession-vs</b></p><a name=\"profession-vs\"> </a><a name=\"hcprofession-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G15-ProfessionSante.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20250328120000, the version found through the package references\"> version &#x1F4E6;20250328120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R95-UsagerTitre.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20241213120000, the version found through the package references\"> version &#x1F4E6;20241213120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R94-ProfessionSocial.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20241213120000, the version found through the package references\"> version &#x1F4E6;20241213120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R291-AutreProfession.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 20231215120000, the version found through the package references\"> version &#x1F4E6;20231215120000</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/profession-vs",
+  "version" : "0.1.0",
+  "name" : "ProfessionVs",
+  "status" : "draft",
+  "date" : "2025-11-19T09:20:07+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession"
+    }]
+  }
+}

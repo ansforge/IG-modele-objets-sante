@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"CapaciteAccueil","CapaciteAccueil","","","",0,*,"","","","null {[]} {[]}
+","La capacité d'accueil indique les capacités d’hébergement (en lits ou en places) et donc le nombre de personnes pouvant être accueillies en même temps.","La capacité d'accueil indique les capacités d’hébergement (en lits ou en places) et donc le nombre de personnes pouvant être accueillies en même temps.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"CapaciteAccueil.idCapaciteAccueil","CapaciteAccueil.idCapaciteAccueil","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant de la capacité d'accueil.","Identifiant de la capacité d'accueil.","","","","","","","","","",,,,,"",,,,"CapaciteAccueil.idCapaciteAccueil",0,1,"",""
+"CapaciteAccueil.MesureCapacite","CapaciteAccueil.MesureCapacite","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureCapacite {[]} {[]}
+","Lien vers la classe MesureCapacite","Lien vers la classe MesureCapacite","","","","","","","","","",,,,,"",,,,"CapaciteAccueil.MesureCapacite",1,*,"",""
+"CapaciteAccueil.EntiteGeographique","CapaciteAccueil.EntiteGeographique","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique {[]} {[]}
+","Lien vers la classe EntiteGeographique","Lien vers la classe EntiteGeographique","","","","","","","","","",,,,,"",,,,"CapaciteAccueil.EntiteGeographique",0,1,"",""

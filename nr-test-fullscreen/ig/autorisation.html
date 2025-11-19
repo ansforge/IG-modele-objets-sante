@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Autorisation - Modèle des Objets de Santé (MOS) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.4"}
+    h3,h4,h5,h6{--heading-prefix:"3.4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="https://esante.gouv.fr/produits-services/ci-sis"><img height="50" alt="Visit the CI-SIS website" src="assets/images/ci-sis-logo.jpeg"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="classes_communes.html">Classes communes</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Composants élémentaires
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="accompagnant.html">Accompagnant</a>
+      </li>
+      <li>
+        <a href="accord.html">Accord</a>
+      </li>
+      <li>
+        <a href="agenda.html">Agenda</a>
+      </li>
+      <li>
+        <a href="autorisation.html">Autorisation</a>
+      </li>
+      <li>
+        <a href="dispo-authent.html">Dispositif d&apos;authentification</a>
+      </li>
+      <li>
+        <a href="dispositif-medical.html">Dispositif médical</a>
+      </li>
+      <li>
+        <a href="dossier.html">Dossier</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre opérationnelle</a>
+      </li>
+      <li>
+        <a href="ppec.html">Personne prise en charge</a>
+      </li>
+      <li>
+        <a href="professionnel.html">Professionnel</a>
+      </li>
+      <li>
+        <a href="professionnel_2.html">Professionnel_2</a>
+      </li>
+      <li>
+        <a href="professionnel_3.html">Professionnel_3</a>
+      </li>
+      <li>
+        <a href="ressops.html">Ressources opérationnelles</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='composants_elementaires.html'><b>Composants élémentaires</b></a></li><li><b>Autorisation</b></li>
+
+          <span style="float:right;">
+
+            <a href="agenda.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="dispo-authent.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Autorisation</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<p>Description des activités sanitaires, sociales, médico-sociales et d’enseignement et des équipements matériels lourds autorisés.
+Ces données prennent leur source dans le SI agence régionale hospitalière gestion des objectifs sanitaire (ARHGOS) et sont reprises dans le du fichier national des établissements sanitaires et sociaux (FINESS).
+Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).</p>
+
+<div class="figure" style="width:100%; overflow-x:auto;">
+  <p style="margin: 0; padding: 0;">
+    <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1089px" preserveAspectRatio="none" style="width:1549px;height:1089px;" version="1.1" viewBox="0 0 1549 1089" width="1549px" zoomAndPan="magnify"><defs><linearGradient id="g1my8su89sg9700" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F4F4F4" /><stop offset="100%" stop-color="#F4F4F4" /></linearGradient></defs><g><!--cluster Structure_part--><g id="cluster_Structure_part"><polygon fill="#FFFFFF" points="645,955,738,955,745,994.9688,839,994.9688,839,1082,645,1082,645,955" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="645" x2="745" y1="994.9688" y2="994.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="67" x="659" y="978.1387">Structure</text></g><!--class EntiteGeographique--><g id="elem_EntiteGeographique"><rect codeLine="81" fill="url(#g1my8su89sg9700)" height="58.8047" id="EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" width="162" x="661" y="1007" /><rect fill="url(#g1my8su89sg9700)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="162" x="661" y="1007" /><ellipse cx="675" cy="1028.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M676.8281,1032.6523 Q676.4219,1032.8555 675.9688,1032.9648 Q675.5156,1033.0742 675.0313,1033.0742 Q673.25,1033.0742 672.3125,1031.918 Q671.3906,1030.7461 671.3906,1028.543 Q671.3906,1026.3242 672.3125,1025.168 Q673.25,1023.9961 675.0313,1023.9961 Q675.5156,1023.9961 675.9688,1024.1055 Q676.4375,1024.1992 676.8281,1024.418 L676.8281,1026.3398 Q676.3906,1025.9336 675.9688,1025.7461 Q675.5469,1025.543 675.1094,1025.543 Q674.1563,1025.543 673.6719,1026.3086 Q673.1875,1027.0586 673.1875,1028.543 Q673.1875,1030.0117 673.6719,1030.7617 Q674.1563,1031.5117 675.1094,1031.5117 Q675.5469,1031.5117 675.9688,1031.3242 Q676.3906,1031.1367 676.8281,1030.7305 L676.8281,1032.6523 Z " fill="#000000" /><a href="StructureDefinition-EntiteGeographique.html" target="_top" title="StructureDefinition-EntiteGeographique.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-EntiteGeographique.html" xlink:show="new" xlink:title="StructureDefinition-EntiteGeographique.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="112" x="698" y="1032.2104">EntiteGeographique</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="662" x2="822" y1="1049.8047" y2="1049.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="662" x2="822" y1="1057.8047" y2="1057.8047" /></g><!--class ActiviteSoinAutorisee--><g id="elem_ActiviteSoinAutorisee"><rect codeLine="3" fill="url(#g1my8su89sg9700)" height="354.0469" id="ActiviteSoinAutorisee" style="stroke:#C6C6C6;stroke-width:1.0;" width="288" x="7" y="585" /><rect fill="url(#g1my8su89sg9700)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="288" x="7" y="585" /><ellipse cx="77.5" cy="606.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M79.3281,610.6523 Q78.9219,610.8555 78.4688,610.9648 Q78.0156,611.0742 77.5313,611.0742 Q75.75,611.0742 74.8125,609.918 Q73.8906,608.7461 73.8906,606.543 Q73.8906,604.3242 74.8125,603.168 Q75.75,601.9961 77.5313,601.9961 Q78.0156,601.9961 78.4688,602.1055 Q78.9375,602.1992 79.3281,602.418 L79.3281,604.3398 Q78.8906,603.9336 78.4688,603.7461 Q78.0469,603.543 77.6094,603.543 Q76.6563,603.543 76.1719,604.3086 Q75.6875,605.0586 75.6875,606.543 Q75.6875,608.0117 76.1719,608.7617 Q76.6563,609.5117 77.6094,609.5117 Q78.0469,609.5117 78.4688,609.3242 Q78.8906,609.1367 79.3281,608.7305 L79.3281,610.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteSoinAutorisee.html" target="_top" title="StructureDefinition-ActiviteSoinAutorisee.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteSoinAutorisee.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteSoinAutorisee.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="119" x="106.5" y="610.2104">ActiviteSoinAutorisee</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="294" y1="627.8047" y2="627.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="256" x="23" y="652.0151">numeroAutorisationARHGOS : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="144" x="23" y="684.8198">dateDecision : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="125" x="23" y="717.6245">activite : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="134" x="23" y="750.4292">modalite : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="119" x="23" y="783.2339">forme : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="173" x="23" y="816.0386">datePremiereMEO : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="112" x="23" y="848.8433">dateFin : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="230" x="23" y="881.6479">suppressionAutorisation : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="232" x="23" y="914.4526">suppressionImplantation : boolean [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="294" y1="931.0469" y2="931.0469" /></g><!--class AutreActiviteSoumiseAutorisation--><g id="elem_AutreActiviteSoumiseAutorisation"><rect codeLine="15" fill="url(#g1my8su89sg9700)" height="288.4375" id="AutreActiviteSoumiseAutorisation" style="stroke:#C6C6C6;stroke-width:1.0;" width="288" x="330" y="618" /><rect fill="url(#g1my8su89sg9700)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="288" x="330" y="618" /><ellipse cx="366.5" cy="639.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M368.3281,643.6523 Q367.9219,643.8555 367.4688,643.9648 Q367.0156,644.0742 366.5313,644.0742 Q364.75,644.0742 363.8125,642.918 Q362.8906,641.7461 362.8906,639.543 Q362.8906,637.3242 363.8125,636.168 Q364.75,634.9961 366.5313,634.9961 Q367.0156,634.9961 367.4688,635.1055 Q367.9375,635.1992 368.3281,635.418 L368.3281,637.3398 Q367.8906,636.9336 367.4688,636.7461 Q367.0469,636.543 366.6094,636.543 Q365.6563,636.543 365.1719,637.3086 Q364.6875,638.0586 364.6875,639.543 Q364.6875,641.0117 365.1719,641.7617 Q365.6563,642.5117 366.6094,642.5117 Q367.0469,642.5117 367.4688,642.3242 Q367.8906,642.1367 368.3281,641.7305 L368.3281,643.6523 Z " fill="#000000" /><a href="StructureDefinition-AutreActiviteSoumiseAutorisation.html" target="_top" title="StructureDefinition-AutreActiviteSoumiseAutorisation.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-AutreActiviteSoumiseAutorisation.html" xlink:show="new" xlink:title="StructureDefinition-AutreActiviteSoumiseAutorisation.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="188" x="394.5" y="643.2104">AutreActiviteSoumiseAutorisation</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="331" x2="617" y1="660.8047" y2="660.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="256" x="346" y="685.0151">numeroAutorisationARHGOS : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="144" x="346" y="717.8198">dateDecision : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="125" x="346" y="750.6245">activite : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="134" x="346" y="783.4292">modalite : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="119" x="346" y="816.2339">forme : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="173" x="346" y="849.0386">datePremiereMEO : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="112" x="346" y="881.8433">dateFin : date [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="331" x2="617" y1="898.4375" y2="898.4375" /></g><!--class ActiviteSoumiseReconnaissance--><g id="elem_ActiviteSoumiseReconnaissance"><rect codeLine="25" fill="url(#g1my8su89sg9700)" height="354.0469" id="ActiviteSoumiseReconnaissance" style="stroke:#C6C6C6;stroke-width:1.0;" width="326" x="414" y="89" /><rect fill="url(#g1my8su89sg9700)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="326" x="414" y="89" /><ellipse cx="472" cy="110.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M473.8281,114.6523 Q473.4219,114.8555 472.9688,114.9648 Q472.5156,115.0742 472.0313,115.0742 Q470.25,115.0742 469.3125,113.918 Q468.3906,112.7461 468.3906,110.543 Q468.3906,108.3242 469.3125,107.168 Q470.25,105.9961 472.0313,105.9961 Q472.5156,105.9961 472.9688,106.1055 Q473.4375,106.1992 473.8281,106.418 L473.8281,108.3398 Q473.3906,107.9336 472.9688,107.7461 Q472.5469,107.543 472.1094,107.543 Q471.1563,107.543 470.6719,108.3086 Q470.1875,109.0586 470.1875,110.543 Q470.1875,112.0117 470.6719,112.7617 Q471.1563,113.5117 472.1094,113.5117 Q472.5469,113.5117 472.9688,113.3242 Q473.3906,113.1367 473.8281,112.7305 L473.8281,114.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteSoumiseReconnaissance.html" target="_top" title="StructureDefinition-ActiviteSoumiseReconnaissance.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteSoumiseReconnaissance.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteSoumiseReconnaissance.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="182" x="501" y="114.2104">ActiviteSoumiseReconnaissance</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="415" x2="739" y1="131.8047" y2="131.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="203" x="430" y="156.0151">numeroRCARHGOS : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="125" x="430" y="188.8198">activite : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="134" x="430" y="221.6245">modalite : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="119" x="430" y="254.4292">forme : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="215" x="430" y="287.2339">numeroContratCPOM : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="155" x="430" y="320.0386">dateEffetCPOM : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="145" x="430" y="352.8433">dateFinCPOM : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="188" x="430" y="385.6479">dateReconnaissance : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="294" x="430" y="418.4526">indicateurReconnaissanceRegionale : boolean [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="415" x2="739" y1="435.0469" y2="435.0469" /></g><!--class ActiviteSociale--><g id="elem_ActiviteSociale"><rect codeLine="37" fill="url(#g1my8su89sg9700)" height="518.0703" id="ActiviteSociale" style="stroke:#C6C6C6;stroke-width:1.0;" width="347" x="775.5" y="7" /><rect fill="url(#g1my8su89sg9700)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="347" x="775.5" y="7" /><ellipse cx="894.5" cy="28.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M896.3281,32.6523 Q895.9219,32.8555 895.4688,32.9648 Q895.0156,33.0742 894.5313,33.0742 Q892.75,33.0742 891.8125,31.918 Q890.8906,30.7461 890.8906,28.543 Q890.8906,26.3242 891.8125,25.168 Q892.75,23.9961 894.5313,23.9961 Q895.0156,23.9961 895.4688,24.1055 Q895.9375,24.1992 896.3281,24.418 L896.3281,26.3398 Q895.8906,25.9336 895.4688,25.7461 Q895.0469,25.543 894.6094,25.543 Q893.6563,25.543 893.1719,26.3086 Q892.6875,27.0586 892.6875,28.543 Q892.6875,30.0117 893.1719,30.7617 Q893.6563,31.5117 894.6094,31.5117 Q895.0469,31.5117 895.4688,31.3242 Q895.8906,31.1367 896.3281,30.7305 L896.3281,32.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteSociale.html" target="_top" title="StructureDefinition-ActiviteSociale.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteSociale.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteSociale.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="81" x="923.5" y="32.2104">ActiviteSociale</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="776.5" x2="1121.5" y1="49.8047" y2="49.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="164" x="791.5" y="74.0151">dateAutorisation : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="183" x="791.5" y="106.8198">dateMajAutorisation : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="207" x="791.5" y="139.6245">dateDerniereInstallation : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="315" x="791.5" y="172.4292">agregatDisciplineEquipementSocialeNiv1 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="315" x="791.5" y="205.2339">agregatDisciplineEquipementSocialeNiv2 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="315" x="791.5" y="238.0386">agregatDisciplineEquipementSocialeNiv3 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="246" x="791.5" y="270.8433">disciplineEquipementSociale : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="207" x="791.5" y="303.6479">modeFonctionnement : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="202" x="791.5" y="336.4526">agregatClienteleNiv2 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="202" x="791.5" y="369.2573">agregatClienteleNiv3 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="132" x="791.5" y="402.062">clientele : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="230" x="791.5" y="434.8667">suppressionAutorisation : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="224" x="791.5" y="467.6714">suppressionInstallation : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="251" x="791.5" y="500.4761">sourceInformationInstallation : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="776.5" x2="1121.5" y1="517.0703" y2="517.0703" /></g><!--class ActiviteEnseignement--><g id="elem_ActiviteEnseignement"><rect codeLine="54" fill="url(#g1my8su89sg9700)" height="288.4375" id="ActiviteEnseignement" style="stroke:#C6C6C6;stroke-width:1.0;" width="320" x="1222" y="122" /><rect fill="url(#g1my8su89sg9700)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="320" x="1222" y="122" /><ellipse cx="1307.5" cy="143.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1309.3281,147.6523 Q1308.9219,147.8555 1308.4688,147.9648 Q1308.0156,148.0742 1307.5313,148.0742 Q1305.75,148.0742 1304.8125,146.918 Q1303.8906,145.7461 1303.8906,143.543 Q1303.8906,141.3242 1304.8125,140.168 Q1305.75,138.9961 1307.5313,138.9961 Q1308.0156,138.9961 1308.4688,139.1055 Q1308.9375,139.1992 1309.3281,139.418 L1309.3281,141.3398 Q1308.8906,140.9336 1308.4688,140.7461 Q1308.0469,140.543 1307.6094,140.543 Q1306.6563,140.543 1306.1719,141.3086 Q1305.6875,142.0586 1305.6875,143.543 Q1305.6875,145.0117 1306.1719,145.7617 Q1306.6563,146.5117 1307.6094,146.5117 Q1308.0469,146.5117 1308.4688,146.3242 Q1308.8906,146.1367 1309.3281,145.7305 L1309.3281,147.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteEnseignement.html" target="_top" title="StructureDefinition-ActiviteEnseignement.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteEnseignement.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteEnseignement.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="121" x="1336.5" y="147.2104">ActiviteEnseignement</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1223" x2="1541" y1="164.8047" y2="164.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="288" x="1238" y="189.0151">agregatDisciplineEnseignementNiv1 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="288" x="1238" y="221.8198">agregatDisciplineEnseignementNiv2 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="288" x="1238" y="254.6245">agregatDisciplineEnseignementNiv3 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="219" x="1238" y="287.4292">disciplineEnseignement : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="207" x="1238" y="320.2339">modeFonctionnement : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="164" x="1238" y="353.0386">dateAutorisation : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="230" x="1238" y="385.8433">suppressionAutorisation : boolean [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1223" x2="1541" y1="402.4375" y2="402.4375" /></g><!--class EquipementMaterielLourd--><g id="elem_EquipementMaterielLourd"><rect codeLine="64" fill="url(#g1my8su89sg9700)" height="321.2422" id="EquipementMaterielLourd" style="stroke:#C6C6C6;stroke-width:1.0;" width="288" x="1074" y="601.5" /><rect fill="url(#g1my8su89sg9700)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="288" x="1074" y="601.5" /><ellipse cx="1132" cy="622.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1133.8281,627.1523 Q1133.4219,627.3555 1132.9688,627.4648 Q1132.5156,627.5742 1132.0313,627.5742 Q1130.25,627.5742 1129.3125,626.418 Q1128.3906,625.2461 1128.3906,623.043 Q1128.3906,620.8242 1129.3125,619.668 Q1130.25,618.4961 1132.0313,618.4961 Q1132.5156,618.4961 1132.9688,618.6055 Q1133.4375,618.6992 1133.8281,618.918 L1133.8281,620.8398 Q1133.3906,620.4336 1132.9688,620.2461 Q1132.5469,620.043 1132.1094,620.043 Q1131.1563,620.043 1130.6719,620.8086 Q1130.1875,621.5586 1130.1875,623.043 Q1130.1875,624.5117 1130.6719,625.2617 Q1131.1563,626.0117 1132.1094,626.0117 Q1132.5469,626.0117 1132.9688,625.8242 Q1133.3906,625.6367 1133.8281,625.2305 L1133.8281,627.1523 Z " fill="#000000" /><a href="StructureDefinition-EquipementMaterielLourd.html" target="_top" title="StructureDefinition-EquipementMaterielLourd.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-EquipementMaterielLourd.html" xlink:show="new" xlink:title="StructureDefinition-EquipementMaterielLourd.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="144" x="1161" y="626.7104">EquipementMaterielLourd</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1075" x2="1361" y1="644.3047" y2="644.3047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="256" x="1090" y="668.5151">numeroAutorisationARHGOS : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="229" x="1090" y="701.3198">equipementMaterielLourd : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="144" x="1090" y="734.1245">dateDecision : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="173" x="1090" y="766.9292">datePremiereMEO : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="112" x="1090" y="799.7339">dateFin : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="230" x="1090" y="832.5386">suppressionAutorisation : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="123" x="1090" y="865.3433">marque : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="153" x="1090" y="898.1479">numeroSerie : string [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1075" x2="1361" y1="914.7422" y2="914.7422" /></g><!--class CapaciteActiviteExercee--><g id="elem_CapaciteActiviteExercee"><rect codeLine="75" fill="url(#g1my8su89sg9700)" height="124.4141" id="CapaciteActiviteExercee" style="stroke:#C6C6C6;stroke-width:1.0;" width="244" x="795" y="700" /><rect fill="url(#g1my8su89sg9700)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="244" x="795" y="700" /><ellipse cx="836" cy="721.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M837.8281,725.6523 Q837.4219,725.8555 836.9688,725.9648 Q836.5156,726.0742 836.0313,726.0742 Q834.25,726.0742 833.3125,724.918 Q832.3906,723.7461 832.3906,721.543 Q832.3906,719.3242 833.3125,718.168 Q834.25,716.9961 836.0313,716.9961 Q836.5156,716.9961 836.9688,717.1055 Q837.4375,717.1992 837.8281,717.418 L837.8281,719.3398 Q837.3906,718.9336 836.9688,718.7461 Q836.5469,718.543 836.1094,718.543 Q835.1563,718.543 834.6719,719.3086 Q834.1875,720.0586 834.1875,721.543 Q834.1875,723.0117 834.6719,723.7617 Q835.1563,724.5117 836.1094,724.5117 Q836.5469,724.5117 836.9688,724.3242 Q837.3906,724.1367 837.8281,723.7305 L837.8281,725.6523 Z " fill="#000000" /><a href="StructureDefinition-CapaciteActiviteExercee.html" target="_top" title="StructureDefinition-CapaciteActiviteExercee.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-CapaciteActiviteExercee.html" xlink:show="new" xlink:title="StructureDefinition-CapaciteActiviteExercee.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="134" x="865" y="725.2104">CapaciteActiviteExercee</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="796" x2="1038" y1="742.8047" y2="742.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="212" x="811" y="767.0151">habilitationAideSociale : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="182" x="811" y="799.8198">modeFinacement : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="796" x2="1038" y1="816.4141" y2="816.4141" /></g><!--link ActiviteSoinAutorisee to EntiteGeographique--><g id="link_ActiviteSoinAutorisee_EntiteGeographique"><path codeLine="84" d="M295.08,928.26 C300.62,932.08 306.27,935.68 312,939 C421.88,1002.69 570.06,1024.36 660.67,1031.72 " fill="none" id="ActiviteSoinAutorisee-EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="306.0282" y="931.2935">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="635.0734" y="1018.2093">1</text></g><!--link AutreActiviteSoumiseAutorisation to EntiteGeographique--><g id="link_AutreActiviteSoumiseAutorisation_EntiteGeographique"><path codeLine="85" d="M612.85,906.32 C623.71,917.4 634.52,928.39 645,939 C667.71,961.98 693.67,987.78 713.01,1006.91 " fill="none" id="AutreActiviteSoumiseAutorisation-EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="603.3391" y="935.7646">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="686.5463" y="986.0893">1</text></g><!--link ActiviteSoumiseReconnaissance to EntiteGeographique--><g id="link_ActiviteSoumiseReconnaissance_EntiteGeographique"><path codeLine="86" d="M610.46,443.08 C637,579.01 676.15,771.52 716,939 C721.46,961.96 728.46,987.76 733.82,1006.9 " fill="none" id="ActiviteSoumiseReconnaissance-EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="595.3232" y="472.4048">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="744.9658" y="986.0773">1</text></g><!--link ActiviteSociale to EntiteGeographique--><g id="link_ActiviteSociale_EntiteGeographique"><path codeLine="87" d="M799.1,525.34 C791.03,545.15 783.85,565.16 778,585 C732.65,738.91 736.78,934.4 740.28,1006.83 " fill="none" id="ActiviteSociale-EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="778.773" y="553.8176">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="719.2834" y="986.2785">1</text></g><!--link ActiviteEnseignement to EntiteGeographique--><g id="link_ActiviteEnseignement_EntiteGeographique"><path codeLine="88" d="M1430.21,410.23 C1470.86,560.52 1504.6,794.57 1380,939 C1308.93,1021.38 978.38,1034.3 823.05,1035.74 " fill="none" id="ActiviteEnseignement-EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="1416.0255" y="439.67">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="840.9213" y="1058.2303">1</text></g><!--link EquipementMaterielLourd to EntiteGeographique--><g id="link_EquipementMaterielLourd_EntiteGeographique"><path codeLine="89" d="M1080.42,922.54 C1072.78,928.44 1064.96,933.97 1057,939 C984.96,984.53 890.07,1009.75 823.33,1022.88 " fill="none" id="EquipementMaterielLourd-EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="1057.5968" y="951.7173">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="840.9266" y="1008.6649">1</text></g><!--link CapaciteActiviteExercee to EntiteGeographique--><g id="link_CapaciteActiviteExercee_EntiteGeographique"><path codeLine="90" d="M877.73,824.15 C841.15,881.12 788.21,963.54 760.5,1006.69 " fill="none" id="CapaciteActiviteExercee-EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="856.3397" y="853.4281">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="778.2203" y="986.1118">0..1</text></g><!--link ActiviteSoumiseReconnaissance to CapaciteActiviteExercee--><g id="link_ActiviteSoumiseReconnaissance_CapaciteActiviteExercee"><path codeLine="91" d="M698.31,443.25 C760,532.89 831.04,636.11 874.99,699.96 " fill="none" id="ActiviteSoumiseReconnaissance-CapaciteActiviteExercee" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="668.1893" y="471.975">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="833.5888" y="679.0496">0..1</text></g><!--link ActiviteSociale to CapaciteActiviteExercee--><g id="link_ActiviteSociale_CapaciteActiviteExercee"><path codeLine="92" d="M932.27,525.21 C928.03,590.65 923.86,655.03 920.96,699.94 " fill="none" id="ActiviteSociale-CapaciteActiviteExercee" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="897.1202" y="554.5471">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="903.9148" y="679.0272">*</text></g><!--link ActiviteEnseignement to CapaciteActiviteExercee--><g id="link_ActiviteEnseignement_CapaciteActiviteExercee"><path codeLine="93" d="M1256.98,410.05 C1220.67,448.84 1179.99,489.8 1140,525 C1105.83,555.07 1089.92,553.56 1057,585 C1020.58,619.79 985.31,664.2 959.29,699.71 " fill="none" id="ActiviteEnseignement-CapaciteActiviteExercee" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="1215.3993" y="439.4807">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="976.3217" y="679.2614">0..1</text></g></g></svg>
+  </p>
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="agenda.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="dispo-authent.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 09:20+0000">2025-11-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/mos/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

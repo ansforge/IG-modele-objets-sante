@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"DossierPersonnePriseCharge","DossierPersonnePriseCharge","","","",0,*,"","","","null {[]} {[]}
+","Un dossier regroupe l'ensemble des informations et des documents liés à une personne.","Un dossier regroupe l'ensemble des informations et des documents liés à une personne.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"DossierPersonnePriseCharge.identifiantDossier","DossierPersonnePriseCharge.identifiantDossier","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant du dossier de la personne prise en charge.","Identifiant du dossier de la personne prise en charge.","","","","","","","","","",,,,,"",,,,"DossierPersonnePriseCharge.identifiantDossier",0,1,"",""
+"DossierPersonnePriseCharge.PersonnePriseCharge","DossierPersonnePriseCharge.PersonnePriseCharge","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge {[]} {[]}
+","Lien vers la classe PersonnePriseCharge","Lien vers la classe PersonnePriseCharge","","","","","","","","","",,,,,"",,,,"DossierPersonnePriseCharge.PersonnePriseCharge",1,1,"",""
+"DossierPersonnePriseCharge.Demande","DossierPersonnePriseCharge.Demande","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Demande {[]} {[]}
+","Lien vers la classe Demande","Lien vers la classe Demande","","","","","","","","","",,,,,"",,,,"DossierPersonnePriseCharge.Demande",0,*,"",""
+"DossierPersonnePriseCharge.Document","DossierPersonnePriseCharge.Document","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document {[]} {[]}
+","Lien vers la classe Document","Lien vers la classe Document","","","","","","","","","",,,,,"",,,,"DossierPersonnePriseCharge.Document",0,*,"",""
