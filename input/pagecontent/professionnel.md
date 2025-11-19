@@ -22,7 +22,7 @@ Cette partie présente les différents concepts utilisés pour définir et carac
   display: inline-block;
   max-width: 100%;
 }
-.svg-wrap div svg{
+.svg-wrap p svg{
   display: block;
   width: 100%; /* adaptatif */
   height: auto;
