@@ -22,106 +22,204 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 <!-- CSS -->
 <style>
 .svg-fullscreen {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
   max-width: none !important;
+  z-index: 9999 !important;
+  background: white !important;
+  margin: 0 !important;
+}
+#svgControls {
+  z-index: 10000;
 }
 #svgControls .btn {
   opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+#svgControls .btn:hover {
+  opacity: 1;
+}
+.svg-wrap {
+  position: relative;
+  cursor: grab;
+}
+.svg-wrap.grabbing {
+  cursor: grabbing;
+}
+.svg-wrap svg {
+  transition: transform 0.1s ease-out;
+  display: block;
+  margin: 0 auto;
 }
 </style>
 
 <!-- JS -->
 <script>
 (function() {
-  const wrap = document.getElementById('svgWrap');
-  const svg = document.getElementById('mySvg');
-
-  let scale = 1;
-  const zoomStep = 0.15;
-  const minScale = 0.3;
-  const maxScale = 5;
-
-  function applyZoom() {
-    svg.style.transformOrigin = "center center";
-    svg.style.transform = `scale(${scale})`;
+  // Attendre que le DOM soit complètement chargé
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 
-  /* ---------------------------
-     ZOOM PAR BOUTONS
-  --------------------------- */
-  document.getElementById('zoomIn').addEventListener('click', () => {
-    scale = Math.min(maxScale, scale + zoomStep);
-    applyZoom();
-  });
+  function init() {
+    const wrap = document.getElementById('svgWrap');
+    if (!wrap) return;
 
-  document.getElementById('zoomOut').addEventListener('click', () => {
-    scale = Math.max(minScale, scale - zoomStep);
-    applyZoom();
-  });
-
-  document.getElementById('zoomReset').addEventListener('click', () => {
-    scale = 1;
-    applyZoom();
-  });
-
-  /* ---------------------------
-     ZOOM À LA MOLETTE
-  --------------------------- */
-  wrap.addEventListener('wheel', (e) => {
-    e.preventDefault();
-    const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
-    scale = Math.min(maxScale, Math.max(minScale, scale + delta));
-    applyZoom();
-  }, { passive: false });
-
-  /* ---------------------------
-     PINCH ZOOM (mobile)
-  --------------------------- */
-  let touchDistance = null;
-
-  wrap.addEventListener('touchstart', (e) => {
-    if (e.touches.length === 2) {
-      const dx = e.touches[0].clientX - e.touches[1].clientX;
-      const dy = e.touches[0].clientY - e.touches[1].clientY;
-      touchDistance = Math.sqrt(dx*dx + dy*dy);
+    // Trouver le SVG inclus (peu importe son ID)
+    const svg = wrap.querySelector('svg');
+    if (!svg) {
+      console.warn('SVG non trouvé dans #svgWrap');
+      return;
     }
-  });
 
-  wrap.addEventListener('touchmove', (e) => {
-    if (e.touches.length === 2) {
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+    const zoomStep = 0.15;
+    const minScale = 0.3;
+    const maxScale = 5;
+
+    let isPanning = false;
+    let startX = 0;
+    let startY = 0;
+
+    function applyTransform() {
+      svg.style.transformOrigin = "center center";
+      svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    }
+
+    /* ---------------------------
+       ZOOM PAR BOUTONS
+    --------------------------- */
+    document.getElementById('zoomIn').addEventListener('click', () => {
+      scale = Math.min(maxScale, scale + zoomStep);
+      applyTransform();
+    });
+
+    document.getElementById('zoomOut').addEventListener('click', () => {
+      scale = Math.max(minScale, scale - zoomStep);
+      applyTransform();
+    });
+
+    document.getElementById('zoomReset').addEventListener('click', () => {
+      scale = 1;
+      translateX = 0;
+      translateY = 0;
+      applyTransform();
+    });
+
+    /* ---------------------------
+       ZOOM À LA MOLETTE
+    --------------------------- */
+    wrap.addEventListener('wheel', (e) => {
       e.preventDefault();
+      const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
+      scale = Math.min(maxScale, Math.max(minScale, scale + delta));
+      applyTransform();
+    }, { passive: false });
 
-      const dx = e.touches[0].clientX - e.touches[1].clientX;
-      const dy = e.touches[0].clientY - e.touches[1].clientY;
-      const newDist = Math.sqrt(dx*dx + dy*dy);
+    /* ---------------------------
+       PAN (déplacement à la souris)
+    --------------------------- */
+    wrap.addEventListener('mousedown', (e) => {
+      if (e.target.closest('#svgControls')) return;
+      isPanning = true;
+      startX = e.clientX - translateX;
+      startY = e.clientY - translateY;
+      wrap.classList.add('grabbing');
+    });
 
-      if (touchDistance) {
-        const diff = newDist - touchDistance;
+    document.addEventListener('mousemove', (e) => {
+      if (!isPanning) return;
+      translateX = e.clientX - startX;
+      translateY = e.clientY - startY;
+      applyTransform();
+    });
 
-        scale += diff * 0.0025;  // sensibilité
-        scale = Math.min(maxScale, Math.max(minScale, scale));
-        applyZoom();
+    document.addEventListener('mouseup', () => {
+      isPanning = false;
+      wrap.classList.remove('grabbing');
+    });
+
+    /* ---------------------------
+       PINCH ZOOM (mobile)
+    --------------------------- */
+    let touchDistance = null;
+    let lastTouchX = 0;
+    let lastTouchY = 0;
+
+    wrap.addEventListener('touchstart', (e) => {
+      if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDistance = Math.sqrt(dx*dx + dy*dy);
+
+        lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      } else if (e.touches.length === 1) {
+        lastTouchX = e.touches[0].clientX;
+        lastTouchY = e.touches[0].clientY;
       }
+    });
 
-      touchDistance = newDist;
-    }
-  }, { passive: false });
+    wrap.addEventListener('touchmove', (e) => {
+      if (e.touches.length === 2) {
+        e.preventDefault();
 
-  /* ---------------------------
-     FULLSCREEN
-  --------------------------- */
-  document.getElementById('fsBtn').addEventListener('click', async () => {
-    if (!document.fullscreenElement) {
-      await wrap.requestFullscreen();
-    } else {
-      await document.exitFullscreen();
-    }
-  });
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const newDist = Math.sqrt(dx*dx + dy*dy);
 
-  document.addEventListener('fullscreenchange', () => {
-    wrap.classList.toggle('svg-fullscreen', !!document.fullscreenElement);
-  });
+        if (touchDistance) {
+          const diff = newDist - touchDistance;
+          scale += diff * 0.005;
+          scale = Math.min(maxScale, Math.max(minScale, scale));
+          applyTransform();
+        }
+
+        touchDistance = newDist;
+      } else if (e.touches.length === 1 && scale > 1) {
+        e.preventDefault();
+        const touchX = e.touches[0].clientX;
+        const touchY = e.touches[0].clientY;
+
+        translateX += touchX - lastTouchX;
+        translateY += touchY - lastTouchY;
+        applyTransform();
+
+        lastTouchX = touchX;
+        lastTouchY = touchY;
+      }
+    }, { passive: false });
+
+    wrap.addEventListener('touchend', () => {
+      touchDistance = null;
+    });
+
+    /* ---------------------------
+       FULLSCREEN
+    --------------------------- */
+    document.getElementById('fsBtn').addEventListener('click', async () => {
+      try {
+        if (!document.fullscreenElement) {
+          await wrap.requestFullscreen();
+        } else {
+          await document.exitFullscreen();
+        }
+      } catch (err) {
+        console.error('Erreur fullscreen:', err);
+      }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+      wrap.classList.toggle('svg-fullscreen', !!document.fullscreenElement);
+    });
+  }
 })();
 </script>
 
