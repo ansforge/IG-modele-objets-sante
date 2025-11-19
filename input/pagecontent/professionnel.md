@@ -7,12 +7,10 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 * La classe "Diplome" et ses classes spécialisées sont décrites dans la partie "Classes Communes", dans un diagramme dédié.
 * Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans leur propre partie (ou package).
 
-<div class="svg-wrap" id="svgWrap">
-  <div class="figure" style="width:100%; overflow-x:auto;"> 
+<div class="figure svg-wrap" id="svgWrap" style="width:100%; overflow-x:auto;"> 
   <p style="margin: 0; padding: 0;">
-      {% include professionnel.svg %}
-    </p>
-  </div>
+    {% include professionnel.svg %}
+  </p>
   <button id="fsBtn" class="fs-btn" aria-pressed="false" aria-label="Plein écran">⤢</button>
 </div>
 
@@ -24,7 +22,7 @@ Cette partie présente les différents concepts utilisés pour définir et carac
   display: inline-block;
   max-width: 100%;
 }
-.svg-wrap svg{
+.svg-wrap div svg{
   display: block;
   width: 100%; /* adaptatif */
   height: auto;
