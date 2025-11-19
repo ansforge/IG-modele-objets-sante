@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-NoteLiaison.csv), [E
   "name" : "NoteLiaison",
   "title" : "NoteLiaison",
   "status" : "draft",
-  "date" : "2025-11-19T10:11:28+00:00",
+  "date" : "2025-11-19T16:18:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
