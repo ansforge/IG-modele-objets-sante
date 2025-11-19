@@ -61,7 +61,6 @@ Cette partie présente les différents concepts utilisés pour définir et carac
   transition: transform 0.1s ease-out;
   display: block;
   margin: 0 auto;
-  pointer-events: none;
 }
 </style>
 
@@ -92,7 +91,7 @@ Cette partie présente les différents concepts utilisés pour définir et carac
     const zoomStep = 0.15;
     const minScale = 0.3;
     const maxScale = 5;
-    const panSpeed = 0.6; // Facteur de vitesse pour ralentir le déplacement (1 = normal, 0.5 = 2x plus lent)
+    const panSpeed = 1; // Facteur de vitesse pour le déplacement (1 = normal)
 
     let isPanning = false;
     let startX = 0;
@@ -139,6 +138,10 @@ Cette partie présente les différents concepts utilisés pour définir et carac
     wrap.addEventListener('mousedown', (e) => {
       // Ignorer si clic sur les boutons de contrôle
       if (e.target.closest('#svgControls')) return;
+
+      // Ignorer si clic sur un lien ou élément cliquable dans le SVG
+      if (e.target.tagName === 'A' || e.target.closest('a')) return;
+      if (e.target.hasAttribute('href') || e.target.getAttribute('xlink:href')) return;
 
       // Ignorer si ce n'est pas le bouton gauche
       if (e.button !== 0) return;
