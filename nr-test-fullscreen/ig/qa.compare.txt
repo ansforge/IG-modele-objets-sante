@@ -162,7 +162,7 @@ ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
 ERROR: downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
-WARNING: /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/output/professionnel.html#/html/body/div/div/div/div/div/script at Line 272, column 2: The <script> containing the javascript '(function() {   cons'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
+WARNING: /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/output/professionnel.html#/html/body/div/div/div/div/div/script at Line 297, column 2: The <script> containing the javascript '(function() {   // A'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed)
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-ans.fr.mos.json ==
@@ -1090,8 +1090,8 @@ WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet.compose.include[1].system: N
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [f2973c05-a6f0-473e-a56e-8fc2fbe01004]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
-Information: X-Request-Id: f42dfcdf-cc20-4987-b92a-dd0383b0dd9b
+ERROR: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [b0a3c560-7d17-40ef-b6ce-ec7d49acfd91]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
+Information: X-Request-Id: dab67d63-b78b-4c4e-8459-3a32eb6c194a
 == fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs.json ==
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -1126,8 +1126,8 @@ WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet.compose.include[1].
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-ERROR: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [0c71527f-3055-4d04-aaff-9fe80fdfdd2f]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
-Information: X-Request-Id: f6a594c7-07e2-4bb6-b95f-d14d6c4a3729
+ERROR: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [18904764-f2fc-4353-b87f-0faa277bf335]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
+Information: X-Request-Id: 7e6eb0ac-684b-4350-8d5b-34b984e2881f
 == fsh-generated/resources/ValueSet-fonctionQualifiee-vs.json ==
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
