@@ -8,15 +8,15 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 * Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans leur propre partie (ou package).
 
 <div class="figure svg-wrap" id="svgWrap" style="width:100%; overflow-x:auto;"> 
+  <div class="btn-group-vertical position-absolute top-0 end-0 p-2" id="svgControls">
+    <button class="btn btn-light btn-sm" id="zoomIn" title="Zoom avant">🔍+</button>
+    <button class="btn btn-light btn-sm" id="zoomOut" title="Zoom arrière">🔍−</button>
+    <button class="btn btn-light btn-sm" id="zoomReset" title="Réinitialiser">↻</button>
+    <button class="btn btn-light btn-sm" id="fsBtn" title="Plein écran">⛶</button>
+  </div>
   <p style="margin: 0; padding: 0;">
     {% include professionnel.svg %}
   </p>
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2" id="svgControls">
-    <button class="btn btn-light btn-sm" id="zoomIn"><i class="bi bi-zoom-in"></i></button>
-    <button class="btn btn-light btn-sm" id="zoomOut"><i class="bi bi-zoom-out"></i></button>
-    <button class="btn btn-light btn-sm" id="zoomReset"><i class="bi bi-arrow-counterclockwise"></i></button>
-    <button class="btn btn-light btn-sm" id="fsBtn"><i class="bi bi-arrows-fullscreen"></i></button>
-  </div>
 </div>
 
 <!-- CSS -->
@@ -45,14 +45,23 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 .svg-wrap {
   position: relative;
   cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 .svg-wrap.grabbing {
   cursor: grabbing;
+}
+.svg-wrap.grabbing * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
 }
 .svg-wrap svg {
   transition: transform 0.1s ease-out;
   display: block;
   margin: 0 auto;
+  pointer-events: none;
 }
 </style>
 
@@ -83,6 +92,7 @@ Cette partie présente les différents concepts utilisés pour définir et carac
     const zoomStep = 0.15;
     const minScale = 0.3;
     const maxScale = 5;
+    const panSpeed = 0.6; // Facteur de vitesse pour ralentir le déplacement (1 = normal, 0.5 = 2x plus lent)
 
     let isPanning = false;
     let startX = 0;
@@ -127,23 +137,44 @@ Cette partie présente les différents concepts utilisés pour définir et carac
        PAN (déplacement à la souris)
     --------------------------- */
     wrap.addEventListener('mousedown', (e) => {
+      // Ignorer si clic sur les boutons de contrôle
       if (e.target.closest('#svgControls')) return;
+
+      // Ignorer si ce n'est pas le bouton gauche
+      if (e.button !== 0) return;
+
+      e.preventDefault();
       isPanning = true;
-      startX = e.clientX - translateX;
-      startY = e.clientY - translateY;
+      // Ajuster le point de départ en fonction du panSpeed
+      startX = e.clientX - (translateX / panSpeed);
+      startY = e.clientY - (translateY / panSpeed);
       wrap.classList.add('grabbing');
     });
 
     document.addEventListener('mousemove', (e) => {
       if (!isPanning) return;
-      translateX = e.clientX - startX;
-      translateY = e.clientY - startY;
+      e.preventDefault();
+      // Appliquer le facteur de vitesse pour ralentir le mouvement
+      const deltaX = (e.clientX - startX) * panSpeed;
+      const deltaY = (e.clientY - startY) * panSpeed;
+      translateX = deltaX;
+      translateY = deltaY;
       applyTransform();
     });
 
-    document.addEventListener('mouseup', () => {
-      isPanning = false;
-      wrap.classList.remove('grabbing');
+    document.addEventListener('mouseup', (e) => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    // Gérer le cas où la souris sort de la fenêtre pendant le drag
+    document.addEventListener('mouseleave', () => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
     });
 
     /* ---------------------------
