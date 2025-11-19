@@ -298,7 +298,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   transition: transform 0.1s ease-out;
   display: block;
   margin: 0 auto;
-  pointer-events: none;
 }
 </style>
 
@@ -329,7 +328,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     const zoomStep = 0.15;
     const minScale = 0.3;
     const maxScale = 5;
-    const panSpeed = 0.6; // Facteur de vitesse pour ralentir le déplacement (1 = normal, 0.5 = 2x plus lent)
+    const panSpeed = 1; // Facteur de vitesse pour le déplacement (1 = normal)
 
     let isPanning = false;
     let startX = 0;
@@ -376,6 +375,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     wrap.addEventListener('mousedown', (e) => {
       // Ignorer si clic sur les boutons de contrôle
       if (e.target.closest('#svgControls')) return;
+
+      // Ignorer si clic sur un lien ou élément cliquable dans le SVG
+      if (e.target.tagName === 'A' || e.target.closest('a')) return;
+      if (e.target.hasAttribute('href') || e.target.getAttribute('xlink:href')) return;
 
       // Ignorer si ce n'est pas le bouton gauche
       if (e.button !== 0) return;
@@ -544,7 +547,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 10:07+0000">2025-11-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Nov 19, 2025 10:11+0000">2025-11-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
