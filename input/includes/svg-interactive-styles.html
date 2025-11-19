@@ -1,0 +1,44 @@
+<!-- CSS pour les contrôles SVG interactifs -->
+<style>
+.svg-fullscreen {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: none !important;
+  z-index: 9999 !important;
+  background: white !important;
+  margin: 0 !important;
+}
+.svg-controls {
+  z-index: 10000;
+}
+.svg-controls .btn {
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.svg-controls .btn:hover {
+  opacity: 1;
+}
+.svg-wrap {
+  position: relative;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.svg-wrap.grabbing {
+  cursor: grabbing;
+}
+.svg-wrap.grabbing * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+.svg-wrap svg {
+  transition: transform 0.1s ease-out;
+  display: block;
+  margin: 0 auto;
+}
+</style>
