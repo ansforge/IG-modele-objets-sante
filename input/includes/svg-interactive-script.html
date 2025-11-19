@@ -186,8 +186,14 @@
       fsBtn.addEventListener('click', async (e) => {
         e.preventDefault();
         e.stopPropagation();
+        e.stopImmediatePropagation();
         try {
           if (!document.fullscreenElement) {
+            // Réinitialiser zoom/pan avant fullscreen
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            applyTransform();
             await wrap.requestFullscreen();
           } else {
             await document.exitFullscreen();
@@ -198,9 +204,7 @@
       });
     }
 
-    document.addEventListener('fullscreenchange', () => {
-      wrap.classList.toggle('svg-fullscreen', !!document.fullscreenElement);
-    });
+    // Pas besoin de gérer fullscreenchange car le CSS :fullscreen gère automatiquement l'affichage
   }
 })();
 </script>
