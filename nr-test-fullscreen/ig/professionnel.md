@@ -17,8 +17,6 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 
   
 
-⤢
-
 ### Avantages
 
 * ISO MOS : reprise à l’identique des schémas du MOS
