@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-SavoirFaire.csv), [E
   "name" : "SavoirFaire",
   "title" : "SavoirFaire",
   "status" : "draft",
-  "date" : "2025-11-25T14:31:44+00:00",
+  "date" : "2025-11-25T14:47:14+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
