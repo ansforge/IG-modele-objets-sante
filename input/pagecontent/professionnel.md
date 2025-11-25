@@ -12,13 +12,3 @@ Cette partie présente les différents concepts utilisés pour définir et carac
     {% include professionnel.svg %}
   </p>
 </div>
-
-
-### Avantages
-* ISO MOS : reprise à l'identique des schémas du MOS
-* Complétement automatisé, pas d'action manuelle
-
-
-### Inconvénients
-* Difficulté de mise en page en passant uniquement par le PlantUML en raison du volume du schéma (beaucoup d'éléments)
-* Remise en forme du schéma manuelle exclue : svg très très chronophage
