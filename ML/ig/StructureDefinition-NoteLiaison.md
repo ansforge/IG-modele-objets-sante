@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison | *Version*:0.1.0 |
-| Draft as of 2025-11-14 | *Computable Name*:NoteLiaison |
+| Draft as of 2025-11-25 | *Computable Name*:NoteLiaison |
 
  
 Les notes de liaison permet d’assurer un suivi « terrain » de la personne prise en charge et de garder en temps réel, une vue précise de la situation de cette personne prise en charge.Les notes peuvent concerner, par exemple, des symptômes observés, des résultats d’analyses, des avis et observations, etc.Les notes sont créées automatiquement ou manuellement, par des professionnels, des dispositifs médicaux, des logiciels métier, une personne tierce en contact direct ou indirect avec la personne prise en charge, ou bien par la personne prise en charge elle-même. Note : les logiciels métier et systèmes ne sont pas représentés dans le MOS. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-NoteLiaison.csv), [E
   "name" : "NoteLiaison",
   "title" : "NoteLiaison",
   "status" : "draft",
-  "date" : "2025-11-14T16:42:42+00:00",
+  "date" : "2025-11-25T14:31:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

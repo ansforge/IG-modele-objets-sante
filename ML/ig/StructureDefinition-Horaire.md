@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Horaire | *Version*:0.1.0 |
-| Draft as of 2025-11-14 | *Computable Name*:Horaire |
+| Draft as of 2025-11-25 | *Computable Name*:Horaire |
 
  
 La classe Horaire permet de définir les différentes plages d’un agenda d’une entité (jours et heures d’ouverture, période de fermeture, etc.).Synonymes (agendas partagés) : plages de disponibilités et d’indisponibilités 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Horaire.csv), [Excel
   "name" : "Horaire",
   "title" : "Horaire",
   "status" : "draft",
-  "date" : "2025-11-14T16:42:42+00:00",
+  "date" : "2025-11-25T14:31:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Observation | *Version*:0.1.0 |
-| Draft as of 2025-11-14 | *Computable Name*:Observation |
+| Draft as of 2025-11-25 | *Computable Name*:Observation |
 
  
 Une mesure ou une déclaration constitue une observation effectuée sur une personne. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Observation.csv), [E
   "name" : "Observation",
   "title" : "Observation",
   "status" : "draft",
-  "date" : "2025-11-14T16:42:42+00:00",
+  "date" : "2025-11-25T14:31:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

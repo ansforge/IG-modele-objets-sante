@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-11-14T16:42:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-11-25T14:31:44+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -60,7 +60,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.5.0" ]
+     fhir:version [ fhir:v "7.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -1358,7 +1358,7 @@
        fhir:name [ fhir:v "Agenda" ]
      ] [
        fhir:id [ fhir:v "Autorisation" ] ;
-       fhir:name [ fhir:v "Accord" ]
+       fhir:name [ fhir:v "Autorisation" ]
      ] [
        fhir:id [ fhir:v "Dispositif" ] ;
        fhir:name [ fhir:v "Dispositif d'authentification" ]
@@ -1367,7 +1367,7 @@
        fhir:name [ fhir:v "Dispositif médical" ]
      ] [
        fhir:id [ fhir:v "Dossier" ] ;
-       fhir:name [ fhir:v "Dispositif médical" ]
+       fhir:name [ fhir:v "Dossier" ]
      ] [
        fhir:id [ fhir:v "Offre" ] ;
        fhir:name [ fhir:v "Offre opérationnelle" ]

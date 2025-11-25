@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Creneau | *Version*:0.1.0 |
-| Draft as of 2025-11-14 | *Computable Name*:Creneau |
+| Draft as of 2025-11-25 | *Computable Name*:Creneau |
 
  
 Un créneau d’un agenda est un intervalle de temps, disponible ou occupé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Creneau.csv), [Excel
   "name" : "Creneau",
   "title" : "Creneau",
   "status" : "draft",
-  "date" : "2025-11-14T16:42:42+00:00",
+  "date" : "2025-11-25T14:31:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementMaterielLourd | *Version*:0.1.0 |
-| Draft as of 2025-11-14 | *Computable Name*:EquipementMaterielLourd |
+| Draft as of 2025-11-25 | *Computable Name*:EquipementMaterielLourd |
 
  
 Les équipements matériels lourds (EML) sont mis en œuvre au sein d’établissements. Ce sont des équipements mobiliers destinés à pourvoir soit au diagnostic, soit à la thérapeutique, et dont les conditions d’installation et de fonctionnement sont particulièrement onéreuses. Exemples : scanographes, caméras à scintillation, etc.Ils sont soumis à l’autorisation du Directeur Général de l’ARS et leur liste est fixée par décret en Conseil d’Etat. L’article R. 6122-2 du CSP référence ces équipements matériels lourds.L’arrêté du DG ARS mentionne le type d’EML, le numéro FINESS de l’entité juridique responsable (EJ) et le numéro FINESS de l’établissement (i.e. l’entité géographique, EG) dans lequel elle est implantée (synonyme : mise en œuvre). La modélisation actuelle prévoit que l’EG d’implantation est toujours rattaché juridiquement à l’EJ dans FINESS.Les attributs de classe sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des EML.Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :** Une autorisation est « active » à la date du jour si : ** sa date de première mise en œuvre est renseignée et inférieure ou égale à la date du jour ** sa date d’échéance est supérieure ou égale à la date du jour.** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS.Le périmètre des autorisations des équipements matériels lourds présentes dans FINESS recouvre :1- Les autorisations en attente de première mise en œuvre : la date de début (i.e. date de première mise en œuvre) n’est pas renseignée ou supérieure à la date du jour;2- Les autorisations actives: ** la date début (i.e. date de première mise en œuvre) est renseignée et inférieure ou égale à la date du jour, ** la date de fin est supérieure ou égale à la date du jour;3- Les autorisations échues, dont la date de fin est inférieure à la date du jour, et qui couvrent plusieurs cas : a- Le renouvellement est en cours d’instruction (cas le plus courant); b- Un autre événement (injonction, changement d’implantation,…) est en cours d’instruction au vu du dossier; c- L’autorisation va devenir caduque, après quoi elle ne sera plus présente dans FINESS; Dans chacun des 3 cas (a, b, c), la mise à jour dans les bases de données va avoir lieu (SI ARHGOS > SI FINESS > service de publication annuaire santé de l’ANS). En attendant la mise à jour des bases de données, il est possible de considérer les autorisations échues présentes dans FINESS comme toujours actives. Les autorisations caduques ou retirées ne sont pas présentes dans FINESS. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-EquipementMaterielLo
   "name" : "EquipementMaterielLourd",
   "title" : "EquipementMaterielLourd",
   "status" : "draft",
-  "date" : "2025-11-14T16:42:42+00:00",
+  "date" : "2025-11-25T14:31:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
