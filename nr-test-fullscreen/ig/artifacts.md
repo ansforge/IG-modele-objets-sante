@@ -32,7 +32,7 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [PlageDisponibilite](StructureDefinition-PlageDisponibilite.md) | Horaires de disponibilité pour la prise de rendez - vous de l’agenda. Par exception, cet objet permet de renseigner les périodes sur lesquelles l’agenda est indisponible à la prise de rendez - vous. |
 | [RendezVous](StructureDefinition-RendezVous.md) | Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux. |
 
-### Accord 
+### Autorisation 
 
 | | |
 | :--- | :--- |
@@ -57,7 +57,7 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | :--- | :--- |
 | [DispositifMedical](StructureDefinition-DispositifMedical.md) | L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017 définit un dispositif médical (DM) comme tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l’homme pour l’une ou plusieurs des fins médicales précises suivantes:** diagnostic, prévention, contrôle, prédiction, pronostic, traitement ou atténuation d’une maladie,** diagnostic, contrôle, traitement, atténuation d’une blessure ou d’un handicap ou compensation de ceux-ci,** investigation, remplacement ou modification d’une structure ou fonction anatomique ou d’un processus ou état physiologique ou pathologique,** communication d’informations au moyen d’un examen in vitro d’échantillons provenant du corps humain, y compris les dons d’organes, de sang et de tissus,et dont l’action principale voulue dans ou sur le corps humain n’est pas obtenue par des moyens pharmacologiques ou immunologiques ni par métabolisme, mais dont la fonction peut être assistée par de tels moyens. Les produits ci-après sont également réputés être des dispositifs médicaux :** les dispositifs destinés à la maîtrise de la conception ou à l’assistance à celle-ci,** les produits spécifiquement destinés au nettoyage, à la désinfection ou à la stérilisation des dispositifs visés à l’article 1er, paragraphe 4, et de ceux visés au premier alinéa du présent point. |
 
-### Dispositif médical 
+### Dossier 
 
 | | |
 | :--- | :--- |

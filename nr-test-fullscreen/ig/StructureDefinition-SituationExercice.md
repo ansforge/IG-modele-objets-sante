@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationExercice | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:SituationExercice |
+| Draft as of 2025-11-26 | *Computable Name*:SituationExercice |
 
  
 Caractéristiques de l’exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l’exception des remplaçants).Synonymes : Activité (RPPS). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SituationExercice.cs
   "name" : "SituationExercice",
   "title" : "SituationExercice",
   "status" : "draft",
-  "date" : "2025-11-19T16:18:55+00:00",
+  "date" : "2025-11-26T08:12:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

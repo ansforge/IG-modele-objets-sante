@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:Diplome |
+| Draft as of 2025-11-26 | *Computable Name*:Diplome |
 
  
 Un diplôme sanctionne un niveau de connaissances. L’Etat intervient, dans certains cas, sur le programme et la pédagogie de certains cursus diplômants, par exemple les diplômes d’Etat.La classe “Diplome” est une classe générale contenant les propriétés communes aux différents types de diplômes.Chaque diplôme est décrit dans le modèle comme une spécialisation de la classe Diplome et à ce titre, hérite des attributs de cette classe. Synonymes RPPS : Diplôme obtenu 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-Diplome.csv), [Excel
   "name" : "Diplome",
   "title" : "Diplome",
   "status" : "draft",
-  "date" : "2025-11-19T16:18:55+00:00",
+  "date" : "2025-11-26T08:12:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

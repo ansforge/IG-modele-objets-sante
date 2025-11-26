@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele | *Version*:0.1.0 |
-| Draft as of 2025-11-19 | *Computable Name*:Patientele |
+| Draft as of 2025-11-26 | *Computable Name*:Patientele |
 
  
 Une patientèle est un ensemble de patients présentant des caractéristiques permettant d’orienter leur prise en charge par une structure de santé. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Patientele.csv), [Ex
   "name" : "Patientele",
   "title" : "Patientele",
   "status" : "draft",
-  "date" : "2025-11-19T16:18:55+00:00",
+  "date" : "2025-11-26T08:12:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
