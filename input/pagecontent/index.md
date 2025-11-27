@@ -64,6 +64,17 @@ La cardinalité "1" d'une association ou d'un attribut signifie "1..1".
 </div>
 
 
+<!-- like "%Profil%" rajouté car induit une erreur si vide -->
+{% sql {
+    "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition'",
+    "class" : "lines",
+    "columns" : [
+        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "title" : "Description", "type" : "markdown", "source" : "Description"}
+    ]
+} %}
+
+
 ### Périmètre du projet
 
 Définir en quelques lignes en anglais quel est le périmètre du projet
