@@ -10,5 +10,10 @@ Cette partie présente le dispositif médical tel que défini dans le règlement
 
 Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).
 
+🔍+
+🔍−
+↻
+⛶
+
   
 

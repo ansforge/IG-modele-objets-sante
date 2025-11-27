@@ -15,5 +15,10 @@ L’authentification privée n’est possible que dans le cadre d’une relation
 
 Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).
 
+🔍+
+🔍−
+↻
+⛶
+
   
 

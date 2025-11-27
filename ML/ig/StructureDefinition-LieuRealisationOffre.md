@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:LieuRealisationOffre |
+| Draft as of 2025-11-27 | *Computable Name*:LieuRealisationOffre |
 
  
 Espace disposant d’un ensemble de ressources pour réaliser une offre. Lorsque les ressources qui contribuent à l’offre sont mobiles, le lieu de réalisation de l’offre correspond au lieu administratif où est organisée la prise en charge. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-LieuRealisationOffre
   "name" : "LieuRealisationOffre",
   "title" : "LieuRealisationOffre",
   "status" : "draft",
-  "date" : "2025-11-25T14:47:14+00:00",
+  "date" : "2025-11-27T15:07:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

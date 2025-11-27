@@ -18,5 +18,10 @@ L’accord peut intervenir entre plusieurs acteurs dans le cas, par exemple, de 
 
 Ref.: DSSIS_CibleIntermédiaire_20131122_v2.docx Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).
 
+🔍+
+🔍−
+↻
+⛶
+
   
 

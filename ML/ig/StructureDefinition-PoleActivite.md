@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PoleActivite | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:PoleActivite |
+| Draft as of 2025-11-27 | *Computable Name*:PoleActivite |
 
  
 Loi HPST, art.13: “Pour les établissements publics de santé, le directeur définit l’organisation de l’établissement en pôles d’activité conformément au projet médical d’établissement, après avis […]. Le directeur général de l’agence régionale de santé peut autoriser un établissement à ne pas créer de pôles d’activité quand l’effectif médical de l’établissement le justifie.Les pôles d’activité peuvent comporter des structures internes de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques ainsi que les structures médico-techniques qui leur sont associées”.Extrait de “La loi HPST à l’hôpital, les clés pour comprendre - Ministère de la Santé- ANAP”: “Les pôles d’activité clinique et médico-technique peuvent comporter des “structures internes” de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques”.Les pôles peuvent être multi-sites, c’est à dire qu’un même pôle peut comporter des structures internes situées dans différentes entités géographiques d’une même entité juridique. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PoleActivite.csv), [
   "name" : "PoleActivite",
   "title" : "PoleActivite",
   "status" : "draft",
-  "date" : "2025-11-25T14:47:14+00:00",
+  "date" : "2025-11-27T15:07:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/droitExerciceComplementaire-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:DroitexercicecomplementaireVs |
+| Draft as of 2025-11-27 | *Computable Name*:DroitexercicecomplementaireVs |
 
  **References** 
 
@@ -53,7 +53,7 @@ Ce jeu de valeur (ValueSet) contient 349 concepts
   "version" : "0.1.0",
   "name" : "DroitexercicecomplementaireVs",
   "status" : "draft",
-  "date" : "2025-11-25T14:47:14+00:00",
+  "date" : "2025-11-27T15:07:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

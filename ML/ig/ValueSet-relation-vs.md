@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:RelationVs |
+| Draft as of 2025-11-27 | *Computable Name*:RelationVs |
 
  **References** 
 
@@ -53,7 +53,7 @@ Ce jeu de valeur (ValueSet) contient 120 concepts
   "version" : "0.1.0",
   "name" : "RelationVs",
   "status" : "draft",
-  "date" : "2025-11-25T14:47:14+00:00",
+  "date" : "2025-11-27T15:07:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

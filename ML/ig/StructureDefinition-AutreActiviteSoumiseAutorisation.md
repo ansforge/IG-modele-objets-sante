@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutreActiviteSoumiseAutorisation | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:AutreActiviteSoumiseAutorisation |
+| Draft as of 2025-11-27 | *Computable Name*:AutreActiviteSoumiseAutorisation |
 
  
 On distingue plusieurs types d’activités sanitaires des établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «autres activités soumises à autorisation» (acronyme communément utilisé : AASA). Les AASA sont soumises à l’autorisation du Directeur Général de l’ARS selon des modalités et des durées différentes particulières. Elles sont au nombre de 5 (instruction n° DGOS/SR6/R3/R4/DREES/DMSI/2014/364 du 24décembre 2014) :1. Chirurgie esthétique2. Prélèvements d’organes, de tissus, de cellules3. Dépôts de sang4. Lieux de recherches de la personne humaine5. LactariumsLa nomenclature est articulée en trois niveaux systématiquement renseignés : ** Autre Activité.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe :** Les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des autres activités soumises à autorisation ; ** Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS : ** Seules les autorisations non caduques sont transmises à FINESS par ARHGOS et sont donc publiées par l’ANS. Hormis les autorisations en attente de première mise en œuvre, toutes les autorisations publiées peuvent donc être considérées comme actives. ** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-AutreActiviteSoumise
   "name" : "AutreActiviteSoumiseAutorisation",
   "title" : "AutreActiviteSoumiseAutorisation",
   "status" : "draft",
-  "date" : "2025-11-25T14:47:14+00:00",
+  "date" : "2025-11-27T15:07:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

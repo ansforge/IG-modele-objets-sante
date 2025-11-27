@@ -8,5 +8,10 @@
 
 La partie Offre Opérationnelle correspond aux prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d’une personne.
 
+🔍+
+🔍−
+↻
+⛶
+
   
 

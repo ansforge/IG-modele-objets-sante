@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle | *Version*:0.1.0 |
-| Draft as of 2025-11-25 | *Computable Name*:SituationOperationnelle |
+| Draft as of 2025-11-27 | *Computable Name*:SituationOperationnelle |
 
  
 Caractérise les conditions d’exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SituationOperationne
   "name" : "SituationOperationnelle",
   "title" : "SituationOperationnelle",
   "status" : "draft",
-  "date" : "2025-11-25T14:47:14+00:00",
+  "date" : "2025-11-27T15:07:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
