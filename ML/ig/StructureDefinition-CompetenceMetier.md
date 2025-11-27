@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CompetenceMetier.csv
   "name" : "CompetenceMetier",
   "title" : "CompetenceMetier",
   "status" : "draft",
-  "date" : "2025-11-27T15:07:49+00:00",
+  "date" : "2025-11-27T17:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
