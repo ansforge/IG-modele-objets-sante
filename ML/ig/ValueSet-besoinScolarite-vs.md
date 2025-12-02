@@ -62,7 +62,7 @@ Ce jeu de valeur (ValueSet) contient 16 concepts
   "version" : "0.1.0",
   "name" : "BesoinscolariteVs",
   "status" : "draft",
-  "date" : "2025-12-02T14:53:18+00:00",
+  "date" : "2025-12-02T15:33:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
