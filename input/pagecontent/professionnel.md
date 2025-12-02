@@ -7,6 +7,8 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 * La classe "Diplome" et ses classes spécialisées sont décrites dans la partie "Classes Communes", dans un diagramme dédié.
 * Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans leur propre partie (ou package).
 
+{% include svg-interactive-styles.html %}
+
 <div class="figure svg-wrap" style="width:100%;">
   <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
     <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>

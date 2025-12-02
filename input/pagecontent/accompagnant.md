@@ -15,3 +15,5 @@ Remarque : Les classes non déployées, c'est à dire celles dont les attributs 
     {% include Accompagnant.svg %}
   </p>
 </div>
+
+{% include svg-interactive-script.html %}

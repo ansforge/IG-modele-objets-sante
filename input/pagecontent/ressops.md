@@ -1,5 +1,7 @@
 La partie Ressources Opérationnelles regroupe les classes qui décrivent les moyens qui peuvent être mis en œuvre pour réaliser la prestation.
 
+{% include svg-interactive-styles.html %}
+
 <div class="figure svg-wrap" style="width:100%;">
   <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
     <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
