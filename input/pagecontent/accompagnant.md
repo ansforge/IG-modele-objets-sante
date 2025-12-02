@@ -2,10 +2,6 @@ Toutes les entités qui protègent, aident, accompagnent la personne.
 
 Remarque : Les classes non déployées, c'est à dire celles dont les attributs sont masqués, sont décrites dans d'autres parties (ou packages).
 
-
-
-{% include svg-interactive-styles.html %}
-
 <div class="figure svg-wrap" style="width:100%;">
   <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
     <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
@@ -17,3 +13,5 @@ Remarque : Les classes non déployées, c'est à dire celles dont les attributs 
     {% include Accompagnant.svg %}
   </p>
 </div>
+
+{% include svg-interactive-script.html %}
