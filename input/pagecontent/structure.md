@@ -9,7 +9,7 @@ Remarque : Les classes non déployées, c'est à dire celles dont les attributs 
     <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
   </div>
   <p style="margin: 0; padding: 0;">
-    {% include structure.svg %}
+    {% include Structure.svg %}
   </p>
 </div>
 
