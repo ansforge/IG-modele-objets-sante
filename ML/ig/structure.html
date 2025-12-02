@@ -225,6 +225,178 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Cette partie décrit les organismes du domaine sanitaire, médico-social et social immatriculés dans le fichier national des établissements sanitaires et sociaux (FINESS) ou dans le Système Informatique pour le Répertoire des Entreprises et de leurs Établissements (SIRENE) dédié aux entreprises, associations et organismes du secteur public.
 Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).</p>
 
+<!-- CSS pour les contrôles SVG interactifs -->
+<style>
+/* Style quand en fullscreen natif */
+.svg-wrap:fullscreen {
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-wrap:-webkit-full-screen {
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+.svg-wrap:-moz-full-screen {
+  background: white;
+  width: 100%;
+  height: 100%;
+}
+
+/* SVG centré en fullscreen */
+.svg-wrap:fullscreen > p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-wrap:-webkit-full-screen > p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.svg-wrap:-moz-full-screen > p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVG garde ses proportions en fullscreen */
+.svg-wrap:fullscreen svg {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
+.svg-wrap:-webkit-full-screen svg {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
+.svg-wrap:-moz-full-screen svg {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+.svg-controls {
+  z-index: 99999 !important;
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+}
+.svg-controls .btn {
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+  transition: none !important;
+  z-index: 99999 !important;
+  border-radius: 0.25rem !important;
+  position: relative;
+
+  background: white;
+  color: var(--body-color);
+}
+/* Cacher les boutons zoom en mode normal */
+.svg-controls .svg-zoom-in,
+.svg-controls .svg-zoom-out,
+.svg-controls .svg-zoom-reset {
+  display: none;
+}
+/* Afficher les boutons zoom en fullscreen */
+.svg-wrap:fullscreen .svg-controls .svg-zoom-in,
+.svg-wrap:fullscreen .svg-controls .svg-zoom-out,
+.svg-wrap:fullscreen .svg-controls .svg-zoom-reset,
+.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-in,
+.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-out,
+.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-reset,
+.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-in,
+.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-out,
+.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-reset {
+  display: block;
+}
+
+/* Surcharge styles Bootstrap btn-group-vertical */
+.svg-controls.btn-group-vertical .btn {
+  border-radius: 0.25rem !important;
+  margin-top: 2px;
+}
+/* Surcharge Bootstrap en fullscreen */
+.svg-wrap:fullscreen .svg-controls,
+.svg-wrap:-webkit-full-screen .svg-controls,
+.svg-wrap:-moz-full-screen .svg-controls {
+  z-index: 99999 !important;
+}
+.svg-wrap:fullscreen .svg-controls .btn,
+.svg-wrap:-webkit-full-screen .svg-controls .btn,
+.svg-wrap:-moz-full-screen .svg-controls .btn {
+  z-index: 99999 !important;
+}
+.svg-wrap:fullscreen .svg-controls .btn:hover,
+.svg-wrap:fullscreen .svg-controls .btn:focus,
+.svg-wrap:fullscreen .svg-controls .btn:active,
+.svg-wrap:-webkit-full-screen .svg-controls .btn:hover,
+.svg-wrap:-webkit-full-screen .svg-controls .btn:focus,
+.svg-wrap:-webkit-full-screen .svg-controls .btn:active,
+.svg-wrap:-moz-full-screen .svg-controls .btn:hover,
+.svg-wrap:-moz-full-screen .svg-controls .btn:focus,
+.svg-wrap:-moz-full-screen .svg-controls .btn:active {
+  z-index: 99999 !important;
+}
+.svg-wrap {
+  position: relative;
+  cursor: default;
+  overflow: visible !important;
+  text-align: center;
+}
+/* SVG adapté à la largeur en mode normal et fullscreen */
+.svg-wrap svg {
+  transition: transform 0.1s ease-out;
+  display: block;
+  margin: 0 auto;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+}
+.svg-wrap > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Curseur grab uniquement en fullscreen */
+.svg-wrap:fullscreen,
+.svg-wrap:-webkit-full-screen,
+.svg-wrap:-moz-full-screen {
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.svg-wrap:fullscreen.grabbing,
+.svg-wrap:-webkit-full-screen.grabbing,
+.svg-wrap:-moz-full-screen.grabbing {
+  cursor: grabbing;
+}
+.svg-wrap:fullscreen.grabbing *,
+.svg-wrap:-webkit-full-screen.grabbing *,
+.svg-wrap:-moz-full-screen.grabbing * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+</style>
+
 <div class="figure svg-wrap" style="width:100%;">
   <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
     <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
@@ -516,7 +688,7 @@ Remarque : Les classes non déployées, c’est à dire celles dont les attribut
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 09:57+0000">2025-12-02</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 14:07+0000">2025-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
