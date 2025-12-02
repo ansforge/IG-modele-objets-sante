@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:OffreOperationnelle |
+| Draft as of 2025-12-02 | *Computable Name*:OffreOperationnelle |
 
  
 L’Offre opérationnelle correspond aux prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d’une personne. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md), [OrganisationInterne](StructureDefinition-OrganisationInterne.md), [Patientele](StructureDefinition-Patientele.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
+* Utiliser ce Modèle logique: [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md), [OrganisationInterne](StructureDefinition-OrganisationInterne.md), [Patientele](StructureDefinition-Patientele.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/OffreOperationnelle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-OffreOperationnelle.
   "name" : "OffreOperationnelle",
   "title" : "OffreOperationnelle",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/QualificationPAC | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:QualificationPAC |
+| Draft as of 2025-12-02 | *Computable Name*:QualificationPAC |
 
  
 La qualification de praticien adjoint contractuel autorise à exercer en établissement sans être qualifié ni en médecine générale, ni en spécialité. Cela concerne des médecins à diplôme étranger dont la qualification a été reconnue avant l’instauration de l’autorisation d’exercice, et qui n’ont pas fait de démarche pour obtenir cette autorisation (environ 500 médecins concernés).Une qualification de praticien adjoint contractuel est un type de savoir-faire. La classe QualificationPAC est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/QualificationPAC)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-QualificationPAC.csv
   "name" : "QualificationPAC",
   "title" : "QualificationPAC",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

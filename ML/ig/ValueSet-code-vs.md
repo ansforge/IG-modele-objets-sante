@@ -9,17 +9,17 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/code-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:CodeVs |
+| Draft as of 2025-12-02 | *Computable Name*:CodeVs |
 
  **References** 
 
 * [DivisionTerritoriale](StructureDefinition-DivisionTerritoriale.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R13-CommuneOM.html)version Not Stated (use latest from terminology server)
+* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R13-CommuneOM.html)version Non précisé (utilise la dernière version provenant du serveur de terminologie)
 * Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R30-RegionOM.html)version 📦20240628120000
 * Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G09-DepartementOM.html)version 📦20240628120000
 * Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R20-Pays.html)version 📦20250328120000
@@ -28,7 +28,7 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
 ### Expansion
 
-Expansion from smt.esante.gouv.fr based on:
+Expansion de smt.esante.gouv.fr basée sur :
 
 * [codesystem TRE_G09_DepartementOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G09-DepartementOM.html)
 * [codesystem TRE_R13_CommuneOM v20240628120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R13-CommuneOM.html)
@@ -62,7 +62,7 @@ Ce jeu de valeurs (ValueSet) a 39,691 codes. Pour garder la publication gérable
   "version" : "0.1.0",
   "name" : "CodeVs",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

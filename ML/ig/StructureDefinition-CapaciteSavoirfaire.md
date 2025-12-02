@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteSavoirfaire | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:CapaciteSavoirfaire |
+| Draft as of 2025-12-02 | *Computable Name*:CapaciteSavoirfaire |
 
  
 La capacité, en tant que savoir-faire, représente la reconnaissance par l’ordre d’un diplôme de capacité. Elle complète les savoir-faire principaux, notamment les spécialités.Une capacité est un type de savoir-faire. La classe Capacite est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/CapaciteSavoirfaire)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CapaciteSavoirfaire.
   "name" : "CapaciteSavoirfaire",
   "title" : "CapaciteSavoirfaire",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

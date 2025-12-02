@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESC2 | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:DESC2 |
+| Draft as of 2025-12-02 | *Computable Name*:DESC2 |
 
  
 Les DESC de groupe II ou qualifiants (3 ans d’études) représentent des spécialités par eux-mêmes. Dans le cadre du modèle, un DESC de groupe II est un type de diplôme. La classe DESC2 est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DESC2)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DESC2.csv), [Excel](
   "name" : "DESC2",
   "title" : "DESC2",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

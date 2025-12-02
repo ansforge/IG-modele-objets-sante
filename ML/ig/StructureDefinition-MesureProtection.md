@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:MesureProtection |
+| Draft as of 2025-12-02 | *Computable Name*:MesureProtection |
 
  
 La maladie, le handicap, l’accident peuvent altérer les facultés d’une personne et la rendre incapable de défendre ses intérêts. Le juge peut alors décider d’une mesure de protection juridique par laquelle une autre personne l’aide à protéger ses intérêts. La protection doit être la moins contraignante possible, et en priorité être exercée par la famille. Elle distingue aussi les cas où la personne conserve encore ses facultés, mais est en grande difficulté sociale. (service-public.fr) 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [EntiteGeographique](StructureDefinition-EntiteGeographique.md) and [PersonnePhysique](StructureDefinition-PersonnePhysique.md)
+* Utiliser ce Modèle logique: [EntiteGeographique](StructureDefinition-EntiteGeographique.md) and [PersonnePhysique](StructureDefinition-PersonnePhysique.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/MesureProtection)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-MesureProtection.csv
   "name" : "MesureProtection",
   "title" : "MesureProtection",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

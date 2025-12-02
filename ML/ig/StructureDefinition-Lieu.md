@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:Lieu |
+| Draft as of 2025-12-02 | *Computable Name*:Lieu |
 
  
 Informations relatives à une portion déterminée de l’espace, fixe ou mobile du point de vue de son affectation ou de ce qui s’y passe.Cas particulier de l’entité géographique : plusieurs lieux peuvent être associés à une même EG, ils peuvent décrire, à la fois, son addresse et des lieux spécifiques à l’EG. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [Contact](StructureDefinition-Contact.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md) and [RendezVous](StructureDefinition-RendezVous.md)
+* Utiliser ce Modèle logique: [Agenda](StructureDefinition-Agenda.md), [Contact](StructureDefinition-Contact.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md) and [RendezVous](StructureDefinition-RendezVous.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Lieu)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Lieu.csv), [Excel](S
   "name" : "Lieu",
   "title" : "Lieu",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

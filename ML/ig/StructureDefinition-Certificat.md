@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:Certificat |
+| Draft as of 2025-12-02 | *Computable Name*:Certificat |
 
  
 Données descriptives du moyen d’identification par certificat. Il s’agit des certificats utilisés par les professionnels et les structures. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md) and [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
+* Utiliser ce Modèle logique: [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md) and [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Certificat)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Certificat.csv), [Ex
   "name" : "Certificat",
   "title" : "Certificat",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

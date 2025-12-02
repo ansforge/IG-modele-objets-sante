@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/orientationParticuliere-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:OrientationparticuliereVs |
+| Draft as of 2025-12-02 | *Computable Name*:OrientationparticuliereVs |
 
  **References** 
 
 * [OrientationParticuliere](StructureDefinition-OrientationParticuliere.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -25,6 +25,11 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem TRE_G13_OrientationParticuliere v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G13-OrientationParticuliere.html)
+* [codesystem TRE_R01_EnsembleSavoirFaire_CISIS v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)
 
 Ce jeu de valeur (ValueSet) contient 327 concepts
 
@@ -53,7 +58,7 @@ Ce jeu de valeur (ValueSet) contient 327 concepts
   "version" : "0.1.0",
   "name" : "OrientationparticuliereVs",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

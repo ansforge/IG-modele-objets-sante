@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:RelationVs |
+| Draft as of 2025-12-02 | *Computable Name*:RelationVs |
 
  **References** 
 
 * [Contact](StructureDefinition-Contact.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -25,6 +25,11 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem TRE_R216_HL7RoleCode v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R216-HL7RoleCode.html)
+* [codesystem TRE_R217_ProtectionJuridique v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R217-ProtectionJuridique.html)
 
 Ce jeu de valeur (ValueSet) contient 120 concepts
 
@@ -53,7 +58,7 @@ Ce jeu de valeur (ValueSet) contient 120 concepts
   "version" : "0.1.0",
   "name" : "RelationVs",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Observation | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:Observation |
+| Draft as of 2025-12-02 | *Computable Name*:Observation |
 
  
 Une mesure ou une déclaration constitue une observation effectuée sur une personne. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md), [Professionnel](StructureDefinition-Professionnel.md) and [ResultatObservation](StructureDefinition-ResultatObservation.md)
+* Utiliser ce Modèle logique: [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md), [Professionnel](StructureDefinition-Professionnel.md) and [ResultatObservation](StructureDefinition-ResultatObservation.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Observation)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Observation.csv), [E
   "name" : "Observation",
   "title" : "Observation",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

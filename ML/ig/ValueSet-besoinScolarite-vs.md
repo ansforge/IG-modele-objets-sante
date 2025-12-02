@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinScolarite-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:BesoinscolariteVs |
+| Draft as of 2025-12-02 | *Computable Name*:BesoinscolariteVs |
 
  **References** 
 
 * [VieScolaire](StructureDefinition-VieScolaire.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -27,6 +27,13 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem TRE_R320_BesoinCommunication v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R320-BesoinCommunication.html)
+* [codesystem TRE_R321_BesoinEntretienPersonnel v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R321-BesoinEntretienPersonnel.html)
+* [codesystem TRE_R322_BesoinMobilite v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R322-BesoinMobilite.html)
+* [codesystem TRE_R323_BesoinScolarite v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R323-BesoinScolarite.html)
 
 Ce jeu de valeur (ValueSet) contient 16 concepts
 
@@ -55,7 +62,7 @@ Ce jeu de valeur (ValueSet) contient 16 concepts
   "version" : "0.1.0",
   "name" : "BesoinscolariteVs",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

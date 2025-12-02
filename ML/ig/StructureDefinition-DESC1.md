@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESC1 | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:DESC1 |
+| Draft as of 2025-12-02 | *Computable Name*:DESC1 |
 
  
 Les DESC de groupe I ou non qualifiants (2 ans d’études) offrent une compétence supplémentaire ou un champ d’exercice plus large que celui ouvert par le DES, mais ne changent pas la qualification officielle de leurs titulaires auprès de l’Ordre des Médecins. Ils peuvent aussi apporter à des spécialistes des connaissances générales intéressant plusieurs spécialités (allergologie, cancérologie, etc.). Certains de ces DESC sont redondants avec des capacités de médecine, obtenues par la formation continue des médecins déjà diplômés, par exemple la capacité de médecine d’urgence. Il est cependant probable que les capacités disparaissent au profit des DESC équivalents dans un avenir proche.Dans le cadre du modèle, un DESC de groupe I est un type de diplôme. La classe DESC1 est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DESC1)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DESC1.csv), [Excel](
   "name" : "DESC1",
   "title" : "DESC1",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

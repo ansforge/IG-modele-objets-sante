@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESCNonQualifiant | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:DESCNonQualifiant |
+| Draft as of 2025-12-02 | *Computable Name*:DESCNonQualifiant |
 
  
 Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu’il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DESCNonQualifiant)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DESCNonQualifiant.cs
   "name" : "DESCNonQualifiant",
   "title" : "DESCNonQualifiant",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

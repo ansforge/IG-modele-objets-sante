@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:SituationOperationnelle |
+| Draft as of 2025-12-02 | *Computable Name*:SituationOperationnelle |
 
  
 Caractérise les conditions d’exercice du professionnel dans la mise en œuvre cadre de l’offre opérationnelle. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md) and [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md)
+* Utiliser ce Modèle logique: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md) and [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/SituationOperationnelle)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-SituationOperationne
   "name" : "SituationOperationnelle",
   "title" : "SituationOperationnelle",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

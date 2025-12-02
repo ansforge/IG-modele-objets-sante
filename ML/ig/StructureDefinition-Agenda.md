@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:Agenda |
+| Draft as of 2025-12-02 | *Computable Name*:Agenda |
 
  
 Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de créneaux, des plages de disponibilité et des rendez-vous sur une période définie. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Contact](StructureDefinition-Contact.md), [Creneau](StructureDefinition-Creneau.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md)...Show 5 more,[Lieu](StructureDefinition-Lieu.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md),[PlageDisponibilite](StructureDefinition-PlageDisponibilite.md)and[Professionnel](StructureDefinition-Professionnel.md)
+* Utiliser ce Modèle logique: [Contact](StructureDefinition-Contact.md), [Creneau](StructureDefinition-Creneau.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md)...Show 5 more,[Lieu](StructureDefinition-Lieu.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md),[PlageDisponibilite](StructureDefinition-PlageDisponibilite.md)and[Professionnel](StructureDefinition-Professionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Agenda)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Agenda.csv), [Excel]
   "name" : "Agenda",
   "title" : "Agenda",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

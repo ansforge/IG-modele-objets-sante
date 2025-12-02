@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:ExerciceProfessionnel |
+| Draft as of 2025-12-02 | *Computable Name*:ExerciceProfessionnel |
 
  
 Informations décrivant notamment la profession exercée, l’identité d’exercice d’un professionnel et le cadre de son exercice (civil, agent public, etc.).Il peut exister plusieurs exercices professionnels pour une personne à un instant donné. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [Certificat](StructureDefinition-Certificat.md), [Professionnel](StructureDefinition-Professionnel.md), [SavoirFaire](StructureDefinition-SavoirFaire.md)...Show 2 more,[SituationExercice](StructureDefinition-SituationExercice.md)and[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
+* Utiliser ce Modèle logique: [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [Certificat](StructureDefinition-Certificat.md), [Professionnel](StructureDefinition-Professionnel.md), [SavoirFaire](StructureDefinition-SavoirFaire.md)...Show 2 more,[SituationExercice](StructureDefinition-SituationExercice.md)and[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/ExerciceProfessionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
   "name" : "ExerciceProfessionnel",
   "title" : "ExerciceProfessionnel",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

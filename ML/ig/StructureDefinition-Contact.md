@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:Contact |
+| Draft as of 2025-12-02 | *Computable Name*:Contact |
 
  
 Personne ou service qui agit comme point de contact auprès d’une autre personne ou d’un autre service.Exemple: Point de contact avec une personne ou une organisation (un guichet d’accueil, une source d’information, etc.). 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [NoteLiaison](StructureDefinition-NoteLiaison.md)...Show 4 more,[OffreOperationnelle](StructureDefinition-OffreOperationnelle.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[RendezVous](StructureDefinition-RendezVous.md)
+* Utiliser ce Modèle logique: [Agenda](StructureDefinition-Agenda.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [NoteLiaison](StructureDefinition-NoteLiaison.md)...Show 4 more,[OffreOperationnelle](StructureDefinition-OffreOperationnelle.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[RendezVous](StructureDefinition-RendezVous.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Contact)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Contact.csv), [Excel
   "name" : "Contact",
   "title" : "Contact",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

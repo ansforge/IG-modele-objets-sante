@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/StructureInterne | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:StructureInterne |
+| Draft as of 2025-12-02 | *Computable Name*:StructureInterne |
 
  
 Une structure interne peut être composée d’une ou plusieurs unités médicales fonctionnelles.L’appellation des structures internes des pôles est aussi laissée à la libre appréciation des établissements : il peut s’agir de services, d’unités, de centres, d’instituts, de départements, ou de toute autre appellation. Lorsque les services demeurent, les chefs de service sont placés sous l’autorité fonctionnelle du chef de pôle (cf. “La loi HPST à l’hôpital, les clés pour comprendre” - Ministère de la Santé - ANAP).Synonyme : Service, unité, centre, institut, département, etc. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/StructureInterne)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-StructureInterne.csv
   "name" : "StructureInterne",
   "title" : "StructureInterne",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

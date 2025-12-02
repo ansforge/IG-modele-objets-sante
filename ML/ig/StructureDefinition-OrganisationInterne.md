@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:OrganisationInterne |
+| Draft as of 2025-12-02 | *Computable Name*:OrganisationInterne |
 
  
 La classe Organisation Interne est une classe abstraite qui contient les attributs inhérents et communs aux classes décrivant l’organisation opérationnelle interne d’une EG permettant de délivrer la prestation.Une organisation interne peut être composée d’autres organisations internes. Par exemple, les unités fonctionnelles peuvent être regroupées au sein de services qui peuvent être regroupés en pôles.La description de cette organisation interne de l’EG n’est pas obligatoire. Lorsqu’elle est décrite cette organisation porte les ressources opérationnelles. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md), [OrganisationInterne](StructureDefinition-OrganisationInterne.md) and [RendezVous](StructureDefinition-RendezVous.md)
+* Utiliser ce Modèle logique: [Agenda](StructureDefinition-Agenda.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md), [OrganisationInterne](StructureDefinition-OrganisationInterne.md) and [RendezVous](StructureDefinition-RendezVous.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/OrganisationInterne)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-OrganisationInterne.
   "name" : "OrganisationInterne",
   "title" : "OrganisationInterne",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

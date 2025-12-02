@@ -203,7 +203,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Structure</h2>
   
 
@@ -225,178 +225,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Cette partie décrit les organismes du domaine sanitaire, médico-social et social immatriculés dans le fichier national des établissements sanitaires et sociaux (FINESS) ou dans le Système Informatique pour le Répertoire des Entreprises et de leurs Établissements (SIRENE) dédié aux entreprises, associations et organismes du secteur public.
 Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).</p>
 
-<!-- CSS pour les contrôles SVG interactifs -->
-<style>
-/* Style quand en fullscreen natif */
-.svg-wrap:fullscreen {
-  background: white;
-  width: 100%;
-  height: 100%;
-}
-
-.svg-wrap:-webkit-full-screen {
-  background: white;
-  width: 100%;
-  height: 100%;
-}
-.svg-wrap:-moz-full-screen {
-  background: white;
-  width: 100%;
-  height: 100%;
-}
-
-/* SVG centré en fullscreen */
-.svg-wrap:fullscreen > p {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.svg-wrap:-webkit-full-screen > p {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.svg-wrap:-moz-full-screen > p {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* SVG garde ses proportions en fullscreen */
-.svg-wrap:fullscreen svg {
-  max-width: 100% !important;
-  max-height: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain;
-}
-.svg-wrap:-webkit-full-screen svg {
-  max-width: 100% !important;
-  max-height: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain;
-}
-.svg-wrap:-moz-full-screen svg {
-  max-width: 100% !important;
-  max-height: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain;
-}
-
-.svg-controls {
-  z-index: 99999 !important;
-  position: absolute !important;
-  top: 8px !important;
-  right: 8px !important;
-}
-.svg-controls .btn {
-  opacity: 0.9;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
-  transition: none !important;
-  z-index: 99999 !important;
-  border-radius: 0.25rem !important;
-  position: relative;
-
-  background: white;
-  color: var(--body-color);
-}
-/* Cacher les boutons zoom en mode normal */
-.svg-controls .svg-zoom-in,
-.svg-controls .svg-zoom-out,
-.svg-controls .svg-zoom-reset {
-  display: none;
-}
-/* Afficher les boutons zoom en fullscreen */
-.svg-wrap:fullscreen .svg-controls .svg-zoom-in,
-.svg-wrap:fullscreen .svg-controls .svg-zoom-out,
-.svg-wrap:fullscreen .svg-controls .svg-zoom-reset,
-.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-in,
-.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-out,
-.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-reset,
-.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-in,
-.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-out,
-.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-reset {
-  display: block;
-}
-
-/* Surcharge styles Bootstrap btn-group-vertical */
-.svg-controls.btn-group-vertical .btn {
-  border-radius: 0.25rem !important;
-  margin-top: 2px;
-}
-/* Surcharge Bootstrap en fullscreen */
-.svg-wrap:fullscreen .svg-controls,
-.svg-wrap:-webkit-full-screen .svg-controls,
-.svg-wrap:-moz-full-screen .svg-controls {
-  z-index: 99999 !important;
-}
-.svg-wrap:fullscreen .svg-controls .btn,
-.svg-wrap:-webkit-full-screen .svg-controls .btn,
-.svg-wrap:-moz-full-screen .svg-controls .btn {
-  z-index: 99999 !important;
-}
-.svg-wrap:fullscreen .svg-controls .btn:hover,
-.svg-wrap:fullscreen .svg-controls .btn:focus,
-.svg-wrap:fullscreen .svg-controls .btn:active,
-.svg-wrap:-webkit-full-screen .svg-controls .btn:hover,
-.svg-wrap:-webkit-full-screen .svg-controls .btn:focus,
-.svg-wrap:-webkit-full-screen .svg-controls .btn:active,
-.svg-wrap:-moz-full-screen .svg-controls .btn:hover,
-.svg-wrap:-moz-full-screen .svg-controls .btn:focus,
-.svg-wrap:-moz-full-screen .svg-controls .btn:active {
-  z-index: 99999 !important;
-}
-.svg-wrap {
-  position: relative;
-  cursor: default;
-  overflow: visible !important;
-  text-align: center;
-}
-/* SVG adapté à la largeur en mode normal et fullscreen */
-.svg-wrap svg {
-  transition: transform 0.1s ease-out;
-  display: block;
-  margin: 0 auto;
-  max-width: 100% !important;
-  width: auto !important;
-  height: auto !important;
-}
-.svg-wrap > p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* Curseur grab uniquement en fullscreen */
-.svg-wrap:fullscreen,
-.svg-wrap:-webkit-full-screen,
-.svg-wrap:-moz-full-screen {
-  cursor: grab;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-.svg-wrap:fullscreen.grabbing,
-.svg-wrap:-webkit-full-screen.grabbing,
-.svg-wrap:-moz-full-screen.grabbing {
-  cursor: grabbing;
-}
-.svg-wrap:fullscreen.grabbing *,
-.svg-wrap:-webkit-full-screen.grabbing *,
-.svg-wrap:-moz-full-screen.grabbing * {
-  user-select: none !important;
-  -webkit-user-select: none !important;
-}
-</style>
-
 <div class="figure svg-wrap" style="width:100%;">
   <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
     <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
@@ -408,6 +236,244 @@ Remarque : Les classes non déployées, c’est à dire celles dont les attribut
     <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2336px" preserveAspectRatio="none" style="width:3999px;height:2336px;" version="1.1" viewBox="0 0 3999 2336" width="3999px" zoomAndPan="magnify"><defs><linearGradient id="g1g3acjvx2tjd60" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F4F4F4" /><stop offset="100%" stop-color="#F4F4F4" /></linearGradient></defs><g><!--cluster Dispositif_m?dical_part--><g id="cluster_Dispositif_m&#233;dical_part"><polygon fill="#FFFFFF" points="3023,1402.5,3174,1402.5,3181,1442.4688,3201,1442.4688,3201,1529.5,3023,1529.5,3023,1402.5" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3023" x2="3181" y1="1442.4688" y2="1442.4688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="125" x="3037" y="1425.6387">Dispositif m&#233;dical</text></g><!--cluster Dispositif_d'authentification_part--><g id="cluster_Dispositif_d'authentification_part"><polygon fill="#FFFFFF" points="3748,2202,3972,2202,3979,2241.9688,3982,2241.9688,3982,2329,3748,2329,3748,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3748" x2="3979" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="198" x="3762" y="2225.1387">Dispositif d'authentification</text></g><!--cluster Professionnel_part--><g id="cluster_Professionnel_part"><polygon fill="#FFFFFF" points="16,2202,140,2202,147,2241.9688,196,2241.9688,196,2329,16,2329,16,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="16" x2="147" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="98" x="30" y="2225.1387">Professionnel</text></g><!--cluster Accord_part--><g id="cluster_Accord_part"><polygon fill="#FFFFFF" points="220,2202,293,2202,300,2241.9688,558,2241.9688,558,2329,220,2329,220,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="220" x2="300" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="47" x="234" y="2225.1387">Accord</text></g><!--cluster Autorisation_part--><g id="cluster_Autorisation_part"><polygon fill="#FFFFFF" points="582,2202,696,2202,703,2241.9688,2145,2241.9688,2145,2329,582,2329,582,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="582" x2="703" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="88" x="596" y="2225.1387">Autorisation</text></g><!--cluster Offre_op?rationnelle_part--><g id="cluster_Offre_op&#233;rationnelle_part"><polygon fill="#FFFFFF" points="2169,2202,2340,2202,2347,2241.9688,2363,2241.9688,2363,2329,2169,2329,2169,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2169" x2="2347" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="145" x="2183" y="2225.1387">Offre op&#233;rationnelle</text></g><!--cluster Organisation_op?rationnelle_part--><g id="cluster_Organisation_op&#233;rationnelle_part"><polygon fill="#FFFFFF" points="2387,2202,2615,2202,2622,2241.9688,2625,2241.9688,2625,2329,2387,2329,2387,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2387" x2="2622" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="202" x="2401" y="2225.1387">Organisation op&#233;rationnelle</text></g><!--cluster Personne_prise_en_charge_part--><g id="cluster_Personne_prise_en_charge_part"><polygon fill="#FFFFFF" points="2649,2202,2858,2202,2865,2241.9688,2868,2241.9688,2868,2329,2649,2329,2649,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2649" x2="2865" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="183" x="2663" y="2225.1387">Personne prise en charge</text></g><!--cluster Accompagnant_part--><g id="cluster_Accompagnant_part"><polygon fill="#FFFFFF" points="2892,2202,3022,2202,3029,2241.9688,3251,2241.9688,3251,2329,2892,2329,2892,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2892" x2="3029" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="104" x="2906" y="2225.1387">Accompagnant</text></g><!--cluster Dossier_part--><g id="cluster_Dossier_part"><polygon fill="#FFFFFF" points="3275,2202,3355,2202,3362,2241.9688,3423,2241.9688,3423,2329,3275,2329,3275,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3275" x2="3362" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="3289" y="2225.1387">Dossier</text></g><!--cluster Agenda_part--><g id="cluster_Agenda_part"><polygon fill="#FFFFFF" points="3447,2202,3527,2202,3534,2241.9688,3724,2241.9688,3724,2329,3447,2329,3447,2202" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3447" x2="3534" y1="2241.9688" y2="2241.9688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="3461" y="2225.1387">Agenda</text></g><!--class DispositifMedical--><g id="elem_DispositifMedical"><rect codeLine="71" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="DispositifMedical" style="stroke:#C6C6C6;stroke-width:1.0;" width="145" x="3039.5" y="1454.5" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="145" x="3039.5" y="1454.5" /><ellipse cx="3053.5" cy="1475.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M3055.3281,1480.1523 Q3054.9219,1480.3555 3054.4688,1480.4648 Q3054.0156,1480.5742 3053.5313,1480.5742 Q3051.75,1480.5742 3050.8125,1479.418 Q3049.8906,1478.2461 3049.8906,1476.043 Q3049.8906,1473.8242 3050.8125,1472.668 Q3051.75,1471.4961 3053.5313,1471.4961 Q3054.0156,1471.4961 3054.4688,1471.6055 Q3054.9375,1471.6992 3055.3281,1471.918 L3055.3281,1473.8398 Q3054.8906,1473.4336 3054.4688,1473.2461 Q3054.0469,1473.043 3053.6094,1473.043 Q3052.6563,1473.043 3052.1719,1473.8086 Q3051.6875,1474.5586 3051.6875,1476.043 Q3051.6875,1477.5117 3052.1719,1478.2617 Q3052.6563,1479.0117 3053.6094,1479.0117 Q3054.0469,1479.0117 3054.4688,1478.8242 Q3054.8906,1478.6367 3055.3281,1478.2305 L3055.3281,1480.1523 Z " fill="#000000" /><a href="StructureDefinition-DispositifMedical.html" target="_top" title="StructureDefinition-DispositifMedical.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-DispositifMedical.html" xlink:show="new" xlink:title="StructureDefinition-DispositifMedical.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="95" x="3076.5" y="1479.7104">DispositifMedical</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3040.5" x2="3183.5" y1="1497.3047" y2="1497.3047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3040.5" x2="3183.5" y1="1505.3047" y2="1505.3047" /></g><!--class Certificat--><g id="elem_Certificat"><rect codeLine="75" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="Certificat" style="stroke:#C6C6C6;stroke-width:1.0;" width="101" x="3764.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="101" x="3764.5" y="2254" /><ellipse cx="3778.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M3780.3281,2279.6523 Q3779.9219,2279.8555 3779.4688,2279.9648 Q3779.0156,2280.0742 3778.5313,2280.0742 Q3776.75,2280.0742 3775.8125,2278.918 Q3774.8906,2277.7461 3774.8906,2275.543 Q3774.8906,2273.3242 3775.8125,2272.168 Q3776.75,2270.9961 3778.5313,2270.9961 Q3779.0156,2270.9961 3779.4688,2271.1055 Q3779.9375,2271.1992 3780.3281,2271.418 L3780.3281,2273.3398 Q3779.8906,2272.9336 3779.4688,2272.7461 Q3779.0469,2272.543 3778.6094,2272.543 Q3777.6563,2272.543 3777.1719,2273.3086 Q3776.6875,2274.0586 3776.6875,2275.543 Q3776.6875,2277.0117 3777.1719,2277.7617 Q3777.6563,2278.5117 3778.6094,2278.5117 Q3779.0469,2278.5117 3779.4688,2278.3242 Q3779.8906,2278.1367 3780.3281,2277.7305 L3780.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-Certificat.html" target="_top" title="StructureDefinition-Certificat.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-Certificat.html" xlink:show="new" xlink:title="StructureDefinition-Certificat.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="51" x="3801.5" y="2279.2104">Certificat</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3765.5" x2="3864.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3765.5" x2="3864.5" y1="2304.8047" y2="2304.8047" /></g><!--class SituationExercice--><g id="elem_SituationExercice"><rect codeLine="79" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="SituationExercice" style="stroke:#C6C6C6;stroke-width:1.0;" width="147" x="32.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="147" x="32.5" y="2254" /><ellipse cx="46.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M48.3281,2279.6523 Q47.9219,2279.8555 47.4688,2279.9648 Q47.0156,2280.0742 46.5313,2280.0742 Q44.75,2280.0742 43.8125,2278.918 Q42.8906,2277.7461 42.8906,2275.543 Q42.8906,2273.3242 43.8125,2272.168 Q44.75,2270.9961 46.5313,2270.9961 Q47.0156,2270.9961 47.4688,2271.1055 Q47.9375,2271.1992 48.3281,2271.418 L48.3281,2273.3398 Q47.8906,2272.9336 47.4688,2272.7461 Q47.0469,2272.543 46.6094,2272.543 Q45.6563,2272.543 45.1719,2273.3086 Q44.6875,2274.0586 44.6875,2275.543 Q44.6875,2277.0117 45.1719,2277.7617 Q45.6563,2278.5117 46.6094,2278.5117 Q47.0469,2278.5117 47.4688,2278.3242 Q47.8906,2278.1367 48.3281,2277.7305 L48.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-SituationExercice.html" target="_top" title="StructureDefinition-SituationExercice.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-SituationExercice.html" xlink:show="new" xlink:title="StructureDefinition-SituationExercice.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="97" x="69.5" y="2279.2104">SituationExercice</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="33.5" x2="178.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="33.5" x2="178.5" y1="2304.8047" y2="2304.8047" /></g><!--class Convention--><g id="elem_Convention"><rect codeLine="83" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="Convention" style="stroke:#C6C6C6;stroke-width:1.0;" width="113" x="428.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="113" x="428.5" y="2254" /><ellipse cx="442.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M444.3281,2279.6523 Q443.9219,2279.8555 443.4688,2279.9648 Q443.0156,2280.0742 442.5313,2280.0742 Q440.75,2280.0742 439.8125,2278.918 Q438.8906,2277.7461 438.8906,2275.543 Q438.8906,2273.3242 439.8125,2272.168 Q440.75,2270.9961 442.5313,2270.9961 Q443.0156,2270.9961 443.4688,2271.1055 Q443.9375,2271.1992 444.3281,2271.418 L444.3281,2273.3398 Q443.8906,2272.9336 443.4688,2272.7461 Q443.0469,2272.543 442.6094,2272.543 Q441.6563,2272.543 441.1719,2273.3086 Q440.6875,2274.0586 440.6875,2275.543 Q440.6875,2277.0117 441.1719,2277.7617 Q441.6563,2278.5117 442.6094,2278.5117 Q443.0469,2278.5117 443.4688,2278.3242 Q443.8906,2278.1367 444.3281,2277.7305 L444.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-Convention.html" target="_top" title="StructureDefinition-Convention.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-Convention.html" xlink:show="new" xlink:title="StructureDefinition-Convention.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="63" x="465.5" y="2279.2104">Convention</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="429.5" x2="540.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="429.5" x2="540.5" y1="2304.8047" y2="2304.8047" /></g><!--class LicenceExploitation--><g id="elem_LicenceExploitation"><rect codeLine="84" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="LicenceExploitation" style="stroke:#C6C6C6;stroke-width:1.0;" width="157" x="236.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="157" x="236.5" y="2254" /><ellipse cx="250.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M252.3281,2279.6523 Q251.9219,2279.8555 251.4688,2279.9648 Q251.0156,2280.0742 250.5313,2280.0742 Q248.75,2280.0742 247.8125,2278.918 Q246.8906,2277.7461 246.8906,2275.543 Q246.8906,2273.3242 247.8125,2272.168 Q248.75,2270.9961 250.5313,2270.9961 Q251.0156,2270.9961 251.4688,2271.1055 Q251.9375,2271.1992 252.3281,2271.418 L252.3281,2273.3398 Q251.8906,2272.9336 251.4688,2272.7461 Q251.0469,2272.543 250.6094,2272.543 Q249.6563,2272.543 249.1719,2273.3086 Q248.6875,2274.0586 248.6875,2275.543 Q248.6875,2277.0117 249.1719,2277.7617 Q249.6563,2278.5117 250.6094,2278.5117 Q251.0469,2278.5117 251.4688,2278.3242 Q251.8906,2278.1367 252.3281,2277.7305 L252.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-LicenceExploitation.html" target="_top" title="StructureDefinition-LicenceExploitation.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-LicenceExploitation.html" xlink:show="new" xlink:title="StructureDefinition-LicenceExploitation.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="107" x="273.5" y="2279.2104">LicenceExploitation</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="237.5" x2="392.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="237.5" x2="392.5" y1="2304.8047" y2="2304.8047" /></g><!--class EquipementMaterielLourd--><g id="elem_EquipementMaterielLourd"><rect codeLine="88" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="EquipementMaterielLourd" style="stroke:#C6C6C6;stroke-width:1.0;" width="194" x="1935" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="194" x="1935" y="2254" /><ellipse cx="1949" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1950.8281,2279.6523 Q1950.4219,2279.8555 1949.9688,2279.9648 Q1949.5156,2280.0742 1949.0313,2280.0742 Q1947.25,2280.0742 1946.3125,2278.918 Q1945.3906,2277.7461 1945.3906,2275.543 Q1945.3906,2273.3242 1946.3125,2272.168 Q1947.25,2270.9961 1949.0313,2270.9961 Q1949.5156,2270.9961 1949.9688,2271.1055 Q1950.4375,2271.1992 1950.8281,2271.418 L1950.8281,2273.3398 Q1950.3906,2272.9336 1949.9688,2272.7461 Q1949.5469,2272.543 1949.1094,2272.543 Q1948.1563,2272.543 1947.6719,2273.3086 Q1947.1875,2274.0586 1947.1875,2275.543 Q1947.1875,2277.0117 1947.6719,2277.7617 Q1948.1563,2278.5117 1949.1094,2278.5117 Q1949.5469,2278.5117 1949.9688,2278.3242 Q1950.3906,2278.1367 1950.8281,2277.7305 L1950.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-EquipementMaterielLourd.html" target="_top" title="StructureDefinition-EquipementMaterielLourd.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-EquipementMaterielLourd.html" xlink:show="new" xlink:title="StructureDefinition-EquipementMaterielLourd.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="144" x="1972" y="2279.2104">EquipementMaterielLourd</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1936" x2="2128" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1936" x2="2128" y1="2304.8047" y2="2304.8047" /></g><!--class ActiviteEnseignement--><g id="elem_ActiviteEnseignement"><rect codeLine="89" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="ActiviteEnseignement" style="stroke:#C6C6C6;stroke-width:1.0;" width="171" x="1728.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="171" x="1728.5" y="2254" /><ellipse cx="1742.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1744.3281,2279.6523 Q1743.9219,2279.8555 1743.4688,2279.9648 Q1743.0156,2280.0742 1742.5313,2280.0742 Q1740.75,2280.0742 1739.8125,2278.918 Q1738.8906,2277.7461 1738.8906,2275.543 Q1738.8906,2273.3242 1739.8125,2272.168 Q1740.75,2270.9961 1742.5313,2270.9961 Q1743.0156,2270.9961 1743.4688,2271.1055 Q1743.9375,2271.1992 1744.3281,2271.418 L1744.3281,2273.3398 Q1743.8906,2272.9336 1743.4688,2272.7461 Q1743.0469,2272.543 1742.6094,2272.543 Q1741.6563,2272.543 1741.1719,2273.3086 Q1740.6875,2274.0586 1740.6875,2275.543 Q1740.6875,2277.0117 1741.1719,2277.7617 Q1741.6563,2278.5117 1742.6094,2278.5117 Q1743.0469,2278.5117 1743.4688,2278.3242 Q1743.8906,2278.1367 1744.3281,2277.7305 L1744.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteEnseignement.html" target="_top" title="StructureDefinition-ActiviteEnseignement.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteEnseignement.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteEnseignement.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="121" x="1765.5" y="2279.2104">ActiviteEnseignement</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1729.5" x2="1898.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1729.5" x2="1898.5" y1="2304.8047" y2="2304.8047" /></g><!--class ActiviteSoinAutorisee--><g id="elem_ActiviteSoinAutorisee"><rect codeLine="90" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="ActiviteSoinAutorisee" style="stroke:#C6C6C6;stroke-width:1.0;" width="169" x="1524.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="169" x="1524.5" y="2254" /><ellipse cx="1538.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1540.3281,2279.6523 Q1539.9219,2279.8555 1539.4688,2279.9648 Q1539.0156,2280.0742 1538.5313,2280.0742 Q1536.75,2280.0742 1535.8125,2278.918 Q1534.8906,2277.7461 1534.8906,2275.543 Q1534.8906,2273.3242 1535.8125,2272.168 Q1536.75,2270.9961 1538.5313,2270.9961 Q1539.0156,2270.9961 1539.4688,2271.1055 Q1539.9375,2271.1992 1540.3281,2271.418 L1540.3281,2273.3398 Q1539.8906,2272.9336 1539.4688,2272.7461 Q1539.0469,2272.543 1538.6094,2272.543 Q1537.6563,2272.543 1537.1719,2273.3086 Q1536.6875,2274.0586 1536.6875,2275.543 Q1536.6875,2277.0117 1537.1719,2277.7617 Q1537.6563,2278.5117 1538.6094,2278.5117 Q1539.0469,2278.5117 1539.4688,2278.3242 Q1539.8906,2278.1367 1540.3281,2277.7305 L1540.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteSoinAutorisee.html" target="_top" title="StructureDefinition-ActiviteSoinAutorisee.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteSoinAutorisee.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteSoinAutorisee.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="119" x="1561.5" y="2279.2104">ActiviteSoinAutorisee</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1525.5" x2="1692.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1525.5" x2="1692.5" y1="2304.8047" y2="2304.8047" /></g><!--class AutreActiviteSoumiseAutorisation--><g id="elem_AutreActiviteSoumiseAutorisation"><rect codeLine="91" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="AutreActiviteSoumiseAutorisation" style="stroke:#C6C6C6;stroke-width:1.0;" width="238" x="1251" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="238" x="1251" y="2254" /><ellipse cx="1265" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1266.8281,2279.6523 Q1266.4219,2279.8555 1265.9688,2279.9648 Q1265.5156,2280.0742 1265.0313,2280.0742 Q1263.25,2280.0742 1262.3125,2278.918 Q1261.3906,2277.7461 1261.3906,2275.543 Q1261.3906,2273.3242 1262.3125,2272.168 Q1263.25,2270.9961 1265.0313,2270.9961 Q1265.5156,2270.9961 1265.9688,2271.1055 Q1266.4375,2271.1992 1266.8281,2271.418 L1266.8281,2273.3398 Q1266.3906,2272.9336 1265.9688,2272.7461 Q1265.5469,2272.543 1265.1094,2272.543 Q1264.1563,2272.543 1263.6719,2273.3086 Q1263.1875,2274.0586 1263.1875,2275.543 Q1263.1875,2277.0117 1263.6719,2277.7617 Q1264.1563,2278.5117 1265.1094,2278.5117 Q1265.5469,2278.5117 1265.9688,2278.3242 Q1266.3906,2278.1367 1266.8281,2277.7305 L1266.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-AutreActiviteSoumiseAutorisation.html" target="_top" title="StructureDefinition-AutreActiviteSoumiseAutorisation.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-AutreActiviteSoumiseAutorisation.html" xlink:show="new" xlink:title="StructureDefinition-AutreActiviteSoumiseAutorisation.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="188" x="1288" y="2279.2104">AutreActiviteSoumiseAutorisation</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1252" x2="1488" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1252" x2="1488" y1="2304.8047" y2="2304.8047" /></g><!--class ActiviteSoumiseReconnaissance--><g id="elem_ActiviteSoumiseReconnaissance"><rect codeLine="92" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="ActiviteSoumiseReconnaissance" style="stroke:#C6C6C6;stroke-width:1.0;" width="232" x="984" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="232" x="984" y="2254" /><ellipse cx="998" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M999.8281,2279.6523 Q999.4219,2279.8555 998.9688,2279.9648 Q998.5156,2280.0742 998.0313,2280.0742 Q996.25,2280.0742 995.3125,2278.918 Q994.3906,2277.7461 994.3906,2275.543 Q994.3906,2273.3242 995.3125,2272.168 Q996.25,2270.9961 998.0313,2270.9961 Q998.5156,2270.9961 998.9688,2271.1055 Q999.4375,2271.1992 999.8281,2271.418 L999.8281,2273.3398 Q999.3906,2272.9336 998.9688,2272.7461 Q998.5469,2272.543 998.1094,2272.543 Q997.1563,2272.543 996.6719,2273.3086 Q996.1875,2274.0586 996.1875,2275.543 Q996.1875,2277.0117 996.6719,2277.7617 Q997.1563,2278.5117 998.1094,2278.5117 Q998.5469,2278.5117 998.9688,2278.3242 Q999.3906,2278.1367 999.8281,2277.7305 L999.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteSoumiseReconnaissance.html" target="_top" title="StructureDefinition-ActiviteSoumiseReconnaissance.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteSoumiseReconnaissance.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteSoumiseReconnaissance.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="182" x="1021" y="2279.2104">ActiviteSoumiseReconnaissance</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="985" x2="1215" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="985" x2="1215" y1="2304.8047" y2="2304.8047" /></g><!--class ActiviteSociale--><g id="elem_ActiviteSociale"><rect codeLine="93" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="ActiviteSociale" style="stroke:#C6C6C6;stroke-width:1.0;" width="131" x="817.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="131" x="817.5" y="2254" /><ellipse cx="831.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M833.3281,2279.6523 Q832.9219,2279.8555 832.4688,2279.9648 Q832.0156,2280.0742 831.5313,2280.0742 Q829.75,2280.0742 828.8125,2278.918 Q827.8906,2277.7461 827.8906,2275.543 Q827.8906,2273.3242 828.8125,2272.168 Q829.75,2270.9961 831.5313,2270.9961 Q832.0156,2270.9961 832.4688,2271.1055 Q832.9375,2271.1992 833.3281,2271.418 L833.3281,2273.3398 Q832.8906,2272.9336 832.4688,2272.7461 Q832.0469,2272.543 831.6094,2272.543 Q830.6563,2272.543 830.1719,2273.3086 Q829.6875,2274.0586 829.6875,2275.543 Q829.6875,2277.0117 830.1719,2277.7617 Q830.6563,2278.5117 831.6094,2278.5117 Q832.0469,2278.5117 832.4688,2278.3242 Q832.8906,2278.1367 833.3281,2277.7305 L833.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-ActiviteSociale.html" target="_top" title="StructureDefinition-ActiviteSociale.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ActiviteSociale.html" xlink:show="new" xlink:title="StructureDefinition-ActiviteSociale.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="81" x="854.5" y="2279.2104">ActiviteSociale</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="818.5" x2="947.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="818.5" x2="947.5" y1="2304.8047" y2="2304.8047" /></g><!--class CapaciteActiviteExercee--><g id="elem_CapaciteActiviteExercee"><rect codeLine="94" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="CapaciteActiviteExercee" style="stroke:#C6C6C6;stroke-width:1.0;" width="184" x="598" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="184" x="598" y="2254" /><ellipse cx="612" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M613.8281,2279.6523 Q613.4219,2279.8555 612.9688,2279.9648 Q612.5156,2280.0742 612.0313,2280.0742 Q610.25,2280.0742 609.3125,2278.918 Q608.3906,2277.7461 608.3906,2275.543 Q608.3906,2273.3242 609.3125,2272.168 Q610.25,2270.9961 612.0313,2270.9961 Q612.5156,2270.9961 612.9688,2271.1055 Q613.4375,2271.1992 613.8281,2271.418 L613.8281,2273.3398 Q613.3906,2272.9336 612.9688,2272.7461 Q612.5469,2272.543 612.1094,2272.543 Q611.1563,2272.543 610.6719,2273.3086 Q610.1875,2274.0586 610.1875,2275.543 Q610.1875,2277.0117 610.6719,2277.7617 Q611.1563,2278.5117 612.1094,2278.5117 Q612.5469,2278.5117 612.9688,2278.3242 Q613.3906,2278.1367 613.8281,2277.7305 L613.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-CapaciteActiviteExercee.html" target="_top" title="StructureDefinition-CapaciteActiviteExercee.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-CapaciteActiviteExercee.html" xlink:show="new" xlink:title="StructureDefinition-CapaciteActiviteExercee.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="134" x="635" y="2279.2104">CapaciteActiviteExercee</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="599" x2="781" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="599" x2="781" y1="2304.8047" y2="2304.8047" /></g><!--class OffreOperationnelle--><g id="elem_OffreOperationnelle"><rect codeLine="98" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="OffreOperationnelle" style="stroke:#C6C6C6;stroke-width:1.0;" width="162" x="2185" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="162" x="2185" y="2254" /><ellipse cx="2199" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M2200.8281,2279.6523 Q2200.4219,2279.8555 2199.9688,2279.9648 Q2199.5156,2280.0742 2199.0313,2280.0742 Q2197.25,2280.0742 2196.3125,2278.918 Q2195.3906,2277.7461 2195.3906,2275.543 Q2195.3906,2273.3242 2196.3125,2272.168 Q2197.25,2270.9961 2199.0313,2270.9961 Q2199.5156,2270.9961 2199.9688,2271.1055 Q2200.4375,2271.1992 2200.8281,2271.418 L2200.8281,2273.3398 Q2200.3906,2272.9336 2199.9688,2272.7461 Q2199.5469,2272.543 2199.1094,2272.543 Q2198.1563,2272.543 2197.6719,2273.3086 Q2197.1875,2274.0586 2197.1875,2275.543 Q2197.1875,2277.0117 2197.6719,2277.7617 Q2198.1563,2278.5117 2199.1094,2278.5117 Q2199.5469,2278.5117 2199.9688,2278.3242 Q2200.3906,2278.1367 2200.8281,2277.7305 L2200.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-OffreOperationnelle.html" target="_top" title="StructureDefinition-OffreOperationnelle.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-OffreOperationnelle.html" xlink:show="new" xlink:title="StructureDefinition-OffreOperationnelle.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="112" x="2222" y="2279.2104">OffreOperationnelle</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2186" x2="2346" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2186" x2="2346" y1="2304.8047" y2="2304.8047" /></g><!--class OrganisationInterne--><g id="elem_OrganisationInterne"><rect codeLine="102" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="OrganisationInterne" style="stroke:#C6C6C6;stroke-width:1.0;" width="163" x="2403.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="163" x="2403.5" y="2254" /><ellipse cx="2417.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M2419.3281,2279.6523 Q2418.9219,2279.8555 2418.4688,2279.9648 Q2418.0156,2280.0742 2417.5313,2280.0742 Q2415.75,2280.0742 2414.8125,2278.918 Q2413.8906,2277.7461 2413.8906,2275.543 Q2413.8906,2273.3242 2414.8125,2272.168 Q2415.75,2270.9961 2417.5313,2270.9961 Q2418.0156,2270.9961 2418.4688,2271.1055 Q2418.9375,2271.1992 2419.3281,2271.418 L2419.3281,2273.3398 Q2418.8906,2272.9336 2418.4688,2272.7461 Q2418.0469,2272.543 2417.6094,2272.543 Q2416.6563,2272.543 2416.1719,2273.3086 Q2415.6875,2274.0586 2415.6875,2275.543 Q2415.6875,2277.0117 2416.1719,2277.7617 Q2416.6563,2278.5117 2417.6094,2278.5117 Q2418.0469,2278.5117 2418.4688,2278.3242 Q2418.8906,2278.1367 2419.3281,2277.7305 L2419.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-OrganisationInterne.html" target="_top" title="StructureDefinition-OrganisationInterne.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-OrganisationInterne.html" xlink:show="new" xlink:title="StructureDefinition-OrganisationInterne.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="113" x="2440.5" y="2279.2104">OrganisationInterne</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2404.5" x2="2565.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2404.5" x2="2565.5" y1="2304.8047" y2="2304.8047" /></g><!--class Emploi--><g id="elem_Emploi"><rect codeLine="106" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="Emploi" style="stroke:#C6C6C6;stroke-width:1.0;" width="88" x="2665" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="88" x="2665" y="2254" /><ellipse cx="2679" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M2680.8281,2279.6523 Q2680.4219,2279.8555 2679.9688,2279.9648 Q2679.5156,2280.0742 2679.0313,2280.0742 Q2677.25,2280.0742 2676.3125,2278.918 Q2675.3906,2277.7461 2675.3906,2275.543 Q2675.3906,2273.3242 2676.3125,2272.168 Q2677.25,2270.9961 2679.0313,2270.9961 Q2679.5156,2270.9961 2679.9688,2271.1055 Q2680.4375,2271.1992 2680.8281,2271.418 L2680.8281,2273.3398 Q2680.3906,2272.9336 2679.9688,2272.7461 Q2679.5469,2272.543 2679.1094,2272.543 Q2678.1563,2272.543 2677.6719,2273.3086 Q2677.1875,2274.0586 2677.1875,2275.543 Q2677.1875,2277.0117 2677.6719,2277.7617 Q2678.1563,2278.5117 2679.1094,2278.5117 Q2679.5469,2278.5117 2679.9688,2278.3242 Q2680.3906,2278.1367 2680.8281,2277.7305 L2680.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-Emploi.html" target="_top" title="StructureDefinition-Emploi.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-Emploi.html" xlink:show="new" xlink:title="StructureDefinition-Emploi.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="38" x="2702" y="2279.2104">Emploi</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2666" x2="2752" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2666" x2="2752" y1="2304.8047" y2="2304.8047" /></g><!--class AidantDemarche--><g id="elem_AidantDemarche"><rect codeLine="110" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="AidantDemarche" style="stroke:#C6C6C6;stroke-width:1.0;" width="143" x="3091.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="143" x="3091.5" y="2254" /><ellipse cx="3105.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M3107.3281,2279.6523 Q3106.9219,2279.8555 3106.4688,2279.9648 Q3106.0156,2280.0742 3105.5313,2280.0742 Q3103.75,2280.0742 3102.8125,2278.918 Q3101.8906,2277.7461 3101.8906,2275.543 Q3101.8906,2273.3242 3102.8125,2272.168 Q3103.75,2270.9961 3105.5313,2270.9961 Q3106.0156,2270.9961 3106.4688,2271.1055 Q3106.9375,2271.1992 3107.3281,2271.418 L3107.3281,2273.3398 Q3106.8906,2272.9336 3106.4688,2272.7461 Q3106.0469,2272.543 3105.6094,2272.543 Q3104.6563,2272.543 3104.1719,2273.3086 Q3103.6875,2274.0586 3103.6875,2275.543 Q3103.6875,2277.0117 3104.1719,2277.7617 Q3104.6563,2278.5117 3105.6094,2278.5117 Q3106.0469,2278.5117 3106.4688,2278.3242 Q3106.8906,2278.1367 3107.3281,2277.7305 L3107.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-AidantDemarche.html" target="_top" title="StructureDefinition-AidantDemarche.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-AidantDemarche.html" xlink:show="new" xlink:title="StructureDefinition-AidantDemarche.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="93" x="3128.5" y="2279.2104">AidantDemarche</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3092.5" x2="3233.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3092.5" x2="3233.5" y1="2304.8047" y2="2304.8047" /></g><!--class MesureProtection--><g id="elem_MesureProtection"><rect codeLine="111" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="MesureProtection" style="stroke:#C6C6C6;stroke-width:1.0;" width="149" x="2907.5" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="149" x="2907.5" y="2254" /><ellipse cx="2921.5" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M2923.3281,2279.6523 Q2922.9219,2279.8555 2922.4688,2279.9648 Q2922.0156,2280.0742 2921.5313,2280.0742 Q2919.75,2280.0742 2918.8125,2278.918 Q2917.8906,2277.7461 2917.8906,2275.543 Q2917.8906,2273.3242 2918.8125,2272.168 Q2919.75,2270.9961 2921.5313,2270.9961 Q2922.0156,2270.9961 2922.4688,2271.1055 Q2922.9375,2271.1992 2923.3281,2271.418 L2923.3281,2273.3398 Q2922.8906,2272.9336 2922.4688,2272.7461 Q2922.0469,2272.543 2921.6094,2272.543 Q2920.6563,2272.543 2920.1719,2273.3086 Q2919.6875,2274.0586 2919.6875,2275.543 Q2919.6875,2277.0117 2920.1719,2277.7617 Q2920.6563,2278.5117 2921.6094,2278.5117 Q2922.0469,2278.5117 2922.4688,2278.3242 Q2922.8906,2278.1367 2923.3281,2277.7305 L2923.3281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-MesureProtection.html" target="_top" title="StructureDefinition-MesureProtection.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-MesureProtection.html" xlink:show="new" xlink:title="StructureDefinition-MesureProtection.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="99" x="2944.5" y="2279.2104">MesureProtection</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2908.5" x2="3055.5" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2908.5" x2="3055.5" y1="2304.8047" y2="2304.8047" /></g><!--class NoteLiaison--><g id="elem_NoteLiaison"><rect codeLine="115" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="NoteLiaison" style="stroke:#C6C6C6;stroke-width:1.0;" width="116" x="3291" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="116" x="3291" y="2254" /><ellipse cx="3305" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M3306.8281,2279.6523 Q3306.4219,2279.8555 3305.9688,2279.9648 Q3305.5156,2280.0742 3305.0313,2280.0742 Q3303.25,2280.0742 3302.3125,2278.918 Q3301.3906,2277.7461 3301.3906,2275.543 Q3301.3906,2273.3242 3302.3125,2272.168 Q3303.25,2270.9961 3305.0313,2270.9961 Q3305.5156,2270.9961 3305.9688,2271.1055 Q3306.4375,2271.1992 3306.8281,2271.418 L3306.8281,2273.3398 Q3306.3906,2272.9336 3305.9688,2272.7461 Q3305.5469,2272.543 3305.1094,2272.543 Q3304.1563,2272.543 3303.6719,2273.3086 Q3303.1875,2274.0586 3303.1875,2275.543 Q3303.1875,2277.0117 3303.6719,2277.7617 Q3304.1563,2278.5117 3305.1094,2278.5117 Q3305.5469,2278.5117 3305.9688,2278.3242 Q3306.3906,2278.1367 3306.8281,2277.7305 L3306.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-NoteLiaison.html" target="_top" title="StructureDefinition-NoteLiaison.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-NoteLiaison.html" xlink:show="new" xlink:title="StructureDefinition-NoteLiaison.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="66" x="3328" y="2279.2104">NoteLiaison</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3292" x2="3406" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3292" x2="3406" y1="2304.8047" y2="2304.8047" /></g><!--class Agenda--><g id="elem_Agenda"><rect codeLine="119" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="Agenda" style="stroke:#C6C6C6;stroke-width:1.0;" width="92" x="3616" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="92" x="3616" y="2254" /><ellipse cx="3630" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M3631.8281,2279.6523 Q3631.4219,2279.8555 3630.9688,2279.9648 Q3630.5156,2280.0742 3630.0313,2280.0742 Q3628.25,2280.0742 3627.3125,2278.918 Q3626.3906,2277.7461 3626.3906,2275.543 Q3626.3906,2273.3242 3627.3125,2272.168 Q3628.25,2270.9961 3630.0313,2270.9961 Q3630.5156,2270.9961 3630.9688,2271.1055 Q3631.4375,2271.1992 3631.8281,2271.418 L3631.8281,2273.3398 Q3631.3906,2272.9336 3630.9688,2272.7461 Q3630.5469,2272.543 3630.1094,2272.543 Q3629.1563,2272.543 3628.6719,2273.3086 Q3628.1875,2274.0586 3628.1875,2275.543 Q3628.1875,2277.0117 3628.6719,2277.7617 Q3629.1563,2278.5117 3630.1094,2278.5117 Q3630.5469,2278.5117 3630.9688,2278.3242 Q3631.3906,2278.1367 3631.8281,2277.7305 L3631.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-Agenda.html" target="_top" title="StructureDefinition-Agenda.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-Agenda.html" xlink:show="new" xlink:title="StructureDefinition-Agenda.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="42" x="3653" y="2279.2104">Agenda</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3617" x2="3707" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3617" x2="3707" y1="2304.8047" y2="2304.8047" /></g><!--class RendezVous--><g id="elem_RendezVous"><rect codeLine="120" fill="url(#g1g3acjvx2tjd60)" height="58.8047" id="RendezVous" style="stroke:#C6C6C6;stroke-width:1.0;" width="118" x="3463" y="2254" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="118" x="3463" y="2254" /><ellipse cx="3477" cy="2275.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M3478.8281,2279.6523 Q3478.4219,2279.8555 3477.9688,2279.9648 Q3477.5156,2280.0742 3477.0313,2280.0742 Q3475.25,2280.0742 3474.3125,2278.918 Q3473.3906,2277.7461 3473.3906,2275.543 Q3473.3906,2273.3242 3474.3125,2272.168 Q3475.25,2270.9961 3477.0313,2270.9961 Q3477.5156,2270.9961 3477.9688,2271.1055 Q3478.4375,2271.1992 3478.8281,2271.418 L3478.8281,2273.3398 Q3478.3906,2272.9336 3477.9688,2272.7461 Q3477.5469,2272.543 3477.1094,2272.543 Q3476.1563,2272.543 3475.6719,2273.3086 Q3475.1875,2274.0586 3475.1875,2275.543 Q3475.1875,2277.0117 3475.6719,2277.7617 Q3476.1563,2278.5117 3477.1094,2278.5117 Q3477.5469,2278.5117 3477.9688,2278.3242 Q3478.3906,2278.1367 3478.8281,2277.7305 L3478.8281,2279.6523 Z " fill="#000000" /><a href="StructureDefinition-RendezVous.html" target="_top" title="StructureDefinition-RendezVous.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-RendezVous.html" xlink:show="new" xlink:title="StructureDefinition-RendezVous.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="68" x="3500" y="2279.2104">RendezVous</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3464" x2="3580" y1="2296.8047" y2="2296.8047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="3464" x2="3580" y1="2304.8047" y2="2304.8047" /></g><!--class EntiteJuridique--><g id="elem_EntiteJuridique"><rect codeLine="3" fill="url(#g1g3acjvx2tjd60)" height="714.8984" id="EntiteJuridique" style="stroke:#C6C6C6;stroke-width:1.0;" width="308" x="2958" y="7" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="308" x="2958" y="7" /><ellipse cx="3057.5" cy="28.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M3059.3281,32.6523 Q3058.9219,32.8555 3058.4688,32.9648 Q3058.0156,33.0742 3057.5313,33.0742 Q3055.75,33.0742 3054.8125,31.918 Q3053.8906,30.7461 3053.8906,28.543 Q3053.8906,26.3242 3054.8125,25.168 Q3055.75,23.9961 3057.5313,23.9961 Q3058.0156,23.9961 3058.4688,24.1055 Q3058.9375,24.1992 3059.3281,24.418 L3059.3281,26.3398 Q3058.8906,25.9336 3058.4688,25.7461 Q3058.0469,25.543 3057.6094,25.543 Q3056.6563,25.543 3056.1719,26.3086 Q3055.6875,27.0586 3055.6875,28.543 Q3055.6875,30.0117 3056.1719,30.7617 Q3056.6563,31.5117 3057.6094,31.5117 Q3058.0469,31.5117 3058.4688,31.3242 Q3058.8906,31.1367 3059.3281,30.7305 L3059.3281,32.6523 Z " fill="#000000" /><a href="StructureDefinition-EntiteJuridique.html" target="_top" title="StructureDefinition-EntiteJuridique.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-EntiteJuridique.html" xlink:show="new" xlink:title="StructureDefinition-EntiteJuridique.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="81" x="3086.5" y="32.2104">EntiteJuridique</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2959" x2="3265" y1="49.8047" y2="49.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="161" x="2974" y="74.0151">numFINESS : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="151" x="2974" y="106.8198">numSiren : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="159" x="2974" y="139.6245">idNatStruct : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="162" x="2974" y="172.4292">identifiantEJ : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="172" x="2974" y="205.2339">typeIdNatStruct : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="276" x="2974" y="238.0386">numeroTVAIntracommunautaire : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="162" x="2974" y="270.8433">numeroSRN : Identifier [0..*]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="156" x="2974" y="303.6479">raisonSociale : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="197" x="2974" y="336.4526">raisonSocialeLongue : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="228" x="2974" y="369.2573">complementRaisonSociale : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="167" x="2974" y="402.062">statutJuridique : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="236" x="2974" y="434.8667">agregatStatutJuridiqueNiv1 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="236" x="2974" y="467.6714">agregatStatutJuridiqueNiv2 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="236" x="2974" y="500.4761">agregatStatutJuridiqueNiv3 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="141" x="2974" y="533.2808">codeAPEN : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="144" x="2974" y="566.0854">dateCreation : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="193" x="2974" y="598.8901">dateModificationSiren : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="218" x="2974" y="631.6948">origineModificationSIREN : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="155" x="2974" y="664.4995">dateFermeture : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="168" x="2974" y="697.3042">typeFermeture : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="2959" x2="3265" y1="713.8984" y2="713.8984" /></g><!--class EntiteGeographique--><g id="elem_EntiteGeographique"><rect codeLine="26" fill="url(#g1g3acjvx2tjd60)" height="1403.7969" id="EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" width="322" x="1988" y="782" /><rect fill="url(#g1g3acjvx2tjd60)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="322" x="1988" y="782" /><ellipse cx="2079" cy="803.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M2080.8281,807.6523 Q2080.4219,807.8555 2079.9688,807.9648 Q2079.5156,808.0742 2079.0313,808.0742 Q2077.25,808.0742 2076.3125,806.918 Q2075.3906,805.7461 2075.3906,803.543 Q2075.3906,801.3242 2076.3125,800.168 Q2077.25,798.9961 2079.0313,798.9961 Q2079.5156,798.9961 2079.9688,799.1055 Q2080.4375,799.1992 2080.8281,799.418 L2080.8281,801.3398 Q2080.3906,800.9336 2079.9688,800.7461 Q2079.5469,800.543 2079.1094,800.543 Q2078.1563,800.543 2077.6719,801.3086 Q2077.1875,802.0586 2077.1875,803.543 Q2077.1875,805.0117 2077.6719,805.7617 Q2078.1563,806.5117 2079.1094,806.5117 Q2079.5469,806.5117 2079.9688,806.3242 Q2080.3906,806.1367 2080.8281,805.7305 L2080.8281,807.6523 Z " fill="#000000" /><a href="StructureDefinition-EntiteGeographique.html" target="_top" title="StructureDefinition-EntiteGeographique.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-EntiteGeographique.html" xlink:show="new" xlink:title="StructureDefinition-EntiteGeographique.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="112" x="2108" y="807.2104">EntiteGeographique</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1989" x2="2309" y1="824.8047" y2="824.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="161" x="2004" y="849.0151">numFINESS : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="148" x="2004" y="881.8198">numSiret : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="168" x="2004" y="914.6245">identifiantEG : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="159" x="2004" y="947.4292">idNatStruct : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="172" x="2004" y="980.2339">typeIdNatStruct : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="231" x="2004" y="1013.0386">numeroEducationNationale : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="177" x="2004" y="1045.8433">nomOperationnel : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="172" x="2004" y="1078.6479">denominationEG : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="213" x="2004" y="1111.4526">denominationEGLongue : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="243" x="2004" y="1144.2573">complementDenominationEG : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="162" x="2004" y="1177.062">champActivite : Coding [0..*]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="184" x="2004" y="1209.8667">typeEtablissement : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="225" x="2004" y="1242.6714">etablissementPrincipal : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="168" x="2004" y="1275.4761">secteurActivite : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="219" x="2004" y="1308.2808">categorieEtablissement : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="289" x="2004" y="1341.0854">agregatCategorieEtablissementNiv1 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="289" x="2004" y="1373.8901">agregatCategorieEtablissementNiv2 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="289" x="2004" y="1406.6948">agregatCategorieEtablissementNiv3 : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="140" x="2004" y="1439.4995">codeAPET : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="186" x="2004" y="1472.3042">modeFixationTarif : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="227" x="2004" y="1505.1089">modaliteParticipationSPH : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="197" x="2004" y="1537.9136">natureEtablissement : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="166" x="2004" y="1570.7183">aideFinanciere : Coding [0..*]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="290" x="2004" y="1603.5229">habilitationSoinSansConsentement : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="207" x="2004" y="1636.3276">hebergementFamille : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="195" x="2004" y="1669.1323">dateModificationSIRET : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="217" x="2004" y="1701.937">origineModificationSIRET : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="115" x="2004" y="1734.7417">actif : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="153" x="2004" y="1767.5464">dateOuverture : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="145" x="2004" y="1800.3511">dateCaducite : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="182" x="2004" y="1833.1558">constatCaducite : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="155" x="2004" y="1865.9604">dateFermeture : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="168" x="2004" y="1898.7651">typeFermeture : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="164" x="2004" y="1931.5698">dateAutorisation : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="178" x="2004" y="1964.3745">accessibiliteLieu : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="150" x="2004" y="1997.1792">zonePoser : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="207" x="2004" y="2029.9839">niveauRecoursORSAN : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="161" x="2004" y="2062.7886">venteLigneURL : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="261" x="2004" y="2095.5933">nbPlaceAideSocialeTemporaire : integer [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="257" x="2004" y="2128.3979">nbPlaceAideSocialePermanent : integer [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="154" x="2004" y="2161.2026">commentaire : string [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1989" x2="2309" y1="2177.7969" y2="2177.7969" /></g><!--link EntiteJuridique to EntiteGeographique--><g id="link_EntiteJuridique_EntiteGeographique"><path codeLine="123" d="M2957.81,544.43 C2780.47,750.21 2490.66,1086.53 2310.35,1295.76 " fill="none" id="EntiteJuridique-EntiteGeographique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="2932.1889" y="539.9983">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="2328.0429" y="1275.2859">1..*</text></g><!--link EntiteJuridique to DispositifMedical--><g id="link_EntiteJuridique_DispositifMedical"><path codeLine="124" d="M3112,722.16 C3112,999.06 3112,1352.49 3112,1454.36 " fill="none" id="EntiteJuridique-DispositifMedical" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="3093.7156" y="750.9097">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="3093.4406" y="1433.5294">*</text></g><!--link EntiteJuridique to Certificat--><g id="link_EntiteJuridique_Certificat"><path codeLine="125" d="M3242.79,722.14 C3425.88,1221.41 3743.16,2086.59 3804.55,2254 " fill="none" id="EntiteJuridique-Certificat" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="3210.9998" y="750.8893">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="3764.1614" y="2233.197">0..1</text></g><!--link EntiteGeographique to Certificat--><g id="link_EntiteGeographique_Certificat"><path codeLine="126" d="M2310.26,1671.44 C2471.06,1841.99 2735.02,2082.93 3023,2186 C3059.67,2199.12 3688,2179.14 3724,2194 C3753.54,2206.19 3778.81,2232.96 3795.17,2253.89 " fill="none" id="EntiteGeographique-Certificat" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="2327.9913" y="1701.2071">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="3803.8253" y="2233.0654">*</text></g><!--link EntiteGeographique to SituationExercice--><g id="link_EntiteGeographique_SituationExercice"><path codeLine="127" d="M1987.78,1526.06 C1647.22,1616.61 835.34,1852.89 220,2194 C189.98,2210.64 159.44,2234.82 137.54,2253.7 " fill="none" id="EntiteGeographique-SituationExercice" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="1946.0504" y="1515.3017">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="125.0742" y="2233.1237">*</text></g><!--link EntiteGeographique to Convention--><g id="link_EntiteGeographique_Convention"><path codeLine="128" d="M1987.92,1538.76 C1694.09,1640.85 1057.57,1880.89 582,2194 C556.11,2211.05 530.35,2234.96 511.89,2253.63 " fill="none" id="EntiteGeographique-Convention" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="1961.9867" y="1563.1542">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="498.5378" y="2233.0403">*</text></g><!--link EntiteGeographique to LicenceExploitation--><g id="link_EntiteGeographique_LicenceExploitation"><path codeLine="129" d="M1987.98,1529.51 C1669.89,1621.86 945.45,1854.4 411,2194 C384.79,2210.66 359.14,2234.83 340.95,2253.71 " fill="none" id="EntiteGeographique-LicenceExploitation" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="1962.0494" y="1553.4851">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="307.703" y="2233.1356">0..1</text></g><!--link EntiteGeographique to EquipementMaterielLourd--><g id="link_EntiteGeographique_EquipementMaterielLourd"><path codeLine="130" d="M2046.11,2186.3 C2042.04,2214.05 2038.67,2237.06 2036.24,2253.61 " fill="none" id="EntiteGeographique-EquipementMaterielLourd" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="2026.8315" y="2215.307">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="2018.6249" y="2233.3028">*</text></g><!--link EntiteGeographique to ActiviteEnseignement--><g id="link_EntiteGeographique_ActiviteEnseignement"><path codeLine="131" d="M1987.88,1868.57 C1921.17,2027.38 1853.1,2189.41 1826.1,2253.7 " fill="none" id="EntiteGeographique-ActiviteEnseignement" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="1961.9449" y="1873.4134">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="1809.9284" y="2233.1237">*</text></g><!--link EntiteGeographique to ActiviteSoinAutorisee--><g id="link_EntiteGeographique_ActiviteSoinAutorisee"><path codeLine="132" d="M1987.9,1722.93 C1857.2,1915.94 1685.61,2169.36 1628.46,2253.77 " fill="none" id="EntiteGeographique-ActiviteSoinAutorisee" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="1961.9658" y="1721.1741">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="1613.6914" y="2233.207">*</text></g><!--link EntiteGeographique to AutreActiviteSoumiseAutorisation--><g id="link_EntiteGeographique_AutreActiviteSoumiseAutorisation"><path codeLine="133" d="M1987.59,1650.24 C1796.18,1846.2 1491.31,2158.31 1398.03,2253.81 " fill="none" id="EntiteGeographique-AutreActiviteSoumiseAutorisation" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="1962.1899" y="1644.7205">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="1415.8513" y="2233.2547">*</text></g><!--link EntiteGeographique to ActiviteSoumiseReconnaissance--><g id="link_EntiteGeographique_ActiviteSoumiseReconnaissance"><path codeLine="134" d="M1987.97,1607.43 C1738.42,1797.14 1272.93,2151.03 1137.72,2253.82 " fill="none" id="EntiteGeographique-ActiviteSoumiseReconnaissance" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="1962.039" y="1600.4405">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="1126.4323" y="2233.2666">*</text></g><!--link EntiteGeographique to ActiviteSociale--><g id="link_EntiteGeographique_ActiviteSociale"><path codeLine="135" d="M1987.67,1563.87 C1751.51,1683.15 1303.27,1924.35 967,2194 C944.69,2211.89 922.55,2235.52 906.61,2253.87 " fill="none" id="EntiteGeographique-ActiviteSociale" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="1962.2733" y="1589.099">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="892.6988" y="2233.0414">*</text></g><!--link EntiteGeographique to CapaciteActiviteExercee--><g id="link_EntiteGeographique_CapaciteActiviteExercee"><path codeLine="136" d="M1987.86,1557.23 C1729.02,1675.97 1208.27,1926.11 800,2194 C772.54,2212.02 743.69,2235.42 722.43,2253.64 " fill="none" id="EntiteGeographique-CapaciteActiviteExercee" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="1946.5521" y="1566.5039">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="710.1338" y="2233.0522">*</text></g><!--link EntiteGeographique to OffreOperationnelle--><g id="link_EntiteGeographique_OffreOperationnelle"><path codeLine="137" d="M2251.89,2186.3 C2255.96,2214.05 2259.33,2237.06 2261.76,2253.61 " fill="none" id="EntiteGeographique-OffreOperationnelle" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="2218.7747" y="2215.307">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="2242.5814" y="2233.3028">*</text></g><!--link EntiteGeographique to OrganisationInterne--><g id="link_EntiteGeographique_OrganisationInterne"><path codeLine="138" d="M2310.11,1867.4 C2377.14,2026.5 2445.64,2189.08 2472.82,2253.59 " fill="none" id="EntiteGeographique-OrganisationInterne" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="2327.7928" y="1871.042">1..*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="2452.1774" y="2233.2791">*</text></g><!--link EntiteGeographique to Emploi--><g id="link_EntiteGeographique_Emploi"><path codeLine="139" d="M2310.04,1714.33 C2446.24,1908.3 2628.57,2167.97 2688.78,2253.7 " fill="none" id="EntiteGeographique-Emploi" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="2327.9715" y="1746.6797">1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="2646.7318" y="2233.1237">0..1</text></g><!--link EntiteGeographique to AidantDemarche--><g id="link_EntiteGeographique_AidantDemarche"><path codeLine="140" d="M2310.03,1658.4 C2473.13,1822.43 2740.97,2061.47 3023,2186 C3043.99,2195.27 3053.53,2183.63 3074,2194 C3101.6,2207.99 3125.96,2233.69 3142.19,2253.8 " fill="none" id="EntiteGeographique-AidantDemarche" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="2327.7516" y="1653.2248">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="3152.4168" y="2233.2427">0..1</text></g><!--link EntiteGeographique to MesureProtection--><g id="link_EntiteGeographique_MesureProtection"><path codeLine="141" d="M2310.1,1639.24 C2513.95,1834.39 2850.72,2156.82 2952.18,2253.95 " fill="none" id="EntiteGeographique-MesureProtection" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="2327.8245" y="1633.2565">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="2907.9779" y="2233.1372">0..1</text></g><!--link EntiteGeographique to NoteLiaison--><g id="link_EntiteGeographique_NoteLiaison"><path codeLine="142" d="M2310.05,1669.11 C2471.17,1838.6 2735.8,2079.36 3023,2186 C3070.53,2203.65 3204.01,2174.97 3251,2194 C3281.6,2206.39 3308.78,2232.84 3326.71,2253.62 " fill="none" id="EntiteGeographique-NoteLiaison" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="2327.7724" y="1664.3866">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="3303.9828" y="2233.0284">*</text></g><!--link EntiteGeographique to Agenda--><g id="link_EntiteGeographique_Agenda"><path codeLine="143" d="M2310.32,1671.28 C2471.15,1841.71 2735.15,2082.57 3023,2186 C3053.12,2196.82 3570.66,2179.14 3599,2194 C3623.05,2206.61 3639.98,2233.04 3650.19,2253.75 " fill="none" id="EntiteGeographique-Agenda" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="2328.619" y="1699.047">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="3629.4606" y="2233.1832">*</text></g><!--link EntiteGeographique to RendezVous--><g id="link_EntiteGeographique_RendezVous"><path codeLine="144" d="M2310.08,1670.48 C2470.98,1840.65 2735.24,2081.61 3023,2186 C3064.79,2201.16 3381.63,2177.73 3423,2194 C3454.11,2206.24 3481.74,2233 3499.85,2253.91 " fill="none" id="EntiteGeographique-RendezVous" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="2327.968" y="1700.8428">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="3476.9298" y="2233.0893">*</text></g></g></svg>
   </p>
 </div>
+
+<!-- Script pour les contrôles SVG interactifs -->
+<script>
+(function() {
+  // Attendre que le DOM soit complètement chargé
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAllSvgWrappers);
+  } else {
+    initAllSvgWrappers();
+  }
+
+  function initAllSvgWrappers() {
+    // Initialiser tous les wrappers SVG sur la page
+    const wrappers = document.querySelectorAll('.svg-wrap');
+    wrappers.forEach(wrap => initSvgWrapper(wrap));
+  }
+
+  function initSvgWrapper(wrap) {
+    if (!wrap) return;
+
+    // Trouver le SVG inclus
+    const svg = wrap.querySelector('svg');
+    if (!svg) {
+      console.warn('SVG non trouvé dans', wrap);
+      return;
+    }
+
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+    const zoomStep = 0.15;
+    const minScale = 0.3;
+    const maxScale = 5;
+    const panSpeed = 1;
+
+    let isPanning = false;
+    let startX = 0;
+    let startY = 0;
+
+    // Fonction pour vérifier si on est en fullscreen
+    function isFullscreen() {
+      return document.fullscreenElement === wrap;
+    }
+
+    function applyTransform() {
+      if (isFullscreen()) {
+        svg.style.transformOrigin = "center center";
+        svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      } else {
+        // En mode normal, pas de transformation
+        svg.style.transform = '';
+      }
+    }
+
+    // Récupérer les boutons de contrôle pour ce wrapper spécifique
+    const zoomInBtn = wrap.querySelector('.svg-zoom-in');
+    const zoomOutBtn = wrap.querySelector('.svg-zoom-out');
+    const zoomResetBtn = wrap.querySelector('.svg-zoom-reset');
+    const fsBtn = wrap.querySelector('.svg-fullscreen');
+
+    /* ZOOM PAR BOUTONS */
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = Math.min(maxScale, scale + zoomStep);
+        applyTransform();
+      });
+    }
+
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = Math.max(minScale, scale - zoomStep);
+        applyTransform();
+      });
+    }
+
+    if (zoomResetBtn) {
+      zoomResetBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      });
+    }
+
+    /* ZOOM À LA MOLETTE */
+    wrap.addEventListener('wheel', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      e.preventDefault();
+      const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
+      scale = Math.min(maxScale, Math.max(minScale, scale + delta));
+      applyTransform();
+    }, { passive: false });
+
+    /* PAN (déplacement à la souris) */
+    wrap.addEventListener('mousedown', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+
+      // Ignorer si clic sur les boutons de contrôle
+      if (e.target.closest('.svg-controls')) return;
+
+      // Ignorer si clic sur un lien ou élément cliquable dans le SVG
+      if (e.target.tagName === 'A' || e.target.closest('a')) return;
+      if (e.target.hasAttribute('href') || e.target.getAttribute('xlink:href')) return;
+
+      // Ignorer si ce n'est pas le bouton gauche
+      if (e.button !== 0) return;
+
+      e.preventDefault();
+      isPanning = true;
+      startX = e.clientX - (translateX / panSpeed);
+      startY = e.clientY - (translateY / panSpeed);
+      wrap.classList.add('grabbing');
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isPanning) return;
+      e.preventDefault();
+      const deltaX = (e.clientX - startX) * panSpeed;
+      const deltaY = (e.clientY - startY) * panSpeed;
+      translateX = deltaX;
+      translateY = deltaY;
+      applyTransform();
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    /* PINCH ZOOM (mobile) */
+    let touchDistance = null;
+    let lastTouchX = 0;
+    let lastTouchY = 0;
+
+    wrap.addEventListener('touchstart', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDistance = Math.sqrt(dx*dx + dy*dy);
+
+        lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      } else if (e.touches.length === 1) {
+        lastTouchX = e.touches[0].clientX;
+        lastTouchY = e.touches[0].clientY;
+      }
+    });
+
+    wrap.addEventListener('touchmove', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (e.touches.length === 2) {
+        e.preventDefault();
+
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const newDist = Math.sqrt(dx*dx + dy*dy);
+
+        if (touchDistance) {
+          const diff = newDist - touchDistance;
+          scale += diff * 0.005;
+          scale = Math.min(maxScale, Math.max(minScale, scale));
+          applyTransform();
+        }
+
+        touchDistance = newDist;
+      } else if (e.touches.length === 1 && scale > 1) {
+        e.preventDefault();
+        const touchX = e.touches[0].clientX;
+        const touchY = e.touches[0].clientY;
+
+        translateX += touchX - lastTouchX;
+        translateY += touchY - lastTouchY;
+        applyTransform();
+
+        lastTouchX = touchX;
+        lastTouchY = touchY;
+      }
+    }, { passive: false });
+
+    wrap.addEventListener('touchend', () => {
+      touchDistance = null;
+    });
+
+    /* FULLSCREEN */
+    if (fsBtn) {
+      fsBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        try {
+          if (!document.fullscreenElement) {
+            // Réinitialiser zoom/pan avant fullscreen
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            applyTransform();
+            await wrap.requestFullscreen();
+          } else {
+            await document.exitFullscreen();
+          }
+        } catch (err) {
+          console.error('Erreur fullscreen:', err);
+        }
+      });
+    }
+
+    // Gérer fullscreenchange pour réinitialiser quand on sort du fullscreen
+    document.addEventListener('fullscreenchange', () => {
+      if (!isFullscreen()) {
+        // Sortie du fullscreen : réinitialiser le zoom/pan
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      }
+    });
+  }
+})();
+</script>
 
 
 
@@ -450,7 +516,7 @@ Remarque : Les classes non déployées, c’est à dire celles dont les attribut
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 27, 2025 17:02+0000">2025-11-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 09:57+0000">2025-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

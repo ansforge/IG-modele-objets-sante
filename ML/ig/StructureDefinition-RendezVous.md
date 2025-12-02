@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:RendezVous |
+| Draft as of 2025-12-02 | *Computable Name*:RendezVous |
 
  
 Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Contact](StructureDefinition-Contact.md), [Creneau](StructureDefinition-Creneau.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md)...Show 4 more,[Lieu](StructureDefinition-Lieu.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[Professionnel](StructureDefinition-Professionnel.md)
+* Utiliser ce Modèle logique: [Contact](StructureDefinition-Contact.md), [Creneau](StructureDefinition-Creneau.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md)...Show 4 more,[Lieu](StructureDefinition-Lieu.md),[OrganisationInterne](StructureDefinition-OrganisationInterne.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[Professionnel](StructureDefinition-Professionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/RendezVous)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-RendezVous.csv), [Ex
   "name" : "RendezVous",
   "title" : "RendezVous",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

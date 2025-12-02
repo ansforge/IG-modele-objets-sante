@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEEE | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:DiplomeEEE |
+| Draft as of 2025-12-02 | *Computable Name*:DiplomeEEE |
 
  
 Diplôme d’un pays de l’espace économique européen (EEE), requis pour l’accès à la profession en France, pour un professionnel s’inscrivant à l’ordre à compter de la date d’entrée du pays dans l’EEE (Directive européenne 2005-36 modifiée). L’annexe 5 de cette directive donne la liste des reconnaissances mutuelles de diplômes au sein de l’EEE.Dans le cadre du modèle, un diplôme EEE est un type de diplôme. La classe DiplomeEEE est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DiplomeEEE)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DiplomeEEE.csv), [Ex
   "name" : "DiplomeEEE",
   "title" : "DiplomeEEE",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

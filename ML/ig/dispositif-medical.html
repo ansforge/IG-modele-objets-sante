@@ -203,7 +203,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>Dispositif médical</h2>
   
 
@@ -228,178 +228,6 @@ L’entité juridique liée au dispositif médical représente le fabricant du d
 
 <p>Remarque : Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans d’autres parties (ou packages).</p>
 
-<!-- CSS pour les contrôles SVG interactifs -->
-<style>
-/* Style quand en fullscreen natif */
-.svg-wrap:fullscreen {
-  background: white;
-  width: 100%;
-  height: 100%;
-}
-
-.svg-wrap:-webkit-full-screen {
-  background: white;
-  width: 100%;
-  height: 100%;
-}
-.svg-wrap:-moz-full-screen {
-  background: white;
-  width: 100%;
-  height: 100%;
-}
-
-/* SVG centré en fullscreen */
-.svg-wrap:fullscreen > p {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.svg-wrap:-webkit-full-screen > p {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.svg-wrap:-moz-full-screen > p {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* SVG garde ses proportions en fullscreen */
-.svg-wrap:fullscreen svg {
-  max-width: 100% !important;
-  max-height: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain;
-}
-.svg-wrap:-webkit-full-screen svg {
-  max-width: 100% !important;
-  max-height: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain;
-}
-.svg-wrap:-moz-full-screen svg {
-  max-width: 100% !important;
-  max-height: 100% !important;
-  width: auto !important;
-  height: auto !important;
-  object-fit: contain;
-}
-
-.svg-controls {
-  z-index: 99999 !important;
-  position: absolute !important;
-  top: 8px !important;
-  right: 8px !important;
-}
-.svg-controls .btn {
-  opacity: 0.9;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
-  transition: none !important;
-  z-index: 99999 !important;
-  border-radius: 0.25rem !important;
-  position: relative;
-
-  background: white;
-  color: var(--body-color);
-}
-/* Cacher les boutons zoom en mode normal */
-.svg-controls .svg-zoom-in,
-.svg-controls .svg-zoom-out,
-.svg-controls .svg-zoom-reset {
-  display: none;
-}
-/* Afficher les boutons zoom en fullscreen */
-.svg-wrap:fullscreen .svg-controls .svg-zoom-in,
-.svg-wrap:fullscreen .svg-controls .svg-zoom-out,
-.svg-wrap:fullscreen .svg-controls .svg-zoom-reset,
-.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-in,
-.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-out,
-.svg-wrap:-webkit-full-screen .svg-controls .svg-zoom-reset,
-.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-in,
-.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-out,
-.svg-wrap:-moz-full-screen .svg-controls .svg-zoom-reset {
-  display: block;
-}
-
-/* Surcharge styles Bootstrap btn-group-vertical */
-.svg-controls.btn-group-vertical .btn {
-  border-radius: 0.25rem !important;
-  margin-top: 2px;
-}
-/* Surcharge Bootstrap en fullscreen */
-.svg-wrap:fullscreen .svg-controls,
-.svg-wrap:-webkit-full-screen .svg-controls,
-.svg-wrap:-moz-full-screen .svg-controls {
-  z-index: 99999 !important;
-}
-.svg-wrap:fullscreen .svg-controls .btn,
-.svg-wrap:-webkit-full-screen .svg-controls .btn,
-.svg-wrap:-moz-full-screen .svg-controls .btn {
-  z-index: 99999 !important;
-}
-.svg-wrap:fullscreen .svg-controls .btn:hover,
-.svg-wrap:fullscreen .svg-controls .btn:focus,
-.svg-wrap:fullscreen .svg-controls .btn:active,
-.svg-wrap:-webkit-full-screen .svg-controls .btn:hover,
-.svg-wrap:-webkit-full-screen .svg-controls .btn:focus,
-.svg-wrap:-webkit-full-screen .svg-controls .btn:active,
-.svg-wrap:-moz-full-screen .svg-controls .btn:hover,
-.svg-wrap:-moz-full-screen .svg-controls .btn:focus,
-.svg-wrap:-moz-full-screen .svg-controls .btn:active {
-  z-index: 99999 !important;
-}
-.svg-wrap {
-  position: relative;
-  cursor: default;
-  overflow: visible !important;
-  text-align: center;
-}
-/* SVG adapté à la largeur en mode normal et fullscreen */
-.svg-wrap svg {
-  transition: transform 0.1s ease-out;
-  display: block;
-  margin: 0 auto;
-  max-width: 100% !important;
-  width: auto !important;
-  height: auto !important;
-}
-.svg-wrap > p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* Curseur grab uniquement en fullscreen */
-.svg-wrap:fullscreen,
-.svg-wrap:-webkit-full-screen,
-.svg-wrap:-moz-full-screen {
-  cursor: grab;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-.svg-wrap:fullscreen.grabbing,
-.svg-wrap:-webkit-full-screen.grabbing,
-.svg-wrap:-moz-full-screen.grabbing {
-  cursor: grabbing;
-}
-.svg-wrap:fullscreen.grabbing *,
-.svg-wrap:-webkit-full-screen.grabbing *,
-.svg-wrap:-moz-full-screen.grabbing * {
-  user-select: none !important;
-  -webkit-user-select: none !important;
-}
-</style>
-
 <div class="figure svg-wrap" style="width:100%;">
   <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
     <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
@@ -411,6 +239,244 @@ L’entité juridique liée au dispositif médical représente le fabricant du d
     <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1047px" preserveAspectRatio="none" style="width:611px;height:1047px;" version="1.1" viewBox="0 0 611 1047" width="611px" zoomAndPan="magnify"><defs><linearGradient id="gfm4cm2vw6y6b0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F4F4F4" /><stop offset="100%" stop-color="#F4F4F4" /></linearGradient></defs><g><!--cluster Structure_part--><g id="cluster_Structure_part"><polygon fill="#FFFFFF" points="258,781.5,351,781.5,358,821.4688,422,821.4688,422,908.5,258,908.5,258,781.5" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="258" x2="358" y1="821.4688" y2="821.4688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="67" x="272" y="804.6387">Structure</text></g><!--cluster Dossier_part--><g id="cluster_Dossier_part"><polygon fill="#FFFFFF" points="446,781.5,526,781.5,533,821.4688,594,821.4688,594,908.5,446,908.5,446,781.5" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="446" x2="533" y1="821.4688" y2="821.4688" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="54" x="460" y="804.6387">Dossier</text></g><!--class EntiteJuridique--><g id="elem_EntiteJuridique"><rect codeLine="35" fill="url(#gfm4cm2vw6y6b0)" height="58.8047" id="EntiteJuridique" style="stroke:#C6C6C6;stroke-width:1.0;" width="131" x="274.5" y="833.5" /><rect fill="url(#gfm4cm2vw6y6b0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="131" x="274.5" y="833.5" /><ellipse cx="288.5" cy="854.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M290.3281,859.1523 Q289.9219,859.3555 289.4688,859.4648 Q289.0156,859.5742 288.5313,859.5742 Q286.75,859.5742 285.8125,858.418 Q284.8906,857.2461 284.8906,855.043 Q284.8906,852.8242 285.8125,851.668 Q286.75,850.4961 288.5313,850.4961 Q289.0156,850.4961 289.4688,850.6055 Q289.9375,850.6992 290.3281,850.918 L290.3281,852.8398 Q289.8906,852.4336 289.4688,852.2461 Q289.0469,852.043 288.6094,852.043 Q287.6563,852.043 287.1719,852.8086 Q286.6875,853.5586 286.6875,855.043 Q286.6875,856.5117 287.1719,857.2617 Q287.6563,858.0117 288.6094,858.0117 Q289.0469,858.0117 289.4688,857.8242 Q289.8906,857.6367 290.3281,857.2305 L290.3281,859.1523 Z " fill="#000000" /><a href="StructureDefinition-EntiteJuridique.html" target="_top" title="StructureDefinition-EntiteJuridique.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-EntiteJuridique.html" xlink:show="new" xlink:title="StructureDefinition-EntiteJuridique.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="81" x="311.5" y="858.7104">EntiteJuridique</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="275.5" x2="404.5" y1="876.3047" y2="876.3047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="275.5" x2="404.5" y1="884.3047" y2="884.3047" /></g><!--class NoteLiaison--><g id="elem_NoteLiaison"><rect codeLine="39" fill="url(#gfm4cm2vw6y6b0)" height="58.8047" id="NoteLiaison" style="stroke:#C6C6C6;stroke-width:1.0;" width="116" x="462" y="833.5" /><rect fill="url(#gfm4cm2vw6y6b0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="116" x="462" y="833.5" /><ellipse cx="476" cy="854.9023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M477.8281,859.1523 Q477.4219,859.3555 476.9688,859.4648 Q476.5156,859.5742 476.0313,859.5742 Q474.25,859.5742 473.3125,858.418 Q472.3906,857.2461 472.3906,855.043 Q472.3906,852.8242 473.3125,851.668 Q474.25,850.4961 476.0313,850.4961 Q476.5156,850.4961 476.9688,850.6055 Q477.4375,850.6992 477.8281,850.918 L477.8281,852.8398 Q477.3906,852.4336 476.9688,852.2461 Q476.5469,852.043 476.1094,852.043 Q475.1563,852.043 474.6719,852.8086 Q474.1875,853.5586 474.1875,855.043 Q474.1875,856.5117 474.6719,857.2617 Q475.1563,858.0117 476.1094,858.0117 Q476.5469,858.0117 476.9688,857.8242 Q477.3906,857.6367 477.8281,857.2305 L477.8281,859.1523 Z " fill="#000000" /><a href="StructureDefinition-NoteLiaison.html" target="_top" title="StructureDefinition-NoteLiaison.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-NoteLiaison.html" xlink:show="new" xlink:title="StructureDefinition-NoteLiaison.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="66" x="499" y="858.7104">NoteLiaison</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="463" x2="577" y1="876.3047" y2="876.3047" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="463" x2="577" y1="884.3047" y2="884.3047" /></g><!--class DispositifMedical--><g id="elem_DispositifMedical"><rect codeLine="3" fill="url(#gfm4cm2vw6y6b0)" height="583.6797" id="DispositifMedical" style="stroke:#C6C6C6;stroke-width:1.0;" width="277" x="201.5" y="7" /><rect fill="url(#gfm4cm2vw6y6b0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="277" x="201.5" y="7" /><ellipse cx="278.5" cy="28.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M280.3281,32.6523 Q279.9219,32.8555 279.4688,32.9648 Q279.0156,33.0742 278.5313,33.0742 Q276.75,33.0742 275.8125,31.918 Q274.8906,30.7461 274.8906,28.543 Q274.8906,26.3242 275.8125,25.168 Q276.75,23.9961 278.5313,23.9961 Q279.0156,23.9961 279.4688,24.1055 Q279.9375,24.1992 280.3281,24.418 L280.3281,26.3398 Q279.8906,25.9336 279.4688,25.7461 Q279.0469,25.543 278.6094,25.543 Q277.6563,25.543 277.1719,26.3086 Q276.6875,27.0586 276.6875,28.543 Q276.6875,30.0117 277.1719,30.7617 Q277.6563,31.5117 278.6094,31.5117 Q279.0469,31.5117 279.4688,31.3242 Q279.8906,31.1367 280.3281,30.7305 L280.3281,32.6523 Z " fill="#000000" /><a href="StructureDefinition-DispositifMedical.html" target="_top" title="StructureDefinition-DispositifMedical.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-DispositifMedical.html" xlink:show="new" xlink:title="StructureDefinition-DispositifMedical.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="95" x="307.5" y="32.2104">DispositifMedical</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="202.5" x2="477.5" y1="49.8047" y2="49.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="197" x="217.5" y="74.0151">identifiantLocalDM : Identifier [0..*]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="160" x="217.5" y="106.8198">classeRisque : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="151" x="217.5" y="139.6245">reference : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="121" x="217.5" y="172.4292">modele : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="172" x="217.5" y="205.2339">nomCommercial : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="144" x="217.5" y="238.0386">codeEMDN : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="165" x="217.5" y="270.8433">usageUnique : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="199" x="217.5" y="303.6479">nombreReutilisation : integer [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="127" x="217.5" y="336.4526">sterile : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="245" x="217.5" y="369.2573">sterilisationAvantUtilisation : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="166" x="217.5" y="402.062">contientLatex : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="203" x="217.5" y="434.8667">substanceCMR1A1B : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="157" x="217.5" y="467.6714">implantable : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="115" x="217.5" y="500.4761">actif : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="138" x="217.5" y="533.2808">codeLPP : boolean [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="168" x="217.5" y="566.0854">irmCompatible : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="202.5" x2="477.5" y1="582.6797" y2="582.6797" /></g><!--class SupportIUD--><g id="elem_SupportIUD"><rect codeLine="22" fill="#ADD8E6" height="354.0469" id="SupportIUD" style="stroke:#C6C6C6;stroke-width:1.0;" width="232" x="7" y="686" /><ellipse cx="77" cy="707.4023" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M78.8281,711.6523 Q78.4219,711.8555 77.9688,711.9648 Q77.5156,712.0742 77.0313,712.0742 Q75.25,712.0742 74.3125,710.918 Q73.3906,709.7461 73.3906,707.543 Q73.3906,705.3242 74.3125,704.168 Q75.25,702.9961 77.0313,702.9961 Q77.5156,702.9961 77.9688,703.1055 Q78.4375,703.1992 78.8281,703.418 L78.8281,705.3398 Q78.3906,704.9336 77.9688,704.7461 Q77.5469,704.543 77.1094,704.543 Q76.1563,704.543 75.6719,705.3086 Q75.1875,706.0586 75.1875,707.543 Q75.1875,709.0117 75.6719,709.7617 Q76.1563,710.5117 77.1094,710.5117 Q77.5469,710.5117 77.9688,710.3242 Q78.3906,710.1367 78.8281,709.7305 L78.8281,711.6523 Z " fill="#000000" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="64" x="106" y="711.2104">SupportIUD</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="238" y1="728.8047" y2="728.8047" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="126" x="23" y="753.0151">IUDID : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="200" x="23" y="785.8198">IUDIPNumeroSerie : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="187" x="23" y="818.6245">IUDIPNumeroLot : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="177" x="23" y="851.4292">IUDIPIdLogiciel : Identifier [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="188" x="23" y="884.2339">IUDIPDateFabrication : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="182" x="23" y="917.0386">IUDIPDateExpiration : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="150" x="23" y="949.8433">AIDC : base64Binary [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="163" x="23" y="982.6479">marquageClair : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="173" x="23" y="1015.4526">typeSupportIUD : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="238" y1="1032.0469" y2="1032.0469" /></g><!--link DispositifMedical to EntiteJuridique--><g id="link_DispositifMedical_EntiteJuridique"><path codeLine="42" d="M340,591.29 C340,689.75 340,786.52 340,833.17 " fill="none" id="DispositifMedical-EntiteJuridique" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="323.6953" y="619.681">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="8" x="319.3313" y="812.588">1</text></g><!--link DispositifMedical to NoteLiaison--><g id="link_DispositifMedical_NoteLiaison"><path codeLine="43" d="M433.3,591.29 C464.83,689.75 495.83,786.52 510.77,833.17 " fill="none" id="DispositifMedical-NoteLiaison" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="400.9711" y="619.681">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="490.5324" y="812.588">*</text></g><!--link DispositifMedical to SupportIUD--><g id="link_DispositifMedical_SupportIUD"><path codeLine="45" d="M227.53,591.29 C215.76,621.77 204.05,652.08 192.97,680.8 " fill="none" id="DispositifMedical-to-SupportIUD" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="#C6C6C6" points="191.05,685.77,198.0256,678.8173,192.8526,681.1062,190.5636,675.9332,191.05,685.77" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="224" y="643.1387">0..*</text></g></g></svg>
   </p>
 </div>
+
+<!-- Script pour les contrôles SVG interactifs -->
+<script>
+(function() {
+  // Attendre que le DOM soit complètement chargé
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAllSvgWrappers);
+  } else {
+    initAllSvgWrappers();
+  }
+
+  function initAllSvgWrappers() {
+    // Initialiser tous les wrappers SVG sur la page
+    const wrappers = document.querySelectorAll('.svg-wrap');
+    wrappers.forEach(wrap => initSvgWrapper(wrap));
+  }
+
+  function initSvgWrapper(wrap) {
+    if (!wrap) return;
+
+    // Trouver le SVG inclus
+    const svg = wrap.querySelector('svg');
+    if (!svg) {
+      console.warn('SVG non trouvé dans', wrap);
+      return;
+    }
+
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+    const zoomStep = 0.15;
+    const minScale = 0.3;
+    const maxScale = 5;
+    const panSpeed = 1;
+
+    let isPanning = false;
+    let startX = 0;
+    let startY = 0;
+
+    // Fonction pour vérifier si on est en fullscreen
+    function isFullscreen() {
+      return document.fullscreenElement === wrap;
+    }
+
+    function applyTransform() {
+      if (isFullscreen()) {
+        svg.style.transformOrigin = "center center";
+        svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      } else {
+        // En mode normal, pas de transformation
+        svg.style.transform = '';
+      }
+    }
+
+    // Récupérer les boutons de contrôle pour ce wrapper spécifique
+    const zoomInBtn = wrap.querySelector('.svg-zoom-in');
+    const zoomOutBtn = wrap.querySelector('.svg-zoom-out');
+    const zoomResetBtn = wrap.querySelector('.svg-zoom-reset');
+    const fsBtn = wrap.querySelector('.svg-fullscreen');
+
+    /* ZOOM PAR BOUTONS */
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = Math.min(maxScale, scale + zoomStep);
+        applyTransform();
+      });
+    }
+
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = Math.max(minScale, scale - zoomStep);
+        applyTransform();
+      });
+    }
+
+    if (zoomResetBtn) {
+      zoomResetBtn.addEventListener('click', (e) => {
+        if (!isFullscreen()) return; // Actif uniquement en fullscreen
+        e.preventDefault();
+        e.stopPropagation();
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      });
+    }
+
+    /* ZOOM À LA MOLETTE */
+    wrap.addEventListener('wheel', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      e.preventDefault();
+      const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
+      scale = Math.min(maxScale, Math.max(minScale, scale + delta));
+      applyTransform();
+    }, { passive: false });
+
+    /* PAN (déplacement à la souris) */
+    wrap.addEventListener('mousedown', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+
+      // Ignorer si clic sur les boutons de contrôle
+      if (e.target.closest('.svg-controls')) return;
+
+      // Ignorer si clic sur un lien ou élément cliquable dans le SVG
+      if (e.target.tagName === 'A' || e.target.closest('a')) return;
+      if (e.target.hasAttribute('href') || e.target.getAttribute('xlink:href')) return;
+
+      // Ignorer si ce n'est pas le bouton gauche
+      if (e.button !== 0) return;
+
+      e.preventDefault();
+      isPanning = true;
+      startX = e.clientX - (translateX / panSpeed);
+      startY = e.clientY - (translateY / panSpeed);
+      wrap.classList.add('grabbing');
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isPanning) return;
+      e.preventDefault();
+      const deltaX = (e.clientX - startX) * panSpeed;
+      const deltaY = (e.clientY - startY) * panSpeed;
+      translateX = deltaX;
+      translateY = deltaY;
+      applyTransform();
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    /* PINCH ZOOM (mobile) */
+    let touchDistance = null;
+    let lastTouchX = 0;
+    let lastTouchY = 0;
+
+    wrap.addEventListener('touchstart', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDistance = Math.sqrt(dx*dx + dy*dy);
+
+        lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      } else if (e.touches.length === 1) {
+        lastTouchX = e.touches[0].clientX;
+        lastTouchY = e.touches[0].clientY;
+      }
+    });
+
+    wrap.addEventListener('touchmove', (e) => {
+      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (e.touches.length === 2) {
+        e.preventDefault();
+
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const newDist = Math.sqrt(dx*dx + dy*dy);
+
+        if (touchDistance) {
+          const diff = newDist - touchDistance;
+          scale += diff * 0.005;
+          scale = Math.min(maxScale, Math.max(minScale, scale));
+          applyTransform();
+        }
+
+        touchDistance = newDist;
+      } else if (e.touches.length === 1 && scale > 1) {
+        e.preventDefault();
+        const touchX = e.touches[0].clientX;
+        const touchY = e.touches[0].clientY;
+
+        translateX += touchX - lastTouchX;
+        translateY += touchY - lastTouchY;
+        applyTransform();
+
+        lastTouchX = touchX;
+        lastTouchY = touchY;
+      }
+    }, { passive: false });
+
+    wrap.addEventListener('touchend', () => {
+      touchDistance = null;
+    });
+
+    /* FULLSCREEN */
+    if (fsBtn) {
+      fsBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        try {
+          if (!document.fullscreenElement) {
+            // Réinitialiser zoom/pan avant fullscreen
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            applyTransform();
+            await wrap.requestFullscreen();
+          } else {
+            await document.exitFullscreen();
+          }
+        } catch (err) {
+          console.error('Erreur fullscreen:', err);
+        }
+      });
+    }
+
+    // Gérer fullscreenchange pour réinitialiser quand on sort du fullscreen
+    document.addEventListener('fullscreenchange', () => {
+      if (!isFullscreen()) {
+        // Sortie du fullscreen : réinitialiser le zoom/pan
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      }
+    });
+  }
+})();
+</script>
 
 
 
@@ -453,7 +519,7 @@ L’entité juridique liée au dispositif médical représente le fabricant du d
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Nov 27, 2025 17:02+0000">2025-11-27</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Dec 2, 2025 09:57+0000">2025-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSociale | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:ActiviteSociale |
+| Draft as of 2025-12-02 | *Computable Name*:ActiviteSociale |
 
  
 Les équipements sociaux représentent les activités des établissements du domaine social et médico-social enregistrés dans FINESS.Le champ de FINESS comprend l’ensemble des établissements et services sociaux et médico-sociaux (ESSMS), soumis à autorisation préalable, ainsi que quelques catégories d’établissements n’entrant pas dans le régime de l’autorisation.Pour indiquer les services offerts, FINESS identifie ceux-ci à l’aide d’un triplet composé des éléments suivants : discipline d’équipement, mode de fonctionnement (appelé aussi type d’activité) et clientèle. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md), [CapaciteHabitation](StructureDefinition-CapaciteHabitation.md) and [EntiteGeographique](StructureDefinition-EntiteGeographique.md)
+* Utiliser ce Modèle logique: [CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md), [CapaciteHabitation](StructureDefinition-CapaciteHabitation.md) and [EntiteGeographique](StructureDefinition-EntiteGeographique.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/ActiviteSociale)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ActiviteSociale.csv)
   "name" : "ActiviteSociale",
   "title" : "ActiviteSociale",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

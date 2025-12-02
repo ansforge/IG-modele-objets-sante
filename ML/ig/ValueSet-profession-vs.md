@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/profession-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:ProfessionVs |
+| Draft as of 2025-12-02 | *Computable Name*:ProfessionVs |
 
  **References** 
 
 * [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -27,6 +27,13 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem TRE_G15_ProfessionSante v20250328120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G15-ProfessionSante.html)
+* [codesystem TRE_R291_AutreProfession v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R291-AutreProfession.html)
+* [codesystem TRE_R94_ProfessionSocial v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R94-ProfessionSocial.html)
+* [codesystem TRE_R95_UsagerTitre v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R95-UsagerTitre.html)
 
 Ce jeu de valeur (ValueSet) contient 68 concepts
 
@@ -55,7 +62,7 @@ Ce jeu de valeur (ValueSet) contient 68 concepts
   "version" : "0.1.0",
   "name" : "ProfessionVs",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageDisponibilite | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:PlageDisponibilite |
+| Draft as of 2025-12-02 | *Computable Name*:PlageDisponibilite |
 
  
 Horaires de disponibilité pour la prise de rendez - vous de l’agenda. Par exception, cet objet permet de renseigner les périodes sur lesquelles l’agenda est indisponible à la prise de rendez - vous. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md)
+* Utiliser ce Modèle logique: [Agenda](StructureDefinition-Agenda.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/PlageDisponibilite)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PlageDisponibilite.c
   "name" : "PlageDisponibilite",
   "title" : "PlageDisponibilite",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

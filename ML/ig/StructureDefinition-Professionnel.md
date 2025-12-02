@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:Professionnel |
+| Draft as of 2025-12-02 | *Computable Name*:Professionnel |
 
  
 Données d’identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [AutorisationExercice](StructureDefinition-AutorisationExercice.md), [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [NoteLiaison](StructureDefinition-NoteLiaison.md)...Show 3 more,[Observation](StructureDefinition-Observation.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[RendezVous](StructureDefinition-RendezVous.md)
+* Utiliser ce Modèle logique: [Agenda](StructureDefinition-Agenda.md), [AutorisationExercice](StructureDefinition-AutorisationExercice.md), [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [NoteLiaison](StructureDefinition-NoteLiaison.md)...Show 3 more,[Observation](StructureDefinition-Observation.md),[PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md)and[RendezVous](StructureDefinition-RendezVous.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Professionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
   "name" : "Professionnel",
   "title" : "Professionnel",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

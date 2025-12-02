@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CarteProfessionnel | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:CarteProfessionnel |
+| Draft as of 2025-12-02 | *Computable Name*:CarteProfessionnel |
 
  
 Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Certificat](StructureDefinition-Certificat.md) and [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
+* Utiliser ce Modèle logique: [Certificat](StructureDefinition-Certificat.md) and [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/CarteProfessionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CarteProfessionnel.c
   "name" : "CarteProfessionnel",
   "title" : "CarteProfessionnel",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

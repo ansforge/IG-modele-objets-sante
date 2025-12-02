@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CertificatEtudeSpeciale | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:CertificatEtudeSpeciale |
+| Draft as of 2025-12-02 | *Computable Name*:CertificatEtudeSpeciale |
 
  
 Les Certificat d’études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d’études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/CertificatEtudeSpeciale)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-CertificatEtudeSpeci
   "name" : "CertificatEtudeSpeciale",
   "title" : "CertificatEtudeSpeciale",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

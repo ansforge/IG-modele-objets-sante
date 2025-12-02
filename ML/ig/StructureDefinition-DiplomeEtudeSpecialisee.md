@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEtudeSpecialisee | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:DiplomeEtudeSpecialisee |
+| Draft as of 2025-12-02 | *Computable Name*:DiplomeEtudeSpecialisee |
 
  
 Le diplôme d’études spécialisées (DES) est délivré aux médecins, pharmaciens ou dentistes ayant effectué une formation de 3e cycle de 3 à 5 ans en fonction des spécialités et soutenu un mémoire. Cette formation correspond à l’internat. Avec les réformes successives adoptées depuis la fin des années 1990 (dont la création de l’internat et du DES de médecine générale), tous les nouveaux docteurs en médecine sont titulaires d’un DES, accompagnant leur diplôme d’État de docteur en médecine (commun à tous les médecins) et précisant leur spécialité.Le DES peut être complété par un diplôme d’études spécialisées complémentaires (DESC). Les DESC se décomposent en deux groupes: ** DESC non qualifiants (groupe 1) d’une durée de 2 ans : 1 an pendant l’internat et 1 an après la fin de l’internat (clinicat);** DESC qualifiants (groupe 2) ou DESCQ d’une durée de 3 ans : 2 ans pendant l’internat et 1 an après la fin de l’internat (clinicat).Dans le cadre du modèle, un DES est un type de diplôme. La classe DiplomeEtudesSpecialisees est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DiplomeEtudeSpecialisee)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DiplomeEtudeSpeciali
   "name" : "DiplomeEtudeSpecialisee",
   "title" : "DiplomeEtudeSpecialisee",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

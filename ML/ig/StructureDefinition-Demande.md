@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Demande | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:Demande |
+| Draft as of 2025-12-02 | *Computable Name*:Demande |
 
  
 Besoin(s) et/ou souhait(s) exprimés de manière officielle.Le contenu de la demande peut être un document : une lettre, un formulaire, etc. La demande peut également être accompagnée si besoin de pièces jointes. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Decision](StructureDefinition-Decision.md), [Document](StructureDefinition-Document.md) and [DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md)
+* Utiliser ce Modèle logique: [Decision](StructureDefinition-Decision.md), [Document](StructureDefinition-Document.md) and [DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Demande)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Demande.csv), [Excel
   "name" : "Demande",
   "title" : "Demande",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

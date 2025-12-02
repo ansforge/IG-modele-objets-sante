@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge | *Version*:0.1.0 |
-| Draft as of 2025-11-27 | *Computable Name*:PersonnePriseCharge |
+| Draft as of 2025-12-02 | *Computable Name*:PersonnePriseCharge |
 
  
 Personne physique bénéficiaire de soins, d’examens, d’actes de prévention ou de services. Selon le contexte, la personne prise en charge peut être un patient ou un usager. 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [Agenda](StructureDefinition-Agenda.md), [DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md), [NoteLiaison](StructureDefinition-NoteLiaison.md), [Observation](StructureDefinition-Observation.md)...Show 5 more,[Professionnel](StructureDefinition-Professionnel.md),[RendezVous](StructureDefinition-RendezVous.md),[VieProfessionnelle](StructureDefinition-VieProfessionnelle.md),[VieQuotidienne](StructureDefinition-VieQuotidienne.md)and[VieScolaire](StructureDefinition-VieScolaire.md)
+* Utiliser ce Modèle logique: [Agenda](StructureDefinition-Agenda.md), [DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md), [NoteLiaison](StructureDefinition-NoteLiaison.md), [Observation](StructureDefinition-Observation.md)...Show 5 more,[Professionnel](StructureDefinition-Professionnel.md),[RendezVous](StructureDefinition-RendezVous.md),[VieProfessionnelle](StructureDefinition-VieProfessionnelle.md),[VieQuotidienne](StructureDefinition-VieQuotidienne.md)and[VieScolaire](StructureDefinition-VieScolaire.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/PersonnePriseCharge)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PersonnePriseCharge.
   "name" : "PersonnePriseCharge",
   "title" : "PersonnePriseCharge",
   "status" : "draft",
-  "date" : "2025-11-27T17:02:40+00:00",
+  "date" : "2025-12-02T09:57:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
