@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:Telecommunication |
+| Draft as of 2025-12-03 | *Computable Name*:Telecommunication |
 
  
 Adresse de télécommunication à laquelle une personne ou une organisation peut être contactée (téléphone, fax, e-mail, URL, etc.). 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md), [Professionnel](StructureDefinition-Professionnel.md), [SituationExercice](StructureDefinition-SituationExercice.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
+* Utiliser ce Modèle logique: [BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md), [Professionnel](StructureDefinition-Professionnel.md), [SituationExercice](StructureDefinition-SituationExercice.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Telecommunication)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Telecommunication.cs
   "name" : "Telecommunication",
   "title" : "Telecommunication",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

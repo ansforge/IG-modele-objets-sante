@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeEtat | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:DiplomeEtat |
+| Draft as of 2025-12-03 | *Computable Name*:DiplomeEtat |
 
  
 Un diplôme d’État, abrégé DE, est un diplôme français qui est souvent requis pour l’exercice de professions règlementées, notamment dans le champ de la santé.L’Etat intervient dans la définition du programme et la pédagogie du cursus diplômant.Cette classe comprend également des diplômes anciens existant avant la création du diplôme d’Etat de la profession et qui étaient requis, à cette époque, pour l’exercice de la profession.Par exemple, le diplôme d’Etat de docteur en chirurgie dentaire est requis depuis 1972 pour exercer la profession de chirurgien-dentiste. Avant 1972, le diplôme d’Etat de chirurgien-dentiste était requis. Ces deux diplômes sont donc présents dans la nomenclature des diplômes d’Etat français.Dans le cadre du modèle, un Diplôme d’Etat est considéré comme un type de diplôme. La classe DiplomeEtat est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DiplomeEtat)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DiplomeEtat.csv), [E
   "name" : "DiplomeEtat",
   "title" : "DiplomeEtat",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

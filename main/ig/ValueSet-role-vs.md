@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:RoleVs |
+| Draft as of 2025-12-03 | *Computable Name*:RoleVs |
 
  **References** 
 
 * [SituationExercice](StructureDefinition-SituationExercice.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -26,6 +26,12 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem TRE_R21_Fonction v20250623120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R21-Fonction.html)
+* [codesystem TRE_R85_RolePriseCharge v20250328120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R85-RolePriseCharge.html)
+* [codesystem TRE_R96_AutreFonctionSanitaire v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R96-AutreFonctionSanitaire.html)
 
 Ce jeu de valeur (ValueSet) contient 137 concepts
 
@@ -54,7 +60,7 @@ Ce jeu de valeur (ValueSet) contient 137 concepts
   "version" : "0.1.0",
   "name" : "RoleVs",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

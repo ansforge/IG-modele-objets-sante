@@ -9,13 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:SexeVs |
+| Draft as of 2025-12-03 | *Computable Name*:SexeVs |
 
  **References** 
 
 * [PersonnePhysique](StructureDefinition-PersonnePhysique.md)
 
-### Logical Definition (CLD)
+### Définition logique (CLD)
 
 Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
 
@@ -26,6 +26,12 @@ Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
  
 
 ### Expansion
+
+Expansion effectuée en interne basée sur :
+
+* [codesystem TRE_R249_Sexe v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R249-Sexe.html)
+* [codesystem TRE_R267_SexeProvenanceISO v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R267-SexeProvenanceISO.html)
+* [codesystem TRE_R303_HL7v3AdministrativeGender v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R303-HL7v3AdministrativeGender.html)
 
 Ce jeu de valeur (ValueSet) contient 13 concepts
 
@@ -54,7 +60,7 @@ Ce jeu de valeur (ValueSet) contient 13 concepts
   "version" : "0.1.0",
   "name" : "SexeVs",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

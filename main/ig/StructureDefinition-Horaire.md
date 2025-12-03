@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Horaire | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:Horaire |
+| Draft as of 2025-12-03 | *Computable Name*:Horaire |
 
  
 La classe Horaire permet de définir les différentes plages d’un agenda d’une entité (jours et heures d’ouverture, période de fermeture, etc.).Synonymes (agendas partagés) : plages de disponibilités et d’indisponibilités 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
+* Utiliser ce Modèle logique: [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Horaire)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Horaire.csv), [Excel
   "name" : "Horaire",
   "title" : "Horaire",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

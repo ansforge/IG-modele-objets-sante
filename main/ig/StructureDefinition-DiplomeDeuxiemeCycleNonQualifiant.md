@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:DiplomeDeuxiemeCycleNonQualifiant |
+| Draft as of 2025-12-03 | *Computable Name*:DiplomeDeuxiemeCycleNonQualifiant |
 
  
 Le diplôme de deuxième cycle non qualifiant enregistre un niveau de formation de fin de deuxième cycle, qui sanctionne une partie des études requises à l’exercice de la profession.Il ne donne pas droit à l’exercice de la profession et son obtention ne change pas la qualification à venir des titulaires lorsqu’ils exerceront. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-DiplomeDeuxiemeCycle
   "name" : "DiplomeDeuxiemeCycleNonQualifiant",
   "title" : "DiplomeDeuxiemeCycleNonQualifiant",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

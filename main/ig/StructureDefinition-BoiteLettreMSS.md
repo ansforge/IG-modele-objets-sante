@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:BoiteLettreMSS |
+| Draft as of 2025-12-03 | *Computable Name*:BoiteLettreMSS |
 
  
 Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS 
 
-**Usages:**
+**Utilisations:**
 
-* Use this Logical Model: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [Professionnel](StructureDefinition-Professionnel.md) and [SituationExercice](StructureDefinition-SituationExercice.md)
+* Utiliser ce Modèle logique: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [Professionnel](StructureDefinition-Professionnel.md) and [SituationExercice](StructureDefinition-SituationExercice.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/BoiteLettreMSS)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-BoiteLettreMSS.csv),
   "name" : "BoiteLettreMSS",
   "title" : "BoiteLettreMSS",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

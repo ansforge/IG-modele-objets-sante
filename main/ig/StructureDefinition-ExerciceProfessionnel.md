@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:ExerciceProfessionnel |
+| Draft as of 2025-12-03 | *Computable Name*:ExerciceProfessionnel |
 
  
 Informations décrivant notamment la profession exercée, l’identité d’exercice d’un professionnel et le cadre de son exercice (civil, agent public, etc.).Il peut exister plusieurs exercices professionnels pour une personne à un instant donné. 
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Logical Model: [SavoirFaire](StructureDefinition-SavoirFaire.md), [SituationExercice](StructureDefinition-SituationExercice.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
+* Référer à ce Modèle logique: [SavoirFaire](StructureDefinition-SavoirFaire.md), [SituationExercice](StructureDefinition-SituationExercice.md) and [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/ExerciceProfessionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
   "name" : "ExerciceProfessionnel",
   "title" : "ExerciceProfessionnel",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

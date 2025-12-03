@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:Professionnel |
+| Draft as of 2025-12-03 | *Computable Name*:Professionnel |
 
  
 Données d’identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social. 
 
-**Usages:**
+**Utilisations:**
 
-* Refer to this Logical Model: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
+* Référer à ce Modèle logique: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Professionnel)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
   "name" : "Professionnel",
   "title" : "Professionnel",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

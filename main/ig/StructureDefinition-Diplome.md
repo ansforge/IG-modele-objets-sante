@@ -9,15 +9,15 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:Diplome |
+| Draft as of 2025-12-03 | *Computable Name*:Diplome |
 
  
 Un diplôme sanctionne un niveau de connaissances. L’Etat intervient, dans certains cas, sur le programme et la pédagogie de certains cursus diplômants, par exemple les diplômes d’Etat.La classe “Diplome” est une classe générale contenant les propriétés communes aux différents types de diplômes.Chaque diplôme est décrit dans le modèle comme une spécialisation de la classe Diplome et à ce titre, hérite des attributs de cette classe. Synonymes RPPS : Diplôme obtenu 
 
-**Usages:**
+**Utilisations:**
 
-* Derived from this Logical Model: [Attestation](StructureDefinition-Attestation.md), [AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md), [CapaciteDiplome](StructureDefinition-CapaciteDiplome.md), [CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md)...Show 10 more,[DESC1](StructureDefinition-DESC1.md),[DESC2](StructureDefinition-DESC2.md),[DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md),[DiplomeDivers](StructureDefinition-DiplomeDivers.md),[DiplomeEEE](StructureDefinition-DiplomeEEE.md),[DiplomeEES](StructureDefinition-DiplomeEES.md),[DiplomeEtat](StructureDefinition-DiplomeEtat.md),[DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md),[DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md)and[FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md)
-* Use this Logical Model: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md) and [Professionnel](StructureDefinition-Professionnel.md)
+* Dérivé de ce Modèle logique: [Attestation](StructureDefinition-Attestation.md), [AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md), [CapaciteDiplome](StructureDefinition-CapaciteDiplome.md), [CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md)...Show 10 more,[DESC1](StructureDefinition-DESC1.md),[DESC2](StructureDefinition-DESC2.md),[DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md),[DiplomeDivers](StructureDefinition-DiplomeDivers.md),[DiplomeEEE](StructureDefinition-DiplomeEEE.md),[DiplomeEES](StructureDefinition-DiplomeEES.md),[DiplomeEtat](StructureDefinition-DiplomeEtat.md),[DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md),[DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md)and[FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md)
+* Utiliser ce Modèle logique: [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md) and [Professionnel](StructureDefinition-Professionnel.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/Diplome)
 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-Diplome.csv), [Excel
   "name" : "Diplome",
   "title" : "Diplome",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

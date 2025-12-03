@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrientationParticuliere | *Version*:0.1.0 |
-| Draft as of 2025-11-03 | *Computable Name*:OrientationParticuliere |
+| Draft as of 2025-12-03 | *Computable Name*:OrientationParticuliere |
 
  
 Caractérise une orientation d’exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
-**Usages:**
+**Utilisations:**
 
-* This Logical Model is not used by any profiles in this Implementation Guide
+* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/OrientationParticuliere)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-OrientationParticuli
   "name" : "OrientationParticuliere",
   "title" : "OrientationParticuliere",
   "status" : "draft",
-  "date" : "2025-11-03T16:45:30+00:00",
+  "date" : "2025-12-03T08:21:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
