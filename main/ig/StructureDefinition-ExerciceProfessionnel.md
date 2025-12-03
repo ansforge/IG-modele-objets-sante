@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
   "name" : "ExerciceProfessionnel",
   "title" : "ExerciceProfessionnel",
   "status" : "draft",
-  "date" : "2025-12-03T08:21:22+00:00",
+  "date" : "2025-12-03T08:23:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
