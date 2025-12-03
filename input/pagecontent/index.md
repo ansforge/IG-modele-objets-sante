@@ -68,9 +68,3 @@ Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohé
 ### Propriété intellectuelle
 
 {% lang-fragment ip-statements.xhtml %}
-
-### Auteurs et contributeurs (optionnel
-
-| Role  | Nom | Organisation | Contact |
-| --- | --- | --- | --- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
