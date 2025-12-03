@@ -66,12 +66,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 * [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.4.0/CodeSystem-ISO3166Part1.html): [Adresse](StructureDefinition-Adresse.md), [Attestation](StructureDefinition-Attestation.md)...Show 56 more,[AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md),[BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md),[CapaciteDiplome](StructureDefinition-CapaciteDiplome.md),[CapaciteSavoirfaire](StructureDefinition-CapaciteSavoirfaire.md),[CapacitesavoirfaireVs](ValueSet-capaciteSavoirFaire-vs.md),[CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md),[Competence](StructureDefinition-Competence.md),[CompetenceExclusive](StructureDefinition-CompetenceExclusive.md),[CompetenceMetier](StructureDefinition-CompetenceMetier.md),[CompetenceVs](ValueSet-competence-vs.md),[CompetenceexclusiveVs](ValueSet-competenceExclusive-vs.md),[CompetencemetiereVs](ValueSet-competenceMetier-vs.md),[DESC1](StructureDefinition-DESC1.md),[DESC2](StructureDefinition-DESC2.md),[DESCNonQualifiant](StructureDefinition-DESCNonQualifiant.md),[DescnonqualifiantVs](ValueSet-DESCNonQualifiant-vs.md),[Diplome](StructureDefinition-Diplome.md),[DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md),[DiplomeDivers](StructureDefinition-DiplomeDivers.md),[DiplomeEEE](StructureDefinition-DiplomeEEE.md),[DiplomeEES](StructureDefinition-DiplomeEES.md),[DiplomeEtat](StructureDefinition-DiplomeEtat.md),[DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md),[DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md),[DroitExerciceComplementaire](StructureDefinition-DroitExerciceComplementaire.md),[DroitexercicecomplementaireVs](ValueSet-droitExerciceComplementaire-vs.md),[ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md),[FonctionQualifiee](StructureDefinition-FonctionQualifiee.md),[FonctionqualifieeVs](ValueSet-fonctionQualifiee-vs.md),[FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md),[Horaire](StructureDefinition-Horaire.md),[LangueParlee](StructureDefinition-LangueParlee.md),[LieunaissanceVs](ValueSet-lieuNaissance-vs.md),[MOS](index.md),[OrientationParticuliere](StructureDefinition-OrientationParticuliere.md),[OrientationparticuliereVs](ValueSet-orientationParticuliere-vs.md),[PaysnaissanceVs](ValueSet-paysNaissance-vs.md),[PaysnationaliteVs](ValueSet-paysNationalite-vs.md),[PersonnePhysique](StructureDefinition-PersonnePhysique.md),[ProfessionVs](ValueSet-profession-vs.md),[ProfessioncategoriesocioprofessionnelleVs](ValueSet-professionCategorieSocioProfessionnelle-vs.md),[Professionnel](StructureDefinition-Professionnel.md),[QualificationPAC](StructureDefinition-QualificationPAC.md),[QualificationpacVs](ValueSet-qualificationPAC-vs.md),[RoleVs](ValueSet-role-vs.md),[SavoirFaire](StructureDefinition-SavoirFaire.md),[SexeVs](ValueSet-sexe-vs.md),[SituationExercice](StructureDefinition-SituationExercice.md),[SituationOperationnelle](StructureDefinition-SituationOperationnelle.md),[Specialite](StructureDefinition-Specialite.md),[SpecialiteVs](ValueSet-specialite-vs.md),[SurspecialiteTransversale](StructureDefinition-SurspecialiteTransversale.md),[SurspecialitetransversaleVs](ValueSet-surspecialiteTransversale-vs.md),[Telecommunication](StructureDefinition-Telecommunication.md),[TypeprofessionVs](ValueSet-typeProfession-vs.md)and[TyperoleVs](ValueSet-typeRole-vs.md)
 
 
-### Auteurs et contributeurs (optionnel
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
-
 
 
 ## Resource Content
@@ -85,7 +79,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-12-03T08:23:01+00:00",
+  "date" : "2025-12-03T08:56:12+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -181,6 +175,19 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueString" : "i18n-default-lang"
+          },
+          {
+            "url" : "value",
+            "valueString" : "fr-FR"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -523,6 +530,19 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           {
             "url" : "value",
             "valueString" : "true"
+          }
+        ],
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "code",
+            "valueCode" : "i18n-default-lang"
+          },
+          {
+            "url" : "value",
+            "valueString" : "fr-FR"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
