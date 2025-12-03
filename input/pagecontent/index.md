@@ -74,5 +74,3 @@ Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohé
 ### Propriété intellectuelle
 
 {% lang-fragment ip-statements.xhtml %}
-
-{% include ip-statements.xhtml %}
