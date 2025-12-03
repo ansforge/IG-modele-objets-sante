@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "orientationParticuliere-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs orientationParticuliere-vs</b></p><a name=\"orientationParticuliere-vs\"> </a><a name=\"hcorientationParticuliere-vs\"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G13-OrientationParticuliere.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere</code></a><span title=\"La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20231215120000, la version trouvée via les références de package\"> version &#x1F4E6;20231215120000</span></li><li>Inclut tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS</code></a><span title=\"La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20241213120000, la version trouvée via les références de package\"> version &#x1F4E6;20241213120000</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/orientationParticuliere-vs",
+  "version" : "0.1.0",
+  "name" : "OrientationparticuliereVs",
+  "status" : "draft",
+  "date" : "2025-12-03T08:52:03+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+    }]
+  }
+}

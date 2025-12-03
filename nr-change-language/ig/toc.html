@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Table of Contents - Modèle des Objets de Santé (MOS) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"0"}
+    h3,h4,h5,h6{--heading-prefix:"0.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" no-external="true" href="https://esante.gouv.fr/produits-services/ci-sis"><img height="50" alt="Visit the CI-SIS website" src="assets/images/ci-sis-logo.jpeg"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+  </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Modèle des Objets de Santé (MOS)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="classes_communes.html">Classes communes</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Composants élémentaires
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="professionnel.html">Professionnel</a>
+      </li>
+      <li>
+        <a href="dispo-authent.html">Dispositif d&apos;authentification</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
+      </li>
+      <li>
+        <a href="ppec.html">Personne prise en charge</a>
+      </li>
+      <li>
+        <a href="ressops.html">Ressources opérationnelles</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><b>Table of Contents</b></li>
+
+          <span style="float:right;">
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="index.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Table of Contents</h2>
+  
+  
+  
+  <?xml version="1.0" encoding="UTF-8"?><div style="col-12"><table style="border:0px;font-size:11px;font-family:verdana;vertical-align:top;" cellpadding="0" border="0" cellspacing="0"><tbody><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page-child.gif"/><a title="Table of Contents" href="toc.html"> 0 Table of Contents</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&quot;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Accueil" href="index.html"> 1 Accueil</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!#"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Classes communes" href="classes_communes.html"> 2 Classes communes</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!$"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page-child.gif"/><a title="Composants élémentaires" href="composants_elementaires.html"> 3 Composants élémentaires</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!$&quot;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vline.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Professionnel" href="professionnel.html"> 3.1 Professionnel</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!$#"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vline.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Dispositif d'authentification" href="dispo-authent.html"> 3.2 Dispositif d'authentification</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!$$"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vline.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Structure" href="structure.html"> 3.3 Structure</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!$%"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vline.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Personne prise en charge" href="ppec.html"> 3.4 Personne prise en charge</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!$&amp;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vline.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin_end.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Ressources opérationnelles" href="ressops.html"> 3.5 Ressources opérationnelles</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!%"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page-child.gif"/><a title="Autres Ressources" href="autres_ressources.html"> 4 Autres Ressources</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!%&quot;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vline.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Sécurité" href="securite.html"> 4.1 Sécurité</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!%#"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vline.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin_end.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Téléchargements et usages" href="downloads.html"> 4.2 Téléchargements et usages</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page-child.gif"/><a title="Artifacts Summary" href="artifacts.html"> 5 Artifacts Summary</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;&quot;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Adresse" href="StructureDefinition-Adresse.html"> 5.1 Adresse</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;#"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Attestation" href="StructureDefinition-Attestation.html"> 5.2 Attestation</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;$"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="AutreDiplomeObtenu" href="StructureDefinition-AutreDiplomeObtenu.html"> 5.3 AutreDiplomeObtenu</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;%"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="BoiteLettreMSS" href="StructureDefinition-BoiteLettreMSS.html"> 5.4 BoiteLettreMSS</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;&amp;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CapaciteDiplome" href="StructureDefinition-CapaciteDiplome.html"> 5.5 CapaciteDiplome</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;'"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CapaciteSavoirfaire" href="StructureDefinition-CapaciteSavoirfaire.html"> 5.6 CapaciteSavoirfaire</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;("><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CertificatEtudeSpeciale" href="StructureDefinition-CertificatEtudeSpeciale.html"> 5.7 CertificatEtudeSpeciale</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;)"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Competence" href="StructureDefinition-Competence.html"> 5.8 Competence</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;*"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CompetenceExclusive" href="StructureDefinition-CompetenceExclusive.html"> 5.9 CompetenceExclusive</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;+"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CompetenceMetier" href="StructureDefinition-CompetenceMetier.html"> 5.10 CompetenceMetier</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;,"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DESC1" href="StructureDefinition-DESC1.html"> 5.11 DESC1</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;-"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DESC2" href="StructureDefinition-DESC2.html"> 5.12 DESC2</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;."><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DESCNonQualifiant" href="StructureDefinition-DESCNonQualifiant.html"> 5.13 DESCNonQualifiant</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;/"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Diplome" href="StructureDefinition-Diplome.html"> 5.14 Diplome</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;0"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DiplomeDeuxiemeCycleNonQualifiant" href="StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.html"> 5.15 DiplomeDeuxiemeCycleNonQualifiant</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;1"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DiplomeDivers" href="StructureDefinition-DiplomeDivers.html"> 5.16 DiplomeDivers</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;2"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DiplomeEEE" href="StructureDefinition-DiplomeEEE.html"> 5.17 DiplomeEEE</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;3"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DiplomeEES" href="StructureDefinition-DiplomeEES.html"> 5.18 DiplomeEES</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;4"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DiplomeEtat" href="StructureDefinition-DiplomeEtat.html"> 5.19 DiplomeEtat</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;5"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DiplomeEtudeSpecialisee" href="StructureDefinition-DiplomeEtudeSpecialisee.html"> 5.20 DiplomeEtudeSpecialisee</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;6"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DiplomeUniversitaire" href="StructureDefinition-DiplomeUniversitaire.html"> 5.21 DiplomeUniversitaire</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;7"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DroitExerciceComplementaire" href="StructureDefinition-DroitExerciceComplementaire.html"> 5.22 DroitExerciceComplementaire</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;8"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ExerciceProfessionnel" href="StructureDefinition-ExerciceProfessionnel.html"> 5.23 ExerciceProfessionnel</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;9"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FonctionQualifiee" href="StructureDefinition-FonctionQualifiee.html"> 5.24 FonctionQualifiee</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;:"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FormationSpecialiseeTransversale" href="StructureDefinition-FormationSpecialiseeTransversale.html"> 5.25 FormationSpecialiseeTransversale</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Horaire" href="StructureDefinition-Horaire.html"> 5.26 Horaire</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;&lt;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="LangueParlee" href="StructureDefinition-LangueParlee.html"> 5.27 LangueParlee</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;="><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="OrientationParticuliere" href="StructureDefinition-OrientationParticuliere.html"> 5.28 OrientationParticuliere</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;&gt;"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="PersonnePhysique" href="StructureDefinition-PersonnePhysique.html"> 5.29 PersonnePhysique</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;?"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Professionnel" href="StructureDefinition-Professionnel.html"> 5.30 Professionnel</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;@"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="QualificationPAC" href="StructureDefinition-QualificationPAC.html"> 5.31 QualificationPAC</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;A"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="SavoirFaire" href="StructureDefinition-SavoirFaire.html"> 5.32 SavoirFaire</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;B"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="SituationExercice" href="StructureDefinition-SituationExercice.html"> 5.33 SituationExercice</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;C"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="SituationOperationnelle" href="StructureDefinition-SituationOperationnelle.html"> 5.34 SituationOperationnelle</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;D"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Specialite" href="StructureDefinition-Specialite.html"> 5.35 Specialite</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;E"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="SurspecialiteTransversale" href="StructureDefinition-SurspecialiteTransversale.html"> 5.36 SurspecialiteTransversale</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;F"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Telecommunication" href="StructureDefinition-Telecommunication.html"> 5.37 Telecommunication</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;G"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CapacitesavoirfaireVs" href="ValueSet-capaciteSavoirFaire-vs.html"> 5.38 CapacitesavoirfaireVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;H"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CompetenceexclusiveVs" href="ValueSet-competenceExclusive-vs.html"> 5.39 CompetenceexclusiveVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;I"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CompetencemetiereVs" href="ValueSet-competenceMetier-vs.html"> 5.40 CompetencemetiereVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;J"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CompetenceVs" href="ValueSet-competence-vs.html"> 5.41 CompetenceVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;K"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DescnonqualifiantVs" href="ValueSet-DESCNonQualifiant-vs.html"> 5.42 DescnonqualifiantVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;L"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="DroitexercicecomplementaireVs" href="ValueSet-droitExerciceComplementaire-vs.html"> 5.43 DroitexercicecomplementaireVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;M"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FonctionqualifieeVs" href="ValueSet-fonctionQualifiee-vs.html"> 5.44 FonctionqualifieeVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;N"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="LieunaissanceVs" href="ValueSet-lieuNaissance-vs.html"> 5.45 LieunaissanceVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;O"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="OrientationparticuliereVs" href="ValueSet-orientationParticuliere-vs.html"> 5.46 OrientationparticuliereVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;P"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="PaysnaissanceVs" href="ValueSet-paysNaissance-vs.html"> 5.47 PaysnaissanceVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;Q"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="PaysnationaliteVs" href="ValueSet-paysNationalite-vs.html"> 5.48 PaysnationaliteVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;R"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ProfessioncategoriesocioprofessionnelleVs" href="ValueSet-professionCategorieSocioProfessionnelle-vs.html"> 5.49 ProfessioncategoriesocioprofessionnelleVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;S"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ProfessionVs" href="ValueSet-profession-vs.html"> 5.50 ProfessionVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;T"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="QualificationpacVs" href="ValueSet-qualificationPAC-vs.html"> 5.51 QualificationpacVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;U"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="RoleVs" href="ValueSet-role-vs.html"> 5.52 RoleVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;V"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="SexeVs" href="ValueSet-sexe-vs.html"> 5.53 SexeVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;W"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="SpecialiteVs" href="ValueSet-specialite-vs.html"> 5.54 SpecialiteVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;X"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="SurspecialitetransversaleVs" href="ValueSet-surspecialiteTransversale-vs.html"> 5.55 SurspecialitetransversaleVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;Y"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="TypeprofessionVs" href="ValueSet-typeProfession-vs.html"> 5.56 TypeprofessionVs</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!&amp;Z"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin_end.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="TyperoleVs" href="ValueSet-typeRole-vs.html"> 5.57 TyperoleVs</a></td></tr></tbody></table></div>
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <span style="visibility:hidden">&lt;prev</span>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="index.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 3, 2025 08:52+0000">2025-12-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/mos/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+
+  <!-- Analytics Below
+  ================================================== -->
+
+
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

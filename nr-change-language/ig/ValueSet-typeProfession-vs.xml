@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="typeProfession-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs typeProfession-vs</b></p><a name="typeProfession-vs"> </a><a name="hctypeProfession-vs"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R288-TypeProfession.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession</code></a><span title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20231215120000, la version trouvée via les références de package"> version &#x1F4E6;20231215120000</span></li><li>Inclut tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R37-TypeProfessionFonction.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction</code></a><span title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20231215120000, la version trouvée via les références de package"> version &#x1F4E6;20231215120000</span></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeProfession-vs"/>
+  <version value="0.1.0"/>
+  <name value="TypeprofessionVs"/>
+  <status value="draft"/>
+  <date value="2025-12-03T08:52:03+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="FRANCE"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession"/>
+    </include>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction"/>
+    </include>
+  </compose>
+</ValueSet>
