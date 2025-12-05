@@ -1,151 +1,123 @@
 @startuml
-skinparam classAttributeIconSize 0
-skinparam linetype ortho
+!theme carbon-gray
 
-' Le diagramme n'est pas correct, il a été ajouté à titre d'exemple
-
-' === Classes principales ===
-class Professionnel {
-  +idPP : Identifiant [0..1]
-  +idNat_PP : Identifiant [0..1]
-  +personne : PersonnePhysique [0..1]
-  +diplomeObtenu : Diplome [1]
-  +adresseCorrespondance : Adresse [1]
-  +telecommunication : Telecommunication [*]
-  +boiteLettreMSS : BoiteLettreMSS [*]
-  +metadonnee : Metadonnee [0..1]
+Class "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel {
+  civiliteExercice : Coding [0..1]
+  nomExercice : string [0..1]
+  prenomExercice : string [0..1]
+  profession : Coding [0..1]
+  typeProfession : Coding [0..1]
+  categorieProfessionnelle : Coding [0..1]
+  dateEffetExercice : date [0..1]
+  dateFinEffetExercice : date [0..1]
+  departementPremierReferencementAE : Coding [0..1]
 }
 
-class ExerciceProfessionnel {
-  +civiliteExercice : Code [0..1]
-  +nomExercice : Texte [0..1]
-  +prenomExercice : Texte [0..1]
-  +typeProfession : Code [1]
-  +categorieProfession : Code [0..1]
-  +codeProfession : Code [1]
-  +dateEffetExercice : Date [0..1]
-  +dateFinExercice : Date [0..1]
-  +departementRemp : Code [0..1]
-  +boiteLettreMSS : BoiteLettreMSS [*]
-  +metadonnee : Metadonnee [0..1]
+Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel {
+  idPP : Identifier [0..1]
+  typeIdNatPP : Coding [0..1]
+  idNatPS : Identifier [0..1]
 }
 
-class SituationExercice {
-  +role : Code [0..1]
-  +typeRole : Code [0..1]
-  +modeExercice : Code [0..1]
-  +numeroAM : Identifiant [0..1]
-  +dateDebutActivite : Date [0..1]
-  +dateFinActivite : Date [0..1]
-  +sectionOrdre : Code [0..1]
-  +sousSectionOrdre : Code [0..1]
-  +typeActivitePrincipale : Code [0..1]
-  +statutPS_SSA : Code [0..1]
-  +telecommunication : Telecommunication [*]
-  +adresseSE : Adresse [1]
-  +boiteLettreMSS : BoiteLettreMSS [*]
-  +metadonnee : Metadonnee [0..1]
+Class "[[StructureDefinition-SavoirFaire.html SavoirFaire]]" as SavoirFaire {
+  typeSavoirFaire : Coding [0..1]
+  dateReconnaissance : date [0..1]
+  dateAbandon : date [0..1]
 }
 
-class SituationOperationnelle {
-  +identifiantSituationOperationnelle : Identifiant [0..1]
-  +modeExerciceOC : Code [0..1]
-  +competenceSpecifique : Code [*]
-  +precisionHoraire : Horaire [0..1]
-  +secteurConventionnement : Code [0..1]
-  +optionContractuelleSousAncienneIndicateur : Code [0..1]
-  +carteVitaleAcceptee : Indicateur [0..1]
-  +telecommunication : Telecommunication [0..1]
-  +metadonnee : Metadonnee [0..1]
+Class "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice {
+  role : Coding [0..1]
+  typeRole : Coding [0..1]
+  modeExercice : Coding [0..1]
+  numeroAM : Identifier [0..1]
+  dateDebutActivite : date [0..1]
+  dateFinActivite : date [0..1]
+  genreActivite : Coding [0..1]
+  motifFinActivite : Coding [0..1]
+  statutHospitalier : Coding [0..1]
+  sectionOrdrePharmacien : Coding [0..1]
+  sousSectionOrdrePharmacien : Coding [0..1]
+  typeActiviteLiberale : Coding [0..1]
+  statutPSSSA : Coding [0..1]
 }
 
-Package "Offre opérationnelle" {
-    class OffreOperationnelle
+Class "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle {
+  identifiantSituationOperationnelle : Identifier [0..1]
+  modeExerciceOffre : Coding [0..1]
+  competenceSpecifique : Coding [0..*]
+  secteurConventionnement : Coding [0..1]
+  optionContratAccesAuxSoins : boolean [0..1]
+  carteVitaleAcceptee : boolean [0..1]
 }
 
-Package "Dispositif d'authentification" {
-    class CarteProfessionnel {}
-    class Certificat {}
+Class InscriptionOrdre #LightBlue {
+  ordre : Coding [0..1]
+  dateDebutInscription : date [0..1]
+  dateRadiation : date [0..1]
+  statutInscription : Coding [0..1]
+  conseilDepartemental : Coding [0..1]
 }
 
-Package "Dossier" {
-    class NoteLiaison
+Class AttributionParticuliere #LightBlue {
+  attributionParticuliere : Coding [0..1]
+  dateDebutReconnaissance : date [0..1]
+  dateAbandon : date [0..1]
 }
 
-
-Package "Structure" {
-    class EntiteGeographique
+Class NiveauFormation #LightBlue {
+  natureCycleFormation : Coding [0..1]
+  niveauFormationAcquis : Coding [0..1]
+  anneeUniversitaire : Coding [0..1]
+  dateFin : date [0..1]
 }
 
-Package "Personne prise en charge" {
-    class PersonnePriseCharge {}
+package "Dispositif d'authentification" as Dispositif_d'authentification_part {
+  Class "[[StructureDefinition-Certificat.html Certificat]]" as Certificat
+  Class "[[StructureDefinition-CarteProfessionnel.html CarteProfessionnel]]" as CarteProfessionnel
 }
 
-Package "Accord" {
-    class AutorisationExercice
+package "Dossier" as Dossier_part {
+  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
 }
 
-
-Package "Agenda" {
-    class RendezVous {}
-    class Agenda {}
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  Class "[[StructureDefinition-Observation.html Observation]]" as Observation
+  Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
 }
 
-class InscriptionOrdre {
-  +ordre : Code [0..1]
-  +dateDebutInscription : Date [0..1]
-  +dateRadiation : Date [0..1]
-  +statutInscription : Code [0..1]
-  +conseilDepartemental : Code [0..1]
-  +metadonnee : Metadonnee [0..1]
+package "Accord" as Accord_part {
+  Class "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" as AutorisationExercice
 }
 
-class SavoirFaire {
-  +typeSavoirFaire : Code [0..1]
-  +dateReconnaissance : Date [0..1]
-  +dateAbandon : Date [0..1]
-  +metadonnee : Metadonnee [0..1]
+package "Agenda" as Agenda_part {
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
 }
 
-class AttributionParticuliere {
-  +attributionParticuliere : Code [0..1]
-  +dateDebutReconnaissance : Date [0..1]
-  +dateAbandon : Date [0..1]
-  +metadonnee : Metadonnee [0..1]
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
 }
 
-class NiveauFormation {
-  +diplome : Diplome [0..1]
-  +natureCycleFormation : Code [0..1]
-  +niveauFormationAcquis : Code [0..1]
-  +anneeUniversitaire : Code [0..1]
-  +dateFin : Date [0..1]
-  +metadonnee : Metadonnee [0..1]
+package "Offre opérationnelle" as Offre_opérationnelle_part {
+  Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
 }
-
-' === Relations ===
-
-Professionnel "1" -- "*" ExerciceProfessionnel
-Professionnel "*" -- "*" Agenda
-Professionnel "1" -- "*" NoteLiaison
-Professionnel "1" -- "*" AutorisationExercice
-Professionnel "1" -- "*" PersonnePriseCharge
-
-ExerciceProfessionnel "1" -- "*" InscriptionOrdre
-ExerciceProfessionnel "1" -- "*" SavoirFaire
-ExerciceProfessionnel "1" -- "*" AttributionParticuliere
-ExerciceProfessionnel "1" -- "*" NiveauFormation
-
-
-ExerciceProfessionnel "0..1" -- "*" CarteProfessionnel
-ExerciceProfessionnel "1" -- "*" Certificat
 
 ExerciceProfessionnel "1" -- "*" SituationExercice
+ExerciceProfessionnel "1" -- "*" SavoirFaire
+ExerciceProfessionnel "*" -- "1" Professionnel
 ExerciceProfessionnel "1" -- "*" SituationOperationnelle
-
-
-SituationOperationnelle "*" -- "1" OffreOperationnelle
+ExerciceProfessionnel "0..1" -- "*" Certificat
+ExerciceProfessionnel "1" -- "*" CarteProfessionnel
+Professionnel "0..1" -- "*" NoteLiaison
+Professionnel "0..1" -- "*" Observation
+Professionnel "*" -- "*" PersonnePriseCharge
+Professionnel "0..1" -- "*" AutorisationExercice
+Professionnel "*" -- "*" Agenda
+Professionnel "*" -- "*" RendezVous
 SituationExercice "*" -- "0..1" EntiteGeographique
- 
+SituationOperationnelle "*" -- "1" OffreOperationnelle
+ExerciceProfessionnel --> InscriptionOrdre : 0..*
+ExerciceProfessionnel --> AttributionParticuliere : 0..1
+ExerciceProfessionnel --> NiveauFormation : 0..*
 
 @enduml

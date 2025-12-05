@@ -1,0 +1,48 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-DispositifMedical.html DispositifMedical]]" as DispositifMedical {
+  identifiantLocalDM : Identifier [0..*]
+  classeRisque : Coding [0..1]
+  reference : Identifier [0..1]
+  modele : string [0..1]
+  nomCommercial : string [0..1]
+  codeEMDN : Coding [0..1]
+  usageUnique : boolean [0..1]
+  nombreReutilisation : integer [0..1]
+  sterile : boolean [0..1]
+  sterilisationAvantUtilisation : boolean [0..1]
+  contientLatex : boolean [0..1]
+  substanceCMR1A1B : boolean [0..1]
+  implantable : boolean [0..1]
+  actif : boolean [0..1]
+  codeLPP : boolean [0..1]
+  irmCompatible : Coding [0..1]
+}
+
+Class SupportIUD #LightBlue {
+  IUDID : Identifier [0..1]
+  IUDIPNumeroSerie : Identifier [0..1]
+  IUDIPNumeroLot : Identifier [0..1]
+  IUDIPIdLogiciel : Identifier [0..1]
+  IUDIPDateFabrication : date [0..1]
+  IUDIPDateExpiration : date [0..1]
+  AIDC : base64Binary [0..1]
+  marquageClair : string [0..1]
+  typeSupportIUD : Coding [0..1]
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteJuridique.html EntiteJuridique]]" as EntiteJuridique
+}
+
+package "Dossier" as Dossier_part {
+  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
+}
+
+DispositifMedical "*" -- "1" EntiteJuridique
+DispositifMedical "0..1" -- "*" NoteLiaison
+
+DispositifMedical --> SupportIUD : 0..*
+
+@enduml

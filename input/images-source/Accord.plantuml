@@ -1,0 +1,37 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" as AutorisationExercice {
+  typeAutorisation : Coding [0..1]
+  disciplineAutorisee : Coding [0..1]
+  dateDebutAutorisation : date [0..1]
+  dateFinAutorisation : date [0..1]
+  profession : Coding [0..1]
+}
+
+Class "[[StructureDefinition-Convention.html Convention]]" as Convention {
+  numeroConvention : Identifier [0..1]
+  titre : string [0..1]
+  dateDebutConvention : date [0..1]
+  dateFinConvention : date [0..1]
+}
+
+Class "[[StructureDefinition-LicenceExploitation.html LicenceExploitation]]" as LicenceExploitation {
+  numeroLicence : Identifier [0..1]
+  dateDebutLicence : date [0..1]
+  dateFinLicence : date [0..1]
+}
+
+package "Professionnel" as Professionnel_part {
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+AutorisationExercice "*" -- "0..1" Professionnel
+Convention "*" -- "1" EntiteGeographique
+LicenceExploitation "0..1" -- "1" EntiteGeographique
+
+@enduml

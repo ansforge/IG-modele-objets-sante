@@ -1,0 +1,59 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-Demande.html Demande]]" as Demande {
+  identifiantDemande : Identifier [0..1]
+  dateDemande : date [0..1]
+  demandeUrgente : boolean [0..1]
+}
+
+Class "[[StructureDefinition-Decision.html Decision]]" as Decision {
+  dateDecision : date [0..1]
+  typeDecision : Coding [0..1]
+}
+
+Class "[[StructureDefinition-DossierPersonnePriseCharge.html DossierPersonnePriseCharge]]" as DossierPersonnePriseCharge {
+  identifiantDossier : Identifier [0..1]
+}
+
+Class "[[StructureDefinition-Document.html Document]]" as Document {
+  typeDocument : Coding [0..1]
+}
+
+Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison {
+  idNote : Identifier [0..1]
+  typeNote : Coding [0..1]
+  restrictionAudience : Coding [0..1]
+  dateHeureCreation : dateTime [0..1]
+  description : string [0..1]
+  urgenceNote : boolean [0..1]
+}
+
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
+}
+
+package "Professionnel" as Professionnel_part {
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+package "Dispositif médical" as Dispositif_médical_part {
+  Class "[[StructureDefinition-DispositifMedical.html DispositifMedical]]" as DispositifMedical
+}
+
+Demande "1" -- "*" Decision
+Demande "*" -- "*" Document
+Demande "*" -- "1" DossierPersonnePriseCharge
+DossierPersonnePriseCharge "1" -- "*" Document
+Document "1..*" -- "*" NoteLiaison
+DossierPersonnePriseCharge "1" -- "1" PersonnePriseCharge
+NoteLiaison "*" -- "1" PersonnePriseCharge
+NoteLiaison "*" -- "0..1" Professionnel
+NoteLiaison "*" -- "0..1" EntiteGeographique
+NoteLiaison "*" -- "0..1" DispositifMedical
+
+@enduml

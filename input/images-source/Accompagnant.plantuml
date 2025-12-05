@@ -1,0 +1,23 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-Parent.html Parent]]" as Parent {
+  autoriteParentale : boolean [0..1]
+}
+
+Class "[[StructureDefinition-AidantDemarche.html AidantDemarche]]" as AidantDemarche {
+  typeAidantDemarche : Coding [0..1]
+}
+
+Class "[[StructureDefinition-MesureProtection.html MesureProtection]]" as MesureProtection {
+  typeMesureProtection : Coding [0..1]
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+AidantDemarche "0..1" -- "0..1" EntiteGeographique
+MesureProtection "0..1" -- "0..1" EntiteGeographique
+
+@enduml

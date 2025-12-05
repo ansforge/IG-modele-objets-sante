@@ -1,0 +1,74 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda {
+  idAgenda : Identifier [0..1]
+  nomAgenda : string [0..1]
+  dateCreation : date [0..1]
+  dateDebutPlanification : dateTime [0..1]
+  dateFinPlanification : dateTime [0..1]
+}
+
+Class "[[StructureDefinition-Creneau.html Creneau]]" as Creneau {
+  idCreneau : Identifier [0..1]
+  statut : Coding [0..1]
+  dateDebut : dateTime [0..1]
+  dateFin : dateTime [0..1]
+  informationComplementaire : string [0..1]
+}
+
+Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous {
+  idRdv : Identifier [0..1]
+  typeRdv : Coding [0..1]
+  datePriseRdv : dateTime [0..1]
+  dateDebutRdv : dateTime [0..1]
+  dateFinRdv : dateTime [0..1]
+  dateAnnulationRdv : dateTime [0..1]
+  pieceJointe : base64Binary [0..1]
+  priorite : Coding [0..1]
+  titreRdv : string [0..1]
+  statutRdv : Coding [0..1]
+  descriptionRdv : string [0..1]
+  motifRdv : string [0..1]
+  commentaire : string [0..1]
+}
+
+Class "[[StructureDefinition-PlageDisponibilite.html PlageDisponibilite]]" as PlageDisponibilite {
+  statutPlageDisponibilite : Coding [0..1]
+}
+
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
+}
+
+package "Professionnel" as Professionnel_part {
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+package "Ressources opérationnelles" as Ressources_opérationnelles_part {
+  Class "[[StructureDefinition-EquipementSpecifique.html EquipementSpecifique]]" as EquipementSpecifique
+}
+
+package "Organisation opérationnelle" as Organisation_opérationnelle_part {
+  Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne
+}
+
+Agenda "*" -- "*" PersonnePriseCharge
+RendezVous "*" -- "*" PersonnePriseCharge
+Agenda "*" -- "*" Professionnel
+RendezVous "*" -- "*" Professionnel
+Agenda "*" -- "*" EntiteGeographique
+RendezVous "*" -- "*" EntiteGeographique
+Agenda "*" -- "*" EquipementSpecifique
+RendezVous "*" -- "*" EquipementSpecifique
+Agenda "*" -- "*" OrganisationInterne
+RendezVous "*" -- "*" OrganisationInterne
+Agenda "1" -- "*" Creneau
+Agenda "1" -- "*" PlageDisponibilite
+Creneau "*" -- "*" RendezVous
+
+@enduml

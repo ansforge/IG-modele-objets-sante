@@ -1,0 +1,39 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-LieuRealisationOffre.html LieuRealisationOffre]]" as LieuRealisationOffre {
+  idExterneSynchro : Identifier [0..1]
+  nomExterneSynchro : string [0..1]
+}
+
+Class "[[StructureDefinition-EquipementSpecifique.html EquipementSpecifique]]" as EquipementSpecifique {
+  typeEquipement : Coding [0..1]
+  nbEquipementEnService : integer [0..1]
+}
+
+Class "[[StructureDefinition-CapacitePriseCharge.html CapacitePriseCharge]]" as CapacitePriseCharge {
+  affectationTemporaire : Coding [0..1]
+}
+
+Class LimiteCaracteristiqueEquipement #LightBlue {
+  typeCaracteristique : Coding [0..1]
+  valeurLimite : Quantity [0..1]
+}
+
+package "Offre opérationnelle" as Offre_opérationnelle_part {
+  Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
+}
+
+package "Agenda" as Agenda_part {
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
+}
+
+LieuRealisationOffre "1..*" -- "1..*" OffreOperationnelle
+LieuRealisationOffre "1" -- "*" CapacitePriseCharge
+LieuRealisationOffre "1" -- "*" EquipementSpecifique
+EquipementSpecifique "*" -- "*" Agenda
+EquipementSpecifique "*" -- "*" RendezVous
+EquipementSpecifique --> LimiteCaracteristiqueEquipement : 0..*
+
+@enduml

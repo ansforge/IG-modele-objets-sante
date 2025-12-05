@@ -30,16 +30,34 @@ pages:
     #     title: Types de données
     composants_elementaires.md:
         title: Composants élémentaires
-        professionnel.md:
-            title: Professionnel
+        accompagnant.md:
+            title : Accompagnant
+        accord.md:
+            title : Accord
+        agenda.md:
+            title : Agenda
+        autorisation.md:
+            title : Autorisation
         dispo-authent.md:
             title: Dispositif d'authentification
-        structure.md:
-            title: Structure
+        dispositif-medical.md:
+            title : Dispositif médical
+        dossier.md:
+            title : Dossier
+        offre-operationnelle.md:
+            title : Offre opérationnelle
         ppec.md:
-            title: Personne prise en charge
+            title: Personne prise en charge        
+        professionnel.md:
+            title: Professionnel
+        professionnel_2.md:
+            title: Professionnel_2
+        professionnel_3.md:
+            title: Professionnel_3                      
         ressops.md:
             title: Ressources opérationnelles
+        structure.md:
+            title: Structure
     autres_ressources.md:
         title: Autres Ressources
         securite.md:
@@ -52,11 +70,20 @@ menu:
     Classes communes: classes_communes.html
     # Types de données: types_donnees.html
     Composants élémentaires:
-      Professionnel: professionnel.html
+      Accompagnant : accompagnant.html
+      Accord : accord.html
+      Agenda : agenda.html
+      Autorisation : autorisation.html
       Dispositif d'authentification: dispo-authent.html
-      Structure: structure.html
+      Dispositif médical : dispositif-medical.html
+      Dossier : dossier.html
+      Offre opérationnelle : offre-operationnelle.html
       Personne prise en charge: ppec.html
+      Professionnel: professionnel.html
+      Professionnel_2: professionnel_2.html
+      Professionnel_3: professionnel_3.html
       Ressources opérationnelles: ressops.html
+      Structure: structure.html
     Ressources de conformité: artifacts.html
     Autres ressources:
         Sécurité: securite.html
@@ -64,3 +91,140 @@ menu:
         "Spécifications FHIR ": new-tab {{site.data.fhir.path}}index.html
         "Site de l'ANS ": new-tab https://esante.gouv.fr/
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
+
+
+groups:
+   Accompagnant:
+     name: Accompagnant
+     resources:
+     - StructureDefinition/AidantDemarche
+     - StructureDefinition/MesureProtection
+     - StructureDefinition/Parent
+   Accord:
+     name: Accord
+     resources:
+     - StructureDefinition/AutorisationExercice
+     - StructureDefinition/Convention
+     - StructureDefinition/LicenceExploitation
+   Agenda:
+     name: Agenda
+     resources:
+     - StructureDefinition/Agenda
+     - StructureDefinition/Creneau
+     - StructureDefinition/PlageDisponibilite
+     - StructureDefinition/RendezVous
+   Autorisation:
+     name: Autorisation
+     resources:
+     - StructureDefinition/ActiviteEnseignement
+     - StructureDefinition/ActiviteSociale
+     - StructureDefinition/ActiviteSoinAutorisee
+     - StructureDefinition/ActiviteSoumiseReconnaissance
+     - StructureDefinition/AutreActiviteSoumiseAutorisation
+     - StructureDefinition/CapaciteActiviteExercee
+     - StructureDefinition/EquipementMaterielLourd
+   Dispositif:
+     name: Dispositif d'authentification
+     resources:
+     - StructureDefinition/CarteProfessionnel
+     - StructureDefinition/Certificat
+   DM:
+     name: Dispositif médical
+     resources:
+     - StructureDefinition/DispositifMedical
+   Dossier:
+     name: Dossier
+     resources:
+     - StructureDefinition/Decision
+     - StructureDefinition/Demande
+     - StructureDefinition/Document
+     - StructureDefinition/DossierPersonnePriseCharge
+     - StructureDefinition/NoteLiaison
+   Offre:
+     name: Offre opérationnelle
+     resources:
+     - StructureDefinition/OffreOperationnelle
+   Organisation:
+     name: Organisation opérationnelle
+     resources:
+     - StructureDefinition/OrganisationInterne     
+     - StructureDefinition/PoleActivite   
+     - StructureDefinition/StructureInterne     
+     - StructureDefinition/UniteFonctionnelle     
+   Personne:
+     name: Personne prise en charge
+     resources:
+     - StructureDefinition/ArretTravail
+     - StructureDefinition/Emploi
+     - StructureDefinition/Observation
+     - StructureDefinition/PersonnePriseCharge
+     - StructureDefinition/PlageReference
+     - StructureDefinition/ResultatObservation
+     - StructureDefinition/VieProfessionnelle
+     - StructureDefinition/VieQuotidienne
+     - StructureDefinition/VieScolaire
+   Professionnel:
+     name: Professionnel
+     resources:
+     - StructureDefinition/CapaciteSavoirfaire
+     - StructureDefinition/Competence
+     - StructureDefinition/CompetenceExclusive
+     - StructureDefinition/CompetenceMetier
+     - StructureDefinition/DESCNonQualifiant
+     - StructureDefinition/DroitExerciceComplementaire
+     - StructureDefinition/ExerciceProfessionnel
+     - StructureDefinition/FonctionQualifiee
+     - StructureDefinition/OrientationParticuliere
+     - StructureDefinition/Professionnel
+     - StructureDefinition/QualificationPAC
+     - StructureDefinition/SavoirFaire
+     - StructureDefinition/SituationExercice
+     - StructureDefinition/SituationOperationnelle
+     - StructureDefinition/Specialite
+     - StructureDefinition/SurspecialiteTransversale
+   Ressources:
+     name: Ressources opérationnelles
+     resources:
+     - StructureDefinition/CapacitePriseCharge
+     - StructureDefinition/EquipementSpecifique
+     - StructureDefinition/LieuRealisationOffre
+   Structure:
+     name: Structure
+     resources:
+     - StructureDefinition/EntiteGeographique
+     - StructureDefinition/EntiteJuridique
+   Classes communes:
+     name: Classes communes
+     resources:
+     - StructureDefinition/Adresse
+     - StructureDefinition/Attestation
+     - StructureDefinition/AutreDiplomeObtenu
+     - StructureDefinition/BoiteLettreMSS
+     - StructureDefinition/CapaciteAccueil
+     - StructureDefinition/CapaciteDiplome
+     - StructureDefinition/CapaciteHabitation
+     - StructureDefinition/CertificatEtudeSpeciale
+     - StructureDefinition/Contact
+     - StructureDefinition/CoordonneeGeographique
+     - StructureDefinition/DESC1
+     - StructureDefinition/DESC2
+     - StructureDefinition/Diplome
+     - StructureDefinition/DiplomeDeuxiemeCycleNonQualifiant
+     - StructureDefinition/DiplomeDivers
+     - StructureDefinition/DiplomeEEE
+     - StructureDefinition/DiplomeEES
+     - StructureDefinition/DiplomeEtat
+     - StructureDefinition/DiplomeEtudeSpecialisee
+     - StructureDefinition/DiplomeUniversitaire
+     - StructureDefinition/DivisionTerritoriale
+     - StructureDefinition/FormationSpecialiseeTransversale
+     - StructureDefinition/Groupement
+     - StructureDefinition/Horaire
+     - StructureDefinition/LangueParlee
+     - StructureDefinition/Lieu
+     - StructureDefinition/Membre
+     - StructureDefinition/MesureCapacite
+     - StructureDefinition/Patientele
+     - StructureDefinition/PersonnePhysique
+     - StructureDefinition/TarifPrestation
+     - StructureDefinition/Telecommunication

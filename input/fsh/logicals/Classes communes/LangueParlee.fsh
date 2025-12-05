@@ -1,4 +1,5 @@
 Logical: LangueParlee
+Parent: $Base
 Id: LangueParlee
 Title: "LangueParlee"
 Description: "Langue parlée par une personne ou dans un service."

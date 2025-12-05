@@ -1,0 +1,114 @@
+@startuml
+!theme carbon-gray
+
+object "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel {
+  civiliteExercice : Coding [0..1]
+  nomExercice : string [0..1]
+  prenomExercice : string [0..1]
+  profession : Coding [0..1]
+  typeProfession : Coding [0..1]
+  categorieProfessionnelle : Coding [0..1]
+  dateEffetExercice : date [0..1]
+  dateFinEffetExercice : date [0..1]
+  departementPremierReferencementAE : Coding [0..1]
+  -- inscriptionOrdre [0..1] --
+  ordre : Coding [0..1]
+  dateDebutInscription : date [0..1]
+  dateRadiation : date [0..1]
+  statutInscription : Coding [0..1]
+  conseilDepartemental : Coding [0..1]
+  -- AttributionParticuliere [0..1] --
+  attributionParticuliere : Coding [0..1]
+  dateDebutReconnaissance : date [0..1]
+  dateAbandon : date [0..1]
+  -- NiveauFormation [0..*] -- 
+  natureCycleFormation : Coding [0..1]
+  niveauFormationAcquis : Coding [0..1]
+  anneeUniversitaire : Coding [0..1]
+  dateFin : date [0..1]
+}
+
+object "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel {
+  idPP : Identifier [0..1]
+  typeIdNatPP : Coding [0..1]
+  idNatPS : Identifier [0..1]
+}
+
+object "[[StructureDefinition-SavoirFaire.html SavoirFaire]]" as SavoirFaire {
+  typeSavoirFaire : Coding [0..1]
+  dateReconnaissance : date [0..1]
+  dateAbandon : date [0..1]
+}
+
+object "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice {
+  role : Coding [0..1]
+  typeRole : Coding [0..1]
+  modeExercice : Coding [0..1]
+  numeroAM : Identifier [0..1]
+  dateDebutActivite : date [0..1]
+  dateFinActivite : date [0..1]
+  genreActivite : Coding [0..1]
+  motifFinActivite : Coding [0..1]
+  statutHospitalier : Coding [0..1]
+  sectionOrdrePharmacien : Coding [0..1]
+  sousSectionOrdrePharmacien : Coding [0..1]
+  typeActiviteLiberale : Coding [0..1]
+  statutPSSSA : Coding [0..1]
+}
+
+object "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle {
+  identifiantSituationOperationnelle : Identifier [0..1]
+  modeExerciceOffre : Coding [0..1]
+  competenceSpecifique : Coding [0..*]
+  secteurConventionnement : Coding [0..1]
+  optionContratAccesAuxSoins : boolean [0..1]
+  carteVitaleAcceptee : boolean [0..1]
+}
+
+package "Dispositif d'authentification" as Dispositif_d'authentification_part {
+  object "[[StructureDefinition-Certificat.html Certificat]]" as Certificat
+  object "[[StructureDefinition-CarteProfessionnel.html CarteProfessionnel]]" as CarteProfessionnel
+}
+
+package "Dossier" as Dossier_part {
+  object "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
+}
+
+package "Personne prise en charge" as Personne_prise_en_charge_part {
+  object "[[StructureDefinition-Observation.html Observation]]" as Observation
+  object "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge
+}
+
+package "Accord" as Accord_part {
+  object "[[StructureDefinition-AutorisationExercice.html AutorisationExercice]]" as AutorisationExercice
+}
+
+package "Agenda" as Agenda_part {
+  object "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+  object "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
+}
+
+package "Structure" as Structure_part {
+  object "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+package "Offre opérationnelle" as Offre_opérationnelle_part {
+  object "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle
+}
+
+Professionnel "1" -- "*" ExerciceProfessionnel 
+Professionnel "0..1" -- "*" NoteLiaison
+Professionnel "0..1" -- "*" Observation
+Professionnel "*" -- "*" PersonnePriseCharge
+Professionnel "0..1" -- "*" AutorisationExercice
+Professionnel "*" -- "*" Agenda
+Professionnel "*" -- "*" RendezVous
+ExerciceProfessionnel "1" -- "*" SituationExercice
+ExerciceProfessionnel "1" -- "*" SavoirFaire
+ExerciceProfessionnel "1" -- "*" SituationOperationnelle
+ExerciceProfessionnel "0..1" -- "*" Certificat
+ExerciceProfessionnel "1" -- "*" CarteProfessionnel
+SituationExercice "*" -- "0..1" EntiteGeographique
+SituationOperationnelle "*" -- "1" OffreOperationnelle
+
+@enduml
