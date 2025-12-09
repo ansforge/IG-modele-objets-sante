@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/surspecialiteTransversale-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:SurspecialitetransversaleVs |
+| Draft as of 2025-12-09 | *Computable Name*:SurspecialitetransversaleVs |
 
  **References** 
 
@@ -17,21 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)version 📦20241213120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R359-SurspecialiteTransversale.html)version 📦20240531120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R01_EnsembleSavoirFaire_CISIS v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)
-* [codesystem TRE_R359_SurspecialiteTransversale v20240531120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R359-SurspecialiteTransversale.html)
-
-Ce jeu de valeur (ValueSet) contient 351 concepts
 
 -------
 
@@ -58,7 +46,7 @@ Ce jeu de valeur (ValueSet) contient 351 concepts
   "version" : "0.1.0",
   "name" : "SurspecialitetransversaleVs",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

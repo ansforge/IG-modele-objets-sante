@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:BoiteLettreMSS |
+| Draft as of 2025-12-09 | *Computable Name*:BoiteLettreMSS |
 
  
 Informations descriptives des boîtes aux lettres du service de messagerie sécurisée de santé (MSSanté) rattachées aux professionnels et aux structures.Synonyme: BAL MSS 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-BoiteLettreMSS.csv),
   "name" : "BoiteLettreMSS",
   "title" : "BoiteLettreMSS",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

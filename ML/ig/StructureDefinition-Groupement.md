@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Groupement | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:Groupement |
+| Draft as of 2025-12-09 | *Computable Name*:Groupement |
 
  
 Ensemble de personnes et d’entités ayant un ou des objectifs communs. Les propriétés du groupement sont distinctes de celles des membres qui le composent. Le groupement peut exister sur une période limitée et ses membres peuvent varier pour atteindre les objectifs fixés. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Groupement.csv), [Ex
   "name" : "Groupement",
   "title" : "Groupement",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

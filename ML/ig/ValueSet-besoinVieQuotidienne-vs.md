@@ -9,18 +9,13 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinVieQuotidienne-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:BesoinviequotidienneVs |
+| Draft as of 2025-12-09 | *Computable Name*:BesoinviequotidienneVs |
 
  **References** 
 
 * [VieQuotidienne](StructureDefinition-VieQuotidienne.md)
 
 ### Définition logique (CLD)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R318-BesoinAideMobilite/FHIR/TRE-R318-BesoinAideMobilite`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R318-BesoinAideMobilite.html)version 📦20240329120000
-* Inclut tous les codes définis dans `https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale`version Non précisé (utilise la dernière version provenant du serveur de terminologie)
 
  
 
@@ -53,7 +48,7 @@ No Expansion for this valueset (not supported by Publication Tooling)
   "version" : "0.1.0",
   "name" : "BesoinviequotidienneVs",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

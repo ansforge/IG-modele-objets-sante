@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEtablissement-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:CategorieetablissementVs |
+| Draft as of 2025-12-09 | *Computable Name*:CategorieetablissementVs |
 
  **References** 
 
@@ -17,21 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R66-CategorieEtablissement.html)version 📦20250425120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R316-AutreCategorieEtablissement.html)version 📦20240329120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R316_AutreCategorieEtablissement v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R316-AutreCategorieEtablissement.html)
-* [codesystem TRE_R66_CategorieEtablissement v20250425120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R66-CategorieEtablissement.html)
-
-Ce jeu de valeur (ValueSet) contient 319 concepts
 
 -------
 
@@ -58,7 +46,7 @@ Ce jeu de valeur (ValueSet) contient 319 concepts
   "version" : "0.1.0",
   "name" : "CategorieetablissementVs",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

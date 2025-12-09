@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:Professionnel |
+| Draft as of 2025-12-09 | *Computable Name*:Professionnel |
 
  
 Données d’identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
   "name" : "Professionnel",
   "title" : "Professionnel",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

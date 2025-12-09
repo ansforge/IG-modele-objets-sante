@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinScolarite-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:BesoinscolariteVs |
+| Draft as of 2025-12-09 | *Computable Name*:BesoinscolariteVs |
 
  **References** 
 
@@ -17,25 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R320-BesoinCommunication/FHIR/TRE-R320-BesoinCommunication`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R320-BesoinCommunication.html)version 📦20240329120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R321-BesoinEntretienPersonnel/FHIR/TRE-R321-BesoinEntretienPersonnel`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R321-BesoinEntretienPersonnel.html)version 📦20240329120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R322-BesoinMobilite/FHIR/TRE-R322-BesoinMobilite`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R322-BesoinMobilite.html)version 📦20240329120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R323-BesoinScolarite/FHIR/TRE-R323-BesoinScolarite`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R323-BesoinScolarite.html)version 📦20240329120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R320_BesoinCommunication v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R320-BesoinCommunication.html)
-* [codesystem TRE_R321_BesoinEntretienPersonnel v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R321-BesoinEntretienPersonnel.html)
-* [codesystem TRE_R322_BesoinMobilite v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R322-BesoinMobilite.html)
-* [codesystem TRE_R323_BesoinScolarite v20240329120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R323-BesoinScolarite.html)
-
-Ce jeu de valeur (ValueSet) contient 16 concepts
 
 -------
 
@@ -62,7 +46,7 @@ Ce jeu de valeur (ValueSet) contient 16 concepts
   "version" : "0.1.0",
   "name" : "BesoinscolariteVs",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

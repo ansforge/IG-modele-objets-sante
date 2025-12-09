@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:RoleVs |
+| Draft as of 2025-12-09 | *Computable Name*:RoleVs |
 
  **References** 
 
@@ -17,23 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R21-Fonction.html)version 📦20250623120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R96-AutreFonctionSanitaire.html)version 📦20231215120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R85-RolePriseCharge.html)version 📦20250328120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R21_Fonction v20250623120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R21-Fonction.html)
-* [codesystem TRE_R85_RolePriseCharge v20250328120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R85-RolePriseCharge.html)
-* [codesystem TRE_R96_AutreFonctionSanitaire v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R96-AutreFonctionSanitaire.html)
-
-Ce jeu de valeur (ValueSet) contient 137 concepts
 
 -------
 
@@ -60,7 +46,7 @@ Ce jeu de valeur (ValueSet) contient 137 concepts
   "version" : "0.1.0",
   "name" : "RoleVs",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

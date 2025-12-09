@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:ProfessioncategoriesocioprofessionnelleVs |
+| Draft as of 2025-12-09 | *Computable Name*:ProfessioncategoriesocioprofessionnelleVs |
 
  **References** 
 
@@ -17,21 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R262-CategorieSocioProfessionnelle/FHIR/TRE-R262-CategorieSocioProfessionnelle`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R262-CategorieSocioProfessionnelle.html)version 📦20231215120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R292-INSEECategorieSocioProfessionnelleAgrNiv1/FHIR/TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1.html)version 📦20231215120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R262_CategorieSocioProfessionnelle v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R262-CategorieSocioProfessionnelle.html)
-* [codesystem TRE_R292_INSEECategorieSocioProfessionnelleAgrNiv1 v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R292-INSEECategorieSocioProfessionnelleAgrNiv1.html)
-
-Ce jeu de valeur (ValueSet) contient 16 concepts
 
 -------
 
@@ -58,7 +46,7 @@ Ce jeu de valeur (ValueSet) contient 16 concepts
   "version" : "0.1.0",
   "name" : "ProfessioncategoriesocioprofessionnelleVs",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

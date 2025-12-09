@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat | *Version*:0.1.0 |
-| Draft as of 2025-12-02 | *Computable Name*:Certificat |
+| Draft as of 2025-12-09 | *Computable Name*:Certificat |
 
  
 Données descriptives du moyen d’identification par certificat. Il s’agit des certificats utilisés par les professionnels et les structures. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Certificat.csv), [Ex
   "name" : "Certificat",
   "title" : "Certificat",
   "status" : "draft",
-  "date" : "2025-12-02T15:33:27+00:00",
+  "date" : "2025-12-09T08:48:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
