@@ -63,6 +63,7 @@ La cardinalité "1" d'une association ou d'un attribut signifie "1..1".
   </p>
 </div>
 
+{% include svg-interactive-script.html %}
 
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
 {% sql {
