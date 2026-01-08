@@ -70,7 +70,7 @@ La cardinalité "1" d'une association ou d'un attribut signifie "1..1".
     "query" : " select name as Name, Description, Web from Resources WHERE Type = 'StructureDefinition'",
     "class" : "lines",
     "columns" : [
-        { "title" : "Titre du profil", "type" : "link", "source" : "Name", "target" : "Web"},
+        { "title" : "Classe", "type" : "link", "source" : "Name", "target" : "Web"},
         { "title" : "Description", "type" : "markdown", "source" : "Description"}
     ]
 } %}
