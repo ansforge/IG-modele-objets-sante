@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-Diplome.csv), [Excel
   "name" : "Diplome",
   "title" : "Diplome",
   "status" : "draft",
-  "date" : "2026-01-08T08:10:58+00:00",
+  "date" : "2026-01-08T08:28:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
