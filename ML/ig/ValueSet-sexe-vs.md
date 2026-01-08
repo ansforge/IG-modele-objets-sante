@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:SexeVs |
+| Draft as of 2026-01-08 | *Computable Name*:SexeVs |
 
  **References** 
 
@@ -46,7 +46,7 @@
   "version" : "0.1.0",
   "name" : "SexeVs",
   "status" : "draft",
-  "date" : "2025-12-09T08:48:05+00:00",
+  "date" : "2026-01-08T08:09:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

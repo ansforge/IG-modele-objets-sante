@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ArretTravail | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:ArretTravail |
+| Draft as of 2026-01-08 | *Computable Name*:ArretTravail |
 
  
 Selon le code du travail, l’arrêt de travail est une période de suspension du contrat de travail en raison d’une maladie ou d’un accident du travail d’origine professionnelle ou non professionnelle. L’arrêt de travail est justifié par une prescription médicale. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-ArretTravail.csv), [
   "name" : "ArretTravail",
   "title" : "ArretTravail",
   "status" : "draft",
-  "date" : "2025-12-09T08:48:05+00:00",
+  "date" : "2026-01-08T08:09:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {

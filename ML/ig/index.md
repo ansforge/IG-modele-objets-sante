@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos | *Version*:0.1.0 |
-| Draft as of 2025-12-09 | *Computable Name*:MOS |
+| Draft as of 2026-01-08 | *Computable Name*:MOS |
 
  **Brief description of this Implementation Guide**
  [Add a brief description of this IG in English] 
@@ -186,7 +186,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2025-12-09T08:48:05+00:00",
+  "date" : "2026-01-08T08:09:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [
     {
@@ -224,7 +224,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       ],
       "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
       "packageId" : "hl7.terminology.r4",
-      "version" : "7.0.0"
+      "version" : "7.0.1"
     },
     {
       "id" : "hl7ext",
@@ -587,7 +587,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       },
       {
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-        "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
+        "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
       },
       {
         "extension" : [
@@ -2928,41 +2928,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
               ],
               "nameUrl" : "structure.html",
               "title" : "Structure",
-              "generation" : "markdown"
-            }
-          ]
-        },
-        {
-          "extension" : [
-            {
-              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl" : "autres_ressources.html"
-            }
-          ],
-          "nameUrl" : "autres_ressources.html",
-          "title" : "Autres Ressources",
-          "generation" : "markdown",
-          "page" : [
-            {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "securite.html"
-                }
-              ],
-              "nameUrl" : "securite.html",
-              "title" : "Sécurité",
-              "generation" : "markdown"
-            },
-            {
-              "extension" : [
-                {
-                  "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-                  "valueUrl" : "downloads.html"
-                }
-              ],
-              "nameUrl" : "downloads.html",
-              "title" : "Téléchargements et usages",
               "generation" : "markdown"
             }
           ]
