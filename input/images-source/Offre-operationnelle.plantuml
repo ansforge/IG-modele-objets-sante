@@ -1,0 +1,56 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-OffreOperationnelle.html OffreOperationnelle]]" as OffreOperationnelle {
+  familleActiviteOperationnelle : Coding [0..1]
+  identifiantOffre : Identifier [0..1]
+  nomOffre : string [0..1]
+  typeOffre : Coding [0..1]
+  champActivite : Coding [0..1]
+  temporaliteAccueil : Coding [0..1]
+  modePriseEnCharge : Coding [0..1]
+  modaliteAccueil : Coding [0..*]
+  modeGestion : Coding [0..*]
+  uniteSensible : boolean [0..1]
+  acteSpecifique : Coding [0..*]
+  acteRealiseHorsCabinet : Coding [0..*]
+  specialisationPriseEnCharge : Coding [0..*]
+  habilitationAuxSoinsSansConsentement : boolean [0..1]
+  ouvertureAnnuelle : Coding [0..1]
+  secteurPsychiatrique : string [0..*]
+  professionRessource : Coding [0..*]
+  competenceSpecifique : Coding [0..*]
+  niveauExpertise : Coding [0..*]
+  typeFermeture : Coding [0..1]
+  dateFermeture : date [0..1]
+  datePrevisionnelleReouverture : date [0..1]
+}
+
+Class ActiviteOperationnelle #LightBlue {
+  activiteOperationnelle : Coding [0..1]
+}
+
+package "Professionnel" as Professionnel_part {
+  Class "[[StructureDefinition-SituationOperationnelle.html SituationOperationnelle]]" as SituationOperationnelle
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+package "Ressources opérationnelles" as Ressources_opérationnelles_part {
+  Class "[[StructureDefinition-LieuRealisationOffre.html LieuRealisationOffre]]" as LieuRealisationOffre
+}
+
+package "Organisation opérationnelle" as Organisation_opérationnelle_part {
+  Class "[[StructureDefinition-OrganisationInterne.html OrganisationInterne]]" as OrganisationInterne
+}
+
+OffreOperationnelle "1" -- "*" SituationOperationnelle
+OffreOperationnelle "*" -- "0..1" EntiteGeographique
+OffreOperationnelle "1..*" -- "1..*" LieuRealisationOffre
+OffreOperationnelle "1..*" -- "0..1" OrganisationInterne
+
+OffreOperationnelle --> ActiviteOperationnelle : 1..*
+
+@enduml

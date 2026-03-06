@@ -1,0 +1,122 @@
+@startuml
+!theme carbon-gray
+
+Class "[[StructureDefinition-PersonnePriseCharge.html PersonnePriseCharge]]" as PersonnePriseCharge {
+  idPersonnePriseCharge : Identifier [0..*]
+  preferenceCommunication : Coding [0..1]
+}
+
+Class "[[StructureDefinition-VieQuotidienne.html VieQuotidienne]]" as VieQuotidienne {
+  situationVieQuotidienne : Coding [0..*]
+  besoinVieQuotidienne : Coding [0..*]
+  compositionFoyer : Coding [0..1]
+}
+
+Class "[[StructureDefinition-VieProfessionnelle.html VieProfessionnelle]]" as VieProfessionnelle {
+  dejaTravaille : boolean [0..1]
+  situationVieProfessionnelle : Coding [0..1]
+  situationSansEmploi : Coding [0..1]
+  besoinProfessionnel : Coding [0..*]
+}
+
+Class "[[StructureDefinition-Emploi.html Emploi]]" as Emploi {
+  libelleEmploi : string [0..1]
+  dateDebutEmploi : date [0..1]
+  dateFinEmploi : date [0..1]
+  emploiRemunere : boolean [0..1]
+  emploiAdapteHandicape : boolean [0..1]
+}
+
+Class "[[StructureDefinition-ArretTravail.html ArretTravail]]" as ArretTravail {
+  dateDebutArret : date [0..1]
+  motifArret : Coding [0..1]
+  rencontreServiceSocial : boolean [0..1]
+  dateRencontreServiceSocial : date [0..1]
+  rencontreMedecin : boolean [0..1]
+  dateRencontreMedecin : date [0..1]
+}
+
+Class "[[StructureDefinition-VieScolaire.html VieScolaire]]" as VieScolaire {
+  typeScolarisation : Coding [0..1]
+  besoinScolarite : Coding [0..*]
+}
+
+Class "[[StructureDefinition-Observation.html Observation]]" as Observation {
+  identifiant : Identifier [0..1]
+  statut : CodeableConcept [0..1]
+  categorie : CodeableConcept [0..1]
+  datePertinence : dateTime [0..1]
+  dateDisponibilite : dateTime [0..1]
+  commentaire : string [0..1]
+  partieAnatomie : CodeableConcept [0..1]
+  methode : CodeableConcept [0..1]
+  raison : string [0..1]
+  positionCorps : CodeableConcept [0..1]
+  momentMesure : CodeableConcept [0..1]
+  niveauEffort : CodeableConcept [0..1]
+  typeDiabete : CodeableConcept [0..1]
+  nombreJours : CodeableConcept [0..1]
+}
+
+Class "[[StructureDefinition-ResultatObservation.html ResultatObservation]]" as ResultatObservation {
+  type : CodeableConcept [0..*]
+  valeur : Quantity [0..1]
+  interpretation : CodeableConcept [0..1]
+  raisonAbsence : CodeableConcept [0..1]
+}
+
+Class "[[StructureDefinition-PlageReference.html PlageReference]]" as PlageReference {
+  borneInferieure : Quantity [0..1]
+  borneSuperieure : Quantity [0..1]
+  type : CodeableConcept [0..1]
+  guideTextuel : string [0..1]
+}
+
+Class INS #LightBlue {
+  matricule : Identifier [1..1]
+  nomNaissance : string [1..1]
+  listePrenomsNaissance : string [1..1]
+  sexe : Coding [1..1]
+  dateNaissance : dateTime [1..1]
+  lieuNaissance : Coding [1..1]
+  premierPrenomNaissance : string [1..1]
+  nomUtilise : string [1..1]
+  prenomUtilise : string [1..1]
+}
+
+package "Agenda" as Agenda_part {
+  Class "[[StructureDefinition-RendezVous.html RendezVous]]" as RendezVous
+  Class "[[StructureDefinition-Agenda.html Agenda]]" as Agenda
+}
+
+package "Dossier" as Dossier_part {
+  Class "[[StructureDefinition-NoteLiaison.html NoteLiaison]]" as NoteLiaison
+  Class "[[StructureDefinition-DossierPersonnePriseCharge.html DossierPersonnePriseCharge]]" as DossierPersonnePriseCharge
+}
+
+package "Professionnel" as Professionnel_part {
+  Class "[[StructureDefinition-Professionnel.html Professionnel]]" as Professionnel
+}
+
+package "Structure" as Structure_part {
+  Class "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+PersonnePriseCharge "*" -- "*" RendezVous
+PersonnePriseCharge "*" -- "*" Agenda
+PersonnePriseCharge "1" -- "0..1" VieQuotidienne
+PersonnePriseCharge "1" -- "0..1" VieProfessionnelle
+PersonnePriseCharge "1" -- "0..1" VieScolaire
+PersonnePriseCharge "1" -- "*" Observation
+VieProfessionnelle "1" -- "*" Emploi
+VieProfessionnelle "1" -- "*" ArretTravail
+Observation "1" -- "1..*" ResultatObservation
+ResultatObservation "1" -- "*" PlageReference
+PersonnePriseCharge "1" -- "*" NoteLiaison
+PersonnePriseCharge "1" -- "1" DossierPersonnePriseCharge
+PersonnePriseCharge "*" -- "*" Professionnel
+Observation "*" -- "0..1" Professionnel
+Emploi "0..1" -- "1" EntiteGeographique
+PersonnePriseCharge --> INS : 0..*
+
+@enduml

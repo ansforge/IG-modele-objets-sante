@@ -1,0 +1,49 @@
+
+from org.modelio.api.modelio import Modelio
+
+session = Modelio.getInstance().getModelingSession()
+roots = session.getModel().getModelRoots()
+
+classes = []
+
+def collectClasses(elem):
+    try:
+        children = elem.getCompositionChildren()
+    except:
+        return
+    for child in children:
+        try:
+            if child.getMClass().getName() == "Class":
+                classes.append(child)
+        except:
+            pass
+        collectClasses(child)
+
+for r in roots:
+    collectClasses(r)
+
+print("Source;Target;SrcMin;SrcMax;TgtMin;TgtMax")
+
+for cls in classes:
+    for end in cls.getOwnedEnd():
+        opp = end.getOpposite()
+        if opp is None:
+            continue
+        owner = opp.getOwner()
+        if owner is None:
+            continue
+
+        src = cls.getName() or ""
+        tgt = owner.getName() or ""
+
+        srcMin = end.getMultiplicityMin()
+        srcMax = end.getMultiplicityMax()
+
+        tgtMin = opp.getMultiplicityMin()
+        tgtMax = opp.getMultiplicityMax()
+
+        print(
+            src + ";" + tgt + ";" +
+            str(srcMin) + ";" + str(srcMax) + ";" +
+            str(tgtMin) + ";" + str(tgtMax)
+        )

@@ -1,4 +1,5 @@
 Logical: Professionnel
+Parent: $Base
 Id: Professionnel
 Title: "Professionnel"
 Description: "Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social."
@@ -14,3 +15,10 @@ Description: "Données d'identification pérennes d’une personne physique, qui
 * adresseCorrespondance 0..* Adresse "Adresse(s) de correspondance permettant de contacter les professionnels:** lorsque les structures ne sont pas identifiées : cas des remplaçants ou des professionnels venant de s’inscrire mais non encore installés;** hors de leurs lieux d’exercice, s’ils le souhaitent.Remarque système RPPS : La première occurrence correspond aux coordonnées de correspondance du RPPS." "Adresse(s) de correspondance permettant de contacter les professionnels:** lorsque les structures ne sont pas identifiées : cas des remplaçants ou des professionnels venant de s’inscrire mais non encore installés;** hors de leurs lieux d’exercice, s’ils le souhaitent.Remarque système RPPS : La première occurrence correspond aux coordonnées de correspondance du RPPS."
 * telecommunication 0..* Telecommunication "Adresse(s) de télécommunication du professionnel (numéro de téléphone, adresse email, URL, etc.)." "Adresse(s) de télécommunication du professionnel (numéro de téléphone, adresse email, URL, etc.)."
 * boiteLettresMSS 0..* BoiteLettreMSS "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) au professionnel." "Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) au professionnel."
+* ExerciceProfessionnel 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel "Lien vers la classe ExerciceProfessionnel" "Lien vers la classe ExerciceProfessionnel"
+* NoteLiaison 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison "Lien vers la classe NoteLiaison" "Lien vers la classe NoteLiaison"
+* Observation 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Observation "Lien vers la classe Observation" "Lien vers la classe Observation"
+* AutorisationExercice 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutorisationExercice "Lien vers la classe AutorisationExercice" "Lien vers la classe AutorisationExercice"
+* PersonnePriseCharge 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge "Lien vers la classe PersonnePriseCharge" "Lien vers la classe PersonnePriseCharge"
+* Agenda 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda "Lien vers la classe Agenda" "Lien vers la classe Agenda"
+* RendezVous 0..* https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous "Lien vers la classe RendezVous" "Lien vers la classe RendezVous"

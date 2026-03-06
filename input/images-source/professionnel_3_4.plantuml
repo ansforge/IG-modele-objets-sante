@@ -1,0 +1,33 @@
+@startuml
+!theme carbon-gray
+
+object "[[StructureDefinition-ExerciceProfessionnel.html ExerciceProfessionnel]]" as ExerciceProfessionnel 
+
+
+object "[[StructureDefinition-SituationExercice.html SituationExercice]]" as SituationExercice {
+  role : Coding [0..1]
+  typeRole : Coding [0..1]
+  modeExercice : Coding [0..1]
+  numeroAM : Identifier [0..1]
+  dateDebutActivite : date [0..1]
+  dateFinActivite : date [0..1]
+  genreActivite : Coding [0..1]
+  motifFinActivite : Coding [0..1]
+  statutHospitalier : Coding [0..1]
+  sectionOrdrePharmacien : Coding [0..1]
+  sousSectionOrdrePharmacien : Coding [0..1]
+  typeActiviteLiberale : Coding [0..1]
+  statutPSSSA : Coding [0..1]
+}
+
+
+package "Structure" as Structure_part {
+  object "[[StructureDefinition-EntiteGeographique.html EntiteGeographique]]" as EntiteGeographique
+}
+
+
+ExerciceProfessionnel "1" -- "*" SituationExercice
+SituationExercice "*" -- "0..1" EntiteGeographique
+
+
+@enduml
