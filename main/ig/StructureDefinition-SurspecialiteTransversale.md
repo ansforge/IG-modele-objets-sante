@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SurspecialiteTransversale | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:SurspecialiteTransversale |
+| Draft as of 2026-03-06 | *Computable Name*:SurspecialiteTransversale |
 
  
 La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité. 
 
 **Utilisations:**
 
-* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/SurspecialiteTransversale)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/SurspecialiteTransversale)
 
 ### Formal Views of Profile Content
 
@@ -41,31 +41,23 @@ Other representations of profile: [CSV](StructureDefinition-SurspecialiteTransve
   "name" : "SurspecialiteTransversale",
   "title" : "SurspecialiteTransversale",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -73,31 +65,27 @@ Other representations of profile: [CSV](StructureDefinition-SurspecialiteTransve
   "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "SurspecialiteTransversale",
-        "path" : "SurspecialiteTransversale",
-        "short" : "La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité.",
-        "definition" : "La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité."
-      },
-      {
-        "id" : "SurspecialiteTransversale.surspecialiteTransversale",
-        "path" : "SurspecialiteTransversale.surspecialiteTransversale",
-        "short" : "Surspécialité acquise par le professionnel en supplément de la spécialité de DES.",
-        "definition" : "Surspécialité acquise par le professionnel en supplément de la spécialité de DES.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Coding"
-          }
-        ],
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/surspecialiteTransversale-vs"
-        }
+    "element" : [{
+      "id" : "SurspecialiteTransversale",
+      "path" : "SurspecialiteTransversale",
+      "short" : "La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité.",
+      "definition" : "La surspécialité transversale est le droit d’exercice complémentaire au sein de la spécialité du médecin, donné par une formation spécialisée transversale (FST). La formation spécialisée transversale est une formation venant compléter le cursus de l’interne à partir de la phase d’approfondissement, et lui permet d’acquérir les compétences pour exercer la surspécialité correspondante dans le cadre de sa spécialité."
+    },
+    {
+      "id" : "SurspecialiteTransversale.surspecialiteTransversale",
+      "path" : "SurspecialiteTransversale.surspecialiteTransversale",
+      "short" : "Surspécialité acquise par le professionnel en supplément de la spécialité de DES.",
+      "definition" : "Surspécialité acquise par le professionnel en supplément de la spécialité de DES.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/surspecialiteTransversale-vs"
       }
-    ]
+    }]
   }
 }
 

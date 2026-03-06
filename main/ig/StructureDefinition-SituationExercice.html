@@ -45,8 +45,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.33"}
-    h3,h4,h5,h6{--heading-prefix:"5.33"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.52"}
+    h3,h4,h5,h6{--heading-prefix:"4.52"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -103,43 +103,51 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="professionnel.html">Professionnel</a>
+        <a href="accompagnant.html">Accompagnant</a>
+      </li>
+      <li>
+        <a href="accord.html">Accord</a>
+      </li>
+      <li>
+        <a href="agenda.html">Agenda</a>
+      </li>
+      <li>
+        <a href="autorisation.html">Autorisation</a>
       </li>
       <li>
         <a href="dispo-authent.html">Dispositif d&apos;authentification</a>
       </li>
       <li>
-        <a href="structure.html">Structure</a>
+        <a href="dispositif-medical.html">Dispositif médical</a>
+      </li>
+      <li>
+        <a href="dossier.html">Dossier</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre opérationnelle</a>
       </li>
       <li>
         <a href="ppec.html">Personne prise en charge</a>
       </li>
       <li>
+        <a href="professionnel.html">Professionnel</a>
+      </li>
+      <li>
+        <a href="professionnel_2.html">Professionnel_2</a>
+      </li>
+      <li>
+        <a href="professionnel_3.html">Professionnel_3</a>
+      </li>
+      <li>
         <a href="ressops.html">Ressources opérationnelles</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
       </li>
     </ul>
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="securite.html">Sécurité</a>
-      </li>
-      <li>
-        <a href="downloads.html">Téléchargements et usage</a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
-      </li>
-      <li>
-        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
-      </li>
-    </ul>
   </li>
   <li>
     <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
@@ -179,7 +187,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
 
 
@@ -275,7 +283,7 @@
         
           Draft
           
-            as of 2025-12-03
+            as of 2026-03-06
           
         
       </td>
@@ -304,9 +312,9 @@
 
 <p><b>Utilisations:</b></p>
 <ul>
- <li>Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation</li>
+ <li>Utilise ce/t/te Modèle logique: <a href="StructureDefinition-EntiteGeographique.html">EntiteGeographique</a> and <a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a></li>
 </ul>
-<p>You can also check for <a href="https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/SituationExercice">usages in the FHIR IG Statistics</a></p>
+<p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/SituationExercice">les usages dans le FHIR IG Statistics</a></p>
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -351,7 +359,7 @@
     <div id="tabs-key">
       <div id="tbl-key">
         <div id="tbl-key-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceK" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur lutilisation de lélément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que lélément peut apparaître dans linstance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de lélément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur lélément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceK'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceK'), document.getElementById('ppSituationExerciceK'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceK">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceK'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceK'))" size="1" name="binding" checked="true" id="cbSituationExerciceK-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceK'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceK'))" size="1" name="constraint" checked="true" id="cbSituationExerciceK-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceK'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceK'))" size="1" name="obligation" checked="true" id="cbSituationExerciceK-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceK" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceK'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceK'), document.getElementById('ppSituationExerciceK'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceK">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceK'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceK'))" size="1" name="binding" checked="true" id="cbSituationExerciceK-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceK'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceK'))" size="1" name="constraint" checked="true" id="cbSituationExerciceK-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceK'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceK'))" size="1" name="obligation" checked="true" id="cbSituationExerciceK-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice" title="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)." data-no-external="true">SituationExercice</a><a name="k-SituationExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -437,12 +445,17 @@
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.<br/></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Référence à une autre ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel." data-no-external="true">exerciceProfessionnel</a><a name="k-SituationExercice.exerciceProfessionnel"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.ExerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" data-no-external="true">ExerciceProfessionnel</a><a name="k-SituationExercice.ExerciceProfessionnel"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b4db1389-8da9-4e57-a4ad-268b00917ff8
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ar" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.EntiteGeographique" title="Lien vers la classe EntiteGeographique" data-no-external="true">EntiteGeographique</a><a name="k-SituationExercice.EntiteGeographique"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EntiteGeographique.html">EntiteGeographique</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe EntiteGeographique</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 87325beb-e975-454d-a35f-dce9a239a566
 document.getElementById('cbSituationExerciceK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceK'), 'binding', document.getElementById('cbSituationExerciceK-binding').checked, document.getElementById('ppSituationExerciceK'));
 document.getElementById('cbSituationExerciceK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -481,9 +494,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -494,9 +507,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -507,9 +520,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -520,9 +533,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -533,9 +546,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -546,9 +559,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -559,9 +572,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -572,9 +585,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -585,9 +598,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -598,9 +611,9 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -618,7 +631,7 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
         <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
         </p>
         <div id="tbl-diff-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur lutilisation de lélément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que lélément peut apparaître dans linstance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de lélément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur lélément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceD'), document.getElementById('ppSituationExerciceD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceD">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceD'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceD'))" size="1" name="binding" checked="true" id="cbSituationExerciceD-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceD'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceD'))" size="1" name="constraint" checked="true" id="cbSituationExerciceD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceD'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceD'))" size="1" name="obligation" checked="true" id="cbSituationExerciceD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceD'), document.getElementById('ppSituationExerciceD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceD">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceD'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceD'))" size="1" name="binding" checked="true" id="cbSituationExerciceD-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceD'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceD'))" size="1" name="constraint" checked="true" id="cbSituationExerciceD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceD'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceD'))" size="1" name="obligation" checked="true" id="cbSituationExerciceD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice" title="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)." data-no-external="true">SituationExercice</a><a name="SituationExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
@@ -704,12 +717,17 @@ filterDesc(document.getElementById('SituationExerciceK'), 'obligation', document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.<br/></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Référence à une autre ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel." data-no-external="true">exerciceProfessionnel</a><a name="SituationExercice.exerciceProfessionnel"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.ExerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" data-no-external="true">ExerciceProfessionnel</a><a name="SituationExercice.ExerciceProfessionnel"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b4db1389-8da9-4e57-a4ad-268b00917ff8
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ar" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.EntiteGeographique" title="Lien vers la classe EntiteGeographique" data-no-external="true">EntiteGeographique</a><a name="SituationExercice.EntiteGeographique"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EntiteGeographique.html">EntiteGeographique</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe EntiteGeographique</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 87325beb-e975-454d-a35f-dce9a239a566
 document.getElementById('cbSituationExerciceD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceD'), 'binding', document.getElementById('cbSituationExerciceD-binding').checked, document.getElementById('ppSituationExerciceD'));
 document.getElementById('cbSituationExerciceD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -749,9 +767,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -762,9 +780,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -775,9 +793,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -788,9 +806,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -801,9 +819,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -814,9 +832,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -827,9 +845,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -840,9 +858,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -853,9 +871,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -866,9 +884,9 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -884,7 +902,7 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
     <div id="tabs-snap">
       <div id="tbl-snap">
         <div id="tbl-snap-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceS" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur lutilisation de lélément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que lélément peut apparaître dans linstance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de lélément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur lélément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceS'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceS'), document.getElementById('ppSituationExerciceS'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceS">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceS'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceS'))" size="1" name="binding" checked="true" id="cbSituationExerciceS-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceS'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceS'))" size="1" name="constraint" checked="true" id="cbSituationExerciceS-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceS'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceS'))" size="1" name="obligation" checked="true" id="cbSituationExerciceS-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceS" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceS'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceS'), document.getElementById('ppSituationExerciceS'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceS">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceS'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceS'))" size="1" name="binding" checked="true" id="cbSituationExerciceS-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceS'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceS'))" size="1" name="constraint" checked="true" id="cbSituationExerciceS-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceS'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceS'))" size="1" name="obligation" checked="true" id="cbSituationExerciceS-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice" title="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)." data-no-external="true">SituationExercice</a><a name="s-SituationExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -970,12 +988,17 @@ filterDesc(document.getElementById('SituationExerciceD'), 'obligation', document
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.<br/></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Référence à une autre ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel." data-no-external="true">exerciceProfessionnel</a><a name="s-SituationExercice.exerciceProfessionnel"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.ExerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" data-no-external="true">ExerciceProfessionnel</a><a name="s-SituationExercice.ExerciceProfessionnel"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b4db1389-8da9-4e57-a4ad-268b00917ff8
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ar" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.EntiteGeographique" title="Lien vers la classe EntiteGeographique" data-no-external="true">EntiteGeographique</a><a name="s-SituationExercice.EntiteGeographique"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EntiteGeographique.html">EntiteGeographique</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe EntiteGeographique</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 87325beb-e975-454d-a35f-dce9a239a566
 document.getElementById('cbSituationExerciceS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceS'), 'binding', document.getElementById('cbSituationExerciceS-binding').checked, document.getElementById('ppSituationExerciceS'));
 document.getElementById('cbSituationExerciceS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1014,9 +1037,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1027,9 +1050,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1040,9 +1063,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1053,9 +1076,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1066,9 +1089,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1079,9 +1102,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1092,9 +1115,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1105,9 +1128,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1118,9 +1141,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1131,9 +1154,9 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -1180,7 +1203,8 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.telecommunication" title="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">telecommunication</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Telecommunication.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice.</span>
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.adresseSE" title="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">adresseSE</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Adresse.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice.</span>
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.boiteLettresMSS" title="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">boiteLettresMSS</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-BoiteLettreMSS.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.</span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" class="dict"><span style="text-decoration: underline">exerciceProfessionnel</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel]])} <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe ExerciceProfessionnel.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.ExerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" class="dict"><span style="text-decoration: underline">ExerciceProfessionnel</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-ExerciceProfessionnel.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe ExerciceProfessionnel</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.EntiteGeographique" title="Lien vers la classe EntiteGeographique" class="dict"><span style="text-decoration: underline">EntiteGeographique</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EntiteGeographique.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique</a></span>} <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Lien vers la classe EntiteGeographique</span>
   }
 
         </div>
@@ -1209,14 +1233,7 @@ filterDesc(document.getElementById('SituationExerciceS'), 'obligation', document
 <p><b>
 Résumé
 </b></p>
-<p>Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))</p><p><b>Structures</b></p>
-<p>Cette structure fait référence à ces autres structures:</p>
-<ul>
-<li><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel <span style="font-size: 8px">(https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel)</span></a></li>
-
-</ul>
-
-
+<p>Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))</p>
         </div>
       </div>
     </div>
@@ -1227,7 +1244,7 @@ Résumé
           <b>Key Elements View</b>
         </p>
         <div id="all-tbl-key-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceKA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur lutilisation de lélément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que lélément peut apparaître dans linstance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de lélément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur lélément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceKA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceKA'), document.getElementById('ppSituationExerciceKA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceKA">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceKA'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceKA'))" size="1" name="binding" checked="true" id="cbSituationExerciceKA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceKA'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceKA'))" size="1" name="constraint" checked="true" id="cbSituationExerciceKA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceKA'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceKA'))" size="1" name="obligation" checked="true" id="cbSituationExerciceKA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceKA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceKA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceKA'), document.getElementById('ppSituationExerciceKA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceKA">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceKA'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceKA'))" size="1" name="binding" checked="true" id="cbSituationExerciceKA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceKA'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceKA'))" size="1" name="constraint" checked="true" id="cbSituationExerciceKA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceKA'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceKA'))" size="1" name="obligation" checked="true" id="cbSituationExerciceKA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice" title="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)." data-no-external="true">SituationExercice</a><a name="ka-SituationExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -1313,12 +1330,17 @@ Résumé
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.<br/></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Référence à une autre ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel." data-no-external="true">exerciceProfessionnel</a><a name="ka-SituationExercice.exerciceProfessionnel"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.ExerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" data-no-external="true">ExerciceProfessionnel</a><a name="ka-SituationExercice.ExerciceProfessionnel"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b4db1389-8da9-4e57-a4ad-268b00917ff8
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ar" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.EntiteGeographique" title="Lien vers la classe EntiteGeographique" data-no-external="true">EntiteGeographique</a><a name="ka-SituationExercice.EntiteGeographique"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EntiteGeographique.html">EntiteGeographique</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe EntiteGeographique</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 87325beb-e975-454d-a35f-dce9a239a566
 document.getElementById('cbSituationExerciceKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceKA'), 'binding', document.getElementById('cbSituationExerciceKA-binding').checked, document.getElementById('ppSituationExerciceKA'));
 document.getElementById('cbSituationExerciceKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1357,9 +1379,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1370,9 +1392,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1383,9 +1405,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1396,9 +1418,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1409,9 +1431,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1422,9 +1444,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1435,9 +1457,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1448,9 +1470,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1461,9 +1483,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1474,9 +1496,9 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -1494,7 +1516,7 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
         <p>This structure is derived from <a href="http://build.fhir.org/types.html#Base">Base</a>
         </p>
         <div id="all-tbl-diff-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur lutilisation de lélément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que lélément peut apparaître dans linstance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de lélément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur lélément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceDA'), document.getElementById('ppSituationExerciceDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceDA">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceDA'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceDA'))" size="1" name="binding" checked="true" id="cbSituationExerciceDA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceDA'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceDA'))" size="1" name="constraint" checked="true" id="cbSituationExerciceDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceDA'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceDA'))" size="1" name="obligation" checked="true" id="cbSituationExerciceDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceDA'), document.getElementById('ppSituationExerciceDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceDA">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceDA'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceDA'))" size="1" name="binding" checked="true" id="cbSituationExerciceDA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceDA'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceDA'))" size="1" name="constraint" checked="true" id="cbSituationExerciceDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceDA'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceDA'))" size="1" name="obligation" checked="true" id="cbSituationExerciceDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice" title="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)." data-no-external="true">SituationExercice</a><a name="a-SituationExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
@@ -1580,12 +1602,17 @@ filterDesc(document.getElementById('SituationExerciceKA'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.<br/></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Référence à une autre ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel." data-no-external="true">exerciceProfessionnel</a><a name="a-SituationExercice.exerciceProfessionnel"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.ExerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" data-no-external="true">ExerciceProfessionnel</a><a name="a-SituationExercice.ExerciceProfessionnel"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b4db1389-8da9-4e57-a4ad-268b00917ff8
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ar" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.EntiteGeographique" title="Lien vers la classe EntiteGeographique" data-no-external="true">EntiteGeographique</a><a name="a-SituationExercice.EntiteGeographique"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EntiteGeographique.html">EntiteGeographique</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe EntiteGeographique</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 87325beb-e975-454d-a35f-dce9a239a566
 document.getElementById('cbSituationExerciceDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceDA'), 'binding', document.getElementById('cbSituationExerciceDA-binding').checked, document.getElementById('ppSituationExerciceDA'));
 document.getElementById('cbSituationExerciceDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1624,9 +1651,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1637,9 +1664,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1650,9 +1677,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1663,9 +1690,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1676,9 +1703,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1689,9 +1716,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1702,9 +1729,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1715,9 +1742,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1728,9 +1755,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1741,9 +1768,9 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -1759,7 +1786,7 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
           <b>Snapshot View</b>
         </p>
         <div id="all-tbl-snap-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceSA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de lélément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur lutilisation de lélément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que lélément peut apparaître dans linstance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de lélément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur lélément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceSA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceSA'), document.getElementById('ppSituationExerciceSA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceSA">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceSA'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceSA'))" size="1" name="binding" checked="true" id="cbSituationExerciceSA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceSA'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceSA'))" size="1" name="constraint" checked="true" id="cbSituationExerciceSA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceSA'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceSA'))" size="1" name="obligation" checked="true" id="cbSituationExerciceSA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="SituationExerciceSA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('SituationExerciceSA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('SituationExerciceSA'), document.getElementById('ppSituationExerciceSA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppSituationExerciceSA">Bindings <input onClick="filterDesc(document.getElementById('SituationExerciceSA'), 'binding',event.target.checked, document.getElementById('ppSituationExerciceSA'))" size="1" name="binding" checked="true" id="cbSituationExerciceSA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('SituationExerciceSA'), 'constraint',event.target.checked, document.getElementById('ppSituationExerciceSA'))" size="1" name="constraint" checked="true" id="cbSituationExerciceSA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('SituationExerciceSA'), 'obligation',event.target.checked, document.getElementById('ppSituationExerciceSA'))" size="1" name="obligation" checked="true" id="cbSituationExerciceSA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
 <tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice" title="Caractéristiques de l'exercice d’un professionnel pendant une période déterminée et dans une structure déterminée (à l'exception des remplaçants).Synonymes : Activité (RPPS)." data-no-external="true">SituationExercice</a><a name="sa-SituationExercice"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
@@ -1845,12 +1872,17 @@ filterDesc(document.getElementById('SituationExerciceDA'), 'obligation', documen
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-BoiteLettreMSS.html">BoiteLettreMSS</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.<br/></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Référence à une autre ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel." data-no-external="true">exerciceProfessionnel</a><a name="sa-SituationExercice.exerciceProfessionnel"> </a></td>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aq" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.ExerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" data-no-external="true">ExerciceProfessionnel</a><a name="sa-SituationExercice.ExerciceProfessionnel"> </a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a>)</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel.</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // b4db1389-8da9-4e57-a4ad-268b00917ff8
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe ExerciceProfessionnel</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ar" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-SituationExercice-definitions.html#SituationExercice.EntiteGeographique" title="Lien vers la classe EntiteGeographique" data-no-external="true">EntiteGeographique</a><a name="sa-SituationExercice.EntiteGeographique"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EntiteGeographique.html">EntiteGeographique</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe EntiteGeographique</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 87325beb-e975-454d-a35f-dce9a239a566
 document.getElementById('cbSituationExerciceSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('SituationExerciceSA'), 'binding', document.getElementById('cbSituationExerciceSA-binding').checked, document.getElementById('ppSituationExerciceSA'));
 document.getElementById('cbSituationExerciceSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1889,9 +1921,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-role-vs.html">RoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/role-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1902,9 +1934,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="ValueSet-typeRole-vs.html">TyperoleVs</a>
-      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
+    <td title="La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à la version fournie dans cette spécification">&#x1F4E6;0.1.0</td>
     <td>cet IG</td>
   </tr>
   <tr>
@@ -1915,9 +1947,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs">https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1928,9 +1960,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R22-GenreActivite/FHIR/TRE-R22-GenreActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1941,9 +1973,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs">https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R25-MotifFinActivite/FHIR/TRE-R25-MotifFinActivite?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1954,9 +1986,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs">https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R32-StatutHospitalier/FHIR/TRE-R32-StatutHospitalier?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1967,9 +1999,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R06-SectionTableauCNOP/FHIR/TRE-R06-SectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1980,9 +2012,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs">https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_G05-SousSectionTableauCNOP/FHIR/TRE-G05-SousSectionTableauCNOP?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -1993,9 +2025,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs">https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R24-TypeActiviteLiberale/FHIR/TRE-R24-TypeActiviteLiberale?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
   <tr>
@@ -2006,9 +2038,9 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     </td>
     <td>
       <a style="opacity: 1.0" href="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs">https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs</a>
-      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier lURL" class="btn-copy"></button>
+      <button data-clipboard-text="https://mos.esante.gouv.fr/NOS/TRE_R34-StatutProfessionnelSSA/FHIR/TRE-R34-StatutProfessionnelSSA?vs" title="Cliquer pour copier l'URL" class="btn-copy"></button>
     </td>
-    <td title="La version nest pas explicitement indiquée. Aucun {0} correspondant trouvé">Non précisé</td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
     <td>Unknown</td>
   </tr>
 </table>
@@ -2055,7 +2087,8 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.telecommunication" title="Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">telecommunication</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Telecommunication.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) de télécommunication (numéro de téléphone, adresse email, URL, etc.) rattachée(s) à la situation d'exercice.</span>
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.adresseSE" title="Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">adresseSE</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-Adresse.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Adresse</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Adresse(s) géopostale(s) rattachée(s) à la situation d'exercice.</span>
     "<a href="StructureDefinition-SituationExercice.html#SituationExercice.boiteLettresMSS" title="Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice" class="dict"><span style="text-decoration: underline">boiteLettresMSS</span></a>" : [{<span style="color: darkgreen"><a href="StructureDefinition-BoiteLettreMSS.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Boîte(s) aux lettres du service de messagerie sécurisée de santé (MSS) rattachée(s) à la situation d'exercice.</span>
-    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.exerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" class="dict"><span style="text-decoration: underline">exerciceProfessionnel</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel]])} <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe ExerciceProfessionnel.</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.ExerciceProfessionnel" title="Lien vers la classe ExerciceProfessionnel" class="dict"><span style="text-decoration: underline">ExerciceProfessionnel</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-ExerciceProfessionnel.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe ExerciceProfessionnel</span>
+    "<a href="StructureDefinition-SituationExercice.html#SituationExercice.EntiteGeographique" title="Lien vers la classe EntiteGeographique" class="dict"><span style="text-decoration: underline">EntiteGeographique</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-EntiteGeographique.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique</a></span>} <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Lien vers la classe EntiteGeographique</span>
   }
 
         </div>
@@ -2080,14 +2113,7 @@ filterDesc(document.getElementById('SituationExerciceSA'), 'obligation', documen
 <p><b>
 Résumé
 </b></p>
-<p>Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))</p><p><b>Structures</b></p>
-<p>Cette structure fait référence à ces autres structures:</p>
-<ul>
-<li><a href="StructureDefinition-ExerciceProfessionnel.html">ExerciceProfessionnel <span style="font-size: 8px">(https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel)</span></a></li>
-
-</ul>
-
-
+<p>Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))</p>
         </div>
       </div>
     </div>
@@ -2144,7 +2170,7 @@ Résumé
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 3, 2025 08:56+0000">2025-12-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 09:16+0000">2026-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CompetencemetiereVs - TTL Representation - Modèle des Objets de Santé (MOS) v0.1.0</title>
+    <title>CompetencemetierVs - TTL Representation - Modèle des Objets de Santé (MOS) v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.40"}
-    h3,h4,h5,h6{--heading-prefix:"5.40"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.99"}
+    h3,h4,h5,h6{--heading-prefix:"4.99"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -101,43 +101,51 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="professionnel.html">Professionnel</a>
+        <a href="accompagnant.html">Accompagnant</a>
+      </li>
+      <li>
+        <a href="accord.html">Accord</a>
+      </li>
+      <li>
+        <a href="agenda.html">Agenda</a>
+      </li>
+      <li>
+        <a href="autorisation.html">Autorisation</a>
       </li>
       <li>
         <a href="dispo-authent.html">Dispositif d&apos;authentification</a>
       </li>
       <li>
-        <a href="structure.html">Structure</a>
+        <a href="dispositif-medical.html">Dispositif médical</a>
+      </li>
+      <li>
+        <a href="dossier.html">Dossier</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre opérationnelle</a>
       </li>
       <li>
         <a href="ppec.html">Personne prise en charge</a>
       </li>
       <li>
+        <a href="professionnel.html">Professionnel</a>
+      </li>
+      <li>
+        <a href="professionnel_2.html">Professionnel_2</a>
+      </li>
+      <li>
+        <a href="professionnel_3.html">Professionnel_3</a>
+      </li>
+      <li>
         <a href="ressops.html">Ressources opérationnelles</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
       </li>
     </ul>
   </li>
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="securite.html">Sécurité</a>
-      </li>
-      <li>
-        <a href="downloads.html">Téléchargements et usage</a>
-      </li>
-      <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
-      </li>
-      <li>
-        <a target="_blank" href="https://esante.gouv.fr/">Site de l&apos;ANS </a>
-      </li>
-    </ul>
   </li>
   <li>
     <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
@@ -154,7 +162,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CompetencemetiereVs</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>CompetencemetierVs</b></li>
 
           <span style="float:right;">
 
@@ -177,7 +185,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - version de développement local (v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Modèle des Objets de Santé (MOS) - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/mos/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
 
 
 
@@ -223,7 +231,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: CompetencemetiereVs - TTL Representation</h2>
+<h2 id="root">: CompetencemetierVs - TTL Representation</h2>
 
   <table class="colsd">
     <tr>
@@ -232,7 +240,7 @@
         
           Draft
           
-            as of 2025-12-03
+            as of 2026-03-06
           
         
       </td>
@@ -262,16 +270,16 @@
   <a href="http://hl7.org/fhir/R4/resource.html#ValueSet.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;competenceMetier-vs&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : EnsembleValeurs competenceMetier-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;competenceMetier-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccompetenceMetier-vs\&quot;&gt; &lt;/a&gt;&lt;p&gt;Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html\&quot;&gt;&lt;code&gt;https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20241213120000, la version trouvée via les références de package\&quot;&gt; version ?20241213120000&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html\&quot;&gt;&lt;code&gt;https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;La version nest pas explicitement indiquée, ce qui signifie quelle est fixée à 20250625120000, la version trouvée via les références de package\&quot;&gt; version ?20250625120000&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : EnsembleValeurs competenceMetier-vs&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;competenceMetier-vs\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hccompetenceMetier-vs\&quot;&gt; &lt;/a&gt;&lt;p&gt;Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html\&quot;&gt;&lt;code&gt;https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à {0}, la version trouvée via les références de package\&quot;&gt; version ?20250625120000&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Inclut tous les codes définis dans &lt;a href=\&quot;https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html\&quot;&gt;&lt;code&gt;https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;La version n'est pas explicitement indiquée, ce qui signifie quelle est fixée à {0}, la version trouvée via les références de package\&quot;&gt; version ?20241213120000&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">fhir:url</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs&gt;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CompetencemetiereVs&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CompetencemetierVs&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-12-03T08:56:12+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-03-06T09:16:42+00:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris&quot; ] ;
@@ -290,11 +298,11 @@
   <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">fhir:compose</a> [
     ( <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">fhir:include</a> [
 <a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS&gt;       ]     ] [
-<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier&gt;       ]     ] )
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier&gt;       ]     ] [
+<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">fhir:system</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS&gt;       ]     ] )
   ] . # 
 
 </code></pre>
@@ -344,7 +352,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 3, 2025 08:56+0000">2025-12-03</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fr.mos#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 09:16+0000">2026-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

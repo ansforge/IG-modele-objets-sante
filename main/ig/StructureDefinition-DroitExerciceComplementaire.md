@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DroitExerciceComplementaire | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:DroitExerciceComplementaire |
+| Draft as of 2026-03-06 | *Computable Name*:DroitExerciceComplementaire |
 
  
 Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d’exercice dans l’une des spécialités définies par un des DESC de médecine du groupe I. 
 
 **Utilisations:**
 
-* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DroitExerciceComplementaire)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DroitExerciceComplementaire)
 
 ### Formal Views of Profile Content
 
@@ -41,31 +41,23 @@ Other representations of profile: [CSV](StructureDefinition-DroitExerciceComplem
   "name" : "DroitExerciceComplementaire",
   "title" : "DroitExerciceComplementaire",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d'exercice dans l'une des spécialités définies par un des DESC de médecine du groupe I.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -73,31 +65,27 @@ Other representations of profile: [CSV](StructureDefinition-DroitExerciceComplem
   "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "DroitExerciceComplementaire",
-        "path" : "DroitExerciceComplementaire",
-        "short" : "Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d'exercice dans l'une des spécialités définies par un des DESC de médecine du groupe I.",
-        "definition" : "Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d'exercice dans l'une des spécialités définies par un des DESC de médecine du groupe I."
-      },
-      {
-        "id" : "DroitExerciceComplementaire.droitExerciceComplementaire",
-        "path" : "DroitExerciceComplementaire.droitExerciceComplementaire",
-        "short" : "Droit d'exercice complémentaire.",
-        "definition" : "Droit d'exercice complémentaire.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Coding"
-          }
-        ],
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/droitExerciceComplementaire-vs"
-        }
+    "element" : [{
+      "id" : "DroitExerciceComplementaire",
+      "path" : "DroitExerciceComplementaire",
+      "short" : "Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d'exercice dans l'une des spécialités définies par un des DESC de médecine du groupe I.",
+      "definition" : "Les docteurs en médecine initialement qualifiés comme médecins spécialistes peuvent obtenir un droit d'exercice dans l'une des spécialités définies par un des DESC de médecine du groupe I."
+    },
+    {
+      "id" : "DroitExerciceComplementaire.droitExerciceComplementaire",
+      "path" : "DroitExerciceComplementaire.droitExerciceComplementaire",
+      "short" : "Droit d'exercice complémentaire.",
+      "definition" : "Droit d'exercice complémentaire.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/droitExerciceComplementaire-vs"
       }
-    ]
+    }]
   }
 }
 

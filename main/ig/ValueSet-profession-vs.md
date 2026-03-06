@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/profession-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:ProfessionVs |
+| Draft as of 2026-03-06 | *Computable Name*:ProfessionVs |
 
  **References** 
 
@@ -17,25 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G15-ProfessionSante.html)version 📦20250328120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R95-UsagerTitre.html)version 📦20241213120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R94-ProfessionSocial.html)version 📦20241213120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R291-AutreProfession.html)version 📦20231215120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_G15_ProfessionSante v20250328120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-G15-ProfessionSante.html)
-* [codesystem TRE_R291_AutreProfession v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R291-AutreProfession.html)
-* [codesystem TRE_R94_ProfessionSocial v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R94-ProfessionSocial.html)
-* [codesystem TRE_R95_UsagerTitre v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R95-UsagerTitre.html)
-
-Ce jeu de valeur (ValueSet) contient 68 concepts
 
 -------
 
@@ -62,45 +46,35 @@ Ce jeu de valeur (ValueSet) contient 68 concepts
   "version" : "0.1.0",
   "name" : "ProfessionVs",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"
-      },
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre"
-      },
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
-      },
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession"
-      }
-    ]
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R291-AutreProfession/FHIR/TRE-R291-AutreProfession"
+    }]
   }
 }
 

@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "ans.fr.mos"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fr.mos</b></p><a name=\"ans.fr.mos\"> </a><a name=\"hcans.fr.mos\"> </a><h2>MOS</h2><p>LURL officielle pour ce guide dimplémentation est : </p><pre>https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos</pre></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fr.mos</b></p><a name=\"ans.fr.mos\"> </a><a name=\"hcans.fr.mos\"> </a><h2>MOS</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos</pre></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos"^^xsd:anyURI ;
@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-12-03T08:56:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-06T09:16:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -60,7 +60,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.0.0" ]
+     fhir:version [ fhir:v "7.0.1" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -744,7 +744,7 @@
        ] ;
        fhir:value [
          a fhir:Code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.9.0"
        ]
      ] [
        fhir:extension ( [
@@ -1395,7 +1395,138 @@
          fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
        ]
      ] ) ;
+     fhir:grouping ( [
+       fhir:id [ fhir:v "Accompagnant" ] ;
+       fhir:name [ fhir:v "Accompagnant" ]
+     ] [
+       fhir:id [ fhir:v "Accord" ] ;
+       fhir:name [ fhir:v "Accord" ]
+     ] [
+       fhir:id [ fhir:v "Agenda" ] ;
+       fhir:name [ fhir:v "Agenda" ]
+     ] [
+       fhir:id [ fhir:v "Autorisation" ] ;
+       fhir:name [ fhir:v "Autorisation" ]
+     ] [
+       fhir:id [ fhir:v "Dispositif" ] ;
+       fhir:name [ fhir:v "Dispositif d'authentification" ]
+     ] [
+       fhir:id [ fhir:v "DM" ] ;
+       fhir:name [ fhir:v "Dispositif médical" ]
+     ] [
+       fhir:id [ fhir:v "Dossier" ] ;
+       fhir:name [ fhir:v "Dossier" ]
+     ] [
+       fhir:id [ fhir:v "Offre" ] ;
+       fhir:name [ fhir:v "Offre opérationnelle" ]
+     ] [
+       fhir:id [ fhir:v "Organisation" ] ;
+       fhir:name [ fhir:v "Organisation opérationnelle" ]
+     ] [
+       fhir:id [ fhir:v "Personne" ] ;
+       fhir:name [ fhir:v "Personne prise en charge" ]
+     ] [
+       fhir:id [ fhir:v "Professionnel" ] ;
+       fhir:name [ fhir:v "Professionnel" ]
+     ] [
+       fhir:id [ fhir:v "Ressources" ] ;
+       fhir:name [ fhir:v "Ressources opérationnelles" ]
+     ] [
+       fhir:id [ fhir:v "Structure" ] ;
+       fhir:name [ fhir:v "Structure" ]
+     ] [
+       fhir:id [ fhir:v "Classes communes" ] ;
+       fhir:name [ fhir:v "Classes communes" ]
+     ] ) ;
      fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteEnseignement> ;
+         fhir:reference [ fhir:v "StructureDefinition/ActiviteEnseignement" ]
+       ] ;
+       fhir:name [ fhir:v "ActiviteEnseignement" ] ;
+       fhir:description [ fhir:v "Les activités d’enseignement aux professions sanitaires et sociales sont enregistrées dans FINESS et rattachées aux établissements de formation (EG). Le périmètre comprend les formations sanitaires et sociales préparant à un diplôme d’état délivré par l’administration sanitaire et sociale. Sont exclues les formations aux professions médicales préparées en université, hormis les formations et écoles de sages-femmes.Ces formations sont soumises à un arrêté d’agrément de la Région." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSociale> ;
+         fhir:reference [ fhir:v "StructureDefinition/ActiviteSociale" ]
+       ] ;
+       fhir:name [ fhir:v "ActiviteSociale" ] ;
+       fhir:description [ fhir:v "Les équipements sociaux représentent les activités des établissements du domaine social et médico-social enregistrés dans FINESS.Le champ de FINESS comprend l’ensemble des établissements et services sociaux et médico-sociaux (ESSMS), soumis à autorisation préalable, ainsi que quelques catégories d’établissements n’entrant pas dans le régime de l’autorisation.Pour indiquer les services offerts, FINESS identifie ceux-ci à l'aide d'un triplet composé des éléments suivants : discipline d’équipement, mode de fonctionnement (appelé aussi type d’activité) et clientèle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoinAutorisee> ;
+         fhir:reference [ fhir:v "StructureDefinition/ActiviteSoinAutorisee" ]
+       ] ;
+       fhir:name [ fhir:v "ActiviteSoinAutorisee" ] ;
+       fhir:description [ fhir:v "On distingue plusieurs types d’activités sanitaires rattachées aux établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «activités de soins» (acronyme communément utilisé : AS).Les activités de soins sont les activités des établissements sanitaires autorisées par arrêté du Directeur Général de l’ARS dans le cadre de l’article L. 6122-1 du CSP, pour une durée de 7 ans, durée fixe par voie réglementaire.D’après l’article L. 6122-1 du CSP, sont soumis à l’autorisation de l’agence régionale de santé les projets relatifs à la création de tout établissement de santé, la création, la conversion et le regroupement des activités de soins, y compris sous la forme d’alternatives à l’hospitalisation ou d’hospitalisation à domicile. La liste des activités de soins est fixée par décret en Conseil d’État. L’article R. 6122-25 du CSP référence ces activités de soins.Toute activité de soins fait l’objet d’un arrêté qui mentionne sa nature (triplet activité, modalité, forme, cf. plus bas), le numéro FINESS de l’entité juridique responsable (EJ) et le numéro FINESS de l’établissement (i.e. l’entité géographique, EG) dans lequel elle est implantée (synonyme : mise en œuvre). La modélisation actuelle prévoit que l’EG d’implantation est toujours rattachée juridiquement à l’EJ dans FINESS.La nomenclature est articulée en trois niveaux systématiquement renseignés : ** Activité de soins.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe : ** Les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des activités de soins.** Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :     ** Une autorisation est « active » à la date du jour si :          ** sa date de première mise en œuvre est renseignée et inférieure ou égale à la date du jour;          ** sa date d'échéance est supérieure ou égale à la date du jour.     ** Dans FINESS, les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description.     ** De rares attributs sont spécifiques à FINESS.Le périmètre des autorisations des activités de soins présentes dans FINESS recouvre :1- Les autorisations en attente de première mise en œuvre : la date de début (i.e. date de première mise en œuvre) n'est pas renseignée ou supérieure à la date du jour;2- Les autorisations actives:      ** la date début (i.e. date de première mise en œuvre) est renseignée et inférieure ou égale à la date du jour,     ** la date de fin est supérieure ou égale à la date du jour;3- Les autorisations échues, dont la date de fin est inférieure à la date du jour, et qui couvrent plusieurs cas :     a- Le renouvellement est en cours d’instruction (cas le plus courant),     b- Un autre événement (injonction, changement d’implantation,…) est en cours d’instruction au vu du dossier,     c- L’autorisation va devenir caduque, après quoi elle ne sera plus présente dans FINESS;     Dans chacun des 3 cas (a, b, c), la mise à jour dans les bases de données va avoir lieu (SI ARHGOS > SI FINESS > service de publication annuaire santé de l'ANS).     En attendant la mise à jour des bases de données, il est possible de considérer les autorisations échues présentes dans FINESS comme toujours actives.     Les autorisations caduques ou retirées ne sont pas présentes dans FINESS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ActiviteSoumiseReconnaissance> ;
+         fhir:reference [ fhir:v "StructureDefinition/ActiviteSoumiseReconnaissance" ]
+       ] ;
+       fhir:name [ fhir:v "ActiviteSoumiseReconnaissance" ] ;
+       fhir:description [ fhir:v "On distingue plusieurs types d’activités sanitaires des établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «activités soumises à reconnaissance contractuelle» (acronyme communément utilisé : ASR).Une ASR est une activité non soumise à autorisation du DG ARS mais soumise à reconnaissance contractuelle dans le cadre et la durée du CPOM (contrat pluriannuel d’objectif et de moyens).La nomenclature est articulée en trois niveaux systématiquement renseignés : **  Activité reconnue contractuellement communément appelée reconnaissance.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe, les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des activités soumises à reconnaissance contractuelle.Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS. Dans FINESS, les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description.Une reconnaissance contractuelle est nécessairement rattachée à un contrat CPOM. Au sens ARHGOS, un contrat CPOM correspond à un couple unique entité juridique (EJ)/établissement (EG).A noter qu’initialement il existait une distinction entre les reconnaissances dites nationales (issues du guide méthodologique CPOM de la DGOS) et les reconnaissances dites régionales. Depuis 2019, toutes les reconnaissances contractuelles sont de type national." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
+     ] [
        fhir:extension ( [
          fhir:url [
            fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
@@ -1415,7 +1546,74 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda> ;
+         fhir:reference [ fhir:v "StructureDefinition/Agenda" ]
+       ] ;
+       fhir:name [ fhir:v "Agenda" ] ;
+       fhir:description [ fhir:v "Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de créneaux, des plages de disponibilité et des rendez-vous sur une période définie." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Agenda" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche> ;
+         fhir:reference [ fhir:v "StructureDefinition/AidantDemarche" ]
+       ] ;
+       fhir:name [ fhir:v "AidantDemarche" ] ;
+       fhir:description [ fhir:v "Personne physique ou morale aidant l'individu dans ses démarches." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Accompagnant" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ArretTravail> ;
+         fhir:reference [ fhir:v "StructureDefinition/ArretTravail" ]
+       ] ;
+       fhir:name [ fhir:v "ArretTravail" ] ;
+       fhir:description [ fhir:v "Selon le code du travail, l'arrêt de travail est une période de suspension du contrat de travail en raison d’une maladie ou d’un accident du travail d’origine professionnelle ou non professionnelle. L’arrêt de travail est justifié par une prescription médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1436,7 +1634,52 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutorisationExercice> ;
+         fhir:reference [ fhir:v "StructureDefinition/AutorisationExercice" ]
+       ] ;
+       fhir:name [ fhir:v "AutorisationExercice" ] ;
+       fhir:description [ fhir:v "L'accès aux professions de santé est soumis à des conditions concernant les diplômes obtenus : généralement est requis un diplôme français (DE de médecine, etc. ou européen (dans les professions pour lesquelles il existe des accords de reconnaissance mutuelle des diplômes).Pour les personnes ne remplissant pas ces conditions (diplômes hors UE, par exemple), les diplômes obtenus doivent être complétés d'une autorisation afin de permettre l'entrée dans la profession.Il peut s'agir:** d'une autorisation délivrée par le Ministère de la Santé,** d'une autorisation délivrée par l'Ordre au vu de la jurisprudence (Hochsmann, etc.)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Accord" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutreActiviteSoumiseAutorisation> ;
+         fhir:reference [ fhir:v "StructureDefinition/AutreActiviteSoumiseAutorisation" ]
+       ] ;
+       fhir:name [ fhir:v "AutreActiviteSoumiseAutorisation" ] ;
+       fhir:description [ fhir:v "On distingue plusieurs types d’activités sanitaires des établissements FINESS en fonction de la pièce justificative et du cadre réglementaire. Cette classe décrit uniquement les activités de type «autres activités soumises à autorisation» (acronyme communément utilisé : AASA). Les AASA sont soumises à l’autorisation du Directeur Général de l’ARS selon des modalités et des durées différentes particulières.  Elles sont au nombre de 5 (instruction n° DGOS/SR6/R3/R4/DREES/DMSI/2014/364 du 24décembre 2014) :1. Chirurgie esthétique2. Prélèvements d’organes, de tissus, de cellules3. Dépôts de sang4. Lieux de recherches de la personne humaine5. LactariumsLa nomenclature est articulée en trois niveaux systématiquement renseignés : ** Autre Activité.** Modalité : la modalité est le mode d’application ou de type de soins prévu par les textes réglementaires encadrant chaque activité de soins. C’est une pratique thérapeutique. ** Forme : la forme est le type d’organisation de prise en charge.Dans cette classe :** Les attributs sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des autres activités soumises à autorisation ; ** Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :     ** Seules les autorisations non caduques sont transmises à FINESS par ARHGOS et sont donc publiées par l’ANS. Hormis les autorisations en attente de première mise en œuvre, toutes les autorisations publiées peuvent donc être considérées comme actives.     ** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1454,6 +1697,47 @@
        ] ;
        fhir:name [ fhir:v "AutreDiplomeObtenu" ] ;
        fhir:description [ fhir:v "Diplôme autre qu'un diplôme d'Etat, une qualification, un diplôme d'études spécialisées, un DESC1, un DESC2, un diplôme de l'espace économique européen, un diplôme européen d'études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinScolarite-vs> ;
+         fhir:reference [ fhir:v "ValueSet/besoinScolarite-vs" ]
+       ] ;
+       fhir:name [ fhir:v "BesoinscolariteVs" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/besoinVieQuotidienne-vs> ;
+         fhir:reference [ fhir:v "ValueSet/besoinVieQuotidienne-vs" ]
+       ] ;
+       fhir:name [ fhir:v "BesoinviequotidienneVs" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1478,7 +1762,52 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteAccueil> ;
+         fhir:reference [ fhir:v "StructureDefinition/CapaciteAccueil" ]
+       ] ;
+       fhir:name [ fhir:v "CapaciteAccueil" ] ;
+       fhir:description [ fhir:v "La capacité d'accueil indique les capacités d’hébergement (en lits ou en places) et donc le nombre de personnes pouvant être accueillies en même temps." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteActiviteExercee> ;
+         fhir:reference [ fhir:v "StructureDefinition/CapaciteActiviteExercee" ]
+       ] ;
+       fhir:name [ fhir:v "CapaciteActiviteExercee" ] ;
+       fhir:description [ fhir:v "Capacité définie au regard de l'activité." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1499,7 +1828,52 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation> ;
+         fhir:reference [ fhir:v "StructureDefinition/CapaciteHabitation" ]
+       ] ;
+       fhir:name [ fhir:v "CapaciteHabitation" ] ;
+       fhir:description [ fhir:v "La capacité d'habitation décrit des types d'habitation et le nombre d'habitations associées à ces types." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapacitePriseCharge> ;
+         fhir:reference [ fhir:v "StructureDefinition/CapacitePriseCharge" ]
+       ] ;
+       fhir:name [ fhir:v "CapacitePriseCharge" ] ;
+       fhir:description [ fhir:v "La capacite de prise en charge indique à quelle affectation sont destinés les lits qui seront rattachés à cette classe.Elle permet d’éviter de la duplication de l'offre ou du lieu de prise en charge lorsque des lits doivent être réservés dans le cadre d’une gestion de crise." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1520,7 +1894,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1553,11 +1928,96 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CarteProfessionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/CarteProfessionnel" ]
+       ] ;
+       fhir:name [ fhir:v "CarteProfessionnel" ] ;
+       fhir:description [ fhir:v "Données descriptives du moyen d’identification des personnes physiques via une carte de professionnel. La carte est rattachée à l’exercice d’une profession donnée et non au professionnel lui-même. Un professionnel exerçant simultanément deux professions a deux cartes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Dispositif" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEtablissement-vs> ;
+         fhir:reference [ fhir:v "ValueSet/categorieEtablissement-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CategorieetablissementVs" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Certificat> ;
+         fhir:reference [ fhir:v "StructureDefinition/Certificat" ]
+       ] ;
+       fhir:name [ fhir:v "Certificat" ] ;
+       fhir:description [ fhir:v "Données descriptives du moyen d’identification par certificat. Il s'agit des certificats utilisés par les professionnels et les structures." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Dispositif" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CertificatEtudeSpeciale> ;
          fhir:reference [ fhir:v "StructureDefinition/CertificatEtudeSpeciale" ]
        ] ;
        fhir:name [ fhir:v "CertificatEtudeSpeciale" ] ;
        fhir:description [ fhir:v "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/code-vs> ;
+         fhir:reference [ fhir:v "ValueSet/code-vs" ]
+       ] ;
+       fhir:name [ fhir:v "CodeVs" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1582,7 +2042,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1603,7 +2064,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1644,7 +2106,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1660,7 +2123,7 @@
          fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs> ;
          fhir:reference [ fhir:v "ValueSet/competenceMetier-vs" ]
        ] ;
-       fhir:name [ fhir:v "CompetencemetiereVs" ] ;
+       fhir:name [ fhir:v "CompetencemetierVs" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1697,6 +2160,138 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact> ;
+         fhir:reference [ fhir:v "StructureDefinition/Contact" ]
+       ] ;
+       fhir:name [ fhir:v "Contact" ] ;
+       fhir:description [ fhir:v "Personne ou service qui agit comme point de contact auprès d'une autre personne ou d'un autre service.Exemple: Point de contact avec une personne ou une organisation (un guichet d'accueil, une source d'information, etc.)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Convention> ;
+         fhir:reference [ fhir:v "StructureDefinition/Convention" ]
+       ] ;
+       fhir:name [ fhir:v "Convention" ] ;
+       fhir:description [ fhir:v "Accord conclu entre deux ou plusieurs parties en vue de produire certains effets juridiques : créer des obligations, modifier ou mettre un terme à des obligations préexistantes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Accord" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CoordonneeGeographique> ;
+         fhir:reference [ fhir:v "StructureDefinition/CoordonneeGeographique" ]
+       ] ;
+       fhir:name [ fhir:v "CoordonneeGeographique" ] ;
+       fhir:description [ fhir:v "Ensemble des coordonnées géographiques d'un point spécifique telles que la longitude, la latitude et l'altitude, exprimées suivant un système géodésique choisi. Il convient de distinguer les coordonnées géographiques des coordonnées projetées suivant différents systèmes de projection.Note complémentaire sur l'usage de la classe :1) Usage d'un autre méridien que Greenwich : Le méridien origine peut être celui de Greenwich (méridien international), ou encore celui propre à la géodésie d'un pays (historiquement méridien de Paris pour la France). Mais chaque méridien origine est défini numériquement par sa longitude par rapport au méridien international.2) Les normes OGC n'imposent pas de choix sur les systèmes : Situation sur le terrain: Systèmes les plus couramment utilisés en France métropolitaine et dans les départements d'Outre-mer:• France métropolitaine : 21 systèmes• Guadeloupe : 6 systèmes• Martinique : 4 systèmes• Guyane : 5 systèmes• Réunion : 4 systèmes3) Systèmes géographiques, planimétriques et altimétriques : Voir décret simple 2006-272 du 03 mars 2006 modifiant le décret n° 2000-1276 du 26 décembre 2000." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Creneau> ;
+         fhir:reference [ fhir:v "StructureDefinition/Creneau" ]
+       ] ;
+       fhir:name [ fhir:v "Creneau" ] ;
+       fhir:description [ fhir:v "Un créneau d’un agenda est un intervalle de temps, disponible ou occupé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Agenda" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Decision> ;
+         fhir:reference [ fhir:v "StructureDefinition/Decision" ]
+       ] ;
+       fhir:name [ fhir:v "Decision" ] ;
+       fhir:description [ fhir:v "Acte par lequel une autorité prend parti après examen d'une demande." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Demande> ;
+         fhir:reference [ fhir:v "StructureDefinition/Demande" ]
+       ] ;
+       fhir:name [ fhir:v "Demande" ] ;
+       fhir:description [ fhir:v "Besoin(s) et/ou souhait(s) exprimés de manière officielle.Le contenu de la demande peut être un document : une lettre, un formulaire, etc. La demande peut également être accompagnée si besoin de pièces jointes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESC1> ;
          fhir:reference [ fhir:v "StructureDefinition/DESC1" ]
        ] ;
@@ -1705,7 +2300,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1726,7 +2322,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1747,7 +2344,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1788,7 +2386,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1809,7 +2408,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1830,7 +2430,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1851,7 +2452,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1872,7 +2474,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1893,7 +2496,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1914,7 +2518,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1935,7 +2540,96 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DispositifMedical> ;
+         fhir:reference [ fhir:v "StructureDefinition/DispositifMedical" ]
+       ] ;
+       fhir:name [ fhir:v "DispositifMedical" ] ;
+       fhir:description [ fhir:v "L’article 2 partie 1 du Règlement (UE) 2017/745 du 5 avril 2017 définit un dispositif médical (DM) comme tout instrument, appareil, équipement, logiciel, implant, réactif, matière ou autre article, destiné par le fabricant à être utilisé, seul ou en association, chez l'homme pour l'une ou plusieurs des fins médicales précises suivantes:** diagnostic, prévention, contrôle, prédiction, pronostic, traitement ou atténuation d'une maladie,** diagnostic, contrôle, traitement, atténuation d'une blessure ou d'un handicap ou compensation de ceux-ci,** investigation, remplacement ou modification d'une structure ou fonction anatomique ou d'un processus ou état physiologique ou pathologique,** communication d'informations au moyen d'un examen in vitro d'échantillons provenant du corps humain, y compris les dons d'organes, de sang et de tissus,et dont l'action principale voulue dans ou sur le corps humain n'est pas obtenue par des moyens pharmacologiques ou immunologiques ni par métabolisme, mais dont la fonction peut être assistée par de tels moyens. Les produits ci-après sont également réputés être des dispositifs médicaux :** les dispositifs destinés à la maîtrise de la conception ou à l'assistance à celle-ci,** les produits spécifiquement destinés au nettoyage, à la désinfection ou à la stérilisation des dispositifs visés à l'article 1er, paragraphe 4, et de ceux visés au premier alinéa du présent point." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "DM" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DivisionTerritoriale> ;
+         fhir:reference [ fhir:v "StructureDefinition/DivisionTerritoriale" ]
+       ] ;
+       fhir:name [ fhir:v "DivisionTerritoriale" ] ;
+       fhir:description [ fhir:v "Une division territoriale est un territoire.Le territoire peut correspondre à une commune, un département, une région, un territoire, un pays, un canton ou un arrondissement au sens du référentiel administratif que représente le Code Officiel Géographique pour la France (INSEE). Pour les autres pays, cela peut être un état, un land, un comté, une province, etc. suivant leur découpage territorial.Autres zonages:Le territoire peut correspondre à un territoire de santé, un bassin de santé, une unité urbaine, un regroupement de communes, etc.Afin de distinguer les divisions territoriales, il est recommandé de toujours indiquer le type d'une division territoriale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Document> ;
+         fhir:reference [ fhir:v "StructureDefinition/Document" ]
+       ] ;
+       fhir:name [ fhir:v "Document" ] ;
+       fhir:description [ fhir:v "Écrit servant de preuve ou de renseignement.Le document peut désigner une pièce jointe ou administrative." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DossierPersonnePriseCharge> ;
+         fhir:reference [ fhir:v "StructureDefinition/DossierPersonnePriseCharge" ]
+       ] ;
+       fhir:name [ fhir:v "DossierPersonnePriseCharge" ] ;
+       fhir:description [ fhir:v "Un dossier regroupe l'ensemble des informations et des documents liés à une personne." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1956,7 +2650,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -1989,11 +2684,142 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Emploi> ;
+         fhir:reference [ fhir:v "StructureDefinition/Emploi" ]
+       ] ;
+       fhir:name [ fhir:v "Emploi" ] ;
+       fhir:description [ fhir:v "L'emploi définit l'exercice d'une profession dans le cadre d'une activité rémunérée. Il est alors régi par un contrat signé entre un employeur et un employé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique> ;
+         fhir:reference [ fhir:v "StructureDefinition/EntiteGeographique" ]
+       ] ;
+       fhir:name [ fhir:v "EntiteGeographique" ] ;
+       fhir:description [ fhir:v "L'Entité Géographique (EG) correspond à la notion d'établissement : ** Pour les établissements inscrits au FINESS, cette notion d'établissement résulte du croisement de trois critères :     - Un critère géographique : Est un établissement tout lieu dont l'implantation d’activité(s) ou d’équipement(s) est géographiquement distincte d'une autre implantation. Ainsi un Centre Hospitalier Régional comprend autant d'établissements que d'implantations géographiques différentes. Un établissement principal et son établissement secondaire situé à 1 km constituent deux établissements distincts dans FINESS. L'implantation géographique peut-être décrite soit avec l'attribut addresseEG soit au travers de la classe Lieu.    - Un critère budgétaire : Pour une même implantation géographique, on distingue autant d'établissements du secteur public qu'il y a de budgets distincts (budget général, budget annexe).Ainsi un ESAT et son foyer d'hébergement constituent deux établissements même s'ils sont implantés à la même adresse.     - Un critère d’activité : Pour une même implantation géographique et un même budget, on distingue autant d'établissements que de « catégorie d’établissement » décrivant l’activité principale autorisée.Ainsi un centre hospitalier et son EHPAD, financés par le même budget, constituent deux établissements même s'ils sont implantés à la même adresse.** Pour les entreprises inscrites dans le SIRENE, l'EG correspond à un établissement de la personne morale, elle est identifiée par un numéro Siret.Synonymes: Etablissement, structure" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Structure" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteJuridique> ;
+         fhir:reference [ fhir:v "StructureDefinition/EntiteJuridique" ]
+       ] ;
+       fhir:name [ fhir:v "EntiteJuridique" ] ;
+       fhir:description [ fhir:v "L'Entité Juridique (EJ) correspond à la notion de personne morale :** Pour les établissements sanitaires, sociaux, médico-sociaux et de formation aux professions de ces secteurs enregistrés dans le FINESS, une EJ détient des droits (autorisations, agréments, conventions, etc.) lui permettant d'exercer ses activités dans des établissements; chaque EJ dispose d'un statut juridique de la personne morale;** Pour les autres types de structures, une EJ est une personne morale inscrite dans le SIRENE, identifiée par son numéro Siren." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Structure" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementMaterielLourd> ;
+         fhir:reference [ fhir:v "StructureDefinition/EquipementMaterielLourd" ]
+       ] ;
+       fhir:name [ fhir:v "EquipementMaterielLourd" ] ;
+       fhir:description [ fhir:v "Les équipements matériels lourds (EML) sont mis en œuvre au sein d’établissements. Ce sont des équipements mobiliers destinés à pourvoir soit au diagnostic, soit à la thérapeutique, et dont les conditions d’installation et de fonctionnement sont particulièrement onéreuses. Exemples : scanographes, caméras à scintillation, etc.Ils sont soumis à l'autorisation du Directeur Général de l’ARS et leur liste est fixée par décret en Conseil d'Etat. L’article R. 6122-2 du CSP référence ces équipements matériels lourds.L’arrêté du DG ARS mentionne le type d’EML, le numéro FINESS de l’entité juridique responsable (EJ) et le numéro FINESS de l’établissement (i.e. l’entité géographique, EG) dans lequel elle est implantée (synonyme : mise en œuvre). La modélisation actuelle prévoit que l’EG d’implantation est toujours rattaché juridiquement à l’EJ dans FINESS.Les attributs de classe sont nommés conformément aux notions du SI mutualisé des ARS «ARHGOS» qui est propriétaire des données des EML.Les données publiées par l’ANS proviennent du SI FINESS qui les reçoit du SI ARHGOS :** Une autorisation est « active » à la date du jour si :    ** sa date de première mise en œuvre est renseignée et inférieure ou égale à la date du jour    ** sa date d'échéance est supérieure ou égale à la date du jour.** Dans FINESS les attributs peuvent être nommés de manière différente du SI source ARHGOS : dans ce cas, le synonyme FINESS de l’attribut est indiqué dans la colonne description. De rares attributs sont spécifiques à FINESS.Le périmètre des autorisations des équipements matériels lourds présentes dans FINESS recouvre :1- Les autorisations en attente de première mise en œuvre : la date de début (i.e. date de première mise en œuvre) n'est pas renseignée ou supérieure à la date du jour;2- Les autorisations actives:      ** la date début (i.e. date de première mise en œuvre) est renseignée et inférieure ou égale à la date du jour,     ** la date de fin est supérieure ou égale à la date du jour;3- Les autorisations échues, dont la date de fin est inférieure à la date du jour, et qui couvrent plusieurs cas :        a- Le renouvellement est en cours d’instruction (cas le plus courant);        b- Un autre événement (injonction, changement d’implantation,…) est en cours d’instruction au vu du dossier;        c- L’autorisation va devenir caduque, après quoi elle ne sera plus présente dans FINESS;        Dans chacun des 3 cas (a, b, c), la mise à jour dans les bases de données va avoir lieu (SI ARHGOS > SI FINESS > service de publication annuaire santé de l'ANS). En attendant la mise à jour des bases de données, il est possible de considérer les autorisations échues présentes dans FINESS comme toujours actives.        Les autorisations caduques ou retirées ne sont pas présentes dans FINESS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Autorisation" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique> ;
+         fhir:reference [ fhir:v "StructureDefinition/EquipementSpecifique" ]
+       ] ;
+       fhir:name [ fhir:v "EquipementSpecifique" ] ;
+       fhir:description [ fhir:v "Un équipement spécifique est une ressource matérielle discriminante pour la réalisation d'une prestation et sert à faciliter l’orientation du patient. Un équipement spécifique est une ressource propre de la structure ou mise à disposition dans le cadre d'une convention à la condition qu’elle soit utilisée sur site.Les équipements décrits dans cette classe concernent des actes spécifiques ou non. Seules les ressources discriminantes sont retenues, c’est-à-dire que les seuls équipements décrits concernent les équipements qui ne sont pas implicites pour un acte donné." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel> ;
          fhir:reference [ fhir:v "StructureDefinition/ExerciceProfessionnel" ]
        ] ;
        fhir:name [ fhir:v "ExerciceProfessionnel" ] ;
        fhir:description [ fhir:v "Informations décrivant notamment la profession exercée, l'identité d'exercice d'un professionnel et le cadre de son exercice (civil, agent public, etc.).Il peut exister plusieurs exercices professionnels pour une personne à un instant donné." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/familleActiviteOperationnelle-vs> ;
+         fhir:reference [ fhir:v "ValueSet/familleActiviteOperationnelle-vs" ]
+       ] ;
+       fhir:name [ fhir:v "FamilleactiviteoperationnelleVs" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2018,7 +2844,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2059,7 +2886,30 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Groupement> ;
+         fhir:reference [ fhir:v "StructureDefinition/Groupement" ]
+       ] ;
+       fhir:name [ fhir:v "Groupement" ] ;
+       fhir:description [ fhir:v "Ensemble de personnes et d’entités ayant un ou des objectifs communs. Les propriétés du groupement sont distinctes de celles des membres qui le composent. Le groupement peut exister sur une période limitée et ses membres peuvent varier pour atteindre les objectifs fixés." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2080,7 +2930,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2101,7 +2952,52 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LicenceExploitation> ;
+         fhir:reference [ fhir:v "StructureDefinition/LicenceExploitation" ]
+       ] ;
+       fhir:name [ fhir:v "LicenceExploitation" ] ;
+       fhir:description [ fhir:v "Informations descriptives de la licence d’exploitation d’une officine." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Accord" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu> ;
+         fhir:reference [ fhir:v "StructureDefinition/Lieu" ]
+       ] ;
+       fhir:name [ fhir:v "Lieu" ] ;
+       fhir:description [ fhir:v "Informations relatives à une portion déterminée de l'espace, fixe ou mobile du point de vue de son affectation ou de ce qui s'y passe.Cas particulier de l'entité géographique : plusieurs lieux peuvent être associés à une même EG, ils peuvent décrire, à la fois, son addresse et des lieux spécifiques à l'EG." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2134,6 +3030,182 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LieuRealisationOffre> ;
+         fhir:reference [ fhir:v "StructureDefinition/LieuRealisationOffre" ]
+       ] ;
+       fhir:name [ fhir:v "LieuRealisationOffre" ] ;
+       fhir:description [ fhir:v "Espace disposant d'un ensemble de ressources pour réaliser une offre. Lorsque les ressources qui contribuent à l'offre sont mobiles, le lieu de réalisation de l'offre correspond au lieu administratif où est organisée la prise en charge." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Ressources" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Membre> ;
+         fhir:reference [ fhir:v "StructureDefinition/Membre" ]
+       ] ;
+       fhir:name [ fhir:v "Membre" ] ;
+       fhir:description [ fhir:v "Personne ou entité faisant partie d'un groupement." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureCapacite> ;
+         fhir:reference [ fhir:v "StructureDefinition/MesureCapacite" ]
+       ] ;
+       fhir:name [ fhir:v "MesureCapacite" ] ;
+       fhir:description [ fhir:v "Les mesures d’une capacité d’accueil précisent une série d’enregistrements indiquant la quantité de lits (ou de places) dans un statut particulier (disponible,…) et dans une temporalité donnée. Le cumul des mesures de capacité donne une vision complète de la capacité d’accueil." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection> ;
+         fhir:reference [ fhir:v "StructureDefinition/MesureProtection" ]
+       ] ;
+       fhir:name [ fhir:v "MesureProtection" ] ;
+       fhir:description [ fhir:v "La maladie, le handicap, l'accident peuvent altérer les facultés d'une personne et la rendre incapable de défendre ses intérêts. Le juge peut alors décider d'une mesure de protection juridique par laquelle une autre personne l'aide à protéger ses intérêts. La protection doit être la moins contraignante possible, et en priorité être exercée par la famille. Elle distingue aussi les cas où la personne conserve encore ses facultés, mais est en grande difficulté sociale. (service-public.fr)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Accompagnant" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/NoteLiaison> ;
+         fhir:reference [ fhir:v "StructureDefinition/NoteLiaison" ]
+       ] ;
+       fhir:name [ fhir:v "NoteLiaison" ] ;
+       fhir:description [ fhir:v "Les notes de liaison permet d’assurer un suivi « terrain » de la personne prise en charge et de garder en temps réel, une vue précise de la situation de cette personne prise en charge.Les notes peuvent concerner, par exemple, des symptômes observés, des résultats d’analyses, des avis et observations, etc.Les notes sont créées automatiquement ou manuellement, par des professionnels, des dispositifs médicaux, des logiciels métier, une personne tierce en contact direct ou indirect avec la personne prise en charge, ou bien par la personne prise en charge elle-même. Note : les logiciels métier et systèmes ne sont pas représentés dans le MOS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Dossier" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/Observation" ]
+       ] ;
+       fhir:name [ fhir:v "Observation" ] ;
+       fhir:description [ fhir:v "Une mesure ou une déclaration constitue une observation effectuée sur une personne." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/OffreOperationnelle" ]
+       ] ;
+       fhir:name [ fhir:v "OffreOperationnelle" ] ;
+       fhir:description [ fhir:v "L'Offre opérationnelle correspond aux prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Offre" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne> ;
+         fhir:reference [ fhir:v "StructureDefinition/OrganisationInterne" ]
+       ] ;
+       fhir:name [ fhir:v "OrganisationInterne" ] ;
+       fhir:description [ fhir:v "La classe Organisation Interne est une classe abstraite qui contient les attributs inhérents et communs aux classes décrivant l'organisation opérationnelle interne d'une EG permettant de délivrer la prestation.Une organisation interne peut être composée d’autres organisations internes. Par exemple, les unités fonctionnelles peuvent être regroupées au sein de services qui peuvent être regroupés en pôles.La description de cette organisation interne de l'EG n'est pas obligatoire. Lorsqu'elle est décrite cette organisation porte les ressources opérationnelles." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Organisation" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrientationParticuliere> ;
          fhir:reference [ fhir:v "StructureDefinition/OrientationParticuliere" ]
        ] ;
@@ -2142,7 +3214,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2163,6 +3236,50 @@
          a fhir:Boolean ;
          fhir:v false
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Parent> ;
+         fhir:reference [ fhir:v "StructureDefinition/Parent" ]
+       ] ;
+       fhir:name [ fhir:v "Parent" ] ;
+       fhir:description [ fhir:v "Personne liée par un lien de filiation à un enfant" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Accompagnant" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele> ;
+         fhir:reference [ fhir:v "StructureDefinition/Patientele" ]
+       ] ;
+       fhir:name [ fhir:v "Patientele" ] ;
+       fhir:description [ fhir:v "Une patientèle est un ensemble de patients présentant des caractéristiques permettant d'orienter leur prise en charge par une structure de santé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2223,7 +3340,96 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge> ;
+         fhir:reference [ fhir:v "StructureDefinition/PersonnePriseCharge" ]
+       ] ;
+       fhir:name [ fhir:v "PersonnePriseCharge" ] ;
+       fhir:description [ fhir:v "Personne physique bénéficiaire de soins, d'examens, d'actes de prévention ou de services. Selon le contexte, la personne prise en charge peut être un patient ou un usager." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageDisponibilite> ;
+         fhir:reference [ fhir:v "StructureDefinition/PlageDisponibilite" ]
+       ] ;
+       fhir:name [ fhir:v "PlageDisponibilite" ] ;
+       fhir:description [ fhir:v "Horaires de disponibilité pour la prise de rendez - vous de l'agenda. Par exception, cet objet permet de renseigner les périodes sur lesquelles l'agenda est indisponible à la prise de rendez - vous." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Agenda" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageReference> ;
+         fhir:reference [ fhir:v "StructureDefinition/PlageReference" ]
+       ] ;
+       fhir:name [ fhir:v "PlageReference" ] ;
+       fhir:description [ fhir:v "La plage de référence, constituée d’une borne inférieure et d’une borne supérieure, fournit un guide pour interpréter une valeur en la comparant à ces bornes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PoleActivite> ;
+         fhir:reference [ fhir:v "StructureDefinition/PoleActivite" ]
+       ] ;
+       fhir:name [ fhir:v "PoleActivite" ] ;
+       fhir:description [ fhir:v "Loi HPST, art.13: \"Pour les établissements publics de santé, le directeur définit l'organisation de l'établissement en pôles d'activité conformément au projet médical d'établissement, après avis [...]. Le directeur général de l'agence régionale de santé peut autoriser un établissement à ne pas créer de pôles d'activité quand l'effectif médical de l'établissement le justifie.Les pôles d'activité peuvent comporter des structures internes de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques ainsi que les structures médico-techniques qui leur sont associées\".Extrait de \"La loi HPST à l'hôpital, les clés pour comprendre - Ministère de la Santé- ANAP\": \"Les pôles d’activité clinique et médico-technique peuvent comporter des \"structures internes\" de prise en charge du malade par les équipes médicales, soignantes ou médico-techniques\".Les pôles peuvent être multi-sites, c'est à dire qu'un même pôle peut comporter des structures internes situées dans différentes entités géographiques d'une même entité juridique." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Organisation" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2261,6 +3467,27 @@
        ] ;
        fhir:name [ fhir:v "Professionnel" ] ;
        fhir:description [ fhir:v "Données d'identification pérennes d’une personne physique, qui travaille en tant que professionnel (professionnel enregistré dans RPPS ou ADELI), personnel autorisé ou personnel d’établissement, dans les domaines sanitaire, médico-social et social." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/professionRessource-vs> ;
+         fhir:reference [ fhir:v "ValueSet/professionRessource-vs" ]
+       ] ;
+       fhir:name [ fhir:v "ProfessionressourceVs" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2305,7 +3532,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2326,6 +3554,70 @@
          a fhir:Boolean ;
          fhir:v false
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/relation-vs> ;
+         fhir:reference [ fhir:v "ValueSet/relation-vs" ]
+       ] ;
+       fhir:name [ fhir:v "RelationVs" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous> ;
+         fhir:reference [ fhir:v "StructureDefinition/RendezVous" ]
+       ] ;
+       fhir:name [ fhir:v "RendezVous" ] ;
+       fhir:description [ fhir:v "Rencontre prévue entre au moins deux personnes à une heure et dans un lieu déterminé. Par exemple, une entrevue entre un patient et un professionnel qui peut nécessiter la réservation d’une salle de consultation à une heure définie. Un rendez-vous peut occuper un ou plusieurs créneaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Agenda" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ResultatObservation> ;
+         fhir:reference [ fhir:v "StructureDefinition/ResultatObservation" ]
+       ] ;
+       fhir:name [ fhir:v "ResultatObservation" ] ;
+       fhir:description [ fhir:v "Résultat de la mesure ou de l’observation effectuée sur un personne." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2363,6 +3655,27 @@
        ] ;
        fhir:name [ fhir:v "SavoirFaire" ] ;
        fhir:description [ fhir:v "Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement sur une période donnée de son exercice professionnel, par exemple les spécialités ordinales, etc." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/secteurActivite-vs> ;
+         fhir:reference [ fhir:v "ValueSet/secteurActivite-vs" ]
+       ] ;
+       fhir:name [ fhir:v "SecteuractiviteVs" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2407,7 +3720,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2428,7 +3742,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2449,7 +3764,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2482,6 +3798,28 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/StructureInterne> ;
+         fhir:reference [ fhir:v "StructureDefinition/StructureInterne" ]
+       ] ;
+       fhir:name [ fhir:v "StructureInterne" ] ;
+       fhir:description [ fhir:v "Une structure interne peut être composée d'une ou plusieurs unités médicales fonctionnelles.L’appellation des structures internes des pôles est aussi laissée à la libre appréciation des établissements : il peut s’agir de services, d’unités, de centres, d’instituts, de départements, ou de toute autre appellation. Lorsque les services demeurent, les chefs de service sont placés sous l’autorité fonctionnelle du chef de pôle (cf. \"La loi HPST à l'hôpital, les clés pour comprendre\" - Ministère de la Santé - ANAP).Synonyme : Service, unité, centre, institut, département, etc." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Organisation" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SurspecialiteTransversale> ;
          fhir:reference [ fhir:v "StructureDefinition/SurspecialiteTransversale" ]
        ] ;
@@ -2490,7 +3828,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Professionnel" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2523,6 +3862,28 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/TarifPrestation> ;
+         fhir:reference [ fhir:v "StructureDefinition/TarifPrestation" ]
+       ] ;
+       fhir:name [ fhir:v "TarifPrestation" ] ;
+       fhir:description [ fhir:v "Prix des prestations et services d'une entité géographique." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication> ;
          fhir:reference [ fhir:v "StructureDefinition/Telecommunication" ]
        ] ;
@@ -2531,7 +3892,8 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ]
+       ] ;
+       fhir:groupingId [ fhir:v "Classes communes" ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -2572,6 +3934,94 @@
          a fhir:Boolean ;
          fhir:v false
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/UniteFonctionnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/UniteFonctionnelle" ]
+       ] ;
+       fhir:name [ fhir:v "UniteFonctionnelle" ] ;
+       fhir:description [ fhir:v "L'unité fonctionnelle (UF) désigne la plus petite unité compatible avec les contraintes de gestion qui présente une activité médicale homogène." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Organisation" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieProfessionnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/VieProfessionnelle" ]
+       ] ;
+       fhir:name [ fhir:v "VieProfessionnelle" ] ;
+       fhir:description [ fhir:v "/!\\ Classe en cours de constructionInformations relatives à la vie professionnelle de la personne prise en charge." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieQuotidienne> ;
+         fhir:reference [ fhir:v "StructureDefinition/VieQuotidienne" ]
+       ] ;
+       fhir:name [ fhir:v "VieQuotidienne" ] ;
+       fhir:description [ fhir:v "/!\\ Classe en cours de constructionInformations relatives à la vie quotidienne de la personne prise en charge." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/VieScolaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/VieScolaire" ]
+       ] ;
+       fhir:name [ fhir:v "VieScolaire" ] ;
+       fhir:description [ fhir:v "/!\\ Classe en cours de constructionInformations relatives à la vie scolaire de la personne prise en charge." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "Personne" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -2657,16 +4107,73 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "professionnel.html"^^xsd:anyURI ;
-               fhir:l fhir:professionnel.html
+               fhir:v "accompagnant.html"^^xsd:anyURI ;
+               fhir:l fhir:accompagnant.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "professionnel.html"^^xsd:anyURI ;
-             fhir:l fhir:professionnel.html
+             fhir:v "accompagnant.html"^^xsd:anyURI ;
+             fhir:l fhir:accompagnant.html
            ] ;
-           fhir:title [ fhir:v "Professionnel" ] ;
+           fhir:title [ fhir:v "Accompagnant" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "accord.html"^^xsd:anyURI ;
+               fhir:l fhir:accord.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "accord.html"^^xsd:anyURI ;
+             fhir:l fhir:accord.html
+           ] ;
+           fhir:title [ fhir:v "Accord" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "agenda.html"^^xsd:anyURI ;
+               fhir:l fhir:agenda.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "agenda.html"^^xsd:anyURI ;
+             fhir:l fhir:agenda.html
+           ] ;
+           fhir:title [ fhir:v "Agenda" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "autorisation.html"^^xsd:anyURI ;
+               fhir:l fhir:autorisation.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "autorisation.html"^^xsd:anyURI ;
+             fhir:l fhir:autorisation.html
+           ] ;
+           fhir:title [ fhir:v "Autorisation" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -2695,16 +4202,54 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "structure.html"^^xsd:anyURI ;
-               fhir:l fhir:structure.html
+               fhir:v "dispositif-medical.html"^^xsd:anyURI ;
+               fhir:l fhir:dispositif-medical.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "structure.html"^^xsd:anyURI ;
-             fhir:l fhir:structure.html
+             fhir:v "dispositif-medical.html"^^xsd:anyURI ;
+             fhir:l fhir:dispositif-medical.html
            ] ;
-           fhir:title [ fhir:v "Structure" ] ;
+           fhir:title [ fhir:v "Dispositif médical" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "dossier.html"^^xsd:anyURI ;
+               fhir:l fhir:dossier.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "dossier.html"^^xsd:anyURI ;
+             fhir:l fhir:dossier.html
+           ] ;
+           fhir:title [ fhir:v "Dossier" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "offre-operationnelle.html"^^xsd:anyURI ;
+               fhir:l fhir:offre-operationnelle.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "offre-operationnelle.html"^^xsd:anyURI ;
+             fhir:l fhir:offre-operationnelle.html
+           ] ;
+           fhir:title [ fhir:v "Offre opérationnelle" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
@@ -2733,6 +4278,63 @@
              ] ;
              fhir:value [
                a fhir:Url ;
+               fhir:v "professionnel.html"^^xsd:anyURI ;
+               fhir:l fhir:professionnel.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "professionnel.html"^^xsd:anyURI ;
+             fhir:l fhir:professionnel.html
+           ] ;
+           fhir:title [ fhir:v "Professionnel" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "professionnel_2.html"^^xsd:anyURI ;
+               fhir:l fhir:professionnel_2.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "professionnel_2.html"^^xsd:anyURI ;
+             fhir:l fhir:professionnel_2.html
+           ] ;
+           fhir:title [ fhir:v "Professionnel_2" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "professionnel_3.html"^^xsd:anyURI ;
+               fhir:l fhir:professionnel_3.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "professionnel_3.html"^^xsd:anyURI ;
+             fhir:l fhir:professionnel_3.html
+           ] ;
+           fhir:title [ fhir:v "Professionnel_3" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
                fhir:v "ressops.html"^^xsd:anyURI ;
                fhir:l fhir:ressops.html
              ]
@@ -2744,45 +4346,6 @@
            ] ;
            fhir:title [ fhir:v "Ressources opérationnelles" ] ;
            fhir:generation [ fhir:v "markdown" ]
-         ] )
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
-             fhir:v "autres_ressources.html"^^xsd:anyURI ;
-             fhir:l fhir:autres_ressources.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "autres_ressources.html"^^xsd:anyURI ;
-           fhir:l fhir:autres_ressources.html
-         ] ;
-         fhir:title [ fhir:v "Autres Ressources" ] ;
-         fhir:generation [ fhir:v "markdown" ] ;
-         fhir:page ( [
-           fhir:extension ( [
-             fhir:url [
-               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-             ] ;
-             fhir:value [
-               a fhir:Url ;
-               fhir:v "securite.html"^^xsd:anyURI ;
-               fhir:l fhir:securite.html
-             ]
-           ] ) ;
-           fhir:name [
-             a fhir:Url ;
-             fhir:v "securite.html"^^xsd:anyURI ;
-             fhir:l fhir:securite.html
-           ] ;
-           fhir:title [ fhir:v "Sécurité" ] ;
-           fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
              fhir:url [
@@ -2791,16 +4354,16 @@
              ] ;
              fhir:value [
                a fhir:Url ;
-               fhir:v "downloads.html"^^xsd:anyURI ;
-               fhir:l fhir:downloads.html
+               fhir:v "structure.html"^^xsd:anyURI ;
+               fhir:l fhir:structure.html
              ]
            ] ) ;
            fhir:name [
              a fhir:Url ;
-             fhir:v "downloads.html"^^xsd:anyURI ;
-             fhir:l fhir:downloads.html
+             fhir:v "structure.html"^^xsd:anyURI ;
+             fhir:l fhir:structure.html
            ] ;
-           fhir:title [ fhir:v "Téléchargements et usages" ] ;
+           fhir:title [ fhir:v "Structure" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] )

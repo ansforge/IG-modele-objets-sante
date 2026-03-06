@@ -1,37 +1,25 @@
-# CompetencemetiereVs - Modèle des Objets de Santé (MOS) v0.1.0
+# CompetencemetierVs - Modèle des Objets de Santé (MOS) v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **CompetencemetiereVs**
+* **CompetencemetierVs**
 
-## ValueSet: CompetencemetiereVs 
+## ValueSet: CompetencemetierVs 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:CompetencemetiereVs |
+| Draft as of 2026-03-06 | *Computable Name*:CompetencemetierVs |
 
  **References** 
 
-Ce jeu de valeurs nest pas utilisé ici ; il peut être utilisé autre part (par exemple dans les spécifications et / ou implémentations qui utilisent ce contenu)
+* [CompetenceMetier](StructureDefinition-CompetenceMetier.md)
 
 ### Définition logique (CLD)
-
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)version 📦20241213120000
-* Inclut tous les codes définis dans [`https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html)version 📦20250625120000
 
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R01_EnsembleSavoirFaire_CISIS v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)
-* [codesystem Tre R394 Competence Metier v20250625120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-tre-r394-competence-metier.html)
-
-Ce jeu de valeur (ValueSet) contient 326 concepts
 
 -------
 
@@ -56,41 +44,31 @@ Ce jeu de valeur (ValueSet) contient 326 concepts
   "id" : "competenceMetier-vs",
   "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/competenceMetier-vs",
   "version" : "0.1.0",
-  "name" : "CompetencemetiereVs",
+  "name" : "CompetencemetierVs",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
-      },
-      {
-        "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"
-      }
-    ]
+    "include" : [{
+      "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/tre-r394-competence-metier"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+    }]
   }
 }
 

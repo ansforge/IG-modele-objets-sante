@@ -15,5 +15,10 @@ Cette partie présente les différents concepts utilisés pour définir et carac
 * La classe “Diplome” et ses classes spécialisées sont décrites dans la partie “Classes Communes”, dans un diagramme dédié.
 * Les classes non déployées, c’est à dire celles dont les attributs sont masqués, sont décrites dans leur propre partie (ou package).
 
+🔍+
+🔍−
+↻
+⛶
+
   
 

@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CertificatEtudeSpeciale | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:CertificatEtudeSpeciale |
+| Draft as of 2026-03-06 | *Computable Name*:CertificatEtudeSpeciale |
 
  
 Les Certificat d’études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d’études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
 **Utilisations:**
 
-* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/CertificatEtudeSpeciale)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/CertificatEtudeSpeciale)
 
 ### Formal Views of Profile Content
 
@@ -41,31 +41,23 @@ Other representations of profile: [CSV](StructureDefinition-CertificatEtudeSpeci
   "name" : "CertificatEtudeSpeciale",
   "title" : "CertificatEtudeSpeciale",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -73,31 +65,27 @@ Other representations of profile: [CSV](StructureDefinition-CertificatEtudeSpeci
   "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "CertificatEtudeSpeciale",
-        "path" : "CertificatEtudeSpeciale",
-        "short" : "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "definition" : "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe."
-      },
-      {
-        "id" : "CertificatEtudeSpeciale.certificatEtudeSpeciale",
-        "path" : "CertificatEtudeSpeciale.certificatEtudeSpeciale",
-        "short" : "Certificat d'études spéciales (CES).",
-        "definition" : "Certificat d'études spéciales (CES).",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Coding"
-          }
-        ],
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale?vs"
-        }
+    "element" : [{
+      "id" : "CertificatEtudeSpeciale",
+      "path" : "CertificatEtudeSpeciale",
+      "short" : "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe.",
+      "definition" : "Les Certificat d'études spéciales (CES) ont précédé les DES et ils ne sont plus délivrés depuis 1991.Dans le cadre du modèle, un certificat d'études spéciales est un type de diplôme. La classe CertificatEtudesSpeciales est représentée dans le modèle comme une spécialisation de la classe Diplome et à ce titre, elle hérite des attributs et des associations de cette classe."
+    },
+    {
+      "id" : "CertificatEtudeSpeciale.certificatEtudeSpeciale",
+      "path" : "CertificatEtudeSpeciale.certificatEtudeSpeciale",
+      "short" : "Certificat d'études spéciales (CES).",
+      "definition" : "Certificat d'études spéciales (CES).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R55-CertificatEtudeSpeciale/FHIR/TRE-R55-CertificatEtudeSpeciale?vs"
       }
-    ]
+    }]
   }
 }
 

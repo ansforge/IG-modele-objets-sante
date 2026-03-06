@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:PaysnationaliteVs |
+| Draft as of 2026-03-06 | *Computable Name*:PaysnationaliteVs |
 
  **References** 
 
@@ -17,23 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R20-Pays.html)version 📦20250328120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R268-PaysProvenanceISO.html)version 📦20240126120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R89-RegroupementPays.html)version 📦20231215120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R20_Pays v20250328120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R20-Pays.html)
-* [codesystem TRE_R268_PaysProvenanceISO v20240126120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R268-PaysProvenanceISO.html)
-* [codesystem TRE_R89_RegroupementPays v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R89-RegroupementPays.html)
-
-Ce jeu de valeur (ValueSet) contient 493 concepts
 
 -------
 
@@ -60,42 +46,32 @@ Ce jeu de valeur (ValueSet) contient 493 concepts
   "version" : "0.1.0",
   "name" : "PaysnationaliteVs",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays"
-      },
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO"
-      },
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays"
-      }
-    ]
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R268-PaysProvenanceISO/FHIR/TRE-R268-PaysProvenanceISO"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R89-RegroupementPays/FHIR/TRE-R89-RegroupementPays"
+    }]
   }
 }
 

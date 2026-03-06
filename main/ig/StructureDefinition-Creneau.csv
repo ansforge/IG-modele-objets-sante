@@ -1,0 +1,17 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Creneau","Creneau","","","",0,*,"","","","null {[]} {[]}
+","Un créneau d’un agenda est un intervalle de temps, disponible ou occupé.","Un créneau d’un agenda est un intervalle de temps, disponible ou occupé.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Creneau.idCreneau","Creneau.idCreneau","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant du créneau.","Identifiant du créneau.","","","","","","","","","",,,,,"",,,,"Creneau.idCreneau",0,1,"",""
+"Creneau.statut","Creneau.statut","","","",0,1,"","","","Coding {[]} {[]}
+","Statut du créneau. Il est fixé à ""libre"".","Statut du créneau. Il est fixé à ""libre"".","","","","","","","","","",,,,,"",,,,"Creneau.statut",0,1,"",""
+"Creneau.dateDebut","Creneau.dateDebut","","","",0,1,"","","","dateTime {[]} {[]}
+","Date et heure du début du créneau horaire.","Date et heure du début du créneau horaire.","","","","","","","","","",,,,,"",,,,"Creneau.dateDebut",0,1,"",""
+"Creneau.dateFin","Creneau.dateFin","","","",0,1,"","","","dateTime {[]} {[]}
+","Date et heure de fin du créneau horaire.","Date et heure de fin du créneau horaire.","","","","","","","","","",,,,,"",,,,"Creneau.dateFin",0,1,"",""
+"Creneau.informationComplementaire","Creneau.informationComplementaire","","","",0,1,"","","","string {[]} {[]}
+","Commentaire lié au créneau.","Commentaire lié au créneau.","","","","","","","","","",,,,,"",,,,"Creneau.informationComplementaire",0,1,"",""
+"Creneau.Agenda","Creneau.Agenda","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Agenda {[]} {[]}
+","Lien vers la classe Agenda","Lien vers la classe Agenda","","","","","","","","","",,,,,"",,,,"Creneau.Agenda",1,1,"",""
+"Creneau.RendezVous","Creneau.RendezVous","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/RendezVous {[]} {[]}
+","Lien vers la classe RendezVous","Lien vers la classe RendezVous","","","","","","","","","",,,,,"",,,,"Creneau.RendezVous",0,*,"",""

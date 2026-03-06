@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrientationParticuliere | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:OrientationParticuliere |
+| Draft as of 2026-03-06 | *Computable Name*:OrientationParticuliere |
 
  
 Caractérise une orientation d’exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
 **Utilisations:**
 
-* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/OrientationParticuliere)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/OrientationParticuliere)
 
 ### Formal Views of Profile Content
 
@@ -41,31 +41,23 @@ Other representations of profile: [CSV](StructureDefinition-OrientationParticuli
   "name" : "OrientationParticuliere",
   "title" : "OrientationParticuliere",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Caractérise une orientation d'exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -73,31 +65,27 @@ Other representations of profile: [CSV](StructureDefinition-OrientationParticuli
   "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "OrientationParticuliere",
-        "path" : "OrientationParticuliere",
-        "short" : "Caractérise une orientation d'exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "definition" : "Caractérise une orientation d'exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe."
-      },
-      {
-        "id" : "OrientationParticuliere.orientationParticuliere",
-        "path" : "OrientationParticuliere.orientationParticuliere",
-        "short" : "Orientation particulière.",
-        "definition" : "Orientation particulière.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Coding"
-          }
-        ],
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/orientationParticuliere-vs"
-        }
+    "element" : [{
+      "id" : "OrientationParticuliere",
+      "path" : "OrientationParticuliere",
+      "short" : "Caractérise une orientation d'exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
+      "definition" : "Caractérise une orientation d'exercice: acupuncture ou homéopathie.Dans le cadre du modèle, une orientation particulière est un type de savoir-faire. La classe OrientationParticuliere est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe."
+    },
+    {
+      "id" : "OrientationParticuliere.orientationParticuliere",
+      "path" : "OrientationParticuliere.orientationParticuliere",
+      "short" : "Orientation particulière.",
+      "definition" : "Orientation particulière.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/orientationParticuliere-vs"
       }
-    ]
+    }]
   }
 }
 

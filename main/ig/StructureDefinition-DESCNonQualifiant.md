@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/DESCNonQualifiant | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:DESCNonQualifiant |
+| Draft as of 2026-03-06 | *Computable Name*:DESCNonQualifiant |
 
  
 Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu’il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe. 
 
 **Utilisations:**
 
-* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DESCNonQualifiant)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/DESCNonQualifiant)
 
 ### Formal Views of Profile Content
 
@@ -41,31 +41,23 @@ Other representations of profile: [CSV](StructureDefinition-DESCNonQualifiant.cs
   "name" : "DESCNonQualifiant",
   "title" : "DESCNonQualifiant",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu'il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -73,31 +65,27 @@ Other representations of profile: [CSV](StructureDefinition-DESCNonQualifiant.cs
   "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "DESCNonQualifiant",
-        "path" : "DESCNonQualifiant",
-        "short" : "Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu'il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
-        "definition" : "Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu'il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe."
-      },
-      {
-        "id" : "DESCNonQualifiant.DESCNonQualifiant",
-        "path" : "DESCNonQualifiant.DESCNonQualifiant",
-        "short" : "Diplôme d'études spécialisées complémentaires (DESC).",
-        "definition" : "Diplôme d'études spécialisées complémentaires (DESC).",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Coding"
-          }
-        ],
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/DESCNonQualifiant-vs"
-        }
+    "element" : [{
+      "id" : "DESCNonQualifiant",
+      "path" : "DESCNonQualifiant",
+      "short" : "Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu'il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe.",
+      "definition" : "Un professionnel peut faire valoir, en complément de sa spécialité, un ou plusieurs savoir-faire de type DESC non qualifiant, en fonction du ou des DESC de groupe I, qu'il a obtenu(s).Un DESC non qualifiant est un type de savoir-faire. La classe DiplomeEtudesSpécialiseesNonQualifiant est représentée dans le modèle comme une spécialisation de la classe SavoirFaire et à ce titre, elle hérite des attributs et des associations de cette classe."
+    },
+    {
+      "id" : "DESCNonQualifiant.DESCNonQualifiant",
+      "path" : "DESCNonQualifiant.DESCNonQualifiant",
+      "short" : "Diplôme d'études spécialisées complémentaires (DESC).",
+      "definition" : "Diplôme d'études spécialisées complémentaires (DESC).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/DESCNonQualifiant-vs"
       }
-    ]
+    }]
   }
 }
 

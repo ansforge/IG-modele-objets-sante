@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/specialite-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:SpecialiteVs |
+| Draft as of 2026-03-06 | *Computable Name*:SpecialiteVs |
 
  **References** 
 
@@ -17,21 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html)version 📦20240531120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)version 📦20241213120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R01_EnsembleSavoirFaire_CISIS v20241213120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R01-EnsembleSavoirFaire-CISIS.html)
-* [codesystem TRE_R38_SpecialiteOrdinale v20240531120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html)
-
-Ce jeu de valeur (ValueSet) contient 432 concepts
 
 -------
 
@@ -58,39 +46,29 @@ Ce jeu de valeur (ValueSet) contient 432 concepts
   "version" : "0.1.0",
   "name" : "SpecialiteVs",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
-      },
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
-      }
-    ]
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R01-EnsembleSavoirFaire-CISIS/FHIR/TRE-R01-EnsembleSavoirFaire-CISIS"
+    }]
   }
 }
 

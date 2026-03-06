@@ -9,16 +9,16 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AutreDiplomeObtenu | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:AutreDiplomeObtenu |
+| Draft as of 2026-03-06 | *Computable Name*:AutreDiplomeObtenu |
 
  
 Diplôme autre qu’un diplôme d’Etat, une qualification, un diplôme d’études spécialisées, un DESC1, un DESC2, un diplôme de l’espace économique européen, un diplôme européen d’études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant. 
 
 **Utilisations:**
 
-* Ce Modèle logique nest utilisé par aucun profil dans ce guide dimplémentation
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/AutreDiplomeObtenu)
+Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fr.mos|current/StructureDefinition/AutreDiplomeObtenu)
 
 ### Formal Views of Profile Content
 
@@ -41,31 +41,23 @@ Other representations of profile: [CSV](StructureDefinition-AutreDiplomeObtenu.c
   "name" : "AutreDiplomeObtenu",
   "title" : "AutreDiplomeObtenu",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
   "description" : "Diplôme autre qu'un diplôme d'Etat, une qualification, un diplôme d'études spécialisées, un DESC1, un DESC2, un diplôme de l'espace économique européen, un diplôme européen d'études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant.",
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -73,31 +65,27 @@ Other representations of profile: [CSV](StructureDefinition-AutreDiplomeObtenu.c
   "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome",
   "derivation" : "specialization",
   "differential" : {
-    "element" : [
-      {
-        "id" : "AutreDiplomeObtenu",
-        "path" : "AutreDiplomeObtenu",
-        "short" : "Diplôme autre qu'un diplôme d'Etat, une qualification, un diplôme d'études spécialisées, un DESC1, un DESC2, un diplôme de l'espace économique européen, un diplôme européen d'études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant.",
-        "definition" : "Diplôme autre qu'un diplôme d'Etat, une qualification, un diplôme d'études spécialisées, un DESC1, un DESC2, un diplôme de l'espace économique européen, un diplôme européen d'études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant."
-      },
-      {
-        "id" : "AutreDiplomeObtenu.autreDiplomeObtenu",
-        "path" : "AutreDiplomeObtenu.autreDiplomeObtenu",
-        "short" : "Autre diplôme obtenu.",
-        "definition" : "Autre diplôme obtenu.",
-        "min" : 0,
-        "max" : "1",
-        "type" : [
-          {
-            "code" : "Coding"
-          }
-        ],
-        "binding" : {
-          "strength" : "preferred",
-          "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu?vs"
-        }
+    "element" : [{
+      "id" : "AutreDiplomeObtenu",
+      "path" : "AutreDiplomeObtenu",
+      "short" : "Diplôme autre qu'un diplôme d'Etat, une qualification, un diplôme d'études spécialisées, un DESC1, un DESC2, un diplôme de l'espace économique européen, un diplôme européen d'études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant.",
+      "definition" : "Diplôme autre qu'un diplôme d'Etat, une qualification, un diplôme d'études spécialisées, un DESC1, un DESC2, un diplôme de l'espace économique européen, un diplôme européen d'études spécialisées, une attestation, une capacité ou un diplôme de deuxième cycle non qualifiant."
+    },
+    {
+      "id" : "AutreDiplomeObtenu.autreDiplomeObtenu",
+      "path" : "AutreDiplomeObtenu.autreDiplomeObtenu",
+      "short" : "Autre diplôme obtenu.",
+      "definition" : "Autre diplôme obtenu.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R36-AutreDiplomeObtenu/FHIR/TRE-R36-AutreDiplomeObtenu?vs"
       }
-    ]
+    }]
   }
 }
 

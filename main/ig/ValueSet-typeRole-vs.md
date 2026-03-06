@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ValueSet/typeRole-vs | *Version*:0.1.0 |
-| Draft as of 2025-12-03 | *Computable Name*:TyperoleVs |
+| Draft as of 2026-03-06 | *Computable Name*:TyperoleVs |
 
  **References** 
 
@@ -17,21 +17,9 @@
 
 ### Définition logique (CLD)
 
-Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :
-
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R289-TypeFonction.html)version 📦20231215120000
-* Inclut tous les codes définis dans [`https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction`](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R37-TypeProfessionFonction.html)version 📦20231215120000
-
  
 
 ### Expansion
-
-Expansion effectuée en interne basée sur :
-
-* [codesystem TRE_R289_TypeFonction v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R289-TypeFonction.html)
-* [codesystem TRE_R37_TypeProfessionFonction v20231215120000 (CodeSystem)](https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R37-TypeProfessionFonction.html)
-
-Ce jeu de valeur (ValueSet) contient 17 concepts
 
 -------
 
@@ -58,39 +46,29 @@ Ce jeu de valeur (ValueSet) contient 17 concepts
   "version" : "0.1.0",
   "name" : "TyperoleVs",
   "status" : "draft",
-  "date" : "2025-12-03T08:56:12+00:00",
+  "date" : "2026-03-06T09:16:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-  "contact" : [
-    {
-      "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
-      "telecom" : [
-        {
-          "system" : "url",
-          "value" : "https://esante.gouv.fr"
-        }
-      ]
-    }
-  ],
-  "jurisdiction" : [
-    {
-      "coding" : [
-        {
-          "system" : "urn:iso:std:iso:3166",
-          "code" : "FR",
-          "display" : "FRANCE"
-        }
-      ]
-    }
-  ],
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
   "compose" : {
-    "include" : [
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction"
-      },
-      {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction"
-      }
-    ]
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R289-TypeFonction/FHIR/TRE-R289-TypeFonction"
+    },
+    {
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R37-TypeProfessionFonction/FHIR/TRE-R37-TypeProfessionFonction"
+    }]
   }
 }
 
