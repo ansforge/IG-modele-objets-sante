@@ -1,0 +1,1712 @@
+@startuml
+set namespaceSeparator ?
+hide circle
+hide class fields
+
+package IG #DDDDDD{
+
+     package Profiles #DDDDDD{
+
+        class ActiviteEnseignement{
+
+             ActiviteEnseignement => [None..None]
+             ActiviteEnseignement.agregatDisciplineEnseignementNiv1 => [0..1]
+             ActiviteEnseignement.agregatDisciplineEnseignementNiv2 => [0..1]
+             ActiviteEnseignement.agregatDisciplineEnseignementNiv3 => [0..1]
+             ActiviteEnseignement.disciplineEnseignement => [0..1]
+             ActiviteEnseignement.modeFonctionnement => [0..1]
+             ActiviteEnseignement.dateAutorisation => [0..1]
+             ActiviteEnseignement.suppressionAutorisation => [0..1]
+             ActiviteEnseignement.EntiteGeographique => [1..1]
+             ActiviteEnseignement.CapaciteActiviteExercee => [0..1]
+        } 
+
+        class ActiviteSociale{
+
+             ActiviteSociale => [None..None]
+             ActiviteSociale.dateAutorisation => [0..1]
+             ActiviteSociale.dateMajAutorisation => [0..1]
+             ActiviteSociale.dateDerniereInstallation => [0..1]
+             ActiviteSociale.agregatDisciplineEquipementSocialeNiv1 => [0..1]
+             ActiviteSociale.agregatDisciplineEquipementSocialeNiv2 => [0..1]
+             ActiviteSociale.agregatDisciplineEquipementSocialeNiv3 => [0..1]
+             ActiviteSociale.disciplineEquipementSociale => [0..1]
+             ActiviteSociale.modeFonctionnement => [0..1]
+             ActiviteSociale.agregatClienteleNiv2 => [0..1]
+             ActiviteSociale.agregatClienteleNiv3 => [0..1]
+             ActiviteSociale.clientele => [0..1]
+             ActiviteSociale.ageMinAutorise => [0..1]
+             ActiviteSociale.ageMaxAutorise => [0..1]
+             ActiviteSociale.ageMinInstalle => [0..1]
+             ActiviteSociale.ageMaxInstalle => [0..1]
+             ActiviteSociale.suppressionAutorisation => [0..1]
+             ActiviteSociale.suppressionInstallation => [0..1]
+             ActiviteSociale.sourceInformationInstallation => [0..1]
+             ActiviteSociale.EntiteGeographique => [1..1]
+             ActiviteSociale.CapaciteActiviteExercee => [0..*]
+             ActiviteSociale.CapaciteHabitation => [0..1]
+        } 
+
+        class ActiviteSoinAutorisee{
+
+             ActiviteSoinAutorisee => [None..None]
+             ActiviteSoinAutorisee.numeroAutorisationARHGOS => [0..1]
+             ActiviteSoinAutorisee.dateDecision => [0..1]
+             ActiviteSoinAutorisee.activite => [0..1]
+             ActiviteSoinAutorisee.modalite => [0..1]
+             ActiviteSoinAutorisee.forme => [0..1]
+             ActiviteSoinAutorisee.datePremiereMEO => [0..1]
+             ActiviteSoinAutorisee.dateFin => [0..1]
+             ActiviteSoinAutorisee.suppressionAutorisation => [0..1]
+             ActiviteSoinAutorisee.suppressionImplantation => [0..1]
+             ActiviteSoinAutorisee.EntiteGeographique => [1..1]
+        } 
+
+        class ActiviteSoumiseReconnaissance{
+
+             ActiviteSoumiseReconnaissance => [None..None]
+             ActiviteSoumiseReconnaissance.numeroRCARHGOS => [0..1]
+             ActiviteSoumiseReconnaissance.activite => [0..1]
+             ActiviteSoumiseReconnaissance.modalite => [0..1]
+             ActiviteSoumiseReconnaissance.forme => [0..1]
+             ActiviteSoumiseReconnaissance.numeroContratCPOM => [0..1]
+             ActiviteSoumiseReconnaissance.dateEffetCPOM => [0..1]
+             ActiviteSoumiseReconnaissance.dateFinCPOM => [0..1]
+             ActiviteSoumiseReconnaissance.dateReconnaissance => [0..1]
+             ActiviteSoumiseReconnaissance.indicateurReconnaissanceRegionale => [0..1]
+             ActiviteSoumiseReconnaissance.EntiteGeographique => [1..1]
+             ActiviteSoumiseReconnaissance.CapaciteActiviteExercee => [0..1]
+        } 
+
+        class Adresse{
+
+             Adresse => [None..None]
+             Adresse.identificationDestinataire => [0..1]
+             Adresse.identificationDomicilie => [0..1]
+             Adresse.pointRemise => [0..1]
+             Adresse.complementPointGeographique => [0..1]
+             Adresse.numeroVoie => [0..1]
+             Adresse.extension => [0..1]
+             Adresse.typeVoie => [0..1]
+             Adresse.libelleVoie => [0..1]
+             Adresse.lieuDit => [0..1]
+             Adresse.mentionDistribution => [0..1]
+             Adresse.codePostal => [0..1]
+             Adresse.localite => [0..1]
+             Adresse.COGCommune => [0..1]
+             Adresse.internationalDivisionTerritoriale => [0..1]
+             Adresse.internationalPays => [0..1]
+             Adresse.type => [0..*]
+             Adresse.ligneUne => [0..1]
+             Adresse.ligneDeux => [0..1]
+             Adresse.ligneTrois => [0..1]
+             Adresse.ligneQuatre => [0..1]
+             Adresse.ligneCinq => [0..1]
+             Adresse.ligneSix => [0..1]
+             Adresse.ligneSept => [0..1]
+        } 
+
+        class Agenda{
+
+             Agenda => [None..None]
+             Agenda.idAgenda => [0..1]
+             Agenda.nomAgenda => [0..1]
+             Agenda.dateCreation => [0..1]
+             Agenda.dateDebutPlanification => [0..1]
+             Agenda.dateFinPlanification => [0..1]
+             Agenda.PersonnePriseCharge => [0..*]
+             Agenda.Professionnel => [0..*]
+             Agenda.Lieu => [0..*]
+             Agenda.Contact => [0..*]
+             Agenda.EntiteGeographique => [0..*]
+             Agenda.EquipementSpecifique => [0..*]
+             Agenda.OrganisationInterne => [0..*]
+             Agenda.Creneau => [0..*]
+             Agenda.PlageDisponibilite => [0..*]
+        } 
+
+        class AidantDemarche{
+
+             AidantDemarche => [None..None]
+             AidantDemarche.typeAidantDemarche => [0..1]
+             AidantDemarche.aidantDemarche => [0..1]
+             AidantDemarche.adresseAidantDemarche => [0..1]
+             AidantDemarche.telecommunicationAidantDemarche => [0..*]
+             AidantDemarche.EntiteGeographique => [0..1]
+             AidantDemarche.PersonnePhysique => [0..*]
+        } 
+
+        class ArretTravail{
+
+             ArretTravail => [None..None]
+             ArretTravail.dateDebutArret => [0..1]
+             ArretTravail.motifArret => [0..1]
+             ArretTravail.rencontreServiceSocial => [0..1]
+             ArretTravail.dateRencontreServiceSocial => [0..1]
+             ArretTravail.rencontreMedecin => [0..1]
+             ArretTravail.dateRencontreMedecin => [0..1]
+             ArretTravail.VieProfessionnelle => [1..1]
+        } 
+
+        class Attestation{
+
+             Attestation => [None..None]
+             Attestation.attestation => [0..1]
+        } 
+
+        class AutorisationExercice{
+
+             AutorisationExercice => [None..None]
+             AutorisationExercice.typeAutorisation => [0..1]
+             AutorisationExercice.disciplineAutorisee => [0..1]
+             AutorisationExercice.dateDebutAutorisation => [0..1]
+             AutorisationExercice.dateFinAutorisation => [0..1]
+             AutorisationExercice.profession => [0..1]
+             AutorisationExercice.Professionnel => [0..1]
+        } 
+
+        class AutreActiviteSoumiseAutorisation{
+
+             AutreActiviteSoumiseAutorisation => [None..None]
+             AutreActiviteSoumiseAutorisation.numeroAutorisationARHGOS => [0..1]
+             AutreActiviteSoumiseAutorisation.dateDecision => [0..1]
+             AutreActiviteSoumiseAutorisation.activite => [0..1]
+             AutreActiviteSoumiseAutorisation.modalite => [0..1]
+             AutreActiviteSoumiseAutorisation.forme => [0..1]
+             AutreActiviteSoumiseAutorisation.datePremiereMEO => [0..1]
+             AutreActiviteSoumiseAutorisation.dateFin => [0..1]
+             AutreActiviteSoumiseAutorisation.EntiteGeographique => [1..1]
+        } 
+
+        class AutreDiplomeObtenu{
+
+             AutreDiplomeObtenu => [None..None]
+             AutreDiplomeObtenu.autreDiplomeObtenu => [0..1]
+        } 
+
+        class BoiteLettreMSS{
+
+             BoiteLettreMSS => [None..None]
+             BoiteLettreMSS.adresseMSS => [0..1]
+             BoiteLettreMSS.typeBAL => [0..1]
+             BoiteLettreMSS.description => [0..1]
+             BoiteLettreMSS.responsable => [0..1]
+             BoiteLettreMSS.serviceRattachement => [0..1]
+             BoiteLettreMSS.telephone => [0..1]
+             BoiteLettreMSS.dematerialisation => [0..1]
+             BoiteLettreMSS.listeRouge => [0..1]
+        } 
+
+        class CapaciteAccueil{
+
+             CapaciteAccueil => [None..None]
+             CapaciteAccueil.idCapaciteAccueil => [0..1]
+             CapaciteAccueil.MesureCapacite => [1..*]
+             CapaciteAccueil.EntiteGeographique => [0..1]
+        } 
+
+        class CapaciteActiviteExercee{
+
+             CapaciteActiviteExercee => [None..None]
+             CapaciteActiviteExercee.habilitationAideSociale => [0..1]
+             CapaciteActiviteExercee.modeFinacement => [0..1]
+             CapaciteActiviteExercee.ActiviteSoumiseReconnaissance => [0..1]
+             CapaciteActiviteExercee.ActiviteSociale => [0..1]
+             CapaciteActiviteExercee.ActiviteEnseignement => [0..1]
+             CapaciteActiviteExercee.MesureCapacite => [0..1]
+             CapaciteActiviteExercee.EntiteGeographique => [0..1]
+        } 
+
+        class CapaciteDiplome{
+
+             CapaciteDiplome => [None..None]
+             CapaciteDiplome.capaciteDiplome => [0..1]
+        } 
+
+        class CapaciteHabitation{
+
+             CapaciteHabitation => [None..None]
+             CapaciteHabitation.typeHabitation => [0..1]
+             CapaciteHabitation.nbHabitation => [0..1]
+             CapaciteHabitation.ActiviteSociale => [0..1]
+             CapaciteHabitation.LieuRealisationOffre => [1..1]
+             CapaciteHabitation.EntiteGeographique => [0..1]
+        } 
+
+        class CapacitePriseCharge{
+
+             CapacitePriseCharge => [None..None]
+             CapacitePriseCharge.affectationTemporaire => [0..1]
+             CapacitePriseCharge.LieuRealisationOffre => [1..1]
+             CapacitePriseCharge.MesureCapacite => [0..1]
+        } 
+
+        class CapaciteSavoirfaire{
+
+             CapaciteSavoirfaire => [None..None]
+             CapaciteSavoirfaire.capaciteSavoirFaire => [0..1]
+        } 
+
+        class CarteProfessionnel{
+
+             CarteProfessionnel => [None..None]
+             CarteProfessionnel.typeCarte => [0..1]
+             CarteProfessionnel.numeroCarte => [0..1]
+             CarteProfessionnel.dateDebutValidite => [0..1]
+             CarteProfessionnel.dateFinValidite => [0..1]
+             CarteProfessionnel.dateOpposition => [0..1]
+             CarteProfessionnel.ExerciceProfessionnel => [1..1]
+             CarteProfessionnel.Certificat => [1..*]
+        } 
+
+        class Certificat{
+
+             Certificat => [None..None]
+             Certificat.numeroSerie => [0..1]
+             Certificat.dNEmetteur => [0..1]
+             Certificat.dNSujet => [0..1]
+             Certificat.dateDebutValidite => [0..1]
+             Certificat.dateFinValidite => [0..1]
+             Certificat.usage => [0..1]
+             Certificat.domaine => [0..1]
+             Certificat.adresseEmail => [0..1]
+             Certificat.categorieProduit => [0..1]
+             Certificat.typeCarte => [0..1]
+             Certificat.tokenId => [0..1]
+             Certificat.valeurBinaire => [0..1]
+             Certificat.statutPublication => [0..1]
+             Certificat.ExerciceProfessionnel => [0..1]
+             Certificat.CarteProfessionnel => [0..1]
+             Certificat.EntiteGeographique => [0..1]
+             Certificat.EntiteJuridique => [0..1]
+        } 
+
+        class CertificatEtudeSpeciale{
+
+             CertificatEtudeSpeciale => [None..None]
+             CertificatEtudeSpeciale.certificatEtudeSpeciale => [0..1]
+        } 
+
+        class Competence{
+
+             Competence => [None..None]
+             Competence.competence => [0..1]
+        } 
+
+        class CompetenceExclusive{
+
+             CompetenceExclusive => [None..None]
+             CompetenceExclusive.competenceExclusive => [0..1]
+        } 
+
+        class CompetenceMetier{
+
+             CompetenceMetier => [None..None]
+             CompetenceMetier.competenceMetier => [0..1]
+        } 
+
+        class Contact{
+
+             Contact => [None..None]
+             Contact.IdContact => [0..1]
+             Contact.nom => [0..1]
+             Contact.fonction => [0..1]
+             Contact.fonctionContact => [0..1]
+             Contact.natureContact => [0..1]
+             Contact.description => [0..1]
+             Contact.type => [0..1]
+             Contact.personne => [0..1]
+             Contact.role => [0..1]
+             Contact.relation => [0..1]
+             Contact.dateDebut => [0..1]
+             Contact.dateFin => [0..1]
+             Contact.niveauConfidentialite => [0..1]
+             Contact.adresse => [0..1]
+             Contact.lieu => [0..*]
+             Contact.telecommunication => [0..*]
+             Contact.NoteLiaison => [0..*]
+             Contact.Agenda => [0..*]
+             Contact.RendezVous => [0..*]
+        } 
+
+        class Convention{
+
+             Convention => [None..None]
+             Convention.numeroConvention => [0..1]
+             Convention.titre => [0..1]
+             Convention.dateDebutConvention => [0..1]
+             Convention.dateFinConvention => [0..1]
+             Convention.EntiteGeographique => [1..1]
+        } 
+
+        class CoordonneeGeographique{
+
+             CoordonneeGeographique => [None..None]
+             CoordonneeGeographique.systemeGeodesique => [0..1]
+             CoordonneeGeographique.latitude => [0..1]
+             CoordonneeGeographique.directionLatitude => [0..1]
+             CoordonneeGeographique.longitude => [0..1]
+             CoordonneeGeographique.directionLongitude => [0..1]
+             CoordonneeGeographique.systemeAltimetrique => [0..1]
+             CoordonneeGeographique.altitude => [0..1]
+             CoordonneeGeographique.typePrecision => [0..1]
+             CoordonneeGeographique.precision => [0..1]
+             CoordonneeGeographique.coordonneeFiable => [0..1]
+        } 
+
+        class Creneau{
+
+             Creneau => [None..None]
+             Creneau.idCreneau => [0..1]
+             Creneau.statut => [0..1]
+             Creneau.dateDebut => [0..1]
+             Creneau.dateFin => [0..1]
+             Creneau.informationComplementaire => [0..1]
+             Creneau.Agenda => [1..1]
+             Creneau.RendezVous => [0..*]
+        } 
+
+        class DESC1{
+
+             DESC1 => [None..None]
+             DESC1.DESC1 => [0..1]
+        } 
+
+        class DESC2{
+
+             DESC2 => [None..None]
+             DESC2.DESC2 => [0..1]
+        } 
+
+        class DESCNonQualifiant{
+
+             DESCNonQualifiant => [None..None]
+             DESCNonQualifiant.DESCNonQualifiant => [0..1]
+        } 
+
+        class Decision{
+
+             Decision => [None..None]
+             Decision.dateDecision => [0..1]
+             Decision.typeDecision => [0..1]
+             Decision.Demande => [1..1]
+        } 
+
+        class Demande{
+
+             Demande => [None..None]
+             Demande.identifiantDemande => [0..1]
+             Demande.dateDemande => [0..1]
+             Demande.demandeUrgente => [0..1]
+             Demande.Decision => [0..*]
+             Demande.Document => [0..*]
+             Demande.DossierPersonnePriseCharge => [1..1]
+        } 
+
+        class Diplome{
+
+             Diplome => [None..None]
+             Diplome.typeDiplome => [0..1]
+             Diplome.lieuFormation => [0..1]
+             Diplome.dateDiplome => [0..1]
+             Diplome.numeroDiplome => [0..1]
+        } 
+
+        class DiplomeDeuxiemeCycleNonQualifiant{
+
+             DiplomeDeuxiemeCycleNonQualifiant => [None..None]
+             DiplomeDeuxiemeCycleNonQualifiant.diplomeDeuxiemeCycleNonQualifiant => [0..1]
+        } 
+
+        class DiplomeDivers{
+
+             DiplomeDivers => [None..None]
+             DiplomeDivers.diplomeDivers => [0..1]
+        } 
+
+        class DiplomeEEE{
+
+             DiplomeEEE => [None..None]
+             DiplomeEEE.diplomeEEE => [0..1]
+        } 
+
+        class DiplomeEES{
+
+             DiplomeEES => [None..None]
+             DiplomeEES.diplomeEES => [0..1]
+        } 
+
+        class DiplomeEtat{
+
+             DiplomeEtat => [None..None]
+             DiplomeEtat.diplomeEtat => [0..1]
+        } 
+
+        class DiplomeEtudeSpecialisee{
+
+             DiplomeEtudeSpecialisee => [None..None]
+             DiplomeEtudeSpecialisee.diplomeEtudeSpecialisee => [0..1]
+        } 
+
+        class DiplomeUniversitaire{
+
+             DiplomeUniversitaire => [None..None]
+             DiplomeUniversitaire.diplomeUniversitaire => [0..1]
+        } 
+
+        class DispositifMedical{
+
+             DispositifMedical => [None..None]
+             DispositifMedical.identifiantLocalDM => [0..*]
+             DispositifMedical.classeRisque => [0..1]
+             DispositifMedical.reference => [0..1]
+             DispositifMedical.modele => [0..1]
+             DispositifMedical.nomCommercial => [0..1]
+             DispositifMedical.codeEMDN => [0..1]
+             DispositifMedical.usageUnique => [0..1]
+             DispositifMedical.nombreReutilisation => [0..1]
+             DispositifMedical.sterile => [0..1]
+             DispositifMedical.sterilisationAvantUtilisation => [0..1]
+             DispositifMedical.contientLatex => [0..1]
+             DispositifMedical.substanceCMR1A1B => [0..1]
+             DispositifMedical.implantable => [0..1]
+             DispositifMedical.actif => [0..1]
+             DispositifMedical.codeLPP => [0..1]
+             DispositifMedical.irmCompatible => [0..1]
+             DispositifMedical.SupportIUD => [0..*]
+             DispositifMedical.SupportIUD.IUDID => [0..1]
+             DispositifMedical.SupportIUD.IUDIPNumeroSerie => [0..1]
+             DispositifMedical.SupportIUD.IUDIPNumeroLot => [0..1]
+             DispositifMedical.SupportIUD.IUDIPIdLogiciel => [0..1]
+             DispositifMedical.SupportIUD.IUDIPDateFabrication => [0..1]
+             DispositifMedical.SupportIUD.IUDIPDateExpiration => [0..1]
+             DispositifMedical.SupportIUD.AIDC => [0..1]
+             DispositifMedical.SupportIUD.marquageClair => [0..1]
+             DispositifMedical.SupportIUD.typeSupportIUD => [0..1]
+             DispositifMedical.EntiteJuridique => [1..1]
+             DispositifMedical.NoteLiaison => [0..*]
+        } 
+
+        class DivisionTerritoriale{
+
+             DivisionTerritoriale => [None..None]
+             DivisionTerritoriale.type => [0..1]
+             DivisionTerritoriale.code => [0..1]
+        } 
+
+        class Document{
+
+             Document => [None..None]
+             Document.typeDocument => [0..1]
+             Document.Demande => [0..*]
+             Document.DossierPersonnePriseCharge => [1..1]
+             Document.NoteLiaison => [0..*]
+        } 
+
+        class DossierPersonnePriseCharge{
+
+             DossierPersonnePriseCharge => [None..None]
+             DossierPersonnePriseCharge.identifiantDossier => [0..1]
+             DossierPersonnePriseCharge.PersonnePriseCharge => [1..1]
+             DossierPersonnePriseCharge.Demande => [0..*]
+             DossierPersonnePriseCharge.Document => [0..*]
+        } 
+
+        class DroitExerciceComplementaire{
+
+             DroitExerciceComplementaire => [None..None]
+             DroitExerciceComplementaire.droitExerciceComplementaire => [0..1]
+        } 
+
+        class Emploi{
+
+             Emploi => [None..None]
+             Emploi.libelleEmploi => [0..1]
+             Emploi.dateDebutEmploi => [0..1]
+             Emploi.dateFinEmploi => [0..1]
+             Emploi.emploiRemunere => [0..1]
+             Emploi.emploiAdapteHandicape => [0..1]
+             Emploi.VieProfessionnelle => [1..1]
+             Emploi.EntiteGeographique => [1..1]
+        } 
+
+        class EntiteGeographique{
+
+             EntiteGeographique => [None..None]
+             EntiteGeographique.numFINESS => [0..1]
+             EntiteGeographique.numSiret => [0..1]
+             EntiteGeographique.identifiantEG => [0..1]
+             EntiteGeographique.idNatStruct => [0..1]
+             EntiteGeographique.typeIdNatStruct => [0..1]
+             EntiteGeographique.numeroEducationNationale => [0..1]
+             EntiteGeographique.nomOperationnel => [0..1]
+             EntiteGeographique.denominationEG => [0..1]
+             EntiteGeographique.denominationEGLongue => [0..1]
+             EntiteGeographique.complementDenominationEG => [0..1]
+             EntiteGeographique.champActivite => [0..*]
+             EntiteGeographique.typeEtablissement => [0..1]
+             EntiteGeographique.etablissementPrincipal => [0..1]
+             EntiteGeographique.secteurActivite => [0..1]
+             EntiteGeographique.categorieEtablissement => [0..1]
+             EntiteGeographique.agregatCategorieEtablissementNiv1 => [0..1]
+             EntiteGeographique.agregatCategorieEtablissementNiv2 => [0..1]
+             EntiteGeographique.agregatCategorieEtablissementNiv3 => [0..1]
+             EntiteGeographique.codeAPET => [0..1]
+             EntiteGeographique.modeFixationTarif => [0..1]
+             EntiteGeographique.modaliteParticipationSPH => [0..1]
+             EntiteGeographique.natureEtablissement => [0..1]
+             EntiteGeographique.aideFinanciere => [0..*]
+             EntiteGeographique.habilitationSoinSansConsentement => [0..1]
+             EntiteGeographique.hebergementFamille => [0..1]
+             EntiteGeographique.dateModificationSIRET => [0..1]
+             EntiteGeographique.origineModificationSIRET => [0..1]
+             EntiteGeographique.actif => [0..1]
+             EntiteGeographique.dateOuverture => [0..1]
+             EntiteGeographique.dateCaducite => [0..1]
+             EntiteGeographique.constatCaducite => [0..1]
+             EntiteGeographique.dateFermeture => [0..1]
+             EntiteGeographique.typeFermeture => [0..1]
+             EntiteGeographique.dateAutorisation => [0..1]
+             EntiteGeographique.accessibiliteLieu => [0..1]
+             EntiteGeographique.zonePoser => [0..1]
+             EntiteGeographique.niveauRecoursORSAN => [0..1]
+             EntiteGeographique.venteLigneURL => [0..1]
+             EntiteGeographique.nbPlaceAideSocialeTemporaire => [0..1]
+             EntiteGeographique.nbPlaceAideSocialePermanent => [0..1]
+             EntiteGeographique.adresseEG => [0..*]
+             EntiteGeographique.implantationGeographique => [0..1]
+             EntiteGeographique.lieuEG => [0..1]
+             EntiteGeographique.divisionTerritoriale => [0..*]
+             EntiteGeographique.contact => [0..*]
+             EntiteGeographique.telecommunication => [0..*]
+             EntiteGeographique.boiteLettresMSS => [0..*]
+             EntiteGeographique.commentaire => [0..1]
+             EntiteGeographique.SituationExercice => [0..*]
+             EntiteGeographique.Certificat => [0..*]
+             EntiteGeographique.EntiteJuridique => [1..1]
+             EntiteGeographique.Lieu => [0..*]
+             EntiteGeographique.Convention => [0..*]
+             EntiteGeographique.EquipementMaterielLourd => [0..*]
+             EntiteGeographique.LicenceExploitation => [0..1]
+             EntiteGeographique.ActiviteEnseignement => [0..*]
+             EntiteGeographique.TarifPrestation => [0..*]
+             EntiteGeographique.ActiviteSoinAutorisee => [0..*]
+             EntiteGeographique.AutreActiviteSoumiseAutorisation => [0..*]
+             EntiteGeographique.ActiviteSoumiseReconnaissance => [0..*]
+             EntiteGeographique.ActiviteSociale => [0..*]
+             EntiteGeographique.CapaciteActiviteExercee => [0..*]
+             EntiteGeographique.OffreOperationnelle => [0..*]
+             EntiteGeographique.OrganisationInterne => [0..*]
+             EntiteGeographique.Emploi => [0..1]
+             EntiteGeographique.AidantDemarche => [0..1]
+             EntiteGeographique.MesureProtection => [0..1]
+             EntiteGeographique.NoteLiaison => [0..*]
+             EntiteGeographique.Agenda => [0..*]
+             EntiteGeographique.RendezVous => [0..*]
+             EntiteGeographique.CapaciteAccueil => [0..1]
+             EntiteGeographique.CapaciteHabitation => [0..*]
+        } 
+
+        class EntiteJuridique{
+
+             EntiteJuridique => [None..None]
+             EntiteJuridique.numFINESS => [0..1]
+             EntiteJuridique.numSiren => [0..1]
+             EntiteJuridique.idNatStruct => [0..1]
+             EntiteJuridique.identifiantEJ => [0..1]
+             EntiteJuridique.typeIdNatStruct => [0..1]
+             EntiteJuridique.numeroTVAIntracommunautaire => [0..1]
+             EntiteJuridique.numeroSRN => [0..*]
+             EntiteJuridique.raisonSociale => [0..1]
+             EntiteJuridique.raisonSocialeLongue => [0..1]
+             EntiteJuridique.complementRaisonSociale => [0..1]
+             EntiteJuridique.statutJuridique => [0..1]
+             EntiteJuridique.agregatStatutJuridiqueNiv1 => [0..1]
+             EntiteJuridique.agregatStatutJuridiqueNiv2 => [0..1]
+             EntiteJuridique.agregatStatutJuridiqueNiv3 => [0..1]
+             EntiteJuridique.codeAPEN => [0..1]
+             EntiteJuridique.dateCreation => [0..1]
+             EntiteJuridique.dateModificationSiren => [0..1]
+             EntiteJuridique.origineModificationSIREN => [0..1]
+             EntiteJuridique.dateFermeture => [0..1]
+             EntiteJuridique.typeFermeture => [0..1]
+             EntiteJuridique.adresseEJ => [0..1]
+             EntiteJuridique.contact => [0..*]
+             EntiteJuridique.telecommunication => [0..*]
+             EntiteJuridique.boiteLettresMSS => [0..*]
+             EntiteJuridique.EntiteGeographique => [1..*]
+             EntiteJuridique.DispositifMedical => [0..*]
+             EntiteJuridique.Certificat => [0..1]
+        } 
+
+        class EquipementMaterielLourd{
+
+             EquipementMaterielLourd => [None..None]
+             EquipementMaterielLourd.numeroAutorisationARHGOS => [0..1]
+             EquipementMaterielLourd.equipementMaterielLourd => [0..1]
+             EquipementMaterielLourd.dateDecision => [0..1]
+             EquipementMaterielLourd.datePremiereMEO => [0..1]
+             EquipementMaterielLourd.dateFin => [0..1]
+             EquipementMaterielLourd.suppressionAutorisation => [0..1]
+             EquipementMaterielLourd.marque => [0..1]
+             EquipementMaterielLourd.numeroSerie => [0..1]
+             EquipementMaterielLourd.EntiteGeographique => [1..1]
+        } 
+
+        class EquipementSpecifique{
+
+             EquipementSpecifique => [None..None]
+             EquipementSpecifique.typeEquipement => [0..1]
+             EquipementSpecifique.nbEquipementEnService => [0..1]
+             EquipementSpecifique.LimiteCaracteristiqueEquipement => [0..*]
+             EquipementSpecifique.LimiteCaracteristiqueEquipement.typeCaracteristique => [0..1]
+             EquipementSpecifique.LimiteCaracteristiqueEquipement.valeurLimite => [0..1]
+             EquipementSpecifique.LieuRealisationOffre => [1..1]
+             EquipementSpecifique.Agenda => [0..*]
+             EquipementSpecifique.RendezVous => [0..*]
+        } 
+
+        class ExerciceProfessionnel{
+
+             ExerciceProfessionnel => [None..None]
+             ExerciceProfessionnel.civiliteExercice => [0..1]
+             ExerciceProfessionnel.nomExercice => [0..1]
+             ExerciceProfessionnel.prenomExercice => [0..1]
+             ExerciceProfessionnel.profession => [0..1]
+             ExerciceProfessionnel.typeProfession => [0..1]
+             ExerciceProfessionnel.categorieProfessionnelle => [0..1]
+             ExerciceProfessionnel.dateEffetExercice => [0..1]
+             ExerciceProfessionnel.dateFinEffetExercice => [0..1]
+             ExerciceProfessionnel.departementPremierReferencementAE => [0..1]
+             ExerciceProfessionnel.boiteLettresMSS => [0..*]
+             ExerciceProfessionnel.InscriptionOrdre => [0..*]
+             ExerciceProfessionnel.InscriptionOrdre.ordre => [0..1]
+             ExerciceProfessionnel.InscriptionOrdre.dateDebutInscription => [0..1]
+             ExerciceProfessionnel.InscriptionOrdre.dateRadiation => [0..1]
+             ExerciceProfessionnel.InscriptionOrdre.statutInscription => [0..1]
+             ExerciceProfessionnel.InscriptionOrdre.conseilDepartemental => [0..1]
+             ExerciceProfessionnel.AttributionParticuliere => [0..1]
+             ExerciceProfessionnel.AttributionParticuliere.attributionParticuliere => [0..1]
+             ExerciceProfessionnel.AttributionParticuliere.dateDebutReconnaissance => [0..1]
+             ExerciceProfessionnel.AttributionParticuliere.dateAbandon => [0..1]
+             ExerciceProfessionnel.NiveauFormation => [0..*]
+             ExerciceProfessionnel.NiveauFormation.diplome => [0..1]
+             ExerciceProfessionnel.NiveauFormation.natureCycleFormation => [0..1]
+             ExerciceProfessionnel.NiveauFormation.niveauFormationAcquis => [0..1]
+             ExerciceProfessionnel.NiveauFormation.anneeUniversitaire => [0..1]
+             ExerciceProfessionnel.NiveauFormation.dateFin => [0..1]
+             ExerciceProfessionnel.SituationExercice => [0..*]
+             ExerciceProfessionnel.Certificat => [0..*]
+             ExerciceProfessionnel.SavoirFaire => [0..*]
+             ExerciceProfessionnel.CarteProfessionnel => [0..*]
+             ExerciceProfessionnel.Professionnel => [1..1]
+             ExerciceProfessionnel.SituationOperationnelle => [0..*]
+        } 
+
+        class FonctionQualifiee{
+
+             FonctionQualifiee => [None..None]
+             FonctionQualifiee.fonctionQualifiee => [0..1]
+        } 
+
+        class FormationSpecialiseeTransversale{
+
+             FormationSpecialiseeTransversale => [None..None]
+             FormationSpecialiseeTransversale.formationSpecialiseeTransversale => [0..1]
+        } 
+
+        class Groupement{
+
+             Groupement => [None..None]
+             Groupement.idGroupement => [0..1]
+             Groupement.dateCreation => [0..1]
+             Groupement.dateMAJ => [0..*]
+             Groupement.dateFin => [0..1]
+             Groupement.Membre => [0..*]
+        } 
+
+        class Horaire{
+
+             Horaire => [None..None]
+             Horaire.idPlageHoraire => [0..1]
+             Horaire.typePlageHoraire => [0..1]
+             Horaire.ouvertureFermeture => [0..1]
+             Horaire.jourSemaine => [0..1]
+             Horaire.heureDebut => [0..1]
+             Horaire.heureFin => [0..1]
+             Horaire.frequencePlageHoraire => [0..1]
+             Horaire.debutDateEffective => [0..1]
+             Horaire.finDateEffective => [0..1]
+             Horaire.dateDeclarationPlageHoraire => [0..1]
+             Horaire.commentaire => [0..*]
+        } 
+
+        class LangueParlee{
+
+             LangueParlee => [None..None]
+             LangueParlee.langueParlee => [0..1]
+             LangueParlee.dateFin => [0..1]
+        } 
+
+        class LicenceExploitation{
+
+             LicenceExploitation => [None..None]
+             LicenceExploitation.numeroLicence => [0..1]
+             LicenceExploitation.dateDebutLicence => [0..1]
+             LicenceExploitation.dateFinLicence => [0..1]
+             LicenceExploitation.EntiteGeographique => [1..1]
+        } 
+
+        class Lieu{
+
+             Lieu => [None..None]
+             Lieu.identifiant => [0..*]
+             Lieu.nom => [0..1]
+             Lieu.description => [0..1]
+             Lieu.typeLieu => [0..1]
+             Lieu.fonctionLieu => [0..1]
+             Lieu.statut => [0..1]
+             Lieu.accessibiliteLieu => [0..1]
+             Lieu.communeCOG => [0..1]
+             Lieu.adresse => [0..1]
+             Lieu.coordonneeGeographique => [0..1]
+             Lieu.telecommunication => [0..*]
+             Lieu.EntiteGeographique => [0..*]
+             Lieu.LieuRealisationOffre => [1..1]
+             Lieu.Agenda => [0..*]
+             Lieu.RendezVous => [0..*]
+        } 
+
+        class LieuRealisationOffre{
+
+             LieuRealisationOffre => [None..None]
+             LieuRealisationOffre.idExterneSynchro => [0..1]
+             LieuRealisationOffre.nomExterneSynchro => [0..1]
+             LieuRealisationOffre.OffreOperationnelle => [1..*]
+             LieuRealisationOffre.CapacitePriseCharge => [0..*]
+             LieuRealisationOffre.Lieu => [1..1]
+             LieuRealisationOffre.EquipementSpecifique => [0..*]
+             LieuRealisationOffre.CapaciteHabitation => [0..*]
+        } 
+
+        class Membre{
+
+             Membre => [None..None]
+             Membre.idMembre => [0..1]
+             Membre.dateEntree => [0..*]
+             Membre.dateSortie => [0..*]
+             Membre.adresse => [0..*]
+             Membre.telecommunication => [0..*]
+             Membre.Groupement => [0..*]
+        } 
+
+        class MesureCapacite{
+
+             MesureCapacite => [None..None]
+             MesureCapacite.natureCapacite => [0..1]
+             MesureCapacite.statutCapacite => [0..1]
+             MesureCapacite.temporaliteCapacite => [0..1]
+             MesureCapacite.nombreCapacite => [0..1]
+             MesureCapacite.precision => [0..1]
+             MesureCapacite.variation => [0..1]
+             MesureCapacite.typeSourceCapacite => [0..1]
+             MesureCapacite.dateMAJCapacite => [0..1]
+             MesureCapacite.dateConstatCapacite => [0..1]
+             MesureCapacite.CapaciteActiviteExercee => [1..1]
+             MesureCapacite.CapacitePriseCharge => [1..1]
+             MesureCapacite.CapaciteAccueil => [1..1]
+        } 
+
+        class MesureProtection{
+
+             MesureProtection => [None..None]
+             MesureProtection.typeMesureProtection => [0..1]
+             MesureProtection.personneProtectrice => [0..1]
+             MesureProtection.adresseMesureProtection => [0..1]
+             MesureProtection.telecommunicationMesureProtection => [0..*]
+             MesureProtection.EntiteGeographique => [0..1]
+             MesureProtection.PersonnePhysique => [0..*]
+        } 
+
+        class NoteLiaison{
+
+             NoteLiaison => [None..None]
+             NoteLiaison.idNote => [0..1]
+             NoteLiaison.typeNote => [0..1]
+             NoteLiaison.restrictionAudience => [0..1]
+             NoteLiaison.dateHeureCreation => [0..1]
+             NoteLiaison.description => [0..1]
+             NoteLiaison.urgenceNote => [0..1]
+             NoteLiaison.Professionnel => [0..1]
+             NoteLiaison.PersonnePriseCharge => [1..1]
+             NoteLiaison.Document => [1..*]
+             NoteLiaison.EntiteGeographique => [0..1]
+             NoteLiaison.Contact => [0..1]
+             NoteLiaison.DispositifMedical => [0..1]
+        } 
+
+        class Observation{
+
+             Observation => [None..None]
+             Observation.identifiant => [0..1]
+             Observation.statut => [0..1]
+             Observation.categorie => [0..1]
+             Observation.datePertinence => [0..1]
+             Observation.dateDisponibilite => [0..1]
+             Observation.commentaire => [0..1]
+             Observation.partieAnatomie => [0..1]
+             Observation.methode => [0..1]
+             Observation.raison => [0..1]
+             Observation.positionCorps => [0..1]
+             Observation.momentMesure => [0..1]
+             Observation.niveauEffort => [0..1]
+             Observation.typeDiabete => [0..1]
+             Observation.nombreJours => [0..1]
+             Observation.Professionnel => [0..1]
+             Observation.PersonnePriseCharge => [1..1]
+             Observation.ResultatObservation => [1..*]
+        } 
+
+        class OffreOperationnelle{
+
+             OffreOperationnelle => [None..None]
+             OffreOperationnelle.familleActiviteOperationnelle => [0..1]
+             OffreOperationnelle.identifiantOffre => [0..1]
+             OffreOperationnelle.nomOffre => [0..1]
+             OffreOperationnelle.typeOffre => [0..1]
+             OffreOperationnelle.champActivite => [0..1]
+             OffreOperationnelle.temporaliteAccueil => [0..1]
+             OffreOperationnelle.modePriseEnCharge => [0..1]
+             OffreOperationnelle.modaliteAccueil => [0..*]
+             OffreOperationnelle.modeGestion => [0..*]
+             OffreOperationnelle.uniteSensible => [0..1]
+             OffreOperationnelle.acteSpecifique => [0..*]
+             OffreOperationnelle.acteRealiseHorsCabinet => [0..*]
+             OffreOperationnelle.specialisationPriseEnCharge => [0..*]
+             OffreOperationnelle.habilitationAuxSoinsSansConsentement => [0..1]
+             OffreOperationnelle.ouvertureAnnuelle => [0..1]
+             OffreOperationnelle.zoneIntervention => [0..*]
+             OffreOperationnelle.secteurPsychiatrique => [0..*]
+             OffreOperationnelle.professionRessource => [0..*]
+             OffreOperationnelle.competenceSpecifique => [0..*]
+             OffreOperationnelle.niveauExpertise => [0..*]
+             OffreOperationnelle.typeFermeture => [0..1]
+             OffreOperationnelle.dateFermeture => [0..1]
+             OffreOperationnelle.datePrevisionnelleReouverture => [0..1]
+             OffreOperationnelle.horaire => [0..*]
+             OffreOperationnelle.contact => [0..*]
+             OffreOperationnelle.boiteLettreMSS => [0..*]
+             OffreOperationnelle.ActiviteOperationnelle => [1..*]
+             OffreOperationnelle.ActiviteOperationnelle.activiteOperationnelle => [0..1]
+             OffreOperationnelle.SituationOperationnelle => [0..*]
+             OffreOperationnelle.Patientele => [1..1]
+             OffreOperationnelle.EntiteGeographique => [0..1]
+             OffreOperationnelle.LieuRealisationOffre => [1..*]
+             OffreOperationnelle.OrganisationInterne => [0..1]
+        } 
+
+        class OrganisationInterne{
+
+             OrganisationInterne => [None..None]
+             OrganisationInterne.identifiantOI => [0..1]
+             OrganisationInterne.nomOI => [0..1]
+             OrganisationInterne.typeOI => [0..1]
+             OrganisationInterne.contact => [0..*]
+             OrganisationInterne.boiteLettresMSS => [0..*]
+             OrganisationInterne.dateOuverture => [0..1]
+             OrganisationInterne.dateFermeture => [0..1]
+             OrganisationInterne.typeFermeture => [0..1]
+             OrganisationInterne.datePrevisionnelleReouverture => [0..1]
+             OrganisationInterne.EntiteGeographique => [1..*]
+             OrganisationInterne.OrganisationInterne => [0..*]
+             OrganisationInterne.OffreOperationnelle => [1..*]
+             OrganisationInterne.Agenda => [0..*]
+             OrganisationInterne.RendezVous => [0..*]
+        } 
+
+        class OrientationParticuliere{
+
+             OrientationParticuliere => [None..None]
+             OrientationParticuliere.orientationParticuliere => [0..1]
+        } 
+
+        class Parent{
+
+             Parent => [None..None]
+             Parent.autoriteParentale => [0..1]
+             Parent.personne => [0..1]
+             Parent.adresseCorrespondance => [0..1]
+             Parent.telecommunication => [0..*]
+             Parent.PersonnePhysique => [1..*]
+        } 
+
+        class Patientele{
+
+             Patientele => [None..None]
+             Patientele.ageMin => [0..1]
+             Patientele.ageMax => [0..1]
+             Patientele.classeAge => [0..*]
+             Patientele.publicPrisEnCharge => [0..*]
+             Patientele.OffreOperationnelle => [1..1]
+        } 
+
+        class PersonnePhysique{
+
+             PersonnePhysique => [None..None]
+             PersonnePhysique.civilite => [0..1]
+             PersonnePhysique.nomFamille => [0..1]
+             PersonnePhysique.nomUsage => [0..1]
+             PersonnePhysique.prenom => [0..*]
+             PersonnePhysique.prenomUsuel => [0..1]
+             PersonnePhysique.pseudonyme => [0..1]
+             PersonnePhysique.surnom => [0..1]
+             PersonnePhysique.sexeAdministratif => [0..1]
+             PersonnePhysique.sexe => [0..1]
+             PersonnePhysique.langueParlee => [0..*]
+             PersonnePhysique.situationFamiliale => [0..1]
+             PersonnePhysique.dateNaissance => [0..1]
+             PersonnePhysique.dateDeces => [0..1]
+             PersonnePhysique.communeNaissance => [0..1]
+             PersonnePhysique.departementNaissance => [0..1]
+             PersonnePhysique.paysNaissance => [0..1]
+             PersonnePhysique.lieuNaissance => [0..1]
+             PersonnePhysique.statutEtatCivil => [0..1]
+             PersonnePhysique.dateStatutEtatCivil => [0..1]
+             PersonnePhysique.dateAcquisitionNatFR => [0..1]
+             PersonnePhysique.paysNationalite => [0..1]
+             PersonnePhysique.paysResidence => [0..1]
+             PersonnePhysique.professionCategorieSocioProfessionnelle => [0..1]
+             PersonnePhysique.causeMortalite => [0..1]
+             PersonnePhysique.tailleCorporelle => [0..1]
+             PersonnePhysique.poidsCorporel => [0..1]
+             PersonnePhysique.surfaceCorporelle => [0..1]
+             PersonnePhysique.indiceMasseCorporelle => [0..1]
+             PersonnePhysique.Parent => [0..*]
+             PersonnePhysique.MesureProtection => [0..1]
+             PersonnePhysique.AidantDemarche => [0..1]
+        } 
+
+        class PersonnePriseCharge{
+
+             PersonnePriseCharge => [None..None]
+             PersonnePriseCharge.idPersonnePriseCharge => [0..*]
+             PersonnePriseCharge.personne => [0..1]
+             PersonnePriseCharge.preferenceCommunication => [0..1]
+             PersonnePriseCharge.contact => [0..*]
+             PersonnePriseCharge.adresseCorrespondance => [0..*]
+             PersonnePriseCharge.telecommunication => [0..*]
+             PersonnePriseCharge.INS => [0..*]
+             PersonnePriseCharge.INS.matricule => [1..1]
+             PersonnePriseCharge.INS.nomNaissance => [1..1]
+             PersonnePriseCharge.INS.listePrenomsNaissance => [1..1]
+             PersonnePriseCharge.INS.sexe => [1..1]
+             PersonnePriseCharge.INS.dateNaissance => [1..1]
+             PersonnePriseCharge.INS.lieuNaissance => [1..1]
+             PersonnePriseCharge.INS.premierPrenomNaissance => [1..1]
+             PersonnePriseCharge.INS.nomUtilise => [1..1]
+             PersonnePriseCharge.INS.prenomUtilise => [1..1]
+             PersonnePriseCharge.RendezVous => [0..*]
+             PersonnePriseCharge.VieQuotidienne => [0..1]
+             PersonnePriseCharge.VieProfessionnelle => [0..1]
+             PersonnePriseCharge.VieScolaire => [0..1]
+             PersonnePriseCharge.NoteLiaison => [0..*]
+             PersonnePriseCharge.Observation => [0..*]
+             PersonnePriseCharge.Professionnel => [0..*]
+             PersonnePriseCharge.DossierPersonnePriseCharge => [1..1]
+             PersonnePriseCharge.Agenda => [0..*]
+        } 
+
+        class PlageDisponibilite{
+
+             PlageDisponibilite => [None..None]
+             PlageDisponibilite.plageDisponibilite => [0..1]
+             PlageDisponibilite.statutPlageDisponibilite => [0..1]
+             PlageDisponibilite.Agenda => [1..1]
+        } 
+
+        class PlageReference{
+
+             PlageReference => [None..None]
+             PlageReference.borneInferieure => [0..1]
+             PlageReference.borneSuperieure => [0..1]
+             PlageReference.type => [0..1]
+             PlageReference.trancheAge => [0..1]
+             PlageReference.guideTextuel => [0..1]
+             PlageReference.ResultatObservation => [1..1]
+        } 
+
+        class PoleActivite{
+
+             PoleActivite => [None..None]
+        } 
+
+        class Professionnel{
+
+             Professionnel => [None..None]
+             Professionnel.idPP => [0..1]
+             Professionnel.typeIdNatPP => [0..1]
+             Professionnel.idNatPS => [0..1]
+             Professionnel.personne => [0..1]
+             Professionnel.diplomeObtenu => [0..*]
+             Professionnel.adresseCorrespondance => [0..*]
+             Professionnel.telecommunication => [0..*]
+             Professionnel.boiteLettresMSS => [0..*]
+             Professionnel.ExerciceProfessionnel => [0..*]
+             Professionnel.NoteLiaison => [0..*]
+             Professionnel.Observation => [0..*]
+             Professionnel.AutorisationExercice => [0..*]
+             Professionnel.PersonnePriseCharge => [0..*]
+             Professionnel.Agenda => [0..*]
+             Professionnel.RendezVous => [0..*]
+        } 
+
+        class QualificationPAC{
+
+             QualificationPAC => [None..None]
+             QualificationPAC.qualificationPAC => [0..1]
+        } 
+
+        class RendezVous{
+
+             RendezVous => [None..None]
+             RendezVous.idRdv => [0..1]
+             RendezVous.typeRdv => [0..1]
+             RendezVous.datePriseRdv => [0..1]
+             RendezVous.dateDebutRdv => [0..1]
+             RendezVous.dateFinRdv => [0..1]
+             RendezVous.dateAnnulationRdv => [0..1]
+             RendezVous.pieceJointe => [0..1]
+             RendezVous.priorite => [0..1]
+             RendezVous.titreRdv => [0..1]
+             RendezVous.statutRdv => [0..1]
+             RendezVous.descriptionRdv => [0..1]
+             RendezVous.motifRdv => [0..1]
+             RendezVous.commentaire => [0..1]
+             RendezVous.PersonnePriseCharge => [0..*]
+             RendezVous.Creneau => [0..*]
+             RendezVous.EntiteGeographique => [0..*]
+             RendezVous.Professionnel => [0..*]
+             RendezVous.EquipementSpecifique => [0..*]
+             RendezVous.OrganisationInterne => [0..*]
+             RendezVous.Contact => [0..*]
+             RendezVous.Lieu => [0..*]
+        } 
+
+        class ResultatObservation{
+
+             ResultatObservation => [None..None]
+             ResultatObservation.type => [0..*]
+             ResultatObservation.valeur => [0..1]
+             ResultatObservation.interpretation => [0..1]
+             ResultatObservation.raisonAbsence => [0..1]
+             ResultatObservation.Observation => [1..1]
+             ResultatObservation.PlageReference => [0..*]
+        } 
+
+        class SavoirFaire{
+
+             SavoirFaire => [None..None]
+             SavoirFaire.typeSavoirFaire => [0..1]
+             SavoirFaire.dateReconnaissance => [0..1]
+             SavoirFaire.dateAbandon => [0..1]
+             SavoirFaire.ExerciceProfessionnel => [1..1]
+        } 
+
+        class SituationExercice{
+
+             SituationExercice => [None..None]
+             SituationExercice.role => [0..1]
+             SituationExercice.typeRole => [0..1]
+             SituationExercice.modeExercice => [0..1]
+             SituationExercice.numeroAM => [0..1]
+             SituationExercice.dateDebutActivite => [0..1]
+             SituationExercice.dateFinActivite => [0..1]
+             SituationExercice.genreActivite => [0..1]
+             SituationExercice.motifFinActivite => [0..1]
+             SituationExercice.statutHospitalier => [0..1]
+             SituationExercice.sectionOrdrePharmacien => [0..1]
+             SituationExercice.sousSectionOrdrePharmacien => [0..1]
+             SituationExercice.typeActiviteLiberale => [0..1]
+             SituationExercice.statutPSSSA => [0..1]
+             SituationExercice.telecommunication => [0..*]
+             SituationExercice.adresseSE => [0..*]
+             SituationExercice.boiteLettresMSS => [0..*]
+             SituationExercice.ExerciceProfessionnel => [1..1]
+             SituationExercice.EntiteGeographique => [0..1]
+        } 
+
+        class SituationOperationnelle{
+
+             SituationOperationnelle => [None..None]
+             SituationOperationnelle.identifiantSituationOperationnelle => [0..1]
+             SituationOperationnelle.modeExerciceOffre => [0..1]
+             SituationOperationnelle.competenceSpecifique => [0..*]
+             SituationOperationnelle.precisionHoraire => [0..1]
+             SituationOperationnelle.secteurConventionnement => [0..1]
+             SituationOperationnelle.optionContratAccesAuxSoins => [0..1]
+             SituationOperationnelle.carteVitaleAcceptee => [0..1]
+             SituationOperationnelle.telecommunication => [0..1]
+             SituationOperationnelle.ExerciceProfessionnel => [1..1]
+             SituationOperationnelle.OffreOperationnelle => [1..1]
+        } 
+
+        class Specialite{
+
+             Specialite => [None..None]
+             Specialite.specialite => [0..1]
+        } 
+
+        class StructureInterne{
+
+             StructureInterne => [None..None]
+        } 
+
+        class SurspecialiteTransversale{
+
+             SurspecialiteTransversale => [None..None]
+             SurspecialiteTransversale.surspecialiteTransversale => [0..1]
+        } 
+
+        class TarifPrestation{
+
+             TarifPrestation => [None..None]
+             TarifPrestation.EntiteGeographique => [1..1]
+        } 
+
+        class Telecommunication{
+
+             Telecommunication => [None..None]
+             Telecommunication.canal => [0..1]
+             Telecommunication.adresseTelecom => [0..1]
+             Telecommunication.typeMessagerie => [0..1]
+             Telecommunication.utilisation => [0..1]
+             Telecommunication.niveauConfidentialite => [0..1]
+        } 
+
+        class UniteFonctionnelle{
+
+             UniteFonctionnelle => [None..None]
+        } 
+
+        class VieProfessionnelle{
+
+             VieProfessionnelle => [None..None]
+             VieProfessionnelle.dejaTravaille => [0..1]
+             VieProfessionnelle.diplome => [0..*]
+             VieProfessionnelle.situationVieProfessionnelle => [0..1]
+             VieProfessionnelle.situationSansEmploi => [0..1]
+             VieProfessionnelle.besoinProfessionnel => [0..*]
+             VieProfessionnelle.PersonnePriseCharge => [1..1]
+             VieProfessionnelle.Emploi => [0..*]
+             VieProfessionnelle.ArretTravail => [0..*]
+        } 
+
+        class VieQuotidienne{
+
+             VieQuotidienne => [None..None]
+             VieQuotidienne.situationVieQuotidienne => [0..*]
+             VieQuotidienne.besoinVieQuotidienne => [0..*]
+             VieQuotidienne.compositionFoyer => [0..1]
+             VieQuotidienne.PersonnePriseCharge => [1..1]
+        } 
+
+        class VieScolaire{
+
+             VieScolaire => [None..None]
+             VieScolaire.typeScolarisation => [0..1]
+             VieScolaire.besoinScolarite => [0..*]
+             VieScolaire.PersonnePriseCharge => [1..1]
+         }
+
+     }
+     package extension #paleturquoise {
+
+
+         }
+     }
+     package valueset #PaleVioletRed{
+
+        class CapacitesavoirfaireVs  
+
+     CapaciteSavoirfaire -[#black,dotted,thickness=2]-> CapacitesavoirfaireVs
+
+        class CompetenceVs  
+
+     Competence -[#black,dotted,thickness=2]-> CompetenceVs
+
+        class CompetenceexclusiveVs  
+
+     CompetenceExclusive -[#black,dotted,thickness=2]-> CompetenceexclusiveVs
+
+        class CompetencemetierVs  
+
+     CompetenceMetier -[#black,dotted,thickness=2]-> CompetencemetierVs
+
+        class RelationVs  
+
+     Contact -[#black,dotted,thickness=2]-> RelationVs
+
+        class DescnonqualifiantVs  
+
+     DESCNonQualifiant -[#black,dotted,thickness=2]-> DescnonqualifiantVs
+
+        class CodeVs  
+
+     DivisionTerritoriale -[#black,dotted,thickness=2]-> CodeVs
+
+        class DroitexercicecomplementaireVs  
+
+     DroitExerciceComplementaire -[#black,dotted,thickness=2]-> DroitexercicecomplementaireVs
+
+        class SecteuractiviteVs  
+
+     EntiteGeographique -[#black,dotted,thickness=2]-> SecteuractiviteVs
+
+        class CategorieetablissementVs  
+
+     EntiteGeographique -[#black,dotted,thickness=2]-> CategorieetablissementVs
+
+        class ProfessionVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> ProfessionVs
+
+        class TypeprofessionVs  
+
+     ExerciceProfessionnel -[#black,dotted,thickness=2]-> TypeprofessionVs
+
+        class FonctionqualifieeVs  
+
+     FonctionQualifiee -[#black,dotted,thickness=2]-> FonctionqualifieeVs
+
+        class FamilleactiviteoperationnelleVs  
+
+     OffreOperationnelle -[#black,dotted,thickness=2]-> FamilleactiviteoperationnelleVs
+
+        class ProfessionressourceVs  
+
+     OffreOperationnelle -[#black,dotted,thickness=2]-> ProfessionressourceVs
+
+        class OrientationparticuliereVs  
+
+     OrientationParticuliere -[#black,dotted,thickness=2]-> OrientationparticuliereVs
+
+        class SexeVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> SexeVs
+
+        class PaysnaissanceVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> PaysnaissanceVs
+
+        class LieunaissanceVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> LieunaissanceVs
+
+        class PaysnationaliteVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> PaysnationaliteVs
+
+        class ProfessioncategoriesocioprofessionnelleVs  
+
+     PersonnePhysique -[#black,dotted,thickness=2]-> ProfessioncategoriesocioprofessionnelleVs
+
+        class QualificationpacVs  
+
+     QualificationPAC -[#black,dotted,thickness=2]-> QualificationpacVs
+
+        class RoleVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> RoleVs
+
+        class TyperoleVs  
+
+     SituationExercice -[#black,dotted,thickness=2]-> TyperoleVs
+
+        class SpecialiteVs  
+
+     Specialite -[#black,dotted,thickness=2]-> SpecialiteVs
+
+        class SurspecialitetransversaleVs  
+
+     SurspecialiteTransversale -[#black,dotted,thickness=2]-> SurspecialitetransversaleVs
+
+        class BesoinviequotidienneVs  
+
+     VieQuotidienne -[#black,dotted,thickness=2]-> BesoinviequotidienneVs
+
+        class BesoinscolariteVs  
+
+     VieScolaire -[#black,dotted,thickness=2]-> BesoinscolariteVs
+       }
+
+package "Ressources de base" #palegreen {
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ActiviteEnseignement
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ActiviteSociale
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ActiviteSoinAutorisee
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ActiviteSoumiseReconnaissance
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Adresse
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Agenda
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> AidantDemarche
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ArretTravail
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> Attestation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> AutorisationExercice
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> AutreActiviteSoumiseAutorisation
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> AutreDiplomeObtenu
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> BoiteLettreMSS
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CapaciteAccueil
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CapaciteActiviteExercee
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> CapaciteDiplome
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CapaciteHabitation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CapacitePriseCharge
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> CapaciteSavoirfaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CarteProfessionnel
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Certificat
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> CertificatEtudeSpeciale
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> Competence
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> CompetenceExclusive
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> CompetenceMetier
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Contact
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Convention
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> CoordonneeGeographique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Creneau
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DESC1
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DESC2
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> DESCNonQualifiant
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Decision
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Demande
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Diplome
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DiplomeDeuxiemeCycleNonQualifiant
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DiplomeDivers
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DiplomeEEE
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DiplomeEES
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DiplomeEtat
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DiplomeEtudeSpecialisee
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> DiplomeUniversitaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> DispositifMedical
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> DivisionTerritoriale
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Document
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> DossierPersonnePriseCharge
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> DroitExerciceComplementaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Emploi
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> EntiteGeographique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> EntiteJuridique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> EquipementMaterielLourd
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> EquipementSpecifique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ExerciceProfessionnel
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> FonctionQualifiee
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Diplome" as  classce22f11aadb3ecc630835fe34b52ad38 
+
+    classce22f11aadb3ecc630835fe34b52ad38 --> FormationSpecialiseeTransversale
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Groupement
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Horaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> LangueParlee
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> LicenceExploitation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Lieu
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> LieuRealisationOffre
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Membre
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> MesureCapacite
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> MesureProtection
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> NoteLiaison
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Observation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> OffreOperationnelle
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> OrganisationInterne
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> OrientationParticuliere
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Parent
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Patientele
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PersonnePhysique
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PersonnePriseCharge
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PlageDisponibilite
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PlageReference
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> PoleActivite
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Professionnel
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> QualificationPAC
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> RendezVous
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> ResultatObservation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> SavoirFaire
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> SituationExercice
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> SituationOperationnelle
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> Specialite
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> StructureInterne
+
+ class "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SavoirFaire" as  class7cdfb2c203ef04e11cd48de87fe587af 
+
+    class7cdfb2c203ef04e11cd48de87fe587af --> SurspecialiteTransversale
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> TarifPrestation
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> Telecommunication
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> UniteFonctionnelle
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> VieProfessionnelle
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> VieQuotidienne
+
+ class "Base" as  class095a1b43effec73955e31e790438de49 
+
+    class095a1b43effec73955e31e790438de49 --> VieScolaire
+}
+@enduml
