@@ -3,7 +3,7 @@ MOS : Validation Results
 
 err = 153, warn = 904, info = 2
 IG Publisher Version: 2.1.2
-Generated Thu Mar 12 13:45:47 UTC 2026. FHIR version 4.0.1 for ans.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/mos)
+Generated Thu Mar 12 13:51:51 UTC 2026. FHIR version 4.0.1 for ans.fr.mos#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/mos)
  Build Errors : 0 / 31 / 0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fr.mos : 33 / 1 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteEnseignement : 1 / 14 / 1
@@ -1029,21 +1029,21 @@ ERROR: StructureDefinition/PoleActivite: StructureDefinition.jurisdiction[0].cod
 == fsh-generated/resources/StructureDefinition-Professionnel.json ==
 ERROR: StructureDefinition/Professionnel: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr-FR'. Default display is 'France'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne?vs'
-WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[11]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[12]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[13]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/Professionnel: StructureDefinition.snapshot.element[16]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[2].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_G08-TypeIdentifiantPersonne/FHIR/TRE-G08-TypeIdentifiantPersonne?vs'
-WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[9]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[11]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[12]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[13]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[14]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[15]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/Professionnel: StructureDefinition.differential.element[16]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 == fsh-generated/resources/StructureDefinition-QualificationPAC.json ==
 ERROR: StructureDefinition/QualificationPAC: StructureDefinition.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr-FR'. Default display is 'France'
 WARNING: StructureDefinition/QualificationPAC: StructureDefinition.snapshot.element[1].binding.valueSet: A definition could not be found for Canonical URL 'https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire?vs'
@@ -1178,8 +1178,8 @@ WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet.compose.include[1].system: N
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [5902a87d-89bf-4317-91e3-a1a9b3151b11]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
-Information: X-Request-Id: 6c149f80-256a-4cc8-91a7-fe77dca91d55
+WARNING: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [7d349c86-fae9-4843-89bc-378ecf253bb2]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
+Information: X-Request-Id: f60155d8-4582-4d43-96bf-3a2feea8d403
 == fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs.json ==
 ERROR: ValueSet/capaciteSavoirFaire-vs: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr-FR'. Default display is 'France'
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
@@ -1222,8 +1222,8 @@ WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet.compose.include[1].
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [2c695602-4fbb-42af-b252-33fe4dc584be]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
-Information: X-Request-Id: 61be73cc-13ba-44be-8071-df8c4c5ce88e
+WARNING: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [de99438b-91a0-461c-9ab1-42625694adaa]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
+Information: X-Request-Id: 0958a48a-52e8-4407-bed8-9ff1945f67e1
 == fsh-generated/resources/ValueSet-fonctionQualifiee-vs.json ==
 ERROR: ValueSet/fonctionQualifiee-vs: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. There are no valid display names found for language(s) 'fr-FR'. Default display is 'France'
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present

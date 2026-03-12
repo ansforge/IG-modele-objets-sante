@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
   "name" : "Professionnel",
   "title" : "Professionnel",
   "status" : "draft",
-  "date" : "2026-03-12T13:42:24+00:00",
+  "date" : "2026-03-12T13:48:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -161,6 +161,17 @@ Other representations of profile: [CSV](StructureDefinition-Professionnel.csv), 
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/BoiteLettreMSS"
+      }]
+    },
+    {
+      "id" : "Professionnel.attributTest",
+      "path" : "Professionnel.attributTest",
+      "short" : "Libellé définition",
+      "definition" : "Libellé short",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Identifier"
       }]
     },
     {
