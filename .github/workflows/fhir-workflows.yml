@@ -11,6 +11,11 @@ jobs:
       - uses: actions/checkout@v3
         with:
           path: igSource
+      # Génère input/images/MOS.xlsx à partir des fichiers FSH (input/fsh/logicals/).
+      # Ce fichier est copié tel quel dans l'output par l'IG publisher et rendu
+      # téléchargeable depuis la page d'accueil du guide.
+      # Le script doit tourner AVANT l'action IG publisher pour que le fichier
+      # soit présent lors du build.
       - name: Generate MOS.xlsx
         run: |
           pip install openpyxl --quiet
