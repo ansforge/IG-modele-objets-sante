@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Generate MOS.xlsx from FHIR StructureDefinition JSON files.
+Generate MOS.xlsx by parsing FSH logical model source files directly.
 
-Reads sections.json for the Partie → Classe mapping and
-fsh-generated/resources/ for StructureDefinition data.
-Outputs to input/images/MOS.xlsx (copied verbatim to IG output by the publisher).
+Reads  : sections.json  (Partie → [class IDs])
+         input/fsh/logicals/**/*.fsh
+Outputs: input/images/MOS.xlsx  (copied verbatim to IG output by the publisher)
 """
 
 import json
@@ -17,7 +17,7 @@ from openpyxl.utils import get_column_letter
 
 SCRIPT_DIR = Path(__file__).parent
 IG_ROOT = SCRIPT_DIR.parent
-RESOURCES_DIR = IG_ROOT / "fsh-generated" / "resources"
+FSH_DIR = IG_ROOT / "input" / "fsh" / "logicals"
 OUTPUT_FILE = IG_ROOT / "input" / "images" / "MOS.xlsx"
 SECTIONS_FILE = SCRIPT_DIR / "sections.json"
 
@@ -28,7 +28,7 @@ HEADERS = [
 ]
 
 # ---------------------------------------------------------------------------
-# Styles (shared instances — openpyxl supports reuse)
+# Styles
 # ---------------------------------------------------------------------------
 H_FONT = Font(bold=True, color="FFFFFF")
 H_FILL = PatternFill("solid", fgColor="1F4E79")
@@ -39,66 +39,87 @@ C_FILL = PatternFill("solid", fgColor="BDD7EE")
 ODD_FILL = PatternFill("solid", fgColor="EEF4FB")
 WRAP_TOP = Alignment(wrap_text=True, vertical="top")
 
-
 # ---------------------------------------------------------------------------
-# Data extraction
+# FSH parsing
 # ---------------------------------------------------------------------------
 
-def _extract_nomenclature(vs_url: str) -> str:
-    """Return the NOS/TRE name from a ValueSet URL, or a short fallback."""
+_Q = r'"((?:[^"\\]|\\.)*)"'  # capture a quoted FSH string
+_ELEM = re.compile(
+    r'^\*\s+([A-Za-z][A-Za-z0-9_.]*)\s+(\d+\.\.[0-9*]+)\s+(\S+)\s+' + _Q + r'\s+' + _Q
+)
+_BIND = re.compile(r'^\*\s+([A-Za-z][A-Za-z0-9_.]*)\s+from\s+(\S+)')
+_DESC = re.compile(r'^Description:\s+' + _Q, re.MULTILINE)
+
+
+def _nos_name(vs_url: str) -> str:
+    """Extract the NOS/TRE identifier from a ValueSet URL."""
     m = re.search(r"/NOS/([^/]+)/FHIR/", vs_url)
     return m.group(1) if m else vs_url.rstrip("?vs").split("/")[-1]
 
 
-def _extract_type_name(code: str) -> str:
-    """Return the local name for a type code (strips full URLs)."""
+def _type_name(code: str) -> str:
     return code.split("/")[-1] if code.startswith("http") else code
 
 
-def _load_sd(class_id: str):
-    path = RESOURCES_DIR / f"StructureDefinition-{class_id}.json"
-    if not path.exists():
-        return None
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
-
-
-def get_class_info(class_id: str):
-    """Return {description, elements} for a given StructureDefinition ID."""
-    sd = _load_sd(class_id)
-    if sd is None:
+def parse_fsh(path: Path):
+    """
+    Parse one FSH file.
+    Returns (class_id, description, elements) or None if not a Logical model.
+    """
+    text = path.read_text(encoding="utf-8")
+    if "Logical:" not in text:
         return None
 
-    description = sd.get("description", "")
+    id_m = re.search(r"^Id:\s+(\S+)", text, re.MULTILINE)
+    class_id = id_m.group(1) if id_m else path.stem
+
+    desc_m = _DESC.search(text)
+    description = desc_m.group(1).strip() if desc_m else ""
+
     elements = []
+    bindings: dict = {}
 
-    for elem in sd.get("differential", {}).get("element", []):
-        elem_id = elem.get("id", "")
-        if "." not in elem_id:  # root element — skip
+    for line in text.splitlines():
+        if not line.startswith("*"):
             continue
-        types = elem.get("type", [])
-        if not types:
+        # Skip metadata (^) and root-element (. ^) annotations
+        if re.match(r"^\*\s+[.^]", line):
             continue
 
-        code = types[0].get("code", "")
-        min_val = elem.get("min", "")
-        max_val = elem.get("max", "")
+        bm = _BIND.match(line)
+        if bm:
+            bindings[bm.group(1)] = _nos_name(bm.group(2))
+            continue
 
-        binding = elem.get("binding", {})
-        vs_url = binding.get("valueSet", "")
+        em = _ELEM.match(line)
+        if em:
+            elements.append({
+                "name": em.group(1),
+                "cardinality": f"[{em.group(2)}]",
+                "type": _type_name(em.group(3)),
+                "description": em.group(5),   # definition (second quoted string)
+                "nomenclature": "",
+            })
 
-        # Attribute name: everything after the class name prefix
-        attr_name = ".".join(elem_id.split(".")[1:])
+    # Attach ValueSet bindings to elements
+    for elem in elements:
+        nom = bindings.get(elem["name"], "")
+        if not nom:
+            nom = bindings.get(elem["name"].split(".")[-1], "")
+        elem["nomenclature"] = nom
 
-        elements.append({
-            "name": attr_name,
-            "cardinality": f"[{min_val}..{max_val}]",
-            "type": _extract_type_name(code),
-            "description": elem.get("definition", "") or elem.get("short", ""),
-            "nomenclature": _extract_nomenclature(vs_url) if vs_url else "",
-        })
+    return class_id, description, elements
 
-    return {"description": description, "elements": elements}
+
+def build_model_map() -> dict:
+    """Scan all FSH files and return {class_id: {description, elements}}."""
+    model_map: dict = {}
+    for fsh_file in FSH_DIR.rglob("*.fsh"):
+        result = parse_fsh(fsh_file)
+        if result:
+            class_id, description, elements = result
+            model_map[class_id] = {"description": description, "elements": elements}
+    return model_map
 
 
 # ---------------------------------------------------------------------------
@@ -115,7 +136,7 @@ def _add_row(ws, values, font=None, fill=None):
             cell.fill = fill
 
 
-def generate(sections: dict):
+def generate(sections: dict, model_map: dict):
     wb = openpyxl.Workbook()
     ws = wb.active
     ws.title = "MOS"
@@ -130,27 +151,26 @@ def generate(sections: dict):
     # 3. Column headers repeated
     _add_row(ws, HEADERS, H_FONT, H_FILL)
 
-    # 4. Class header rows (Partie + Classe + description)
+    # 4. Class header rows
     for partie, classes in sections.items():
         for cid in classes:
-            info = get_class_info(cid)
+            info = model_map.get(cid)
             if info is None:
                 continue
             _add_row(
                 ws,
                 [partie, cid, None, None, None, info["description"]] + [""] * 9,
-                C_FONT,
-                C_FILL,
+                C_FONT, C_FILL,
             )
 
     # 5. Column headers repeated
     _add_row(ws, HEADERS, H_FONT, H_FILL)
 
-    # 6. Attribute data rows
+    # 6. Attribute rows
     n = 0
     for partie, classes in sections.items():
         for cid in classes:
-            info = get_class_info(cid)
+            info = model_map.get(cid)
             if info is None:
                 continue
             for e in info["elements"]:
@@ -167,8 +187,9 @@ def generate(sections: dict):
                 n += 1
 
     # 7. Column widths & freeze panes
-    col_widths = [22, 30, 35, 13, 22, 100, 45, 35, 12, 12, 10, 12, 10, 14, 10]
-    for i, w in enumerate(col_widths, 1):
+    for i, w in enumerate(
+        [22, 30, 35, 13, 22, 100, 45, 35, 12, 12, 10, 12, 10, 14, 10], 1
+    ):
         ws.column_dimensions[get_column_letter(i)].width = w
     ws.freeze_panes = "A2"
 
@@ -185,4 +206,5 @@ def generate(sections: dict):
 if __name__ == "__main__":
     with open(SECTIONS_FILE, encoding="utf-8") as f:
         sections = json.load(f)
-    generate(sections)
+    model_map = build_model_map()
+    generate(sections, model_map)
