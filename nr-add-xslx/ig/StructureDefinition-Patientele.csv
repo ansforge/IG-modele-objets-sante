@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Patientele","Patientele","","","",0,*,"","","","null {[]} {[]}
+","Une patientèle est un ensemble de patients présentant des caractéristiques permettant d'orienter leur prise en charge par une structure de santé.","Une patientèle est un ensemble de patients présentant des caractéristiques permettant d'orienter leur prise en charge par une structure de santé.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Patientele.ageMin","Patientele.ageMin","","","",0,1,"","","","Quantity {[]} {[]}
+","Age minimum (inclus) des personnes pouvant être accueillies.","Age minimum (inclus) des personnes pouvant être accueillies.","","","","","","","","","",,,,,"",,,,"Patientele.ageMin",0,1,"",""
+"Patientele.ageMax","Patientele.ageMax","","","",0,1,"","","","Quantity {[]} {[]}
+","Age maximum (inclus) des personnes pouvant être accueillies.","Age maximum (inclus) des personnes pouvant être accueillies.","","","","","","","","","",,,,,"",,,,"Patientele.ageMax",0,1,"",""
+"Patientele.classeAge","Patientele.classeAge","","","",0,*,"","","","Coding {[]} {[]}
+","Code typant la classe d’âge d’un patient (Nouveau-né, Nourrisson, Enfant, Adolescent, Adulte, Senior).","Code typant la classe d’âge d’un patient (Nouveau-né, Nourrisson, Enfant, Adolescent, Adulte, Senior).","","","","","","","","","",,"preferred","","https://mos.esante.gouv.fr/NOS/TRE_R208-ClasseAge/FHIR/TRE-R208-ClasseAge?vs","",,,,"Patientele.classeAge",0,*,"",""
+"Patientele.publicPrisEnCharge","Patientele.publicPrisEnCharge","","","",0,*,"","","","Coding {[]} {[]}
+","Personnes âgées en perte d'autonomie et/ou personnes en situation de handicap.","Personnes âgées en perte d'autonomie et/ou personnes en situation de handicap.","","","","","","","","","",,"preferred","","https://mos.esante.gouv.fr/NOS/TRE_R239-PublicPrisEnCharge/FHIR/TRE-R239-PublicPrisEnCharge?vs","",,,,"Patientele.publicPrisEnCharge",0,*,"",""
+"Patientele.OffreOperationnelle","Patientele.OffreOperationnelle","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle {[]} {[]}
+","Lien vers la classe OffreOperationnelle","Lien vers la classe OffreOperationnelle","","","","","","","","","",,,,,"",,,,"Patientele.OffreOperationnelle",1,1,"",""

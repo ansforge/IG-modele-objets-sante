@@ -1,0 +1,31 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Agenda","Agenda","","","",0,*,"","","","null {[]} {[]}
+","Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de créneaux, des plages de disponibilité et des rendez-vous sur une période définie.","Un agenda appartient à une ou plusieurs ressources, regroupe un ensemble de créneaux, des plages de disponibilité et des rendez-vous sur une période définie.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Agenda.idAgenda","Agenda.idAgenda","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant de l'agenda.","Identifiant de l'agenda.","","","","","","","","","",,,,,"",,,,"Agenda.idAgenda",0,1,"",""
+"Agenda.nomAgenda","Agenda.nomAgenda","","","",0,1,"","","","string {[]} {[]}
+","Nom de l'agenda.","Nom de l'agenda.","","","","","","","","","",,,,,"",,,,"Agenda.nomAgenda",0,1,"",""
+"Agenda.dateCreation","Agenda.dateCreation","","","",0,1,"","","","date {[]} {[]}
+","Date de création de l'agenda.","Date de création de l'agenda.","","","","","","","","","",,,,,"",,,,"Agenda.dateCreation",0,1,"",""
+"Agenda.dateDebutPlanification","Agenda.dateDebutPlanification","","","",0,1,"","","","dateTime {[]} {[]}
+","Date de début de validité de l'agenda.","Date de début de validité de l'agenda.","","","","","","","","","",,,,,"",,,,"Agenda.dateDebutPlanification",0,1,"",""
+"Agenda.dateFinPlanification","Agenda.dateFinPlanification","","","",0,1,"","","","dateTime {[]} {[]}
+","Date de fin de validité de l'agenda.","Date de fin de validité de l'agenda.","","","","","","","","","",,,,,"",,,,"Agenda.dateFinPlanification",0,1,"",""
+"Agenda.PersonnePriseCharge","Agenda.PersonnePriseCharge","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePriseCharge {[]} {[]}
+","Lien vers la classe PersonnePriseCharge","Lien vers la classe PersonnePriseCharge","","","","","","","","","",,,,,"",,,,"Agenda.PersonnePriseCharge",0,*,"",""
+"Agenda.Professionnel","Agenda.Professionnel","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Professionnel {[]} {[]}
+","Lien vers la classe Professionnel","Lien vers la classe Professionnel","","","","","","","","","",,,,,"",,,,"Agenda.Professionnel",0,*,"",""
+"Agenda.Lieu","Agenda.Lieu","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu {[]} {[]}
+","Lien vers la classe Lieu","Lien vers la classe Lieu","","","","","","","","","",,,,,"",,,,"Agenda.Lieu",0,*,"",""
+"Agenda.Contact","Agenda.Contact","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Contact {[]} {[]}
+","Lien vers la classe Contact","Lien vers la classe Contact","","","","","","","","","",,,,,"",,,,"Agenda.Contact",0,*,"",""
+"Agenda.EntiteGeographique","Agenda.EntiteGeographique","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeographique {[]} {[]}
+","Lien vers la classe EntiteGeographique","Lien vers la classe EntiteGeographique","","","","","","","","","",,,,,"",,,,"Agenda.EntiteGeographique",0,*,"",""
+"Agenda.EquipementSpecifique","Agenda.EquipementSpecifique","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique {[]} {[]}
+","Lien vers la classe EquipementSpecifique","Lien vers la classe EquipementSpecifique","","","","","","","","","",,,,,"",,,,"Agenda.EquipementSpecifique",0,*,"",""
+"Agenda.OrganisationInterne","Agenda.OrganisationInterne","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OrganisationInterne {[]} {[]}
+","Lien vers la classe OrganisationInterne","Lien vers la classe OrganisationInterne","","","","","","","","","",,,,,"",,,,"Agenda.OrganisationInterne",0,*,"",""
+"Agenda.Creneau","Agenda.Creneau","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Creneau {[]} {[]}
+","Lien vers la classe Creneau","Lien vers la classe Creneau","","","","","","","","","",,,,,"",,,,"Agenda.Creneau",0,*,"",""
+"Agenda.PlageDisponibilite","Agenda.PlageDisponibilite","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageDisponibilite {[]} {[]}
+","Lien vers la classe PlageDisponibilite","Lien vers la classe PlageDisponibilite","","","","","","","","","",,,,,"",,,,"Agenda.PlageDisponibilite",0,*,"",""
