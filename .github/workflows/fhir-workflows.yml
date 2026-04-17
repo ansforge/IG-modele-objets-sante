@@ -9,8 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:      
+        with:
           path: igSource
+      - name: Generate MOS.xlsx
+        run: |
+          pip install openpyxl --quiet
+          python3 igSource/script/generate_mos_xlsx.py
       - uses: ansforge/IG-workflows@main
         with:      
           repo_ig: "./igSource"   

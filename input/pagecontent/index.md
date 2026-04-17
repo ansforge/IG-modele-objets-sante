@@ -20,6 +20,10 @@
 </div>
 -->
 
+### Téléchargement
+
+Le MOS est disponible sous forme de tableur Excel, généré automatiquement à partir des modèles logiques de ce guide : **[Télécharger MOS.xlsx](MOS.xlsx)**.
+
 ### Introduction
 
 Le MOS est un ensemble de concepts, décrits de manière homogène et neutre vis-à-vis des technologies. Il favorise l’interopérabilité native des applications en offrant une description commune et mutualisée des informations traitées dans les systèmes d’information et les échanges. Le périmètre du MOS, circonscrit au départ au secteur sanitaire, évoluera au fil de ces projets pour prendre en compte les spécificités du secteur médico-social et social.
