@@ -13,6 +13,9 @@
  **Brief description of this Implementation Guide**
  This Implementation Guide publishes the **Modèle des Objets de Santé (MOS)** — the French Health Objects Model — as FHIR Logical Models. The MOS defines a set of technology-neutral, harmonised concepts covering health and medico-social information systems: professionals, organisations, authentication devices, authorisations, operational resources, patients, caregivers, medical devices, and more. It promotes native interoperability by providing a shared data model aligned with international standards (FHIR, HL7 v2/v3). 
 
+>  **Attention !** 
+ Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/mos 
+
 ### Introduction
 
 Le MOS est un ensemble de concepts, décrits de manière homogène et neutre vis-à-vis des technologies. Il favorise l’interopérabilité native des applications en offrant une description commune et mutualisée des informations traitées dans les systèmes d’information et les échanges. Le périmètre du MOS, circonscrit au départ au secteur sanitaire, évoluera au fil de ces projets pour prendre en compte les spécificités du secteur médico-social et social.
@@ -170,7 +173,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2026-04-20T13:52:11+00:00",
+  "date" : "2026-04-20T14:01:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -234,7 +237,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -535,7 +538,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "public-comment"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
