@@ -1,0 +1,15 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"PlageReference","PlageReference","","","",0,*,"","","","null {[]} {[]}
+","La plage de référence, constituée d’une borne inférieure et d’une borne supérieure, fournit un guide pour interpréter une valeur en la comparant à ces bornes.","La plage de référence, constituée d’une borne inférieure et d’une borne supérieure, fournit un guide pour interpréter une valeur en la comparant à ces bornes.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PlageReference.borneInferieure","PlageReference.borneInferieure","","","",0,1,"","","","Quantity {[]} {[]}
+","Borne inférieure de la plage.","Borne inférieure de la plage.","","","","","","","","","",,,,,"",,,,"PlageReference.borneInferieure",0,1,"",""
+"PlageReference.borneSuperieure","PlageReference.borneSuperieure","","","",0,1,"","","","Quantity {[]} {[]}
+","Borne supérieure de la plage.","Borne supérieure de la plage.","","","","","","","","","",,,,,"",,,,"PlageReference.borneSuperieure",0,1,"",""
+"PlageReference.type","PlageReference.type","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Type de plage de référence définie selon les critères s’appliquant à la personne sur laquelle porte l’observation. http://hl7.org/fhir/ValueSet/referencerange-meaning","Type de plage de référence définie selon les critères s’appliquant à la personne sur laquelle porte l’observation. http://hl7.org/fhir/ValueSet/referencerange-meaning","","","","","","","","","",,,,,"",,,,"PlageReference.type",0,1,"",""
+"PlageReference.trancheAge","PlageReference.trancheAge","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Patientele {[]} {[]}
+","Tranche d'âge pour laquelle la plage de référence est applicable.","Tranche d'âge pour laquelle la plage de référence est applicable.","","","","","","","","","",,,,,"",,,,"PlageReference.trancheAge",0,1,"",""
+"PlageReference.guideTextuel","PlageReference.guideTextuel","","","",0,1,"","","","string {[]} {[]}
+","Plage de référence exprimée sous la forme d’un texte pour interpréter la valeur.","Plage de référence exprimée sous la forme d’un texte pour interpréter la valeur.","","","","","","","","","",,,,,"",,,,"PlageReference.guideTextuel",0,1,"",""
+"PlageReference.ResultatObservation","PlageReference.ResultatObservation","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ResultatObservation {[]} {[]}
+","Lien vers la classe ResultatObservation","Lien vers la classe ResultatObservation","","","","","","","","","",,,,,"",,,,"PlageReference.ResultatObservation",1,1,"",""
