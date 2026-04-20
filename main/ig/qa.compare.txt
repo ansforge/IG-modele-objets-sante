@@ -4,7 +4,7 @@ MOS : Validation Results
 err = 153, warn = 1211, info = 2
 $--
 Generated $--. FHIR version $-- for ans.fr.mos#$-- (canonical = https://interop.esante.gouv.fr/ig/mos)
- Build Errors : 0 / 31 / 0
+ Build Errors : 1 / 31 / 0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fr.mos : 33 / 1 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteEnseignement : 1 / 24 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteSociale : 1 / 42 / 1
@@ -156,7 +156,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/surspecialiteTransversale-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/typeProfession-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/typeRole-vs.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/output/accompagnant.html#/html/body/div/div/div/div/div/script at Line 351, column 2: The <script> containing the javascript '(function() {   // A'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 13 other files)
+WARNING: /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/output/accompagnant.html#/html/body/div/div/div/div/div/script at Line 348, column 2: The <script> containing the javascript '(function() {   // A'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 12 other files)
+ERROR: change_notes.html#/html/body/div/div/div/div/div/h3/a at Line 213, column 55: The link 'https://interop.esante.gouv.fr/ig/mos/0.1.0' for "Release 0.1.0" cannot be resolved
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/ImplementationGuide-ans.fr.mos.json ==
@@ -1485,8 +1486,8 @@ WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet.compose.include[1].system: N
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [b9959cd3-a9db-420d-af0e-970f29d8e581]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
-Information: X-Request-Id: 43760aa6-58c8-4e16-a34a-d4cc729106d6
+WARNING: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [c0546209-e8ef-42f8-9e0e-4aee563f816c]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
+Information: X-Request-Id: 8b65f8a2-5a84-4583-8aa7-20d0c2fe8336
 == fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs.json ==
 ERROR: ValueSet/capaciteSavoirFaire-vs: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
@@ -1529,8 +1530,8 @@ WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet.compose.include[1].
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [49142dbb-631e-475b-b801-bfb4bd4c4541]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
-Information: X-Request-Id: 22a97970-8ac1-4bb5-a6ea-d0ca6a14f04e
+WARNING: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [cfe6d546-e259-4c39-8ee3-c58a8e48de82]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
+Information: X-Request-Id: 592459df-c78d-4473-a041-b3a6d4d81d58
 == fsh-generated/resources/ValueSet-fonctionQualifiee-vs.json ==
 ERROR: ValueSet/fonctionQualifiee-vs: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present

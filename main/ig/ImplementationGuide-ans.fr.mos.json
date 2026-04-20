@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fr.mos</b></p><a name=\"ans.fr.mos\"> </a><a name=\"hcans.fr.mos\"> </a><h2>MOS</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos",
-  "version" : "0.1.0",
+  "version" : "0.1.0-ballot",
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2026-04-20T07:14:21+00:00",
+  "date" : "2026-04-20T13:39:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -74,7 +74,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -375,7 +375,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -2341,24 +2341,6 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "professionnel_2.html"
-          }],
-          "nameUrl" : "professionnel_2.html",
-          "title" : "Professionnel_2",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "professionnel_3.html"
-          }],
-          "nameUrl" : "professionnel_3.html",
-          "title" : "Professionnel_3",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "ressops.html"
           }],
           "nameUrl" : "ressops.html",
@@ -2372,6 +2354,15 @@
           }],
           "nameUrl" : "structure.html",
           "title" : "Structure",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "change_notes.html"
+          }],
+          "nameUrl" : "change_notes.html",
+          "title" : "Historique",
           "generation" : "markdown"
         }]
       }]

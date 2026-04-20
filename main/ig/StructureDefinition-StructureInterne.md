@@ -1,4 +1,4 @@
-# StructureInterne - Modèle des Objets de Santé (MOS) v0.1.0
+# StructureInterne - Modèle des Objets de Santé (MOS) v0.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/StructureInterne | *Version*:0.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/StructureInterne | *Version*:0.1.0-ballot |
 | Draft as of 2026-04-20 | *Computable Name*:StructureInterne |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-StructureInterne.csv
   "resourceType" : "StructureDefinition",
   "id" : "StructureInterne",
   "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/StructureInterne",
-  "version" : "0.1.0",
+  "version" : "0.1.0-ballot",
   "name" : "StructureInterne",
   "title" : "StructureInterne",
   "status" : "draft",
-  "date" : "2026-04-20T07:14:21+00:00",
+  "date" : "2026-04-20T13:39:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

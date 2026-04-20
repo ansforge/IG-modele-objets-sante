@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : ImplementationGuide ans.fr.mos</b></p><a name="ans.fr.mos"> </a><a name="hcans.fr.mos"> </a><h2>MOS</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos</pre></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos"/>
-  <version value="0.1.0"/>
+  <version value="0.1.0-ballot"/>
   <name value="MOS"/>
   <title value="Modèle des Objets de Santé (MOS)"/>
   <status value="draft"/>
-  <date value="2026-04-20T07:14:21+00:00"/>
+  <date value="2026-04-20T13:39:43+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -64,7 +64,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="ballot"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -283,7 +283,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ci-build"/>
+        <valueString value="ballot"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -2024,22 +2024,6 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="professionnel_2.html"/>
-          </extension>
-          <nameUrl value="professionnel_2.html"/>
-          <title value="Professionnel_2"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="professionnel_3.html"/>
-          </extension>
-          <nameUrl value="professionnel_3.html"/>
-          <title value="Professionnel_3"/>
-          <generation value="markdown"/>
-        </page>
-        <page>
-          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
             <valueUrl value="ressops.html"/>
           </extension>
           <nameUrl value="ressops.html"/>
@@ -2052,6 +2036,14 @@
           </extension>
           <nameUrl value="structure.html"/>
           <title value="Structure"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="change_notes.html"/>
+          </extension>
+          <nameUrl value="change_notes.html"/>
+          <title value="Historique"/>
           <generation value="markdown"/>
         </page>
       </page>

@@ -1,4 +1,4 @@
-# Accueil - Modèle des Objets de Santé (MOS) v0.1.0
+# Accueil - Modèle des Objets de Santé (MOS) v0.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,13 +7,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos | *Version*:0.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos | *Version*:0.1.0-ballot |
 | Draft as of 2026-04-20 | *Computable Name*:MOS |
 
  **Brief description of this Implementation Guide**
- [Add a brief description of this IG in English] 
-
-> Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/mos
+ This Implementation Guide publishes the **Modèle des Objets de Santé (MOS)** — the French Health Objects Model — as FHIR Logical Models. The MOS defines a set of technology-neutral, harmonised concepts covering health and medico-social information systems: professionals, organisations, authentication devices, authorisations, operational resources, patients, caregivers, medical devices, and more. It promotes native interoperability by providing a shared data model aligned with international standards (FHIR, HL7 v2/v3). 
 
 ### Introduction
 
@@ -39,9 +37,7 @@ La partie composants élémentaires du MOS est partitionnée de la manière suiv
 * objets communs aux domaines, c’est à dire les personnes, les adresses, les coordonnées géographiques, les lieux, les contacts, les télécommunications, etc.;
 * types de données, c’est à dire le domaine de valeurs de l’attribut; par exemple, l’attribut nomUsage (nom d’usage de la personne) est un texte (type de données “Texte”), l’attribut paysNaissance (pays de naissance) est un code (type de données “Code”).
 
-Remarque générale sur les diagrammes:
-
-La cardinalité “**” d’une association ou d’un attribut signifie “0..**”. La cardinalité “1” d’une association ou d’un attribut signifie “1..1”.
+Ce guide d’implémentation s’inscrit dans une démarche de modernisation de la diffusion du MOS. Il a vocation à remplacer l’ancien site web dédié, le fichier Excel et le document PDF, formats qui ne sont pas retenus à date. La publication sous forme de guide d’implémentation FHIR permet une navigation facilitée, une consultation structurée et une interopérabilité native avec les autres IGs de l’ANS.
 
 🔍+
 🔍−
@@ -146,12 +142,6 @@ La cardinalité “**” d’une association ou d’un attribut signifie “0..*
 | [VieQuotidienne](StructureDefinition-VieQuotidienne.md) | /!\ Classe en cours de constructionInformations relatives à la vie quotidienne de la personne prise en charge. |
 | [VieScolaire](StructureDefinition-VieScolaire.md) | /!\ Classe en cours de constructionInformations relatives à la vie scolaire de la personne prise en charge. |
 
-### Périmètre du projet
-
-Définir en quelques lignes en anglais quel est le périmètre du projet
-
-Toujours laisser l’onglet “Ressources de conformité” pour s’assurer d’une cohérence globales entre tous les IGs
-
 ### Dépendances
 
 
@@ -167,10 +157,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 * [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.4.0/CodeSystem-ISO3166Part1.html): [ActiviteEnseignement](StructureDefinition-ActiviteEnseignement.md), [ActiviteSociale](StructureDefinition-ActiviteSociale.md)... Show 119 more, [ActiviteSoinAutorisee](StructureDefinition-ActiviteSoinAutorisee.md), [ActiviteSoumiseReconnaissance](StructureDefinition-ActiviteSoumiseReconnaissance.md), [Adresse](StructureDefinition-Adresse.md), [Agenda](StructureDefinition-Agenda.md), [AidantDemarche](StructureDefinition-AidantDemarche.md), [ArretTravail](StructureDefinition-ArretTravail.md), [Attestation](StructureDefinition-Attestation.md), [AutorisationExercice](StructureDefinition-AutorisationExercice.md), [AutreActiviteSoumiseAutorisation](StructureDefinition-AutreActiviteSoumiseAutorisation.md), [AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md), [BesoinscolariteVs](ValueSet-besoinScolarite-vs.md), [BesoinviequotidienneVs](ValueSet-besoinVieQuotidienne-vs.md), [BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md), [CapaciteAccueil](StructureDefinition-CapaciteAccueil.md), [CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md), [CapaciteDiplome](StructureDefinition-CapaciteDiplome.md), [CapaciteHabitation](StructureDefinition-CapaciteHabitation.md), [CapacitePriseCharge](StructureDefinition-CapacitePriseCharge.md), [CapaciteSavoirfaire](StructureDefinition-CapaciteSavoirfaire.md), [CapacitesavoirfaireVs](ValueSet-capaciteSavoirFaire-vs.md), [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [CategorieetablissementVs](ValueSet-categorieEtablissement-vs.md), [Certificat](StructureDefinition-Certificat.md), [CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md), [CodeVs](ValueSet-code-vs.md), [Competence](StructureDefinition-Competence.md), [CompetenceExclusive](StructureDefinition-CompetenceExclusive.md), [CompetenceMetier](StructureDefinition-CompetenceMetier.md), [CompetenceVs](ValueSet-competence-vs.md), [CompetenceexclusiveVs](ValueSet-competenceExclusive-vs.md), [CompetencemetierVs](ValueSet-competenceMetier-vs.md), [Contact](StructureDefinition-Contact.md), [Convention](StructureDefinition-Convention.md), [CoordonneeGeographique](StructureDefinition-CoordonneeGeographique.md), [Creneau](StructureDefinition-Creneau.md), [DESC1](StructureDefinition-DESC1.md), [DESC2](StructureDefinition-DESC2.md), [DESCNonQualifiant](StructureDefinition-DESCNonQualifiant.md), [Decision](StructureDefinition-Decision.md), [Demande](StructureDefinition-Demande.md), [DescnonqualifiantVs](ValueSet-DESCNonQualifiant-vs.md), [Diplome](StructureDefinition-Diplome.md), [DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md), [DiplomeDivers](StructureDefinition-DiplomeDivers.md), [DiplomeEEE](StructureDefinition-DiplomeEEE.md), [DiplomeEES](StructureDefinition-DiplomeEES.md), [DiplomeEtat](StructureDefinition-DiplomeEtat.md), [DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md), [DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md), [DispositifMedical](StructureDefinition-DispositifMedical.md), [DivisionTerritoriale](StructureDefinition-DivisionTerritoriale.md), [Document](StructureDefinition-Document.md), [DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md), [DroitExerciceComplementaire](StructureDefinition-DroitExerciceComplementaire.md), [DroitexercicecomplementaireVs](ValueSet-droitExerciceComplementaire-vs.md), [Emploi](StructureDefinition-Emploi.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [EquipementMaterielLourd](StructureDefinition-EquipementMaterielLourd.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md), [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [FamilleactiviteoperationnelleVs](ValueSet-familleActiviteOperationnelle-vs.md), [FonctionQualifiee](StructureDefinition-FonctionQualifiee.md), [FonctionqualifieeVs](ValueSet-fonctionQualifiee-vs.md), [FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md), [Groupement](StructureDefinition-Groupement.md), [Horaire](StructureDefinition-Horaire.md), [LangueParlee](StructureDefinition-LangueParlee.md), [LicenceExploitation](StructureDefinition-LicenceExploitation.md), [Lieu](StructureDefinition-Lieu.md), [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md), [LieunaissanceVs](ValueSet-lieuNaissance-vs.md), [MOS](index.md), [Membre](StructureDefinition-Membre.md), [MesureCapacite](StructureDefinition-MesureCapacite.md), [MesureProtection](StructureDefinition-MesureProtection.md), [NoteLiaison](StructureDefinition-NoteLiaison.md), [Observation](StructureDefinition-Observation.md), [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md), [OrganisationInterne](StructureDefinition-OrganisationInterne.md), [OrientationParticuliere](StructureDefinition-OrientationParticuliere.md), [OrientationparticuliereVs](ValueSet-orientationParticuliere-vs.md), [Parent](StructureDefinition-Parent.md), [Patientele](StructureDefinition-Patientele.md), [PaysnaissanceVs](ValueSet-paysNaissance-vs.md), [PaysnationaliteVs](ValueSet-paysNationalite-vs.md), [PersonnePhysique](StructureDefinition-PersonnePhysique.md), [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md), [PlageDisponibilite](StructureDefinition-PlageDisponibilite.md), [PlageReference](StructureDefinition-PlageReference.md), [PoleActivite](StructureDefinition-PoleActivite.md), [ProfessionVs](ValueSet-profession-vs.md), [ProfessioncategoriesocioprofessionnelleVs](ValueSet-professionCategorieSocioProfessionnelle-vs.md), [Professionnel](StructureDefinition-Professionnel.md), [ProfessionressourceVs](ValueSet-professionRessource-vs.md), [QualificationPAC](StructureDefinition-QualificationPAC.md), [QualificationpacVs](ValueSet-qualificationPAC-vs.md), [RelationVs](ValueSet-relation-vs.md), [RendezVous](StructureDefinition-RendezVous.md), [ResultatObservation](StructureDefinition-ResultatObservation.md), [RoleVs](ValueSet-role-vs.md), [SavoirFaire](StructureDefinition-SavoirFaire.md), [SecteuractiviteVs](ValueSet-secteurActivite-vs.md), [SexeVs](ValueSet-sexe-vs.md), [SituationExercice](StructureDefinition-SituationExercice.md), [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md), [Specialite](StructureDefinition-Specialite.md), [SpecialiteVs](ValueSet-specialite-vs.md), [StructureInterne](StructureDefinition-StructureInterne.md), [SurspecialiteTransversale](StructureDefinition-SurspecialiteTransversale.md), [SurspecialitetransversaleVs](ValueSet-surspecialiteTransversale-vs.md), [TarifPrestation](StructureDefinition-TarifPrestation.md), [Telecommunication](StructureDefinition-Telecommunication.md), [TypeprofessionVs](ValueSet-typeProfession-vs.md), [TyperoleVs](ValueSet-typeRole-vs.md), [UniteFonctionnelle](StructureDefinition-UniteFonctionnelle.md), [VieProfessionnelle](StructureDefinition-VieProfessionnelle.md), [VieQuotidienne](StructureDefinition-VieQuotidienne.md) and [VieScolaire](StructureDefinition-VieScolaire.md)
 
 
-### Téléchargement
-
-Le MOS est disponible sous forme de tableur Excel, généré automatiquement à partir des modèles logiques de ce guide : **[Télécharger MOS.xlsx](MOS.xlsx)**.
-
 
 
 ## Resource Content
@@ -180,11 +166,11 @@ Le MOS est disponible sous forme de tableur Excel, généré automatiquement à 
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fr.mos",
   "url" : "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos",
-  "version" : "0.1.0",
+  "version" : "0.1.0-ballot",
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2026-04-20T07:14:21+00:00",
+  "date" : "2026-04-20T13:39:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -248,7 +234,7 @@ Le MOS est disponible sous forme de tableur Excel, généré automatiquement à 
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -549,7 +535,7 @@ Le MOS est disponible sous forme de tableur Excel, généré automatiquement à 
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -2515,24 +2501,6 @@ Le MOS est disponible sous forme de tableur Excel, généré automatiquement à 
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "professionnel_2.html"
-          }],
-          "nameUrl" : "professionnel_2.html",
-          "title" : "Professionnel_2",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "professionnel_3.html"
-          }],
-          "nameUrl" : "professionnel_3.html",
-          "title" : "Professionnel_3",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
             "valueUrl" : "ressops.html"
           }],
           "nameUrl" : "ressops.html",
@@ -2546,6 +2514,15 @@ Le MOS est disponible sous forme de tableur Excel, généré automatiquement à 
           }],
           "nameUrl" : "structure.html",
           "title" : "Structure",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "change_notes.html"
+          }],
+          "nameUrl" : "change_notes.html",
+          "title" : "Historique",
           "generation" : "markdown"
         }]
       }]

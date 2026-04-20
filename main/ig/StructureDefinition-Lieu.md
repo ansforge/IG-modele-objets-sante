@@ -1,4 +1,4 @@
-# Lieu - Modèle des Objets de Santé (MOS) v0.1.0
+# Lieu - Modèle des Objets de Santé (MOS) v0.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu | *Version*:0.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu | *Version*:0.1.0-ballot |
 | Draft as of 2026-04-20 | *Computable Name*:Lieu |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-Lieu.csv), [Excel](S
   "resourceType" : "StructureDefinition",
   "id" : "Lieu",
   "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu",
-  "version" : "0.1.0",
+  "version" : "0.1.0-ballot",
   "name" : "Lieu",
   "title" : "Lieu",
   "status" : "draft",
-  "date" : "2026-04-20T07:14:21+00:00",
+  "date" : "2026-04-20T13:39:43+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
