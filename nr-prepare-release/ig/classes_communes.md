@@ -1,4 +1,4 @@
-# Classes communes - Modèle des Objets de Santé (MOS) v0.1.0
+# Classes communes - Modèle des Objets de Santé (MOS) v0.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Classes communes**

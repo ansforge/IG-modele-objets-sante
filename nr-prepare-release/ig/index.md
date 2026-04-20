@@ -1,4 +1,4 @@
-# Accueil - Modèle des Objets de Santé (MOS) v0.1.0
+# Accueil - Modèle des Objets de Santé (MOS) v0.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Accueil**
@@ -7,13 +7,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos | *Version*:0.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos | *Version*:0.1.0-ballot |
 | Draft as of 2026-04-20 | *Computable Name*:MOS |
 
  **Brief description of this Implementation Guide**
  This Implementation Guide publishes the **Modèle des Objets de Santé (MOS)** — the French Health Objects Model — as FHIR Logical Models. The MOS defines a set of technology-neutral, harmonised concepts covering health and medico-social information systems: professionals, organisations, authentication devices, authorisations, operational resources, patients, caregivers, medical devices, and more. It promotes native interoperability by providing a shared data model aligned with international standards (FHIR, HL7 v2/v3). 
-
-> Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/mos
 
 ### Introduction
 
@@ -178,11 +176,11 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "resourceType" : "ImplementationGuide",
   "id" : "ans.fr.mos",
   "url" : "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos",
-  "version" : "0.1.0",
+  "version" : "0.1.0-ballot",
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2026-04-20T07:37:42+00:00",
+  "date" : "2026-04-20T08:03:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -246,7 +244,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -547,7 +545,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       },
       {
         "url" : "value",
-        "valueString" : "ci-build"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -2517,24 +2515,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }],
           "nameUrl" : "professionnel.html",
           "title" : "Professionnel",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "professionnel_2.html"
-          }],
-          "nameUrl" : "professionnel_2.html",
-          "title" : "Professionnel_2",
-          "generation" : "markdown"
-        },
-        {
-          "extension" : [{
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "professionnel_3.html"
-          }],
-          "nameUrl" : "professionnel_3.html",
-          "title" : "Professionnel_3",
           "generation" : "markdown"
         },
         {

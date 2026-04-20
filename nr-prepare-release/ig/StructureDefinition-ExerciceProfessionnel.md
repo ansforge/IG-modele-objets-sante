@@ -1,4 +1,4 @@
-# ExerciceProfessionnel - Modèle des Objets de Santé (MOS) v0.1.0
+# ExerciceProfessionnel - Modèle des Objets de Santé (MOS) v0.1.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel | *Version*:0.1.0 |
+| *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel | *Version*:0.1.0-ballot |
 | Draft as of 2026-04-20 | *Computable Name*:ExerciceProfessionnel |
 
  
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-ExerciceProfessionne
   "resourceType" : "StructureDefinition",
   "id" : "ExerciceProfessionnel",
   "url" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel",
-  "version" : "0.1.0",
+  "version" : "0.1.0-ballot",
   "name" : "ExerciceProfessionnel",
   "title" : "ExerciceProfessionnel",
   "status" : "draft",
-  "date" : "2026-04-20T07:37:42+00:00",
+  "date" : "2026-04-20T08:03:20+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
