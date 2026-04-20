@@ -1,3 +1,11 @@
+### MOS au format tableur
+
+Le MOS est disponible sous forme de tableur Excel, généré automatiquement à partir des modèles logiques de ce guide :
+
+* [MOS.xlsx](MOS.xlsx)
+
+---
+
 L'implementation guide contient un package [téléchargeable ici](package.tgz) permettant de valider les instances par rapport aux profils qu'il contient.
 
 Pour cela, il suffit de télécharger le [package.tgz](package.tgz) et l'importer dans un serveur, par exemple sur hapi en suivant ce [script python](https://github.com/nmdp-bioinformatics/igloader) open source.
