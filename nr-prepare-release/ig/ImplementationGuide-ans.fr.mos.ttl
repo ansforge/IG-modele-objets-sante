@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "MOS"] ; # 
   fhir:title [ fhir:v "Modèle des Objets de Santé (MOS)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-04-20T08:03:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-04-20T09:12:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -4069,25 +4069,6 @@
            ] ;
            fhir:value [
              a fhir:Url ;
-             fhir:v "change_notes.html"^^xsd:anyURI ;
-             fhir:l fhir:change_notes.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "change_notes.html"^^xsd:anyURI ;
-           fhir:l fhir:change_notes.html
-         ] ;
-         fhir:title [ fhir:v "Change Notes" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
              fhir:v "classes_communes.html"^^xsd:anyURI ;
              fhir:l fhir:classes_communes.html
            ]
@@ -4345,6 +4326,25 @@
              fhir:l fhir:structure.html
            ] ;
            fhir:title [ fhir:v "Structure" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [
+               fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+               fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+             ] ;
+             fhir:value [
+               a fhir:Url ;
+               fhir:v "change_notes.html"^^xsd:anyURI ;
+               fhir:l fhir:change_notes.html
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:Url ;
+             fhir:v "change_notes.html"^^xsd:anyURI ;
+             fhir:l fhir:change_notes.html
+           ] ;
+           fhir:title [ fhir:v "Historique" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] )

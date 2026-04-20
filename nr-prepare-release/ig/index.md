@@ -39,10 +39,6 @@ La partie composants élémentaires du MOS est partitionnée de la manière suiv
 
 Ce guide d’implémentation s’inscrit dans une démarche de modernisation de la diffusion du MOS. Il a vocation à remplacer l’ancien site web dédié, le fichier Excel et le document PDF, formats qui ne sont pas retenus à date. La publication sous forme de guide d’implémentation FHIR permet une navigation facilitée, une consultation structurée et une interopérabilité native avec les autres IGs de l’ANS.
 
-Remarque générale sur les diagrammes:
-
-La cardinalité “**” d’une association ou d’un attribut signifie “0..**”. La cardinalité “1” d’une association ou d’un attribut signifie “1..1”.
-
 🔍+
 🔍−
 ↻
@@ -146,12 +142,6 @@ La cardinalité “**” d’une association ou d’un attribut signifie “0..*
 | [VieQuotidienne](StructureDefinition-VieQuotidienne.md) | /!\ Classe en cours de constructionInformations relatives à la vie quotidienne de la personne prise en charge. |
 | [VieScolaire](StructureDefinition-VieScolaire.md) | /!\ Classe en cours de constructionInformations relatives à la vie scolaire de la personne prise en charge. |
 
-### Périmètre du projet
-
-Définir en quelques lignes en anglais quel est le périmètre du projet
-
-Toujours laisser l’onglet “Ressources de conformité” pour s’assurer d’une cohérence globales entre tous les IGs
-
 ### Dépendances
 
 
@@ -180,7 +170,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2026-04-20T08:03:20+00:00",
+  "date" : "2026-04-20T09:12:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -2404,15 +2394,6 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "change_notes.html"
-        }],
-        "nameUrl" : "change_notes.html",
-        "title" : "Change Notes",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "classes_communes.html"
         }],
         "nameUrl" : "classes_communes.html",
@@ -2533,6 +2514,15 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
           }],
           "nameUrl" : "structure.html",
           "title" : "Structure",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+            "valueUrl" : "change_notes.html"
+          }],
+          "nameUrl" : "change_notes.html",
+          "title" : "Historique",
           "generation" : "markdown"
         }]
       }]

@@ -3,7 +3,7 @@ MOS : Validation Results
 
 err = 153, warn = 1211, info = 2
 IG Publisher Version: 2.2.6
-Generated Mon Apr 20 08:07:03 UTC 2026. FHIR version 4.0.1 for ans.fr.mos#0.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/mos)
+Generated Mon Apr 20 09:15:09 UTC 2026. FHIR version 4.0.1 for ans.fr.mos#0.1.0-ballot (canonical = https://interop.esante.gouv.fr/ig/mos)
  Build Errors : 1 / 31 / 0
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fr.mos : 33 / 1 / 1
  /home/runner/work/IG-modele-objets-sante/IG-modele-objets-sante/igSource/fsh-generated/resources/StructureDefinition-ActiviteEnseignement : 1 / 24 / 1
@@ -1487,7 +1487,7 @@ WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/besoinVieQuotidienne-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'besoinVieQuotidienne-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [b9959cd3-a9db-420d-af0e-970f29d8e581]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R319-BesoinAideVieSociale/FHIR/TRE-R319-BesoinAideVieSociale could not be resolved.
-Information: X-Request-Id: f5c0dd22-5a77-4058-acc1-17a1f7807097
+Information: X-Request-Id: 74fbcaf2-314b-42b1-b2b0-a7ba0abc2f4f
 == fsh-generated/resources/ValueSet-capaciteSavoirFaire-vs.json ==
 ERROR: ValueSet/capaciteSavoirFaire-vs: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/capaciteSavoirFaire-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present
@@ -1531,7 +1531,7 @@ WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value se
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 WARNING: ValueSet/familleActiviteOperationnelle-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
 WARNING: ValueSet.where(id = 'familleActiviteOperationnelle-vs'): Error from https://smt.esante.gouv.fr/fhir: Error: [49142dbb-631e-475b-b801-bfb4bd4c4541]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin could not be resolved.
-Information: X-Request-Id: 9483855e-8625-4dea-9af7-8235e6570d64
+Information: X-Request-Id: 7862e721-6835-4b39-ae86-40c19c5e6a7f
 == fsh-generated/resources/ValueSet-fonctionQualifiee-vs.json ==
 ERROR: ValueSet/fonctionQualifiee-vs: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fonctionQualifiee-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.title is mandatory, but it is not present

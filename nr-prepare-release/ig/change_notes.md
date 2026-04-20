@@ -1,9 +1,10 @@
-# Change Notes - Modèle des Objets de Santé (MOS) v0.1.0-ballot
+# Historique - Modèle des Objets de Santé (MOS) v0.1.0-ballot
 
 * [**Table of Contents**](toc.md)
-* **Change Notes**
+* [**Composants élémentaires**](composants_elementaires.md)
+* **Historique**
 
-## Change Notes
+## Historique
 
 ### Release 0.1.0 du MOS en Modèles Logiques FHIR
 
