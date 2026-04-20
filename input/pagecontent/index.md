@@ -77,13 +77,6 @@ La cardinalité "1" d'une association ou d'un attribut signifie "1..1".
     ]
 } %}
 
-
-### Périmètre du projet
-
-Définir en quelques lignes en anglais quel est le périmètre du projet
-
-Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohérence globales entre tous les IGs
-
 ### Dépendances
 
 {% lang-fragment dependency-table.xhtml %}
