@@ -46,11 +46,6 @@ La partie composants élémentaires du MOS est partitionnée de la manière suiv
 
 Ce guide d'implémentation s'inscrit dans une démarche de modernisation de la diffusion du MOS. Il a vocation à remplacer l'ancien site web dédié, le fichier Excel et le document PDF, formats qui ne sont pas retenus à date. La publication sous forme de guide d'implémentation FHIR permet une navigation facilitée, une consultation structurée et une interopérabilité native avec les autres IGs de l'ANS.
 
-Remarque générale sur les diagrammes:
-
-La cardinalité "*" d'une association ou d'un attribut signifie "0..*".
-La cardinalité "1" d'une association ou d'un attribut signifie "1..1".
-
 {% include svg-interactive-styles.html %}
 
 <div class="figure svg-wrap" style="width:100%;">
