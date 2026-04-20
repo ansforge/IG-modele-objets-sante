@@ -373,6 +373,32 @@
     "StructureDefinition-SituationExercice.html" : "SituationExercice"
   },
   {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R272-EquipementMaterielLourd/FHIR/TRE-R272-EquipementMaterielLourd?vs",
+    "version" : "20260330120000",
+    "status" : "active",
+    "name" : "VsTreR272EquipementMaterielLourdAll",
+    "title" : "Vs Tre R272 Equipement Materiel Lourd All",
+    "description" : "Jeu de valeurs ALL contenant les équipements matériels lourds",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R272-EquipementMaterielLourd/FHIR/TRE-R272-EquipementMaterielLourd"],
+    "uses" : {
+    },
+    "StructureDefinition-EquipementMaterielLourd.html" : "EquipementMaterielLourd"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee?vs",
+    "version" : "20260330120000",
+    "status" : "active",
+    "name" : "VsTreR274ActiviteSanitaireReguleeAll",
+    "title" : "Vs Tre R274 Activite Sanitaire Regulee All",
+    "description" : "Jeu de valeurs FINESS contenant les activités sanitaires soumises à une régulation de la part de l'ARS.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee"],
+    "uses" : {
+    },
+    "StructureDefinition-ActiviteSoinAutorisee.html" : "ActiviteSoinAutorisee",
+    "StructureDefinition-ActiviteSoumiseReconnaissance.html" : "ActiviteSoumiseReconnaissance",
+    "StructureDefinition-AutreActiviteSoumiseAutorisation.html" : "AutreActiviteSoumiseAutorisation"
+  },
+  {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC?vs",
     "version" : "20260223120000",
     "status" : "active",
@@ -382,6 +408,18 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC"],
     "oids" : ["1.2.250.1.213.1.6.1.280"],
     "sources" : ["1.2.250.1.213.1.6.1.280"],
+    "uses" : {
+    },
+    "StructureDefinition-EntiteGeographique.html" : "EntiteGeographique"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire?vs",
+    "version" : "20260330120000",
+    "status" : "active",
+    "name" : "VsTreR74ModeFixationTarifaireAll",
+    "title" : "Vs Tre R74 Mode Fixation Tarifaire All",
+    "description" : "Jeu de valeurs ALL contenant les modes de fixation tarifaire",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire"],
     "uses" : {
     },
     "StructureDefinition-EntiteGeographique.html" : "EntiteGeographique"

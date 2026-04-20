@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos | *Version*:0.1.0 |
-| Draft as of 2026-03-06 | *Computable Name*:MOS |
+| Draft as of 2026-04-20 | *Computable Name*:MOS |
 
  **Brief description of this Implementation Guide**
  [Add a brief description of this IG in English] 
@@ -167,6 +167,10 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
 * [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.4.0/CodeSystem-ISO3166Part1.html): [ActiviteEnseignement](StructureDefinition-ActiviteEnseignement.md), [ActiviteSociale](StructureDefinition-ActiviteSociale.md)... Show 119 more, [ActiviteSoinAutorisee](StructureDefinition-ActiviteSoinAutorisee.md), [ActiviteSoumiseReconnaissance](StructureDefinition-ActiviteSoumiseReconnaissance.md), [Adresse](StructureDefinition-Adresse.md), [Agenda](StructureDefinition-Agenda.md), [AidantDemarche](StructureDefinition-AidantDemarche.md), [ArretTravail](StructureDefinition-ArretTravail.md), [Attestation](StructureDefinition-Attestation.md), [AutorisationExercice](StructureDefinition-AutorisationExercice.md), [AutreActiviteSoumiseAutorisation](StructureDefinition-AutreActiviteSoumiseAutorisation.md), [AutreDiplomeObtenu](StructureDefinition-AutreDiplomeObtenu.md), [BesoinscolariteVs](ValueSet-besoinScolarite-vs.md), [BesoinviequotidienneVs](ValueSet-besoinVieQuotidienne-vs.md), [BoiteLettreMSS](StructureDefinition-BoiteLettreMSS.md), [CapaciteAccueil](StructureDefinition-CapaciteAccueil.md), [CapaciteActiviteExercee](StructureDefinition-CapaciteActiviteExercee.md), [CapaciteDiplome](StructureDefinition-CapaciteDiplome.md), [CapaciteHabitation](StructureDefinition-CapaciteHabitation.md), [CapacitePriseCharge](StructureDefinition-CapacitePriseCharge.md), [CapaciteSavoirfaire](StructureDefinition-CapaciteSavoirfaire.md), [CapacitesavoirfaireVs](ValueSet-capaciteSavoirFaire-vs.md), [CarteProfessionnel](StructureDefinition-CarteProfessionnel.md), [CategorieetablissementVs](ValueSet-categorieEtablissement-vs.md), [Certificat](StructureDefinition-Certificat.md), [CertificatEtudeSpeciale](StructureDefinition-CertificatEtudeSpeciale.md), [CodeVs](ValueSet-code-vs.md), [Competence](StructureDefinition-Competence.md), [CompetenceExclusive](StructureDefinition-CompetenceExclusive.md), [CompetenceMetier](StructureDefinition-CompetenceMetier.md), [CompetenceVs](ValueSet-competence-vs.md), [CompetenceexclusiveVs](ValueSet-competenceExclusive-vs.md), [CompetencemetierVs](ValueSet-competenceMetier-vs.md), [Contact](StructureDefinition-Contact.md), [Convention](StructureDefinition-Convention.md), [CoordonneeGeographique](StructureDefinition-CoordonneeGeographique.md), [Creneau](StructureDefinition-Creneau.md), [DESC1](StructureDefinition-DESC1.md), [DESC2](StructureDefinition-DESC2.md), [DESCNonQualifiant](StructureDefinition-DESCNonQualifiant.md), [Decision](StructureDefinition-Decision.md), [Demande](StructureDefinition-Demande.md), [DescnonqualifiantVs](ValueSet-DESCNonQualifiant-vs.md), [Diplome](StructureDefinition-Diplome.md), [DiplomeDeuxiemeCycleNonQualifiant](StructureDefinition-DiplomeDeuxiemeCycleNonQualifiant.md), [DiplomeDivers](StructureDefinition-DiplomeDivers.md), [DiplomeEEE](StructureDefinition-DiplomeEEE.md), [DiplomeEES](StructureDefinition-DiplomeEES.md), [DiplomeEtat](StructureDefinition-DiplomeEtat.md), [DiplomeEtudeSpecialisee](StructureDefinition-DiplomeEtudeSpecialisee.md), [DiplomeUniversitaire](StructureDefinition-DiplomeUniversitaire.md), [DispositifMedical](StructureDefinition-DispositifMedical.md), [DivisionTerritoriale](StructureDefinition-DivisionTerritoriale.md), [Document](StructureDefinition-Document.md), [DossierPersonnePriseCharge](StructureDefinition-DossierPersonnePriseCharge.md), [DroitExerciceComplementaire](StructureDefinition-DroitExerciceComplementaire.md), [DroitexercicecomplementaireVs](ValueSet-droitExerciceComplementaire-vs.md), [Emploi](StructureDefinition-Emploi.md), [EntiteGeographique](StructureDefinition-EntiteGeographique.md), [EntiteJuridique](StructureDefinition-EntiteJuridique.md), [EquipementMaterielLourd](StructureDefinition-EquipementMaterielLourd.md), [EquipementSpecifique](StructureDefinition-EquipementSpecifique.md), [ExerciceProfessionnel](StructureDefinition-ExerciceProfessionnel.md), [FamilleactiviteoperationnelleVs](ValueSet-familleActiviteOperationnelle-vs.md), [FonctionQualifiee](StructureDefinition-FonctionQualifiee.md), [FonctionqualifieeVs](ValueSet-fonctionQualifiee-vs.md), [FormationSpecialiseeTransversale](StructureDefinition-FormationSpecialiseeTransversale.md), [Groupement](StructureDefinition-Groupement.md), [Horaire](StructureDefinition-Horaire.md), [LangueParlee](StructureDefinition-LangueParlee.md), [LicenceExploitation](StructureDefinition-LicenceExploitation.md), [Lieu](StructureDefinition-Lieu.md), [LieuRealisationOffre](StructureDefinition-LieuRealisationOffre.md), [LieunaissanceVs](ValueSet-lieuNaissance-vs.md), [MOS](index.md), [Membre](StructureDefinition-Membre.md), [MesureCapacite](StructureDefinition-MesureCapacite.md), [MesureProtection](StructureDefinition-MesureProtection.md), [NoteLiaison](StructureDefinition-NoteLiaison.md), [Observation](StructureDefinition-Observation.md), [OffreOperationnelle](StructureDefinition-OffreOperationnelle.md), [OrganisationInterne](StructureDefinition-OrganisationInterne.md), [OrientationParticuliere](StructureDefinition-OrientationParticuliere.md), [OrientationparticuliereVs](ValueSet-orientationParticuliere-vs.md), [Parent](StructureDefinition-Parent.md), [Patientele](StructureDefinition-Patientele.md), [PaysnaissanceVs](ValueSet-paysNaissance-vs.md), [PaysnationaliteVs](ValueSet-paysNationalite-vs.md), [PersonnePhysique](StructureDefinition-PersonnePhysique.md), [PersonnePriseCharge](StructureDefinition-PersonnePriseCharge.md), [PlageDisponibilite](StructureDefinition-PlageDisponibilite.md), [PlageReference](StructureDefinition-PlageReference.md), [PoleActivite](StructureDefinition-PoleActivite.md), [ProfessionVs](ValueSet-profession-vs.md), [ProfessioncategoriesocioprofessionnelleVs](ValueSet-professionCategorieSocioProfessionnelle-vs.md), [Professionnel](StructureDefinition-Professionnel.md), [ProfessionressourceVs](ValueSet-professionRessource-vs.md), [QualificationPAC](StructureDefinition-QualificationPAC.md), [QualificationpacVs](ValueSet-qualificationPAC-vs.md), [RelationVs](ValueSet-relation-vs.md), [RendezVous](StructureDefinition-RendezVous.md), [ResultatObservation](StructureDefinition-ResultatObservation.md), [RoleVs](ValueSet-role-vs.md), [SavoirFaire](StructureDefinition-SavoirFaire.md), [SecteuractiviteVs](ValueSet-secteurActivite-vs.md), [SexeVs](ValueSet-sexe-vs.md), [SituationExercice](StructureDefinition-SituationExercice.md), [SituationOperationnelle](StructureDefinition-SituationOperationnelle.md), [Specialite](StructureDefinition-Specialite.md), [SpecialiteVs](ValueSet-specialite-vs.md), [StructureInterne](StructureDefinition-StructureInterne.md), [SurspecialiteTransversale](StructureDefinition-SurspecialiteTransversale.md), [SurspecialitetransversaleVs](ValueSet-surspecialiteTransversale-vs.md), [TarifPrestation](StructureDefinition-TarifPrestation.md), [Telecommunication](StructureDefinition-Telecommunication.md), [TypeprofessionVs](ValueSet-typeProfession-vs.md), [TyperoleVs](ValueSet-typeRole-vs.md), [UniteFonctionnelle](StructureDefinition-UniteFonctionnelle.md), [VieProfessionnelle](StructureDefinition-VieProfessionnelle.md), [VieQuotidienne](StructureDefinition-VieQuotidienne.md) and [VieScolaire](StructureDefinition-VieScolaire.md)
 
 
+### Téléchargement
+
+Le MOS est disponible sous forme de tableur Excel, généré automatiquement à partir des modèles logiques de ce guide : **[Télécharger MOS.xlsx](MOS.xlsx)**.
+
 
 
 ## Resource Content
@@ -180,7 +184,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
   "name" : "MOS",
   "title" : "Modèle des Objets de Santé (MOS)",
   "status" : "draft",
-  "date" : "2026-03-06T09:16:42+00:00",
+  "date" : "2026-04-20T07:14:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -207,7 +211,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.1"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7ext",
@@ -525,7 +529,7 @@ Certaines ressources sémantiques de ce guide sont protégées par des droits de
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
     },
     {
       "extension" : [{

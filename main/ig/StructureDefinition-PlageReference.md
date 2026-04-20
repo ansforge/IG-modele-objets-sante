@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PlageReference | *Version*:0.1.0 |
-| Draft as of 2026-03-06 | *Computable Name*:PlageReference |
+| Draft as of 2026-04-20 | *Computable Name*:PlageReference |
 
  
 La plage de référence, constituée d’une borne inférieure et d’une borne supérieure, fournit un guide pour interpréter une valeur en la comparant à ces bornes. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-PlageReference.csv),
   "name" : "PlageReference",
   "title" : "PlageReference",
   "status" : "draft",
-  "date" : "2026-03-06T09:16:42+00:00",
+  "date" : "2026-04-20T07:14:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

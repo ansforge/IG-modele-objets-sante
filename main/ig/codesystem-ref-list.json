@@ -58,16 +58,16 @@
     "uses" : {
     },
     "ValueSet-competenceMetier-vs.html" : "CompetencemetierVs",
-    "ValueSet-DESCNonQualifiant-vs.html" : "DescnonqualifiantVs",
-    "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs",
-    "ValueSet-orientationParticuliere-vs.html" : "OrientationparticuliereVs",
-    "ValueSet-specialite-vs.html" : "SpecialiteVs",
-    "ValueSet-competence-vs.html" : "CompetenceVs",
     "ValueSet-capaciteSavoirFaire-vs.html" : "CapacitesavoirfaireVs",
+    "ValueSet-DESCNonQualifiant-vs.html" : "DescnonqualifiantVs",
+    "ValueSet-droitExerciceComplementaire-vs.html" : "DroitexercicecomplementaireVs",
+    "ValueSet-competence-vs.html" : "CompetenceVs",
     "ValueSet-qualificationPAC-vs.html" : "QualificationpacVs",
+    "ValueSet-specialite-vs.html" : "SpecialiteVs",
     "ValueSet-surspecialiteTransversale-vs.html" : "SurspecialitetransversaleVs",
+    "ValueSet-orientationParticuliere-vs.html" : "OrientationparticuliereVs",
     "ValueSet-competenceExclusive-vs.html" : "CompetenceexclusiveVs",
-    "ValueSet-droitExerciceComplementaire-vs.html" : "DroitexercicecomplementaireVs"
+    "ValueSet-fonctionQualifiee-vs.html" : "FonctionqualifieeVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
@@ -106,8 +106,8 @@
     },
     "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
     "ValueSet-code-vs.html" : "CodeVs",
-    "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs",
-    "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
+    "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
+    "ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R21-Fonction/FHIR/TRE-R21-Fonction",
@@ -205,6 +205,30 @@
     },
     "ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
     "ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R272-EquipementMaterielLourd/FHIR/TRE-R272-EquipementMaterielLourd",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R272_EquipementMaterielLourd",
+    "title" : null,
+    "description" : "Equipements Matériels Lourds",
+    "oids" : ["1.2.250.1.213.1.6.1.124"],
+    "uses" : {
+    },
+    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r272-equipement-materiel-lourd-all" : "Vs Tre R272 Equipement Materiel Lourd All"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R274-ActiviteSanitaireRegulee/FHIR/TRE-R274-ActiviteSanitaireRegulee",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R274_ActiviteSanitaireRegulee",
+    "title" : null,
+    "description" : "Activités sanitaires soumises à une régulation de la part de l'ARS",
+    "oids" : ["1.2.250.1.213.1.6.1.126"],
+    "uses" : {
+    },
+    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r274-activite-sanitaire-regulee-all" : "Vs Tre R274 Activite Sanitaire Regulee All"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R288-TypeProfession/FHIR/TRE-R288-TypeProfession",
@@ -384,8 +408,8 @@
     "oids" : ["1.2.250.1.213.1.6.1.3"],
     "uses" : {
     },
-    "ValueSet-typeRole-vs.html" : "TyperoleVs",
-    "ValueSet-typeProfession-vs.html" : "TypeprofessionVs"
+    "ValueSet-typeProfession-vs.html" : "TypeprofessionVs",
+    "ValueSet-typeRole-vs.html" : "TyperoleVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
@@ -494,6 +518,18 @@
     "uses" : {
     },
     "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r73-espic-all" : "Vs Tre R73 Espic All"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire",
+    "version" : "20240223120000",
+    "status" : "active",
+    "name" : "TRE_R74_ModeFixationTarifaire",
+    "title" : null,
+    "description" : "Mode de fixation tarifaire",
+    "oids" : ["1.2.250.1.213.1.6.1.46"],
+    "uses" : {
+    },
+    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r74-mode-fixation-tarifaire-all" : "Vs Tre R74 Mode Fixation Tarifaire All"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
