@@ -12,3 +12,7 @@ Première publication du Modèle des Objets de Santé (MOS) sous forme de Modèl
 * Mise à jour de l'index et de la langue [#13](https://github.com/ansforge/IG-MOS/pull/13)
 * Mise à jour du bouton [#14](https://github.com/ansforge/IG-MOS/pull/14)
 * Génération automatique du MOS.xlsx depuis les modèles logiques [#15](https://github.com/ansforge/IG-MOS/pull/15)
+
+### Versions historiques
+
+Les versions antérieures du MOS étaient publiées sous forme de site web, de fichier Excel et de document PDF sur [mos.esante.gouv.fr](https://mos.esante.gouv.fr/0.html). Ces formats ne sont pas retenus à date ; ce guide d'implémentation FHIR constitue désormais le support de référence.
