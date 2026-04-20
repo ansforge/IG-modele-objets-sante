@@ -1,6 +1,6 @@
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>Brief description of this Implementation Guide</b><br>
-[Add a brief description of this IG in English]
+This Implementation Guide publishes the <b>Modèle des Objets de Santé (MOS)</b> — the French Health Objects Model — as FHIR Logical Models. The MOS defines a set of technology-neutral, harmonised concepts covering health and medico-social information systems: professionals, organisations, authentication devices, authorisations, operational resources, patients, caregivers, medical devices, and more. It promotes native interoperability by providing a shared data model aligned with international standards (FHIR, HL7 v2/v3).
 </p>
 
 <!--  A décommenter lors de la publication -->
@@ -43,6 +43,8 @@ La partie composants élémentaires du MOS est partitionnée de la manière suiv
 * agenda des personnes physiques ou des structures;
 * objets communs aux domaines, c’est à dire les personnes, les adresses, les coordonnées géographiques, les lieux, les contacts, les télécommunications, etc.;
 * types de données, c'est à dire le domaine de valeurs de l'attribut; par exemple, l'attribut nomUsage (nom d'usage de la personne) est un texte (type de données "Texte"), l'attribut paysNaissance (pays de naissance) est un code (type de données "Code").
+
+Ce guide d'implémentation s'inscrit dans une démarche de modernisation de la diffusion du MOS. Il a vocation à remplacer l'ancien site web dédié, le fichier Excel et le document PDF, formats qui ne sont pas retenus à date. La publication sous forme de guide d'implémentation FHIR permet une navigation facilitée, une consultation structurée et une interopérabilité native avec les autres IGs de l'ANS.
 
 Remarque générale sur les diagrammes:
 
@@ -89,7 +91,7 @@ Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohé
 ### Propriété intellectuelle
 
 {% lang-fragment ip-statements.xhtml %}
-
+<!-- 
 ### Téléchargement
 
-Le MOS est disponible sous forme de tableur Excel, généré automatiquement à partir des modèles logiques de ce guide : **[Télécharger MOS.xlsx](MOS.xlsx)**.
+Le MOS est disponible sous forme de tableur Excel, généré automatiquement à partir des modèles logiques de ce guide : **[Télécharger MOS.xlsx](MOS.xlsx)**. -->
