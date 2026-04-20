@@ -46,7 +46,7 @@
   "version" : "0.1.0-ballot",
   "name" : "PaysnationaliteVs",
   "status" : "draft",
-  "date" : "2026-04-20T14:11:31+00:00",
+  "date" : "2026-04-20T14:36:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -59,7 +59,7 @@
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
       "code" : "FR",
-      "display" : "FRANCE"
+      "display" : "France (la)"
     }]
   }],
   "compose" : {
